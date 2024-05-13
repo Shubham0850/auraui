@@ -10,6 +10,7 @@ const config: DocsThemeConfig = {
     link: "https://github.com/shuding/nextra-docs-template",
     icon: <Linkedin className="h-10 w-10" />,
   },
+
   chat: {
     link: "https://discord.com",
   },
@@ -18,6 +19,15 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Nextra Docs Template",
   },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "Aura UI",
+    };
+  },
+
+  
+
+
 };
 
 export default config;

@@ -1,5 +1,17 @@
 {
-  "index": "Introduction",
+  "index": {
+    "title": "Guide",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+
+      "sidebar": true,
+      "toc": false,
+      "editLink.component": null,
+      "editLink.text": null,
+      "pagination": false
+    }
+  },
   "another": "Another Page",
   "details": "details page",
   "advanced": "Advanced (A Folder)",
