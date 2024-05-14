@@ -3,10 +3,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mx-auto max-w-6xl ">
-      <div className="flex md:w-[700px]  lg:w-[1024px] justify-between ">
+    <div className="mx-auto ">
+      <div className="flex md:flex-row flex-col gap-6 md:w-[700px] lg:w-[1010px]  xl:w-[1240px] justify-between ">
         <span>Aura UI 2024</span>
-        <div className="  ">
+        <div className="flex md:flex-col flex-row gap-3  ">
           <Link href={"/introduction/zcomponents/"}>
             <h1>Components</h1>
           </Link>

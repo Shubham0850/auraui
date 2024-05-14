@@ -1,7 +1,10 @@
 {
   "index": {
     "title": "Home",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   },
   "introduction": {
     "title": "Components",
@@ -9,6 +12,9 @@
   },
   "pricings": {
     "title": "Pricing",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }

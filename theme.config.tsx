@@ -14,6 +14,7 @@ import Footer from "@/components/layout/Footer";
 
 const config: DocsThemeConfig = {
   logo: <span>Aura UI</span>,
+   darkMode:false,
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +35,9 @@ const config: DocsThemeConfig = {
     link: "https://twitter.com/Jayjeet_100",
     icon: <TwitterIcon />,
   },
+
+ 
+      "gitTimestamp":false,
 
   footer: {
     text: (
