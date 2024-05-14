@@ -41,6 +41,7 @@ export default function ContactForm(): JSX.Element {
         </div>
 
         <button
+        style={{backgroundColor:'green'}}
           className="bg-green-700 md:w-1/3 md:mx-auto rounded-md p-3 text-white font-bold"
           type="submit"
         >
