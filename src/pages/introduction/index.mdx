@@ -12,7 +12,12 @@ import { Steps } from "nextra/components";
 
 <Tabs items={['Preview', 'Code']}  >
   <Tabs.Tab>
- ![Hello](/contact.png)
+ {/* ![Hello](/contact.png) */}
+
+import UiSamples from "@/components/home/UiSamples";
+
+      <UiSamples />
+
   </Tabs.Tab>
   <Tabs.Tab>
   ```js copy
@@ -66,10 +71,11 @@ export default function ContactForm(): JSX.Element {
         </button>
       </form>
     </div>
-  );
+
+);
 }
 
-```
+````
   </Tabs.Tab>
 </Tabs
 
@@ -82,7 +88,7 @@ export default function ContactForm(): JSX.Element {
 
 ```js copy
 npm i framer-motion clsx tailwind-merge
-```
+````
 
 ### Add util file
 
