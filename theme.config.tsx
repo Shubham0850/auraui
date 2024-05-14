@@ -23,13 +23,15 @@ const config: DocsThemeConfig = {
     icon: <LinkedinIcon />,
   },
 
+
+
   chat: {
     link: "https://twitter.com/Jayjeet_100",
     icon: <TwitterIcon />,
   },
 
   footer: {
-    text: "Nextra Docs Template",
+    text: "Aura UI",
   },
   useNextSeoProps() {
     return {

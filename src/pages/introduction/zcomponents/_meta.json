@@ -1,6 +1,6 @@
 {
-  "index": {
-    "title": "Guide",
+  "3d-card-effect": {
+    "title": "3D Card Effect",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -9,9 +9,8 @@
       "pagination": true
     }
   },
-  "another": {
-    "title": "Another Page",
-    "type":"page",
+  "aurora": {
+    "title": "Aurora Background",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -20,16 +19,13 @@
       "pagination": true
     }
   },
-  "details": "details page",
+  "card-stack": "Card Stack",
   "advanced": "Advanced (A Folder)",
   "about": {
     "title": "About",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/Jayjeet_100",
-    "newWindow": true
+  "tabs": {
+    "title": "Tabs"
   }
 }
