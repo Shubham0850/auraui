@@ -1,20 +1,32 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import { Linkedin } from "lucide-react";
+import { Box, Linkedin, LinkedinIcon, LucideTwitter, TwitterIcon } from "lucide-react";
 
 import { Tabs } from "nextra/components";
+import Link from "next/link";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Aura UI</span>,
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Nextra" />
+      <meta
+        property="og:description"
+        content="AuraUI the best platform for website components "
+      />
+    </>
+  ),
+
   project: {
-    link: "https://github.com/shuding/nextra-docs-template",
-    icon: <Linkedin className="h-10 w-10" />,
+    link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",
+    icon: <LinkedinIcon />,
   },
 
   chat: {
-    link: "https://discord.com",
+    link: "https://twitter.com/Jayjeet_100",
+    icon: <TwitterIcon />,
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
 
   footer: {
     text: "Nextra Docs Template",
@@ -24,10 +36,6 @@ const config: DocsThemeConfig = {
       titleTemplate: "Aura UI",
     };
   },
-
-  
-
-
 };
 
 export default config;
