@@ -1,9 +1,16 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import { Box, Linkedin, LinkedinIcon, LucideTwitter, TwitterIcon } from "lucide-react";
+import {
+  Box,
+  Linkedin,
+  LinkedinIcon,
+  LucideTwitter,
+  TwitterIcon,
+} from "lucide-react";
 
 import { Tabs } from "nextra/components";
 import Link from "next/link";
+import Footer from "@/components/layout/Footer";
 
 const config: DocsThemeConfig = {
   logo: <span>Aura UI</span>,
@@ -23,15 +30,15 @@ const config: DocsThemeConfig = {
     icon: <LinkedinIcon />,
   },
 
-
-
   chat: {
     link: "https://twitter.com/Jayjeet_100",
     icon: <TwitterIcon />,
   },
 
   footer: {
-    text: "Aura UI",
+    text: (
+     <Footer/>
+    ),
   },
   useNextSeoProps() {
     return {

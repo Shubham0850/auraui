@@ -1,4 +1,15 @@
 {
+  "index": {
+    "title": "zcomponents",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+
   "3d-card-effect": {
     "title": "3D Card Effect",
     "theme": {
