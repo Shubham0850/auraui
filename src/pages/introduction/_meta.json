@@ -9,7 +9,7 @@
       "pagination": true
     }
   },
-  
+
   "another": {
     "title": "Another Page",
     "theme": {
@@ -32,6 +32,25 @@
   },
 
   "about": {
+    "title": "About"
+  },
+
+  "Hero": {
+    "title": "Hero"
+  },
+  "Header": {
+    "title": "Header"
+  },
+  "Testimonial": {
+    "title": "Testimonial"
+  },
+  "Feature": {
+    "title": "Feature"
+  },
+  "CTA": {
+    "title": "CTA"
+  },
+  "About": {
     "title": "About"
   },
   "contact": {

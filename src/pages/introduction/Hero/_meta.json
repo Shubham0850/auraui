@@ -1,0 +1,12 @@
+{
+  "index": {
+    "title": "All Hero Components",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  }
+}
