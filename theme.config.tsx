@@ -14,7 +14,7 @@ import Footer from "@/components/layout/Footer";
 
 const config: DocsThemeConfig = {
   logo: <span>Aura UI</span>,
-   darkMode:false,
+ 
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,16 +33,13 @@ const config: DocsThemeConfig = {
 
   chat: {
     link: "https://twitter.com/Jayjeet_100",
-    icon: <TwitterIcon />,
+    icon: <TwitterIcon style={{marginLeft:'-12px'}} />,
   },
 
- 
-      "gitTimestamp":false,
+  gitTimestamp: false,
 
   footer: {
-    text: (
-     <Footer/>
-    ),
+    text: <Footer />,
   },
   useNextSeoProps() {
     return {

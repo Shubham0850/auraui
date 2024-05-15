@@ -16,5 +16,21 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "company": {
+    "title": "Company",
+    "type": "menu",
+    "items": {
+      "about": {
+        "title": "About",
+        "href": "/introduction/about"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "href": "mailto:hi@example.com"
+      }
+    }
   }
+
+  
 }

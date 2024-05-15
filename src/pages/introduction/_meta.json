@@ -9,9 +9,9 @@
       "pagination": true
     }
   },
+  
   "another": {
     "title": "Another Page",
-    "type":"page",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -20,15 +20,22 @@
       "pagination": true
     }
   },
-  "details": "details page",
-  "advanced": "Advanced (A Folder)",
+  "details": {
+    "title": "Details Page",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+
   "about": {
-    "title": "About",
-    "type": "page"
+    "title": "About"
   },
   "contact": {
     "title": "Contact ↗",
-    "type": "page",
     "href": "https://twitter.com/Jayjeet_100",
     "newWindow": true
   }
