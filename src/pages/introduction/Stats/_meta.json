@@ -1,0 +1,62 @@
+{
+  "index": {
+    "title": "All Stats Component",
+    "theme": {
+      "breadcrumb": true,
+      "stats": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  "stats-1": {
+    "title": "Stats 1",
+    "theme": {
+      "breadcrumb": true,
+      "stats": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  "stats-2": {
+    "title": "Stats 2",
+    "theme": {
+      "breadcrumb": true,
+      "stats": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  "stats-3": {
+    "title": "Stats 3",
+    "theme": {
+      "breadcrumb": true,
+      "stats": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  "stats-4": {
+    "title": "Stats 4",
+    "theme": {
+      "breadcrumb": true,
+      "stats": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+  "stats-5": {
+    "title": "Stats 5",
+    "theme": {
+      "breadcrumb": true,
+      "stats": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  }
+}
