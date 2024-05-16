@@ -1,7 +1,7 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-import First from "@/components/Hero/1";
+import Six from "@/components/Hero/Six";
 
 # First Hero Component
 
@@ -11,47 +11,199 @@ import First from "@/components/Hero/1";
   <Tabs.Tab>
  {/* ![Hello](/contact.png) */}
 
-      <First/>
+      <Six/>
 
   </Tabs.Tab>
   <Tabs.Tab>
   ```js copy
 import React from "react";
 
-import Link from "next/link";
-import React from "react";
+type Props = {};
 
-function Hero() {
-return (
-
-<div className="">
-<section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
-<div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-<div className="max-w-3xl mx-auto text-center">
-<p className="inline-flex px-4 py-2 text-base text-gray-900 dark:text-gray-100 border rounded-full font-pj">Made by Developers, for Developers</p>
-<h1 className="mt-5 text-4xl font-bold leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">Quality resources shared by the community</h1>
-<p className="max-w-md mx-auto mt-6 text-base leading-7 text-gray-600 dark:text-gray-400 font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.</p>
-
-            <div className="relative inline-flex mt-10 group">
-              <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-
-              <a href="#" title="" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
-                Get access to 4,958 resources
+function Six({}: Props) {
+  return (
+    <div className="relative bg-gradient-to-b from-green-50 to-green-100">
+      <header className="absolute inset-x-0 top-0 z-10 w-full">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            <div className="flex-shrink-0">
+              <a href="#" title="" className="flex">
+                <img
+                  className="w-auto h-8"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/logo.svg"
+                  alt=""
+                />
               </a>
+            </div>
+
+            <button
+              type="button"
+              className="inline-flex items-center p-2 text-sm text-white uppercase transition-all duration-200 bg-black lg:hidden focus:bg-gray-800 hover:bg-gray-800"
+            >
+              <svg
+                className="block w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                className="hidden w-6 h-6 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+              Menu
+            </button>
+
+            <div className="hidden lg:flex lg:items-center lg:justify-center lg:ml-10 lg:mr-auto lg:space-x-10">
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Features{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Solutions{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Resources{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Pricing{" "}
+              </a>
+            </div>
+
+            <a
+              href="#"
+              title=""
+              className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
+              role="button"
+            >
+              {" "}
+              Try for free{" "}
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section className="overflow-hidden">
+        <div className="flex flex-col lg:flex-row lg:items-stretch lg:max-h-[900px] lg:min-h-[900px]">
+          <div className="flex items-center justify-center w-full lg:order-2 lg:w-7/12">
+            <div className="h-full px-4 pt-24 pb-16 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14">
+              <div className="flex flex-col justify-between flex-1 h-full">
+                <div>
+                  <h1 className="text-4xl font-bold text-black sm:text-6xl xl:text-7xl">
+                    Take control <br />
+                    on your daily expenses
+                  </h1>
+                  <p className="mt-6 text-base text-black sm:text-xl">
+                    Our A.I helps you to predict your expenses based on your
+                    previous activity and shares how you should manage you
+                    money.
+                  </p>
+                  <a
+                    href="#"
+                    title=""
+                    className="inline-flex items-center px-6 py-5 text-base font-semibold text-black transition-all duration-200 bg-green-300 mt-9 hover:bg-green-400 focus:bg-green-400"
+                    role="button"
+                  >
+                    {" "}
+                    Get started for free{" "}
+                  </a>
+                </div>
+
+                <div className="mt-8 border-t-2 border-black lg:mt-auto sm:mt-14">
+                  <div className="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
+                    <p className="text-base font-semibold text-black">
+                      App available on
+                    </p>
+
+                    <div className="flex items-center mt-5 space-x-5 sm:mt-0">
+                      <a
+                        href="#"
+                        title=""
+                        className="block transition-all duration-200 hover:opacity-80 focus:opacity-80"
+                        role="button"
+                      >
+                        <img
+                          className="w-auto rounded h-14 sm:h-16"
+                          src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png"
+                          alt=""
+                        />
+                      </a>
+
+                      <a
+                        href="#"
+                        title=""
+                        className="block transition-all duration-200 hover:opacity-80 focus:opacity-80"
+                        role="button"
+                      >
+                        <img
+                          className="w-auto rounded h-14 sm:h-16"
+                          src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/play-store-button.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
+            <div className="lg:absolute lg:bottom-0 lg:left-0">
+              <img
+                className="w-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/phone-mockup.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
-
-        <div className="mt-16 md:mt-20">
-          <img className="object-cover object-top w-full h-auto mx-auto scale-150 2xl:max-w-screen-2xl xl:scale-100" src="https://d33wubrfki0l68.cloudfront.net/54780decfb9574945bc873b582cdc6156144a2ba/d9fa1/images/hero/4/illustration.png" alt="" />
-        </div>
       </section>
     </div>
-
-);
+  );
 }
 
-export default Hero;
+export default Six;
+
 ```
   </Tabs.Tab>
 </Tabs
