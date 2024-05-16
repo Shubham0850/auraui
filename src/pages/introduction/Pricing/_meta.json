@@ -1,6 +1,28 @@
 {
   "index": {
-    "title": "All Footer Component",
+    "title": "All Pricing Component",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true,
+      "layout": "full"
+    }
+  },
+  "pricing-1": {
+    "title": "Pricing 1",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true,
+      "layout": "full"
+    }
+  },
+  "pricing-2": {
+    "title": "Pricing 2",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -9,8 +31,8 @@
       "pagination": true
     }
   },
-  "footer-1": {
-    "title": "Footer 1",
+  "pricing-3": {
+    "title": "Pricing 3",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -19,8 +41,8 @@
       "pagination": true
     }
   },
-  "footer-2": {
-    "title": "Footer 2",
+  "pricing-4": {
+    "title": "Pricing 4",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -29,28 +51,8 @@
       "pagination": true
     }
   },
-  "footer-3": {
-    "title": "Footer 3",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
-  "footer-4": {
-    "title": "Footer 4",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
-  "footer-5": {
-    "title": "Footer 5",
+  "pricing-5": {
+    "title": "Pricing 5",
     "theme": {
       "breadcrumb": true,
       "footer": true,

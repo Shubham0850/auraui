@@ -6,7 +6,8 @@
       "footer": true,
       "sidebar": true,
       "toc": false,
-      "pagination": true
+      "pagination": true,
+      "layout": "full"
     }
   },
   "footer-1": {
@@ -16,7 +17,8 @@
       "footer": true,
       "sidebar": true,
       "toc": false,
-      "pagination": true
+      "pagination": true,
+      "layout": "full"
     }
   },
   "footer-2": {
