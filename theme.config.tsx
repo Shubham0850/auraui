@@ -3,7 +3,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
 const config: DocsThemeConfig = {
-  logo: <span>Aura UI</span>,
+  logo: <img src="/nobgfulllogo.png" className="h-10" alt="logo" />,
 
   head: (
     <>
@@ -36,7 +36,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "Aura UI",
+      titleTemplate: "UI library",
     };
   },
 };

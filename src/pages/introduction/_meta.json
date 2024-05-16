@@ -62,6 +62,19 @@
   "About": {
     "title": "About"
   },
+  "Pricing": {
+    "title": "Pricing"
+  },
+  "Teams": {
+    "title": "Footer"
+  },
+
+  "Contact": {
+    "title": "Contact"
+  },
+  "Stats": {
+    "title": "Stats"
+  },
   "contact": {
     "title": "Contact ↗",
     "href": "https://twitter.com/Jayjeet_100",
