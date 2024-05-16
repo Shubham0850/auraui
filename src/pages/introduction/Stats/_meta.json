@@ -5,58 +5,22 @@
       "breadcrumb": true,
       "stats": true,
       "sidebar": true,
-      "toc": false,
       "pagination": true
     }
   },
   "stats-1": {
-    "title": "Stats 1",
-    "theme": {
-      "breadcrumb": true,
-      "stats": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
+    "title": "Stats 1"
   },
   "stats-2": {
-    "title": "Stats 2",
-    "theme": {
-      "breadcrumb": true,
-      "stats": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
+    "title": "Stats 2"
   },
   "stats-3": {
-    "title": "Stats 3",
-    "theme": {
-      "breadcrumb": true,
-      "stats": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
+    "title": "Stats 3"
   },
   "stats-4": {
-    "title": "Stats 4",
-    "theme": {
-      "breadcrumb": true,
-      "stats": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
+    "title": "Stats 4"
   },
   "stats-5": {
-    "title": "Stats 5",
-    "theme": {
-      "breadcrumb": true,
-      "stats": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
+    "title": "Stats 5"
   }
 }

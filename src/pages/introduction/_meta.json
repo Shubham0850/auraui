@@ -41,7 +41,6 @@
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
-      "sidebar.autoCollapse":false,
       
       "toc": false,
       "pagination": true
@@ -66,7 +65,7 @@
     "title": "Pricing"
   },
   "Teams": {
-    "title": "Footer"
+    "title": "Teams"
   },
 
   "Contact": {

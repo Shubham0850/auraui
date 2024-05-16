@@ -1,11 +1,10 @@
 {
   "index": {
-    "title": "All Hero Components",
+    "title": "All Testimonial Components",
     "theme": {
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
-      "toc": false,
       "pagination": true
     }
   }
