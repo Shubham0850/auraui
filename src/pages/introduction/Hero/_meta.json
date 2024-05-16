@@ -7,6 +7,229 @@
       "sidebar": true,
       "toc": false,
       "pagination": true
+      
+    }
+  },
+
+  "hero1": {
+    "title": "Hero1",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero2": {
+    "title": "Hero2",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero3": {
+    "title": "Hero3",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero4": {
+    "title": "Hero4",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero5": {
+    "title": "Hero5",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero6": {
+    "title": "Hero6",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero7": {
+    "title": "Hero7",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+
+  "hero8": {
+    "title": "Hero8",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero9": {
+    "title": "Hero9",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero10": {
+    "title": "Hero10",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero11": {
+    "title": "Hero11",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero12": {
+    "title": "Hero12",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero13": {
+    "title": "Hero13",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero14": {
+    "title": "Hero14",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero15": {
+    "title": "Hero15",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero16": {
+    "title": "Hero16",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero17": {
+    "title": "Hero17",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero18": {
+    "title": "Hero18",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero19": {
+    "title": "Hero19",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "hero20": {
+    "title": "Hero20",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
     }
   }
 }

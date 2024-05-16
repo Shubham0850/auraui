@@ -1,82 +1,198 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-# Placeholders And Vanish Input
+import Three from "@/components/Hero/Three";
+
+# First Hero Component
 
 #### Sliding in placeholders and vanish effect of input on submit
-
-`Utlity{:jsx}`
-`Form{:jsx}`
-`Section{:jsx}`
-`Special{:jsx}`
 
 <Tabs items={['Preview', 'Code']}  >
   <Tabs.Tab>
  {/* ![Hello](/contact.png) */}
 
-import UiSamples from "@/components/home/UiSamples";
-
-      <UiSamples />
+      <Three/>
 
   </Tabs.Tab>
   <Tabs.Tab>
   ```js copy
-import React from "react";
+  import React from "react";
 
-export default function ContactForm(): JSX.Element {
+type Props = {};
+
+function Three({}: Props) {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-10  md:py-20">
-      <h1 className="pt-20 text-[32px] ">Contact Us</h1>
-      <form className="pt-4 mt-4 flex flex-col gap-5">
-        <div className="flex flex-col md:flex-row justify-between md:items-center">
-          <label htmlFor="fullname" className="md:w-[140px]">
-            Full Name
-          </label>
-          <input
-            type="text"
-            id="fullname"
-            placeholder="John Doe"
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500"
-          />
-        </div>
+    <div className="bg-white">
+      <header className="bg-[#FCF8F1] bg-opacity-30">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            <div className="flex-shrink-0">
+              <a href="#" title="" className="flex">
+                <img
+                  className="w-auto h-8"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                  alt=""
+                />
+              </a>
+            </div>
 
-        <div className="flex flex-col md:flex-row justify-between md:items-center">
-          <label htmlFor="email" className="md:w-[140px]">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="john@gmail.com"
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500"
-          />
-        </div>
+            <button
+              type="button"
+              className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+            >
+              <svg
+                className="block w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 8h16M4 16h16"
+                ></path>
+              </svg>
 
-        <div className="flex flex-col md:flex-row justify-between md:items-center">
-          <label htmlFor="message" className="md:w-[140px]">
-            Your Message
-          </label>
-          <textarea
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500"
-            id="message"
-            placeholder="Type your message here..."
-          ></textarea>
-        </div>
+              <svg
+                className="hidden w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
 
-        <button
-          className="bg-green-700 md:w-1/3 md:mx-auto rounded-md p-3 text-white font-bold"
-          type="submit"
-        >
-          Send
-        </button>
-      </form>
+            <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Features{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Solutions{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Resources{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {" "}
+                Pricing{" "}
+              </a>
+            </div>
+
+            <a
+              href="#"
+              title=""
+              className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+              role="button"
+            >
+              {" "}
+              Join Now{" "}
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+            <div>
+              <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
+                A social media for learners
+              </p>
+              <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+                Connect & learn from the experts
+              </h1>
+              <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+                Grow your career fast with right mentor.
+              </p>
+
+              <a
+                href="#"
+                title=""
+                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                role="button"
+              >
+                Join for free
+                <svg
+                  className="w-6 h-6 ml-8 -mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </a>
+
+              <p className="mt-5 text-gray-600">
+                Already joined us?{" "}
+                <a
+                  href="#"
+                  title=""
+                  className="text-black transition-all duration-200 hover:underline"
+                >
+                  Log in
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <img
+                className="w-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-);
+  );
 }
 
-````
+export default Three;
+
+  ```
   </Tabs.Tab>
 </Tabs
 
 >
+
+```
+
+```
