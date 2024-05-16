@@ -1,32 +1,20 @@
 {
   "index": {
-    "title": "Guide",
+    "title": "Intruduction",
     "theme": {
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
-      "toc": false,
       "pagination": true
     }
   },
 
-  "another": {
-    "title": "Another Page",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
   "details": {
     "title": "Details Page",
     "theme": {
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
-      "toc": false,
       "pagination": true
     }
   },
