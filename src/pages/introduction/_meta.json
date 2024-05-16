@@ -36,7 +36,16 @@
   },
 
   "Hero": {
-    "title": "Hero"
+    "title": "Hero",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "sidebar.autoCollapse":false,
+      
+      "toc": false,
+      "pagination": true
+    }
   },
   "Header": {
     "title": "Header"

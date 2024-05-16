@@ -25,7 +25,10 @@ const config: DocsThemeConfig = {
   //   link: "https://twitter.com/Jayjeet_100",
   //   icon: <TwitterIcon style={{ marginLeft: '-12px' }} />,
   // },
-
+  sidebar: {
+    autoCollapse: false,
+    defaultMenuCollapseLevel: 1,
+  },
   gitTimestamp: false,
   darkMode: true,
   footer: {
