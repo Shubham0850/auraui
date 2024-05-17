@@ -3,7 +3,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
 const config: DocsThemeConfig = {
-  logo: <img src="/nobgfulllogo.png" className="h-10" alt="logo" />,
+  logo: <img src="/logo-light.png" className="h-10" alt="logo" />,
 
   head: (
     <>
