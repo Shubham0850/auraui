@@ -1,28 +1,6 @@
 {
   "index": {
-    "title": "All Pricing Component",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true,
-      "layout": "full"
-    }
-  },
-  "pricing-1": {
-    "title": "Pricing 1",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true,
-      "layout": "full"
-    }
-  },
-  "pricing-2": {
-    "title": "Pricing 2",
+    "title": "All Pricing Components",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -31,33 +9,16 @@
       "pagination": true
     }
   },
-  "pricing-3": {
-    "title": "Pricing 3",
+
+  "Elements": {
+    "title": "Elements",
     "theme": {
       "breadcrumb": true,
       "footer": true,
-      "sidebar": true,
+      "sidebar": false,
       "toc": false,
-      "pagination": true
-    }
-  },
-  "pricing-4": {
-    "title": "Pricing 4",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
-  "pricing-5": {
-    "title": "Pricing 5",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
+      "layout": "full",
+
       "pagination": true
     }
   }
