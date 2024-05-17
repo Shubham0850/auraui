@@ -7,5 +7,16 @@
       "sidebar": true,
       "pagination": true
     }
+  },
+  "Elements": {
+    "title": "Elements",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
   }
 }
