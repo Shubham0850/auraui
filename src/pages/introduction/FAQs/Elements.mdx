@@ -1,0 +1,684 @@
+import { Tabs } from "nextra/components";
+import { Steps } from "nextra/components";
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import One from "@/components/Faqs/One";
+
+      <One />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const one = (props: Props) => {
+  return (
+    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            Frequently Asked Questions
+          </h2>
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+          <div className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                {" "}
+                How to create an account?{" "}
+              </span>
+
+              <svg
+                className="w-6 h-6 text-gray-400 rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+              <p>
+                Amet minim mollit non deserunt ullamco est sit{" "}
+                <a
+                  href="#"
+                  title=""
+                  className="text-blue-600 transition-all duration-200 hover:underline"
+                >
+                  aliqua dolor
+                </a>{" "}
+                do amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <div className="transition-all duration-200 bg-white border border-gray-200 cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                {" "}
+                How can I make payment using Paypal?{" "}
+              </span>
+
+              <svg
+                className="w-6 h-6 text-gray-400"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p>
+                Amet minim mollit non deserunt ullamco est sit{" "}
+                <a
+                  href="#"
+                  title=""
+                  className="text-blue-600 transition-all duration-200 hover:underline"
+                >
+                  aliqua dolor
+                </a>{" "}
+                do amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <div className="transition-all duration-200 bg-white border border-gray-200 cursor-pointer hover:bg-gray-50">
+            <div className="">
+              <button
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="flex text-lg font-semibold text-black">
+                  {" "}
+                  Can I cancel my plan?{" "}
+                </span>
+
+                <svg
+                  className="w-6 h-6 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit{" "}
+                  <a
+                    href="#"
+                    title=""
+                    className="text-blue-600 transition-all duration-200 hover:underline"
+                  >
+                    aliqua dolor
+                  </a>{" "}
+                  do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="transition-all duration-200 bg-white border border-gray-200 cursor-pointer hover:bg-gray-50">
+            <button
+              type="button"
+              className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+            >
+              <span className="flex text-lg font-semibold text-black">
+                {" "}
+                How can I reach to support?{" "}
+              </span>
+
+              <svg
+                className="w-6 h-6 text-gray-400"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div className="hidden px-4 pb-5 sm:px-6 sm:pb-6">
+              <p>
+                Amet minim mollit non deserunt ullamco est sit{" "}
+                <a
+                  href="#"
+                  title=""
+                  className="text-blue-600 transition-all duration-200 hover:underline"
+                >
+                  aliqua dolor
+                </a>{" "}
+                do amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-center text-gray-600 textbase mt-9">
+          Didn’t find the answer you are looking for?{" "}
+          <a
+            href="#"
+            title=""
+            className="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+          >
+            Contact our support
+          </a>
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default one;
+
+````
+</Tabs.Tab>
+</Tabs>
+
+
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Two from "@/components/Faqs/Two";
+
+      <Two />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const two = (props: Props) => {
+  return (
+    <section className="py-10 bg-gray-900 sm:py-16 lg:py-24">
+      <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+            Questions & Answers
+          </h2>
+          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-300">
+            Explore the common questions and answers about Celebration
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 mt-12 md:mt-20 md:grid-cols-2 gap-y-16 gap-x-20">
+          <div className="flex items-start">
+            <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-700 rounded-full">
+              <span className="text-lg font-semibold text-white">?</span>
+            </div>
+            <div className="ml-4">
+              <p className="text-xl font-semibold text-white">
+                How to create an account?
+              </p>
+              <p className="mt-4 text-base text-gray-400">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-700 rounded-full">
+              <span className="text-lg font-semibold text-white">?</span>
+            </div>
+            <div className="ml-4">
+              <p className="text-xl font-semibold text-white">
+                How can I make payment?
+              </p>
+              <p className="mt-4 text-base text-gray-400">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-700 rounded-full">
+              <span className="text-lg font-semibold text-white">?</span>
+            </div>
+            <div className="ml-4">
+              <p className="text-xl font-semibold text-white">
+                Do you provide discounts?
+              </p>
+              <p className="mt-4 text-base text-gray-400">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start">
+            <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-700 rounded-full">
+              <span className="text-lg font-semibold text-white">?</span>
+            </div>
+            <div className="ml-4">
+              <p className="text-xl font-semibold text-white">
+                How do you provide support?
+              </p>
+              <p className="mt-4 text-base text-gray-400">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center mt-12 md:mt-20">
+          <div className="px-8 py-4 text-center bg-gray-800 rounded-full">
+            <p className="text-gray-50">
+              Didn’t find the answer you are looking for?{" "}
+              <a
+                href="#"
+                title=""
+                className="text-yellow-300 transition-all duration-200 hover:text-yellow-400 focus:text-yellow-400 hover:underline"
+              >
+                Contact our support
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default two;
+
+
+
+````
+
+  </Tabs.Tab>
+</Tabs>
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Three from "@/components/Faqs/Three";
+
+      <Three />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const three = (props: Props) => {
+  return (
+    <section className="py-10 bg-white sm:py-16 lg:py-24">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          Frequently Asked Questions
+        </h2>
+
+        <div className="flow-root mt-12 sm:mt-16">
+          <div className="divide-y divide-gray--200 -my-9">
+            <div className="py-9">
+              <p className="text-xl font-semibold text-black">
+                How to create an account?
+              </p>
+              <p className="mt-3 text-base text-gray-600">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <p className="mt-3 text-base text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <div className="py-9">
+              <p className="text-xl font-semibold text-black">
+                What payment method do you support?
+              </p>
+              <p className="mt-3 text-base text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+
+            <div className="py-9">
+              <p className="text-xl font-semibold text-black">
+                What payment method do you support?
+              </p>
+              <p className="mt-3 text-base text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <div className="py-9">
+              <p className="text-xl font-semibold text-black">
+                How do you provide support?
+              </p>
+              <p className="mt-3 text-base text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt{" "}
+                <a
+                  href="#"
+                  title=""
+                  className="text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+                >
+                  support@Celebration.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default three;
+
+
+````
+  </Tabs.Tab>
+</Tabs>
+
+
+
+
+
+
+
+
+
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Four from "@/components/Faqs/Four";
+
+      <Four />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const four = (props: Props) => {
+  return (
+    <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-16 gap-y-12">
+          <div>
+            <p className="text-xs font-bold tracking-widest text-gray-400 uppercase">
+              FAQ
+            </p>
+            <h2 className="mt-6 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+              Discover the most common questions.
+            </h2>
+            <p className="mt-5 text-lg font-normal text-gray-600 sm:mt-8 font-pj">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              ornare adipiscing nunc, est nec, neque aliquet maecenas mi. Lacus,
+              pharetra aliquam.
+            </p>
+          </div>
+
+          <div>
+            <div className="space-y-8">
+              <div className="relative">
+                <div className="absolute -inset-2">
+                  <div
+                    className="w-full h-full mx-auto opacity-30 blur-lg filter"
+                    style={{
+                      background:
+                        "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
+                    }}
+                  ></div>
+                </div>
+
+                <div className="relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-lg">
+                  <div className="px-6 py-5 sm:py-8 sm:px-9">
+                    <p className="text-xl font-bold text-gray-900 font-pj">
+                      Does this theme supports plugins?
+                    </p>
+                    <p className="mt-6 text-base font-normal leading-7 text-gray-600 font-pj">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+                <div className="px-6 py-5 sm:py-8 sm:px-9">
+                  <p className="text-xl font-bold text-gray-900 font-pj">
+                    How to avail support?
+                  </p>
+                  <p className="mt-6 text-base font-normal leading-7 text-gray-600 font-pj">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <a
+                href="#"
+                title=""
+                className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
+              >
+                Check all common questions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default four;
+
+
+````
+
+  </Tabs.Tab>
+</Tabs>
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Five from "@/components/Faqs/Five";
+
+      <Five />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const five = (props: Props) => {
+  return (
+    <section className="py-12 bg-white sm:py-16 lg:py-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+            Frequently Asked Questions
+          </h2>
+          <p className="max-w-lg mx-auto mt-6 text-base text-gray-600 font-pj">
+            With lots of unique blocks, you can easily build a page without
+            coding. Build your next landing page.
+          </p>
+        </div>
+
+        <div className="grid max-w-5xl grid-cols-1 mx-auto mt-10 sm:mt-20 md:grid-cols-2 md:gap-x-16 gap-y-8 md:gap-y-12">
+          <div>
+            <p className="text-xl font-bold text-gray-900 sm:text-2xl font-pj">
+              How this theme is different from others in market?
+            </p>
+            <p className="mt-3 text-base font-normal text-gray-600 sm:mt-6 sm:text-lg font-pj">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xl font-bold text-gray-900 sm:text-2xl font-pj">
+              What kind of files are included?
+            </p>
+            <p className="mt-3 text-base font-normal text-gray-600 sm:mt-6 sm:text-lg font-pj">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xl font-bold text-gray-900 sm:text-2xl font-pj">
+              Does this theme supports plugins?
+            </p>
+            <p className="mt-3 text-base font-normal text-gray-600 sm:mt-6 sm:text-lg font-pj">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xl font-bold text-gray-900 sm:text-2xl font-pj">
+              How long do you provide support?
+            </p>
+            <p className="mt-3 text-base font-normal text-gray-600 sm:mt-6 sm:text-lg font-pj">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xl font-bold text-gray-900 sm:text-2xl font-pj">
+              Do you provide any moneyback guarantee in this product?
+            </p>
+            <p className="mt-3 text-base font-normal text-gray-600 sm:mt-6 sm:text-lg font-pj">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xl font-bold text-gray-900 sm:text-2xl font-pj">
+              How to avail support?
+            </p>
+            <p className="mt-3 text-base font-normal text-gray-600 sm:mt-6 sm:text-lg font-pj">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default five;
+
+
+```
+  </Tabs.Tab>
+</Tabs>
+
+
+
+
+
+
+
+
+
+
+
+

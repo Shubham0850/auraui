@@ -5,6 +5,20 @@
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
+      "toc": false,
+      "pagination": true
+    }
+  },
+
+  "Elements": {
+    "title": "Elements",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "layout": "full",
+
       "pagination": true
     }
   }

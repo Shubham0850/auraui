@@ -1,0 +1,777 @@
+import { Tabs } from "nextra/components";
+import { Steps } from "nextra/components";
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import One from "@/components/Stats/One";
+
+      <One />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const one = (props: Props) => {
+  return (
+    <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
+      <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            Numbers tell our story
+          </h2>
+          <p className="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+          <div>
+            <h3 className="font-bold text-7xl">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                {" "}
+                6+{" "}
+              </span>
+            </h3>
+            <p className="mt-4 text-xl font-medium text-gray-900">
+              Years in business
+            </p>
+            <p className="text-base mt-0.5 text-gray-500">
+              Creating the successful path
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-7xl">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                {" "}
+                4821{" "}
+              </span>
+            </h3>
+            <p className="mt-4 text-xl font-medium text-gray-900">
+              Projects delivered
+            </p>
+            <p className="text-base mt-0.5 text-gray-500">In last 6 years</p>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-7xl">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                {" "}
+                37+{" "}
+              </span>
+            </h3>
+            <p className="mt-4 text-xl font-medium text-gray-900">
+              Team members
+            </p>
+            <p className="text-base mt-0.5 text-gray-500">
+              Working for your success
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default one;
+
+
+````
+</Tabs.Tab>
+</Tabs>
+
+
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Two from "@/components/Stats/Two";
+
+      <Two />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const two = (props: Props) => {
+  return (
+    <section className="py-10 bg-white sm:py-16 lg:py-24">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h4 className="text-xl font-medium text-gray-900">
+            Numbers tell the hard works we’ve done in last 6 years
+          </h4>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 px-6 mt-8 sm:px-0 lg:mt-16 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-12">
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <svg
+                  className="flex-shrink-0 w-12 h-12 text-fuchsia-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                <div className="ml-4">
+                  <h4 className="text-4xl font-bold text-gray-900">6+</h4>
+                  <p className="mt-1.5 text-lg font-medium leading-tight text-gray-500">
+                    Years in business
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <svg
+                  className="flex-shrink-0 w-12 h-12 text-fuchsia-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <div className="ml-4">
+                  <h4 className="text-4xl font-bold text-gray-900">37+</h4>
+                  <p className="mt-1.5 text-lg font-medium leading-tight text-gray-500">
+                    Team members
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <svg
+                  className="flex-shrink-0 w-12 h-12 text-fuchsia-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <div className="ml-4">
+                  <h4 className="text-4xl font-bold text-gray-900">3,274</h4>
+                  <p className="mt-1.5 text-lg font-medium leading-tight text-gray-500">
+                    Projects delivered
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-hidden bg-white border border-gray-200 rounded-lg">
+            <div className="px-4 py-6">
+              <div className="flex items-start">
+                <svg
+                  className="flex-shrink-0 w-12 h-12 text-fuchsia-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                  />
+                </svg>
+                <div className="ml-4">
+                  <h4 className="text-4xl font-bold text-gray-900">98%</h4>
+                  <p className="mt-1.5 text-lg font-medium leading-tight text-gray-500">
+                    Customer success
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default two;
+
+
+````
+
+  </Tabs.Tab>
+</Tabs>
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Three from "@/components/Stats/Three";
+
+      <Three />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const three = (props: Props) => {
+  return (
+    <section className="py-10 bg-blue-600 sm:py-16 lg:py-24">
+      <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white sm:text-4xl sm:leading-tight">
+            Numbers tell all the hard works we’ve done in last 6 years
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 mt-8 lg:mt-16 sm:grid-cols-2 md:gap-8">
+          <div className="overflow-hidden bg-white rounded-lg">
+            <div className="px-7 py-9">
+              <div className="flex items-center">
+                <svg
+                  className="flex-shrink-0 w-16 h-16 text-gray-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+                <h3 className="ml-2 text-6xl font-bold text-gray-900">38</h3>
+              </div>
+              <p className="mt-6 text-base text-gray-600 md:max-w-xs">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequa.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-hidden bg-white rounded-lg">
+            <div className="px-7 py-9">
+              <div className="flex items-center">
+                <svg
+                  className="flex-shrink-0 w-16 h-16 text-gray-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+                <h3 className="ml-2 text-6xl font-bold text-gray-900">471+</h3>
+              </div>
+              <p className="mt-6 text-base text-gray-600 md:max-w-xs">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequa.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-hidden bg-white rounded-lg">
+            <div className="px-7 py-9">
+              <div className="flex items-center">
+                <svg
+                  className="flex-shrink-0 w-16 h-16 text-gray-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+                  />
+                </svg>
+                <h3 className="ml-2 text-6xl font-bold text-gray-900">1846</h3>
+              </div>
+              <p className="mt-6 text-base text-gray-600 md:max-w-xs">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequa.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-hidden bg-white rounded-lg">
+            <div className="px-7 py-9">
+              <div className="flex items-center">
+                <svg
+                  className="flex-shrink-0 w-16 h-16 text-gray-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  />
+                </svg>
+                <h3 className="ml-2 text-6xl font-bold text-gray-900">97%</h3>
+              </div>
+              <p className="mt-6 text-base text-gray-600 md:max-w-xs">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default three;
+
+
+
+````
+  </Tabs.Tab>
+</Tabs>
+
+
+
+
+
+
+
+
+
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Four from "@/components/Stats/Four";
+
+      <Four />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const four = (props: Props) => {
+  return (
+    <section className="py-12 bg-white sm:py-16 lg:py-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="md:flex md:items-center md:justify-between md:space-x-16">
+          <div className="max-w-lg xl:max-w-2xl">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+              The only platform that creates rare UI Kits.
+            </h2>
+          </div>
+
+          <div className="flex items-center flex-grow mt-12 space-x-4 sm:space-x-8 lg:space-x-16 md:mt-0">
+            <div>
+              <p className="text-4xl font-bold text-gray-900 xl:text-6xl font-pj">
+                1.5M
+              </p>
+              <p className="mt-2 text-base font-normal text-gray-600 lg:text-xl font-pj">
+                Active Customers
+              </p>
+            </div>
+
+            <div>
+              <svg
+                className="w-4 h-auto text-gray-300"
+                viewBox="0 0 16 81"
+                fill="none"
+                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 56)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 21)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 49)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 14)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 42)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 7)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 70)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 35)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 0)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 63)"
+                />
+                <line
+                  y1="-0.5"
+                  x2="18.0278"
+                  y2="-0.5"
+                  transform="matrix(0.83205 0.5547 0.5547 -0.83205 1 28)"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p className="text-4xl font-bold text-gray-900 xl:text-6xl font-pj">
+                4.8/5
+              </p>
+              <p className="mt-2 text-base font-normal text-gray-600 lg:text-xl font-pj">
+                Ratings on TrustPilot
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default four;
+
+
+````
+
+  </Tabs.Tab>
+</Tabs>
+
+# Placeholders And Vanish Input
+
+#### Sliding in placeholders and vanish effect of input on submit
+
+<Tabs items={['Preview', 'Code']}  >
+  <Tabs.Tab>
+ {/* ![Hello](/contact.png) */}
+
+import Five from "@/components/Stats/Five";
+
+      <Five />
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  ```js copy
+import React from "react";
+
+type Props = {};
+
+const five = (props: Props) => {
+  return (
+    <section className="py-12 bg-gray-900 sm:py-16 lg:py-20">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">
+            Join millions getting more resources
+          </h2>
+        </div>
+
+        <div className="mt-8 sm:mt-12">
+          <svg
+            className="w-auto h-4 mx-auto text-gray-600"
+            viewBox="0 0 172 16"
+            fill="none"
+            stroke="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"
+            />
+          </svg>
+        </div>
+
+        <div className="grid grid-cols-1 mt-16 text-center sm:text-left gap-y-12 gap-x-8 sm:grid-cols-3 lg:gap-0">
+          <div className="lg:px-14">
+            <p className="text-5xl font-bold text-white font-pj">1.5M</p>
+            <p className="mt-5 text-lg font-normal text-gray-300">
+              Lorem ipsum dolor sit amet, consect etur adipis elit. Sit enim
+              nec.
+            </p>
+          </div>
+
+          <div className="relative lg:px-14">
+            <div className="absolute bottom-0 left-0 hidden w-px h-16 bg-gray-600 lg:block"></div>
+            <p className="text-5xl font-bold text-white font-pj">41%</p>
+            <p className="mt-5 text-lg font-normal text-gray-300">
+              Lorem ipsum dolor sit amet, consect etur adipis elit. Sit enim
+              nec.
+            </p>
+          </div>
+
+          <div className="relative lg:px-14">
+            <div className="absolute bottom-0 left-0 hidden w-px h-16 bg-gray-600 lg:block"></div>
+            <p className="text-5xl font-bold text-white font-pj">3964+</p>
+            <p className="mt-5 text-lg font-normal text-gray-300">
+              Lorem ipsum dolor sit amet, consect etur adipis elit. Sit enim
+              nec.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default five;
+
+
+
+```
+  </Tabs.Tab>
+</Tabs>
+
+
+
+
+
+
+
+
+
+
+
+
