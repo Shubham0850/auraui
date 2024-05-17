@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Fifteent({}: Props) {
+function Fifteen({}: Props) {
   return (
     <div className="">
       <header className="py-4 bg-black sm:py-6" x-data="{expanded: false}">
@@ -226,4 +226,4 @@ function Fifteent({}: Props) {
   );
 }
 
-export default Fifteent;
+export default Fifteen;

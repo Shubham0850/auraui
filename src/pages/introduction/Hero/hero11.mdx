@@ -1,7 +1,7 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-import First from "@/components/Hero/1";
+import Eleven from "@/components/Hero/Eleven";
 
 # First Hero Component
 
@@ -11,47 +11,198 @@ import First from "@/components/Hero/1";
   <Tabs.Tab>
  {/* ![Hello](/contact.png) */}
 
-      <First/>
+      <Eleven/>
 
   </Tabs.Tab>
   <Tabs.Tab>
   ```js copy
 import React from "react";
 
-import Link from "next/link";
-import React from "react";
+type Props = {};
 
-function Hero() {
+function Eleven({}: Props) {
 return (
 
-<div className="">
-<section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
-<div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-<div className="max-w-3xl mx-auto text-center">
-<p className="inline-flex px-4 py-2 text-base text-gray-900 dark:text-gray-100 border rounded-full font-pj">Made by Developers, for Developers</p>
-<h1 className="mt-5 text-4xl font-bold leading-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">Quality resources shared by the community</h1>
-<p className="max-w-md mx-auto mt-6 text-base leading-7 text-gray-600 dark:text-gray-400 font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.</p>
+<div className="relative pt-48 pb-12 overflow-hidden bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
+<header className="absolute inset-x-0 top-0 z-10 py-8 xl:py-12">
+<div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+<div className="flex items-center justify-between">
+<div className="flex flex-shrink-0">
+<a
+                href="#"
+                title="BakerStreet"
+                className="inline-flex rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-offset-secondary focus:ring-primary"
+              >
+<img
+                  className="w-auto h-8"
+                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo.svg"
+                  alt="BakerStreet"
+                />
+</a>
+</div>
 
-            <div className="relative inline-flex mt-10 group">
-              <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+            <div className="md:hidden">
+              <button
+                type="button"
+                className="p-2 -m-2 transition-all duration-200 rounded-full text-white focus:outline-none focus:ring-offset-secondary focus:ring-2 focus:ring-offset-1 focus:ring-primary"
+              >
+                <svg
+                  className="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
 
-              <a href="#" title="" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
-                Get access to 4,958 resources
+            <div className="hidden md:flex md:items-center md:space-x-10 lg:ml-28">
+              <a
+                href="#"
+                title=""
+                className="font-sans text-base font-normal transition-all duration-200 rounded text-white focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
+              >
+                {" "}
+                About{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="font-sans text-base font-normal transition-all duration-200 rounded text-white focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
+              >
+                {" "}
+                Services{" "}
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="font-sans text-base font-normal transition-all duration-200 rounded text-white focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
+              >
+                {" "}
+                Contacts{" "}
               </a>
             </div>
           </div>
         </div>
+      </header>
 
-        <div className="mt-16 md:mt-20">
-          <img className="object-cover object-top w-full h-auto mx-auto scale-150 2xl:max-w-screen-2xl xl:scale-100" src="https://d33wubrfki0l68.cloudfront.net/54780decfb9574945bc873b582cdc6156144a2ba/d9fa1/images/hero/4/illustration.png" alt="" />
+      <div className="absolute inset-y-0 right-0">
+        <img
+          className="object-cover w-full h-full max-w-4xl origin-left opacity-50 xl:opacity-100 lg:scale-110 lg:-translate-x-8"
+          src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/hero/5/background.png"
+          alt=""
+        />
+      </div>
+
+      <div className="relative">
+        <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+          <div className="w-full text-right lg:w-2/3 xl:w-1/2 md:text-left">
+            <p className="font-sans text-base font-normal tracking-tight uppercase text-white">
+              STARTING AT $9.99/MONTH
+            </p>
+            <h1 className="mt-6 tracking-tighter text-white">
+              <span className="font-sans font-normal text-7xl">Master</span>
+              <br />
+              <span className="font-serif italic font-normal text-8xl">
+                Bread making
+              </span>
+            </h1>
+            <p className="mt-12 font-sans text-base font-normal leading-7 md:max-w-sm text-white text-opacity-70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu
+              penatibus pellentesque dolor consequat ligula egestas massa
+              gravida. Porttitor venenatis enim praesent.
+            </p>
+
+            <div className="flex items-center justify-end mt-8 space-x-3 md:justify-start sm:space-x-4">
+              <a
+                href="#"
+                title=""
+                className="
+                            inline-flex
+                            items-center
+                            justify-center
+                            px-5
+                            py-2
+                            font-sans
+                            text-base
+                            font-semibold
+                            transition-all
+                            duration-200
+                            border-2 border-transparent
+                            rounded-full
+                            sm:leading-8
+                            bg-white
+                            sm:text-lg
+                            text-black
+                            hover:bg-opacity-90
+                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-secondary
+                        "
+                role="button"
+              >
+                Get started
+              </a>
+
+              <a
+                href="#"
+                title=""
+                className="
+                            inline-flex
+                            items-center
+                            justify-center
+                            px-5
+                            py-2
+                            font-sans
+                            text-base
+                            font-semibold
+                            transition-all
+                            duration-200
+                            bg-transparent
+                            border-2
+                            rounded-full
+                            sm:leading-8
+                            text-white
+                            border-primary
+                            hover:bg-white
+                            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary
+                            hover:text-black
+                            sm:text-lg
+                            focus:ring-offset-secondary
+                        "
+                role="button"
+              >
+                <svg
+                  className="w-6 h-6 mr-2"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.0416 4.9192C7.37507 4.51928 6.5271 4.99939 6.5271 5.77669L6.5271 18.2232C6.5271 19.0005 7.37507 19.4806 8.0416 19.0807L18.4137 12.8574C19.061 12.469 19.061 11.5308 18.4137 11.1424L8.0416 4.9192Z"
+                  />
+                </svg>
+                Watch trailer
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
 
 );
 }
 
-export default Hero;
+export default Eleven;
 ```
   </Tabs.Tab>
 </Tabs
