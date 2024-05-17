@@ -9,53 +9,14 @@
       "pagination": true
     }
   },
-  "contact-1": {
-    "title": "Contact 1",
+  "Elements": {
+    "title": "Elements",
     "theme": {
       "breadcrumb": true,
       "footer": true,
-      "sidebar": true,
+      "sidebar": false,
       "toc": false,
-      "pagination": true
-    }
-  },
-  "contact-2": {
-    "title": "Contact 2",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
-  "contact-3": {
-    "title": "Contact 3",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
-  "contact-4": {
-    "title": "Contact 4",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "pagination": true
-    }
-  },
-  "contact-5": {
-    "title": "Contact 5",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
+      "layout": "full",
       "pagination": true
     }
   }
