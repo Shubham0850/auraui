@@ -11,11 +11,13 @@ const Footer = () => {
     <footer className="w-full">
       <div className="grid items-center grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-3">
         <div className="md:order-1">
+          <Link href={'/'}>
           {theme === "light" ? (
             <img className="w-auto h-8" src="/logo-light.png" alt="" />
           ) : (
             <img className="w-auto h-8" src="/logo-dark.png" alt="" />
           )}
+          </Link>
         </div>
 
         <div className="md:order-3">
