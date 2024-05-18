@@ -9,19 +9,7 @@
     }
   },
 
-  "details": {
-    "title": "Details Page",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "pagination": true
-    }
-  },
 
-  "about": {
-    "title": "About"
-  },
 
   "Hero": {
     "title": "Hero",

@@ -1,7 +1,19 @@
 import React from "react";
+import { useTheme,ThemeSwitch, Navbar } from "nextra-theme-docs";
+import ComponentSection from "../home/Components";
 
-function Navbar() {
-  return <div>Navbar</div>;
+function Nav() {
+
+  const compo ={
+
+  }
+
+  return (
+    <div>
+      <ThemeSwitch/>
+      <Navbar items={[]} flatDirectories={[]} />
+    </div>
+  );
 }
 
-export default Navbar;
+export default Nav;

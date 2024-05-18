@@ -3,6 +3,7 @@ import { DocsThemeConfig} from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 import { title } from "process";
 import { useTheme} from "nextra-theme-docs";
+import Navbar from "@/components/layout/Navbar";
 
 
 const config: DocsThemeConfig = {
@@ -31,8 +32,7 @@ const config: DocsThemeConfig = {
   ),
 
 //  navbar:{
-//    component:'darkMode',
-//    extraContent: ""
+//    component: <> <Navbar/> </>,
 //  },
 
 

@@ -6,15 +6,10 @@
       "layout": "full"
     }
   },
-  "introduction": {
+  "components": {
     "title": "Components",
     "type": "page"
-  },
-  "pricing": {
-    "title": "Pricing",
-    "type": "page",
-    "theme": {
-      "layout": "full"
-    }
   }
+ 
+  
 }
