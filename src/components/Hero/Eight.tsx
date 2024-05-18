@@ -16,8 +16,8 @@ function Eight({}: Props) {
               >
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
-                  alt=""
+                  src="/logo-light.png"
+                  alt="image"
                 />
               </a>
             </div>

@@ -19,25 +19,25 @@ import Three from "@/components/Hero/Three";
   </Tabs.Tab>
   <Tabs.Tab>
   ```js copy
-  import React from "react";
+ import React from "react";
 
 type Props = {};
 
 function Three({}: Props) {
-return (
-<div className="bg-white">
-<header className="bg-[#FCF8F1] bg-opacity-30">
-<div className="px-4 mx-auto sm:px-6 lg:px-8">
-<div className="flex items-center justify-between h-16 lg:h-20">
-<div className="flex-shrink-0">
-<a href="#" title="" className="flex">
-<img
+  return (
+    <div className="bg-white">
+      <header className="bg-[#FCF8F1] bg-opacity-30">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            <div className="flex-shrink-0">
+              <a href="#" title="" className="flex">
+                <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                  src="/logo-light.png"
                   alt=""
                 />
-</a>
-</div>
+              </a>
+            </div>
 
             <button
               type="button"
@@ -108,7 +108,7 @@ return (
                 className="text-base text-black transition-all duration-200 hover:text-opacity-80"
               >
                 {" "}
-                Pricing{" "}
+                About Us{" "}
               </a>
             </div>
 
@@ -129,11 +129,11 @@ return (
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
-              <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
-                A social media for learners
+              <p className="text-base font-semibold tracking-wider text-yellow-600 uppercase">
+               Learning Area for learners
               </p>
               <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
-                Connect & learn from the experts
+                Talk & learn from the experts
               </h1>
               <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
                 Grow your career fast with right mentor.
@@ -145,7 +145,7 @@ return (
                 className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                 role="button"
               >
-                Join for free
+                Sign in
                 <svg
                   className="w-6 h-6 ml-8 -mr-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -185,8 +185,7 @@ return (
         </div>
       </section>
     </div>
-
-);
+  );
 }
 
 export default Three;
@@ -232,7 +231,7 @@ function Four({}: Props) {
               <a href="#" title="" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/logo.svg"
+                  src="/logo-light.png"
                   alt="logo"
                 />
               </a>
@@ -286,7 +285,7 @@ function Four({}: Props) {
                 title=""
                 className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
               >
-                Pricing
+               About Us
               </a>
               <a
                 href="#"
@@ -322,7 +321,7 @@ function Four({}: Props) {
                   title=""
                   className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
                 >
-                  Pricing
+                 About Us
                 </a>
                 <a
                   href="#"
@@ -759,6 +758,7 @@ function Four({}: Props) {
 
 export default Four;
 
+
 ````
 
   </Tabs.Tab>
@@ -790,20 +790,20 @@ import React from "react";
 type Props = {};
 
 function Five({}: Props) {
-return (
-<div className="relative">
-<header className="absolute inset-x-0 top-0 z-10 w-full">
-<div className="px-4 mx-auto sm:px-6 lg:px-8">
-<div className="flex items-center justify-between h-16 lg:h-20">
-<div className="flex-shrink-0">
-<a href="#" title="" className="flex">
-<img
+  return (
+    <div className="relative">
+      <header className="absolute inset-x-0 top-0 z-10 w-full">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            <div className="flex-shrink-0">
+              <a href="#" title="" className="flex">
+                <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/logo.svg"
+                  src="/logo-light.png"
                   alt=""
                 />
-</a>
-</div>
+              </a>
+            </div>
 
             <button
               type="button"
@@ -847,7 +847,7 @@ return (
                 className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
               >
                 {" "}
-                Features{" "}
+               About Us{" "}
               </a>
 
               <a
@@ -856,7 +856,7 @@ return (
                 className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
               >
                 {" "}
-                Solutions{" "}
+                Contact{" "}
               </a>
 
               <a
@@ -884,7 +884,7 @@ return (
                 role="button"
               >
                 {" "}
-                Try for free{" "}
+                Use me{" "}
               </a>
             </div>
           </div>
@@ -994,11 +994,11 @@ return (
         </div>
       </section>
     </div>
-
-);
+  );
 }
 
 export default Five;
+
 
 ```
   </Tabs.Tab>
@@ -1047,8 +1047,8 @@ function Eight({}: Props) {
               >
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
-                  alt=""
+                  src="/logo-light.png"
+                  alt="image"
                 />
               </a>
             </div>
@@ -1301,15 +1301,15 @@ import React from "react";
 type Props = {};
 
 function Nine({}: Props) {
-return (
-<div className="relative bg-gray-50">
-<div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
-<img
+  return (
+    <div className="relative bg-gray-50">
+      <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
+        <img
           className="w-auto h-full"
           src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
           alt=""
         />
-</div>
+      </div>
 
       <header className="relative py-4 md:py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -1322,7 +1322,7 @@ return (
               >
                 <img
                   className="w-auto h-8"
-                  src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg"
+                  src="/logo-light.png"
                   alt=""
                 />
               </a>
@@ -1483,11 +1483,11 @@ return (
         </div>
       </section>
     </div>
-
-);
+  );
 }
 
 export default Nine;
+
 
 ```
   </Tabs.Tab>
@@ -1495,9 +1495,6 @@ export default Nine;
 
 >
 
-```
-
-```
 
 
 
@@ -1507,4 +1504,3 @@ export default Nine;
 
 
 
-```

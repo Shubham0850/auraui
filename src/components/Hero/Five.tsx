@@ -12,7 +12,7 @@ function Five({}: Props) {
               <a href="#" title="" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/logo.svg"
+                  src="/logo-light.png"
                   alt=""
                 />
               </a>
@@ -60,7 +60,7 @@ function Five({}: Props) {
                 className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
               >
                 {" "}
-                Features{" "}
+               About Us{" "}
               </a>
 
               <a
@@ -69,7 +69,7 @@ function Five({}: Props) {
                 className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
               >
                 {" "}
-                Solutions{" "}
+                Contact{" "}
               </a>
 
               <a
@@ -97,7 +97,7 @@ function Five({}: Props) {
                 role="button"
               >
                 {" "}
-                Try for free{" "}
+                Use me{" "}
               </a>
             </div>
           </div>

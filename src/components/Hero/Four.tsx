@@ -12,7 +12,7 @@ function Four({}: Props) {
               <a href="#" title="" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/logo.svg"
+                  src="/logo-light.png"
                   alt="logo"
                 />
               </a>
@@ -66,7 +66,7 @@ function Four({}: Props) {
                 title=""
                 className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
               >
-                Pricing
+               About Us
               </a>
               <a
                 href="#"
@@ -102,7 +102,7 @@ function Four({}: Props) {
                   title=""
                   className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
                 >
-                  Pricing
+                 About Us
                 </a>
                 <a
                   href="#"
