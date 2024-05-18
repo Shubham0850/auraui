@@ -212,7 +212,7 @@ function Seventeen({}: Props) {
                       <p className="text-base font-normal leading-6 text-white">
                         You made it so simple. Our new site is so much faster
                         and easier to work with than my old site. I just choose
-                        the page, make the change and it's done.
+                        the page, make the change and it&apos;s done.
                       </p>
                     </blockquote>
                     <p className="mt-4 text-base font-semibold text-white">
