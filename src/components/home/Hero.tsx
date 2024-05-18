@@ -1,4 +1,5 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 function IconReactjsFill(props: any) {
   return (
@@ -80,16 +81,31 @@ function IconCommand(props: any) {
   );
 }
 
-
 const Hero = () => {
   return (
     <div className="border-b border-gray-200 dark:border-gray-800 py-16">
-
       <div className="absolute transform -translate-x-1/2 translate-y-full -top-1/4 left-1/2 -z-[10]">
-        <svg className="opacity-50 blur-3xl filter" style={{ filter: "blur(100px)" }} width="600" height="300" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M183.151 216.787C86.498 123.868-62.309 137.493 30.03 41.445c92.337-96.049 494.126-6.876 590.779 86.043 96.652 92.919-148.432 154.396-240.769 250.445-92.338 96.048-100.237-68.228-196.889-161.146Z" fill="url(#b)" />
+        <svg
+          className="opacity-50 blur-3xl filter"
+          style={{ filter: "blur(100px)" }}
+          width="600"
+          height="300"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M183.151 216.787C86.498 123.868-62.309 137.493 30.03 41.445c92.337-96.049 494.126-6.876 590.779 86.043 96.652 92.919-148.432 154.396-240.769 250.445-92.338 96.048-100.237-68.228-196.889-161.146Z"
+            fill="url(#b)"
+          />
           <defs>
-            <linearGradient id="b" x1="663.766" y1="168.785" x2="303.65" y2="469.667" gradientUnits="userSpaceOnUse">
+            <linearGradient
+              id="b"
+              x1="663.766"
+              y1="168.785"
+              x2="303.65"
+              y2="469.667"
+              gradientUnits="userSpaceOnUse"
+            >
               <stop offset="0%" style={{ stopColor: "#A854F7" }} />
               <stop offset="100%" style={{ stopColor: "#9d42f2" }} />
             </linearGradient>
@@ -109,7 +125,8 @@ const Hero = () => {
           </div>
         </div>
         <h1 className="mt-8 text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl">
-          <span className="text-purple-500"> Stop Coding</span> from Scratch:<br /> A UI Library for Every Skill Level
+          <span className="text-purple-500"> Stop Coding</span> from Scratch:
+          <br /> A UI Library for Every Skill Level
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">
           Quickly Copy, paste, and launch your website 🏎️ fasterrrrrr than ever!
@@ -120,36 +137,53 @@ const Hero = () => {
             <div>
               <div className="flex items-center justify-center mx-auto bg-transparent backdrop-blur-lg border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-16">
                 <IconCommand width={24} height={24} />
-                <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex"> C </span>
+                <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
+                  {" "}
+                  C{" "}
+                </span>
               </div>
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">Copy the code</p>
+            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">
+              Copy the code
+            </p>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-16">
               <IconCommand width={24} height={24} />
-              <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex"> V </span>
+              <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
+                {" "}
+                V{" "}
+              </span>
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">Paste anywhere</p>
-
+            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">
+              Paste anywhere
+            </p>
           </div>
           <div className="text-center">
             <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-max px-10 h-16">
               <IconCommand width={24} height={24} />
-              <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex"> Ship </span>
+              <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
+                {" "}
+                Ship{" "}
+              </span>
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">Ship your website</p>
+            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">
+              Ship your website
+            </p>
           </div>
         </div>
         <div className="mt-8 flex justify-center space-x-4">
-          <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
-            Try a free component
-          </button>
-          <button className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-            Browse components
-          </button>
+          <Link href="/components">
+            <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+              Try a free component
+            </button>
+          </Link>
+          <Link href="#global">
+            <button className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+              Browse components
+            </button>
+          </Link>
         </div>
-
       </div>
     </div>
   );

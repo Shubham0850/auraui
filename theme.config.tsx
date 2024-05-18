@@ -1,10 +1,14 @@
 import React from "react";
-import { DocsThemeConfig} from "nextra-theme-docs";
+import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
+<<<<<<< HEAD
 import { title } from "process";
 import { useTheme} from "nextra-theme-docs";
 import Navbar from "@/components/layout/Navbar";
 
+=======
+import { useTheme } from "nextra-theme-docs";
+>>>>>>> a3848efd90fc49b786968b07cfbff55529e724d8
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -31,10 +35,17 @@ const config: DocsThemeConfig = {
     </>
   ),
 
+<<<<<<< HEAD
 //  navbar:{
 //    component: <> <Navbar/> </>,
 //  },
 
+=======
+  //  navbar:{
+  //    component:'darkMode',
+  //    extraContent: ""
+  //  },
+>>>>>>> a3848efd90fc49b786968b07cfbff55529e724d8
 
   // project: {
   //   link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",
