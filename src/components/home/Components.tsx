@@ -94,7 +94,7 @@ const reactNativeCategories = [
 
 const ComponentSection = () => {
   return (
-    <div className="py-20 ">
+    <div className="py-20" id="global">
       <div className="max-w-7xl mx-auto">
         <div className="text-left">
           <h2 className="text-3xl font-semibold tracking-wide uppercase">
