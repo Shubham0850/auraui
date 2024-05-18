@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function IconReactjsFill(props: any) {
@@ -172,14 +173,16 @@ const Hero = () => {
           </div>
         </div>
         <div className="mt-8 flex justify-center space-x-4">
-          <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
-            Try a free component
-          </button>
-          <a href="#global">
+          <Link href="/components">
+            <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+              Try a free component
+            </button>
+          </Link>
+          <Link href="#global">
             <button className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
               Browse components
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
