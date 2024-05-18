@@ -1,9 +1,7 @@
 import React from "react";
-import { DocsThemeConfig} from "nextra-theme-docs";
+import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
-import { title } from "process";
-import { useTheme} from "nextra-theme-docs";
-
+import { useTheme } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -30,11 +28,10 @@ const config: DocsThemeConfig = {
     </>
   ),
 
-//  navbar:{
-//    component:'darkMode',
-//    extraContent: ""
-//  },
-
+  //  navbar:{
+  //    component:'darkMode',
+  //    extraContent: ""
+  //  },
 
   // project: {
   //   link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",
