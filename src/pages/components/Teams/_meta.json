@@ -15,7 +15,7 @@
     "theme": {
       "breadcrumb": true,
       "footer": true,
-      "sidebar": false,
+      "sidebar": true,
       "toc": false,
       "layout": "full",
 
