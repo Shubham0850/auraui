@@ -1,6 +1,6 @@
 import React from "react";
 
-const One = () => {
+const SignUpBusiness = () => {
   return (
     <div>
       <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
@@ -171,7 +171,10 @@ const One = () => {
                 <div className="absolute -inset-4">
                   <div
                     className="w-full h-full mx-auto rounded-3xl opacity-30 blur-lg filter"
-                    style={{background: 'linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%'}}
+                    style={{
+                      background:
+                        "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%",
+                    }}
                   ></div>
                 </div>
 
@@ -288,4 +291,4 @@ const One = () => {
   );
 };
 
-export default One;
+export default SignUpBusiness;

@@ -2,9 +2,10 @@ import React from "react";
 
 type Props = {};
 
-function AuraFooterOne({ }: Props) {
+function AuraFooterOne({}: Props) {
   // Common anchor styles
-  const anchorStyles = "text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80";
+  const anchorStyles =
+    "text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80";
 
   return (
     <section className="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
@@ -15,16 +16,24 @@ function AuraFooterOne({ }: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a href="#" title="About" className={anchorStyles}>About</a>
+                <a href="#" title="About" className={anchorStyles}>
+                  About
+                </a>
               </li>
               <li>
-                <a href="#" title="Features" className={anchorStyles}>Features</a>
+                <a href="#" title="Features" className={anchorStyles}>
+                  Features
+                </a>
               </li>
               <li>
-                <a href="#" title="Works" className={anchorStyles}>Works</a>
+                <a href="#" title="Works" className={anchorStyles}>
+                  Works
+                </a>
               </li>
               <li>
-                <a href="#" title="Career" className={anchorStyles}>Career</a>
+                <a href="#" title="Career" className={anchorStyles}>
+                  Career
+                </a>
               </li>
             </ul>
           </div>
@@ -34,16 +43,24 @@ function AuraFooterOne({ }: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a href="#" title="Customer Support" className={anchorStyles}>Customer Support</a>
+                <a href="#" title="Customer Support" className={anchorStyles}>
+                  Customer Support
+                </a>
               </li>
               <li>
-                <a href="#" title="Delivery Details" className={anchorStyles}>Delivery Details</a>
+                <a href="#" title="Delivery Details" className={anchorStyles}>
+                  Delivery Details
+                </a>
               </li>
               <li>
-                <a href="#" title="Terms & Conditions" className={anchorStyles}>Terms & Conditions</a>
+                <a href="#" title="Terms & Conditions" className={anchorStyles}>
+                  Terms & Conditions
+                </a>
               </li>
               <li>
-                <a href="#" title="Privacy Policy" className={anchorStyles}>Privacy Policy</a>
+                <a href="#" title="Privacy Policy" className={anchorStyles}>
+                  Privacy Policy
+                </a>
               </li>
             </ul>
           </div>
@@ -53,16 +70,28 @@ function AuraFooterOne({ }: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a href="#" title="Free eBooks" className={anchorStyles}>Free eBooks</a>
+                <a href="#" title="Free eBooks" className={anchorStyles}>
+                  Free eBooks
+                </a>
               </li>
               <li>
-                <a href="#" title="Development Tutorial" className={anchorStyles}>Development Tutorial</a>
+                <a
+                  href="#"
+                  title="Development Tutorial"
+                  className={anchorStyles}
+                >
+                  Development Tutorial
+                </a>
               </li>
               <li>
-                <a href="#" title="How to - Blog" className={anchorStyles}>How to - Blog</a>
+                <a href="#" title="How to - Blog" className={anchorStyles}>
+                  How to - Blog
+                </a>
               </li>
               <li>
-                <a href="#" title="YouTube Playlist" className={anchorStyles}>YouTube Playlist</a>
+                <a href="#" title="YouTube Playlist" className={anchorStyles}>
+                  YouTube Playlist
+                </a>
               </li>
             </ul>
           </div>
@@ -72,16 +101,24 @@ function AuraFooterOne({ }: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a href="#" title="Customer Support" className={anchorStyles}>Customer Support</a>
+                <a href="#" title="Customer Support" className={anchorStyles}>
+                  Customer Support
+                </a>
               </li>
               <li>
-                <a href="#" title="Delivery Details" className={anchorStyles}>Delivery Details</a>
+                <a href="#" title="Delivery Details" className={anchorStyles}>
+                  Delivery Details
+                </a>
               </li>
               <li>
-                <a href="#" title="Terms & Conditions" className={anchorStyles}>Terms & Conditions</a>
+                <a href="#" title="Terms & Conditions" className={anchorStyles}>
+                  Terms & Conditions
+                </a>
               </li>
               <li>
-                <a href="#" title="Privacy Policy" className={anchorStyles}>Privacy Policy</a>
+                <a href="#" title="Privacy Policy" className={anchorStyles}>
+                  Privacy Policy
+                </a>
               </li>
             </ul>
           </div>

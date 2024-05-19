@@ -1,6 +1,6 @@
 import React from "react";
 
-const One = () => {
+const LoginCard = () => {
   return (
     <div>
       <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gray-50">
@@ -136,4 +136,4 @@ const One = () => {
   );
 };
 
-export default One;
+export default LoginCard;
