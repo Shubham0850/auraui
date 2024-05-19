@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {}
 
 const eight = (props: Props) => {
-	return (
+	return ( 
 		<footer className="py-12 bg-black">
 			<div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
 				<div className="grid grid-cols-1 gap-y-12 lg:grid-cols-7 gap-x-8">

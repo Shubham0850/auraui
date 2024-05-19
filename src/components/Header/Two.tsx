@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const Two = (props: Props) => {
   return (
     <header className="pb-6 bg-white lg:pb-0">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -12,7 +12,7 @@ const two = (props: Props) => {
             <a href="#" title="" className="flex">
               <img
                 className="w-auto h-8 lg:h-10"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                src="https://www.auraui.com/logo-light.png"
                 alt=""
               />
             </a>
@@ -163,4 +163,4 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default Two;

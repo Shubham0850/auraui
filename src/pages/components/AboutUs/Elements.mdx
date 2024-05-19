@@ -11,15 +11,20 @@ import { Steps } from "nextra/components";
 `Special{:jsx}`
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import UiSamples from "@/components/home/UiSamples";
 
       <UiSamples />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
@@ -75,8 +80,10 @@ export default function ContactForm(): JSX.Element {
 );
 }
 
-````
+```
+  </div>
   </Tabs.Tab>
 </Tabs
 
 >
+```

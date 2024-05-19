@@ -2,9 +2,9 @@ import React from "react";
 
 type Props = {};
 
-const four = (props: Props) => {
+const Four = (props: Props) => {
   return (
-    <header className="bg-white lg:py-8">
+    <header className="bg-white ">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* <!-- lg+ --> */}
         <nav className="relative flex items-center justify-between h-16 bg-white lg:rounded-md lg:shadow-lg lg:h-24 lg:px-8 lg:py-6">
@@ -12,7 +12,7 @@ const four = (props: Props) => {
             <a href="#" title="" className="flex">
               <img
                 className="w-auto h-8 lg:h-10"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                src="https://www.auraui.com/logo-light.png"
                 alt=""
               />
             </a>
@@ -155,4 +155,4 @@ const four = (props: Props) => {
   );
 };
 
-export default four;
+export default Four;

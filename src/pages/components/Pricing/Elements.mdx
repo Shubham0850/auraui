@@ -6,15 +6,20 @@ import { Steps } from "nextra/components";
 #### Sliding in placeholders and vanish effect of input on submit
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import One from "@/components/Pricing/One";
 
       <One />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 
 import React from "react";
@@ -22,18 +27,19 @@ import React from "react";
 type Props = {};
 
 const one = (props: Props) => {
-  return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Pricing & Plans
-          </h2>
-          <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis.
-          </p>
-        </div>
+return (
+
+<section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div className="max-w-2xl mx-auto text-center">
+<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+Pricing & Plans
+</h2>
+<p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+sint. Velit officia consequat duis.
+</p>
+</div>
 
         <div className="mt-10">
           <div className="flex items-center justify-center space-x-2.5">
@@ -337,14 +343,15 @@ const one = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default one;
 
-
 ````
-</Tabs.Tab>
+</div>
+  </Tabs.Tab>
 </Tabs>
 
 
@@ -354,15 +361,20 @@ export default one;
 #### Sliding in placeholders and vanish effect of input on submit
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Two from "@/components/Pricing/Two";
 
       <Two />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
@@ -598,6 +610,7 @@ export default two;
 
 ````
 
+  </div>
   </Tabs.Tab>
 </Tabs>
 
@@ -606,32 +619,38 @@ export default two;
 #### Sliding in placeholders and vanish effect of input on submit
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Three from "@/components/Pricing/Three";
 
       <Three />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
 type Props = {};
 
 const three = (props: Props) => {
-  return (
-    <section className="py-10 bg-white sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Simple Pricing
-          </h2>
-          <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Try free for 30 Days
-          </p>
-        </div>
+return (
+
+<section className="py-10 bg-white sm:py-16 lg:py-24">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div className="max-w-2xl mx-auto text-center">
+<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+Simple Pricing
+</h2>
+<p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
+Try free for 30 Days
+</p>
+</div>
 
         <div className="grid grid-cols-1 gap-6 mx-auto mt-8 text-center md:max-w-5xl sm:grid-cols-3 md:gap-8 sm:mt-16">
           <div className="relative overflow-hidden bg-transparent border-2 border-gray-100 rounded-md">
@@ -748,13 +767,14 @@ const three = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default three;
 
-
 ````
+  </div>
   </Tabs.Tab>
 </Tabs>
 
@@ -772,15 +792,20 @@ export default three;
 #### Sliding in placeholders and vanish effect of input on submit
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Four from "@/components/Pricing/Four";
 
       <Four />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from 'react'
 
@@ -1226,6 +1251,7 @@ export default four
 
 ````
 
+  </div>
   </Tabs.Tab>
 </Tabs>
 
@@ -1234,30 +1260,36 @@ export default four
 #### Sliding in placeholders and vanish effect of input on submit
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Five from "@/components/Pricing/Five";
 
       <Five />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
 type Props = {};
 
 const five = (props: Props) => {
-  return (
-    <section className="relative py-10 overflow-hidden bg-blue-600 sm:py-16 lg:py-24">
-      <div className="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
-        <img
+return (
+
+<section className="relative py-10 overflow-hidden bg-blue-600 sm:py-16 lg:py-24">
+<div className="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
+<img
           className="object-cover w-full h-full"
           src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/8/lines.svg"
           alt=""
         />
-      </div>
+</div>
 
       <div className="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="grid items-end grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-20">
@@ -1430,13 +1462,14 @@ const five = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default five;
 
-
 ```
+  </div>
   </Tabs.Tab>
 </Tabs>
 

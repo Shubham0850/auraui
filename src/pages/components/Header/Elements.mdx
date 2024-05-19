@@ -1,20 +1,35 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-# Placeholders And Vanish Input
+# Header Component
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+This Header Elements Section Contains Various Header components.
+
+## Usage
+
+To integrate a Header Components into your Next.js Project,copy and paste the following code.
+
+## Simple Header
+
+This navbar features a straightforward design with minimal items and a clear layout, suitable for basic navigation needs.
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import One from "@/components/Header/One";
 
       <One />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 
 import React from "react";
@@ -22,17 +37,18 @@ import React from "react";
 type Props = {};
 
 const one = (props: Props) => {
-  return (
-    <header>
-      {/* <!-- lg+ --> */}
-      <div className="bg-gray-100 border-b border-gray-200">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8">
-          <nav className="relative flex items-center justify-between h-16 lg:h-20">
-            <div className="hidden lg:flex lg:items-center lg:space-x-10">
-              <a href="#" title="" className="text-base font-medium text-black">
-                {" "}
-                Features{" "}
-              </a>
+return (
+
+<header>
+{/* <!-- lg+ --> */}
+<div className="bg-gray-100 border-b border-gray-200">
+<div className="px-4 mx-auto sm:px-6 lg:px-8">
+<nav className="relative flex items-center justify-between h-16 lg:h-20">
+<div className="hidden lg:flex lg:items-center lg:space-x-10">
+<a href="#" title="" className="text-base font-medium text-black">
+{" "}
+Features{" "}
+</a>
 
               <a href="#" title="" className="text-base font-medium text-black">
                 {" "}
@@ -231,33 +247,38 @@ const one = (props: Props) => {
         </div>
       </nav>
     </header>
-  );
+
+);
 };
 
 export default one;
 
- 
-
 ````
-</Tabs.Tab>
+</div>
+  </Tabs.Tab>
 </Tabs>
 
 
 
-# Placeholders And Vanish Input
+## User Account Navbar
 
-#### Sliding in placeholders and vanish effect of input on submit
+This navbar includes links for signing up, signing in, and a user profile icon, making it ideal for websites that require user authentication and account management.
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Two from "@/components/Header/Two";
 
       <Two />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
@@ -430,43 +451,51 @@ export default two;
 
 ````
 
+  </div>
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
+## Call-to-Action Navbar
 
-#### Sliding in placeholders and vanish effect of input on submit
+This navbar prominently features a call-to-action button ("Get started now") along with standard navigation links, perfect for websites looking to drive user engagement or conversions.
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+
+<Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Three from "@/components/Header/Three";
 
       <Three />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
 type Props = {};
 
 const three = (props: Props) => {
-  return (
-    <header className="bg-black border-b border-gray-700">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* <!-- lg+ --> */}
-        <nav className="flex items-center justify-between h-16 lg:h-20">
-          <div className="flex-shrink-0">
-            <a href="#" title="" className="flex">
-              <img
+return (
+
+<header className="bg-black border-b border-gray-700">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+{/* <!-- lg+ --> */}
+<nav className="flex items-center justify-between h-16 lg:h-20">
+<div className="flex-shrink-0">
+<a href="#" title="" className="flex">
+<img
                 className="w-auto h-8 lg:h-10"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/logo-alt.svg"
                 alt=""
               />
-            </a>
-          </div>
+</a>
+</div>
 
           <button
             type="button"
@@ -589,13 +618,14 @@ const three = (props: Props) => {
         </nav>
       </div>
     </header>
-  );
+
+);
 };
 
 export default three;
 
-
 ````
+  </div>
   </Tabs.Tab>
 </Tabs>
 
@@ -608,20 +638,25 @@ export default three;
 
 
 
-# Placeholders And Vanish Input
+## Authentication Navbar
 
-#### Sliding in placeholders and vanish effect of input on submit
-
+ The Authentication Navbar is designed for websites that require user login and registration features. It includes links for signing up, signing in, and a user profile icon, making it easy for users to manage their accounts seamlessly.
+ 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Four from "@/components/Header/Four";
 
       <Four />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   ```js copy
 import React from "react";
 
@@ -786,40 +821,48 @@ export default four;
 
 ````
 
+  </div>
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
+## Promotional Navbar
 
-#### Sliding in placeholders and vanish effect of input on submit
+The Promotional Navbar is designed to draw attention with a strong call-to-action button ("Join Now"). It features standard navigation links and a visually appealing background, making it perfect for websites focused on driving user sign-ups or other conversions.
 
 <Tabs items={['Preview', 'Code']}  >
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
 import Five from "@/components/Header/Five";
 
       <Five />
 
+  </div>
   </Tabs.Tab>
-  <Tabs.Tab>
+   <Tabs.Tab>
+
+  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
+
   ```js copy
 import React from "react";
 
 type Props = {};
 
 const five = (props: Props) => {
-  return (
-    <header>
-      {/* <!-- lg+ --> */}
-      <div className="relative bg-black">
-        <div className="absolute inset-0">
-          <img
+return (
+
+<header>
+{/* <!-- lg+ --> */}
+<div className="relative bg-black">
+<div className="absolute inset-0">
+<img
             className="object-cover w-full h-full"
             src="https://cdn.rareblocks.xyz/collection/celebration/images/headers/3/coworking-space.jpg"
             alt=""
           />
-        </div>
+</div>
 
         <div className="absolute inset-0 bg-black/30"></div>
 
@@ -965,23 +1008,14 @@ const five = (props: Props) => {
         </div>
       </nav>
     </header>
-  );
+
+);
 };
 
 export default five;
 
-
 ```
+
+  </div>
   </Tabs.Tab>
 </Tabs>
-
-
-
-
-
-
-
-
-
-
-

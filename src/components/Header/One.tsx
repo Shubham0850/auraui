@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const One = (props: Props) => {
   return (
     <header>
       {/* <!-- lg+ --> */}
@@ -36,7 +36,7 @@ const one = (props: Props) => {
                 <a href="#" title="" className="flex">
                   <img
                     className="w-auto h-8 lg:h-10"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                    src="https://www.auraui.com/logo-light.png"
                     alt=""
                   />
                 </a>
@@ -215,4 +215,4 @@ const one = (props: Props) => {
   );
 };
 
-export default one;
+export default One;
