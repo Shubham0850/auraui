@@ -2,7 +2,10 @@ import React from "react";
 
 type Props = {};
 
-function one({}: Props) {
+function AuraFooterOne({ }: Props) {
+  // Common anchor styles
+  const anchorStyles = "text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80";
+
   return (
     <section className="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -12,44 +15,16 @@ function one({}: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  About{" "}
-                </a>
+                <a href="#" title="About" className={anchorStyles}>About</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Features{" "}
-                </a>
+                <a href="#" title="Features" className={anchorStyles}>Features</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Works{" "}
-                </a>
+                <a href="#" title="Works" className={anchorStyles}>Works</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Career{" "}
-                </a>
+                <a href="#" title="Career" className={anchorStyles}>Career</a>
               </li>
             </ul>
           </div>
@@ -59,44 +34,16 @@ function one({}: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Customer Support{" "}
-                </a>
+                <a href="#" title="Customer Support" className={anchorStyles}>Customer Support</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Delivery Details{" "}
-                </a>
+                <a href="#" title="Delivery Details" className={anchorStyles}>Delivery Details</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Terms & Conditions{" "}
-                </a>
+                <a href="#" title="Terms & Conditions" className={anchorStyles}>Terms & Conditions</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Privacy Policy{" "}
-                </a>
+                <a href="#" title="Privacy Policy" className={anchorStyles}>Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -106,44 +53,16 @@ function one({}: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Free eBooks{" "}
-                </a>
+                <a href="#" title="Free eBooks" className={anchorStyles}>Free eBooks</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Development Tutorial{" "}
-                </a>
+                <a href="#" title="Development Tutorial" className={anchorStyles}>Development Tutorial</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  How to - Blog{" "}
-                </a>
+                <a href="#" title="How to - Blog" className={anchorStyles}>How to - Blog</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  YouTube Playlist{" "}
-                </a>
+                <a href="#" title="YouTube Playlist" className={anchorStyles}>YouTube Playlist</a>
               </li>
             </ul>
           </div>
@@ -153,44 +72,16 @@ function one({}: Props) {
 
             <ul className="mt-8 space-y-4">
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Customer Support{" "}
-                </a>
+                <a href="#" title="Customer Support" className={anchorStyles}>Customer Support</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Delivery Details{" "}
-                </a>
+                <a href="#" title="Delivery Details" className={anchorStyles}>Delivery Details</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Terms & Conditions{" "}
-                </a>
+                <a href="#" title="Terms & Conditions" className={anchorStyles}>Terms & Conditions</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title=""
-                  className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                >
-                  {" "}
-                  Privacy Policy{" "}
-                </a>
+                <a href="#" title="Privacy Policy" className={anchorStyles}>Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -201,15 +92,15 @@ function one({}: Props) {
         <div className="flex flex-wrap items-center justify-between">
           <img
             className="h-8 auto md:order-1"
-            src="https://cdn.rareblocks.xyz/collection/celebration/images/logo-alt.svg"
-            alt=""
+            src="https://www.auraui.com/logo-dark.png"
+            alt="Aura UI Logo"
           />
 
           <ul className="flex items-center space-x-3 md:order-3">
             <li>
               <a
                 href="#"
-                title=""
+                title="Twitter"
                 className="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
               >
                 <svg
@@ -226,7 +117,7 @@ function one({}: Props) {
             <li>
               <a
                 href="#"
-                title=""
+                title="Facebook"
                 className="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
               >
                 <svg
@@ -243,7 +134,7 @@ function one({}: Props) {
             <li>
               <a
                 href="#"
-                title=""
+                title="Instagram"
                 className="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
               >
                 <svg
@@ -262,7 +153,7 @@ function one({}: Props) {
             <li>
               <a
                 href="#"
-                title=""
+                title="GitHub"
                 className="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
               >
                 <svg
@@ -272,8 +163,8 @@ function one({}: Props) {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
                   ></path>
                 </svg>
@@ -282,7 +173,7 @@ function one({}: Props) {
           </ul>
 
           <p className="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">
-            © Copyright 2021, All Rights Reserved by Postcraft
+            © Copyright 2024, All Rights Reserved by Aura UI
           </p>
         </div>
       </div>
@@ -290,4 +181,4 @@ function one({}: Props) {
   );
 }
 
-export default one;
+export default AuraFooterOne;

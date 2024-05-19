@@ -2,84 +2,122 @@ import React from "react";
 
 type Props = {};
 
-function Four({}: Props) {
+// SVG Components
+const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
+  return isOpen ? (
+    <svg
+      className="w-7 h-7"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  ) : (
+    <svg
+      className="w-7 h-7"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M4 6h16M4 12h16M4 18h16"
+      ></path>
+    </svg>
+  );
+};
+
+const ArrowRightIcon = () => (
+  <svg
+    className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path
+      stroke="none"
+      d="M0 0h24v24H0z"
+      fill="none"
+    ></path>
+    <line x1="17" y1="7" x2="7" y2="17"></line>
+    <polyline points="8 7 17 7 17 16"></polyline>
+  </svg>
+);
+
+function BlogComponent({}: Props) {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  // Common anchor styles
+  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600";
+
   return (
     <div className="">
-      <header className="py-4 bg-white sm:py-5" x-data="{expanded: false}">
+      {/* Header Section */}
+      <header className="py-4 bg-white sm:py-5">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between">
+            {/* Logo */}
             <div className="flex shrink-0">
-              <a href="#" title="" className="flex">
+              <a href="#" title="Home" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="/logo-light.png"
+                  src="https://auraui.com/logo-light.png"
                   alt="logo"
                 />
               </a>
             </div>
+
+            {/* Mobile Menu Button */}
             <div className="flex md:hidden">
-              <button type="button" className="text-gray-900">
-                <span x-show="!expanded" aria-hidden="true">
-                  <svg
-                    className="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                  </svg>
-                </span>
-                <span x-show="expanded" aria-hidden="true">
-                  <svg
-                    className="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
-                </span>
+              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
+                <MenuIcon isOpen={menuOpen} />
               </button>
             </div>
+
+            {/* Desktop Menu */}
             <div className="hidden md:items-center md:justify-start md:ml-16 md:mr-auto md:space-x-10 md:flex">
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
+                title="Features"
+                className={anchorStyles}
               >
                 Features
-              </a>{" "}
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
-              >
-               About Us
               </a>
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
+                title="About Us"
+                className={anchorStyles}
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                title="Support"
+                className={anchorStyles}
               >
                 Support
               </a>
             </div>
+
+            {/* Join Email List Button */}
             <div className="hidden md:block">
               <a
                 href="#"
-                title=""
+                title="Join Email List"
                 className="inline-flex items-center justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
@@ -87,43 +125,49 @@ function Four({}: Props) {
               </a>
             </div>
           </nav>
-          <nav x-show="expanded" x-collapse="">
-            <div className="px-1 pt-8 pb-4">
-              <div className="grid gap-y-6">
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                >
-                 About Us
-                </a>
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                >
-                  Support
-                </a>
-                <a
-                  href="#"
-                  title=""
-                  className="inline-flex items-center justify-center px-6 py-2 text-base font-semibold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  Join Email List
-                </a>
+
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <nav>
+              <div className="px-1 pt-8 pb-4">
+                <div className="grid gap-y-6">
+                  <a
+                    href="#"
+                    title="Features"
+                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
+                  >
+                    Features
+                  </a>
+                  <a
+                    href="#"
+                    title="About Us"
+                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#"
+                    title="Support"
+                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
+                  >
+                    Support
+                  </a>
+                  <a
+                    href="#"
+                    title="Join Email List"
+                    className="inline-flex items-center justify-center px-6 py-2 text-base font-semibold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button"
+                  >
+                    Join Email List
+                  </a>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          )}
         </div>
       </header>
+
+      {/* Hero Section */}
       <section className="relative bg-gray-50">
         <div className="relative z-10 px-4 py-12 sm:py-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-20 xl:py-28 lg:grid lg:grid-cols-2">
           <div className="lg:pr-8">
@@ -340,7 +384,7 @@ function Four({}: Props) {
                 <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
                   <a
                     href="#"
-                    title=""
+                    title="How to write content about your photographs"
                     className="flex shrink-0 aspect-w-4 aspect-h-3"
                   >
                     <img
@@ -350,13 +394,12 @@ function Four({}: Props) {
                     />
                   </a>
                   <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="" className="">
+                    <a href="#" title="How to write content about your photographs">
                       <p className="text-lg font-bold text-gray-900">
                         How to write content about your photographs
                       </p>
                       <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consec tetur adipiscing
-                        elit. Sit quis auctor odio arcu et dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
                       </p>
                     </a>
                   </div>
@@ -364,36 +407,13 @@ function Four({}: Props) {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="" className="">
-                            Growth
-                          </a>
+                          <a href="#" title="Growth">Growth</a>
                         </p>
-                        <span className="text-sm font-medium text-gray-900">
-                          •
-                        </span>
-                        <p className="text-sm font-medium text-gray-900">
-                          7 Mins Read
-                        </p>
+                        <span className="text-sm font-medium text-gray-900">•</span>
+                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
                       </div>
-                      <a href="#" title="" className="" role="button">
-                        <svg
-                          className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <line x1="17" y1="7" x2="7" y2="17"></line>
-                          <polyline points="8 7 17 7 17 16"></polyline>
-                        </svg>
+                      <a href="#" title="Read more" role="button">
+                        <ArrowRightIcon />
                       </a>
                     </div>
                   </div>
@@ -403,7 +423,7 @@ function Four({}: Props) {
                 <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
                   <a
                     href="#"
-                    title=""
+                    title="How to write content about your photographs"
                     className="flex shrink-0 aspect-w-4 aspect-h-3"
                   >
                     <img
@@ -413,13 +433,12 @@ function Four({}: Props) {
                     />
                   </a>
                   <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="" className="">
+                    <a href="#" title="How to write content about your photographs">
                       <p className="text-lg font-bold text-gray-900">
                         How to write content about your photographs
                       </p>
                       <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consec tetur adipiscing
-                        elit. Sit quis auctor odio arcu et dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
                       </p>
                     </a>
                   </div>
@@ -427,36 +446,13 @@ function Four({}: Props) {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="" className="">
-                            Growth
-                          </a>
+                          <a href="#" title="Growth">Growth</a>
                         </p>
-                        <span className="text-sm font-medium text-gray-900">
-                          •
-                        </span>
-                        <p className="text-sm font-medium text-gray-900">
-                          7 Mins Read
-                        </p>
+                        <span className="text-sm font-medium text-gray-900">•</span>
+                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
                       </div>
-                      <a href="#" title="" className="" role="button">
-                        <svg
-                          className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <line x1="17" y1="7" x2="7" y2="17"></line>
-                          <polyline points="8 7 17 7 17 16"></polyline>
-                        </svg>
+                      <a href="#" title="Read more" role="button">
+                        <ArrowRightIcon />
                       </a>
                     </div>
                   </div>
@@ -466,7 +462,7 @@ function Four({}: Props) {
                 <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
                   <a
                     href="#"
-                    title=""
+                    title="How to write content about your photographs"
                     className="flex shrink-0 aspect-w-4 aspect-h-3"
                   >
                     <img
@@ -476,13 +472,12 @@ function Four({}: Props) {
                     />
                   </a>
                   <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="" className="">
+                    <a href="#" title="How to write content about your photographs">
                       <p className="text-lg font-bold text-gray-900">
                         How to write content about your photographs
                       </p>
                       <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consec tetur adipiscing
-                        elit. Sit quis auctor odio arcu et dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
                       </p>
                     </a>
                   </div>
@@ -490,36 +485,13 @@ function Four({}: Props) {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="" className="">
-                            Growth
-                          </a>
+                          <a href="#" title="Growth">Growth</a>
                         </p>
-                        <span className="text-sm font-medium text-gray-900">
-                          •
-                        </span>
-                        <p className="text-sm font-medium text-gray-900">
-                          7 Mins Read
-                        </p>
+                        <span className="text-sm font-medium text-gray-900">•</span>
+                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
                       </div>
-                      <a href="#" title="" className="" role="button">
-                        <svg
-                          className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <line x1="17" y1="7" x2="7" y2="17"></line>
-                          <polyline points="8 7 17 7 17 16"></polyline>
-                        </svg>
+                      <a href="#" title="Read more" role="button">
+                        <ArrowRightIcon />
                       </a>
                     </div>
                   </div>
@@ -537,4 +509,4 @@ function Four({}: Props) {
   );
 }
 
-export default Four;
+export default BlogComponent;
