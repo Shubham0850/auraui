@@ -9,21 +9,28 @@
     }
   },
 
-
-
   "Hero": {
     "title": "Hero",
     "theme": {
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
-      
+
       "toc": false,
       "pagination": true
     }
   },
   "Header": {
     "title": "Header"
+  },
+  "Footer": {
+    "title": "Footer"
+  },
+  "SignUp": {
+    "title": "SignUp"
+  },
+  "SignIn": {
+    "title": "SignIn"
   },
   "Testimonial": {
     "title": "Testimonial"
