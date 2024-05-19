@@ -4,11 +4,23 @@ import { Steps } from "nextra/components";
 import First from "@/components/Hero/1";
 import Second from "@/components/Hero/Second";
 
-import Three from "@/components/Hero/Three";
+import CourseHero from "@/components/Hero/Course";
 
-# First Hero Component
+# Hero Elements
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+The Hero Elements section contains various hero components designed to enhance the visual appeal and functionality of your web pages. Each component is built using Next.js and Tailwind CSS, ensuring a responsive and modern design.
+
+---
+
+## CourseHero Component
+
+The CourseHero component offers an engaging user interface where placeholders slide in, and the input field vanishes upon submission. This effect enhances user interaction by providing smooth transitions and clear feedback.
+
+## Usage
+
+To integrate the CourseHero component into your Next.js project, copy and paste the following code:
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -16,7 +28,7 @@ import Three from "@/components/Hero/Three";
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-      <Three/>
+      <CourseHero/>
 
   </div>
   </Tabs.Tab>
@@ -24,7 +36,7 @@ import Three from "@/components/Hero/Three";
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
   <div className="overflow-hidden   "  style={{overflow:'hidden',maxWidth:'120vh '}} >
-  ```js copy 
+  ```js copy
  import React from "react";
 
 type Props = {};
@@ -65,81 +77,112 @@ return (
                 ></path>
               </svg>
 
-              <svg
-                className="hidden w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
+const ArrowRightIcon = () => (
+  <svg
+    className="w-6 h-6 ml-8 -mr-2"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
 
-            <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-              <a
-                href="#"
-                title=""
-                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
-              >
-                {" "}
-                Features{" "}
-              </a>
+function CourseHero({ }: Props) {
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
-              <a
-                href="#"
-                title=""
-                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
-              >
-                {" "}
-                Solutions{" "}
-              </a>
+  // Common anchor styles
+  const anchorStyles = "text-base text-black transition-all duration-200 hover:text-opacity-80";
 
-              <a
-                href="#"
-                title=""
-                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
-              >
-                {" "}
-                Resources{" "}
-              </a>
-
-              <a
-                href="#"
-                title=""
-                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
-              >
-                {" "}
-                About Us{" "}
+  return (
+    <div className="bg-white">
+      {/* Header Section */}
+      <header className="bg-[#FCF8F1] bg-opacity-30">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <a href="#" title="Home" className="flex">
+                <img
+                  className="w-auto h-8"
+                  src="https://www.auraui.com/logo-light.png"
+                  alt="Logo"
+                />
               </a>
             </div>
 
+            {/* Mobile Menu Button */}
+            <button
+              type="button"
+              className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <MenuIcon isOpen={menuOpen} />
+            </button>
+
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+              <a
+                href="#"
+                title="Features"
+                className={anchorStyles}
+              >
+                Features
+              </a>
+
+              <a
+                href="#"
+                title="Solutions"
+                className={anchorStyles}
+              >
+                Solutions
+              </a>
+
+              <a
+                href="#"
+                title="Resources"
+                className={anchorStyles}
+              >
+                Resources
+              </a>
+
+              <a
+                href="#"
+                title="About Us"
+                className={anchorStyles}
+              >
+                About Us
+              </a>
+            </div>
+
+            {/* Join Now Button */}
             <a
               href="#"
-              title=""
-              className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+              title="Join Now"
+              className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-white transition-all duration-200 bg-black rounded-full hover:bg-yellow-300 hover:text-black focus:bg-yellow-300 focus:text-black"
               role="button"
             >
-              {" "}
-              Join Now{" "}
+              Join Now
             </a>
           </div>
         </div>
       </header>
 
+      {/* Hero Section */}
       <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
               <p className="text-base font-semibold tracking-wider text-yellow-600 uppercase">
-               Learning Area for learners
+                Learning Area for learners
               </p>
-              <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+              <h1 className="mt-4 text-3xl font-bold text-black sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
                 Talk & learn from the experts
               </h1>
               <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
@@ -148,32 +191,19 @@ return (
 
               <a
                 href="#"
-                title=""
+                title="Sign in"
                 className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                 role="button"
               >
                 Sign in
-                <svg
-                  className="w-6 h-6 ml-8 -mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <ArrowRightIcon />
               </a>
 
               <p className="mt-5 text-gray-600">
                 Already joined us?{" "}
                 <a
                   href="#"
-                  title=""
+                  title="Log in"
                   className="text-black transition-all duration-200 hover:underline"
                 >
                   Log in
@@ -185,7 +215,7 @@ return (
               <img
                 className="w-full"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
-                alt=""
+                alt="Hero Image"
               />
             </div>
           </div>
@@ -196,8 +226,7 @@ return (
 );
 }
 
-export default Three;
-
+export default CourseHero;
 ```
 
 </div>
@@ -225,7 +254,7 @@ import Four from "@/components/Hero/Four";
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-      <Four/>
+   <BlogHero/>
 
   </div>
   </Tabs.Tab>
@@ -237,84 +266,122 @@ import React from "react";
 
 type Props = {};
 
-function Four({}: Props) {
+// SVG Components
+const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
+  return isOpen ? (
+    <svg
+      className="w-7 h-7"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  ) : (
+    <svg
+      className="w-7 h-7"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M4 6h16M4 12h16M4 18h16"
+      ></path>
+    </svg>
+  );
+};
+
+const ArrowRightIcon = () => (
+  <svg
+    className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path
+      stroke="none"
+      d="M0 0h24v24H0z"
+      fill="none"
+    ></path>
+    <line x1="17" y1="7" x2="7" y2="17"></line>
+    <polyline points="8 7 17 7 17 16"></polyline>
+  </svg>
+);
+
+function BlogComponent({}: Props) {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  // Common anchor styles
+  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600";
+
   return (
     <div className="">
-      <header className="py-4 bg-white sm:py-5" x-data="{expanded: false}">
+      {/* Header Section */}
+      <header className="py-4 bg-white sm:py-5">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between">
+            {/* Logo */}
             <div className="flex shrink-0">
-              <a href="#" title="" className="flex">
+              <a href="#" title="Home" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="/logo-light.png"
+                  src="https://auraui.com/logo-light.png"
                   alt="logo"
                 />
               </a>
             </div>
+
+            {/* Mobile Menu Button */}
             <div className="flex md:hidden">
-              <button type="button" className="text-gray-900">
-                <span x-show="!expanded" aria-hidden="true">
-                  <svg
-                    className="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                  </svg>
-                </span>
-                <span x-show="expanded" aria-hidden="true">
-                  <svg
-                    className="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
-                </span>
+              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
+                <MenuIcon isOpen={menuOpen} />
               </button>
             </div>
+
+            {/* Desktop Menu */}
             <div className="hidden md:items-center md:justify-start md:ml-16 md:mr-auto md:space-x-10 md:flex">
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
+                title="Features"
+                className={anchorStyles}
               >
                 Features
-              </a>{" "}
-              <a
-                href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
-              >
-               About Us
               </a>
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600"
+                title="About Us"
+                className={anchorStyles}
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                title="Support"
+                className={anchorStyles}
               >
                 Support
               </a>
             </div>
+
+            {/* Join Email List Button */}
             <div className="hidden md:block">
               <a
                 href="#"
-                title=""
+                title="Join Email List"
                 className="inline-flex items-center justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
@@ -322,43 +389,49 @@ function Four({}: Props) {
               </a>
             </div>
           </nav>
-          <nav x-show="expanded" x-collapse="">
-            <div className="px-1 pt-8 pb-4">
-              <div className="grid gap-y-6">
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                >
-                 About Us
-                </a>
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                >
-                  Support
-                </a>
-                <a
-                  href="#"
-                  title=""
-                  className="inline-flex items-center justify-center px-6 py-2 text-base font-semibold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  Join Email List
-                </a>
+
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <nav>
+              <div className="px-1 pt-8 pb-4">
+                <div className="grid gap-y-6">
+                  <a
+                    href="#"
+                    title="Features"
+                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
+                  >
+                    Features
+                  </a>
+                  <a
+                    href="#"
+                    title="About Us"
+                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#"
+                    title="Support"
+                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
+                  >
+                    Support
+                  </a>
+                  <a
+                    href="#"
+                    title="Join Email List"
+                    className="inline-flex items-center justify-center px-6 py-2 text-base font-semibold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button"
+                  >
+                    Join Email List
+                  </a>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          )}
         </div>
       </header>
+
+      {/* Hero Section */}
       <section className="relative bg-gray-50">
         <div className="relative z-10 px-4 py-12 sm:py-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-20 xl:py-28 lg:grid lg:grid-cols-2">
           <div className="lg:pr-8">
@@ -575,7 +648,7 @@ function Four({}: Props) {
                 <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
                   <a
                     href="#"
-                    title=""
+                    title="How to write content about your photographs"
                     className="flex shrink-0 aspect-w-4 aspect-h-3"
                   >
                     <img
@@ -585,13 +658,12 @@ function Four({}: Props) {
                     />
                   </a>
                   <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="" className="">
+                    <a href="#" title="How to write content about your photographs">
                       <p className="text-lg font-bold text-gray-900">
                         How to write content about your photographs
                       </p>
                       <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consec tetur adipiscing
-                        elit. Sit quis auctor odio arcu et dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
                       </p>
                     </a>
                   </div>
@@ -599,36 +671,13 @@ function Four({}: Props) {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="" className="">
-                            Growth
-                          </a>
+                          <a href="#" title="Growth">Growth</a>
                         </p>
-                        <span className="text-sm font-medium text-gray-900">
-                          •
-                        </span>
-                        <p className="text-sm font-medium text-gray-900">
-                          7 Mins Read
-                        </p>
+                        <span className="text-sm font-medium text-gray-900">•</span>
+                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
                       </div>
-                      <a href="#" title="" className="" role="button">
-                        <svg
-                          className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <line x1="17" y1="7" x2="7" y2="17"></line>
-                          <polyline points="8 7 17 7 17 16"></polyline>
-                        </svg>
+                      <a href="#" title="Read more" role="button">
+                        <ArrowRightIcon />
                       </a>
                     </div>
                   </div>
@@ -638,7 +687,7 @@ function Four({}: Props) {
                 <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
                   <a
                     href="#"
-                    title=""
+                    title="How to write content about your photographs"
                     className="flex shrink-0 aspect-w-4 aspect-h-3"
                   >
                     <img
@@ -648,13 +697,12 @@ function Four({}: Props) {
                     />
                   </a>
                   <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="" className="">
+                    <a href="#" title="How to write content about your photographs">
                       <p className="text-lg font-bold text-gray-900">
                         How to write content about your photographs
                       </p>
                       <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consec tetur adipiscing
-                        elit. Sit quis auctor odio arcu et dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
                       </p>
                     </a>
                   </div>
@@ -662,36 +710,13 @@ function Four({}: Props) {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="" className="">
-                            Growth
-                          </a>
+                          <a href="#" title="Growth">Growth</a>
                         </p>
-                        <span className="text-sm font-medium text-gray-900">
-                          •
-                        </span>
-                        <p className="text-sm font-medium text-gray-900">
-                          7 Mins Read
-                        </p>
+                        <span className="text-sm font-medium text-gray-900">•</span>
+                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
                       </div>
-                      <a href="#" title="" className="" role="button">
-                        <svg
-                          className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <line x1="17" y1="7" x2="7" y2="17"></line>
-                          <polyline points="8 7 17 7 17 16"></polyline>
-                        </svg>
+                      <a href="#" title="Read more" role="button">
+                        <ArrowRightIcon />
                       </a>
                     </div>
                   </div>
@@ -701,7 +726,7 @@ function Four({}: Props) {
                 <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
                   <a
                     href="#"
-                    title=""
+                    title="How to write content about your photographs"
                     className="flex shrink-0 aspect-w-4 aspect-h-3"
                   >
                     <img
@@ -711,13 +736,12 @@ function Four({}: Props) {
                     />
                   </a>
                   <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="" className="">
+                    <a href="#" title="How to write content about your photographs">
                       <p className="text-lg font-bold text-gray-900">
                         How to write content about your photographs
                       </p>
                       <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consec tetur adipiscing
-                        elit. Sit quis auctor odio arcu et dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
                       </p>
                     </a>
                   </div>
@@ -725,36 +749,13 @@ function Four({}: Props) {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
                         <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="" className="">
-                            Growth
-                          </a>
+                          <a href="#" title="Growth">Growth</a>
                         </p>
-                        <span className="text-sm font-medium text-gray-900">
-                          •
-                        </span>
-                        <p className="text-sm font-medium text-gray-900">
-                          7 Mins Read
-                        </p>
+                        <span className="text-sm font-medium text-gray-900">•</span>
+                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
                       </div>
-                      <a href="#" title="" className="" role="button">
-                        <svg
-                          className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          strokeWidth="2"
-                          stroke="currentColor"
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          ></path>
-                          <line x1="17" y1="7" x2="7" y2="17"></line>
-                          <polyline points="8 7 17 7 17 16"></polyline>
-                        </svg>
+                      <a href="#" title="Read more" role="button">
+                        <ArrowRightIcon />
                       </a>
                     </div>
                   </div>
@@ -772,8 +773,7 @@ function Four({}: Props) {
   );
 }
 
-export default Four;
-
+export default BlogComponent;
 
 ````
 
@@ -787,7 +787,7 @@ export default Four;
 
 ```
 
-import Five from "@/components/Hero/Five";
+import EmailCampaignHero from "@/components/Hero/EmailCampaign";
 
 # First Hero Component
 
@@ -799,7 +799,7 @@ import Five from "@/components/Hero/Five";
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-      <Five/>
+      <EmailCampaignHero/>
 
   </div>
   </Tabs.Tab>
@@ -1065,103 +1065,69 @@ type Props = {};
 function Eight({}: Props) {
   return (
     <div className="overflow-x-hidden bg-gray-50">
-      <header className="py-4 md:py-6" x-data="{expanded: false}">
+      {/* Header Section */}
+      <header className="py-4 md:py-6">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
+            {/* Logo */}
             <div className="flex-shrink-0">
               <a
                 href="#"
-                title=""
+                title="Home"
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
                 <img
                   className="w-auto h-8"
                   src="/logo-light.png"
-                  alt="image"
+                  alt="logo"
                 />
               </a>
             </div>
 
+            {/* Mobile Menu Button */}
             <div className="flex lg:hidden">
-              <button type="button" className="text-gray-900">
-                <span x-show="!expanded" aria-hidden="true">
-                  <svg
-                    className="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                </span>
-
-                <span x-show="expanded" aria-hidden="true">
-                  <svg
-                    className="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </span>
+              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
+                <MenuIcon isOpen={menuOpen} />
               </button>
             </div>
 
+            {/* Desktop Menu */}
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10 xl:space-x-16">
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                title="Features"
+                className={anchorStyles}
               >
-                {" "}
-                Features{" "}
+                Features
               </a>
-
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                title="Pricing"
+                className={anchorStyles}
               >
-                {" "}
-                Pricing{" "}
+                Pricing
               </a>
-
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                title="Automation"
+                className={anchorStyles}
               >
-                {" "}
-                Automation{" "}
+                Automation
               </a>
             </div>
 
+            {/* Sign Up and Customer Login */}
             <div className="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-10">
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                title="Customer Login"
+                className={anchorStyles}
               >
-                {" "}
-                Customer Login{" "}
+                Customer Login
               </a>
-
               <a
                 href="#"
-                title=""
+                title="Sign up"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
@@ -1170,59 +1136,55 @@ function Eight({}: Props) {
             </div>
           </div>
 
-          <nav x-show="expanded" x-collapse>
-            <div className="px-1 py-8">
-              <div className="grid gap-y-7">
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  {" "}
-                  Features{" "}
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  {" "}
-                  Pricing{" "}
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  {" "}
-                  Automation{" "}
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  {" "}
-                  Customer Login{" "}
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  Sign up
-                </a>
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <nav>
+              <div className="px-1 py-8">
+                <div className="grid gap-y-7">
+                  <a
+                    href="#"
+                    title="Features"
+                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  >
+                    Features
+                  </a>
+                  <a
+                    href="#"
+                    title="Pricing"
+                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  >
+                    Pricing
+                  </a>
+                  <a
+                    href="#"
+                    title="Automation"
+                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  >
+                    Automation
+                  </a>
+                  <a
+                    href="#"
+                    title="Customer Login"
+                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  >
+                    Customer Login
+                  </a>
+                  <a
+                    href="#"
+                    title="Sign up"
+                    className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                    role="button"
+                  >
+                    Sign up
+                  </a>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          )}
         </div>
       </header>
 
+      {/* Hero Section */}
       <section className="pt-12 bg-gray-50 sm:pt-16">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
@@ -1240,34 +1202,19 @@ function Eight({}: Props) {
             <div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
               <a
                 href="#"
-                title=""
+                title="Get more customers"
                 className="inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
                 Get more customers
               </a>
-
               <a
                 href="#"
-                title=""
+                title="Watch free demo"
                 className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
                 role="button"
               >
-                <svg
-                  className="w-5 h-5 mr-2"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  stroke="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
-                    stroke-width="2"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <PlayIcon />
                 Watch free demo
               </a>
             </div>
@@ -1286,7 +1233,7 @@ function Eight({}: Props) {
                 <img
                   className="transform scale-110"
                   src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/2/illustration.png"
-                  alt=""
+                  alt="Illustration"
                 />
               </div>
             </div>
@@ -1297,7 +1244,7 @@ function Eight({}: Props) {
   );
 }
 
-export default Eight;
+export default EmailCampaignHero;
 
 ````
 
@@ -1343,73 +1290,59 @@ return (
 <img
           className="w-auto h-full"
           src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
-          alt=""
+          alt="Background Pattern"
         />
 </div>
 
+      {/* Header Section */}
       <header className="relative py-4 md:py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
+            {/* Logo */}
             <div className="flex-shrink-0">
               <a
                 href="#"
-                title=""
+                title="Home"
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
                 <img
                   className="w-auto h-8"
                   src="/logo-light.png"
-                  alt=""
+                  alt="Logo"
                 />
               </a>
             </div>
 
+            {/* Mobile Menu Button */}
             <div className="flex lg:hidden">
-              <button type="button" className="text-gray-900">
-                <svg
-                  className="w-7 h-7"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
+              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
+                <MenuIcon isOpen={menuOpen} />
               </button>
             </div>
 
+            {/* Desktop Menu */}
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10">
               <div className="flex items-center space-x-12">
                 <a
                   href="#"
-                  title=""
-                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  title="Features"
+                  className={anchorStyles}
                 >
-                  {" "}
-                  Features{" "}
+                  Features
                 </a>
-
                 <a
                   href="#"
-                  title=""
-                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  title="Pricing"
+                  className={anchorStyles}
                 >
-                  {" "}
-                  Pricing{" "}
+                  Pricing
                 </a>
-
                 <a
                   href="#"
-                  title=""
-                  className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                  title="Automation"
+                  className={anchorStyles}
                 >
-                  {" "}
-                  Automation{" "}
+                  Automation
                 </a>
               </div>
 
@@ -1417,16 +1350,15 @@ return (
 
               <a
                 href="#"
-                title=""
-                className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                title="Login"
+                className={anchorStyles}
               >
-                {" "}
-                Login{" "}
+                Login
               </a>
 
               <a
                 href="#"
-                title=""
+                title="Create free account"
                 className="px-5 py-2 text-base font-semibold leading-7 text-gray-900 transition-all duration-200 bg-transparent border border-gray-900 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white"
                 role="button"
               >
@@ -1437,13 +1369,14 @@ return (
         </div>
       </header>
 
+      {/* Hero Section */}
       <section className="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
             <div className="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
               <div className="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                 <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
-                  Get meaningful feedbacks on your code
+                  Get meaningful feedback on your code
                 </h1>
 
                 <div className="mt-8 lg:mt-12 lg:flex lg:items-center">
@@ -1451,24 +1384,22 @@ return (
                     <img
                       className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
                       src="https://d33wubrfki0l68.cloudfront.net/3bfa6da479d6b9188c58f2d9a8d33350290ee2ef/301f1/images/hero/3/avatar-male.png"
-                      alt=""
+                      alt="Avatar Male"
                     />
                     <img
                       className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
                       src="https://d33wubrfki0l68.cloudfront.net/b52fa09a115db3a80ceb2d52c275fadbf84cf8fc/7fd8a/images/hero/3/avatar-female-1.png"
-                      alt=""
+                      alt="Avatar Female 1"
                     />
                     <img
                       className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
                       src="https://d33wubrfki0l68.cloudfront.net/8a2efb13f103a5ae2909e244380d73087a9c2fc4/31ed6/images/hero/3/avatar-female-2.png"
-                      alt=""
+                      alt="Avatar Female 2"
                     />
                   </div>
 
                   <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">
-                    Join with{" "}
-                    <span className="font-bold">4600+ Developers</span> and
-                    start getting feedbacks right now
+                    Join with <span className="font-bold">4600+ Developers</span> and start getting feedback right now
                   </p>
                 </div>
               </div>
@@ -1476,8 +1407,8 @@ return (
               <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
                 <a
                   href="#"
-                  title=""
-                  className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center hover:bg-gray-600"
+                  title="Get feedback"
+                  className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj hover:bg-gray-600"
                   role="button"
                 >
                   Get feedback
@@ -1485,24 +1416,11 @@ return (
 
                 <a
                   href="#"
-                  title=""
+                  title="Download iOS App"
                   className="inline-flex items-center px-4 py-4 mt-4 text-lg font-bold transition-all duration-200 bg-transparent border border-transparent sm:mt-0 font-pj justif-center rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 hover:bg-gray-200 focus:bg-gray-200"
                   role="button"
                 >
-                  <svg
-                    className="w-5 h-5 mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    ></path>
-                  </svg>
+                  <DownloadIcon />
                   Download iOS App
                 </a>
               </div>
@@ -1512,7 +1430,7 @@ return (
               <img
                 className="w-full mx-auto scale-110"
                 src="https://d33wubrfki0l68.cloudfront.net/29c501c64b21014b3f2e225abe02fe31fd8f3a5c/f866d/images/hero/3/illustration.png"
-                alt=""
+                alt="Illustration"
               />
             </div>
           </div>
