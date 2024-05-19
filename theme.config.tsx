@@ -29,7 +29,7 @@ const config: DocsThemeConfig = {
         property="og:description"
         content="AuraUI the best platform for website components "
       />
-      <link rel="icon" href="/logo.png" />
+      <link rel="icon" href="/ico.png" />
     </>
   ),
 
