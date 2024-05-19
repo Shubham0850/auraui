@@ -15,7 +15,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "http://localhost:3000/components/Header/Elements#simple-header"
+              "http://auraui.com/components/Header/Elements#simple-header"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -31,7 +31,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "http://localhost:3000/components/Header/Elements#user-account-navbar"
+              "http://auraui.com/components/Header/Elements#user-account-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -47,7 +47,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "http://localhost:3000/components/Header/Elements#call-to-action-navbar"
+              "http://auraui.com/components/Header/Elements#call-to-action-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -63,7 +63,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "http://localhost:3000/components/Header/Elements#authentication-navbar"
+              "http://auraui.com/components/Header/Elements#authentication-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -79,7 +79,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "http://localhost:3000/components/Header/Elements#promotional-navbar"
+              "http://auraui.com/components/Header/Elements#promotional-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
