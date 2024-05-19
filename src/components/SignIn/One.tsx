@@ -118,7 +118,7 @@ const One = () => {
                 </a>
 
                 <p className="text-sm font-normal text-gray-500">
-                  Don't have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <a
                     href="#"
                     title=""
