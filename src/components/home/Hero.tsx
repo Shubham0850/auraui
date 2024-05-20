@@ -84,9 +84,9 @@ function IconCommand(props: any) {
 const Hero = () => {
   return (
     <div className="border-b border-gray-200 dark:border-gray-800 py-16">
-      <div className="absolute transform -translate-x-1/2 translate-y-full -top-1/4 left-1/2 -z-[10]">
+      <div className="absolute  transform -translate-x-1/2 translate-y-full -top-1/4 left-1/2 -z-[10]">
         <svg
-          className="opacity-50 blur-3xl filter"
+          className="opacity-50 md:w-[600px] w-full blur-3xl filter"
           style={{ filter: "blur(100px)" }}
           width="600"
           height="300"
@@ -113,7 +113,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto   lg:px-8 text-center">
         <div className="flex items-center justify-center">
           {/* <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Component library for:</p> */}
           <div className="flex justify-center space-x-2 ml-2">
@@ -132,47 +132,47 @@ const Hero = () => {
           Quickly Copy, paste, and launch your website 🏎️ fasterrrrrr than ever!
         </p>
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8  max-w-2xl rounded-2xl mx-auto p-5">
-          <div className="text-center">
+        <div className="mt-8 grid grid-cols-3 gap-4 md:gap-8  max-w-2xl  mx-auto md:p-5">
+          <div className="md:text-center">
             <div>
-              <div className="flex items-center justify-center mx-auto bg-transparent backdrop-blur-lg border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-16">
-                <IconCommand width={24} height={24} />
-                <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
+              <div className="flex items-center justify-center md:mx-auto bg-transparent backdrop-blur-lg border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-14">
+                <IconCommand width={20} height={24} />
+                <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
                   {" "}
                   C{" "}
                 </span>
               </div>
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">
+            <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
               Copy the code
             </p>
           </div>
-          <div className="text-center">
-            <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-16">
-              <IconCommand width={24} height={24} />
-              <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
+          <div className="md:text-center">
+            <div className="flex items-center justify-center md:mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-14">
+              <IconCommand width={20} height={20} />
+              <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
                 {" "}
                 V{" "}
               </span>
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">
+            <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
               Paste anywhere
             </p>
           </div>
           <div className="text-center">
-            <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-max px-10 h-16">
-              <IconCommand width={24} height={24} />
-              <span className="text-[25px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
+            <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-24 h-14">
+              <IconCommand width={20} height={20} />
+              <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
                 {" "}
                 Ship{" "}
               </span>
             </div>
-            <p className="mt-4 text-lg font-medium text-gray-900 dark:text-gray-100">
+            <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
               Ship your website
             </p>
           </div>
         </div>
-        <div className="mt-8 flex justify-center space-x-4">
+        <div className="mt-8 flex md:flex-row flex-col justify-center gap-6 md:space-x-4">
           <Link href="/components">
             <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
               Try a free component
