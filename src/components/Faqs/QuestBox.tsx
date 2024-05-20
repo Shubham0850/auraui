@@ -1,37 +1,3 @@
-import { Tabs } from "nextra/components";
-import { Steps } from "nextra/components";
-
-# FAQs Component
-
-## Overview
-
-This FAQs Elements Section Contains Various FAQs components.
-
-## Usage
-
-To integrate a FAQs Components into your Next.js Project,copy and paste the following code.
-
-## QuestBox FAQs Component
-
-A box-style FAQ layout that provides quick access to commonly asked questions and their concise answers.
-Features: Grid-based arrangement, minimalistic design, and efficient content presentation.
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-import QuestBox from "@/components/Faqs/QuestBox";
-
-      <QuestBox />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
 import React from "react";
 
 interface Question {
@@ -118,16 +84,3 @@ const QuestBox: React.FC = () => {
 };
 
 export default QuestBox;
-
-```
-
-  </div>
-  </Tabs.Tab>
-</Tabs>
-
-
-
-
-
-
-```

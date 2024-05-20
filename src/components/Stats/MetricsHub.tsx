@@ -1,36 +1,3 @@
-import { Tabs } from "nextra/components";
-import { Steps } from "nextra/components";
-
-# Stats Component
-
-## Overview
-
-This Stats Elements Section Contains Various Stats components.
-
-## Usage
-
-To integrate a Stats Components into your Next.js Project,copy and paste the following code.
-
-## MetricsHub Stats
-
-The MetricsHub is a dynamic dashboard designed to empower users with real-time insights. It consolidates essential statistics, enabling quick decision-making and performance evaluation
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-import MetricsHub from "@/components/Stats/MetricsHub";
-
-      <MetricsHub />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
 import React from "react";
 
 type Props = {};
@@ -116,11 +83,3 @@ const MetricsHub = (props: Props) => {
 };
 
 export default MetricsHub;
-
-
-```
-  </div>
-  </Tabs.Tab>
-</Tabs>
-
-```
