@@ -6,7 +6,8 @@
       "footer": true,
       "sidebar": true,
       "toc": false,
-      "pagination": true
+      "pagination": true,
+      "layout": "full"
     }
   },
   "Elements": {

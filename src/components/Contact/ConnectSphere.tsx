@@ -1,33 +1,3 @@
-import { Tabs } from "nextra/components";
-import { Steps } from "nextra/components";
-import ConnectSphere from "@/components/Contact/ConnectSphere";
-
-# Contact Component
-
-## Overview
-
-This Contact Elements Section Contains Various Contact components.
-
-## Usage
-
-To integrate a Contact Components into your Next.js Project,copy and paste the following code.
-
-## ConnectSphere Contact
-
-The ConnectSphere is more than just a contact form; it’s a comprehensive communication platform that invites your audience to reach out with ease.
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-      <ConnectSphere/>
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
-```js copy
 import React from "react";
 
 const StarRating = () => {
@@ -173,10 +143,3 @@ const ConnectSphere = () => {
 };
 
 export default ConnectSphere;
-
-```
-
-  </div>
-  </Tabs.Tab>
-</Tabs>
-

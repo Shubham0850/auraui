@@ -1,9 +1,20 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-# Placeholders And Vanish Input
+# Teams Component
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+This Teams Elements Section Contains Various Teams components.
+
+## Usage
+
+To integrate a Teams Components into your Next.js Project,copy and paste the following code.
+
+## Visionary Vanguard Contact 
+
+The Visionary Vanguard is a dedicated space on your website to celebrate the individuals who are the driving force behind your organization’s achievements. It’s designed to give visitors a glimpse into the heart of your company culture and the people who make it successful.
+
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -11,9 +22,9 @@ import { Steps } from "nextra/components";
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import One from "@/components/Teams/One";
+import VisionaryVanguard from "@/components/Teams/VisionaryVanguard";
 
-      <One />
+      <VisionaryVanguard/>
 
   </div>
   </Tabs.Tab>
@@ -25,128 +36,41 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
-return (
-
-<section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
-<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-<div className="grid items-center grid-cols-1 md:grid-cols-2">
-<div>
-<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-Hey 👋 I am <br className="block sm:hidden" />
-Jenny Carter
-</h2>
-<p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
-Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-amet sint. Velit officia consequat duis enim velit mollit.
-Exercitation veniam consequat sunt nostrud amet.
-</p>
-
-            <p className="mt-4 text-xl text-gray-600 md:mt-8">
-              <span className="relative inline-block">
-                <span className="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300"></span>
-                <span className="relative"> Have a question? </span>
-              </span>
-              <br className="block sm:hidden" />
-              Ask me on{" "}
-              <a
-                href="#"
-                title=""
-                className="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline"
-              >
-                Twitter
-              </a>
-            </p>
-          </div>
-
-          <div className="relative">
-            <img
-              className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg"
-              alt=""
-            />
-
-            <img
-              className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-);
-};
-
-export default one;
-
-````
-</div>
-  </Tabs.Tab>
-</Tabs>
-
-
-
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-import Two from "@/components/Teams/Two";
-
-      <Two />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-const two = (props: Props) => {
+const VisionaryVanguard = (props: Props) => {
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-            People who made it successful
+            People who made Hera Pheri @All
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-xl text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis.
+            Chamaila Babu Bhaiya Se Direct Babu? Lagta Hain Tera Bhaada Double
+            Karna Padega.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12">
           <div>
             <img
-              className="w-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/6/team-member-1.jpg"
+              className="w-full h-full "
+              src="/memeimage/akshay1.webp"
               alt=""
             />
           </div>
 
           <div>
             <img
-              className="w-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/6/team-member-2.jpg"
+              className="w-full h-full "
+              src="/memeimage/babubhaiya.jpg"
               alt=""
             />
           </div>
 
           <div>
             <img
-              className="w-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/6/team-member-3.jpg"
+              className="w-full h-full "
+              src="/memeimage/sunil1.jpg"
               alt=""
             />
           </div>
@@ -168,7 +92,8 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default VisionaryVanguard;
+
 
 
 ````
@@ -177,425 +102,3 @@ export default two;
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-import Three from "@/components/Teams/Three";
-
-      <Three />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-const three = (props: Props) => {
-return (
-
-<section className="pt-10 bg-gray-100 sm:pt-16 lg:pt-24">
-<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-<div className="max-w-2xl mx-auto text-center">
-<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-Real humans are here to help you building your brand
-</h2>
-<p className="mt-6 text-lg text-gray-900">
-Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-sint.
-</p>
-<a
-            href="#"
-            title=""
-            className="inline-flex items-center justify-center px-6 py-4 mt-12 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700"
-            role="button"
-          >
-<svg
-              className="w-5 h-5 mr-2 -ml-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-<path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-              />
-</svg>
-Contact our support
-</a>
-</div>
-</div>
-
-      <div className="container mx-auto 2xl:px-12">
-        <img
-          className="w-full mt-6"
-          src="https://cdn.rareblocks.xyz/collection/celebration/images/team/4/group-of-people.png"
-          alt=""
-        />
-      </div>
-    </section>
-
-);
-};
-
-export default three;
-
-````
-  </div>
-  </Tabs.Tab>
-</Tabs>
-
-
-
-
-
-
-
-
-
-
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-import Four from "@/components/Teams/Four";
-
-      <Four />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-const four = (props: Props) => {
-  return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Meet the brains
-          </h2>
-          <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-0">
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-1.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Jenny Wilson
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">
-              Founder
-            </p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-2.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Darrell Steward
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">CTO</p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-3.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Bessie Cooper
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">CMO</p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-4.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Arlene McCoy
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">
-              Senior Developer
-            </p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-5.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Brooklyn Simmons
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">
-              Product Designer
-            </p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-6.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Jerome Bell
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">
-              Customer Success
-            </p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-7.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Dianne Russell
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">
-              Front-end Developer
-            </p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-8.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Kristin Watson
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">H.R</p>
-          </div>
-
-          <div className="hidden lg:block"></div>
-
-          <div>
-            <img
-              className="object-cover mx-auto rounded-lg w-28 h-28"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-9.jpg"
-              alt=""
-            />
-            <p className="mt-8 text-lg font-semibold leading-tight text-black">
-              Eleanor Pena
-            </p>
-            <p className="mt-1 text-base leading-tight text-gray-600">
-              UI Designer
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default four;
-
-
-````
-
-  </div>
-  </Tabs.Tab>
-</Tabs>
-
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-import Five from "@/components/Teams/Five";
-
-      <Five />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-const five = (props: Props) => {
-return (
-
-<section className="py-10 bg-gradient-to-r from-fuchsia-600 to-blue-600 sm:py-16 lg:py-24">
-<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-<div className="max-w-2xl mx-auto text-left sm:text-center">
-<h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
-Meet the team
-</h2>
-<p className="mt-4 text-xl text-white">
-Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-sint. Velit officia consequat duis enim.
-</p>
-</div>
-
-        <div className="grid grid-cols-1 gap-6 mt-8 sm:mt-12 xl:mt-20 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:gap-14">
-          <div className="bg-white">
-            <div className="py-8 px-9">
-              <p className="text-lg font-bold text-black">Jenny Wilson</p>
-              <p className="mt-1 text-gray-600 text-500">Founder</p>
-              <p className="mt-6 text-base text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white">
-            <div className="py-8 px-9">
-              <p className="text-lg font-bold text-black">Guy Hawkins</p>
-              <p className="mt-1 text-gray-600 text-500">CTO</p>
-              <p className="mt-6 text-base text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white">
-            <div className="py-8 px-9">
-              <p className="text-lg font-bold text-black">Jerome Bell</p>
-              <p className="mt-1 text-gray-600 text-500">CMO</p>
-              <p className="mt-6 text-base text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white">
-            <div className="py-8 px-9">
-              <p className="text-lg font-bold text-black">Jacob Jones</p>
-              <p className="mt-1 text-gray-600 text-500">
-                Senior Software Engineer
-              </p>
-              <p className="mt-6 text-base text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white">
-            <div className="py-8 px-9">
-              <p className="text-lg font-bold text-black">Annette Black</p>
-              <p className="mt-1 text-gray-600 text-500">
-                Customer Success Manager
-              </p>
-              <p className="mt-6 text-base text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white">
-            <div className="py-8 px-9">
-              <p className="text-lg font-bold text-black">Ronald Richards</p>
-              <p className="mt-1 text-gray-600 text-500">
-                User Experience Designer
-              </p>
-              <p className="mt-6 text-base text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-);
-};
-
-export default five;
-
-```
-  </div>
-  </Tabs.Tab>
-</Tabs>
-
-
-
-
-
-
-
-
-
-
-
-
-```
