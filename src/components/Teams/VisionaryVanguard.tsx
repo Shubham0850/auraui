@@ -5,10 +5,10 @@ type Props = {};
 const VisionaryVanguard = (props: Props) => {
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-            People who made Hera Pheri @All
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+            People who made UI library
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-xl text-gray-600">
             Chamaila Babu Bhaiya Se Direct Babu? Lagta Hain Tera Bhaada Double
@@ -16,41 +16,30 @@ const VisionaryVanguard = (props: Props) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12">
-          <div>
-            <img
-              className="w-full h-full "
-              src="/memeimage/akshay1.webp"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <img
-              className="w-full h-full "
-              src="/memeimage/babubhaiya.jpg"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <img
-              className="w-full h-full "
-              src="/memeimage/sunil1.jpg"
-              alt=""
-            />
-          </div>
+        <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-8">
+          {[
+            "/memeimage/akshay1.webp",
+            "/memeimage/babubhaiya.jpg",
+            "/memeimage/sunil1.jpg",
+          ].map((src, index) => (
+            <div key={index}>
+              <img
+                className="w-full rounded-md h-full object-cover"
+                src={src}
+                alt={`Image ${index + 1}`}
+              />
+            </div>
+          ))}
         </div>
 
         <div className="mt-8 text-center md:mt-16">
           <a
             href="#"
-            title=""
-            className="inline-flex items-center justify-center py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md px-14 hover:bg-blue-700 focus:bg-blue-700"
+            title="Join our team"
+            className="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700"
             role="button"
           >
-            {" "}
-            Join our team{" "}
+            Join Our Team
           </a>
         </div>
       </div>

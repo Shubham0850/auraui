@@ -31,65 +31,65 @@ const CallToAction = () => {
 };
 
 const baseCategories = [
-  { name: "Hero", link: "/introduction/Hero/Elements", items: 57 },
-  { name: "Header", link: "/introduction/Header/Elements", items: 57 },
-  { name: "Footer", link: "/introduction/Footer/Elements", items: 37 },
-  { name: "Signup", link: "", items: 34 },
-  { name: "Signin", link: "", items: 31 },
+  { name: "Hero",   img:'/components/Hero1.png', link: "/components/Hero", items: 4 },
+  { name: "Header", img:'/components/Navbar1.png', link: "/components/Header", items: 5 },
+  { name: "Footer", img:'/components/Footer1.png', link: "/components/Footer", items: 2 },
+  { name: "Signup", img:'/components/SignUp1.png', link: "/components/SignUp", items: 1 },
+  { name: "Signin", img:'/components/SignIn1.png', link: "/components/SignIn", items: 1 },
 ];
 
 const marketingCategories = [
-  { name: "Team", link: "/introduction/Teams/Elements", items: 25 },
-  { name: "Stats", link: "/introduction/Stats/Elements", items: 23 },
-  { name: "Steps", items: 22 },
-  { name: "FAQ", link: "/introduction/FAQs/Elements", items: 22 },
-  { name: "Contact", link: "/introduction/Contact/Elements", items: 17 },
-  { name: "Text Input", items: 15 },
-  { name: "Featured Drops", items: 15 },
-  { name: "Logo Cloud", items: 20 },
-  { name: "Pricing", items: 18 },
+  { name: "Team", link: "/components/Teams", items: 1 },
+  { name: "Stats", link: "/components/Stats", items: 1 },
+  { name: "Steps", items: 69 },
+  { name: "FAQ", link: "/components/FAQs", items: 1 },
+  { name: "Contact", link: "/components/Contact", items: 1 },
+  { name: "Text Input", items: 69 },
+  { name: "Featured Drops", items: 69 },
+  { name: "Logo Cloud", items: 69 },
+  { name: "Pricing", link: "/components/Pricing", items: 1 },
   {
     name: "Testimonial",
-    link: "/introduction/Testimonial/Elements",
-    items: 18,
+    link: "/components/Testimonial",
+    items: 1,
   },
-  { name: "Call To Action", link: "/introduction/CTA/Elements", items: 18 },
-  { name: "Feature", items: 18 },
+  { name: "Call To Action", link: "/components/CTA", items: 1 },
+  { name: "Feature", link: "/components/Feature", items: 1 },
 ];
 
 const animationCategories = [
-  { name: "Slider", items: 25 },
-  { name: "Carousel", items: 23 },
-  { name: "Tabs", items: 22 },
-  { name: "Accordion", items: 22 },
-  { name: "Modal", items: 17 },
-  { name: "Tooltip", items: 15 },
-  { name: "Popover", items: 15 },
+  { name: "Slider", items: 69 },
+  { name: "Carousel", items: 69 },
+  { name: "Tabs", items: 69 },
+  { name: "Accordion", items: 69 },
+  { name: "Modal", items: 69 },
+  { name: "Tooltip", items: 69 },
+  { name: "Popover", items: 69 },
 ];
 
 const web3Categories = [
-  { name: "Wallet", items: 25 },
-  { name: "Connect", items: 23 },
-  { name: "Transactions", items: 22 },
-  { name: "Tokens", items: 22 },
-  { name: "NFTs", items: 17 },
-  { name: "Profile", items: 15 },
+  { name: "Wallet", items: 69 },
+  { name: "Connect", items: 69 },
+  { name: "Transactions", items: 69 },
+  { name: "Tokens", items: 69 },
+  { name: "NFTs", items: 69 },
+  { name: "Profile", items: 69 },
 ];
 
 const aiCategories = [
-  { name: "Chat", items: 25 },
-  { name: "Code", items: 23 },
-  { name: "Copilot", items: 22 },
-  { name: "GPT-4", items: 22 },
-  { name: "GPT-3.5", items: 17 },
+  { name: "Chat", items: 69 },
+  { name: "Code", items: 69 },
+  { name: "Copilot", items: 69 },
+  { name: "GPT-4", items: 69 },
+  { name: "GPT-3.5", items: 69 },
 ];
 
 const reactNativeCategories = [
-  { name: "Button", items: 25 },
-  { name: "Input", items: 23 },
-  { name: "Text", items: 22 },
-  { name: "Image", items: 22 },
-  { name: "ScrollView", items: 17 },
+  { name: "Button", items: 69 },
+  { name: "Input", items: 69 },
+  { name: "Text", items: 69 },
+  { name: "Image", items: 69 },
+  { name: "ScrollView", items: 69 },
 ];
 
 const ComponentSection = () => {
@@ -110,8 +110,8 @@ const ComponentSection = () => {
               href={category.link}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src="/components/coming-soon.png" alt="hero" className="rounded-xl" />
+              <div className="w-full h-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <img src={category.img} alt="img" className=" rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
