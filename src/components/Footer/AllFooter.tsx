@@ -3,7 +3,7 @@ import AuraFooterOne from "./AuraFooterOne";
 import SmallFooter from "./SmallFooter";
 import Link from "next/link";
 
-const AllHero = () => {
+const AllFooter = () => {
   return (
     <div className="space-y-10 pt-10 ">
       <div className=" ">
@@ -35,4 +35,4 @@ const AllHero = () => {
   );
 };
 
-export default AllHero;
+export default AllFooter;
