@@ -1,21 +1,31 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
-import One from "@/components/CTA/One";
-import Two from "@/components/CTA/Two";
-import Three from "@/components/CTA/Three";
-import Four from "@/components/CTA/Four";
-import Five from "@/components/CTA/Five";
+import MobileApp from "@/components/CTA/MobileApp";
+import Simple from "@/components/CTA/Simple";
+import RoundedDesign from "@/components/CTA/RoundedDesign";
+import SquareDesign from "@/components/CTA/SquareDesign";
+import GetInTouch from "@/components/CTA/GetInTouch";
 
-# Placeholders And Vanish Input
+# CTA Elements
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+A CTA, or Call to Action, is a prompt on a website or piece of content that encourages users to take a specific action, such as clicking a button or signing up for a newsletter.
+
+---
+
+## Usage
+
+To integrate these components into your Next.js project, copy and paste the following code:
+
+## Mobile App
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <One />
+      <MobileApp />
 
   </div>
   </Tabs.Tab>
@@ -28,7 +38,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const MobileApp = (props: Props) => {
 return (
 
 <section className="bg-blue-600 2xl:py-24 2xl:bg-white">
@@ -74,7 +84,7 @@ Exercitation veniam consequat sunt nostrud amet.
               </svg>
               <img
                 className="relative w-full max-w-xs mx-auto -mb-60 lg:-mb-64"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/iphone-mockup.png"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/iphMobileApp-mockup.png"
                 alt=""
               />
             </div>
@@ -86,7 +96,7 @@ Exercitation veniam consequat sunt nostrud amet.
 );
 };
 
-export default one;
+export default MobileApp;
 
 ````
   </div>
@@ -94,16 +104,14 @@ export default one;
 </Tabs>
 
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Simple CTA
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Two />
+      <Simple />
 
   </div>
   </Tabs.Tab>
@@ -116,7 +124,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const Simple = (props: Props) => {
   return (
     <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
       <div className="absolute inset-0">
@@ -188,7 +196,7 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default Simple;
 
 
 ````
@@ -199,16 +207,14 @@ export default two;
 
 >
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Rounded Design
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Three />
+      <RoundedDesign />
 
   </div>
   </Tabs.Tab>
@@ -220,7 +226,7 @@ import React from "react";
 
 type Props = {};
 
-const three = (props: Props) => {
+const RoundedDesign = (props: Props) => {
 return (
 
 <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
@@ -376,7 +382,7 @@ veniam consequat sunt nostrud amet.
 );
 };
 
-export default three;
+export default RoundedDesign;
 
 ````
 
@@ -385,16 +391,14 @@ export default three;
 </Tabs>
 
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Square Design
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Four />
+      <SquareDesign />
 
   </div>
   </Tabs.Tab>
@@ -408,7 +412,7 @@ import React from "react";
 
 type Props = {};
 
-const four = (props: Props) => {
+const SquareDesign = (props: Props) => {
   return (
     <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -483,7 +487,7 @@ const four = (props: Props) => {
   );
 };
 
-export default four;
+export default SquareDesign;
 
 
 ````
@@ -492,16 +496,14 @@ export default four;
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Get In Touch
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Five />
+      <GetInTouch />
 
   </div>
   </Tabs.Tab>
@@ -514,7 +516,7 @@ import React from "react";
 
 type Props = {};
 
-const five = (props: Props) => {
+const GetInTouch = (props: Props) => {
   return (
     <section className="pt-10 bg-amber-400 2xl:py-24 2xl:bg-white sm:pt-16 md:pt-0">
       <div className="px-4 mx-auto rounded-md bg-amber-400 max-w-7xl sm:px-6 lg:px-8">
@@ -564,7 +566,7 @@ const five = (props: Props) => {
   );
 };
 
-export default five;
+export default GetInTouch;
 ```
 
   </div>

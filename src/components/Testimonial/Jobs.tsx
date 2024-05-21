@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const four = (props: Props) => {
+const Jobs = (props: Props) => {
   return (
     <section>
       <div className="py-10 bg-gradient-to-r from-fuchsia-600 to-blue-600">
@@ -465,4 +465,4 @@ const four = (props: Props) => {
   );
 };
 
-export default four;
+export default Jobs;

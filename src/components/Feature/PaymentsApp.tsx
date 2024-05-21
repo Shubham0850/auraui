@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const PaymentsApp = (props: Props) => {
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -337,4 +337,4 @@ const one = (props: Props) => {
   );
 };
 
-export default one;
+export default PaymentsApp;

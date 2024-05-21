@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const Simple = (props: Props) => {
   return (
     <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
       <div className="absolute inset-0">
@@ -74,4 +74,4 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default Simple;

@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const five = (props: Props) => {
+const SingleAccess = (props: Props) => {
   return (
     <section className="relative py-10 overflow-hidden bg-blue-600 sm:py-16 lg:py-24">
       <div className="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
@@ -187,4 +187,4 @@ const five = (props: Props) => {
   );
 };
 
-export default five;
+export default SingleAccess;

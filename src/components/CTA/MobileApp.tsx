@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const MobileApp = (props: Props) => {
   return (
     <section className="bg-blue-600 2xl:py-24 2xl:bg-white">
       <div className="px-4 mx-auto overflow-hidden bg-blue-600 max-w-7xl sm:px-6 lg:px-8">
@@ -58,4 +58,4 @@ const one = (props: Props) => {
   );
 };
 
-export default one;
+export default MobileApp;

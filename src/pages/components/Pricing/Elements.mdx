@@ -1,9 +1,19 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-# Placeholders And Vanish Input
+# Pricing Elements
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+A pricing section on a website is a dedicated area where the costs of products or services are displayed, often with detailed descriptions of what is included at each price point. This section helps potential customers understand the different pricing options, features, and benefits associated with each tier, enabling them to make informed purchasing decisions.
+
+---
+
+## Usage
+
+To integrate these components into your Next.js project, copy and paste the following code:
+
+## Toggle Design
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -11,9 +21,9 @@ import { Steps } from "nextra/components";
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import One from "@/components/Pricing/One";
+import ToggleDesign from "@/components/Pricing/ToggleDesign";
 
-      <One />
+      <ToggleDesign />
 
   </div>
   </Tabs.Tab>
@@ -26,7 +36,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const ToggleDesign = (props: Props) => {
 return (
 
 <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
@@ -347,7 +357,7 @@ sint. Velit officia consequat duis.
 );
 };
 
-export default one;
+export default ToggleDesign;
 
 ````
 </div>
@@ -356,9 +366,7 @@ export default one;
 
 
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Card Design
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -366,9 +374,9 @@ export default one;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Two from "@/components/Pricing/Two";
+import CardDesign from "@/components/Pricing/CardDesign";
 
-      <Two />
+      <CardDesign />
 
   </div>
   </Tabs.Tab>
@@ -380,7 +388,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const CardDesign = (props: Props) => {
   return (
     <section className="py-10 bg-gray-900 sm:py-16 lg:py-24">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -604,7 +612,7 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default CardDesign;
 
 
 
@@ -614,9 +622,7 @@ export default two;
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Selection Design
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -624,9 +630,9 @@ export default two;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Three from "@/components/Pricing/Three";
+import SelectionDesign from "@/components/Pricing/SelectionDesign";
 
-      <Three />
+      <SelectionDesign />
 
   </div>
   </Tabs.Tab>
@@ -638,7 +644,7 @@ import React from "react";
 
 type Props = {};
 
-const three = (props: Props) => {
+const SelectionDesign = (props: Props) => {
 return (
 
 <section className="py-10 bg-white sm:py-16 lg:py-24">
@@ -771,7 +777,7 @@ Try free for 30 Days
 );
 };
 
-export default three;
+export default SelectionDesign;
 
 ````
   </div>
@@ -780,16 +786,7 @@ export default three;
 
 
 
-
-
-
-
-
-
-
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Four Category Pricing Section
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -797,9 +794,9 @@ export default three;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Four from "@/components/Pricing/Four";
+import FourCategoryDesign from "@/components/Pricing/FourCategoryDesign";
 
-      <Four />
+      <FourCategoryDesign />
 
   </div>
   </Tabs.Tab>
@@ -811,7 +808,7 @@ import React from 'react'
 
 type Props = {}
 
-const four = (props: Props) => {
+const FourCategoryDesign = (props: Props) => {
 	return (
 		<section className="py-10 bg-white sm:py-16 lg:py-24">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -1247,7 +1244,7 @@ const four = (props: Props) => {
 	)
 }
 
-export default four
+export default FourCategoryDesign;
 
 ````
 
@@ -1255,9 +1252,7 @@ export default four
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Single Access
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -1265,9 +1260,9 @@ export default four
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Five from "@/components/Pricing/Five";
+import SingleAccess from "@/components/Pricing/SingleAccess";
 
-      <Five />
+      <SingleAccess />
 
   </div>
   </Tabs.Tab>
@@ -1279,7 +1274,7 @@ import React from "react";
 
 type Props = {};
 
-const five = (props: Props) => {
+const SingleAccess = (props: Props) => {
 return (
 
 <section className="relative py-10 overflow-hidden bg-blue-600 sm:py-16 lg:py-24">
@@ -1466,22 +1461,12 @@ return (
 );
 };
 
-export default five;
+export default SingleAccess;
 
 ```
   </div>
   </Tabs.Tab>
 </Tabs>
-
-
-
-
-
-
-
-
-
-
 
 
 ```

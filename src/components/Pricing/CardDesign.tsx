@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const CardDesign = (props: Props) => {
   return (
     <section className="py-10 bg-gray-900 sm:py-16 lg:py-24">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -226,4 +226,4 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default CardDesign;

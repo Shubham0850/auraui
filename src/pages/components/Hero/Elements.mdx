@@ -23,8 +23,6 @@ To integrate the CourseHero component into your Next.js project, copy and paste 
 
 The CourseHero component offers an engaging user interface where placeholders slide in, and the input field vanishes upon submission. This effect enhances user interaction by providing smooth transitions and clear feedback.
 
-
-
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
@@ -45,78 +43,80 @@ type Props = {};
 
 // SVG Components
 const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-  return isOpen ? (
-    <svg
+return isOpen ? (
+<svg
       className="w-6 h-6"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
-      <path
+<path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         d="M6 18L18 6M6 6l12 12"
       ></path>
-    </svg>
-  ) : (
-    <svg
+</svg>
+) : (
+<svg
       className="w-6 h-6"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
-      <path
+<path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         d="M4 8h16M4 16h16"
       ></path>
-    </svg>
-  );
+</svg>
+);
 };
 
 const ArrowRightIcon = () => (
-  <svg
-    className="w-6 h-6 ml-8 -mr-2"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="1.5"
-      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-    />
-  </svg>
+
+{" "}
+<svg
+  className="w-6 h-6 ml-8 -mr-2"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="1.5"
+    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+  />
+</svg>
 );
 
 function CourseHero({ }: Props) {
-  const [menuOpen, setMenuOpen] = React.useState(false);
+const [menuOpen, setMenuOpen] = React.useState(false);
 
-  // Common anchor styles
-  const anchorStyles = "text-base text-black transition-all duration-200 hover:text-opacity-80";
+// Common anchor styles
+const anchorStyles = "text-base text-black transition-all duration-200 hover:text-opacity-80";
 
-  return (
-    <div className="bg-white">
-      {/* Header Section */}
-      <header className="bg-[#FCF8F1] bg-opacity-30">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <a href="#" title="Home" className="flex">
-                <img
+return (
+<div className="bg-white">
+{/* Header Section */}
+<header className="bg-[#FCF8F1] bg-opacity-30">
+<div className="px-4 mx-auto sm:px-6 lg:px-8">
+<div className="flex items-center justify-between h-16 lg:h-20">
+{/* Logo */}
+<div className="flex-shrink-0">
+<a href="#" title="Home" className="flex">
+<img
                   className="w-auto h-8"
                   src="https://www.auraui.com/logo-light.png"
                   alt="Logo"
                 />
-              </a>
-            </div>
+</a>
+</div>
 
             {/* Mobile Menu Button */}
             <button
@@ -223,7 +223,8 @@ function CourseHero({ }: Props) {
         </div>
       </section>
     </div>
-  );
+
+);
 }
 
 export default CourseHero;
@@ -240,13 +241,9 @@ export default CourseHero;
 
 ````
 
-
-
-
-
 ## Blog Hero
 
-#### 
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -791,7 +788,7 @@ import EmailCampaignHero from "@/components/Hero/EmailCampaign";
 
 ## EmailCampaign Hero
 
-#### 
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -813,83 +810,85 @@ type Props = {};
 
 // SVG Components
 const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-  return isOpen ? (
-    <svg
+return isOpen ? (
+<svg
       className="w-7 h-7"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
-      <path
+<path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         d="M6 18L18 6M6 6l12 12"
       ></path>
-    </svg>
-  ) : (
-    <svg
+</svg>
+) : (
+<svg
       className="w-7 h-7"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
-      <path
+<path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"
         d="M4 6h16M4 12h16M4 18h16"
       ></path>
-    </svg>
-  );
+</svg>
+);
 };
 
 const PlayIcon = () => (
-  <svg
-    className="w-5 h-5 mr-2"
-    viewBox="0 0 18 18"
-    fill="none"
-    stroke="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
-      strokeWidth="2"
-      strokeMiterlimit="10"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+
+{" "}
+<svg
+  className="w-5 h-5 mr-2"
+  viewBox="0 0 18 18"
+  fill="none"
+  stroke="currentColor"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
+    strokeWidth="2"
+    strokeMiterlimit="10"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>
 );
 
 function EmailCampaignHero({}: Props) {
-  const [menuOpen, setMenuOpen] = React.useState(false);
+const [menuOpen, setMenuOpen] = React.useState(false);
 
-  // Common anchor styles
-  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
+// Common anchor styles
+const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
 
-  return (
-    <div className="overflow-x-hidden bg-gray-50">
-      {/* Header Section */}
-      <header className="py-4 md:py-6">
-        <div className="container px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <a
+return (
+<div className="overflow-x-hidden bg-gray-50">
+{/* Header Section */}
+<header className="py-4 md:py-6">
+<div className="container px-4 mx-auto sm:px-6 lg:px-8">
+<div className="flex items-center justify-between">
+{/* Logo */}
+<div className="flex-shrink-0">
+<a
                 href="#"
                 title="Home"
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
+<img
                   className="w-auto h-8"
                   src="/logo-light.png"
                   alt="logo"
                 />
-              </a>
-            </div>
+</a>
+</div>
 
             {/* Mobile Menu Button */}
             <div className="flex lg:hidden">
@@ -1048,11 +1047,11 @@ function EmailCampaignHero({}: Props) {
         </div>
       </section>
     </div>
-  );
+
+);
 }
 
 export default EmailCampaignHero;
-
 
 ```
   </div>
@@ -1073,7 +1072,7 @@ import Feedback from "@/components/Hero/Feedback";
 
 ## Feedback Hero
 
-#### 
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -1317,4 +1316,3 @@ export default FeedbackHero;
 </Tabs
 
 >
-

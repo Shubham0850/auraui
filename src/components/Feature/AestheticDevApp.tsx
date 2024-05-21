@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const three = (props: Props) => {
+const AestheticDevApp = (props: Props) => {
   return (
     <section className="py-10 bg-gradient-to-r from-fuchsia-600 to-blue-600 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -94,4 +94,4 @@ const three = (props: Props) => {
   );
 };
 
-export default three;
+export default AestheticDevApp;

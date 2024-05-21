@@ -1,9 +1,21 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
 
-# Placeholders And Vanish Input
+# Feature Elements
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+A feature section on a website is a dedicated space that highlights the key functionalities and benefits of a product or service. It helps users quickly grasp the value offered, driving engagement and informed decision-making. Each feature is presented using Next.js and Tailwind CSS, ensuring a seamless, responsive, and visually appealing design.
+
+---
+
+## Usage
+
+To integrate these components into your Next.js project, copy and paste the following code:
+
+## Features for Payments App
+
+Collaborating with this design team transformed our project. Their innovation and meticulous attention to detail surpassed all your expectations!
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -11,9 +23,9 @@ import { Steps } from "nextra/components";
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import One from "@/components/Feature/One";
+import PaymentsApp from "@/components/Feature/PaymentsApp";
 
-      <One />
+      <PaymentsApp />
 
   </div>
   </Tabs.Tab>
@@ -26,7 +38,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const PaymentsApp = (props: Props) => {
 return (
 
 <section className="py-10 bg-white sm:py-16 lg:py-24">
@@ -363,7 +375,7 @@ amet sint. Velit officia consequat duis enim velit mollit.
 );
 };
 
-export default one;
+export default PaymentsApp;
 
 ````
 </div>
@@ -372,9 +384,7 @@ export default one;
 
 
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Features for Devlopment App
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -382,9 +392,9 @@ export default one;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Two from "@/components/Feature/Two";
+import DevlopmentApp from "@/components/Feature/DevlopmentApp";
 
-      <Two />
+      <DevlopmentApp />
 
   </div>
   </Tabs.Tab>
@@ -396,7 +406,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const DevlopmentApp = (props: Props) => {
   return (
     <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -504,7 +514,7 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default DevlopmentApp;
 
 
 ````
@@ -513,9 +523,7 @@ export default two;
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Features For Beautiful Dev App
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -523,9 +531,9 @@ export default two;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Three from "@/components/Feature/Three";
+import AestheticDevApp from "@/components/Feature/AestheticDevApp";
 
-      <Three />
+      <AestheticDevApp/>
 
   </div>
   </Tabs.Tab>
@@ -537,7 +545,7 @@ import React from "react";
 
 type Props = {};
 
-const three = (props: Props) => {
+const AestheticDevApp = (props: Props) => {
 return (
 
 <section className="py-10 bg-gradient-to-r from-fuchsia-600 to-blue-600 sm:py-16 lg:py-24">
@@ -631,7 +639,7 @@ veniam consequat sunt nostrud amet.
 );
 };
 
-export default three;
+export default AestheticDevApp;
 
 ````
   </div>
@@ -639,17 +647,7 @@ export default three;
 </Tabs>
 
 
-
-
-
-
-
-
-
-
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Simply Designed Features For Payment App
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -657,9 +655,9 @@ export default three;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Four from "@/components/Feature/Four";
+import SimplePayments from "@/components/Feature/SimplePayments";
 
-      <Four />
+      <SimplePayments />
 
   </div>
   </Tabs.Tab>
@@ -671,7 +669,7 @@ import React from "react";
 
 type Props = {};
 
-const four = (props: Props) => {
+const SimplePayments = (props: Props) => {
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -785,7 +783,7 @@ const four = (props: Props) => {
   );
 };
 
-export default four;
+export default SimplePayments;
 
 
 ````
@@ -794,9 +792,7 @@ export default four;
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
-
-#### Sliding in placeholders and vanish effect of input on submit
+## Features For Business App
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
@@ -804,9 +800,9 @@ export default four;
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
  {/* ![Hello](/contact.png) */}
 
-import Five from "@/components/Feature/Five";
+import BusinessFeature from "@/components/Feature/BusinessFeature";
 
-      <Five />
+      <BusinessFeature />
 
   </div>
   </Tabs.Tab>
@@ -818,7 +814,7 @@ import React from "react";
 
 type Props = {};
 
-const five = (props: Props) => {
+const BusinessFeature = (props: Props) => {
 return (
 
 <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
@@ -874,22 +870,11 @@ Exercitation veniam consequat sunt nostrud amet.
 );
 };
 
-export default five;
+export default BusinessFeature;
 
 ```
   </div>
   </Tabs.Tab>
 </Tabs>
-
-
-
-
-
-
-
-
-
-
-
 
 ```

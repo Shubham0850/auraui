@@ -1,6 +1,6 @@
 {
   "index": {
-    "title": "All Hero Components",
+    "title": "All Components",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -23,5 +23,4 @@
       "pagination": true
     }
   }
-
 }

@@ -1,21 +1,33 @@
 import { Tabs } from "nextra/components";
 import { Steps } from "nextra/components";
-import One from "@/components/Testimonial/One";
-import Two from "@/components/Testimonial/Two";
-import Three from "@/components/Testimonial/Three";
-import Four from "@/components/Testimonial/Four";
-import Five from "@/components/Testimonial/Five";
+import Designers from "@/components/Testimonial/Designers";
+import Devlopers from "@/components/Testimonial/Devlopers";
+import Devs from "@/components/Testimonial/Devs";
+import Jobs from "@/components/Testimonial/Jobs";
+import Buisness from "@/components/Testimonial/Buisness";
 
-# Placeholders And Vanish Input
+# Testimonial Elements
 
-#### Sliding in placeholders and vanish effect of input on submit
+## Overview
+
+A testimonial on a website is a brief endorsement from a customer or user, sharing their positive experience with the product or service. It serves to build trust and credibility for potential customers.. Each component is built using Next.js and Tailwind CSS, ensuring a responsive and modern design.
+
+---
+
+## Usage
+
+To integrate these components into your Next.js project, copy and paste the following code:
+
+## Testimonial for Designers
+
+Working with this design team was a game-changer for your project. Their creativity and attention to detail exceeded all our expectations!
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <One />
+      <Designers />
 
   </div>
   </Tabs.Tab>
@@ -27,7 +39,7 @@ import React from "react";
 
 type Props = {};
 
-const one = (props: Props) => {
+const Designers = (props: Props) => {
 return (
 
 <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
@@ -151,23 +163,23 @@ className companies & design teams
 );
 };
 
-export default one;
+export default Designers;
 
 ````
   </div>
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
+## Testimonial for Devlopers
 
-#### Sliding in placeholders and vanish effect of input on submit
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Two />
+      <Devlopers />
 
   </div>
   </Tabs.Tab>
@@ -179,7 +191,7 @@ import React from "react";
 
 type Props = {};
 
-const two = (props: Props) => {
+const Devlopers = (props: Props) => {
   return (
     <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -486,23 +498,23 @@ const two = (props: Props) => {
   );
 };
 
-export default two;
+export default Devlopers;
 ````
 
   </div>
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
+## Second Devlopers Testimonial
 
-#### Sliding in placeholders and vanish effect of input on submit
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Three />
+      <Devs />
 
   </div>
   </Tabs.Tab>
@@ -514,7 +526,7 @@ import React from "react";
 
 type Props = {};
 
-const three = (props: Props) => {
+const Devs = (props: Props) => {
 return (
 
 <section className="py-10 bg-white sm:py-16 lg:py-24">
@@ -722,23 +734,23 @@ page, make the change and click save.”
 );
 };
 
-export default three;
+export default Devs;
 
 ````
   </div>
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
+## Testimonial for Jobs
 
-#### Sliding in placeholders and vanish effect of input on submit
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Four />
+      <Jobs />
 
   </div>
   </Tabs.Tab>
@@ -750,7 +762,7 @@ import React from "react";
 
 type Props = {};
 
-const four = (props: Props) => {
+const Jobs = (props: Props) => {
   return (
     <section>
       <div className="py-10 bg-gradient-to-r from-fuchsia-600 to-blue-600">
@@ -1213,7 +1225,7 @@ const four = (props: Props) => {
   );
 };
 
-export default four;
+export default Jobs;
 
 
 ````
@@ -1222,16 +1234,16 @@ export default four;
   </Tabs.Tab>
 </Tabs>
 
-# Placeholders And Vanish Input
+## Buisness Testimonial
 
-#### Sliding in placeholders and vanish effect of input on submit
+####
 
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
   <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
 
-      <Five />
+      <Buisness />
 
   </div>
   </Tabs.Tab>
@@ -1243,7 +1255,7 @@ import React from "react";
 
 type Props = {};
 
-const five = (props: Props) => {
+const Buisness = (props: Props) => {
 return (
 
 <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
@@ -1299,7 +1311,7 @@ What our customers say
 );
 };
 
-export default five;
+export default Buisness;
 
 ````
 
