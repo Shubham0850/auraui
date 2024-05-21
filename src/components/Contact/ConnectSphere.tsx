@@ -24,20 +24,19 @@ const Testimonial = () => {
       <StarRating />
       <blockquote className="mt-6">
         <p className="text-lg leading-relaxed text-white">
-          You made it so simple. My new site is so much faster and easier to
-          work with than my old site. I just choose the page, make the change
-          and click save.
+          Building my new site with AuraUI was a breeze! It's faster and easier
+          now—I just pick a page, make changes, and hit save.
         </p>
       </blockquote>
       <div className="flex items-center mt-8">
         <img
           className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-          src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/avatar.jpg"
+          src="https://www.auraui.com/memeimage/babubhaiya.jpg"
           alt="Jenny Wilson"
         />
         <div className="ml-4">
-          <p className="text-base font-semibold text-white">Jenny Wilson</p>
-          <p className="mt-px text-sm text-gray-400">Product Designer</p>
+          <p className="text-base font-semibold text-white">Babu Bhaiya</p>
+          <p className="mt-px text-sm text-gray-400">UI Developer</p>
         </div>
       </div>
     </div>
@@ -50,8 +49,8 @@ const Form = () => {
       <div className="p-6 sm:p-10">
         <h3 className="text-3xl font-semibold text-black">Get a free quote</h3>
         <p className="mt-4 text-base text-gray-600">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint.
+         Fill all details about your Project
+         
         </p>
         <form action="#" method="POST" className="mt-4">
           <div className="space-y-6">
@@ -112,8 +111,7 @@ const ConnectSphere = () => {
                 It’s time to build something exciting!
               </h2>
               <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-white">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis.
+               Use Our Aura UI and start to made projects,by copy and paste codes.
               </p>
               <img
                 className="relative z-10 max-w-xs mx-auto -mb-16 md:hidden"
