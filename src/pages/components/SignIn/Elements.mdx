@@ -1,8 +1,7 @@
-import { Tabs } from "nextra/components";
+import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import { Steps } from "nextra/components";
 
 import LoginCard from "@/components/SignIn/LoginCard";
-
 
 # SignIn Component
 
@@ -16,38 +15,35 @@ To integrate a SignIn Components into your Next.js Project,copy and paste the fo
 
 ## LoginCard Component
 
-The LoginCard component offers a simple and elegant user interface for users to log into their accounts. It includes input fields for email and password, a "Remember me" checkbox, and options for password recovery and Google sign-in. 
+The LoginCard component offers a simple and elegant user interface for users to log into their accounts. It includes input fields for email and password, a "Remember me" checkbox, and options for password recovery and Google sign-in.
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
       <LoginCard/>
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+  </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 const LoginCard = () => {
-  return (
-    <div>
-      <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gray-50">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="max-w-xl mx-auto text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-              Sign in to your account
-            </h2>
-            <p className="mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:mt-6 lg:leading-8">
-              Clarity gives you the blocks and components you need to create a
-              truly professional website.
-            </p>
-          </div>
+return (
+
+<div>
+<section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gray-50">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div className="max-w-xl mx-auto text-center">
+<h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+Sign in to your account
+</h2>
+<p className="mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:mt-6 lg:leading-8">
+Clarity gives you the blocks and components you need to create a
+truly professional website.
+</p>
+</div>
 
           <div className="max-w-lg mx-auto mt-8 bg-white shadow-xl rounded-2xl sm:mt-12">
             <div className="p-6 sm:px-8">
@@ -167,15 +163,16 @@ const LoginCard = () => {
         </div>
       </section>
     </div>
-  );
+
+);
 };
 
 export default LoginCard;
+```
 
-
-````
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
 
+```
 
+```

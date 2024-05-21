@@ -1,4 +1,4 @@
-import { Tabs } from "nextra/components";
+import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import { Steps } from "nextra/components";
 import MobileApp from "@/components/CTA/MobileApp";
 import Simple from "@/components/CTA/Simple";
@@ -21,19 +21,13 @@ To integrate these components into your Next.js project, copy and paste the foll
 ## Mobile App
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
+   <TabComponent label="Preview">
       <MobileApp />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-
+ </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -97,43 +91,36 @@ Exercitation veniam consequat sunt nostrud amet.
 };
 
 export default MobileApp;
-
-````
-  </div>
-  </Tabs.Tab>
+```
+</pre>
+</TabComponent>
 </Tabs>
-
 
 ## Simple CTA
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
+   <TabComponent label="Preview">
       <Simple />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-
+   </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
 
 const Simple = (props: Props) => {
-  return (
-    <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
-      <div className="absolute inset-0">
-        <img
+return (
+
+<section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+<div className="absolute inset-0">
+<img
           className="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
           src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg"
           alt=""
         />
-      </div>
+</div>
 
       <div className="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
 
@@ -193,16 +180,14 @@ const Simple = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default Simple;
-
-
-````
-
-  </div>
-  </Tabs.Tab>
+```
+</pre>
+ </TabComponent>
 </Tabs
 
 >
@@ -210,18 +195,13 @@ export default Simple;
 ## Rounded Design
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
+   <TabComponent label="Preview">
       <RoundedDesign />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+  </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -383,49 +363,40 @@ veniam consequat sunt nostrud amet.
 };
 
 export default RoundedDesign;
-
-````
-
-  </div>
-  </Tabs.Tab>
+```
+</pre>
+  </TabComponent>
 </Tabs>
-
 
 ## Square Design
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
+   <TabComponent label="Preview">
       <SquareDesign />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
-  ```js copy
-
+   </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
 
 const SquareDesign = (props: Props) => {
-  return (
-    <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Get full access to Celebration
-          </h2>
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
+return (
+
+<section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
+<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+<div className="max-w-2xl mx-auto text-center">
+<h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+Get full access to Celebration
+</h2>
+<p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+sint. Velit officia consequat duis enim velit mollit. Exercitation
+veniam consequat sunt nostrud amet.
+</p>
+</div>
 
         <form action="#" method="POST" className="max-w-xl mx-auto mt-12">
           <div className="flex flex-col items-center sm:flex-row sm:justify-center">
@@ -484,73 +455,67 @@ const SquareDesign = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default SquareDesign;
+```
 
-
-````
-
-  </div>
-  </Tabs.Tab>
+  </pre>  
+  </TabComponent>
 </Tabs>
 
 ## Get In Touch
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
+   <TabComponent label="Preview">
       <GetInTouch />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
+  </TabComponent>
+   <TabComponent label="Code">
+   <pre>
 ```js copy
 import React from "react";
 
 type Props = {};
 
 const GetInTouch = (props: Props) => {
-  return (
-    <section className="pt-10 bg-amber-400 2xl:py-24 2xl:bg-white sm:pt-16 md:pt-0">
-      <div className="px-4 mx-auto rounded-md bg-amber-400 max-w-7xl sm:px-6 lg:px-8">
-        <div className="2xl:pl-24">
-          <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
-            <div className="text-center md:py-16 xl:py-24 md:text-left">
-              <blockquote>
-                <p className="text-2xl font-semibold leading-relaxed text-gray-900">
-                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.”
-                </p>
-              </blockquote>
-              <div className="mt-6 sm:flex sm:items-baseline sm:justify-center md:justify-start">
-                <p className="text-base font-semibold text-gray-900">
-                  Jenny Wilson
-                </p>
-                <p className="mt-2 text-base text-gray-700 sm:mt-0 sm:ml-2">
-                  Project Manager at Microsoft
-                </p>
-              </div>
-              <p className="mt-12 text-base text-gray-900 lg:mt-20">
-                Want to see Celebration in action?
-              </p>
-              <a
+return (
+
+<section className="pt-10 bg-amber-400 2xl:py-24 2xl:bg-white sm:pt-16 md:pt-0">
+<div className="px-4 mx-auto rounded-md bg-amber-400 max-w-7xl sm:px-6 lg:px-8">
+<div className="2xl:pl-24">
+<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
+<div className="text-center md:py-16 xl:py-24 md:text-left">
+<blockquote>
+<p className="text-2xl font-semibold leading-relaxed text-gray-900">
+“Amet minim mollit non deserunt ullamco est sit aliqua dolor
+do amet sint. Velit officia consequat duis enim velit mollit.
+Exercitation veniam consequat sunt nostrud amet.”
+</p>
+</blockquote>
+<div className="mt-6 sm:flex sm:items-baseline sm:justify-center md:justify-start">
+<p className="text-base font-semibold text-gray-900">
+Jenny Wilson
+</p>
+<p className="mt-2 text-base text-gray-700 sm:mt-0 sm:ml-2">
+Project Manager at Microsoft
+</p>
+</div>
+<p className="mt-12 text-base text-gray-900 lg:mt-20">
+Want to see Celebration in action?
+</p>
+<a
                 href="#"
                 title=""
                 className="inline-flex items-center justify-center px-8 py-4 mt-4 text-base font-semibold text-white transition-all duration-200 bg-black rounded-md hover:opacity-80 focus:opacity-80"
                 role="button"
               >
-                {" "}
-                Create your first website{" "}
-              </a>
-            </div>
+{" "}
+Create your first website{" "}
+</a>
+</div>
 
             <div className="relative">
               <img
@@ -563,14 +528,15 @@ const GetInTouch = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default GetInTouch;
 ```
 
-  </div>
-  </Tabs.Tab>
+  </pre> 
+   </TabComponent>
 </Tabs>
 
 ```

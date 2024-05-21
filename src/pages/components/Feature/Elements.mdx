@@ -1,4 +1,4 @@
-import { Tabs } from "nextra/components";
+import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import { Steps } from "nextra/components";
 
 # Feature Elements
@@ -18,22 +18,17 @@ To integrate these components into your Next.js project, copy and paste the foll
 Collaborating with this design team transformed our project. Their innovation and meticulous attention to detail surpassed all your expectations!
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import PaymentsApp from "@/components/Feature/PaymentsApp";
 
       <PaymentsApp />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-
+   </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -376,44 +371,38 @@ amet sint. Velit officia consequat duis enim velit mollit.
 };
 
 export default PaymentsApp;
+```
 
-````
-</div>
-  </Tabs.Tab>
+</pre>  </TabComponent>
 </Tabs>
-
-
 
 ## Features for Devlopment App
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import DevlopmentApp from "@/components/Feature/DevlopmentApp";
 
       <DevlopmentApp />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+  </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
 
 const DevlopmentApp = (props: Props) => {
-  return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-xl mx-auto text-center">
-          <p className="text-sm font-semibold tracking-widest text-blue-600 uppercase">
-            130+ Handcoded Blocks
-          </p>
+return (
+
+<section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div className="max-w-xl mx-auto text-center">
+<p className="text-sm font-semibold tracking-widest text-blue-600 uppercase">
+130+ Handcoded Blocks
+</p>
 
           <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
             Celebration helps you build beautiful website
@@ -511,36 +500,30 @@ const DevlopmentApp = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default DevlopmentApp;
+```
 
-
-````
-
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
 
 ## Features For Beautiful Dev App
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import AestheticDevApp from "@/components/Feature/AestheticDevApp";
 
       <AestheticDevApp/>
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+ </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -640,65 +623,60 @@ veniam consequat sunt nostrud amet.
 };
 
 export default AestheticDevApp;
+```
 
-````
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
-
 
 ## Simply Designed Features For Payment App
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import SimplePayments from "@/components/Feature/SimplePayments";
 
       <SimplePayments />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+ </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
 
 const SimplePayments = (props: Props) => {
-  return (
-    <section className="py-10 bg-white sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
-          <div>
-            <div className="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
-              <svg
+return (
+
+<section className="py-10 bg-white sm:py-16 lg:py-24">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div className="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
+<div>
+<div className="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
+<svg
                 className="text-blue-600 w-9 h-9"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
+<path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="1.5"
                   d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
                 />
-              </svg>
-            </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">
-              Secured Payments
-            </h3>
-            <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-          </div>
+</svg>
+</div>
+<h3 className="mt-8 text-lg font-semibold text-black">
+Secured Payments
+</h3>
+<p className="mt-4 text-sm text-gray-600">
+Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+amet sint. Velit officia consequat duis enim velit mollit.
+</p>
+</div>
 
           <div>
             <div className="flex items-center justify-center w-20 h-20 mx-auto bg-orange-100 rounded-full">
@@ -780,36 +758,30 @@ const SimplePayments = (props: Props) => {
         </div>
       </div>
     </section>
-  );
+
+);
 };
 
 export default SimplePayments;
+```
 
-
-````
-
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
 
 ## Features For Business App
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import BusinessFeature from "@/components/Feature/BusinessFeature";
 
       <BusinessFeature />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+    </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -871,10 +843,11 @@ Exercitation veniam consequat sunt nostrud amet.
 };
 
 export default BusinessFeature;
+```
+
+  </pre>  </TabComponent>
+</Tabs>
 
 ```
-  </div>
-  </Tabs.Tab>
-</Tabs>
 
 ```

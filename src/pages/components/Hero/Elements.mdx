@@ -22,101 +22,94 @@ To integrate the CourseHero component into your Next.js project, copy and paste 
 
 The CourseHero component offers an engaging user interface where placeholders slide in, and the input field vanishes upon submission. This effect enhances user interaction by providing smooth transitions and clear feedback.
 
-<<<<<<< HEAD
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
+<Tabs items={["Preview", "Code"]}>
+  <TabComponent label="Preview">
+    <CourseHero />
+  </TabComponent>
+  <TabComponent label="Code">
+ 
+      {/* Replace with your code content */}
+      <pre >
 
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-      <CourseHero/>
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
- import React from "react";
+``` js copy
+import React from "react";
 
 type Props = {};
 
 // SVG Components
 const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-return isOpen ? (
-<svg
+  return isOpen ? (
+    <svg
       className="w-6 h-6"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
-<path
+      <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         d="M6 18L18 6M6 6l12 12"
       ></path>
-</svg>
-) : (
-<svg
+    </svg>
+  ) : (
+    <svg
       className="w-6 h-6"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
     >
-<path
+      <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         d="M4 8h16M4 16h16"
       ></path>
-</svg>
-);
+    </svg>
+  );
 };
 
 const ArrowRightIcon = () => (
-
-{" "}
-<svg
-  className="w-6 h-6 ml-8 -mr-2"
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
->
-  <path
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    strokeWidth="1.5"
-    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-  />
-</svg>
+  <svg
+    className="w-6 h-6 ml-8 -mr-2"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
 );
 
 function CourseHero({ }: Props) {
-const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
-// Common anchor styles
-const anchorStyles = "text-base text-black transition-all duration-200 hover:text-opacity-80";
+  // Common anchor styles
+  const anchorStyles = "text-base text-black transition-all duration-200 hover:text-opacity-80";
 
-return (
-<div className="bg-white">
-{/* Header Section */}
-<header className="bg-[#FCF8F1] bg-opacity-30">
-<div className="px-4 mx-auto sm:px-6 lg:px-8">
-<div className="flex items-center justify-between h-16 lg:h-20">
-{/* Logo */}
-<div className="flex-shrink-0">
-<a href="#" title="Home" className="flex">
-<img
+  return (
+    <div className="bg-white">
+      {/* Header Section */}
+      <header className="bg-[#FCF8F1] bg-opacity-30">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <a href="#" title="Home" className="flex">
+                <img
                   className="w-auto h-8"
                   src="https://www.auraui.com/logo-light.png"
                   alt="Logo"
                 />
-</a>
-</div>
+              </a>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -223,559 +216,16 @@ return (
         </div>
       </section>
     </div>
-
-);
+  );
 }
 
 export default CourseHero;
 
-```
-
-</div>
-  </Tabs.Tab>
-</Tabs
-
->
 
 ```
-
-````
-
-## Blog Hero
-
-####
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-   <BlogHero />
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-// SVG Components
-const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-  return isOpen ? (
-    <svg
-      className="w-7 h-7"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M6 18L18 6M6 6l12 12"
-      ></path>
-    </svg>
-  ) : (
-    <svg
-      className="w-7 h-7"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-        d="M4 6h16M4 12h16M4 18h16"
-      ></path>
-    </svg>
-  );
-};
-
-const ArrowRightIcon = () => (
-  <svg
-    className="w-5 h-5 text-gray-300 transition-all duration-200 group-hover:text-gray-900"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    strokeWidth="2"
-    stroke="currentColor"
-    fill="none"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path
-      stroke="none"
-      d="M0 0h24v24H0z"
-      fill="none"
-    ></path>
-    <line x1="17" y1="7" x2="7" y2="17"></line>
-    <polyline points="8 7 17 7 17 16"></polyline>
-  </svg>
-);
-
-function BlogComponent({}: Props) {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-
-  // Common anchor styles
-  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 hover:text-indigo-600";
-
-  return (
-    <div className="">
-      {/* Header Section */}
-      <header className="py-4 bg-white sm:py-5">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <nav className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex shrink-0">
-              <a href="#" title="Home" className="flex">
-                <img
-                  className="w-auto h-8"
-                  src="https://auraui.com/logo-light.png"
-                  alt="logo"
-                />
-              </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="flex md:hidden">
-              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
-                <MenuIcon isOpen={menuOpen} />
-              </button>
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:items-center md:justify-start md:ml-16 md:mr-auto md:space-x-10 md:flex">
-              <a
-                href="#"
-                title="Features"
-                className={anchorStyles}
-              >
-                Features
-              </a>
-              <a
-                href="#"
-                title="About Us"
-                className={anchorStyles}
-              >
-                About Us
-              </a>
-              <a
-                href="#"
-                title="Support"
-                className={anchorStyles}
-              >
-                Support
-              </a>
-            </div>
-
-            {/* Join Email List Button */}
-            <div className="hidden md:block">
-              <a
-                href="#"
-                title="Join Email List"
-                className="inline-flex items-center justify-center px-6 py-2 sm:py-2.5 text-base font-semibold text-white transition-all duration-200 bg-gray-900 rounded-lg sm:text-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                role="button"
-              >
-                Join Email List
-              </a>
-            </div>
-          </nav>
-
-          {/* Mobile Menu */}
-          {menuOpen && (
-            <nav>
-              <div className="px-1 pt-8 pb-4">
-                <div className="grid gap-y-6">
-                  <a
-                    href="#"
-                    title="Features"
-                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                  >
-                    Features
-                  </a>
-                  <a
-                    href="#"
-                    title="About Us"
-                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="#"
-                    title="Support"
-                    className="flex items-center text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0"
-                  >
-                    Support
-                  </a>
-                  <a
-                    href="#"
-                    title="Join Email List"
-                    className="inline-flex items-center justify-center px-6 py-2 text-base font-semibold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    role="button"
-                  >
-                    Join Email List
-                  </a>
-                </div>
-              </div>
-            </nav>
-          )}
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="relative bg-gray-50">
-        <div className="relative z-10 px-4 py-12 sm:py-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-20 xl:py-28 lg:grid lg:grid-cols-2">
-          <div className="lg:pr-8">
-            <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-              <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-                Community of designers{" "}
-                <span className="inline">
-                  <img
-                    className="inline w-auto h-8 sm:h-10 lg:h-12"
-                    src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/shape-1.svg"
-                    alt="shape-1"
-                  />
-                </span>{" "}
-                made by designers
-                <span className="inline">
-                  <img
-                    className="inline w-auto h-8 sm:h-10 lg:h-11"
-                    src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/shape-2.svg"
-                    alt="shape-2"
-                  />
-                </span>
-              </h1>
-              <p className="mt-6 text-base font-normal leading-7 text-gray-900">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vehicula massa in enim luctus. Rutrum arcu.
-              </p>
-              <svg
-                className="w-auto h-4 mt-8 text-gray-300"
-                viewBox="0 0 172 16"
-                fill="none"
-                stroke="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"
-                ></line>
-                <line
-                  y1="-0.5"
-                  x2="18.0278"
-                  y2="-0.5"
-                  transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"
-                ></line>
-              </svg>
-              <p className="mt-8 text-base font-bold text-gray-900">
-                Join to get free updates every week
-              </p>
-              <form action="#" method="post" className="relative mt-4">
-                <div className="absolute transitiona-all duration-1000 opacity-30 inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
-                <div className="relative space-y-4 sm:flex sm:space-y-0 sm:items-end">
-                  <div className="flex-1">
-                    <label htmlFor="" className="sr-only">
-                      Email address
-                    </label>
-                    <div>
-                      <input
-                        type="email"
-                        name=""
-                        id=""
-                        className="block w-full px-4 py-3 sm:py-3.5 text-base font-medium text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none sm:text-sm focus:ring-gray-900 focus:border-gray-900"
-                        placeholder="Enter email address"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg sm:rounded-r-lg sm:rounded-l-none hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  >
-                    Join Now
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="pb-8 lg:absolute lg:inset-0 lg:pb-0">
-          <div className="flex flex-col items-center justify-center overflow-hidden lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div className="flex justify-start w-full gap-6 pb-8 overflow-x-auto snap-x">
-              <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-                <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
-                  <a
-                    href="#"
-                    title="How to write content about your photographs"
-                    className="flex shrink-0 aspect-w-4 aspect-h-3"
-                  >
-                    <img
-                      className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
-                      src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/thumbnail-1.png"
-                      alt="thumbnail-1"
-                    />
-                  </a>
-                  <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="How to write content about your photographs">
-                      <p className="text-lg font-bold text-gray-900">
-                        How to write content about your photographs
-                      </p>
-                      <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
-                      </p>
-                    </a>
-                  </div>
-                  <div className="px-4 py-5 mt-auto border-t border-gray-100 sm:px-6">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="Growth">Growth</a>
-                        </p>
-                        <span className="text-sm font-medium text-gray-900">•</span>
-                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
-                      </div>
-                      <a href="#" title="Read more" role="button">
-                        <ArrowRightIcon />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-                <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
-                  <a
-                    href="#"
-                    title="How to write content about your photographs"
-                    className="flex shrink-0 aspect-w-4 aspect-h-3"
-                  >
-                    <img
-                      className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
-                      src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/thumbnail-2.png"
-                      alt="thumbnail-2"
-                    />
-                  </a>
-                  <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="How to write content about your photographs">
-                      <p className="text-lg font-bold text-gray-900">
-                        How to write content about your photographs
-                      </p>
-                      <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
-                      </p>
-                    </a>
-                  </div>
-                  <div className="px-4 py-5 mt-auto border-t border-gray-100 sm:px-6">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="Growth">Growth</a>
-                        </p>
-                        <span className="text-sm font-medium text-gray-900">•</span>
-                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
-                      </div>
-                      <a href="#" title="Read more" role="button">
-                        <ArrowRightIcon />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative snap-start scroll-ml-6 shrink-0 first:pl-6 last:pr-6">
-                <div className="relative flex flex-col overflow-hidden transition-all duration-200 transform bg-white border border-gray-100 shadow w-60 md:w-80 group rounded-xl hover:shadow-lg hover:-translate-y-1">
-                  <a
-                    href="#"
-                    title="How to write content about your photographs"
-                    className="flex shrink-0 aspect-w-4 aspect-h-3"
-                  >
-                    <img
-                      className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
-                      src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/thumbnail-3.png"
-                      alt="thumbnail-3"
-                    />
-                  </a>
-                  <div className="flex-1 px-4 py-5 sm:p-6">
-                    <a href="#" title="How to write content about your photographs">
-                      <p className="text-lg font-bold text-gray-900">
-                        How to write content about your photographs
-                      </p>
-                      <p className="mt-3 text-sm font-normal leading-6 text-gray-500 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis auctor odio arcu et dolor.
-                      </p>
-                    </a>
-                  </div>
-                  <div className="px-4 py-5 mt-auto border-t border-gray-100 sm:px-6">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <p className="text-sm font-medium text-gray-900">
-                          <a href="#" title="Growth">Growth</a>
-                        </p>
-                        <span className="text-sm font-medium text-gray-900">•</span>
-                        <p className="text-sm font-medium text-gray-900">7 Mins Read</p>
-                      </div>
-                      <a href="#" title="Read more" role="button">
-                        <ArrowRightIcon />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center justify-end mt-2 space-x-5">
-              <div className="w-16 h-[3px] rounded-full bg-gray-900"></div>
-              <div className="w-16 h-[3px] rounded-full bg-gray-300"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-=======
-<Tabs items={["Preview", "Code"]}>
-  <TabComponent label="Preview">
-    <CourseHero />
-  </TabComponent>
-  <TabComponent label="Code">
-    <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
-      {/* Replace with your code content */}
-      <pre>{`<Feedback />`}</pre>
-    </div>
+            
+      </pre>
+ 
   </TabComponent>
 </Tabs>
 
@@ -787,559 +237,10 @@ function BlogComponent({}: Props) {
     <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
       {/* Replace with your code content */}
       <pre>{`<Feedback />`}</pre>
->>>>>>> 8b919dd559dac9cafbb53e24d22c6aca7041aadd
     </div>
   </TabComponent>
 </Tabs>
 
-<<<<<<< HEAD
-export default BlogComponent;
-
-````
-
-  </div>
-  </Tabs.Tab>
-</Tabs
-
->
-
-```
-
-```
-
-import EmailCampaignHero from "@/components/Hero/EmailCampaign";
-
-## EmailCampaign Hero
-
-####
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-      <EmailCampaignHero/>
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-// SVG Components
-const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-return isOpen ? (
-<svg
-      className="w-7 h-7"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-<path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M6 18L18 6M6 6l12 12"
-      ></path>
-</svg>
-) : (
-<svg
-      className="w-7 h-7"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-<path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-        d="M4 6h16M4 12h16M4 18h16"
-      ></path>
-</svg>
-);
-};
-
-const PlayIcon = () => (
-
-{" "}
-<svg
-  className="w-5 h-5 mr-2"
-  viewBox="0 0 18 18"
-  fill="none"
-  stroke="currentColor"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M8.18003 13.4261C6.8586 14.3918 5 13.448 5 11.8113V5.43865C5 3.80198 6.8586 2.85821 8.18003 3.82387L12.5403 7.01022C13.6336 7.80916 13.6336 9.44084 12.5403 10.2398L8.18003 13.4261Z"
-    strokeWidth="2"
-    strokeMiterlimit="10"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  />
-</svg>
-);
-
-function EmailCampaignHero({}: Props) {
-const [menuOpen, setMenuOpen] = React.useState(false);
-
-// Common anchor styles
-const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
-
-return (
-<div className="overflow-x-hidden bg-gray-50">
-{/* Header Section */}
-<header className="py-4 md:py-6">
-<div className="container px-4 mx-auto sm:px-6 lg:px-8">
-<div className="flex items-center justify-between">
-{/* Logo */}
-<div className="flex-shrink-0">
-<a
-                href="#"
-                title="Home"
-                className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-<img
-                  className="w-auto h-8"
-                  src="/logo-light.png"
-                  alt="logo"
-                />
-</a>
-</div>
-
-            {/* Mobile Menu Button */}
-            <div className="flex lg:hidden">
-              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
-                <MenuIcon isOpen={menuOpen} />
-              </button>
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10 xl:space-x-16">
-              <a
-                href="#"
-                title="Features"
-                className={anchorStyles}
-              >
-                Features
-              </a>
-              <a
-                href="#"
-                title="Pricing"
-                className={anchorStyles}
-              >
-                Pricing
-              </a>
-              <a
-                href="#"
-                title="Automation"
-                className={anchorStyles}
-              >
-                Automation
-              </a>
-            </div>
-
-            {/* Sign Up and Customer Login */}
-            <div className="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-10">
-              <a
-                href="#"
-                title="Customer Login"
-                className={anchorStyles}
-              >
-                Customer Login
-              </a>
-              <a
-                href="#"
-                title="Sign up"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                role="button"
-              >
-                Sign up
-              </a>
-            </div>
-          </div>
-
-          {/* Mobile Menu */}
-          {menuOpen && (
-            <nav>
-              <div className="px-1 py-8">
-                <div className="grid gap-y-7">
-                  <a
-                    href="#"
-                    title="Features"
-                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                  >
-                    Features
-                  </a>
-                  <a
-                    href="#"
-                    title="Pricing"
-                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                  >
-                    Pricing
-                  </a>
-                  <a
-                    href="#"
-                    title="Automation"
-                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                  >
-                    Automation
-                  </a>
-                  <a
-                    href="#"
-                    title="Customer Login"
-                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                  >
-                    Customer Login
-                  </a>
-                  <a
-                    href="#"
-                    title="Sign up"
-                    className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    role="button"
-                  >
-                    Sign up
-                  </a>
-                </div>
-              </div>
-            </nav>
-          )}
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="pt-12 bg-gray-50 sm:pt-16">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center">
-            <h1 className="px-6 text-lg text-gray-600 font-inter">
-              Smart email campaign builder, made for Developers
-            </h1>
-            <p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-              Turn your visitors into profitable
-              <span className="relative inline-flex sm:inline">
-                <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
-                <span className="relative"> business </span>
-              </span>
-            </p>
-
-            <div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-              <a
-                href="#"
-                title="Get more customers"
-                className="inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                role="button"
-              >
-                Get more customers
-              </a>
-              <a
-                href="#"
-                title="Watch free demo"
-                className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 text-lg font-bold text-gray-900 transition-all duration-200 border-2 border-gray-400 sm:w-auto sm:mt-0 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 focus:bg-gray-900 hover:text-white focus:text-white hover:border-gray-900 focus:border-gray-900"
-                role="button"
-              >
-                <PlayIcon />
-                Watch free demo
-              </a>
-            </div>
-
-            <p className="mt-8 text-base text-gray-500 font-inter">
-              60 Days free trial · No credit card required
-            </p>
-          </div>
-        </div>
-
-        <div className="pb-12 bg-white">
-          <div className="relative">
-            <div className="absolute inset-0 h-2/3 bg-gray-50"></div>
-            <div className="relative mx-auto">
-              <div className="lg:max-w-6xl lg:mx-auto">
-                <img
-                  className="transform scale-110"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/2/illustration.png"
-                  alt="Illustration"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-);
-}
-
-export default EmailCampaignHero;
-
-```
-  </div>
-  </Tabs.Tab>
-</Tabs
-
->
-
-```
-
-````
-
-
-
-
-
-import Feedback from "@/components/Hero/Feedback";
-
-## Feedback Hero
-
-####
-
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
-
-      <Feedback/>
-
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-import React from "react";
-
-type Props = {};
-
-// SVG Components
-const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-  return isOpen ? (
-    <svg
-      className="w-7 h-7"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M6 18L18 6M6 6l12 12"
-      ></path>
-    </svg>
-  ) : (
-    <svg
-      className="w-7 h-7"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.5"
-        d="M4 6h16M4 12h16M4 18h16"
-      ></path>
-    </svg>
-  );
-};
-
-const DownloadIcon = () => (
-  <svg
-    className="w-5 h-5 mr-2"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2.5"
-      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-    ></path>
-  </svg>
-);
-
-function FeedbackHero({ }: Props) {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-
-  // Common anchor styles
-  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
-
-  return (
-    <div className="relative bg-gray-50">
-      <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
-        <img
-          className="w-auto h-full"
-          src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
-          alt="Background Pattern"
-        />
-      </div>
-
-      {/* Header Section */}
-      <header className="relative py-4 md:py-6">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <a
-                href="#"
-                title="Home"
-                className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-              >
-                <img
-                  className="w-auto h-8"
-                  src="/logo-light.png"
-                  alt="Logo"
-                />
-              </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="flex lg:hidden">
-              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
-                <MenuIcon isOpen={menuOpen} />
-              </button>
-            </div>
-
-            {/* Desktop Menu */}
-            <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10">
-              <div className="flex items-center space-x-12">
-                <a
-                  href="#"
-                  title="Features"
-                  className={anchorStyles}
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  title="Pricing"
-                  className={anchorStyles}
-                >
-                  Pricing
-                </a>
-                <a
-                  href="#"
-                  title="Automation"
-                  className={anchorStyles}
-                >
-                  Automation
-                </a>
-              </div>
-
-              <div className="w-px h-5 bg-gray-300"></div>
-
-              <a
-                href="#"
-                title="Login"
-                className={anchorStyles}
-              >
-                Login
-              </a>
-
-              <a
-                href="#"
-                title="Create free account"
-                className="px-5 py-2 text-base font-semibold leading-7 text-gray-900 transition-all duration-200 bg-transparent border border-gray-900 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white"
-                role="button"
-              >
-                Create free account
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
-            <div className="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
-              <div className="max-w-sm mx-auto sm:max-w-md md:max-w-full">
-                <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
-                  Get meaningful feedback on your code
-                </h1>
-
-                <div className="mt-8 lg:mt-12 lg:flex lg:items-center">
-                  <div className="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
-                    <img
-                      className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                      src="https://d33wubrfki0l68.cloudfront.net/3bfa6da479d6b9188c58f2d9a8d33350290ee2ef/301f1/images/hero/3/avatar-male.png"
-                      alt="Avatar Male"
-                    />
-                    <img
-                      className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                      src="https://d33wubrfki0l68.cloudfront.net/b52fa09a115db3a80ceb2d52c275fadbf84cf8fc/7fd8a/images/hero/3/avatar-female-1.png"
-                      alt="Avatar Female 1"
-                    />
-                    <img
-                      className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                      src="https://d33wubrfki0l68.cloudfront.net/8a2efb13f103a5ae2909e244380d73087a9c2fc4/31ed6/images/hero/3/avatar-female-2.png"
-                      alt="Avatar Female 2"
-                    />
-                  </div>
-
-                  <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">
-                    Join with <span className="font-bold">4600+ Developers</span> and start getting feedback right now
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
-                <a
-                  href="#"
-                  title="Get feedback"
-                  className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj hover:bg-gray-600"
-                  role="button"
-                >
-                  Get feedback
-                </a>
-
-                <a
-                  href="#"
-                  title="Download iOS App"
-                  className="inline-flex items-center px-4 py-4 mt-4 text-lg font-bold transition-all duration-200 bg-transparent border border-transparent sm:mt-0 font-pj justif-center rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 hover:bg-gray-200 focus:bg-gray-200 text-gray-900"
-                  role="button"
-                >
-                  <DownloadIcon />
-                  Download iOS App
-                </a>
-              </div>
-            </div>
-
-            <div className="xl:col-span-3">
-              <img
-                className="w-full mx-auto scale-110"
-                src="https://d33wubrfki0l68.cloudfront.net/29c501c64b21014b3f2e225abe02fe31fd8f3a5c/f866d/images/hero/3/illustration.png"
-                alt="Illustration"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-export default FeedbackHero;
-
-
-````
-
-  </div>
-  </Tabs.Tab>
-</Tabs
-
->
-=======
 <Tabs items={["Preview", "Code"]}>
   <TabComponent label="Preview">
     <EmailCampaign />
@@ -1356,11 +257,10 @@ export default FeedbackHero;
   <TabComponent label="Preview">
     <Feedback />
   </TabComponent>
-  <TabComponent label="Code">
+  <TabComponent label="Code" >
     <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
-      {/* Replace with your code content */}
+     
       <pre>{`<Feedback />`}</pre>
     </div>
   </TabComponent>
 </Tabs>
->>>>>>> 8b919dd559dac9cafbb53e24d22c6aca7041aadd

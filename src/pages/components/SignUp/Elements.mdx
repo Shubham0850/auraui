@@ -1,9 +1,7 @@
-import { Tabs } from "nextra/components";
+import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import { Steps } from "nextra/components";
 
-
-
-import SignUpBusiness  from "@/components/SignUp/SignUpBusiness ";
+import SignUpBusiness from "@/components/SignUp/SignUpBusiness ";
 
 # SignUp Component
 
@@ -19,36 +17,31 @@ To integrate a SignUp Components into your Next.js Project,copy and paste the fo
 
 The Business Signup Form is a sleek and modern component designed to facilitate user registrations seamlessly. It features multiple sign-up options including Google, Facebook, and email, making it easy for users to join your platform. The form emphasizes simplicity and user convenience, encouraging quick sign-ups with a clear call-to-action and a promise of no credit card requirement.
 
-
-
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
       <SignUpBusiness />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+    </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 const SignUpBusiness = () => {
-  return (
-    <div>
-      <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl font-pj">
-              Unlock your business potential
-            </h1>
-            <p className="mt-4 text-lg text-gray-600 font-pj">
-              Sign up for free. No credit card required
-            </p>
+return (
+
+<div>
+<section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<div className="text-center">
+<h1 className="text-3xl font-bold text-gray-900 sm:text-4xl font-pj">
+Unlock your business potential
+</h1>
+<p className="mt-4 text-lg text-gray-600 font-pj">
+Sign up for free. No credit card required
+</p>
 
             <svg
               className="w-auto h-4 mx-auto mt-10 text-gray-300"
@@ -325,14 +318,16 @@ const SignUpBusiness = () => {
         </div>
       </section>
     </div>
-  );
+
+);
 };
 
 export default SignUpBusiness;
+```
 
-
-````
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
 
+```
+
+```

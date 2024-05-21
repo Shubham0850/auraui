@@ -1,4 +1,4 @@
-import { Tabs } from "nextra/components";
+import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import { Steps } from "nextra/components";
 
 # Header Component
@@ -16,22 +16,17 @@ To integrate a Header Components into your Next.js Project,copy and paste the fo
 This navbar features a straightforward design with minimal items and a clear layout, suitable for basic navigation needs.
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import One from "@/components/Header/One";
 
       <One />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
-
+ </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -252,53 +247,47 @@ Features{" "}
 };
 
 export default one;
+```
 
-````
-</div>
-  </Tabs.Tab>
+</pre>  </TabComponent>
 </Tabs>
-
-
 
 ## User Account Navbar
 
 This navbar includes links for signing up, signing in, and a user profile icon, making it ideal for websites that require user authentication and account management.
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import Two from "@/components/Header/Two";
 
       <Two />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+    </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
 
 const two = (props: Props) => {
-  return (
-    <header className="pb-6 bg-white lg:pb-0">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* <!-- lg+ --> */}
-        <nav className="flex items-center justify-between h-16 lg:h-20">
-          <div className="flex-shrink-0">
-            <a href="#" title="" className="flex">
-              <img
+return (
+
+<header className="pb-6 bg-white lg:pb-0">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+{/* <!-- lg+ --> */}
+<nav className="flex items-center justify-between h-16 lg:h-20">
+<div className="flex-shrink-0">
+<a href="#" title="" className="flex">
+<img
                 className="w-auto h-8 lg:h-10"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
                 alt=""
               />
-            </a>
-          </div>
+</a>
+</div>
 
           <button
             type="button"
@@ -442,17 +431,14 @@ const two = (props: Props) => {
         </nav>
       </div>
     </header>
-  );
+
+);
 };
 
 export default two;
+```
 
-
-
-````
-
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
 
 ## Call-to-Action Navbar
@@ -461,21 +447,18 @@ This navbar prominently features a call-to-action button ("Get started now") alo
 
 <Tabs items={['Preview', 'Code']}  >
 
-<Tabs.Tab>
+<TabComponent label='Preview'>
 
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+{/* ![Hello](/contact.png) */}
 
 import Three from "@/components/Header/Three";
 
       <Three />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+   </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -623,60 +606,47 @@ return (
 };
 
 export default three;
+```
 
-````
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
-
-
-
-
-
-
-
-
-
 
 ## Authentication Navbar
 
- The Authentication Navbar is designed for websites that require user login and registration features. It includes links for signing up, signing in, and a user profile icon, making it easy for users to manage their accounts seamlessly.
- 
-<Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
+The Authentication Navbar is designed for websites that require user login and registration features. It includes links for signing up, signing in, and a user profile icon, making it easy for users to manage their accounts seamlessly.
 
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+<Tabs items={['Preview', 'Code']}  >
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import Four from "@/components/Header/Four";
 
       <Four />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-  ```js copy
+   </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
 
 const four = (props: Props) => {
-  return (
-    <header className="bg-white lg:py-8">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* <!-- lg+ --> */}
-        <nav className="relative flex items-center justify-between h-16 bg-white lg:rounded-md lg:shadow-lg lg:h-24 lg:px-8 lg:py-6">
-          <div className="flex-shrink-0">
-            <a href="#" title="" className="flex">
-              <img
+return (
+
+<header className="bg-white lg:py-8">
+<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+{/* <!-- lg+ --> */}
+<nav className="relative flex items-center justify-between h-16 bg-white lg:rounded-md lg:shadow-lg lg:h-24 lg:px-8 lg:py-6">
+<div className="flex-shrink-0">
+<a href="#" title="" className="flex">
+<img
                 className="w-auto h-8 lg:h-10"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
                 alt=""
               />
-            </a>
-          </div>
+</a>
+</div>
 
           <button
             type="button"
@@ -812,17 +782,14 @@ const four = (props: Props) => {
         </nav>
       </div>
     </header>
-  );
+
+);
 };
 
 export default four;
+```
 
-
-
-````
-
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
 
 ## Promotional Navbar
@@ -830,22 +797,17 @@ export default four;
 The Promotional Navbar is designed to draw attention with a strong call-to-action button ("Join Now"). It features standard navigation links and a visually appealing background, making it perfect for websites focused on driving user sign-ups or other conversions.
 
 <Tabs items={['Preview', 'Code']}  >
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
- {/* ![Hello](/contact.png) */}
+   <TabComponent label="Preview">
+{/* ![Hello](/contact.png) */}
 
 import Five from "@/components/Header/Five";
 
       <Five />
 
-  </div>
-  </Tabs.Tab>
-   <Tabs.Tab>
-
-  <div style={{overflow:'hidden',maxWidth:'120vh '}}  >
-
-  ```js copy
+    </TabComponent>
+   <TabComponent label="Code">
+   <pre>
+```js copy
 import React from "react";
 
 type Props = {};
@@ -1013,9 +975,7 @@ return (
 };
 
 export default five;
-
 ```
 
-  </div>
-  </Tabs.Tab>
+  </pre>  </TabComponent>
 </Tabs>
