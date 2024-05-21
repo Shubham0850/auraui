@@ -19,8 +19,8 @@ const Tabs = ({ items, children }: TabsProps) => {
 
         <div className="flex items-center space-x-2">
           {/* Preview */}
-          <div className="relative cursor-pointer p-2 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500">
-            <MoonIcon />
+          <div className="relative cursor-pointer p-3 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500">
+            <MoonIcon className="w-4 h-4" />
           </div>
           {/* Tabs */}
           <div className="flex space-x-1 dark:bg-customDark bg-gray-100 p-1 rounded-md">
@@ -40,8 +40,8 @@ const Tabs = ({ items, children }: TabsProps) => {
           </div>
 
           {/* Preview */}
-          <div className="relative cursor-pointer p-2 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500">
-            <ArrowUpRight />
+          <div className="relative cursor-pointer p-3 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500">
+            <ArrowUpRight className="w-4 h-4" />
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ const Tabs = ({ items, children }: TabsProps) => {
               if (activeTab === items[1]) {
                 // Assuming the second tab is the one with the code
                 return (
-                  <div key={index} className="relative  " >
+                  <div key={index} className="relative" >
                     <div
                       className={`overflow-hidden  ${
                         isCollapsed ? "h-[500px]" : "h-auto"
@@ -64,7 +64,7 @@ const Tabs = ({ items, children }: TabsProps) => {
                       {child}
                     </div>
                     <button
-                      className="  mt-4 ml-[45%] px-3 py-2 border-2 hover:bg-gray-800 border-cyan-700 bg-gray-900 text-gray-100 font-medium rounded-2xl "
+                      className="mt-4 ml-[45%] px-3 py-2 hover:bg-gray-800 bg-gray-900 text-gray-100 font-medium rounded-2xl "
                       onClick={() => setIsCollapsed(!isCollapsed)}
                     >
                       {isCollapsed ? "Show More" : "Show Less"}
