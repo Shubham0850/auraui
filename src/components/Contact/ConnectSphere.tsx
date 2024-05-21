@@ -30,7 +30,7 @@ const Testimonial = () => {
       </blockquote>
       <div className="flex items-center mt-8">
         <img
-          className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+          className="flex-shrink-0 object-cover  w-10 h-10 rounded-full"
           src="https://www.auraui.com/memeimage/babubhaiya.jpg"
           alt="Jenny Wilson"
         />

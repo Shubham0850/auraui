@@ -173,26 +173,13 @@ function BlogComponent({}: Props) {
           <div className="lg:pr-8">
             <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
               <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-                Community of designers{" "}
-                <span className="inline">
-                  <img
-                    className="inline w-auto h-8 sm:h-10 lg:h-12"
-                    src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/shape-1.svg"
-                    alt="shape-1"
-                  />
-                </span>{" "}
-                made by designers
-                <span className="inline">
-                  <img
-                    className="inline w-auto h-8 sm:h-10 lg:h-11"
-                    src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/shape-2.svg"
-                    alt="shape-2"
-                  />
-                </span>
+            AuraUI Community of Developer{" "}
+             
+                made by Mangra Langra  
+          
               </h1>
               <p className="mt-6 text-base font-normal leading-7 text-gray-900">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vehicula massa in enim luctus. Rutrum arcu.
+              AuraUI is made for all type of Designers and Developer....
               </p>
               <svg
                 className="w-auto h-4 mt-8 text-gray-300"
@@ -350,7 +337,7 @@ function BlogComponent({}: Props) {
                 Join to get free updates every week
               </p>
               <form action="#" method="post" className="relative mt-4">
-                <div className="absolute transitiona-all duration-1000 opacity-30 inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
+                <div className="absolute transitiona-all duration-1000 opacity-30 inset-0 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
                 <div className="relative space-y-4 sm:flex sm:space-y-0 sm:items-end">
                   <div className="flex-1">
                     <label htmlFor="" className="sr-only">
@@ -361,17 +348,12 @@ function BlogComponent({}: Props) {
                         type="email"
                         name=""
                         id=""
-                        className="block w-full px-4 py-3 sm:py-3.5 text-base font-medium text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none sm:text-sm focus:ring-gray-900 focus:border-gray-900"
+                        className="block w-[70%] px-4 py-3 sm:py-3.5 text-base font-medium text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg sm:rounded-l-lg  sm:text-sm focus:ring-gray-900 focus:border-gray-900"
                         placeholder="Enter email address"
                       />
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 sm:text-sm text-base sm:py-3.5 font-semibold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg sm:rounded-r-lg sm:rounded-l-none hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  >
-                    Join Now
-                  </button>
+             
                 </div>
               </form>
             </div>

@@ -81,17 +81,17 @@ function FeedbackHero({ }: Props) {
                 title="Home"
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
-                  className="w-auto h-8"
-                  src="/logo-light.png"
-                  alt="Logo"
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="Logo" />
               </a>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="flex lg:hidden">
-              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
+              <button
+                type="button"
+                className="text-gray-900"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <MenuIcon isOpen={menuOpen} />
               </button>
             </div>
@@ -99,36 +99,20 @@ function FeedbackHero({ }: Props) {
             {/* Desktop Menu */}
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10">
               <div className="flex items-center space-x-12">
-                <a
-                  href="#"
-                  title="Features"
-                  className={anchorStyles}
-                >
-                  Features
+                <a href="#" title="Features" className={anchorStyles}>
+                  About
                 </a>
-                <a
-                  href="#"
-                  title="Pricing"
-                  className={anchorStyles}
-                >
-                  Pricing
+                <a href="#" title="Pricing" className={anchorStyles}>
+                  Home
                 </a>
-                <a
-                  href="#"
-                  title="Automation"
-                  className={anchorStyles}
-                >
-                  Automation
+                <a href="#" title="Automation" className={anchorStyles}>
+                  Services
                 </a>
               </div>
 
               <div className="w-px h-5 bg-gray-300"></div>
 
-              <a
-                href="#"
-                title="Login"
-                className={anchorStyles}
-              >
+              <a href="#" title="Login" className={anchorStyles}>
                 Login
               </a>
 
@@ -152,30 +136,32 @@ function FeedbackHero({ }: Props) {
             <div className="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
               <div className="max-w-sm mx-auto sm:max-w-md md:max-w-full">
                 <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
-                  Get meaningful feedback on your code
+                  Give AuraUI feedback by using Code
                 </h1>
 
                 <div className="mt-8 lg:mt-12 lg:flex lg:items-center">
                   <div className="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
                     <img
                       className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                      src="https://d33wubrfki0l68.cloudfront.net/3bfa6da479d6b9188c58f2d9a8d33350290ee2ef/301f1/images/hero/3/avatar-male.png"
+                      src="https://www.auraui.com/memeimage/akshay1.webp"
                       alt="Avatar Male"
                     />
                     <img
                       className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                      src="https://d33wubrfki0l68.cloudfront.net/b52fa09a115db3a80ceb2d52c275fadbf84cf8fc/7fd8a/images/hero/3/avatar-female-1.png"
+                      src="https://www.auraui.com/memeimage/babubhaiya.jpg"
                       alt="Avatar Female 1"
                     />
                     <img
                       className="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                      src="https://d33wubrfki0l68.cloudfront.net/8a2efb13f103a5ae2909e244380d73087a9c2fc4/31ed6/images/hero/3/avatar-female-2.png"
+                      src="https://www.auraui.com/memeimage/majnubhai.jpeg"
                       alt="Avatar Female 2"
                     />
                   </div>
 
                   <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">
-                    Join with <span className="font-bold">4600+ Developers</span> and start getting feedback right now
+                    Join with{" "}
+                    <span className="font-bold">6969+ Developers</span> and
+                    start to give feedback at AuraUI
                   </p>
                 </div>
               </div>
@@ -187,7 +173,7 @@ function FeedbackHero({ }: Props) {
                   className="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj hover:bg-gray-600"
                   role="button"
                 >
-                  Get feedback
+                  Feedback
                 </a>
 
                 <a
@@ -197,7 +183,7 @@ function FeedbackHero({ }: Props) {
                   role="button"
                 >
                   <DownloadIcon />
-                  Download iOS App
+                  Download AuraUI
                 </a>
               </div>
             </div>
