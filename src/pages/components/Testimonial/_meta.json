@@ -5,7 +5,8 @@
       "breadcrumb": true,
       "footer": true,
       "sidebar": true,
-      "pagination": true
+      "pagination": true,
+      "layout": "full"
     }
   },
   "Elements": {

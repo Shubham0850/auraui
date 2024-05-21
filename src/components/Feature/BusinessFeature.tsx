@@ -9,12 +9,10 @@ const BusinessFeature = (props: Props) => {
         <div className="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
           <div className="">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-              Grow business with Celebration.
+              Grow business with AuraUI.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+            Enhance your business with Aura UI. Our platform offers streamlined, intuitive design solutions that reduce complexity and boost productivity. Experience the seamless integration and superior functionality that sets us apart.
             </p>
           </div>
 

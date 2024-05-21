@@ -31,30 +31,91 @@ const CallToAction = () => {
 };
 
 const baseCategories = [
-  { name: "Hero",   img:'/components/Hero1.png', link: "/components/Hero", items: 4 },
-  { name: "Header", img:'/components/Navbar1.png', link: "/components/Header", items: 5 },
-  { name: "Footer", img:'/components/Footer1.png', link: "/components/Footer", items: 2 },
-  { name: "Signup", img:'/components/SignUp1.png', link: "/components/SignUp", items: 1 },
-  { name: "Signin", img:'/components/SignIn1.png', link: "/components/SignIn", items: 1 },
+  {
+    name: "Hero",
+    img: "/components/Hero1.png",
+    link: "/components/Hero",
+    items: 4,
+  },
+  {
+    name: "Header",
+    img: "/components/Navbar1.png",
+    link: "/components/Header",
+    items: 5,
+  },
+  {
+    name: "Footer",
+    img: "/components/Footer1.png",
+    link: "/components/Footer",
+    items: 2,
+  },
+  {
+    name: "Signup",
+    img: "/components/SignUp1.png",
+    link: "/components/SignUp",
+    items: 1,
+  },
+  {
+    name: "Signin",
+    img: "/components/SignIn1.png",
+    link: "/components/SignIn",
+    items: 1,
+  },
 ];
 
 const marketingCategories = [
-  { name: "Team", link: "/components/Teams", items: 1 },
-  { name: "Stats", link: "/components/Stats", items: 1 },
-  { name: "Steps", items: 69 },
-  { name: "FAQ", link: "/components/FAQs", items: 1 },
-  { name: "Contact", link: "/components/Contact", items: 1 },
-  { name: "Text Input", items: 69 },
-  { name: "Featured Drops", items: 69 },
-  { name: "Logo Cloud", items: 69 },
-  { name: "Pricing", link: "/components/Pricing", items: 1 },
+  {
+    name: "Team",
+    link: "/components/Teams",
+    items: 1,
+    img: "/components/Teams1.png",
+  },
+  {
+    name: "Stats",
+    link: "/components/Stats",
+    items: 1,
+    img: "/components/Stats1.png",
+  },
+  { name: "Steps", items: 69, img: "/components/coming-soon.png" },
+  {
+    name: "FAQ",
+    link: "/components/FAQs",
+    items: 1,
+    img: "/components/FAQs1.png",
+  },
+  {
+    name: "Contact",
+    link: "/components/Contact",
+    items: 1,
+    img: "/components/Contact1.png",
+  },
+  { name: "Text Input", items: 69, img: "/components/coming-soon.png" },
+  { name: "Featured Drops", items: 69, img: "/components/coming-soon.png" },
+  { name: "Logo Cloud", items: 69, img: "/components/coming-soon.png" },
+  {
+    name: "Pricing",
+    link: "/components/Pricing",
+    items: 5,
+    img: "/components/Pricing1.png",
+  },
   {
     name: "Testimonial",
     link: "/components/Testimonial",
-    items: 1,
+    items: 5,
+    img: "/components/Testimonials1.png",
   },
-  { name: "Call To Action", link: "/components/CTA", items: 1 },
-  { name: "Feature", link: "/components/Feature", items: 1 },
+  {
+    name: "Call To Action",
+    link: "/components/CTA",
+    items: 5,
+    img: "/components/CTA1.png",
+  },
+  {
+    name: "Feature",
+    link: "/components/Feature",
+    items: 1,
+    img: "/components/Feature1.png",
+  },
 ];
 
 const animationCategories = [
@@ -111,7 +172,11 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full h-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src={category.img} alt="img" className=" rounded-xl" />
+                <img
+                  src={category.img}
+                  alt="img"
+                  className=" rounded-xl w-full h-full"
+                />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -140,8 +205,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src="/components/coming-soon.png" alt="hero" className="rounded-xl" />
+              <div className="w-full h-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <img
+                  src={category.img}
+                  alt="hero"
+                  className="rounded-xl w-full h-full"
+                />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -167,7 +236,11 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src="/components/coming-soon.png" alt="hero" className="rounded-xl" />
+                <img
+                  src="/components/coming-soon.png"
+                  alt="hero"
+                  className="rounded-xl"
+                />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -193,7 +266,11 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src="/components/coming-soon.png" alt="hero" className="rounded-xl" />
+                <img
+                  src="/components/coming-soon.png"
+                  alt="hero"
+                  className="rounded-xl"
+                />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -218,8 +295,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src="/components/coming-soon.png" alt="hero" className="rounded-xl" />
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <img
+                  src="/components/coming-soon.png"
+                  alt="hero"
+                  className="rounded-xl"
+                />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -244,8 +325,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img src="/components/coming-soon.png" alt="hero" className="rounded-xl" />
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <img
+                  src="/components/coming-soon.png"
+                  alt="hero"
+                  className="rounded-xl"
+                />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}

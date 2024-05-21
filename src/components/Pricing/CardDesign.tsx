@@ -9,7 +9,7 @@ const CardDesign = (props: Props) => {
         <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
           <div className="flex flex-col justify-between lg:py-5">
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:leading-tight lg:text-5xl">
-              Join 35k+ web professionals & build your website
+              Get thousands of web components with Aura UI
             </h2>
 
             <div className="mt-auto">
@@ -60,23 +60,21 @@ const CardDesign = (props: Props) => {
                 <p className="text-lg leading-relaxed text-white">
                   You made it so simple. My new site is so much faster and
                   easier to work with than my old site. I just choose the page,
-                  make the change and click save.
+                  make the change, and click save.
                 </p>
               </blockquote>
 
               <div className="flex items-center mt-8">
                 <img
                   className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/2/avatar.jpg"
+                  src="/memeimage/majnubhai.jpeg"
                   alt=""
                 />
                 <div className="ml-4">
                   <p className="text-base font-semibold text-white">
-                    Brooklyn Simmons
+                    Majnu Bhai
                   </p>
-                  <p className="mt-px text-sm text-gray-400">
-                    Digital Marketer
-                  </p>
+                  <p className="mt-px text-sm text-gray-400">Web Devloper</p>
                 </div>
               </div>
             </div>
@@ -88,7 +86,7 @@ const CardDesign = (props: Props) => {
                 <h3 className="text-xs font-semibold tracking-widest text-purple-600 uppercase">
                   Single pack
                 </h3>
-                <p className="mt-4 text-6xl font-bold text-black">$79</p>
+                <p className="mt-4 text-6xl font-bold text-black">$99</p>
 
                 <ul className="flex flex-col mt-8 space-y-4">
                   <li className="inline-flex items-center space-x-2">
@@ -99,9 +97,9 @@ const CardDesign = (props: Props) => {
                       fill="currentColor"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                     <span className="text-base font-medium text-gray-900">
@@ -109,7 +107,6 @@ const CardDesign = (props: Props) => {
                       1 Domain License{" "}
                     </span>
                   </li>
-
                   <li className="inline-flex items-center space-x-2">
                     <svg
                       className="flex-shrink-0 w-5 h-5 text-green-500"
@@ -206,15 +203,15 @@ const CardDesign = (props: Props) => {
                     stroke="currentColor"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
                     />
                   </svg>
                   <span className="ml-2 text-sm text-gray-500">
                     {" "}
-                    14 Days Moneyback Guarantee{" "}
+                    30 Days Moneyback Guarantee{" "}
                   </span>
                 </div>
               </div>
