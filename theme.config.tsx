@@ -2,11 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
-import { title } from "process";
 import { useTheme} from "nextra-theme-docs";
-import Navbar from "@/components/layout/Navbar";
-
-
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -67,7 +63,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "Aura UI",
+      titleTemplate: "AuraUI",
     };
   },
 };

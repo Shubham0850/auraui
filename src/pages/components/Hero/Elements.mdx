@@ -1,11 +1,10 @@
-import { Tabs } from "nextra/components";
+import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import { Steps } from "nextra/components";
-
-import First from "@/components/Hero/1";
-import Second from "@/components/Hero/Second";
 
 import CourseHero from "@/components/Hero/Course";
 import BlogHero from "@/components/Hero/Blog";
+import EmailCampaign from "@/components/Hero/EmailCampaign";
+import Feedback from "@/components/Hero/Feedback";
 
 # Hero Elements
 
@@ -23,6 +22,7 @@ To integrate the CourseHero component into your Next.js project, copy and paste 
 
 The CourseHero component offers an engaging user interface where placeholders slide in, and the input field vanishes upon submission. This effect enhances user interaction by providing smooth transitions and clear feedback.
 
+<<<<<<< HEAD
 <Tabs items={['Preview', 'Code']}  >
    <Tabs.Tab>
 
@@ -766,10 +766,33 @@ function BlogComponent({}: Props) {
           </div>
         </div>
       </section>
+=======
+<Tabs items={["Preview", "Code"]}>
+  <TabComponent label="Preview">
+    <CourseHero />
+  </TabComponent>
+  <TabComponent label="Code">
+    <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
+      {/* Replace with your code content */}
+      <pre>{`<Feedback />`}</pre>
     </div>
-  );
-}
+  </TabComponent>
+</Tabs>
 
+<Tabs items={["Preview", "Code"]}>
+  <TabComponent label="Preview">
+    <BlogHero />
+  </TabComponent>
+  <TabComponent label="Code">
+    <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
+      {/* Replace with your code content */}
+      <pre>{`<Feedback />`}</pre>
+>>>>>>> 8b919dd559dac9cafbb53e24d22c6aca7041aadd
+    </div>
+  </TabComponent>
+</Tabs>
+
+<<<<<<< HEAD
 export default BlogComponent;
 
 ````
@@ -1316,3 +1339,28 @@ export default FeedbackHero;
 </Tabs
 
 >
+=======
+<Tabs items={["Preview", "Code"]}>
+  <TabComponent label="Preview">
+    <EmailCampaign />
+  </TabComponent>
+  <TabComponent label="Code">
+    <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
+      {/* Replace with your code content */}
+      <pre>{`<Feedback />`}</pre>
+    </div>
+  </TabComponent>
+</Tabs>
+
+<Tabs items={["Preview", "Code"]}>
+  <TabComponent label="Preview">
+    <Feedback />
+  </TabComponent>
+  <TabComponent label="Code">
+    <div style={{ overflow: "hidden", maxWidth: "120vh" }}>
+      {/* Replace with your code content */}
+      <pre>{`<Feedback />`}</pre>
+    </div>
+  </TabComponent>
+</Tabs>
+>>>>>>> 8b919dd559dac9cafbb53e24d22c6aca7041aadd
