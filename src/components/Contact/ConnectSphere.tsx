@@ -24,8 +24,8 @@ const Testimonial = () => {
       <StarRating />
       <blockquote className="mt-6">
         <p className="text-lg leading-relaxed text-white">
-          Building my new site with AuraUI was a breeze! It's faster and easier
-          now—I just pick a page, make changes, and hit save.
+          Building my new site with AuraUI was a breeze! It&apos;s faster and
+          easier now—I just pick a page, make changes, and hit save.
         </p>
       </blockquote>
       <div className="flex items-center mt-8">
