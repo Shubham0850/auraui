@@ -1,0 +1,35 @@
+{
+  "index": {
+    "title": "All Components",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true,
+      "layout": "full"
+    }
+  },
+  "Wallet Connect": {
+    "title": "Wallet Connect",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "NFT": {
+    "title": "NFT",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  }
+}

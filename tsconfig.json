@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "src/pages/blogs.mdx", "src/pages/pricing.mdx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "src/pages/blogs.mdx", "src/pages/pricing.mdx", "src/pages/components/Steps/index.mdx"],
   "exclude": ["node_modules"]
 }
