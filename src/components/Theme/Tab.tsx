@@ -4,11 +4,16 @@ import { ArrowUpRight, MoonIcon } from "lucide-react";
 interface TabsProps {
   items: string[];
   children: React.ReactNode;
+  previewLink: string;
 }
 
-const Tabs = ({ items, children }: TabsProps) => {
+const Tabs = ({ items, children, previewLink }: TabsProps) => {
   const [activeTab, setActiveTab] = useState(items[0]);
   const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const handlePreviewClick = () => {
+    window.open(previewLink, "_blank");
+  };
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -39,8 +44,11 @@ const Tabs = ({ items, children }: TabsProps) => {
             ))}
           </div>
 
-          {/* Preview */}
-          <div className="relative cursor-pointer p-3 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500">
+          {/* Preview link */}
+          <div
+            className="relative cursor-pointer p-3 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500"
+            onClick={handlePreviewClick}
+          >
             <ArrowUpRight className="w-4 h-4" />
           </div>
         </div>
@@ -55,7 +63,7 @@ const Tabs = ({ items, children }: TabsProps) => {
               if (activeTab === items[1]) {
                 // Assuming the second tab is the one with the code
                 return (
-                  <div key={index} className="relative" >
+                  <div key={index} className="relative">
                     <div
                       className={`overflow-hidden  ${
                         isCollapsed ? "h-[500px]" : "h-auto"
