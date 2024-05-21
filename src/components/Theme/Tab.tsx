@@ -12,7 +12,7 @@ const Tabs = ({ items, children }: TabsProps) => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="flex items-center my-4 w-full justify-between">
+      <div className="flex md:flex-row flex-col gap-4 items-center my-4 w-full justify-between">
         <div className="relative cursor-pointer py-2 px-4 rounded-sm dark:bg-customDark bg-gray-100 text-gray-500">
           Free component
         </div>
