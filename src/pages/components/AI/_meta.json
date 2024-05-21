@@ -10,19 +10,9 @@
       "layout": "full"
     }
   },
-  "WalletConnect": {
-    "title": "Wallet Connect",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "layout": "full",
-      "pagination": true
-    }
-  },
-  "Nft": {
-    "title": "NFT",
+
+  "Ai1": {
+    "title": "AI1",
     "theme": {
       "breadcrumb": true,
       "footer": true,
