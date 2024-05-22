@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
-import { useTheme} from "nextra-theme-docs";
+import { useTheme } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: () => {
     const { theme } = useTheme();
+    const [currentTheme, setCurrentTheme] = useState("");
+
+    useEffect(() => {
+      if (theme) {
+        setCurrentTheme(theme);
+      }
+    }, [theme]);
+
+    if (!currentTheme) {
+      return null; // or a loading spinner or placeholder
+    }
+
     return (
       <>
-        {theme === "light" ? (
+        {currentTheme === "light" ? (
           <img className="w-auto h-8" src="/logo-light.png" alt="Logo Light" />
         ) : (
           <img className="w-auto h-8" src="/logo-dark.png" alt="Logo Dark" />
@@ -29,12 +41,9 @@ const config: DocsThemeConfig = {
     </>
   ),
 
-
-//  navbar:{
-//    component: <> <Navbar/> </>,
-//  },
-
-
+  //  navbar:{
+  //    component: <> <Navbar/> </>,
+  //  },
 
   // project: {
   //   link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",

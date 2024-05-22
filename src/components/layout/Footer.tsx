@@ -1,18 +1,28 @@
 import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 
 const Footer = () => {
-  const { theme } = useTheme();
+   const { theme } = useTheme();
+   const [currentTheme, setCurrentTheme] = useState("");
 
-  useEffect(() => { }, [theme]);
+   useEffect(() => {
+     if (theme) {
+       setCurrentTheme(theme);
+     }
+   }, [theme]);
+
+   if (!currentTheme) {
+     return null; // or a loading spinner or placeholder
+   }
+
 
   return (
     <footer className="w-full">
       <div className="grid items-center grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-3">
         <div className="md:order-1">
           <Link href={'/'}>
-          {theme === "light" ? (
+          {currentTheme === "light" ? (
             <img className="w-auto h-8" src="/logo-light.png" alt="" />
           ) : (
             <img className="w-auto h-8" src="/logo-dark.png" alt="" />
