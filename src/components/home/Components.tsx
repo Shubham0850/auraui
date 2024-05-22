@@ -109,28 +109,28 @@ const animationCategories = [
 ];
 
 const web3Categories = [
-  { name: "Wallet", items: 69 },
-  { name: "Connect", items: 69 },
-  { name: "Transactions", items: 69 },
-  { name: "Tokens", items: 69 },
+  { name: "Wallet Connect", items: 69 },
+  // { name: "Connect", items: 69 },
+  // { name: "Transactions", items: 69 },
+  // { name: "Tokens", items: 69 },
   { name: "NFTs", items: 69 },
-  { name: "Profile", items: 69 },
+  // { name: "Profile", items: 69 },
 ];
 
 const aiCategories = [
   { name: "Chat", items: 69 },
-  { name: "Code", items: 69 },
-  { name: "Copilot", items: 69 },
-  { name: "GPT-4", items: 69 },
-  { name: "GPT-3.5", items: 69 },
+  // { name: "Code", items: 69 },
+  // { name: "Copilot", items: 69 },
+  // { name: "GPT-4", items: 69 },
+  // { name: "GPT-3.5", items: 69 },
 ];
 
 const reactNativeCategories = [
-  { name: "Button", items: 69 },
-  { name: "Input", items: 69 },
-  { name: "Text", items: 69 },
-  { name: "Image", items: 69 },
-  { name: "ScrollView", items: 69 },
+  { name: "Login", items: 69 },
+  { name: "Signup", items: 69 },
+  // { name: "Text", items: 69 },
+  // { name: "Image", items: 69 },
+  // { name: "ScrollView", items: 69 },
 ];
 
 const ComponentSection = () => {
