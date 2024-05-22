@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
-function VerticleSteps({ }: Props) {
-	return (
+function VerticleSteps({}: Props) {
+  return (
     <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
@@ -11,7 +11,7 @@ function VerticleSteps({ }: Props) {
             Steps to Use AuraUI
           </h2>
           <p className="max-w-lg mx-auto mt-6 text-lg font-normal text-gray-600 font-pj">
-           Always use AuraUI,"Aura Aura"
+            Always use AuraUI,&quot;Aura Aura&quot;
           </p>
         </div>
 
@@ -28,8 +28,8 @@ function VerticleSteps({ }: Props) {
                   1
                 </div>
                 <p className="ml-6 text-xl font-medium text-gray-900 font-pj">
-               Determine which component from the
-                  AuraUI library you need for your project. 
+                  Determine which component from the AuraUI library you need for
+                  your project.
                 </p>
               </div>
             </div>
@@ -57,8 +57,8 @@ function VerticleSteps({ }: Props) {
                   2
                 </div>
                 <p className="ml-6 text-xl font-medium text-gray-900 font-pj">
-                Once you have identified the required
-                  component, copy its code from the AuraUI library.
+                  Once you have identified the required component, copy its code
+                  from the AuraUI library.
                 </p>
               </div>
             </div>
@@ -76,9 +76,8 @@ function VerticleSteps({ }: Props) {
                   3
                 </div>
                 <p className="ml-6 text-xl font-medium text-gray-900 font-pj">
-                Open your project in VS Code and paste the
-                  copied code into the appropriate file or section of your
-                  project.
+                  Open your project in VS Code and paste the copied code into
+                  the appropriate file or section of your project.
                 </p>
               </div>
             </div>
@@ -91,8 +90,8 @@ function VerticleSteps({ }: Props) {
                   4
                 </div>
                 <p className="ml-6 text-xl font-medium text-gray-900 font-pj">
-                Modify the component as needed to fit
-                  the specific requirements and design of your website.
+                  Modify the component as needed to fit the specific
+                  requirements and design of your website.
                 </p>
               </div>
             </div>
@@ -103,4 +102,4 @@ function VerticleSteps({ }: Props) {
   );
 }
 
-export default VerticleSteps
+export default VerticleSteps;
