@@ -5,8 +5,11 @@ type Props = {}
 
 function Small({}: Props) {
 	return (
-		<SmallFooter/>
-	)
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-grow">{/* Your main content goes here */}</div>
+      <SmallFooter />
+    </div>
+  );
 }
 
 export default Small
