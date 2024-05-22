@@ -132,14 +132,13 @@ const Hero = () => {
           Quickly Copy, paste, and launch your website 🏎️ fasterrrrrr than ever!
         </p>
 
-        <div className="mt-8 grid grid-cols-3 gap-4 md:gap-8  max-w-2xl  mx-auto md:p-5">
+        <div className="mt-8 grid grid-cols-3 gap-4 md:gap-8  max-w-xl mx-auto md:p-5">
           <div className="md:text-center">
             <div>
               <div className="flex items-center justify-center md:mx-auto bg-transparent backdrop-blur-lg border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-14">
                 <IconCommand width={20} height={24} />
                 <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
-                  {" "}
-                  C{" "}
+                  C
                 </span>
               </div>
             </div>
@@ -151,8 +150,7 @@ const Hero = () => {
             <div className="flex items-center justify-center md:mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-14">
               <IconCommand width={20} height={20} />
               <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
-                {" "}
-                V{" "}
+                V
               </span>
             </div>
             <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -163,8 +161,7 @@ const Hero = () => {
             <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-24 h-14">
               <IconCommand width={20} height={20} />
               <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
-                {" "}
-                Ship{" "}
+                Ship
               </span>
             </div>
             <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -174,12 +171,12 @@ const Hero = () => {
         </div>
         <div className="mt-8 flex md:flex-row flex-col justify-center gap-6 md:space-x-4">
           <Link href="/components">
-            <button className="px-4 py-2 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+            <button className="px-6 py-3 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 ">
               Try a free component
             </button>
           </Link>
           <Link href="#global">
-            <button className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <button className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
               Browse components
             </button>
           </Link>
