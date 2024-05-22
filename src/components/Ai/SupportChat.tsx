@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ChatIcon = ({ className }: { className: string }) => (
   <svg
@@ -17,8 +17,8 @@ const ChatIcon = ({ className }: { className: string }) => (
   </svg>
 );
 
-const MessageIcon = ({ iconType }: { iconType: 'ai' | 'user' }) => {
-  const icons: { [key in 'ai' | 'user']: JSX.Element } = {
+const MessageIcon = ({ iconType }: { iconType: "ai" | "user" }) => {
+  const icons: { [key in "ai" | "user"]: JSX.Element } = {
     ai: (
       <svg
         stroke="none"
@@ -54,7 +54,15 @@ const MessageIcon = ({ iconType }: { iconType: 'ai' | 'user' }) => {
   return icons[iconType] || null;
 };
 
-const ChatMessage = ({ sender, message, iconType }: { sender: string, message: string, iconType: 'ai' | 'user' }) => (
+const ChatMessage = ({
+  sender,
+  message,
+  iconType,
+}: {
+  sender: string;
+  message: string;
+  iconType: "ai" | "user";
+}) => (
   <div className="flex gap-3 my-4 text-gray-600 text-sm flex-1">
     <span className="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8">
       <div className="rounded-full bg-gray-100 border p-1">
@@ -88,25 +96,30 @@ const SupportChat = () => {
 
         {isChatOpen && (
           <div
-            style={{ boxShadow: '0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05)' }}
+            style={{
+              boxShadow: "0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05)",
+            }}
             className="absolute bottom-[calc(4rem+1.5rem)] right-0 mr-4 bg-white p-6 rounded-lg border border-[#e5e7eb] w-[440px] h-[634px]"
           >
             <div className="flex flex-col space-y-1.5 pb-6">
-              <h2 className="font-semibold text-lg text-gray-800">Aura Chatbot</h2>
-              <p className="text-sm text-gray-600 leading-3">Powered by Aura and gpt-4</p>
+              <h2 className="font-semibold text-lg text-gray-800">
+                Aura Chatbot
+              </h2>
+              <p className="text-sm text-gray-600 leading-3">
+                Powered by Aura and gpt-4
+              </p>
             </div>
 
-            <div className="pr-4 h-[485px]" style={{ minWidth: '100%', display: 'table' }}>
+            <div
+              className="pr-4 h-[485px]"
+              style={{ minWidth: "100%", display: "table" }}
+            >
               <ChatMessage
                 sender="AI"
                 message="Hi, how can I help you today?"
                 iconType="ai"
               />
-              <ChatMessage
-                sender="You"
-                message="fewafef"
-                iconType="user"
-              />
+              <ChatMessage sender="You" message="fewafef" iconType="user" />
               <ChatMessage
                 sender="AI"
                 message="Sorry, I couldn't find any information in the documentation about that. Expect answer to be less accurateI could not find the answer to this in the verified sources."
