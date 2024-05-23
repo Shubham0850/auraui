@@ -41,7 +41,7 @@
   "cta": {
     "title": "CTA"
   },
- 
+
   "pricing": {
     "title": "Pricing"
   },
@@ -69,6 +69,27 @@
   },
   "ai": {
     "title": "AI"
+  },
+  "article": {
+    "title": "Article"
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "integration": {
+    "title": "Integration"
+  },
+  "newsletter": {
+    "title": "Newsletter"
+  },
+  "roadmap": {
+    "title": "Roadmap"
+  },
+  "setting": {
+    "title": "Setting"
   },
   "contact": {
     "title": "Contact ↗",
