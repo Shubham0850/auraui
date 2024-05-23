@@ -8,12 +8,11 @@ const AestheticDevApp = (props: Props) => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-            Celebration helps you build beautiful website
+            AuraUI helps you build beautiful websites
           </h2>
           <p className="mt-4 text-base leading-relaxed text-gray-100">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            AuraUI offers a suite of hand-coded blocks that streamline the web
+            development process. Build stunning, responsive sites with ease.
           </p>
 
           <a
@@ -36,8 +35,7 @@ const AestheticDevApp = (props: Props) => {
               />
             </svg>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-              {" "}
-              Explore Celebration{" "}
+              Explore AuraUI
             </span>
           </a>
         </div>
@@ -45,7 +43,7 @@ const AestheticDevApp = (props: Props) => {
         <img
           className="w-full max-w-3xl mx-auto mt-8 rounded-lg shadow-xl sm:mt-20"
           src="https://cdn.rareblocks.xyz/collection/celebration/images/features/6/dashboard-screenshot.png"
-          alt=""
+          alt="Dashboard screenshot"
         />
 
         <div className="flex flex-col items-start justify-center max-w-lg px-10 mx-auto mt-8 space-y-8 lg:max-w-xl sm:px-0 sm:space-y-0 sm:flex-row sm:mt-16 sm:space-x-6 lg:space-x-12 sm:items-center">

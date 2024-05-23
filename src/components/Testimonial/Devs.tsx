@@ -12,13 +12,10 @@ const Devs = (props: Props) => {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-lg text-gray-800">
-                    “You made it so simple. My new site is so much faster and
-                    easier to work with than my old site. I just choose the
-                    page, make the change and click save.”
+                    “Aura UI made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.”
                   </p>
                 </blockquote>
               </div>
-
               <div className="mt-8">
                 <div className="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
                 <div className="flex items-center">
@@ -29,7 +26,7 @@ const Devs = (props: Props) => {
                   />
                   <div className="ml-3">
                     <p className="text-base font-semibold text-gray-800 truncate">
-                      Devon Lane
+                      Rajesh Kumar
                     </p>
                     <p className="text-base text-gray-500 truncate">
                       President of Sales
@@ -45,12 +42,10 @@ const Devs = (props: Props) => {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-lg text-gray-800">
-                    “Simply the best. Better than all the rest. I’d recommend
-                    this product to beginners and advanced users.”
+                    “Simply the best. Better than all the rest. I’d recommend Aura UI to beginners and advanced users.”
                   </p>
                 </blockquote>
               </div>
-
               <div className="mt-8">
                 <div className="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
                 <div className="flex items-center">
@@ -61,7 +56,7 @@ const Devs = (props: Props) => {
                   />
                   <div className="min-w-0 ml-3">
                     <p className="text-base font-semibold text-gray-800 truncate">
-                      Ronald Richards
+                      Priya Singh
                     </p>
                     <p className="text-base text-gray-500 truncate">
                       Marketing Coordinator
@@ -77,12 +72,10 @@ const Devs = (props: Props) => {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-lg text-gray-800">
-                    “This is a top quality product. No need to think twice
-                    before making it live on web.”
+                    “This is a top-quality product. No need to think twice before making it live on the web.”
                   </p>
                 </blockquote>
               </div>
-
               <div className="mt-8">
                 <div className="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
                 <div className="flex items-center">
@@ -93,7 +86,7 @@ const Devs = (props: Props) => {
                   />
                   <div className="min-w-0 ml-3">
                     <p className="text-base font-semibold text-gray-800 truncate">
-                      Jane Cooper
+                      Ananya Patel
                     </p>
                     <p className="text-base text-gray-500 truncate">
                       Dog Trainer
@@ -109,13 +102,10 @@ const Devs = (props: Props) => {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-lg text-gray-800">
-                    “Finally, I’ve found a template that covers all bases for a
-                    bootstrapped startup. We were able to launch in days, not
-                    months.”
+                    “Finally, I’ve found a template that covers all bases for a bootstrapped startup. We were able to launch in days, not months.”
                   </p>
                 </blockquote>
               </div>
-
               <div className="mt-8">
                 <div className="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
                 <div className="flex items-center">
@@ -126,7 +116,7 @@ const Devs = (props: Props) => {
                   />
                   <div className="min-w-0 ml-3">
                     <p className="text-base font-semibold text-gray-800 truncate">
-                      Theresa Webb
+                      Vikram Rao
                     </p>
                     <p className="text-base text-gray-500 truncate">
                       Web Designer
@@ -142,13 +132,10 @@ const Devs = (props: Props) => {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-lg text-gray-800">
-                    “My new site is so much faster and easier to work with than
-                    my old site. I just choose the page, make the change and
-                    click save.”
+                    “My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.”
                   </p>
                 </blockquote>
               </div>
-
               <div className="mt-8">
                 <div className="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
                 <div className="flex items-center">
@@ -159,7 +146,7 @@ const Devs = (props: Props) => {
                   />
                   <div className="min-w-0 ml-3">
                     <p className="text-base font-semibold text-gray-800 truncate">
-                      Darlene Robertson
+                      Disha Verma
                     </p>
                     <p className="text-base text-gray-500 truncate">
                       Medical Assistant
@@ -175,13 +162,10 @@ const Devs = (props: Props) => {
               <div className="flex-1">
                 <blockquote>
                   <p className="text-lg text-gray-800">
-                    “You made it so simple. My new site is so much faster and
-                    easier to work with than my old site. I just choose the
-                    page, make the change and click save.”
+                    “Aura UI made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.”
                   </p>
                 </blockquote>
               </div>
-
               <div className="mt-8">
                 <div className="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
                 <div className="flex items-center">
@@ -192,7 +176,7 @@ const Devs = (props: Props) => {
                   />
                   <div className="min-w-0 ml-3">
                     <p className="text-base font-semibold text-gray-800 truncate">
-                      Floyd Miles
+                      Arjun Mehta
                     </p>
                     <p className="text-base text-gray-500 truncate">
                       Nursing Assistant

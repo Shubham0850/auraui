@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const DevlopmentApp = (props: Props) => {
+const DevelopmentApp = (props: Props) => {
   return (
     <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -12,7 +12,7 @@ const DevlopmentApp = (props: Props) => {
           </p>
 
           <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Celebration helps you build beautiful website
+            AuraUI helps you build beautiful websites
           </h2>
         </div>
 
@@ -38,8 +38,8 @@ const DevlopmentApp = (props: Props) => {
                   Simply Copy & Paste
                 </h3>
                 <p className="mt-3 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint.
+                  Easily integrate blocks into your project by simply copying
+                  and pasting the code, saving you time and effort.
                 </p>
               </div>
             </div>
@@ -64,8 +64,8 @@ const DevlopmentApp = (props: Props) => {
                   Easy to Customize
                 </h3>
                 <p className="mt-3 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint.
+                  Tailor the blocks to your specific needs with ease, thanks to
+                  AuraUI's flexible and customizable design.
                 </p>
               </div>
             </div>
@@ -90,8 +90,8 @@ const DevlopmentApp = (props: Props) => {
                   Made with TailwindCSS
                 </h3>
                 <p className="mt-3 text-base text-gray-600">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint.
+                  AuraUI utilizes TailwindCSS for a sleek, modern design that is
+                  easy to implement and looks great on all devices.
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const DevlopmentApp = (props: Props) => {
             <img
               className="w-full rounded-lg shadow-xl"
               src="https://cdn.rareblocks.xyz/collection/celebration/images/features/7/dashboard-screenshot.png"
-              alt=""
+              alt="Dashboard screenshot"
             />
           </div>
         </div>
@@ -110,4 +110,4 @@ const DevlopmentApp = (props: Props) => {
   );
 };
 
-export default DevlopmentApp;
+export default DevelopmentApp;

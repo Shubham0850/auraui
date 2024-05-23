@@ -17,11 +17,12 @@ const SingleAccess = (props: Props) => {
         <div className="grid items-end grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-20">
           <div>
             <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Join 35k+ web devs & build your next website fast
+              Build your next website fast with Aura UI
             </h2>
             <p className="mt-6 text-base leading-relaxed text-blue-100">
-              Amet minim mollit non deserunt ullam co est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Create stunning user interfaces effortlessly with Aura UI,
+              designed to streamline your development process and empower your
+              creativity.
             </p>
 
             <ul className="mt-12 space-y-4 md:mt-20">
@@ -40,7 +41,10 @@ const SingleAccess = (props: Props) => {
                     />
                   </svg>
                 </div>
-                <span className="text-lg font-medium text-white"> Domain </span>
+                <span className="text-lg font-medium text-white">
+                  {" "}
+                  Component{" "}
+                </span>
               </li>
 
               <li className="flex items-center space-x-3">
@@ -60,7 +64,7 @@ const SingleAccess = (props: Props) => {
                 </div>
                 <span className="text-lg font-medium text-white">
                   {" "}
-                  120+ Coded Blocks{" "}
+                  1000+ Coded Blocks{" "}
                 </span>
               </li>
 

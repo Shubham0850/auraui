@@ -8,11 +8,10 @@ const ToggleDesign = (props: Props) => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Pricing & Plans
+            Our UI Library Pricing & Plans
           </h2>
           <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis.
+            Choose the plan that suits your needs.
           </p>
         </div>
 
@@ -82,7 +81,7 @@ const ToggleDesign = (props: Props) => {
                   </svg>
                   <span className="text-base font-medium text-gray-900">
                     {" "}
-                    1 Domain License{" "}
+                    10 Component License{" "}
                   </span>
                   <svg
                     className="w-4 h-4 ml-0.5 text-gray-500"
@@ -115,7 +114,7 @@ const ToggleDesign = (props: Props) => {
                   </svg>
                   <span className="text-base font-medium text-gray-900">
                     {" "}
-                    Full Celebration Library{" "}
+                    Full Aura UI Library Access{" "}
                   </span>
                 </li>
 
@@ -219,7 +218,7 @@ const ToggleDesign = (props: Props) => {
                   </svg>
                   <span className="text-base font-medium text-gray-900">
                     {" "}
-                    100 Domain License{" "}
+                    100 Components License{" "}
                   </span>
                   <svg
                     className="w-4 h-4 ml-0.5 text-gray-500"
@@ -252,7 +251,7 @@ const ToggleDesign = (props: Props) => {
                   </svg>
                   <span className="text-base font-medium text-gray-900">
                     {" "}
-                    Full Celebration Library{" "}
+                    Full Aura UI Library Access{" "}
                   </span>
                 </li>
 
@@ -271,7 +270,7 @@ const ToggleDesign = (props: Props) => {
                   </svg>
                   <span className="text-base font-medium text-gray-900">
                     {" "}
-                    120+ Coded Blocks{" "}
+                    1000+ Coded Blocks{" "}
                   </span>
                 </li>
 
