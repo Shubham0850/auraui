@@ -1,0 +1,24 @@
+{
+  "index": {
+    "title": "All Component",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "pagination": true,
+      "layout": "full"
+    }
+  },
+  "elements": {
+    "title": "Elements",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  }
+}
