@@ -96,6 +96,49 @@ const marketingCategories = [
     items: 1,
     img: "/components/Feature1.png",
   },
+  {
+    name: "Article",
+    link: "/components/article",
+    items: 1,
+    img: "/components/article.png",
+  },
+  {
+    name: "Blog",
+    link: "/components/article",
+    items: 1,
+    img: "/components/blog.png",
+  },
+
+  {
+    name: "Gallery",
+    link: "/components/gallery",
+    items: 1,
+    img: "/components/gallery.png",
+  },
+  {
+    name: "Integration",
+    link: "/components/integration",
+    items: 1,
+    img: "/components/integration.png",
+  },
+  {
+    name: "News Letter",
+    link: "/components/newsletter",
+    items: 1,
+    img: "/components/newsletter.png",
+  },
+  {
+    name: "Feature",
+    link: "/components/roadmap",
+    items: 1,
+    img: "/components/newsletter.png",
+  },
+  {
+    name: "Settings",
+    link: "/components/setting",
+    items: 1,
+    img: "/components/setting.png",
+  },
 ];
 
 const animationCategories = [
