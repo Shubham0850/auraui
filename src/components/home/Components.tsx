@@ -50,7 +50,7 @@ const marketingCategories = [
     name: "Steps",
     items: 1,
     img: "/components/steps.png",
-    link: "/components/Steps"
+    link: "/components/Steps",
   },
   {
     name: "FAQ",
@@ -69,8 +69,8 @@ const marketingCategories = [
   {
     name: "Logo Cloud",
     items: 1,
-    img: "/components/coming-soon.png",
-    link: "/components/LogoCloud"
+    img: "/components/logocloud.png",
+    link: "/components/LogoCloud",
   },
   {
     name: "Pricing",
