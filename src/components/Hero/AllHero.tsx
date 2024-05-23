@@ -21,20 +21,6 @@ const AllHero = () => {
       </div>
       <div className=" ">
         <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium ">Blog Hero </h3>
-          <Link
-            className=" "
-            href={"/components/hero/Elements#blog-hero-component"}
-          >
-            <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
-        <BlogComponent />
-      </div>
-      <div className=" ">
-        <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium ">Email Campaign Hero</h3>
           <Link
             className=" "

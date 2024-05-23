@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
 // SVG Components
 const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
   return isOpen ? (
@@ -55,11 +53,14 @@ const PlayIcon = () => (
   </svg>
 );
 
+type Props = {};
+
 function EmailCampaignHero({}: Props) {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   // Common anchor styles
-  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
+  const anchorStyles =
+    "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
 
   return (
     <div className="overflow-x-hidden bg-gray-50">
@@ -74,53 +75,37 @@ function EmailCampaignHero({}: Props) {
                 title="Home"
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
-                  className="w-auto h-8"
-                  src="/logo-light.png"
-                  alt="logo"
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="logo" />
               </a>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="flex lg:hidden">
-              <button type="button" className="text-gray-900" onClick={() => setMenuOpen(!menuOpen)}>
+              <button
+                type="button"
+                className="text-gray-900"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
                 <MenuIcon isOpen={menuOpen} />
               </button>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10 xl:space-x-16">
-              <a
-                href="#"
-                title="Features"
-                className={anchorStyles}
-              >
+              <a href="#" title="Features" className={anchorStyles}>
                 Features
               </a>
-              <a
-                href="#"
-                title="Pricing"
-                className={anchorStyles}
-              >
+              <a href="#" title="Pricing" className={anchorStyles}>
                 Pricing
               </a>
-              <a
-                href="#"
-                title="Automation"
-                className={anchorStyles}
-              >
+              <a href="#" title="Automation" className={anchorStyles}>
                 Automation
               </a>
             </div>
 
             {/* Sign Up and Customer Login */}
             <div className="hidden lg:ml-auto lg:flex lg:items-center lg:space-x-10">
-              <a
-                href="#"
-                title="Customer Login"
-                className={anchorStyles}
-              >
+              <a href="#" title="Customer Login" className={anchorStyles}>
                 Customer Login
               </a>
               <a
@@ -190,13 +175,12 @@ function EmailCampaignHero({}: Props) {
               Smart email campaign builder, made for Developers
             </h1>
             <p className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-              Turn your visitors to Use 
+              Turn your visitors to Use
               <span className="relative inline-flex sm:inline">
                 <span className="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0"></span>
                 <span className="relative"> auraUI </span>
               </span>
             </p>
-
             <div className="px-8 sm:items-center sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
               <a
                 href="#"
@@ -216,25 +200,19 @@ function EmailCampaignHero({}: Props) {
                 Use free AuraUI
               </a>
             </div>
-
             <p className="mt-8 text-base text-gray-500 font-inter">
-             Some are free Components · No credit card required
+              Some are free Components · No credit card required
             </p>
           </div>
         </div>
 
-        <div className="pb-12 bg-white">
-          <div className="relative">
-            <div className="absolute inset-0 h-2/3 bg-gray-50"></div>
-            <div className="relative mx-auto">
-              <div className="lg:max-w-6xl lg:mx-auto">
-                <img
-                  className="transform scale-110"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/2/illustration.png"
-                  alt="Illustration"
-                />
-              </div>
-            </div>
+        <div className="pb-12 mt-8 px-4 bg-white">
+          <div className="flex justify-center ">
+            <img
+              className="w-full lg:w-[500px] md:h-[500px] rounded-lg  "
+              src="https://www.auraui.com/aiimage/auraui.jpeg"
+              alt="image"
+            />
           </div>
         </div>
       </section>

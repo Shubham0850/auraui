@@ -88,35 +88,19 @@ function CourseHero({ }: Props) {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-              <a
-                href="#"
-                title="Features"
-                className={anchorStyles}
-              >
+              <a href="#" title="Features" className={anchorStyles}>
                 Features
               </a>
 
-              <a
-                href="#"
-                title="Solutions"
-                className={anchorStyles}
-              >
-                Solutions
+              <a href="#" title="Home" className={anchorStyles}>
+                Home
               </a>
 
-              <a
-                href="#"
-                title="Resources"
-                className={anchorStyles}
-              >
+              <a href="#" title="Resources" className={anchorStyles}>
                 Resources
               </a>
 
-              <a
-                href="#"
-                title="About Us"
-                className={anchorStyles}
-              >
+              <a href="#" title="About Us" className={anchorStyles}>
                 About Us
               </a>
             </div>
@@ -128,7 +112,7 @@ function CourseHero({ }: Props) {
               className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-white transition-all duration-200 bg-black rounded-full hover:bg-yellow-300 hover:text-black focus:bg-yellow-300 focus:text-black"
               role="button"
             >
-              Join Now
+              Contact
             </a>
           </div>
         </div>
@@ -140,13 +124,13 @@ function CourseHero({ }: Props) {
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
               <p className="text-base font-semibold tracking-wider text-yellow-600 uppercase">
-                Learning Area for learners
+                Learning Zone for AuraUI
               </p>
               <h1 className="mt-4 text-3xl font-bold text-black sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-                Talk & learn from the experts
+                Chat and Learn with AuraUI
               </h1>
               <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
-                Grow your career fast with right mentor.
+                Grow your career fast with AuraUI.
               </p>
 
               <a
@@ -173,8 +157,8 @@ function CourseHero({ }: Props) {
 
             <div>
               <img
-                className="w-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
+                className="w-full rounded-md "
+                src="https://www.auraui.com/aiimage/books.jpeg"
                 alt="Hero Image"
               />
             </div>

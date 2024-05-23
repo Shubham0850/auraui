@@ -54,22 +54,15 @@ const DownloadIcon = () => (
   </svg>
 );
 
-function FeedbackHero({ }: Props) {
+function FeedbackHero({}: Props) {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   // Common anchor styles
-  const anchorStyles = "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
+  const anchorStyles =
+    "text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2";
 
   return (
     <div className="relative bg-gray-50">
-      <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
-        <img
-          className="w-auto h-full"
-          src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
-          alt="Background Pattern"
-        />
-      </div>
-
       {/* Header Section */}
       <header className="relative py-4 md:py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -188,11 +181,11 @@ function FeedbackHero({ }: Props) {
               </div>
             </div>
 
-            <div className="xl:col-span-3">
+            <div className="xl:col-span-3 px-4 sm:px-6 lg:px-0">
               <img
-                className="w-full mx-auto scale-110"
-                src="https://d33wubrfki0l68.cloudfront.net/29c501c64b21014b3f2e225abe02fe31fd8f3a5c/f866d/images/hero/3/illustration.png"
-                alt="Illustration"
+                className="w-full max-w-sm lg:max-w-md xl:max-w-lg rounded-lg mx-auto"
+                src="https://www.auraui.com/aiimage/block2.jpeg"
+                alt="image"
               />
             </div>
           </div>
