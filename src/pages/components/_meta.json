@@ -9,7 +9,7 @@
     }
   },
 
-  "Hero": {
+  "hero": {
     "title": "Hero",
     "theme": {
       "breadcrumb": true,
@@ -20,56 +20,54 @@
       "pagination": true
     }
   },
-  "Header": {
+  "header": {
     "title": "Header"
   },
-  "Footer": {
+  "footer": {
     "title": "Footer"
   },
-  "SignUp": {
+  "sign-up": {
     "title": "SignUp"
   },
-  "SignIn": {
+  "sign-in": {
     "title": "SignIn"
   },
-  "Testimonial": {
+  "testimonial": {
     "title": "Testimonial"
   },
-  "Feature": {
+  "feature": {
     "title": "Feature"
   },
-  "CTA": {
+  "cta": {
     "title": "CTA"
   },
-  "AboutUs": {
-    "title": "About"
-  },
-  "Pricing": {
+ 
+  "pricing": {
     "title": "Pricing"
   },
-  "Teams": {
+  "teams": {
     "title": "Teams"
   },
 
-  "Contact": {
+  "contacts": {
     "title": "Contact"
   },
-  "Stats": {
+  "stats": {
     "title": "Stats"
   },
-  "FAQs": {
+  "faqs": {
     "title": "FAQs"
   },
-  "LogoCloud": {
+  "logocloud": {
     "title": "LogoCloud"
   },
-  "Steps": {
+  "steps": {
     "title": "Steps"
   },
-  "Web3": {
+  "web3": {
     "title": "Web3"
   },
-  "AI": {
+  "ai": {
     "title": "AI"
   },
   "contact": {
