@@ -61,6 +61,16 @@ const config: DocsThemeConfig = {
   //   key: "4",
   // },
 
+
+
+  editLink:{
+component:null
+  },
+
+  feedback:{
+    content:null
+  },
+
   sidebar: {
     autoCollapse: false,
     defaultMenuCollapseLevel: 1,
