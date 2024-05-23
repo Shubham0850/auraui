@@ -15,7 +15,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "/components/Header/Elements#simple-header"
+              "/components/header/Elements#simple-header"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -31,7 +31,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "/components/Header/Elements#user-account-navbar"
+              "/components/header/Elements#user-account-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -47,7 +47,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "/components/Header/Elements#call-to-action-navbar"
+              "/components/header/Elements#call-to-action-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -63,7 +63,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "/components/Header/Elements#authentication-navbar"
+              "/components/header/Elements#authentication-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -79,7 +79,7 @@ const AllHeader = () => {
           <Link
             className=" "
             href={
-              "/components/Header/Elements#promotional-navbar"
+              "/components/header/Elements#promotional-navbar"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">

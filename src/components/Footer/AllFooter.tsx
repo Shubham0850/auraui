@@ -9,7 +9,7 @@ const AllFooter = () => {
       <div className=" ">
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium ">AuraFooter Component </h3>
-          <Link href={"/components/Footer/Elements#aurafooter-component"}>
+          <Link href={"/components/footer/Elements#aurafooter-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -22,7 +22,7 @@ const AllFooter = () => {
           <h3 className="text-[20px] font-medium ">Small Footer Component </h3>
           <Link
             className=" "
-            href={"/components/Footer/Elements#small-footer-component"}
+            href={"/components/footer/Elements#small-footer-component"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code

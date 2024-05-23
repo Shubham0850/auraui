@@ -12,7 +12,7 @@ const AllPricing = () => {
       <div>
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium">Toggle Design</h3>
-          <Link href={"/components/Pricing/Elements#toggle-design"}>
+          <Link href={"/components/pricing/Elements#toggle-design"}>
             <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -23,7 +23,7 @@ const AllPricing = () => {
       <div>
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium">Card Design</h3>
-          <Link href={"/components/Pricing/Elements#card-design"}>
+          <Link href={"/components/pricing/Elements#card-design"}>
             <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -34,7 +34,7 @@ const AllPricing = () => {
       <div>
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium">Selection Design</h3>
-          <Link href={"/components/Pricing/Elements#selection-design"}>
+          <Link href={"/components/pricing/Elements#selection-design"}>
             <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -48,7 +48,7 @@ const AllPricing = () => {
             Four Category Pricing Section
           </h3>
           <Link
-            href={"/components/Pricing/Elements#four-category-pricing-section"}
+            href={"/components/pricing/Elements#four-category-pricing-section"}
           >
             <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
@@ -60,7 +60,7 @@ const AllPricing = () => {
       <div>
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium">Single Access</h3>
-          <Link href={"/components/Pricing/Elements#single-access"}>
+          <Link href={"/components/pricing/Elements#single-access"}>
             <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>

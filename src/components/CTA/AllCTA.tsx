@@ -12,7 +12,7 @@ const AllCTA = () => {
       <div>
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium">Mobile App</h3>
-          <Link href={"/components/CTA/Elements#mobile-app"}>
+          <Link href={"/components/cta/Elements#mobile-app"}>
             <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>

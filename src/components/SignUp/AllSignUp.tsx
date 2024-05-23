@@ -8,7 +8,7 @@ const AllSignUp = () => {
       <div className=" ">
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium ">Business SignUp Component</h3>
-          <Link href={"/components/SignUp/Elements#business-signup-component"}>
+          <Link href={"/components/signUp/Elements#business-signup-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
