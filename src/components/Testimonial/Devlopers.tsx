@@ -12,7 +12,7 @@ const Developers = (props: Props) => {
           </h2>
           <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
             Our customers love Aura UI for its simplicity and ease of use.
-            Here's what they have to say.
+            Here&apos;s what they have to say.
           </p>
         </div>
 
@@ -79,8 +79,8 @@ const Developers = (props: Props) => {
               </div>
               <blockquote className="mt-5">
                 <p className="text-base text-gray-800">
-                  Simply the best. Better than all the rest. I’d recommend Aura
-                  UI to beginners and advanced users.
+                  Simply the best. Better than all the rest. I&apos;d recommend
+                  Aura UI to beginners and advanced users.
                   <span className="block text-sky-500">#top_quality</span>
                 </p>
               </blockquote>
@@ -116,8 +116,8 @@ const Developers = (props: Props) => {
               </div>
               <blockquote className="mt-5">
                 <p className="text-base text-gray-800">
-                  Aura UI is fantastic! It's both fast and efficient, perfect
-                  for my needs.
+                  Aura UI is fantastic! It&apos;s both fast and efficient,
+                  perfect for my needs.
                   <span className="block text-sky-500">#super_fast</span>
                 </p>
               </blockquote>
@@ -151,8 +151,8 @@ const Developers = (props: Props) => {
               </div>
               <blockquote className="mt-5">
                 <p className="text-base text-gray-800">
-                  Couldn’t have asked for a better service. Aura UI is simply
-                  amazing.
+                  Couldn&apos;t have asked for a better service. Aura UI is
+                  simply amazing.
                   <span className="block text-sky-500">#amazing_service</span>
                 </p>
               </blockquote>
