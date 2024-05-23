@@ -11,8 +11,9 @@ const GetInTouch = (props: Props) => {
             <div className="text-center md:py-16 xl:py-24 md:text-left">
               <blockquote>
                 <p className="text-2xl font-semibold leading-relaxed text-gray-900">
-                  “Celebrate every moment with Aura UI. It's not just a UI
-                  library; it's a companion in your web development journey.”
+                  “Celebrate every moment with Aura UI. It&apos;s not just a UI
+                  library; it&apos;s a companion in your web development
+                  journey.”
                 </p>
               </blockquote>
               <div className="mt-6 sm:flex sm:items-baseline sm:justify-center md:justify-start">

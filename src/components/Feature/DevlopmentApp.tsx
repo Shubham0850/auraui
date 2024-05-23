@@ -65,7 +65,7 @@ const DevelopmentApp = (props: Props) => {
                 </h3>
                 <p className="mt-3 text-base text-gray-600">
                   Tailor the blocks to your specific needs with ease, thanks to
-                  AuraUI's flexible and customizable design.
+                  AuraUI&apos;s flexible and customizable design.
                 </p>
               </div>
             </div>

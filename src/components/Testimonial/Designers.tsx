@@ -35,9 +35,9 @@ const Designers = (props: Props) => {
               </div>
               <blockquote className="mt-7">
                 <p className="text-lg text-black">
-                  “AURA UI is the best component library I've ever used. It's
-                  incredibly easy to integrate with Next.js and has a plethora
-                  of features. Highly recommended!”
+                  “AURA UI is the best component library I&apos;ve ever used.
+                  It&apos;s incredibly easy to integrate with Next.js and has a
+                  plethora of features. Highly recommended!”
                 </p>
               </blockquote>
               <p className="text-base font-semibold text-black mt-9">
