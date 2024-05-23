@@ -25,11 +25,11 @@ const SimplePayments = (props: Props) => {
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
-              Secured Payments
+              Secure Payments
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Experience seamless and safe transactions with our robust security
+              measures.
             </p>
           </div>
 
@@ -51,11 +51,11 @@ const SimplePayments = (props: Props) => {
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
-              Fast & Easy to Load
+              Fast & Easy Setup
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Get started quickly with our user-friendly interface and easy
+              setup process.
             </p>
           </div>
 
@@ -77,11 +77,11 @@ const SimplePayments = (props: Props) => {
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
-              Light & Dark Version
+              Light & Dark Mode
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Switch effortlessly between light and dark modes to suit your
+              preference.
             </p>
           </div>
 
@@ -106,8 +106,8 @@ const SimplePayments = (props: Props) => {
               Filter Blocks
             </h3>
             <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
+              Easily filter and organize content to enhance your workflow and
+              productivity.
             </p>
           </div>
         </div>

@@ -11,8 +11,7 @@ const FourCategoryDesign = (props: Props) => {
             Pricing &amp; Plans
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullam co est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
+            Choose the best plan according to you
           </p>
         </div>
 
@@ -50,7 +49,7 @@ const FourCategoryDesign = (props: Props) => {
                     Popular{" "}
                   </span>
                   <p className="mt-6 text-6xl font-bold text-white">$150</p>
-                  <p className="mt-2 text-base font-normal text-gray-200">
+                  <p className="mt-2 text-base font-normal text-gray-800">
                     Per month
                   </p>
                 </th>

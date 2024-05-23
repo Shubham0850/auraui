@@ -11,21 +11,20 @@ const GetInTouch = (props: Props) => {
             <div className="text-center md:py-16 xl:py-24 md:text-left">
               <blockquote>
                 <p className="text-2xl font-semibold leading-relaxed text-gray-900">
-                  “Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.”
+                  “Celebrate every moment with Aura UI. It's not just a UI
+                  library; it's a companion in your web development journey.”
                 </p>
               </blockquote>
               <div className="mt-6 sm:flex sm:items-baseline sm:justify-center md:justify-start">
                 <p className="text-base font-semibold text-gray-900">
-                  Jenny Wilson
+                  Ananya Sharma
                 </p>
                 <p className="mt-2 text-base text-gray-700 sm:mt-0 sm:ml-2">
-                  Project Manager at Microsoft
+                  Senior Web Developer at Tech Solutions
                 </p>
               </div>
               <p className="mt-12 text-base text-gray-900 lg:mt-20">
-                Want to see Celebration in action?
+                Ready to experience the power of Aura UI?
               </p>
               <a
                 href="#"
@@ -34,7 +33,7 @@ const GetInTouch = (props: Props) => {
                 role="button"
               >
                 {" "}
-                Create your first website{" "}
+                Get started now{" "}
               </a>
             </div>
 

@@ -9,7 +9,7 @@ const Simple = (props: Props) => {
         <img
           className="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
           src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg"
-          alt=""
+          alt="Girl working on laptop"
         />
       </div>
 
@@ -20,19 +20,21 @@ const Simple = (props: Props) => {
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left">
           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-            Get full access to Celebration
+            Get Full Access to Aura UI
           </h2>
           <p className="mt-4 text-base text-gray-200">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam.
+            Join the Aura UI community and unlock all the features to create
+            stunning, responsive web applications. Subscribe now and elevate
+            your development experience.
           </p>
 
           <form action="#" method="POST" className="mt-8 lg:mt-12">
             <div className="flex flex-col items-center sm:flex-row sm:justify-center">
               <div className="flex-1 w-full min-w-0 px-4 sm:px-0">
                 <div className="relative text-gray-400 focus-within:text-gray-600">
-                  <label htmlFor="email" className="sr-only"></label>
+                  <label htmlFor="email" className="sr-only">
+                    Email address
+                  </label>
                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg
                       className="w-5 h-5"
@@ -64,7 +66,7 @@ const Simple = (props: Props) => {
                 type="submit"
                 className="inline-flex items-center justify-center flex-shrink-0 w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-blue-700 focus:bg-blue-700"
               >
-                Get instant access
+                Get Instant Access
               </button>
             </div>
           </form>

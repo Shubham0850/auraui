@@ -8,8 +8,8 @@ const Designers = (props: Props) => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
-            Trusted by <span className="text-blue-600">30k+</span> world
-            className companies & design teams
+            Trusted by <span className="text-blue-600">30k+</span> companies &
+            design teams worldwide
           </h2>
         </div>
 
@@ -19,8 +19,8 @@ const Designers = (props: Props) => {
               <div className="relative w-24 h-24 mx-auto">
                 <img
                   className="relative object-cover w-24 h-24 mx-auto rounded-full"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-1.jpg"
-                  alt=""
+                  src="/memeimage/udayshetty.jpg"
+                  alt="Avatar"
                 />
                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                   <svg
@@ -35,16 +35,16 @@ const Designers = (props: Props) => {
               </div>
               <blockquote className="mt-7">
                 <p className="text-lg text-black">
-                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat”
+                  “AURA UI is the best component library I've ever used. It's
+                  incredibly easy to integrate with Next.js and has a plethora
+                  of features. Highly recommended!”
                 </p>
               </blockquote>
-              <p className="text-base font-semibold tex-tblack mt-9">
-                Jenny Wilson
+              <p className="text-base font-semibold text-black mt-9">
+                Uday Shetty
               </p>
               <p className="mt-1 text-base text-gray-600">
-                Project Manager at Microsoft
+                Frontend Developer at Tech Solutions
               </p>
             </div>
           </div>
@@ -54,8 +54,8 @@ const Designers = (props: Props) => {
               <div className="relative w-24 h-24 mx-auto">
                 <img
                   className="relative object-cover w-24 h-24 mx-auto rounded-full"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-2.jpg"
-                  alt=""
+                  src="/memeimage/girl2.jpeg"
+                  alt="Avatar"
                 />
                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                   <svg
@@ -70,16 +70,16 @@ const Designers = (props: Props) => {
               </div>
               <blockquote className="mt-7">
                 <p className="text-lg text-black">
-                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat”
+                  “The ease of use and the variety of components in AURA UI is
+                  simply amazing. It made our development process much
+                  smoother.”
                 </p>
               </blockquote>
-              <p className="text-base font-semibold tex-tblack mt-9">
-                Robert Fox
+              <p className="text-base font-semibold text-black mt-9">
+                Priya Sharma
               </p>
               <p className="mt-1 text-base text-gray-600">
-                Founder at Brain.co
+                UI/UX Designer at Creative Minds
               </p>
             </div>
           </div>
@@ -89,8 +89,8 @@ const Designers = (props: Props) => {
               <div className="relative w-24 h-24 mx-auto">
                 <img
                   className="relative object-cover w-24 h-24 mx-auto rounded-full"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-3.jpg"
-                  alt=""
+                  src="/memeimage/majnubhai.jpeg"
+                  alt="Avatar"
                 />
                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                   <svg
@@ -105,16 +105,16 @@ const Designers = (props: Props) => {
               </div>
               <blockquote className="mt-7">
                 <p className="text-lg text-black">
-                  “Amet minim mollit non deserunt ullam co est sit aliqua dolor
-                  do amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat”
+                  “AURA UI has become an essential part of our toolkit. The
+                  components are top-notch and the integration with Next.js is
+                  seamless.”
                 </p>
               </blockquote>
-              <p className="text-base font-semibold tex-tblack mt-9">
-                Kristin Watson
+              <p className="text-base font-semibold text-black mt-9">
+                Majnu Bhai
               </p>
               <p className="mt-1 text-base text-gray-600">
-                UX Designer at Google
+                Software Engineer at Innovatech
               </p>
             </div>
           </div>

@@ -20,8 +20,8 @@ const Buisness = (props: Props) => {
               </p>
             </blockquote>
             <div className="flex items-center mt-16">
-              <p className="text-lg font-semibold text-black">Jenny Wilson</p>
-              <p className="ml-3 text-lg text-gray-600">Co-founder, Appson</p>
+              <p className="text-lg font-semibold text-black">Jack</p>
+              <p className="ml-3 text-lg text-gray-600">Co-founder, Company</p>
             </div>
           </div>
 
@@ -29,7 +29,7 @@ const Buisness = (props: Props) => {
             <div className="flex items-center justify-center w-24 h-24 rounded-full ring-2 ring-fuchsia-600">
               <img
                 className="object-cover w-20 h-20 rounded-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/9/avatar-1.jpg"
+                src="/memeimage/jack.jpg"
                 alt=""
               />
             </div>
@@ -37,7 +37,7 @@ const Buisness = (props: Props) => {
             <div className="flex items-center justify-center w-24 h-24 rounded-full ring-2 ring-transparent">
               <img
                 className="object-cover w-20 h-20 rounded-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/9/avatar-2.jpg"
+                src="/memeimage/joey.jpeg"
                 alt=""
               />
             </div>
@@ -45,7 +45,7 @@ const Buisness = (props: Props) => {
             <div className="flex items-center justify-center w-24 h-24 rounded-full ring-2 ring-transparent">
               <img
                 className="object-cover w-20 h-20 rounded-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/9/avatar-3.jpg"
+                src="/memeimage/oggy.jpeg"
                 alt=""
               />
             </div>
