@@ -8,7 +8,7 @@ const AllFaqs = () => {
       <div className=" ">
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium ">QuestBox FAQs </h3>
-          <Link href={"/components/FAQs/Elements#questbox-faqs-component"}>
+          <Link href={"/components/faqs/Elements#questbox-faqs-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>

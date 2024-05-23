@@ -16,7 +16,7 @@ const AllTestimonial = () => {
             Testimonial for Designers
           </h3>
           <Link
-            href={"/components/Testimonial/Elements#testimonial-for-designers"}
+            href={"/components/testimonial/Elements#testimonial-for-designers"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
@@ -32,7 +32,7 @@ const AllTestimonial = () => {
           </h3>
           <Link
             className=" "
-            href={"/components/Testimonial/Elements#testimonial-for-devlopers"}
+            href={"/components/testimonial/Elements#testimonial-for-devlopers"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
@@ -49,7 +49,7 @@ const AllTestimonial = () => {
           <Link
             className=" "
             href={
-              "/components/Testimonial/Elements#second-devlopers-testimonial"
+              "/components/testimonial/Elements#second-devlopers-testimonial"
             }
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
@@ -64,7 +64,7 @@ const AllTestimonial = () => {
           <h3 className="text-[20px] font-medium ">Testimonial for Jobs</h3>
           <Link
             className=" "
-            href={"/components/Testimonial/Elements#testimonial-for-jobs"}
+            href={"/components/testimonial/Elements#testimonial-for-jobs"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
@@ -79,7 +79,7 @@ const AllTestimonial = () => {
           <h3 className="text-[20px] font-medium ">Buisness Testimonial</h3>
           <Link
             className=" "
-            href={"/components/Testimonial/Elements#buisness-testimonial"}
+            href={"/components/testimonial/Elements#buisness-testimonial"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code

@@ -11,7 +11,7 @@ const AllHero = () => {
       <div className=" ">
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium ">Course Hero </h3>
-          <Link href={"/components/Hero/Elements#coursehero-component"}>
+          <Link href={"/components/hero/Elements#coursehero-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -24,7 +24,7 @@ const AllHero = () => {
           <h3 className="text-[20px] font-medium ">Blog Hero </h3>
           <Link
             className=" "
-            href={"/components/Hero/Elements#blog-hero-component"}
+            href={"/components/hero/Elements#blog-hero-component"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
@@ -38,7 +38,7 @@ const AllHero = () => {
           <h3 className="text-[20px] font-medium ">Email Campaign Hero</h3>
           <Link
             className=" "
-            href={"/components/Hero/Elements#emailcampaign-component"}
+            href={"/components/hero/Elements#emailcampaign-component"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
@@ -52,7 +52,7 @@ const AllHero = () => {
           <h3 className="text-[20px] font-medium ">FeedBack Hero</h3>
           <Link
             className=" "
-            href={"/components/Hero/Elements#feedback-hero-component"}
+            href={"/components/hero/Elements#feedback-hero-component"}
           >
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code

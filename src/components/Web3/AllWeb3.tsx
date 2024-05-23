@@ -10,7 +10,7 @@ const AllSignUp = () => {
       <div className=" ">
         <div className="flex my-2 justify-between">
           <h3 className="text-[20px] font-medium ">MajnuBhai NFT Component</h3>
-          <Link href={"/components/Web3/Nft#majnubhai-nft-component"}>
+          <Link href={"/components/web3/Nft#majnubhai-nft-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -23,7 +23,7 @@ const AllSignUp = () => {
           <h3 className="text-[20px] font-medium ">
             WalletLinker Component
           </h3>
-          <Link href={"/components/Web3/Nft#walletlinker-component"}>
+          <Link href={"/components/web3/Nft#walletlinker-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
@@ -37,7 +37,7 @@ const AllSignUp = () => {
           <h3 className="text-[20px] font-medium ">
             CryptoConnector Component
           </h3>
-          <Link href={"/components/Web3/Nft#cryptoconnector-component"}>
+          <Link href={"/components/web3/Nft#cryptoconnector-component"}>
             <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
               Get Code
             </button>
