@@ -128,10 +128,10 @@ const marketingCategories = [
     img: "/components/newsletter.png",
   },
   {
-    name: "Feature",
+    name: "Roadmap",
     link: "/components/roadmap",
     items: 1,
-    img: "/components/newsletter.png",
+    img: "/components/roadmap.png",
   },
   {
     name: "Settings",
@@ -152,11 +152,21 @@ const animationCategories = [
 ];
 
 const web3Categories = [
-  { name: "Wallet Connect", items: 69 },
+  {
+    name: "Wallet Connect",
+    link: "/components/web3/WalletConnect",
+    items: 69,
+    img: "/components/walletconnect.png",
+  },
   // { name: "Connect", items: 69 },
   // { name: "Transactions", items: 69 },
   // { name: "Tokens", items: 69 },
-  { name: "NFTs", items: 69 },
+  {
+    name: "NFTs",
+    link: "/components/web3/Nft",
+    items: 69,
+    img: "/components/nft.png",
+  },
   // { name: "Profile", items: 69 },
 ];
 
@@ -284,16 +294,13 @@ const ComponentSection = () => {
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {web3Categories.map((category) => (
-            <div
+            <a
+              href={category.link}
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img
-                  src="/components/coming-soon.png"
-                  alt="hero"
-                  className="rounded-xl"
-                />
+                <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -301,7 +308,7 @@ const ComponentSection = () => {
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {category.items} items available
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
