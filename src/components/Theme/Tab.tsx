@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowUpRight, Bitcoin, CircleDollarSign, Currency, MoonIcon } from "lucide-react";
+import { ArrowUpRight, CircleDollarSign, MoonIcon } from "lucide-react";
 
 interface TabsProps {
   items: string[];
@@ -12,7 +12,7 @@ const Tabs = ({ items, children, previewLink }: TabsProps) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handlePreviewClick = () => {
-    window.open(previewLink, "_blank");
+    window.open(`/preview/${previewLink}`, "_blank");
   };
 
   return (

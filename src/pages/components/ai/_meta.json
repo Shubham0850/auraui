@@ -11,8 +11,8 @@
     }
   },
 
-  "Ai1": {
-    "title": "AI1",
+  "support-chat": {
+    "title": "Support Chat",
     "theme": {
       "breadcrumb": true,
       "footer": true,
