@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const Three = (props: Props) => {
+const CallToAction = (props: Props) => {
   return (
     <header className="bg-black border-b border-gray-700">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -142,4 +142,4 @@ const Three = (props: Props) => {
   );
 };
 
-export default Three;
+export default CallToAction;

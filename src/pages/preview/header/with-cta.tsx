@@ -1,12 +1,10 @@
-import Two from '@/components/Header/Two'
-import React from 'react'
+import Two from "@/components/Header/UserAccount";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
-function WithCta({ }: Props) {
-	return (
-		<Two />
-	)
+function WithCta({}: Props) {
+  return <Two />;
 }
 
-export default WithCta
+export default WithCta;

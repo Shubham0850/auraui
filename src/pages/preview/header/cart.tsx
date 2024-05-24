@@ -1,12 +1,10 @@
-import React from 'react'
-import One from "@/components/Header/One";
+import React from "react";
+import Simple from "@/components/Header/Simple";
 
-type Props = {}
+type Props = {};
 
-function Cart({ }: Props) {
-	return (
-		<One />
-	)
+function Cart({}: Props) {
+  return <Simple />;
 }
 
-export default Cart
+export default Cart;

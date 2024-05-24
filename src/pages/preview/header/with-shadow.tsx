@@ -1,12 +1,10 @@
-import Four from '@/components/Header/Four'
-import React from 'react'
+import Four from "@/components/Header/Authentication";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 function WithShadow({}: Props) {
-	return (
-		<Four/>
-	)
+  return <Four />;
 }
 
-export default WithShadow
+export default WithShadow;

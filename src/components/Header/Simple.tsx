@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const One = (props: Props) => {
+const Simple = (props: Props) => {
   return (
     <header>
       {/* <!-- lg+ --> */}
@@ -215,4 +215,4 @@ const One = (props: Props) => {
   );
 };
 
-export default One;
+export default Simple;

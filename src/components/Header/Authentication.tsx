@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const Four = (props: Props) => {
+const Authentication = (props: Props) => {
   return (
     <header className="bg-white ">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -155,4 +155,4 @@ const Four = (props: Props) => {
   );
 };
 
-export default Four;
+export default Authentication;

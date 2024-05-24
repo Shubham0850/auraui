@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const Two = (props: Props) => {
+const UserAccount = (props: Props) => {
   return (
     <header className="pb-6 bg-white lg:pb-0">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -163,4 +163,4 @@ const Two = (props: Props) => {
   );
 };
 
-export default Two;
+export default UserAccount;

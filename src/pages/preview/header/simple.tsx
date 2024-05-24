@@ -1,12 +1,10 @@
-import Three from '@/components/Header/Three'
-import React from 'react'
+import Three from "@/components/Header/CallToAction";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 function Simple({}: Props) {
-	return (
-		<Three/>
-	)
+  return <Three />;
 }
 
-export default Simple
+export default Simple;
