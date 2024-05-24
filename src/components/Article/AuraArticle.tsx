@@ -1,29 +1,3 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import { Steps } from "nextra/components";
-import AuraArticle from "@/components/Article/AuraArticle";
-
-# Article Component
-
-## Overview
-
-The Article Elements Section contains various components tailored for articles and content presentation.
-
-## Usage
-
-To integrate Article Components into your Next.js Project, copy and paste the following code.
-
-## AuraArticle 
-
-This component displays an informative article about AuroraUI, featuring headings, paragraphs, lists, and a testimonial block. It is optimized for performance, fully responsive, and easily customizable, making it a perfect addition to any website aiming to showcase the capabilities of the AuroraUI library. The component also includes a visually appealing image with a gradient background effect to capture the viewer's attention.
-
-
-<Tabs items={['Preview', 'Code']} previewLink='/preview/article/auraarticle'  >
-   <TabComponent label="Preview">
-      <AuraArticle/>
-  </TabComponent>
-   <TabComponent label="Code">
-   <pre>
-```js copy
 import React from "react";
 
 const AuraArticle = () => {
@@ -130,7 +104,3 @@ const AuraArticle = () => {
 };
 
 export default AuraArticle;
-```
-</pre>
-  </TabComponent>
-  </Tabs>
