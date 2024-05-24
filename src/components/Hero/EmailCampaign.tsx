@@ -161,15 +161,20 @@ function EmailCampaignHero({}: Props) {
           </div>
         </div>
 
-        <div className="pb-12 mt-8 px-4 bg-white">
-          <div className="flex justify-center ">
-            <img
-              className="w-full lg:w-[500px] md:h-[500px] rounded-lg  "
-              src="https://www.auraui.com/aiimage/auraui.jpeg"
-              alt="image"
-            />
-          </div>
-        </div>
+          <div className="pb-12 bg-white">
+          <div className="relative">
+            <div className="absolute inset-0 h-2/3 bg-gray-50"></div>
+            <div className="relative mx-auto">
+              <div className="lg:max-w-6xl lg:mx-auto">
+                <img
+                  className="transform scale-110"
+                  src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/2/illustration.png"
+                  alt="Illustration"
+                />
+              </div>
+            </div>
+            </div>
+            </div>
       </section>
     </div>
   );

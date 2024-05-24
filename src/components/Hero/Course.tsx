@@ -157,8 +157,8 @@ function CourseHero({ }: Props) {
 
             <div>
               <img
-                className="w-full rounded-md "
-                src="https://www.auraui.com/aiimage/books.jpeg"
+                className="w-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
                 alt="Hero Image"
               />
             </div>
