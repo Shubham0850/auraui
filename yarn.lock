@@ -3684,10 +3684,10 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-lucide-react@^0.378.0:
-  version "0.378.0"
-  resolved "https://registry.npmjs.org/lucide-react/-/lucide-react-0.378.0.tgz"
-  integrity sha512-u6EPU8juLUk9ytRcyapkWI18epAv3RU+6+TC23ivjR0e+glWKBobFeSgRwOIJihzktILQuy6E0E80P2jVTDR5g==
+lucide-react@^0.379.0:
+  version "0.379.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.379.0.tgz#29e34eeffae7fb241b64b09868cbe3ab888ef7cc"
+  integrity sha512-KcdeVPqmhRldldAAgptb8FjIunM2x2Zy26ZBh1RsEUcdLIvsEmbcw7KpzFYUy5BbpGeWhPu9Z9J5YXfStiXwhg==
 
 lucide@^0.378.0:
   version "0.378.0"

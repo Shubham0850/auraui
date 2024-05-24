@@ -155,7 +155,7 @@ const web3Categories = [
   {
     name: "Wallet Connect",
     link: "/components/web3/WalletConnect",
-    items: 69,
+    items: 2,
     img: "/components/walletconnect.png",
   },
   // { name: "Connect", items: 69 },
@@ -164,7 +164,7 @@ const web3Categories = [
   {
     name: "NFTs",
     link: "/components/web3/Nft",
-    items: 69,
+    items: 1,
     img: "/components/nft.png",
   },
   // { name: "Profile", items: 69 },
