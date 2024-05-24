@@ -4,49 +4,29 @@ import BlogComponent from "./Blog";
 import EmailCampaignHero from "./EmailCampaign";
 import FeedbackHero from "./Feedback";
 import Link from "next/link";
+import ComponentWrapper from "../Theme/ComponentWrapper";
 
 const AllHero = () => {
   return (
-    <div className="space-y-10 pt-10 ">
-      <div className=" ">
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium ">Course Hero </h3>
-          <Link href={"/components/hero/Elements#coursehero-component"}>
-            <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
+    <div>
+      <ComponentWrapper
+        title="CourseHero Component"
+        previewLink="/components/hero/Elements#coursehero-component"
+      >
         <CourseHero />
-      </div>
-      <div className=" ">
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium ">Email Campaign Hero</h3>
-          <Link
-            className=" "
-            href={"/components/hero/Elements#emailcampaign-component"}
-          >
-            <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
+      </ComponentWrapper>
+      <ComponentWrapper
+        title="EmailCampaign Component"
+        previewLink="/components/hero/Elements#emailcampaign-component"
+      >
         <EmailCampaignHero />
-      </div>
-      <div className=" ">
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium ">FeedBack Hero</h3>
-          <Link
-            className=" "
-            href={"/components/hero/Elements#feedback-hero-component"}
-          >
-            <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
+      </ComponentWrapper>
+      <ComponentWrapper
+        title="Feedback Component"
+        previewLink="/components/hero/Elements#feedback-hero-component"
+      >
         <FeedbackHero />
-      </div>
+      </ComponentWrapper>
     </div>
   );
 };
