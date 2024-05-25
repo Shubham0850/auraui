@@ -3,7 +3,7 @@ import React from "react";
 const One = () => {
   return (
     <div>
-      <div>
+      <div className="bg-white ">
         <div className="hidden mxld:flex xl:w-64 xl:flex-col xl:fixed xl:inset-y-0">
           <div className="flex flex-col flex-grow pt-5 overflow-y-auto bg-gray-900">
             <div className="flex items-center flex-shrink-0 px-4">
