@@ -5,69 +5,23 @@ import CardDesign from "./CardDesign";
 import SelectionDesign from "./SelectionDesign";
 import FourCategoryDesign from "./FourCategoryDesign";
 import SingleAccess from "./SingleAccess";
+import ComponentWrapper from "../Theme/ComponentWrapper";
 
 const AllPricing = () => {
   return (
-    <div className="space-y-10 pt-10">
-      <div>
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium">Toggle Design</h3>
-          <Link href={"/components/pricing/Elements#toggle-design"}>
-            <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
+    <div>
+      <ComponentWrapper
+        title="Toggle Design"
+        previewLink="/components/pricing/Elements#toggle-design"
+      >
         <ToggleDesign />
-      </div>
-      <div>
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium">Card Design</h3>
-          <Link href={"/components/pricing/Elements#card-design"}>
-            <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
+      </ComponentWrapper>
+      <ComponentWrapper
+        title="Card Design"
+        previewLink="/components/pricing/Elements#card-design"
+      >
         <CardDesign />
-      </div>
-      <div>
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium">Selection Design</h3>
-          <Link href={"/components/pricing/Elements#selection-design"}>
-            <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
-        <SelectionDesign />
-      </div>
-      <div>
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium">
-            Four Category Pricing Section
-          </h3>
-          <Link
-            href={"/components/pricing/Elements#four-category-pricing-section"}
-          >
-            <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
-        <FourCategoryDesign />
-      </div>
-      <div>
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium">Single Access</h3>
-          <Link href={"/components/pricing/Elements#single-access"}>
-            <button className="py-1 px-2 font-semibold rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
-        <SingleAccess />
-      </div>
+      </ComponentWrapper>
     </div>
   );
 };
