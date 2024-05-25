@@ -1,21 +1,16 @@
 import React from "react";
-import Link from "next/link";
-import One from "./One";
+import ComponentWrapper from "../Theme/ComponentWrapper";
+import SeamLess from "@/pages/preview/integration/seamless";
 
 const AllIntegration = () => {
   return (
-    <div className="space-y-10 pt-10 ">
-      <div className=" ">
-        <div className="flex my-2 justify-between">
-          <h3 className="text-[20px] font-medium ">Integration</h3>
-          <Link href={"/components/Contact/Elements#connectsphere-contact"}>
-            <button className="py-1 px-2 font-semibold  rounded-3xl text-[14px] bg-white text-blue-600">
-              Get Code
-            </button>
-          </Link>
-        </div>
-        <One />
-      </div>
+    <div>
+      <ComponentWrapper
+        title="Seamless Integration"
+        previewLink="/components/integration/Elements#seamless-integration"
+      >
+        <SeamLess/>
+      </ComponentWrapper>
     </div>
   );
 };
