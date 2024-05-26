@@ -9,9 +9,7 @@ function SourceCodeViewer({ componentPath }: { componentPath: string }) {
       .then(setSourceCode)
       .catch(console.error);
   }, [componentPath]);
-
-	console.log()
-
+  
   return (
     <pre>
       <code>

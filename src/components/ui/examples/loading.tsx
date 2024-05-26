@@ -10,7 +10,7 @@ export default function LoadingExample() {
 	return (
 		<div className="flex h-10">
 			<motion.div
-				className="w-10 h-10 bg-gradient-to-r from-black to-gray-800 rounded-full"
+				className="w-6 h-6 bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-300 rounded-full"
 				animate={{ scale: [0.75, 1] }}
 				transition={{
 					...dotTransition,
@@ -18,7 +18,7 @@ export default function LoadingExample() {
 				}}
 			/>
 			<motion.div
-				className="w-10 h-10 bg-gradient-to-r from-black to-gray-800 rounded-full"
+				className="w-6 h-6 bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-300 rounded-full"
 				animate={{ scale: [0.75, 1] }}
 				transition={{
 					...dotTransition,
@@ -26,7 +26,7 @@ export default function LoadingExample() {
 				}}
 			/>
 			<motion.div
-				className="w-10 h-10 bg-gradient-to-r from-black to-gray-800 rounded-full"
+				className="w-6 h-6 bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-300 rounded-full"
 				animate={{ scale: [0.75, 1] }}
 				transition={{
 					...dotTransition,

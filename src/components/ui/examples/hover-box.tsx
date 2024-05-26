@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import DotPattern from '../bg-dot';
+import { cn } from '@/lib/utils';
 
 const Card = ({ title, icon }: { title: string, icon: React.ReactNode }) => {
   return (
@@ -75,12 +77,12 @@ const HoverBox = () => {
     },
   };
   return (
-    <div className='max-w-[1200px] mx-auto flex items-center justify-center flex-col space-y-4'>
+    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg border px-4 py-8 md:shadow-xl bg-white dark:bg-black dark:border-darkBorder">
       <motion.div
         initial="initial"
         animate="animate"
         whileHover="hover"
-        className="flex w-full flex-row space-x-4 opacity-80 justify-center"
+        className="flex w-full flex-row space-x-4 opacity-80 justify-center z-[100] "
       >
         <motion.div
           variants={first}
@@ -103,6 +105,11 @@ const HoverBox = () => {
           <Card title="0xjay" icon={<div className="bg-gray-800 h-full w-full rounded-full" />} />
         </motion.div>
       </motion.div>
+      <DotPattern
+        className={cn(
+          "[mask-image:radial-gradient(200px_circle_at_center,white,transparent)] z-10",
+        )}
+      />
     </div>
   );
 };
