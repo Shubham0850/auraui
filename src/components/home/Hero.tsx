@@ -1,188 +1,99 @@
-import Link from "next/link";
+"use client";
+
 import React from "react";
+import { MacDock } from "@/components/ui/examples/dock";
+import RetroGrid from "@/components/ui/examples/retro-grid";
+import AnimateNumber from "../ui/examples/number";
+import EncryptButton from "../ui/examples/encrypt-button";
+import HoverBox from "../ui/examples/hover-box";
+import ExampleTab from "../ui/examples/tab";
+import { ShinyTextExample } from "../ui/examples/shiny-text";
+import {
+  motion,
+} from "framer-motion";
+import ToggleExample from "../ui/examples/toggle";
+import LoadingExample from "../ui/examples/loading";
+import MenuExample from "../ui/examples/menu";
+import Link from "next/link";
 
-function IconReactjsFill(props: any) {
+const CounterExample = () => {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      height="1em"
-      width="1em"
-      {...props}
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      className="bg-gray-100 rounded-xl p-5 cursor-pointer"
     >
-      <path fill="none" d="M0 0h24v24H0z" />
-      <path d="M14.448 16.24a21.877 21.877 0 01-1.747 2.175c1.672 1.623 3.228 2.383 4.09 1.884.864-.498.983-2.225.414-4.484-.853.19-1.78.334-2.757.425zm-1.31.087a27.512 27.512 0 01-2.276 0c.377.492.758.948 1.138 1.364.38-.416.76-.872 1.138-1.364zm5.04-7.894c2.665.764 4.405 2.034 4.405 3.567 0 1.533-1.74 2.803-4.405 3.567.67 2.69.441 4.832-.886 5.598-1.328.767-3.298-.105-5.292-2.03-1.994 1.925-3.964 2.797-5.292 2.03-1.327-.766-1.557-2.908-.886-5.598-2.665-.764-4.405-2.034-4.405-3.567 0-1.533 1.74-2.803 4.405-3.567-.67-2.69-.441-4.832.886-5.598 1.328-.767 3.298.105 5.292 2.03 1.994-1.925 3.964-2.797 5.292-2.03 1.327.766 1.557 2.908.886 5.598zm-.973-.248c.57-2.26.45-3.986-.413-4.484-.863-.499-2.419.261-4.09 1.884a22.049 22.049 0 011.746 2.175c.978.09 1.904.234 2.757.425zm-10.41 7.63c-.57 2.26-.45 3.986.413 4.484.863.499 2.419-.261 4.09-1.884a21.877 21.877 0 01-1.746-2.175 21.877 21.877 0 01-2.757-.425zm4.067-8.142a27.512 27.512 0 012.276 0A20.523 20.523 0 0012 6.31c-.38.416-.76.872-1.138 1.364zm-1.31.087A21.877 21.877 0 0111.3 5.585C9.627 3.962 8.07 3.202 7.209 3.701c-.864.498-.983 2.225-.414 4.484.853-.19 1.78-.334 2.757-.425zm4.342 7.52A25.368 25.368 0 0015.787 12a25.368 25.368 0 00-1.893-3.28 25.368 25.368 0 00-3.788 0A25.368 25.368 0 008.213 12a25.368 25.368 0 001.893 3.28 25.368 25.368 0 003.788 0zm1.284-.131c.615-.08 1.2-.183 1.75-.304a20.523 20.523 0 00-.612-1.667 27.512 27.512 0 01-1.138 1.97zM8.822 8.85c-.615.08-1.2.183-1.75.304.17.536.374 1.094.612 1.667a27.512 27.512 0 011.138-1.97zm-1.75 5.994c.55.121 1.135.223 1.75.304a27.512 27.512 0 01-1.138-1.97 20.42 20.42 0 00-.612 1.666zm-.978-.245c.261-.834.6-1.708 1.01-2.6a22.002 22.002 0 01-1.01-2.6c-2.242.637-3.677 1.604-3.677 2.6s1.435 1.963 3.677 2.6zm10.834-5.445a20.808 20.808 0 00-1.75-.304 27.511 27.511 0 011.138 1.97c.238-.572.442-1.13.612-1.666zm.978.245c-.261.834-.6 1.708-1.01 2.6.41.892.749 1.766 1.01 2.6 2.242-.637 3.677-1.604 3.677-2.6s-1.435-1.963-3.677-2.6zM12 13.88a1.88 1.88 0 110-3.76 1.88 1.88 0 010 3.76z" />
-    </svg>
-  );
+      <AnimateNumber number={4958} />
+      <h3 className="text-xl mt-5 font-bold text-gray-800 leading-none">free <br />resources</h3>
+    </motion.div>
+  )
 }
 
-function IconBxlTailwindCss(props: any) {
+const GridExample = () => {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      height="1em"
-      width="1em"
-      {...props}
-    >
-      <path d="M18.5 9.51a4.22 4.22 0 01-1.91-1.34A5.77 5.77 0 0012 6a4.72 4.72 0 00-5 4 3.23 3.23 0 013.5-1.49 4.32 4.32 0 011.91 1.35A5.77 5.77 0 0017 12a4.72 4.72 0 005-4 3.2 3.2 0 01-3.5 1.51zm-13 4.98a4.22 4.22 0 011.91 1.34A5.77 5.77 0 0012 18a4.72 4.72 0 005-4 3.23 3.23 0 01-3.5 1.49 4.32 4.32 0 01-1.91-1.35A5.8 5.8 0 007 12a4.72 4.72 0 00-5 4 3.2 3.2 0 013.5-1.51z" />
-    </svg>
-  );
-}
-
-function IconBrandNextjs(props: any) {
-  return (
-    <svg
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      height="1em"
-      width="1em"
-      {...props}
-    >
-      <path stroke="none" d="M0 0h24v24H0z" />
-      <path d="M9 15V9l7.745 10.65A9 9 0 1119 17.657M15 12V9" />
-    </svg>
-  );
-}
-
-function IconHtml5(props: any) {
-  return (
-    <svg
-      viewBox="0 0 1024 1024"
-      fill="currentColor"
-      height="1em"
-      width="1em"
-      {...props}
-    >
-      <path d="M145 96l66 746.6L511.8 928l299.6-85.4L878.7 96H145zm610.9 700.6l-244.1 69.6-245.2-69.6-56.7-641.2h603.8l-57.8 641.2zM281 249l1.7 24.3 22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7-6.5-73.2h-91l11.3 144.7 188.6 52h1.7v-.4l187.7-51.7 1.7-16.3 21.2-242.2 3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5 4.8-47.2L742 249H511z" />
-    </svg>
-  );
-}
-
-function IconCommand(props: any) {
-  return (
-    <svg
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      viewBox="0 0 24 24"
-      height="1em"
-      width="1em"
-      {...props}
-    >
-      <path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12a3 3 0 003-3 3 3 0 00-3-3z" />
-    </svg>
-  );
+    <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-xl border border-neutral-200 dark:border-darkBorder p-20">
+      <RetroGrid />
+    </div>
+  )
 }
 
 const Hero = () => {
   return (
-    <div className="border-b border-gray-200 dark:border-gray-800 py-16">
-      <div className="absolute  transform -translate-x-1/2 translate-y-full -top-1/4 left-1/2 -z-[10]">
-        <svg
-          className="opacity-50 md:w-[600px] w-full blur-3xl filter"
-          style={{ filter: "blur(100px)" }}
-          width="600"
-          height="300"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M183.151 216.787C86.498 123.868-62.309 137.493 30.03 41.445c92.337-96.049 494.126-6.876 590.779 86.043 96.652 92.919-148.432 154.396-240.769 250.445-92.338 96.048-100.237-68.228-196.889-161.146Z"
-            fill="url(#b)"
-          />
-          <defs>
-            <linearGradient
-              id="b"
-              x1="663.766"
-              y1="168.785"
-              x2="303.65"
-              y2="469.667"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0%" style={{ stopColor: "#A854F7" }} />
-              <stop offset="100%" style={{ stopColor: "#9d42f2" }} />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
+    <div className="overflow-x-hidden ">
 
-      <div className="max-w-7xl mx-auto   lg:px-8 text-center">
-        <div className="flex items-center justify-center">
-          {/* <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Component library for:</p> */}
-          <div className="flex justify-center space-x-2 ml-2">
-            {/* Icons here */}
-            <IconReactjsFill width={24} height={24} />
-            <IconBxlTailwindCss width={24} height={24} />
-            <IconBrandNextjs width={24} height={24} />
-            <IconHtml5 width={24} height={24} />
-          </div>
-        </div>
-        <h1 className="mt-8 text-4xl font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl">
-          <span className="text-purple-500"> Stop Coding</span> from Scratch:
-          <br /> A UI Library for Every Skill Level
-        </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">
-          Quickly Copy, paste, and launch your website 🏎️ fasterrrrrr than ever!
-        </p>
+      <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
+        <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
+          <div className="max-w-3xl mx-auto text-center">
+            <ShinyTextExample />
+            <h1 className="mt-5 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
+              Copy. Paste. Ship.
+            </h1>
+            <p className="max-w-md mx-auto mt-6 text-base leading-7 text-gray-600 font-inter">
+              Stop Coding from Scratch: A UI Library for Every Skill Level. Quickly Copy and paste components and ship your website 🏎️ fasterrrrrr than ever!
+            </p>
 
-        <div className="mt-8 grid grid-cols-3 gap-4 md:gap-8  max-w-xl mx-auto md:p-5">
-          <div className="md:text-center">
-            <div>
-              <div className="flex items-center justify-center md:mx-auto bg-transparent backdrop-blur-lg border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-14">
-                <IconCommand width={20} height={24} />
-                <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
-                  C
-                </span>
-              </div>
+            <div className="relative inline-flex mt-10 group">
+              <div className="absolute transitiona-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+
+              <Link href="/components" title="" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+                Browse Components
+              </Link>
             </div>
-            <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
-              Copy the code
-            </p>
-          </div>
-          <div className="md:text-center">
-            <div className="flex items-center justify-center md:mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-16 h-14">
-              <IconCommand width={20} height={20} />
-              <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
-                V
-              </span>
-            </div>
-            <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
-              Paste anywhere
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="flex items-center justify-center mx-auto  border border-gray-200 dark:border-secondary shadow-md rounded-2xl w-24 h-14">
-              <IconCommand width={20} height={20} />
-              <span className="text-[20px] font-bold text-gray-900 dark:text-gray-100 font-pj ml-1 inline-flex">
-                Ship
-              </span>
-            </div>
-            <p className="mt-4 text-[13px] md:text-lg font-medium text-gray-900 dark:text-gray-100">
-              Ship your website
-            </p>
           </div>
         </div>
-        <div className="mt-8 flex md:flex-row flex-col justify-center gap-6 md:space-x-4">
-          <Link href="/components">
-            <button className="px-6 py-3 bg-purple-500 text-white text-sm font-medium rounded-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 ">
-              Try a free component
-            </button>
-          </Link>
-          <Link href="#global">
-            <button className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 text-sm font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-              Browse components
-            </button>
-          </Link>
+
+        <div className="flex justify-around">
+          <div className="w-full">
+            <MacDock />
+            <EncryptButton />
+            <MenuExample />
+          </div>
+
+          <div className="w-full">
+            <GridExample />
+          </div>
+
+          <div className="w-full">
+            <LoadingExample />
+            <CounterExample />
+          </div>
+
+          <div className="w-full">
+            <HoverBox />
+            <ExampleTab />
+            <ToggleExample />
+          </div>
+
         </div>
-      </div>
+
+
+        <div className="mt-16 md:mt-20">
+          <img className="object-cover object-top w-full h-auto mx-auto scale-150 2xl:max-w-screen-2xl xl:scale-100" src="https://d33wubrfki0l68.cloudfront.net/54780decfb9574945bc873b582cdc6156144a2ba/d9fa1/images/hero/4/illustration.png" alt="" />
+        </div>
+
+      </section>
     </div>
+
   );
 };
 

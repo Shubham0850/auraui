@@ -21,13 +21,13 @@ const baseCategories = [
   },
   {
     name: "Signup",
-    img: "/components/SignUp1.png",
+    img: "/components/signup.png",
     link: "/components/sign-up",
     items: 1,
   },
   {
     name: "Signin",
-    img: "/components/SignIn1.png",
+    img: "/components/signin.png",
     link: "/components/sign-in",
     items: 1,
   },
@@ -38,13 +38,13 @@ const marketingCategories = [
     name: "Team",
     link: "/components/teams",
     items: 1,
-    img: "/components/Teams1.png",
+    img: "/components/teams.png",
   },
   {
     name: "Stats",
     link: "/components/stats",
     items: 1,
-    img: "/components/Stats1.png",
+    img: "/components/stats.png",
   },
   {
     name: "Steps",
@@ -82,7 +82,7 @@ const marketingCategories = [
     name: "Testimonial",
     link: "/components/testimonial",
     items: 5,
-    img: "/components/Testimonials1.png",
+    img: "/components/testimonial.png",
   },
   {
     name: "Call To Action",
@@ -204,11 +204,11 @@ const ComponentSection = () => {
               href={category.link}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full h-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
                 <img
                   src={category.img}
                   alt="img"
-                  className=" rounded-xl w-full h-full max-h-[180px]"
+                  className=" rounded-xl w-full"
                 />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -238,11 +238,11 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full h-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 ">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 ">
                 <img
                   src={category.img}
                   alt="hero"
-                  className="rounded-xl w-full h-full"
+                  className="rounded-xl w-full"
                 />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
