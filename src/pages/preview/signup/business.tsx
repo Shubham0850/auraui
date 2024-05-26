@@ -1,12 +1,11 @@
-import SignUpBusiness from '@/components/SignUp/SignUpBusiness '
-import React from 'react'
 
-type Props = {}
+import TheBusiness from "@/components/SignUp/TheBusiness";
+import React from "react";
+
+type Props = {};
 
 function Business({}: Props) {
-	return (
-		<SignUpBusiness/>
-	)
+  return <TheBusiness />;
 }
 
-export default Business
+export default Business;

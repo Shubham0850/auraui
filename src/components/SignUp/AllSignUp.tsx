@@ -1,6 +1,6 @@
 import React from "react";
 import ComponentWrapper from "../Theme/ComponentWrapper";
-import SignUpBusiness from "./SignUpBusiness ";
+import TheBusiness from "./TheBusiness";
 
 const AllSignUp = () => {
   return (
@@ -9,7 +9,7 @@ const AllSignUp = () => {
         title="Business SignUp"
         previewLink="/components/sign-up/Elements#business-signup-component"
       >
-        <SignUpBusiness />
+        <TheBusiness />
       </ComponentWrapper>
     </div>
   );
