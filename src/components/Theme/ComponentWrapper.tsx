@@ -1,4 +1,5 @@
-import { Code } from "lucide-react";
+import { LuCode }  from "react-icons/lu";
+
 import Link from "next/link";
 import React from "react";
 
@@ -16,7 +17,7 @@ function ComponentWrapper({ children, title, previewLink }: Props) {
           <h3 className="text-[20px] font-medium">{title}</h3>
           <Link href={previewLink}>
             <button className="relative cursor-pointer px-4 py-2 rounded-lg dark:bg-customDark bg-gray-100 text-gray-300 text-sm flex items-center">
-              <Code className="w-4 h-4 mr-2" />
+              <LuCode className="w-4 h-4 mr-2" />
               Get Code
             </button>
           </Link>

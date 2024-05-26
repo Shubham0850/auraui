@@ -1,12 +1,14 @@
-import { Menu, Play, X } from "lucide-react";
+import { LuMenu, LuPlay, LuX } from "react-icons/lu";
+
+
 import React from "react";
 
 // SVG Components
 const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
-  return isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />;
+  return isOpen ? <LuX className="h-6 w-6" /> : <LuMenu className="h-6 w-6" />;
 };
 
-const PlayIcon = () => <Play className="h-5 w-5 mr-2" />;
+const PlayIcon = () => <LuPlay className="h-5 w-5 mr-2" />;
 
 type Props = {};
 
