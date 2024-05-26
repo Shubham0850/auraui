@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { LuArrowRight } from "react-icons/lu";
+
 
 interface Integration {
   name: string;
@@ -81,7 +82,7 @@ const Seamless: React.FC = () => {
                         Direct Integration
                       </p>
                     </div>
-                    <ArrowRight className="w-5 h-5 text-blue-600" />
+                    <LuArrowRight className="w-5 h-5 text-blue-600" />
                   </div>
                   <p className="text-base leading-relaxed text-gray-600 mt-7">
                     {integration.description}

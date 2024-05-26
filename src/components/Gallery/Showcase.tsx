@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // Importing icons from Lucide
+import { LuChevronRight, LuChevronLeft } from "react-icons/lu";
 
 interface ImageCardProps {
   src: string;
@@ -24,9 +24,9 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({ direction }) => (
     className="p-1.5 -m-1.5 text-gray-300 transition-all duration-200 rounded-full hover:text-gray-600 hover:bg-gray-100"
   >
     {direction === "left" ? (
-      <ChevronLeft className="w-6 h-6" />
+      <LuChevronLeft className="w-6 h-6" />
     ) : (
-      <ChevronRight className="w-6 h-6" />
+      <LuChevronRight className="w-6 h-6" />
     )}
   </button>
 );
