@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Lock } from "lucide-react";
+import { LuLock } from "react-icons/lu";
 
 const TARGET_TEXT = "Encrypt data";
 const CYCLES_PER_LETTER = 2;
@@ -58,7 +58,7 @@ const EncryptButton = () => {
       className="group relative overflow-hidden rounded-lg border-[1px] text-neutral-600/50 dark:text-neutral-400/50 border-neutral-200 dark:border-darkBorder px-4 py-2 h-[3.5rem] font-mono font-medium uppercase transition-colors hover:text-indigo-300 min-w-[15rem] flex justify-center items-center"
     >
       <div className="relative z-10 flex items-center gap-2">
-        <Lock />
+        <LuLock />
         <span>{text}</span>
       </div>
       <motion.span

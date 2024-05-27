@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { ArrowRightIcon } from "lucide-react";
+import { LuArrowRight } from 'react-icons/lu'
 import { CSSProperties, FC, ReactNode } from "react";
 
 interface AnimatedShinyTextProps {
@@ -47,7 +47,7 @@ const ShinyTextExample = () => {
       >
         <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <span>✨ Build by Developers, for Developers</span>
-          <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+          <LuArrowRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
         </AnimatedShinyText>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GrLike } from 'react-icons/gr';
 import { FaEye } from 'react-icons/fa';
-import { Heart } from 'lucide-react';
+import { LuHeart } from "react-icons/lu";
 
 const LikeCard = () => {
 	return (
@@ -35,7 +35,7 @@ const LikeCard = () => {
 				</div>
 				<div className="flex space-x-5 text-gray-500 border-t border-gray-200 pt-2">
 					<div className="flex items-center">
-						<Heart className="w-3 h-3 mr-1 text-gray-400" strokeWidth={3} />
+						<LuHeart className="w-3 h-3 mr-1 text-gray-400" strokeWidth={3} />
 						<p className='text-xs'>1052</p>
 					</div>
 					<div className="flex items-center">
