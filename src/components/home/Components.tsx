@@ -179,8 +179,18 @@ const aiCategories = [
 ];
 
 const reactNativeCategories = [
-  { name: "Login", items: 69 },
-  { name: "Signup", items: 69 },
+  {
+    name: "Signin",
+    items: 69,
+    link: "/components/sign-in",
+    img: "/components/signin.png",
+  },
+  {
+    name: "Signup",
+    items: 69,
+    link: "/components/sign-up",
+    img: "/components/signup.png",
+  },
   // { name: "Text", items: 69 },
   // { name: "Image", items: 69 },
   // { name: "ScrollView", items: 69 },
@@ -351,16 +361,13 @@ const ComponentSection = () => {
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {reactNativeCategories.map((category) => (
-            <div
+            <a
+              href={category.link}
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img
-                  src="/components/coming-soon.png"
-                  alt="hero"
-                  className="rounded-xl"
-                />
+                <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -368,7 +375,7 @@ const ComponentSection = () => {
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {category.items} items available
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
