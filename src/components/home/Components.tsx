@@ -171,7 +171,12 @@ const web3Categories = [
 ];
 
 const aiCategories = [
-  { name: "Chat", items: 69 },
+  {
+    name: "Chat",
+    items: 69,
+    link: "/components/ai",
+    img: "/components/chat.png",
+  },
   // { name: "Code", items: 69 },
   // { name: "Copilot", items: 69 },
   // { name: "GPT-4", items: 69 },
@@ -331,16 +336,13 @@ const ComponentSection = () => {
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {aiCategories.map((category) => (
-            <div
+            <a
+              href={category.link}
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img
-                  src="/components/coming-soon.png"
-                  alt="hero"
-                  className="rounded-xl"
-                />
+                <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
@@ -348,7 +350,7 @@ const ComponentSection = () => {
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {category.items} items available
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
