@@ -3696,16 +3696,6 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-lucide-react@^0.379.0:
-  version "0.379.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.379.0.tgz#29e34eeffae7fb241b64b09868cbe3ab888ef7cc"
-  integrity sha512-KcdeVPqmhRldldAAgptb8FjIunM2x2Zy26ZBh1RsEUcdLIvsEmbcw7KpzFYUy5BbpGeWhPu9Z9J5YXfStiXwhg==
-
-lucide@^0.378.0:
-  version "0.378.0"
-  resolved "https://registry.yarnpkg.com/lucide/-/lucide-0.378.0.tgz#0dd85ae4ae217f1e9794175f0ac3404a4bcd8816"
-  integrity sha512-bwWXuZf2jZbCI0Y+MWyv5bedWIxYKtgAEzC2Yl87Nrt/KcG9qTwAQxVFcZ6IwBioML06QUQsG+qRjyQvYHdbBQ==
-
 markdown-escapes@^1.0.0:
   version "1.0.4"
   resolved "https://registry.npmjs.org/markdown-escapes/-/markdown-escapes-1.0.4.tgz"
