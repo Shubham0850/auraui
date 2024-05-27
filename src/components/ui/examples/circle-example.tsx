@@ -3,68 +3,66 @@ import OrbitingCircles from "../circle";
 
 export function OrbitingCirclesDemo() {
 	return (
-		<div className="relative flex w-[300px] max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl h-[300px]">
-			<span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+    <div className="relative flex w-[300px] max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-customDark md:shadow-xl h-[300px]">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"></span>
 
-			</span>
+      {/* Inner Circles */}
+      <OrbitingCircles
+        className="h-[20px] w-[20px] border-none bg-transparent"
+        duration={20}
+        delay={20}
+        radius={50}
+      >
+        <Icons.whatsapp />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[20px] w-[20px] border-none bg-transparent"
+        duration={20}
+        delay={10}
+        radius={50}
+      >
+        <Icons.notion />
+      </OrbitingCircles>
 
-			{/* Inner Circles */}
-			<OrbitingCircles
-				className="h-[20px] w-[20px] border-none bg-transparent"
-				duration={20}
-				delay={20}
-				radius={50}
-			>
-				<Icons.whatsapp />
-			</OrbitingCircles>
-			<OrbitingCircles
-				className="h-[20px] w-[20px] border-none bg-transparent"
-				duration={20}
-				delay={10}
-				radius={50}
-			>
-				<Icons.notion />
-			</OrbitingCircles>
+      {/* Outer Circles (reverse) */}
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        reverse
+        radius={100}
+        duration={20}
+      >
+        <Icons.googleDrive />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        reverse
+        radius={100}
+        duration={20}
+        delay={20}
+      >
+        <Icons.gitHub />
+      </OrbitingCircles>
 
-			{/* Outer Circles (reverse) */}
-			<OrbitingCircles
-				className="h-[30px] w-[30px] border-none bg-transparent"
-				reverse
-				radius={100}
-				duration={20}
-			>
-				<Icons.googleDrive />
-			</OrbitingCircles>
-			<OrbitingCircles
-				className="h-[30px] w-[30px] border-none bg-transparent"
-				reverse
-				radius={100}
-				duration={20}
-				delay={20}
-			>
-				<Icons.gitHub />
-			</OrbitingCircles>
-
-			{/* Outer Circles (reverse) */}
-			<OrbitingCircles
-				className="h-[30px] w-[30px] border-none bg-transparent"
-				reverse
-				radius={150}
-				duration={20}
-			>
-				<Icons.googleDrive />
-			</OrbitingCircles>
-			<OrbitingCircles
-				className="h-[30px] w-[30px] border-none bg-transparent"
-				reverse
-				radius={150}
-				duration={20}
-				delay={20}
-			>
-				<Icons.gitHub />
-			</OrbitingCircles>
-		</div>
-	);
+      {/* Outer Circles (reverse) */}
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        reverse
+        radius={150}
+        duration={20}
+      >
+        <Icons.googleDrive />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none bg-transparent"
+        reverse
+        radius={150}
+        duration={20}
+        delay={20}
+      >
+        <Icons.gitHub />
+      </OrbitingCircles>
+    </div>
+  );
 }
 
 const Icons = {

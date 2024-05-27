@@ -77,7 +77,7 @@ const HoverBox = () => {
     },
   };
   return (
-    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg border px-4 py-8 md:shadow-xl bg-white dark:bg-black dark:border-darkBorder">
+    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg border px-3 py-8 md:shadow-xl bg-white dark:bg-black dark:border-darkBorder">
       <motion.div
         initial="initial"
         animate="animate"
