@@ -142,13 +142,13 @@ const marketingCategories = [
 ];
 
 const animationCategories = [
-  { name: "Slider", items: 69 },
-  { name: "Carousel", items: 69 },
-  { name: "Tabs", items: 69 },
-  { name: "Accordion", items: 69 },
-  { name: "Modal", items: 69 },
-  { name: "Tooltip", items: 69 },
-  { name: "Popover", items: 69 },
+  { name: "Slider", items: 69, img: "/components/slider.png" },
+  { name: "Carousel", items: 69, img: "/components/carousel.png" },
+  { name: "Tabs", items: 69, img: "/components/tabs.png" },
+  { name: "Accordion", items: 69, img: "/components/accordion.png" },
+  { name: "Modal", items: 69, img: "/components/modal.png" },
+  { name: "Tooltip", items: 69, img: "/components/tooltip.png" },
+  { name: "Popover", items: 69, img: "/components/popover.png" },
 ];
 
 const web3Categories = [
@@ -173,7 +173,7 @@ const web3Categories = [
 const aiCategories = [
   {
     name: "Chat",
-    items: 69,
+    items: 1,
     link: "/components/ai",
     img: "/components/chat.png",
   },
@@ -284,11 +284,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
-                <img
-                  src="/components/coming-soon.png"
-                  alt="hero"
-                  className="rounded-xl"
-                />
+                <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
