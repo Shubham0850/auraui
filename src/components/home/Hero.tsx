@@ -28,9 +28,9 @@ const CounterExample = () => {
     <motion.div
       whileHover={{ scale: 1.1 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
-      className="bg-gray-100 h-[130px] w-[120px] dark:bg-customDark rounded-xl p-4 cursor-pointer"
+      className="bg-gray-100 h-[120px] w-[115px] dark:bg-customDark rounded-xl p-4 cursor-pointer"
     >
-      <AnimateNumber number={6969} />
+      <AnimateNumber number={1000} />
       <h3 className="text-sm mt-5 text-gray-800 dark:text-white leading-none">free <br />resources</h3>
     </motion.div>
   )
@@ -47,7 +47,7 @@ const GridExample = () => {
 const Hero = () => {
   return (
     <div>
-      <div className="absolute inset-0 w-full h-[580px] sm:h-[1200px] lg:h-[1000px]">
+      <div className="absolute inset-0 w-full h-[1670px] sm:h-[1200px] lg:h-[1000px]">
         <RetroGrid className="w-full h-full" />
       </div>
       {/* <DotPattern
@@ -66,13 +66,13 @@ const Hero = () => {
         )}
       /> */}
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
-        <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
+        <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
           <div className="max-w-3xl mx-auto text-center">
             <ShinyTextExample />
-            <h1 className="mt-5 text-4xl font-bold leading-tight dark:text-gray-100  text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
+            <h1 className="mt-5 text-[34px] font-bold leading-tight dark:text-gray-100  text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
               Copy. Paste. Ship.
             </h1>
-            <p className="max-w-md mx-auto mt-6 text-base  dark:text-gray-300  leading-7 text-gray-600 font-inter">
+            <p className="max-w-md mx-auto px-4 mt-6 text-base  dark:text-gray-300  leading-7 text-gray-600 font-inter">
               Stop Coding from Scratch: A UI Library for Every Skill Level.
               Quickly Copy and paste components and ship your website 🏎️
               fasterrrrrr than ever!
@@ -94,7 +94,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center items-center space-y-6 sm:space-y-6 sm:space-x-6">
-          <div className=" flex items-center flex-col ">
+          <div className=" flex items-center flex-col w-[300px] -mr-5 ">
             <ReviewCard />
             <MacDock />
           </div>
