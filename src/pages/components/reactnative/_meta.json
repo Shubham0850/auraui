@@ -1,0 +1,25 @@
+{
+ 
+  "sign-in": {
+    "title": "SignIn",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "sign-up": {
+    "title": "SignUp",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  }
+}

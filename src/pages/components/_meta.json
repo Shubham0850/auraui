@@ -9,6 +9,16 @@
     }
   },
 
+  "installation": {
+    "title": "Installation",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "pagination": true
+    }
+  },
+
   "web3": {
     "title": "Web3",
     "theme": {
@@ -22,6 +32,30 @@
   },
   "ai": {
     "title": "AI",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+
+  "reactnative": {
+    "title": "React Natives",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+
+  "animation": {
+    "title": "Animation",
     "theme": {
       "breadcrumb": true,
       "footer": true,
