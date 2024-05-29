@@ -7,7 +7,7 @@ import { LuHeart } from "react-icons/lu";
 const LikeCard = () => {
 	return (
 		<motion.div
-			className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden w-[250px]"
+			className="max-w-sm bg-white dark:bg-customDark rounded-lg shadow-lg overflow-hidden w-[250px]"
 			initial={{ opacity: 0, y: 50 }}
 			animate={{ opacity: 1, y: 0 }}
 			whileHover={{ scale: 1.05 }}
