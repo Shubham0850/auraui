@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { LuArrowUpRight, LuCircleDollarSign, LuMoon } from "react-icons/lu";
 
-
 interface TabsProps {
   items: string[];
   children: React.ReactNode;
@@ -10,7 +9,6 @@ interface TabsProps {
 
 const Tabs = ({ items, children, previewLink }: TabsProps) => {
   const [activeTab, setActiveTab] = useState(items[0]);
-  const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handlePreviewClick = () => {
     window.open(`/preview/${previewLink}`, "_blank");
@@ -26,6 +24,7 @@ const Tabs = ({ items, children, previewLink }: TabsProps) => {
 
         <div className="flex items-center space-x-2">
           {/* Preview */}
+          {/* Dark Mode Toggle */}
           <div className="relative cursor-pointer p-3 rounded-lg dark:bg-customDark bg-gray-100 text-gray-500">
             <LuMoon className="w-4 h-4" />
           </div>
@@ -35,10 +34,11 @@ const Tabs = ({ items, children, previewLink }: TabsProps) => {
               <div
                 key={item}
                 onClick={() => setActiveTab(item)}
-                className={`relative cursor-pointer px-4 py-1 rounded-sm  ${activeTab === item
-                  ? "bg-gray-200 dark:bg-customDark"
-                  : "text-gray-500"
-                  }`}
+                className={`relative cursor-pointer px-4 py-1 rounded-sm ${
+                  activeTab === item
+                    ? "bg-gray-200 dark:bg-[#3f3f41]"
+                    : "text-gray-500"
+                }`}
               >
                 {item}
               </div>
@@ -65,18 +65,9 @@ const Tabs = ({ items, children, previewLink }: TabsProps) => {
                 // Assuming the second tab is the one with the code
                 return (
                   <div key={index} className="relative">
-                    <div
-                      className={`overflow-hidden  ${isCollapsed ? "h-[500px]" : "h-auto"
-                        } transition-all duration-300`}
-                    >
+                    <div className="h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
                       {child}
                     </div>
-                    <button
-                      className="mt-4 ml-[45%] px-3 py-2 hover:bg-gray-800 bg-gray-900 text-gray-100 font-medium rounded-2xl "
-                      onClick={() => setIsCollapsed(!isCollapsed)}
-                    >
-                      {isCollapsed ? "Show More" : "Show Less"}
-                    </button>
                   </div>
                 );
               } else {
@@ -94,12 +85,7 @@ const Tabs = ({ items, children, previewLink }: TabsProps) => {
 const TabComponent = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="border-2 border-gray-100 dark:border-customDark rounded-2xl overflow-hidden">
-      <div className="h-8 dark:bg-customDark px-4 flex items-center space-x-2 bg-gray-100">
-        <div className="w-3 h-3 dark:bg-black bg-gray-300 rounded-full" />
-        <div className="w-3 h-3 dark:bg-black bg-gray-300 rounded-full" />
-        <div className="w-3 h-3 dark:bg-black bg-gray-300 rounded-full" />
-      </div>
-      {children}
+      <div>{children}</div>
     </div>
   );
 };

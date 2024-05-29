@@ -1,4 +1,4 @@
-import { LuCode }  from "react-icons/lu";
+import { LuCode } from "react-icons/lu";
 
 import Link from "next/link";
 import React from "react";
