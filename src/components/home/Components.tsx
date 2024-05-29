@@ -174,7 +174,7 @@ const aiCategories = [
   {
     name: "Chat",
     items: 1,
-    link: "/components/ai",
+    link: "/components/ai/support-chat",
     img: "/components/chat.png",
   },
   // { name: "Code", items: 69 },
