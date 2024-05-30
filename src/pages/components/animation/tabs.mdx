@@ -1,26 +1,28 @@
 import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import MajnuBhai from "@/components/Web3/Nft/MajnuBhai";
+import AnimaSwitcher from "@/components/ui/examples/tab.tsx";
 import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
-# NFT Component
+# Cards Component
 
 ## Overview
 
-This NFT Elements Section Contains Various NFTs components.
+This Tabs Section Contains Various Animated Tab components.
 
 ## Usage
 
-To integrate a NFT Components into your Next.js Project,copy and paste the following code.
+To integrate a Tab Components into your Next.js Project,copy and paste the following code.
 
-## MajnuBhai NFT Component
+## AnimaSwitcher
 
-The MintRastaGolfer component allows users to mint unique NFTs. This component facilitates quantity selection, displays the minting cost, and updates the wallet balance in real-time, providing a seamless user experience.
+This component is an animated tab navigation bar featuring three tabs labeled "One", "Two", and "Three". The first tab is highlighted, indicating it is currently selected. The tabs change appearance when active, using smooth transitions to enhance the user experience. This component is ideal for applications or websites that require users to switch between different sections seamlessly, providing a clear and interactive way to navigate content.
 
-<Tabs items={["Preview", "Code"]} previewLink="/web3/nft/majnubhai">
+<Tabs items={["Preview", "Code"]} previewLink="/animation/tabs/anima">
   <TabComponent label="Preview">
-    <MajnuBhai />
+    <div className="flex items-center justify-center py-10 md:py-32 ">
+      <AnimaSwitcher />
+    </div>
   </TabComponent>
   <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Web3/Nft/MajnuBhai.tsx" />
+    <SourceCodeViewer componentPath="ui/examples/tab.tsx" />
   </TabComponent>
 </Tabs>
