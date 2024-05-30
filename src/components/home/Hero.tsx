@@ -47,7 +47,7 @@ const GridExample = () => {
 const Hero = () => {
   return (
     <div>
-      <div className="absolute inset-0 w-full h-[1670px] sm:h-[1200px] lg:h-[1000px]">
+      <div className="absolute inset-0 w-full h-[1670px] sm:h-[1200px] lg:h-[950px]">
         <RetroGrid className="w-full h-full" />
       </div>
       {/* <DotPattern
