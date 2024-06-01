@@ -5,13 +5,13 @@ const baseCategories = [
     name: "Hero",
     img: "/components/hero.png",
     link: "/components/hero",
-    items: 4,
+    items: 3,
   },
   {
     name: "Header",
     img: "/components/header.png",
     link: "/components/header",
-    items: 5,
+    items: 4,
   },
   {
     name: "Footer",
@@ -75,25 +75,25 @@ const marketingCategories = [
   {
     name: "Pricing",
     link: "/components/pricing",
-    items: 5,
+    items: 2,
     img: "/components/pricing.png",
   },
   {
     name: "Testimonial",
     link: "/components/testimonial",
-    items: 5,
+    items: 2,
     img: "/components/testimonial.png",
   },
   {
     name: "Call To Action",
     link: "/components/cta",
-    items: 5,
+    items: 2,
     img: "/components/cta.png",
   },
   {
     name: "Feature",
     link: "/components/feature",
-    items: 1,
+    items: 2,
     img: "/components/Feature.png",
   },
   {
