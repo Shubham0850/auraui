@@ -142,13 +142,28 @@ const marketingCategories = [
 ];
 
 const animationCategories = [
-  { name: "Slider", items: 69, img: "/components/slider.png" },
-  { name: "Carousel", items: 69, img: "/components/carousel.png" },
-  { name: "Tabs", items: 69, img: "/components/tabs.png" },
-  { name: "Accordion", items: 69, img: "/components/accordion.png" },
-  { name: "Modal", items: 69, img: "/components/modal.png" },
-  { name: "Tooltip", items: 69, img: "/components/tooltip.png" },
-  { name: "Popover", items: 69, img: "/components/popover.png" },
+  {
+    name: "Toggle",
+    link: "/components/animation/toggle",
+    items: 1,
+    img: "/components/slider.png",
+  },
+  {
+    name: "Cards",
+    link: "/components/animation/cards",
+    items: 1,
+    img: "/components/carousel.png",
+  },
+  {
+    name: "Tabs",
+    link: "/components/animation/tabs",
+    items: 1,
+    img: "/components/tabs.png",
+  },
+  // { name: "Accordion", items: 69, img: "/components/accordion.png" },
+  // { name: "Modal", items: 69, img: "/components/modal.png" },
+  // { name: "Tooltip", items: 69, img: "/components/tooltip.png" },
+  // { name: "Popover", items: 69, img: "/components/popover.png" },
 ];
 
 const web3Categories = [
@@ -279,7 +294,8 @@ const ComponentSection = () => {
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {animationCategories.map((category) => (
-            <div
+            <a
+              href={category.link}
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
@@ -292,7 +308,7 @@ const ComponentSection = () => {
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 {category.items} items available
               </p>
-            </div>
+            </a>
           ))}
         </div>
 
