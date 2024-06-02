@@ -19,20 +19,25 @@ const AnimatedTab: React.FC<TabComponentProps> = ({ tabs }) => {
   const [selected, setSelected] = useState(tabs[0].name);
   const [width, setWidth] = useState(0);
   const [left, setLeft] = useState(0);
-  const tabRefs = tabs.reduce((acc, tab) => {
-    acc[tab.name] = useRef<HTMLButtonElement>(null);
-    return acc;
-  }, {} as { [key: string]: React.RefObject<HTMLButtonElement> });
+
+  // Initialize refs for all tabs
+  const tabRefs = useRef<{ [key: string]: React.RefObject<HTMLButtonElement> }>(
+    tabs.reduce((acc, tab) => {
+      acc[tab.name] = React.createRef();
+      return acc;
+    }, {} as { [key: string]: React.RefObject<HTMLButtonElement> })
+  );
 
   useEffect(() => {
-    if (tabRefs[selected]?.current) {
-      const currentTab = tabRefs[selected].current!;
+    // Update width and left position of the selected tab
+    const currentTab = tabRefs.current[selected]?.current;
+    if (currentTab) {
       setWidth(currentTab.offsetWidth);
       setLeft(currentTab.offsetLeft);
     }
-  }, [selected, tabRefs]);
+  }, [selected]);
 
-  const selectedTab = tabs.find(tab => tab.name === selected);
+  const selectedTab = tabs.find((tab) => tab.name === selected);
 
   return (
     <div className="flex flex-col items-left">
@@ -40,7 +45,7 @@ const AnimatedTab: React.FC<TabComponentProps> = ({ tabs }) => {
         {tabs.map((tab) => (
           <button
             key={tab.name}
-            ref={tabRefs[tab.name]}
+            ref={tabRefs.current[tab.name]}
             className={`${TOGGLE_CLASSES} ${
               selected === tab.name
                 ? "text-black dark:text-white"
@@ -59,9 +64,7 @@ const AnimatedTab: React.FC<TabComponentProps> = ({ tabs }) => {
           style={{ width, left }}
         />
       </div>
-      <div className="mt-4 w-full">
-        {selectedTab?.component}
-      </div>
+      <div className="mt-4 w-full">{selectedTab?.component}</div>
     </div>
   );
 };
