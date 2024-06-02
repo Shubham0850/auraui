@@ -234,7 +234,7 @@ const ComponentSection = () => {
               href={category.link}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
                 <img
                   src={category.img}
                   alt="img"
@@ -268,7 +268,7 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 ">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
                 <img
                   src={category.img}
                   alt="hero"
@@ -299,7 +299,7 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
                 <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -326,7 +326,7 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
                 <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -353,7 +353,7 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
                 <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -380,7 +380,7 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
                 <img src={category.img} alt="hero" className="rounded-xl" />
               </div>
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
