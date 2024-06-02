@@ -146,13 +146,13 @@ const animationCategories = [
     name: "Toggle",
     link: "/components/animation/toggle",
     items: 1,
-    img: "/components/slider.png",
+    img: "/components/toggle.png",
   },
   {
     name: "Cards",
     link: "/components/animation/cards",
     items: 1,
-    img: "/components/carousel.png",
+    img: "/components/cards.png",
   },
   {
     name: "Tabs",
