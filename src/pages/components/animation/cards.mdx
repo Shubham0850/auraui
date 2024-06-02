@@ -1,46 +1,29 @@
 import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import WalletLinker from "@/components/Web3/WalletConnect/WalletLinker.tsx";
-import CryptoConnector from "@/components/Web3/WalletConnect/CryptoConnector.tsx";
+import ReviewCard from "@/components/ui/examples/review-card.tsx";
 import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import { BsJustify } from "react-icons/bs";
 
-# WalletConnect Component
+# Cards Component
 
 ## Overview
 
-This WalletConnect Elements Section Contains Various WalletConnect components.
+This Cards Section Contains Various Animated Cards components.
 
 ## Usage
 
-To integrate a WalletConnect Components into your Next.js Project,copy and paste the following code.
+To integrate a Cards Components into your Next.js Project,copy and paste the following code.
 
-## WalletLinker Component
+## ReviewCard
 
-Seamlessly connect your preferred wallet with our intuitive WalletLinker. Enhance your experience with quick and secure access to Metamask, Coinbase Wallet, and Wallet Connect. Choose the best wallet connector and enjoy hassle-free transactions.
+This ReviewCard effectively combines text and visual elements to present a user testimonial in an engaging and readable format. The thoughtful layout and styling ensure that the review is prominent and the reviewer's details are clear, making it a powerful tool for building trust and demonstrating the value of the service or platform.
 
-<Tabs
-  items={["Preview", "Code"]}
-  previewLink="/web3/walletconnect/walletlinker"
->
+<Tabs items={["Preview", "Code"]} previewLink="/animation/cards/review">
   <TabComponent label="Preview">
-    <WalletLinker />
+    <div className="flex items-center justify-center py-10 md:py-32 ">
+      <ReviewCard />
+    </div>
   </TabComponent>
   <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Web3/WalletConnect/WalletLinker.tsx" />
-  </TabComponent>
-</Tabs>
-
-## CryptoConnector Component
-
-Meet CryptoConnector, the ultimate solution for linking your favorite wallets. Easily connect to Metamask, Coinbase Wallet, and Wallet Connect. Enjoy a seamless and secure connection for all your cryptocurrency needs.
-
-<Tabs
-  items={["Preview", "Code"]}
-  previewLink="/web3/walletconnect/cryptoconnect"
->
-  <TabComponent label="Preview">
-    <CryptoConnector />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Web3/WalletConnect/CryptoConnector.tsx" />
+    <SourceCodeViewer componentPath="ui/examples/review-card.tsx" />
   </TabComponent>
 </Tabs>

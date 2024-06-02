@@ -3,6 +3,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
 import { useTheme } from "nextra-theme-docs";
+import { FaTwitter } from "react-icons/fa";
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -29,6 +30,15 @@ const config: DocsThemeConfig = {
       </>
     );
   },
+  // project: {
+  //   link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",
+  //   icon: <FaDiscord />,
+  // },
+
+  chat: {
+    link: "https://x.com/aura__ui",
+    icon: <FaTwitter />,
+  },
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,15 +55,7 @@ const config: DocsThemeConfig = {
   //    component: <> <Navbar/> </>,
   //  },
 
-  // project: {
-  //   link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",
-  //   icon: <LinkedinIcon />,
-  // },
 
-  // chat: {
-  //   link: "https://twitter.com/Jayjeet_100",
-  //   icon: <TwitterIcon style={{ marginLeft: '-12px' }} />,
-  // },
 
   // banner: {
   //   text: "It is in Beta  ",
