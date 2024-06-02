@@ -65,7 +65,7 @@ const Tabs = ({ items, children, previewLink }: TabsProps) => {
                 // Assuming the second tab is the one with the code
                 return (
                   <div key={index} className="relative">
-                    <div className="h-[400px] border-2 border-customDark rounded-2xl overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200">
+                    <div className="h-[400px] border-2 border-customDark rounded-2xl overflow-y-auto">
                       {child}
                     </div>
                   </div>
