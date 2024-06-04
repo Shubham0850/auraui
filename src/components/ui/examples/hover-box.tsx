@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
-import DotPattern from '../bg-dot';
-import { cn } from '@/lib/utils';
+import DotPattern from "../bg-dot";
+import { cn } from "@/lib/utils";
 
-const Card = ({ title, icon }: { title: string, icon: React.ReactNode }) => {
+const Card = ({ title, icon }: { title: string; icon: React.ReactNode }) => {
   return (
     <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg border min-w-[100px]">
       <motion.div
@@ -12,9 +12,7 @@ const Card = ({ title, icon }: { title: string, icon: React.ReactNode }) => {
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        <div className="h-5 w-5 flex items-center justify-center">
-          {icon}
-        </div>
+        <div className="h-5 w-5 flex items-center justify-center">{icon}</div>
       </motion.div>
       <motion.div
         className="text-center"
@@ -48,8 +46,8 @@ const Card = ({ title, icon }: { title: string, icon: React.ReactNode }) => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const HoverBox = () => {
   const first = {
@@ -77,32 +75,41 @@ const HoverBox = () => {
     },
   };
   return (
-    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg border px-3 py-8 md:shadow-md bg-white dark:bg-black dark:border-darkBorder">
+    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg border px-3 py-8 md:shadow-md bg-white dark:bg-[#282829] dark:border-darkBorder">
       <motion.div
         initial="initial"
         animate="animate"
         whileHover="hover"
-        className="flex w-full flex-row space-x-4 opacity-80 justify-center z-[100] "
+        className="flex w-full flex-row space-x-4 justify-center z-[11]"
       >
         <motion.div
           variants={first}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <Card title="0xgulzari" icon={<div className="bg-blue-500 h-full w-full rounded-full" />} />
+          <Card
+            title="0xgulzari"
+            icon={<div className="bg-blue-500 h-full w-full rounded-full" />}
+          />
         </motion.div>
 
         <motion.div
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          className='z-10'
+          className="z-10"
         >
-          <Card title="0xkunal" icon={<div className="bg-purple-500 h-full w-full rounded-full" />} />
+          <Card
+            title="0xkunal"
+            icon={<div className="bg-purple-500 h-full w-full rounded-full" />}
+          />
         </motion.div>
 
         <motion.div
           variants={second}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <Card title="0xjay" icon={<div className="bg-gray-800 h-full w-full rounded-full" />} />
+          <Card
+            title="0xjay"
+            icon={<div className="bg-gray-800 h-full w-full rounded-full" />}
+          />
         </motion.div>
       </motion.div>
       <DotPattern
