@@ -1,4 +1,5 @@
 import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import SourceCodeViewer from "@/utils/SourceCodeViewer";
 import CourseHero from "@/components/Hero/Course";
 import EmailCampaign from "@/components/Hero/EmailCampaign";
@@ -54,3 +55,9 @@ This feedback component for AuraUI highlights community involvement, inviting ov
     <SourceCodeViewer componentPath="Hero/Feedback.tsx" />
   </TabComponent>
 </Tabs>
+
+<ElementWrapper
+  previewLink="/hero/feedback"
+  componentPath="Hero/Feedback.tsx"
+  element={<Feedback />}
+/>
