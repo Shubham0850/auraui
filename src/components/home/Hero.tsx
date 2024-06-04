@@ -24,7 +24,7 @@ import { RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
 import { GrReactjs } from "react-icons/gr";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
+import { SiNextra } from "react-icons/si";
 
 const CounterExample = () => {
   return (
@@ -89,7 +89,7 @@ const Hero = () => {
               <GrReactjs className="w-7 h-7  text-gray-900 dark:text-gray-300" />
               <RiTailwindCssFill className="w-7 h-7  text-gray-900 dark:text-gray-300" />
               <FaCss3Alt className="w-7 h-7 text-gray-900 dark:text-gray-300" />
-              <RiJavascriptFill className="w-7 h-7 text-gray-900 dark:text-gray-300" />
+              <SiNextra className="w-6 h-6 text-gray-900 dark:text-gray-300" />
             </div>
 
             <div className="relative inline-flex mt-10 group">
