@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import { DocsThemeConfig, Navbar, ThemeSwitch } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
 import { useTheme } from "nextra-theme-docs";
 import { FaTwitter } from "react-icons/fa";
+import Nav from "@/components/layout/Navbar";
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -51,9 +52,11 @@ const config: DocsThemeConfig = {
     </>
   ),
 
-  //  navbar:{
-  //    component: <> <Navbar/> </>,
-  //  },
+ 
+
+   navbar:{
+     extraContent:ThemeSwitch
+   },
 
 
 
@@ -78,7 +81,7 @@ component:null
     defaultMenuCollapseLevel: 1,
   },
   gitTimestamp: false,
-  darkMode: true,
+  darkMode: false,
   footer: {
     text: <Footer />,
   },
