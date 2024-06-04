@@ -80,7 +80,7 @@ const Hero = () => {
               fasterrrrrr than ever!
             </p>
 
-            <div className="mt-8 mb-4 p-2 flex items-center justify-center gap-4 rounded-3xl w-[35%] m-auto bg-gradient-to-r from-[#3b3b3e] via-[#434348] to-[#58585e]  hover:shadow-xl">
+            <div className="mt-8 mb-4 p-2 flex items-center justify-center gap-4  rounded-3xl w-[35%] m-auto bg-[#171717] hover:bg-[#3d4240] border border-neutral-200 dark:border-darkBorder group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt  transition-all duration-1000 cursor-pointer">
               {/* className="w-7 h-7 text-gray-900 dark:text-gray-300"  */}
               <img
                 src="/components/next.svg"
@@ -110,7 +110,7 @@ const Hero = () => {
             </div>
 
             <div className="relative inline-flex mt-10 group">
-              <div className="absolute transitiona-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#5a5a62] via-[#434348] to-[#575760] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div className="absolute transition-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#5a5a62] via-[#434348] to-[#575760] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
 
               <Link
                 href="/components"
