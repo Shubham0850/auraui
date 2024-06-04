@@ -21,10 +21,6 @@ import { cn } from "@/lib/utils";
 import AnimatedGridPattern from "@/components/ui/bg-grid";
 import { OrbitingCirclesDemo } from "../ui/examples/circle-example";
 import { RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
-import { GrReactjs } from "react-icons/gr";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaCss3Alt } from "react-icons/fa";
-import { SiNextra } from "react-icons/si";
 
 const CounterExample = () => {
   return (
@@ -84,16 +80,37 @@ const Hero = () => {
               fasterrrrrr than ever!
             </p>
 
-            <div className="pt-8 pb-4 flex items-center justify-center gap-4">
-              <RiNextjsFill className="w-7 h-7 text-gray-900 dark:text-gray-300" />
-              <GrReactjs className="w-7 h-7  text-gray-900 dark:text-gray-300" />
-              <RiTailwindCssFill className="w-7 h-7  text-gray-900 dark:text-gray-300" />
-              <FaCss3Alt className="w-7 h-7 text-gray-900 dark:text-gray-300" />
-              <SiNextra className="w-6 h-6 text-gray-900 dark:text-gray-300" />
+            <div className="mt-8 mb-4 p-2 flex items-center justify-center gap-4 rounded-3xl w-[35%] m-auto bg-gradient-to-r from-[#3b3b3e] via-[#434348] to-[#58585e]  hover:shadow-xl">
+              {/* className="w-7 h-7 text-gray-900 dark:text-gray-300"  */}
+              <img
+                src="/components/next.svg"
+                alt="nextjs"
+                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+              />
+              <img
+                src="/components/react.svg"
+                alt="react js"
+                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+              />
+              <img
+                src="/components/tailwind.svg"
+                alt="tailwind"
+                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+              />
+              <img
+                src="/components/css-icon.svg"
+                alt="css "
+                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+              />
+              <img
+                src="/components/framer.svg"
+                alt="framer"
+                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+              />
             </div>
 
             <div className="relative inline-flex mt-10 group">
-              <div className="absolute transitiona-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div className="absolute transitiona-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#5a5a62] via-[#434348] to-[#575760] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
 
               <Link
                 href="/components"

@@ -1,8 +1,5 @@
 import { SiNextra } from "react-icons/si";
 import OrbitingCircles from "../circle";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { GrReactjs } from "react-icons/gr";
-import { CgVercel } from "react-icons/cg";
 
 export function OrbitingCirclesDemo() {
   return (
@@ -14,6 +11,7 @@ export function OrbitingCirclesDemo() {
       {/* Inner Circles */}
       <OrbitingCircles
         className="h-[20px] w-[20px] border-none "
+        reverse
         duration={20}
         delay={20}
         radius={50}
@@ -21,18 +19,18 @@ export function OrbitingCirclesDemo() {
         <Icons.tailwind />
       </OrbitingCircles>
       <OrbitingCircles
-        className="h-[20px] w-[20px] border-none "
+        className="h-[25px] w-[25px] border-none "
+        reverse
         duration={20}
         delay={10}
         radius={50}
       >
-        <Icons.nextra />
+        <Icons.framer />
       </OrbitingCircles>
 
       {/* Outer Circles (reverse) */}
       <OrbitingCircles
         className="h-[30px] w-[30px] border-none "
-        reverse
         radius={100}
         duration={20}
       >
@@ -40,7 +38,6 @@ export function OrbitingCirclesDemo() {
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[30px] w-[30px] border-none"
-        reverse
         radius={100}
         duration={20}
         delay={20}
@@ -54,18 +51,18 @@ export function OrbitingCirclesDemo() {
         reverse
         radius={150}
         duration={20}
-        delay={5}
+        delay={100}
       >
-        <Icons.reactjs />
+        <Icons.nextra />
       </OrbitingCircles>
       <OrbitingCircles
-        className="h-[30px] w-[30px] border-none"
+        className="h-[40px] w-[40px] border-none"
         reverse
         radius={150}
         duration={20}
         delay={50}
       >
-        <Icons.nextjs />
+        <Icons.css />
       </OrbitingCircles>
     </div>
   );
@@ -73,18 +70,19 @@ export function OrbitingCirclesDemo() {
 
 const Icons = {
   nextjs: (props: any) => (
-    <RiNextjsFill className=" text-gray-900 dark:text-gray-300" />
+    <img src="/components/next.svg " alt="nextjs" className="h-4 w-4" />
   ),
-  nextra: (props: any) => (
-    <SiNextra className="text-gray-900 dark:text-gray-300" />
-  ),
-  openai: (props: any) => (
-    <CgVercel className="text-gray-900 dark:text-gray-300" />
+  framer: (props: any) => (
+    <img src="/components/framer.svg" alt="framer motion" className="h-4 w-4" />
   ),
   reactjs: (props: any) => (
-    <GrReactjs className=" text-gray-900 dark:text-gray-300" />
+    <img src="/components/react.svg" alt="react" className="h-6 w-6" />
+  ),
+  nextra: (props: any) => <SiNextra className="h-4 w-4" />,
+  css: (props: any) => (
+    <img src="/components/css-icon.svg" alt="css" className="h-6 w-6" />
   ),
   tailwind: (props: any) => (
-    <RiTailwindCssFill className=" text-gray-900 dark:text-gray-300" />
+    <img src="/components/tailwind.svg" alt="tailwind" />
   ),
 };
