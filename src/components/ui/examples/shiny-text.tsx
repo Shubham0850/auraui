@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { LuArrowRight } from 'react-icons/lu'
+import { LuArrowRight } from "react-icons/lu";
 import { CSSProperties, FC, ReactNode } from "react";
 
 interface AnimatedShinyTextProps {
@@ -21,7 +21,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
         } as CSSProperties
       }
       className={cn(
-        "mx-auto max-w-md text-neutral-600/50 dark:text-neutral-400/50 ",
+        "mx-auto max-w-md text-neutral-600/90  dark:text-neutral-400/90 ",
 
         // Shimmer effect
         "animate-shimmer bg-clip-text bg-no-repeat [background-position:0_0] [background-size:var(--shimmer-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]",
@@ -51,7 +51,7 @@ const ShinyTextExample = () => {
         </AnimatedShinyText>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export { ShinyTextExample, AnimatedShinyText };

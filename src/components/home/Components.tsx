@@ -1,4 +1,24 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import { motion, HTMLMotionProps } from "framer-motion";
+
+interface AnimatedDivProps extends HTMLMotionProps<"div"> {
+  children: ReactNode;
+}
+
+// Custom component to generate motion.div with desired animation
+const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+      {...rest}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 const baseCategories = [
   {
@@ -218,7 +238,7 @@ const reactNativeCategories = [
 
 const ComponentSection = () => {
   return (
-    <div className="py-20" id="global">
+    <div className="py-32" id="global">
       <div className="max-w-7xl mx-auto">
         <div className="text-left">
           <h2 className="text-3xl font-semibold tracking-wide uppercase">
@@ -234,13 +254,16 @@ const ComponentSection = () => {
               href={category.link}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
-                <img
-                  src={category.img}
-                  alt="img"
-                  className=" rounded-xl w-full"
-                />
-              </div>
+              <AnimatedDiv>
+                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                  <img
+                    src={category.img}
+                    alt="img"
+                    className="rounded-xl w-full"
+                  />
+                </div>
+              </AnimatedDiv>
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
               </h3>
@@ -268,13 +291,16 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
-                <img
-                  src={category.img}
-                  alt="hero"
-                  className="rounded-xl w-full"
-                />
-              </div>
+              <AnimatedDiv>
+                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                  <img
+                    src={category.img}
+                    alt="hero"
+                    className="rounded-xl w-full"
+                  />
+                </div>
+              </AnimatedDiv>
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
               </h3>
@@ -299,9 +325,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
-                <img src={category.img} alt="hero" className="rounded-xl" />
-              </div>
+              <AnimatedDiv>
+                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                  <img src={category.img} alt="hero" className="rounded-xl" />
+                </div>
+              </AnimatedDiv>
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
               </h3>
@@ -326,9 +355,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
-                <img src={category.img} alt="hero" className="rounded-xl" />
-              </div>
+              <AnimatedDiv>
+                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                  <img src={category.img} alt="hero" className="rounded-xl" />
+                </div>
+              </AnimatedDiv>
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
               </h3>
@@ -353,9 +385,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
-                <img src={category.img} alt="hero" className="rounded-xl" />
-              </div>
+              <AnimatedDiv>
+                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                  <img src={category.img} alt="hero" className="rounded-xl" />
+                </div>
+              </AnimatedDiv>
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
               </h3>
@@ -380,9 +415,12 @@ const ComponentSection = () => {
               key={category.name}
               className="flex flex-col items-left cursor-pointer"
             >
-              <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4 box">
-                <img src={category.img} alt="hero" className="rounded-xl" />
-              </div>
+              <AnimatedDiv>
+                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                  <img src={category.img} alt="hero" className="rounded-xl" />
+                </div>
+              </AnimatedDiv>
+
               <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
                 {category.name}
               </h3>
