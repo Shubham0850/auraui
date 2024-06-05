@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import GreemaToggle from "@/components/ui/examples/toggle.tsx";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import { BsJustify } from "react-icons/bs";
 
 # Toggle Component
@@ -17,13 +16,12 @@ To integrate a Toggle Components into your Next.js Project,copy and paste the fo
 
 A simple, interactive component used to represent a binary state, with a movable handle that changes position to indicate on/off status. Ideal for settings, preferences, and other binary options in user interfaces.
 
-<Tabs items={["Preview", "Code"]} previewLink="/animation/toggle/simple">
-  <TabComponent label="Preview">
+<ElementWrapper
+  previewLink="/animation/toggle/simple"
+  componentPath="ui/examples/toggle.tsx"
+  element={
     <div className="flex items-center justify-center py-10 md:py-32 ">
       <GreemaToggle />
     </div>
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="ui/examples/toggle.tsx" />
-  </TabComponent>
-</Tabs>
+  }
+/>

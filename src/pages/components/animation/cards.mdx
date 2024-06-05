@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import ReviewCard from "@/components/ui/examples/review-card.tsx";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 import { BsJustify } from "react-icons/bs";
 
 # Cards Component
@@ -17,13 +16,13 @@ To integrate a Cards Components into your Next.js Project,copy and paste the fol
 
 This ReviewCard effectively combines text and visual elements to present a user testimonial in an engaging and readable format. The thoughtful layout and styling ensure that the review is prominent and the reviewer's details are clear, making it a powerful tool for building trust and demonstrating the value of the service or platform.
 
-<Tabs items={["Preview", "Code"]} previewLink="/animation/cards/review">
-  <TabComponent label="Preview">
+
+<ElementWrapper
+  previewLink="/animation/cards/review"
+  componentPath="ui/examples/review-card.tsx"
+  element={
     <div className="flex items-center justify-center py-10 md:py-32 ">
-      <ReviewCard />
+      <ReviewCard />{" "}
     </div>
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="ui/examples/review-card.tsx" />
-  </TabComponent>
-</Tabs>
+  }
+/>
