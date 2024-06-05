@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import BlogGrid from "@/components/Blog/BlogGrid";
 
 # Blog Component
@@ -16,11 +15,9 @@ To integrate Blog Components into your Next.js Project, copy and paste the follo
 
 The BlogGrid component displays a grid of blog posts, each featuring an image, title, description, and category. This example includes posts about AuroraUI, Spider-Man, and Blockchain. AuroraUI is a comprehensive UI library with numerous components, including those for AI and Web3. The component is optimized for responsiveness and code efficiency, ensuring a seamless user experience across devices.
 
-<Tabs items={["Preview", "Code"]} previewLink="/blog/blog-grid">
-  <TabComponent label="Preview">
-    <BlogGrid />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Blog/BlogGrid.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+ previewLink="/blog/blog-grid"
+ componentPath="Blog/BlogGrid.tsx" 
+  element={<BlogGrid />}
+/>

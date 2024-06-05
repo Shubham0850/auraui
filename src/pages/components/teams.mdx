@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import VisionaryVanguard from "@/components/Teams/VisionaryVanguard";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
 # Teams Component
 
@@ -16,11 +15,8 @@ To integrate a Teams Components into your Next.js Project,copy and paste the fol
 
 The Visionary Vanguard is a dedicated space on your website to celebrate the individuals who are the driving force behind your organization’s achievements. It’s designed to give visitors a glimpse into the heart of your company culture and the people who make it successful.
 
-<Tabs items={["Preview", "Code"]} previewLink="/team/visionary">
-  <TabComponent label="Preview">
-    <VisionaryVanguard />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Teams/VisionaryVanguard.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/team/visionary"
+  componentPath="Teams/VisionaryVanguard.tsx"
+  element={<VisionaryVanguard />}
+/>

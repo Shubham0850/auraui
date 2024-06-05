@@ -1,7 +1,6 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import Simple from "@/components/CTA/Simple";
 import RoundedDesign from "@/components/CTA/RoundedDesign";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
 # CTA Elements
 
@@ -17,24 +16,16 @@ To integrate these components into your Next.js project, copy and paste the foll
 
 ## Simple CTA
 
-<Tabs items={['Preview', 'Code']} previewLink='/cta/simple' >
-   <TabComponent label="Preview">
-      <Simple />
-   </TabComponent>
-   <TabComponent label="Code">
-   <SourceCodeViewer componentPath="CTA/Simple.tsx" />
- </TabComponent>
-</Tabs
-
->
+<ElementWrapper
+previewLink='/cta/simple'
+componentPath="CTA/Simple.tsx" 
+  element={<Simple />}
+/>
 
 ## Rounded Design
 
-<Tabs items={["Preview", "Code"]} previewLink="/cta/rounded">
-  <TabComponent label="Preview">
-    <RoundedDesign />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="CTA/RoundedDesign.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+ previewLink="/cta/rounded"
+componentPath="CTA/RoundedDesign.tsx" 
+  element={<RoundedDesign />}
+/>

@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import QuestBox from "@/components/Faqs/QuestBox";
 
 # FAQs Component
@@ -17,11 +16,9 @@ To integrate a FAQs Components into your Next.js Project,copy and paste the foll
 A box-style FAQ layout that provides quick access to commonly asked questions and their concise answers.
 Features: Grid-based arrangement, minimalistic design, and efficient content presentation.
 
-<Tabs items={["Preview", "Code"]} previewLink="/faqs/questbox">
-  <TabComponent label="Preview">
-    <QuestBox />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Faqs/QuestBox.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+previewLink="/faqs/questbox"
+componentPath="Faqs/QuestBox.tsx"
+  element={<QuestBox />}
+/>

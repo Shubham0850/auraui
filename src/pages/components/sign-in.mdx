@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import LoginCard from "@/components/SignIn/LoginCard";
 
 # SignIn Component
@@ -16,11 +15,8 @@ To integrate a SignIn Components into your Next.js Project,copy and paste the fo
 
 The LoginCard component offers a simple and elegant user interface for users to log into their accounts. It includes input fields for email and password, a "Remember me" checkbox, and options for password recovery and Google sign-in.
 
-<Tabs items={["Preview", "Code"]} previewLink="/signin/login">
-  <TabComponent label="Preview">
-    <LoginCard />
-  </TabComponent>
-  <TabComponent label="Code">
- <SourceCodeViewer componentPath="SignIn/LoginCard.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+previewLink="/signin/login"
+componentPath="SignIn/LoginCard.tsx"
+  element={ <LoginCard />}
+/>

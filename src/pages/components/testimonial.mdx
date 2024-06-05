@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import Designers from "@/components/Testimonial/Designers";
 import Devlopers from "@/components/Testimonial/Devlopers";
 
@@ -19,24 +18,16 @@ To integrate these components into your Next.js project, copy and paste the foll
 
 Working with this design team was a game-changer for your project. Their creativity and attention to detail exceeded all our expectations!
 
-<Tabs items={["Preview", "Code"]} previewLink="/testimonial/designer">
-  <TabComponent label="Preview">
-    <Designers />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Testimonial/Designers.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/testimonial/designer"
+  componentPath="Testimonial/Designers.tsx"
+  element={<Designers />}
+/>
 
 ## Testimonial for Devlopers
 
-####
-
-<Tabs items={["Preview", "Code"]} previewLink="/testimonial/twitter">
-  <TabComponent label="Preview">
-    <Devlopers />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Testimonial/Devlopers.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/testimonial/twitter"
+  componentPath="Testimonial/Devlopers.tsx"
+  element={<Devlopers />}
+/>

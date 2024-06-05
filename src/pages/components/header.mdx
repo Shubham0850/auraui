@@ -1,9 +1,8 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import Simple from "@/components/Header/Simple";
 import Authentication from "@/components/Header/Authentication";
 import CallToAction from "@/components/Header/CallToAction";
 import UserAccount from "@/components/Header/UserAccount";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
 # Header Component
 
@@ -19,51 +18,45 @@ To integrate a Header Components into your Next.js Project,copy and paste the fo
 
 This navbar features a straightforward design with minimal items and a clear layout, suitable for basic navigation needs.
 
-<Tabs items={["Preview", "Code"]} previewLink="/header/cart">
-  <TabComponent label="Preview">
-    <Simple />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Header/Simple.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+ previewLink="/header/cart"
+  componentPath="Header/Simple.tsx" 
+  element={ <Simple/>}
+/>
 
 ## User Account Navbar
 
 This navbar includes links for signing up, signing in, and a user profile icon, making it ideal for websites that require user authentication and account management.
 
-<Tabs items={["Preview", "Code"]} previewLink="/header/with-cta">
-  <TabComponent label="Preview">
-    <UserAccount />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Header/UserAccount.tsx" />
-  </TabComponent>
-</Tabs>
+
+
+<ElementWrapper
+previewLink="/header/with-cta"
+ componentPath="Header/UserAccount.tsx"
+  element={ <UserAccount />}
+/>
+
 
 ## Call-to-Action Navbar
 
 This navbar prominently features a call-to-action button ("Get started now") along with standard navigation links, perfect for websites looking to drive user engagement or conversions.
 
-<Tabs items={['Preview', 'Code']}  previewLink='/header/simple'>
 
-<TabComponent label='Preview'>
-      <CallToAction />
-   </TabComponent>
-   <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Header/CallToAction.tsx" />
-   </TabComponent>
-</Tabs>
+<ElementWrapper
+previewLink='/header/simple'
+  componentPath="Header/CallToAction.tsx"
+  element={  <CallToAction />}
+/>
+
 
 ## Authentication Navbar
 
 The Authentication Navbar is designed for websites that require user login and registration features. It includes links for signing up, signing in, and a user profile icon, making it easy for users to manage their accounts seamlessly.
 
-<Tabs items={["Preview", "Code"]} previewLink="/header/with-shadow">
-  <TabComponent label="Preview">
-    <Authentication />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Header/Authentication.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+  previewLink="/header/with-shadow"
+  componentPath="Header/Authentication.tsx" 
+  element={<Authentication />}
+/>

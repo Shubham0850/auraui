@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import MetricsHub from "@/components/Stats/MetricsHub";
 
 # Stats Component
@@ -14,13 +13,10 @@ To integrate a Stats Components into your Next.js Project,copy and paste the fol
 
 ## MetricsHub Stats
 
-The MetricsHub is a dynamic dashboard designed to empower users with real-time insights. It consolidates essential statistics, enabling quick decision-making and performance evaluation
+The MetricsHub is a dynamic dashboard designed to empower users with real-time insights. It consolidates essential statistics, enabling quick decision-making and performance evaluation.
 
-<Tabs items={["Preview", "Code"]} previewLink="/stats/metrics">
-  <TabComponent label="Preview">
-    <MetricsHub />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Stats/MetricsHub.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/stats/metrics"
+  componentPath="Stats/MetricsHub.tsx"
+  element={<MetricsHub />}
+/>

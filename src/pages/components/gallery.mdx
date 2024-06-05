@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import Showcase from "@/components/Gallery/Showcase";
 
 # Gallery Component
@@ -16,12 +15,9 @@ To integrate Gallery Components into your Next.js Project, copy and paste the fo
 
 The component offers more than just a simple image display. It provides a comprehensive platform for showcasing visual content, encouraging engagement, and facilitating communication with your audience.
 
-<Tabs items={["Preview", "Code"]} previewLink="/gallery/showcase">
-  <TabComponent label="Preview">
-    <Showcase />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Gallery/Showcase.tsx" />
-  </TabComponent>
-</Tabs>
 
+<ElementWrapper
+ previewLink="/gallery/showcase"
+ componentPath="Gallery/Showcase.tsx"
+  element={<Showcase />}
+/>

@@ -1,7 +1,6 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import AuraFooterOne from "@/components/Footer/AuraFooterOne";
 import SmallFooter from "@/components/Footer/SmallFooter";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
 # Footer Component
 
@@ -17,24 +16,18 @@ To integrate a Footer Components into your Next.js Project,copy and paste the fo
 
 The AuraFooter component is a comprehensive footer designed for all platforms. It features multiple sections for easy navigation, including company information, help resources, additional links, and social media icons. This footer ensures users can quickly access important pages such as About, Features, Customer Support, and Terms & Conditions. The footer also includes branding and copyright information, making it a complete solution for professional sites.
 
-<Tabs items={["Preview", "Code"]} previewLink="/footer/aura-footer">
-  <TabComponent label="Preview">
-    <AuraFooterOne />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Footer/AuraFooterOne.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+ previewLink="/footer/aura-footer"
+componentPath="Footer/AuraFooterOne.tsx" 
+  element={  <AuraFooterOne />}
+/>
 
 ## Small Footer Component
 
 The Small Footer component is a sleek and colorful footer. It includes essential links such as About, Services, Privacy Policy, and Terms & Conditions, making it easy for readers to find important information. The footer also features social media icons for enhanced connectivity and engagement. With its vibrant gradient background, this footer adds a stylish touch while providing necessary navigation and branding details.
 
-<Tabs items={["Preview", "Code"]} previewLink="/footer/small">
-  <TabComponent label="Preview">
-    <SmallFooter />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Footer/SmallFooter.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/footer/small"
+componentPath="Footer/SmallFooter.tsx"
+  element={ <SmallFooter />}
+/>

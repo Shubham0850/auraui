@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import MajnuBhai from "@/components/Web3/Nft/MajnuBhai";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
 # NFT Component
 
@@ -16,11 +15,8 @@ To integrate a NFT Components into your Next.js Project,copy and paste the follo
 
 The MintRastaGolfer component allows users to mint unique NFTs. This component facilitates quantity selection, displays the minting cost, and updates the wallet balance in real-time, providing a seamless user experience.
 
-<Tabs items={["Preview", "Code"]} previewLink="/web3/nft/majnubhai">
-  <TabComponent label="Preview">
-    <MajnuBhai />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Web3/Nft/MajnuBhai.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/web3/nft/majnubhai"
+  componentPath="Web3/Nft/MajnuBhai.tsx"
+  element={<MetricsHub />}
+/>
