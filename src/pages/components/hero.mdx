@@ -3,6 +3,7 @@ import SourceCodeViewer from "@/utils/SourceCodeViewer";
 import CourseHero from "@/components/Hero/Course";
 import EmailCampaign from "@/components/Hero/EmailCampaign";
 import Feedback from "@/components/Hero/Feedback";
+import ElementWrapper from "@/components/Theme/Element";
 
 # Hero Elements
 
@@ -20,37 +21,29 @@ To integrate the CourseHero component into your Next.js project, copy and paste 
 
 The CourseHero component offers an engaging user interface where placeholders slide in, and the input field vanishes upon submission. This effect enhances user interaction by providing smooth transitions and clear feedback.
 
-<Tabs items={["Preview", "Code"]} previewLink="/hero/course">
-  <TabComponent label="Preview">
-    <CourseHero />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Hero/Course.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/hero/course"
+  componentPath="Hero/Course.tsx"
+  element={<CourseHero />}
+/>
+
 
 ## EmailCampaign Component
 
 It includes a navigation bar at the top for easy access to different sections of the website. Text content is likely placed strategically to convey the website's value proposition.
 
-<Tabs items={["Preview", "Code"]} previewLink="/hero/email">
-  <TabComponent label="Preview">
-    <EmailCampaign />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Hero/EmailCampaign.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/hero/email"
+  componentPath="Hero/EmailCampaign.tsx"
+  element={<EmailCampaign />}
+/>
 
 ## Feedback Hero Component
 
 This feedback component for AuraUI highlights community involvement, inviting over 6969 developers to contribute their insights. It features a compelling call-to-action with "Feedback" and "Download AuraUI" buttons, alongside a futuristic UI image that underscores the platform's innovation.
 
-<Tabs items={["Preview", "Code"]} previewLink="/hero/feedback">
-  <TabComponent label="Preview">
-    <Feedback />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Hero/Feedback.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+  previewLink="/hero/feedback"
+  componentPath="Hero/Feedback.tsx"
+  element={<Feedback />}
+/>
