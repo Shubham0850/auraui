@@ -1,6 +1,4 @@
-import { RnTab, RnTabComponent } from "@/components/Theme/RnTab";
-import MajnuBhai from "@/components/Web3/Nft/MajnuBhai";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import { RnTab } from "@/components/Theme/RnTab";
 
 # NFT Component
 
@@ -16,11 +14,8 @@ To integrate a NFT Components into your Next.js Project,copy and paste the follo
 
 The MintRastaGolfer component allows users to mint unique NFTs. This component facilitates quantity selection, displays the minting cost, and updates the wallet balance in real-time, providing a seamless user experience.
 
-<RnTab items={["Preview", "Code"]}>
-  <RnTabComponent label="Preview">
-    <MajnuBhai />
-  </RnTabComponent>
-  <RnTabComponent label="Code">
-    <SourceCodeViewer componentPath="Web3/Nft/MajnuBhai.tsx" />
-  </RnTabComponent>
-</RnTab>
+<RnTab
+  componentPath="Blog/BlogGrid.tsx"
+  iPhoneMockupUrl="https://itc.ua/wp-content/uploads/2023/10/IMG_0262.jpeg"
+  androidMockupUrl="https://itc.ua/wp-content/uploads/2023/10/IMG_0262.jpeg"
+/>
