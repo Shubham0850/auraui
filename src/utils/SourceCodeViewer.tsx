@@ -12,14 +12,13 @@ function SourceCodeViewer({ componentPath }: { componentPath: string }) {
   const getValue = () => sourceCode;
 
   return (
-    <pre className="pt-3 ">
-      <code>
-        <div className="bg-transparent absolute right-1 top-1 ">
-          {" "}
+    <pre className="relative h-[500px]  overflow-y-auto">
+      <div className="">
+        <div className="bg-transparent sticky float-right -mb-4   top-2  ">
           <CopyToClipboard getValue={getValue} />
         </div>
-        {sourceCode}
-      </code>
+        <code>{sourceCode}</code>
+      </div>
     </pre>
   );
 }
