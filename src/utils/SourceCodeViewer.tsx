@@ -12,9 +12,9 @@ function SourceCodeViewer({ componentPath }: { componentPath: string }) {
   const getValue = () => sourceCode;
 
   return (
-    <pre className="relative h-[500px]  overflow-y-auto">
+    <pre className="relative h-[500px] overflow-y-auto custom-scrollbar">
       <div className="">
-        <div className="bg-transparent sticky float-right -mb-4   top-2  ">
+        <div className="bg-transparent sticky float-right -mb-4 top-2">
           <CopyToClipboard getValue={getValue} />
         </div>
         <code>{sourceCode}</code>

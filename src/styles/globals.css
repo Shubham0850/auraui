@@ -321,3 +321,26 @@ body {
     transform: translateX(-10.4%);
   }
 }
+
+/* Custom Scrollbar Styles */
+
+.custom-scrollbar {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #383838;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #282828;
+}
