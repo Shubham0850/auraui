@@ -6,8 +6,13 @@
       "layout": "full"
     }
   },
+  "docs": {
+    "title": "Docs",
+    "type": "page",
+    "href": "/components/installation"
+  },
   "components": {
     "title": "Components",
     "type": "page"
-  } 
+  }
 }
