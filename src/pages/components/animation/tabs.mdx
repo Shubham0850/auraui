@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
+import ElementWrapper from "@/components/Theme/Element";
 import AnimaSwitcher from "@/components/ui/examples/tab.tsx";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
 
 # Cards Component
 
@@ -16,13 +15,12 @@ To integrate a Tab Components into your Next.js Project,copy and paste the follo
 
 This component is an animated tab navigation bar featuring three tabs labeled "One", "Two", and "Three". The first tab is highlighted, indicating it is currently selected. The tabs change appearance when active, using smooth transitions to enhance the user experience. This component is ideal for applications or websites that require users to switch between different sections seamlessly, providing a clear and interactive way to navigate content.
 
-<Tabs items={["Preview", "Code"]} previewLink="/animation/tabs/anima">
-  <TabComponent label="Preview">
+<ElementWrapper
+  previewLink="/animation/tabs/anima"
+  componentPath="ui/examples/tab.tsx"
+  element={
     <div className="flex items-center justify-center py-10 md:py-32 ">
       <AnimaSwitcher />
     </div>
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="ui/examples/tab.tsx" />
-  </TabComponent>
-</Tabs>
+  }
+/>

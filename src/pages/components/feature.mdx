@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import PaymentsApp from "@/components/Feature/PaymentsApp";
 import DevlopmentApp from "@/components/Feature/DevlopmentApp";
 
@@ -19,22 +18,16 @@ To integrate these components into your Next.js project, copy and paste the foll
 
 Collaborating with this design team transformed our project. Their innovation and meticulous attention to detail surpassed all your expectations!
 
-<Tabs items={["Preview", "Code"]} previewLink="/feature/payments">
-  <TabComponent label="Preview">
-    <PaymentsApp />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Feature/PaymentsApp.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+ previewLink="/feature/payments"
+componentPath="Feature/PaymentsApp.tsx" 
+  element={<PaymentsApp />}
+/>
 
 ## Features for Devlopment App
 
-<Tabs items={["Preview", "Code"]} previewLink="/feature/development">
-  <TabComponent label="Preview">
-    <DevlopmentApp />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Feature/DevlopmentApp.tsx" />
-  </TabComponent>
-</Tabs>
+<ElementWrapper
+previewLink="/feature/development"
+componentPath="Feature/DevlopmentApp.tsx" 
+  element={<DevlopmentApp  />}
+/>

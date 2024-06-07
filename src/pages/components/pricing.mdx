@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import ToggleDesign from "@/components/Pricing/ToggleDesign";
 import CardDesign from "@/components/Pricing/CardDesign";
 
@@ -17,22 +16,19 @@ To integrate these components into your Next.js project, copy and paste the foll
 
 ## Toggle Design
 
-<Tabs items={["Preview", "Code"]} previewLink="/pricing/toggle">
-  <TabComponent label="Preview">
-    <ToggleDesign />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Pricing/ToggleDesign.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+previewLink="/pricing/toggle"
+componentPath="Pricing/ToggleDesign.tsx" 
+  element={<ToggleDesign  />}
+/>
 
 ## Card Design
 
-<Tabs items={["Preview", "Code"]} previewLink="/pricing/card">
-  <TabComponent label="Preview">
-    <CardDesign />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Pricing/CardDesign.tsx" />
-  </TabComponent>
-</Tabs>
+
+
+<ElementWrapper
+previewLink="/pricing/card"
+ componentPath="Pricing/CardDesign.tsx" 
+  element={    <CardDesign   />}
+/>

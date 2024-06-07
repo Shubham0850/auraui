@@ -1,5 +1,4 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 import Project from "@/components/Roadmap/Project";
 
 # Roadmap Component
@@ -16,11 +15,9 @@ To integrate Roadmap Components into your Next.js Project, copy and paste the fo
 
 ProjectRoadmap is a responsive component that showcases the strategic phases of a project's journey. It includes a visually appealing image and a detailed description of each phase, from launch to growth, highlighting the key steps and objectives. This component can be integrated into any project to provide a clear and engaging roadmap for stakeholders and team members.
 
-<Tabs items={["Preview", "Code"]} previewLink="/roadmap/project">
-  <TabComponent label="Preview">
-    <Project />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Roadmap/Project.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+ previewLink="/roadmap/project"
+ componentPath="Roadmap/Project.tsx"
+  element={    <Project />}
+/>

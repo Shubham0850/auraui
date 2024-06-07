@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import One from "@/components/Setting/One";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 
 # Setting Component
 
@@ -16,11 +15,9 @@ To integrate Setting Components into your Next.js Project, copy and paste the fo
 
 The First Setting component offers more than just a simple article display. It provides a comprehensive platform for managing settings, encouraging engagement, and facilitating communication with your audience.
 
-<Tabs items={["Preview", "Code"]} previewLink="/setting/one">
-  <TabComponent label="Preview">
-    <One />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="Setting/One.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+ previewLink="/setting/one"
+ componentPath="Setting/One.tsx"
+  element={<One />}
+/>

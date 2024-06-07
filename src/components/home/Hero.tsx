@@ -4,23 +4,15 @@ import React from "react";
 import { MacDock } from "@/components/ui/examples/dock";
 import RetroGrid from "@/components/ui/examples/retro-grid";
 import AnimateNumber from "../ui/examples/number";
-import EncryptButton from "../ui/examples/encrypt-button";
 import HoverBox from "../ui/examples/hover-box";
 import ExampleTab from "../ui/examples/tab";
 import { ShinyTextExample } from "../ui/examples/shiny-text";
 import { motion } from "framer-motion";
 import ToggleExample from "../ui/examples/toggle";
 import LoadingExample from "../ui/examples/loading";
-import MenuExample from "../ui/examples/menu";
 import Link from "next/link";
 import ReviewCard from "../ui/examples/review-card";
-import LikeCard from "../ui/examples/like-card";
-import WalletModal from "../ui/examples/wallet";
-import DotPattern from "../ui/bg-dot";
-import { cn } from "@/lib/utils";
-import AnimatedGridPattern from "@/components/ui/bg-grid";
 import { OrbitingCirclesDemo } from "../ui/examples/circle-example";
-import { RiNextjsFill, RiTailwindCssLine } from "react-icons/ri";
 
 const CounterExample = () => {
   return (
@@ -85,37 +77,35 @@ const Hero = () => {
               <img
                 src="/components/next.svg"
                 alt="nextjs"
-                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+                className="w-5 h-5 text-gray-900 dark:text-gray-300"
               />
               <img
                 src="/components/react.svg"
                 alt="react js"
-                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+                className="w-5 h-5 text-gray-900 dark:text-gray-300"
               />
               <img
                 src="/components/tailwind.svg"
                 alt="tailwind"
-                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+                className="w-5 h-5 text-gray-900 dark:text-gray-300"
               />
               <img
                 src="/components/css-icon.svg"
                 alt="css "
-                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+                className="w-5 h-5 text-gray-900 dark:text-gray-300"
               />
               <img
                 src="/components/framer.svg"
                 alt="framer"
-                className="w-7 h-7 text-gray-900 dark:text-gray-300"
+                className="w-5 h-5 text-gray-900 dark:text-gray-300"
               />
             </div>
 
             <div className="relative inline-flex mt-10 group">
-              <div className="absolute transition-all duration-1000 opacity-40 -inset-px bg-gradient-to-r from-[#5a5a62] via-[#434348] to-[#575760] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-
               <Link
                 href="/components"
                 title=""
-                className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#282829] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-[#282829]"
+                className="relative inline-flex items-center justify-center px-6 py-3 text-md font-bold text-white transition-all duration-200 bg-[#282829] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-[#282829]"
                 role="button"
               >
                 Browse Components

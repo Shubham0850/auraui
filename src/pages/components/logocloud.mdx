@@ -1,6 +1,5 @@
-import { Tabs, TabComponent } from "@/components/Theme/Tab";
 import TrustedByLogos from "@/components/LogoCloud/TrustedByLogos";
-import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import ElementWrapper from "@/components/Theme/Element";
 
 # LogoCloud Component
 
@@ -16,11 +15,9 @@ To integrate a LogoCloud Components into your Next.js Project,copy and paste the
 
 The TrustedByLogos component showcases a selection of logos from companies,popular brands who trust and use your product.It provides social proof and credibility by displaying well-known brands and a message about the broad adoption of your solution.
 
-<Tabs items={["Preview", "Code"]} previewLink="/logocloud/trusted">
-  <TabComponent label="Preview">
-    <TrustedByLogos />
-  </TabComponent>
-  <TabComponent label="Code">
-    <SourceCodeViewer componentPath="LogoCloud/TrustedByLogos.tsx" />
-  </TabComponent>
-</Tabs>
+
+<ElementWrapper
+  previewLink="/logocloud/trusted"
+  componentPath="LogoCloud/TrustedByLogos.tsx"
+  element={   <TrustedByLogos />}
+/>
