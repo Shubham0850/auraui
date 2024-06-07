@@ -112,43 +112,9 @@ pre {
   overflow-x: auto;
 }
 
-/* Styles for the box */
-.box {
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Zoom effect on hover */
-.box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Upward motion effect */
-.box.upward {
-  position: relative;
-  overflow: hidden;
-}
-
-.box.upward::before {
-  content: "";
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.4);
-  width: 100%;
-  height: 100%;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  transition: top 0.3s;
-}
-
-.box.upward:hover::before {
-  top: 0;
-}
-
 /* Marvel */
 :root {
-  --duration:25s;
+  --duration: 25s;
 }
 
 body {
@@ -164,13 +130,13 @@ body {
   position: absolute;
   top: 50%;
   opacity: 0.8;
-  transform: translate3d(-50%, -50%, 0) perspective(800px) rotateY(10deg) rotateX(-10deg);
+  transform: translate3d(-50%, -50%, 0) perspective(800px) rotateY(10deg)
+    rotateX(-10deg);
 }
 
 .images-line {
   display: flex;
   animation: scroll var(--duration) linear infinite;
-
 }
 
 .images-line:nth-child(even) {
@@ -252,7 +218,8 @@ body {
   position: absolute;
   top: 50%;
   opacity: 0.8;
-  transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(-10deg) rotate(10deg);
+  transform: translate3d(-50%, -50%, 0) perspective(800px) rotatey(-10deg)
+    rotate(10deg);
 }
 
 .music-images-line {
@@ -310,6 +277,43 @@ body {
   z-index: -1;
   transition: ease-in-out all 0.3s;
   filter: blur(25px) opacity(0.8);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #111111;
+  }
+  50% {
+    box-shadow: 0 0 20px #111111;
+  }
+  100% {
+    box-shadow: 0 0 10px #111111;
+  }
+}
+.glowing-dot-dark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: glowing 2s infinite; /* Adjust the duration as needed */
+}
+
+.glowing-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: glow 2s infinite; /* Adjust the duration as needed */
 }
 
 @keyframes runner {

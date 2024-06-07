@@ -13,16 +13,25 @@ export function OrbitingCirclesDemo() {
         className="h-[20px] w-[20px] border-none "
         reverse
         duration={20}
-        delay={20}
+        delay={33}
         radius={50}
       >
         <Icons.tailwind />
       </OrbitingCircles>
       <OrbitingCircles
+        className="h-[20px] w-[20px] border-none "
+        reverse
+        duration={20}
+        delay={66}
+        radius={50}
+      >
+        <Icons.html />
+      </OrbitingCircles>
+      <OrbitingCircles
         className="h-[25px] w-[25px] border-none "
         reverse
         duration={20}
-        delay={10}
+        delay={99}
         radius={50}
       >
         <Icons.framer />
@@ -33,14 +42,23 @@ export function OrbitingCirclesDemo() {
         className="h-[30px] w-[30px] border-none "
         radius={100}
         duration={20}
+        delay={33}
       >
         <Icons.reactjs />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[30px] w-[30px] border-none "
+        radius={100}
+        duration={20}
+        delay={66}
+      >
+        <Icons.reactnative />
       </OrbitingCircles>
       <OrbitingCircles
         className="h-[30px] w-[30px] border-none"
         radius={100}
         duration={20}
-        delay={20}
+        delay={99}
       >
         <Icons.nextjs />
       </OrbitingCircles>
@@ -51,7 +69,7 @@ export function OrbitingCirclesDemo() {
         reverse
         radius={150}
         duration={20}
-        delay={100}
+        delay={33}
       >
         <Icons.nextra />
       </OrbitingCircles>
@@ -60,7 +78,16 @@ export function OrbitingCirclesDemo() {
         reverse
         radius={150}
         duration={20}
-        delay={50}
+        delay={66}
+      >
+        <Icons.tailwind />
+      </OrbitingCircles>
+      <OrbitingCircles
+        className="h-[40px] w-[40px] border-none"
+        reverse
+        radius={150}
+        duration={20}
+        delay={99}
       >
         <Icons.css />
       </OrbitingCircles>
@@ -84,5 +111,15 @@ const Icons = {
   ),
   tailwind: (props: any) => (
     <img src="/components/tailwind.svg" alt="tailwind" />
+  ),
+  html: (props: any) => (
+    <img src="/components/html-1.svg" alt="html" className="h-6 w-6" />
+  ),
+  reactnative: (props: any) => (
+    <img
+      src="/components/react-native-1.svg"
+      alt="react native"
+      className="h-6 w-6"
+    />
   ),
 };

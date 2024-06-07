@@ -3,7 +3,7 @@ import { DocsThemeConfig, Navbar, ThemeSwitch } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
 import { useTheme } from "nextra-theme-docs";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Nav from "@/components/layout/Navbar";
 
 const config: DocsThemeConfig = {
@@ -38,7 +38,9 @@ const config: DocsThemeConfig = {
 
   chat: {
     link: "https://x.com/aura__ui",
-    icon: <FaTwitter />,
+    icon: (
+      <FaXTwitter className="h-6 w-6 text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
+    ),
   },
   head: (
     <>
@@ -52,13 +54,9 @@ const config: DocsThemeConfig = {
     </>
   ),
 
- 
-
-   navbar:{
-     extraContent:ThemeSwitch
-   },
-
-
+  navbar: {
+    extraContent: ThemeSwitch,
+  },
 
   // banner: {
   //   text: "It is in Beta  ",
@@ -66,14 +64,12 @@ const config: DocsThemeConfig = {
   //   key: "4",
   // },
 
-
-
-  editLink:{
-component:null
+  editLink: {
+    component: null,
   },
 
-  feedback:{
-    content:null
+  feedback: {
+    content: null,
   },
 
   sidebar: {

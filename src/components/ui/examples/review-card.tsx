@@ -13,7 +13,7 @@ const ReviewCard = () => {
     >
       <div className="flex items-center mb-4">
         <motion.img
-          src="/memeimage/majnubhai.jpeg"
+          src="/memeimage/akshay1.webp"
           alt="Martin Gray"
           className="w-8 h-8 rounded-full"
           initial={{ scale: 0.8 }}
@@ -23,10 +23,10 @@ const ReviewCard = () => {
         <div className="ml-2 flex items-center gap-14">
           <div>
             <p className="font-bold text-xs text-gray-900 dark:text-white">
-              @Majnubhai
+              @Raju
             </p>
             <p className="text-gray-600 text-xs dark:text-gray-400">
-              React Developer
+              Lakshmi chit fund
             </p>
           </div>
           <div>
@@ -35,8 +35,7 @@ const ReviewCard = () => {
         </div>
       </div>
       <p className="text-xs font-medium text-gray-900 dark:text-white">
-        “One of the best resource sharing site for Developers. Loved the
-        community too. Very helpful.”
+        Ekkis din main paise double.
       </p>
     </motion.div>
   );

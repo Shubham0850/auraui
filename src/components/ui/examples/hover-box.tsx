@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const Card = ({ title, icon }: { title: string; icon: React.ReactNode }) => {
   return (
-    <div className="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg border min-w-[100px]">
+    <div className="flex flex-col items-center p-4 bg-white dark:bg-[#373737] rounded-lg shadow-lg dark:shadow-2xl border dark:border-none min-w-[100px]">
       <motion.div
         className="flex items-center justify-center h-8 w-8 mb-2 bg-purple-300 rounded-full"
         initial={{ scale: 0.8 }}
@@ -20,7 +20,9 @@ const Card = ({ title, icon }: { title: string; icon: React.ReactNode }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
       >
-        <p className="text-gray-700 font-semibold text-xs">{title}</p>
+        <p className="text-gray-700 dark:text-white font-semibold text-xs">
+          {title}
+        </p>
       </motion.div>
       <div className="mt-4 w-full space-y-1">
         <motion.div
@@ -75,7 +77,7 @@ const HoverBox = () => {
     },
   };
   return (
-    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg border px-3 py-8 md:shadow-md bg-white dark:bg-[#282829] dark:border-darkBorder">
+    <div className="relative flex h-full w-full max-w-sm items-center justify-center overflow-hidden rounded-lg px-3 py-8 md:shadow-md bg-white dark:bg-[#282829] dark:border-darkBorder">
       <motion.div
         initial="initial"
         animate="animate"
@@ -88,7 +90,7 @@ const HoverBox = () => {
         >
           <Card
             title="0xgulzari"
-            icon={<div className="bg-blue-500 h-full w-full rounded-full" />}
+            icon={<div className="bg-blue-500 h-full w-full rounded-full " />}
           />
         </motion.div>
 

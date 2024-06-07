@@ -255,7 +255,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <AnimatedDiv>
-                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
                   <img
                     src={category.img}
                     alt="img"
@@ -292,7 +292,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <AnimatedDiv>
-                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
                   <img
                     src={category.img}
                     alt="hero"
@@ -326,7 +326,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <AnimatedDiv>
-                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
                   <img src={category.img} alt="hero" className="rounded-xl" />
                 </div>
               </AnimatedDiv>
@@ -356,7 +356,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <AnimatedDiv>
-                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
                   <img src={category.img} alt="hero" className="rounded-xl" />
                 </div>
               </AnimatedDiv>
@@ -386,7 +386,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <AnimatedDiv>
-                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
                   <img src={category.img} alt="hero" className="rounded-xl" />
                 </div>
               </AnimatedDiv>
@@ -416,7 +416,7 @@ const ComponentSection = () => {
               className="flex flex-col items-left cursor-pointer"
             >
               <AnimatedDiv>
-                <div className="w-full p-2 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-4">
+                <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
                   <img src={category.img} alt="hero" className="rounded-xl" />
                 </div>
               </AnimatedDiv>

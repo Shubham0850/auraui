@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import { LuArrowRight } from "react-icons/lu";
-import { CSSProperties, FC, ReactNode } from "react";
+import { CSSProperties, FC, ReactNode, useEffect, useState } from "react";
+import { useTheme } from "nextra-theme-docs";
 
 interface AnimatedShinyTextProps {
   children: ReactNode;
@@ -38,6 +38,17 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
 };
 
 const ShinyTextExample = () => {
+  const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState("");
+  useEffect(() => {
+    if (theme) {
+      setCurrentTheme(theme);
+    }
+  }, [theme]);
+
+  if (!currentTheme) {
+    return null; // or a loading spinner or placeholder
+  }
   return (
     <div className="z-10 flex items-center justify-center">
       <div
@@ -45,9 +56,19 @@ const ShinyTextExample = () => {
           "group rounded-full border border-black/5 bg-neutral-100 text-[14px] text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
         )}
       >
-        <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-          <span>✨ Build by Developers, for Developers</span>
-          <LuArrowRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+        <AnimatedShinyText className="inline-flex items-center justify-center px-5 py-3 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400 gap-3">
+          {currentTheme === "light" ? (
+            <div className="bg-[#282829] glowing-dot-dark"></div>
+          ) : (
+            <div className="glowing-dot bg-white"></div>
+          )}
+
+          <div>
+            <span className="text-sm font-semibold dark:text-white text-[#111111]">
+              Private Beta is{" "}
+              <span className="dark:text-gray-500 text-[#111111]">live</span>
+            </span>
+          </div>
         </AnimatedShinyText>
       </div>
     </div>

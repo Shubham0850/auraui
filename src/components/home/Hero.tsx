@@ -80,7 +80,7 @@ const Hero = () => {
               fasterrrrrr than ever!
             </p>
 
-            <div className="mt-8 mb-4 p-2 flex items-center justify-center gap-4  rounded-3xl w-[35%] m-auto bg-[#171717] hover:bg-[#3d4240] border border-neutral-200 dark:border-darkBorder group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt  transition-all duration-1000 cursor-pointer">
+            <div className="mt-6 px-5 py-3 flex items-center justify-center gap-4  rounded-full md:w-[35%] w-[70%] m-auto shadow-md bg-neutral-100 dark:bg-[#171717] hover:bg-neutral-200 dark:hover:bg-[#3d4240] border dark:border-darkBorder border-black/5 group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt  transition-all duration-300 cursor-pointer">
               {/* className="w-7 h-7 text-gray-900 dark:text-gray-300"  */}
               <img
                 src="/components/next.svg"
@@ -125,7 +125,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center items-center space-y-6 sm:space-y-6 sm:space-x-6">
-          <div className=" flex items-center flex-col md:mt-6 w-[300px] -mr-5 ">
+          <div className=" flex items-center flex-col md:mt-6 w-[300px] md:-mr-5  ">
             <ReviewCard />
             <MacDock />
           </div>
@@ -138,7 +138,7 @@ const Hero = () => {
             <ExampleTab />
             <HoverBox />
           </div>
-          <div className="flex flex-col space-y-4">
+          <div className="flex md:flex-col justify-center items-center gap-4 md:gap-0 space-y-4 ">
             <ToggleExample />
             <CounterExample />
             <LoadingExample />
