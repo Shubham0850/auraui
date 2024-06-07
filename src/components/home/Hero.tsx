@@ -72,7 +72,7 @@ const Hero = () => {
               fasterrrrrr than ever!
             </p>
 
-            <div className="mt-6 px-5 py-3 flex items-center justify-center gap-4  rounded-full md:w-[35%] w-[70%] m-auto shadow-md bg-neutral-100 dark:bg-[#171717] hover:bg-neutral-200 dark:hover:bg-[#3d4240] border dark:border-darkBorder border-black/5 group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt  transition-all duration-300 cursor-pointer">
+            <div className="flex items-center justify-center space-x-5 mt-5">
               {/* className="w-7 h-7 text-gray-900 dark:text-gray-300"  */}
               <img
                 src="/components/next.svg"
