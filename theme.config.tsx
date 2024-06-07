@@ -4,7 +4,6 @@ import Footer from "@/components/layout/Footer";
 
 import { useTheme } from "nextra-theme-docs";
 import { FaXTwitter } from "react-icons/fa6";
-import Nav from "@/components/layout/Navbar";
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -71,13 +70,14 @@ const config: DocsThemeConfig = {
   feedback: {
     content: null,
   },
+  primarySaturation: { dark: 0, light: 0 },
 
   sidebar: {
     autoCollapse: false,
     defaultMenuCollapseLevel: 1,
   },
   gitTimestamp: false,
-  darkMode: false,
+
   footer: {
     text: <Footer />,
   },
