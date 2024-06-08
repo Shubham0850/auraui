@@ -322,24 +322,36 @@ body {
   }
 }
 
-/* Custom Scrollbar Styles */
+/* Define custom properties for scrollbar colors */
+:root {
+  --scrollbar-track: #f0f0f0;
+  --scrollbar-thumb: #c0c0c0;
+  --scrollbar-thumb-hover: #a0a0a0;
+}
+
+.dark {
+  --scrollbar-track: #111111;
+  --scrollbar-thumb: #383838;
+  --scrollbar-thumb-hover: #282828;
+}
 
 .custom-scrollbar {
   margin-bottom: 20px;
   margin-top: 5px;
 }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #111111;
+  background: var(--scrollbar-track);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #383838;
+  background: var(--scrollbar-thumb);
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #282828;
+  background: var(--scrollbar-thumb-hover);
 }
