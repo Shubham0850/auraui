@@ -221,14 +221,14 @@ const aiCategories = [
 const reactNativeCategories = [
   {
     name: "Signin",
-    items: 69,
-    link: "/components/sign-in",
+    items: 1,
+    link: "/components/reactnative/sign-in",
     img: "/components/signin.png",
   },
   {
     name: "Signup",
-    items: 69,
-    link: "/components/sign-up",
+    items: 1,
+    link: "/components/reactnative/sign-up",
     img: "/components/signup.png",
   },
   // { name: "Text", items: 69 },
