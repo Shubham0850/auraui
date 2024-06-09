@@ -5,7 +5,6 @@ type Props = {};
 const Five = (props: Props) => {
   return (
     <header>
-      {/* <!-- lg+ --> */}
       <div className="relative bg-black">
         <div className="absolute inset-0">
           <img
@@ -51,22 +50,18 @@ const Five = (props: Props) => {
 
             <div className="hidden lg:flex lg:items-center lg:space-x-10">
               <a href="#" title="" className="text-base font-medium text-white">
-                {" "}
                 Features{" "}
               </a>
 
               <a href="#" title="" className="text-base font-medium text-white">
-                {" "}
                 Solutions{" "}
               </a>
 
               <a href="#" title="" className="text-base font-medium text-white">
-                {" "}
                 Resources{" "}
               </a>
 
               <a href="#" title="" className="text-base font-medium text-white">
-                {" "}
                 Pricing{" "}
               </a>
             </div>
@@ -77,7 +72,6 @@ const Five = (props: Props) => {
               className="items-center justify-center hidden px-6 py-3 text-base font-semibold text-black transition-all duration-200 bg-yellow-400 border border-transparent rounded-full lg:inline-flex hover:bg-yellow-500 focus:bg-yellow-500"
               role="button"
             >
-              {" "}
               Join Now{" "}
             </a>
           </nav>
@@ -113,8 +107,7 @@ const Five = (props: Props) => {
               title=""
               className="flex w-full py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
             >
-              {" "}
-              Features{" "}
+              Features
             </a>
 
             <a
@@ -122,8 +115,7 @@ const Five = (props: Props) => {
               title=""
               className="flex w-full py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
             >
-              {" "}
-              Solutions{" "}
+              Solutions
             </a>
 
             <a
@@ -131,8 +123,7 @@ const Five = (props: Props) => {
               title=""
               className="flex w-full py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
             >
-              {" "}
-              Resources{" "}
+              Resources
             </a>
 
             <a
@@ -140,8 +131,7 @@ const Five = (props: Props) => {
               title=""
               className="flex w-full py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
             >
-              {" "}
-              Pricing{" "}
+              Pricing
             </a>
           </nav>
 
@@ -152,8 +142,7 @@ const Five = (props: Props) => {
               className="inline-flex items-center justify-center w-auto px-6 py-3 mt-auto text-base font-semibold text-black transition-all duration-200 bg-yellow-400 border border-transparent rounded-full hover:bg-yellow-500 focus:bg-yellow-500"
               role="button"
             >
-              {" "}
-              Join Now{" "}
+              Join Now
             </a>
           </div>
         </div>

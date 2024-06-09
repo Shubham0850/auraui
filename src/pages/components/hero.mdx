@@ -1,6 +1,8 @@
 import CourseHero from "@/components/Hero/Course";
 import EmailCampaign from "@/components/Hero/EmailCampaign";
 import Feedback from "@/components/Hero/Feedback";
+import SaasHero from "@/components/Hero/Saas";
+import ArtGalleryHero from "@/components/Hero/ArtGallery";
 import ElementWrapper from "@/components/Theme/Element";
 
 # Hero Elements
@@ -25,7 +27,6 @@ The CourseHero component offers an engaging user interface where placeholders sl
   element={<CourseHero />}
 />
 
-
 ## EmailCampaign Component
 
 It includes a navigation bar at the top for easy access to different sections of the website. Text content is likely placed strategically to convey the website's value proposition.
@@ -44,4 +45,24 @@ This feedback component for AuraUI highlights community involvement, inviting ov
   previewLink="/hero/feedback"
   componentPath="Hero/Feedback.tsx"
   element={<Feedback />}
+/>
+
+## SaasHero Component
+
+This component is designed to be used as a landing page for a SaaS product. It includes a call-to-action button and a hero image that is responsive and modern.
+
+<ElementWrapper
+  previewLink="/hero/saas"
+  componentPath="Hero/Saas.tsx"
+  element={<SaasHero />}
+/>
+
+## ArtGalleryHero Component
+
+This component is designed to be used as a landing page for a SaaS product. It includes a call-to-action button and a hero image that is responsive and modern.
+
+<ElementWrapper
+  previewLink="/hero/art-gallery"
+  componentPath="Hero/ArtGallery.tsx"
+  element={<ArtGalleryHero />}
 />
