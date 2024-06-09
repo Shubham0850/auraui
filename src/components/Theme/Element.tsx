@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SourceCodeViewer from "../../utils/SourceCodeViewer"; // Ensure this path is correct
 import {
-  LuArrowBigRightDash,
   LuArrowUpRight,
   LuCircleDollarSign,
   LuMoon,
 } from "react-icons/lu";
+import { FaCode, FaWebAwesome } from "react-icons/fa6";
 
 const TOGGLE_CLASSES =
   "text-sm font-medium flex items-center justify-center px-6 py-2 transition-colors relative z-10";
@@ -26,12 +26,13 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
     {
       name: "Preview",
       label: "Preview",
+      icon: <FaWebAwesome />,
       component: <PreviewComponent element={element} />,
     },
     {
       name: "Code",
       label: "Code",
-      icon: <CodeIcon />,
+      icon: <FaCode />,
       component: <CodeComponent componentPath={componentPath} />,
     },
   ];
@@ -69,7 +70,7 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
     <div className="flex flex-col items-left">
       <div className="relative flex md:flex-row flex-col justify-between mt-3 items-center rounded-lg p-1 ">
         <div className="flex gap-2 ">
-          <div className="bg-gray-200 flex  dark:bg-customDark  rounded-lg ">
+          <div className="bg-gray-200 flex  dark:bg-customDark  rounded-lg">
             {tabs.map((tab) => (
               <button
                 key={tab.name}
@@ -116,10 +117,6 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
     </div>
   );
 };
-
-// Mock icons and components for demonstration
-const CodeIcon: React.FC = () => <span>💻</span>;
-const PreviewIcon: React.FC = () => <span>👀</span>;
 
 type CodeComponentProps = {
   componentPath: string;

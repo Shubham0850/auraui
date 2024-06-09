@@ -16,7 +16,7 @@ const TOGGLE_CLASSES =
 
 const IPhoneMockup: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
   return (
-    <div className="border-4 border-gray-100 dark:border-customDark shadow-2xl rounded-3xl overflow-hidden max-w-xs mx-auto relative bg-black">
+    <div className="border-4 border-gray-100 dark:border-customDark shadow-2xl rounded-3xl overflow-hidden max-w-xs mx-auto relative bg-black m-5">
       <div className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-6 dark:bg-customDark rounded-full"></div>
       <div>
         <img src={imageUrl} alt="iPhone Screenshot" className="w-full" />
@@ -27,7 +27,7 @@ const IPhoneMockup: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
 
 const AndroidMockup: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
   return (
-    <div className="border-4 border-gray-100 dark:border-customDark shadow-2xl rounded-3xl overflow-hidden max-w-xs mx-auto relative bg-black">
+    <div className="border-4 border-gray-100 dark:border-customDark shadow-2xl rounded-3xl overflow-hidden max-w-xs mx-auto relative bg-black m-5">
       <div className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 dark:bg-background rounded-full"></div>
       <div>
         <img src={imageUrl} alt="Android Screenshot" className="w-full" />
