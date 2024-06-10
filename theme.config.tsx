@@ -76,7 +76,7 @@ const config: DocsThemeConfig = {
     autoCollapse: false,
     defaultMenuCollapseLevel: 1,
   },
-  gitTimestamp: false,
+  gitTimestamp: null,
 
   footer: {
     text: <Footer />,

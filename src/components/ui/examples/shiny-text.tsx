@@ -14,7 +14,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
   shimmerWidth = 100,
 }) => {
   return (
-    <p
+    <div
       style={
         {
           "--shimmer-width": `${shimmerWidth}px`,
@@ -33,7 +33,7 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
       )}
     >
       {children}
-    </p>
+    </div>
   );
 };
 
@@ -64,10 +64,10 @@ const ShinyTextExample = () => {
           )}
 
           <div>
-            <span className="text-sm font-semibold dark:text-white text-[#111111]">
+            <p className="text-sm font-semibold dark:text-white text-[#111111]">
               Private Beta is{" "}
               <span className="dark:text-gray-500 text-[#111111]">live</span>
-            </span>
+            </p>
           </div>
         </AnimatedShinyText>
       </div>
