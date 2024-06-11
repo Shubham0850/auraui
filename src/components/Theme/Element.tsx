@@ -68,14 +68,14 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
 
   return (
     <div className="flex flex-col items-left">
-      <div className="relative flex md:flex-row flex-col justify-between mt-3 items-center rounded-lg p-1 ">
-        <div className="flex gap-2 ">
-          <div className="bg-gray-200 flex  dark:bg-customDark  rounded-lg">
+      <div className="relative flex md:flex-row flex-col justify-between mt-3 items-center rounded-lg  ">
+        <div className="flex gap-2  ">
+          <div className="bg-gray-200 p-1 flex  dark:bg-customDark  rounded-lg">
             {tabs.map((tab) => (
               <button
                 key={tab.name}
                 ref={tabRefs.current[tab.name]}
-                className={`${TOGGLE_CLASSES} ${
+                className={` ${TOGGLE_CLASSES} ${
                   selected === tab.name
                     ? "text-black dark:text-white"
                     : "text-gray-600 dark:text-gray-400"
@@ -103,7 +103,7 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
             Free component
           </div>
           <button
-            className={` px-5 rounded-lg dark:bg-customDark bg-gray-200 text-gray-600 dark:text-gray-400 `}
+            className={` px-3 rounded-lg dark:bg-customDark bg-gray-200 text-gray-600 dark:text-gray-400 `}
             onClick={handleLinkClick}
           >
             <span>
@@ -113,7 +113,7 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
         </div>
       </div>
 
-      <div className="mt-4 w-full">{selectedTab?.component}</div>
+      <div className="mt-4  w-full">{selectedTab?.component}</div>
     </div>
   );
 };
