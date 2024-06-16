@@ -15,14 +15,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   console.log({ componentPath });
 
-  const filePath = path.join(process.cwd(), `/src/components/${componentPath}`);
-  console.log(filePath);
+  const filePath = path.join(`/src/components/${componentPath}`);
+  console.log({filePath});
   try {
     const sourceCode = fs.readFileSync(filePath, "utf-8");
     res.status(200).json({ sourceCode });
-    console.log(sourceCode);
+    console.log({sourceCode});
   } catch (error) {
-    console.log(error);
+    console.log({error});
     res.status(500).json({ error: "Error fetching source code" });
   }
 }
