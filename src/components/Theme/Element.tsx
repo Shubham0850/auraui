@@ -87,9 +87,9 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
               </button>
             ))}
           </div>
-          <div className="relative cursor-pointer p-3 rounded-lg dark:bg-customDark bg-gray-100 text-gray-500">
+          {/* <div className="relative cursor-pointer p-3 rounded-lg dark:bg-customDark bg-gray-100 text-gray-500">
             <LuMoon className="w-4 h-4" />
-          </div>
+          </div> */}
         </div>
         <motion.div
           layout
@@ -98,12 +98,12 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
           style={{ width, left }}
         />
         <div className=" flex gap-2  ">
-          <div className="relative cursor-pointer py-2 px-4 rounded-lg dark:bg-customDark bg-gray-100 text-gray-500 flex items-center">
+          {/* <div className="relative cursor-pointer py-2 px-4 rounded-lg dark:bg-customDark bg-gray-100 text-gray-500 flex items-center">
             <LuCircleDollarSign className="w-4 h-4 mr-2" />
             Free component
-          </div>
+          </div> */}
           <button
-            className={` px-3 rounded-lg dark:bg-customDark bg-gray-200 text-gray-600 dark:text-gray-400 `}
+            className={` p-3 rounded-lg dark:bg-customDark bg-gray-200 text-gray-600 dark:text-gray-400 `}
             onClick={handleLinkClick}
           >
             <span>
