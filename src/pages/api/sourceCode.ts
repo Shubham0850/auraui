@@ -15,14 +15,23 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   console.log({ componentPath });
 
-  const filePath = path.join(`/src/components/${componentPath}`);
-  console.log({filePath});
+  // Construct the file path
+  const filePath = path.join(process.cwd(), "src", "components", componentPath);
+  console.log({ filePath });
+  console.log(`process.cwd(): ${process.cwd()}`);
+
   try {
+    if (!fs.existsSync(filePath)) {
+      console.error(`File not found: ${filePath}`);
+      res.status(404).json({ error: "File not found" });
+      return;
+    }
+
     const sourceCode = fs.readFileSync(filePath, "utf-8");
     res.status(200).json({ sourceCode });
-    console.log({sourceCode});
+    console.log({ sourceCode });
   } catch (error) {
-    console.log({error});
+    console.error(`Error reading file: ${filePath}`, error);
     res.status(500).json({ error: "Error fetching source code" });
   }
 }
