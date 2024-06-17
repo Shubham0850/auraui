@@ -16,7 +16,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   console.log({ componentPath });
 
   // Construct the file path
-  const filePath = path.join(process.cwd(), "src", "components", componentPath);
+  const filePath = path.join( "src", "components", componentPath);
   console.log({ filePath });
   console.log(`process.cwd(): ${process.cwd()}`);
 
