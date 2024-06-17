@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Twenty({}: Props) {
+function CreditCards({}: Props) {
   return (
     <div className="relative bg-gray-50">
       <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
@@ -22,11 +22,7 @@ function Twenty({}: Props) {
                 title=""
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
-                  className="w-auto h-8"
-                  src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -227,4 +223,4 @@ function Twenty({}: Props) {
   );
 }
 
-export default Twenty;
+export default CreditCards;

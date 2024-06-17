@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Five({}: Props) {
+function RemoteLife({}: Props) {
   return (
     <div className="relative">
       <header className="absolute inset-x-0 top-0 z-10 w-full">
@@ -10,11 +10,7 @@ function Five({}: Props) {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a href="#" title="" className="flex">
-                <img
-                  className="w-auto h-8"
-                  src="/logo-light.png"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -60,7 +56,7 @@ function Five({}: Props) {
                 className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80"
               >
                 {" "}
-               About Us{" "}
+                About Us{" "}
               </a>
 
               <a
@@ -210,4 +206,4 @@ function Five({}: Props) {
   );
 }
 
-export default Five;
+export default RemoteLife;

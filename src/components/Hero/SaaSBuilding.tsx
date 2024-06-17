@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Twelve({}: Props) {
+function SaaSBuilding({}: Props) {
   return (
     <section>
       <header className="bg-gray-900 border-b border-gray-800">
@@ -11,11 +11,7 @@ function Twelve({}: Props) {
             <div className="flex items-center flex-shrink-0">
               <a href="#" title="" className="inline-flex">
                 <span className="sr-only"> Rareblocks logo </span>
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/logo-alt.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-dark.png" alt="" />
               </a>
             </div>
 
@@ -196,4 +192,4 @@ function Twelve({}: Props) {
   );
 }
 
-export default Twelve;
+export default SaaSBuilding;

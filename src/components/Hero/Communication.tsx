@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Thirteen({}: Props) {
+function Communication({}: Props) {
   return (
     <div>
       <header className="py-4 bg-white sm:py-5" x-data="{expanded: false}">
@@ -10,11 +10,7 @@ function Thirteen({}: Props) {
           <div className="flex items-center justify-between">
             <div className="shrink-0">
               <a href="#" title="" className="">
-                <img
-                  className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/saasui/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -178,4 +174,4 @@ function Thirteen({}: Props) {
   );
 }
 
-export default Thirteen;
+export default Communication;

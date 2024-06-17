@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Ten({}: Props) {
+function Accessories({}: Props) {
   return (
     <section>
       <header className="bg-white">
@@ -31,11 +31,7 @@ function Ten({}: Props) {
             <div className="flex items-center flex-shrink-0 ml-4 lg:ml-0">
               <a href="#" title="" className="inline-flex">
                 <span className="sr-only"> Rareblocks logo </span>
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -261,4 +257,4 @@ function Ten({}: Props) {
   );
 }
 
-export default Ten;
+export default Accessories;
