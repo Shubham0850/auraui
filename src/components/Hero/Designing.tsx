@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Fifteen({}: Props) {
+function Designing({}: Props) {
   return (
     <div className="">
       <header className="py-4 bg-black sm:py-6" x-data="{expanded: false}">
@@ -10,11 +10,7 @@ function Fifteen({}: Props) {
           <div className="flex items-center justify-between">
             <div className="shrink-0">
               <a href="#" title="" className="flex">
-                <img
-                  className="w-auto h-9"
-                  src="https://landingfoliocom.imgix.net/store/collection/dusk/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-9" src="/logo-dark.png" alt="" />
               </a>
             </div>
 
@@ -226,4 +222,4 @@ function Fifteen({}: Props) {
   );
 }
 
-export default Fifteen;
+export default Designing;

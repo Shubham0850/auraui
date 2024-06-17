@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Sixteen({}: Props) {
+function BasicsOfBaking({}: Props) {
   return (
     <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
       <header className="absolute inset-x-0 top-0 z-10 py-8 xl:py-12">
@@ -16,7 +16,7 @@ function Sixteen({}: Props) {
               >
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo.svg"
+                  src="/logo-dark.png"
                   alt="BakerStreet"
                 />
               </a>
@@ -196,4 +196,4 @@ function Sixteen({}: Props) {
   );
 }
 
-export default Sixteen;
+export default BasicsOfBaking;
