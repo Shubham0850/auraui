@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Second({}: Props) {
+function Collaborations({}: Props) {
   return (
     <div className="bg-gradient-to-b from-green-50 to-green-100">
       <header className="">
@@ -10,11 +10,7 @@ function Second({}: Props) {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a href="#" title="" className="flex">
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -192,4 +188,4 @@ function Second({}: Props) {
   );
 }
 
-export default Second;
+export default Collaborations;

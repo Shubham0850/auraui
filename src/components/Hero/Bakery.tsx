@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Eleven({}: Props) {
+function Bakery({}: Props) {
   return (
     <div className="relative pt-48 pb-12 overflow-hidden bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
       <header className="absolute inset-x-0 top-0 z-10 py-8 xl:py-12">
@@ -14,11 +14,7 @@ function Eleven({}: Props) {
                 title="BakerStreet"
                 className="inline-flex rounded-md focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-offset-secondary focus:ring-primary"
               >
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo.svg"
-                  alt="BakerStreet"
-                />
+                <img className="w-auto h-8" src="/logo-dark.png" alt="logo" />
               </a>
             </div>
 
@@ -182,4 +178,4 @@ function Eleven({}: Props) {
   );
 }
 
-export default Eleven;
+export default Bakery;

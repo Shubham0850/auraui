@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Ninteen({}: Props) {
+function CodeEditor({}: Props) {
   return (
     <div className="bg-gray-50">
       <header className="relative z-10 py-4 md:py-6">
@@ -14,11 +14,7 @@ function Ninteen({}: Props) {
                 title=""
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -256,4 +252,4 @@ function Ninteen({}: Props) {
   );
 }
 
-export default Ninteen;
+export default CodeEditor;

@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Seven({}: Props) {
+function DevResources({}: Props) {
   return (
     <div className="overflow-x-hidden bg-gray-50">
       <header className="relative py-4 md:py-6">
@@ -14,11 +14,7 @@ function Seven({}: Props) {
                 title=""
                 className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
-                <img
-                  className="w-auto h-8"
-                  src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -134,4 +130,4 @@ function Seven({}: Props) {
   );
 }
 
-export default Seven;
+export default DevResources;

@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Seventeen({}: Props) {
+function ShipWebsites({}: Props) {
   return (
     <div>
       <header className="py-4 bg-white sm:py-5" x-data="{expanded: false}">
@@ -10,11 +10,7 @@ function Seventeen({}: Props) {
           <div className="flex items-center justify-between">
             <div className="shrink-0">
               <a href="#" title="" className="">
-                <img
-                  className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/saasui/images/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -232,4 +228,4 @@ function Seventeen({}: Props) {
   );
 }
 
-export default Seventeen;
+export default ShipWebsites;

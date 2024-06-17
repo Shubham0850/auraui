@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function First({}: Props) {
+function Loan({}: Props) {
   return (
     <div className="bg-gradient-to-b from-[#101212] relative to-[#08201D]">
       <header className="absolute inset-x-0 top-0 z-10 w-full">
@@ -10,11 +10,7 @@ function First({}: Props) {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a href="#" title="" className="flex">
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-dark.png" alt="" />
               </a>
             </div>
 
@@ -292,4 +288,4 @@ function First({}: Props) {
   );
 }
 
-export default First;
+export default Loan;

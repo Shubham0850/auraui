@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-function Six({}: Props) {
+function Expenses({}: Props) {
   return (
     <div className="relative bg-gradient-to-b from-green-50 to-green-100">
       <header className="absolute inset-x-0 top-0 z-10 w-full">
@@ -10,11 +10,7 @@ function Six({}: Props) {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a href="#" title="" className="flex">
-                <img
-                  className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/logo.svg"
-                  alt=""
-                />
+                <img className="w-auto h-8" src="/logo-light.png" alt="" />
               </a>
             </div>
 
@@ -184,4 +180,4 @@ function Six({}: Props) {
   );
 }
 
-export default Six;
+export default Expenses;
