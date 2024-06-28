@@ -68,7 +68,7 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
 
   return (
     <div className="flex flex-col items-left">
-      <div className="relative flex md:flex-row flex-col justify-between mt-3 items-center rounded-lg  ">
+      <div className="relative flex flex-row gap-2  justify-between mt-3 items-center rounded-lg  ">
         <div className="flex gap-2  ">
           <div className="bg-gray-200 p-1 flex  dark:bg-customDark  rounded-lg">
             {tabs.map((tab) => (
