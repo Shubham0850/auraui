@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 
 type Props = {};
 
-const Five = (props: Props) => {
+const HorizonNav = (props: Props) => {
   return (
     <header>
       <div className="relative bg-black">
@@ -115,4 +115,4 @@ const Five = (props: Props) => {
   );
 };
 
-export default Five;
+export default HorizonNav;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Five from "@/components/Header/Five";
+import Five from "@/components/Header/HorizonNav";
 
 type Props = {}
 
