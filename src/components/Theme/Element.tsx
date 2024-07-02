@@ -129,7 +129,7 @@ const CodeComponent: React.FC<CodeComponentProps> = ({ componentPath }) => (
       <div className="w-3 h-3 dark:bg-black bg-gray-300 rounded-full" />
       <div className="w-3 h-3 dark:bg-black bg-gray-300 rounded-full" />
     </div>
-    <div className="border-2 rounded-t-none border-gray-100 dark:border-customDark rounded-2xl">
+    <div className="border-2 bg-[#1e1e1e] p-0 rounded-t-none border-gray-100 dark:border-customDark rounded-2xl">
       <SourceCodeViewer componentPath={componentPath} />
     </div>
   </div>
