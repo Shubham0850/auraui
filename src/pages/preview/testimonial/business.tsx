@@ -1,5 +1,5 @@
 import React from 'react'
-import Buisness from "@/components/Testimonial/Buisness";
+import Buisness from "@/components/Testimonial/Business";
 
 type Props = {}
 
