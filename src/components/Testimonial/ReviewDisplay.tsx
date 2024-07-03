@@ -25,7 +25,7 @@ const ReviewDisplay: React.FC<Props> = () => {
             <blockquote className="mt-7">
               <p className="text-xl leading-relaxed text-gray-800">
                 “Auraui has transformed our workflow and increased our
-                productivity significantly. We couldn't be happier with the
+                productivity significantly. We couldn&apos;t be happier with the
                 results.”
               </p>
             </blockquote>
