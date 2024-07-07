@@ -2,7 +2,7 @@ import React from "react";
 import Nft1 from "./Nft/MajnuBhai";
 import WalletLinker from "./WalletConnect/WalletLinker";
 import CryptoConnector from "./WalletConnect/CryptoConnector";
-import ComponentWrapper from "../Theme/ComponentWrapper";
+import ComponentWrapper from "@/components/Theme/ComponentWrapper";
 
 const AllSignUp = () => {
   return (
