@@ -15,8 +15,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   console.log({ componentPath });
 
-  const filePath = path.resolve(process.cwd(), 'src/components', componentPath);
-  console.log({ filePath });
+  // Base path for static files
+  const basePath = path.join(process.cwd(), "public/source-code");
+  const filePath = path.join(basePath, componentPath);
+
+  console.log("Resolved file path:", filePath);
 
   try {
     const sourceCode = fs.readFileSync(filePath, "utf-8");
