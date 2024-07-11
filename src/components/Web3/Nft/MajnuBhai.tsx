@@ -26,16 +26,18 @@ const Majnubhai = () => {
                   <div className="grid items-center grid-cols-2 gap-6">
                     <label className="text-base font-medium text-gray-900">
                       {" "}
-                      Choose Quantity {" "}
+                      Choose Quantity{" "}
                     </label>
 
                     <div className="">
                       <select
                         name=""
                         id=""
-                        className="block w-full py-2 pl-4 text-base font-medium text-gray-900 border-gray-200 rounded-lg"
+                        className="block w-full py-2 pl-4 text-base font-medium text-gray-900 border-gray-200 rounded-lg bg-gray-300 "
                       >
-                        <option value="">1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
                       </select>
                     </div>
                   </div>
