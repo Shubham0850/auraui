@@ -1,41 +1,43 @@
 import React from "react";
+import { FaTimes } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa6";
 
 const blockchains = [
   {
     name: "Ethereum",
     description: "Best BLockchain Network ",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/ethereum-logo.png",
+    logo: "https://www.auraui.com/web3Images/ethereum-logo.png",
     selected: true,
   },
   {
     name: "Polygon",
     description: "Layer2 Blockchain Network",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/polygon-logo.png",
+    logo: "https://www.auraui.com/web3Images/polygon-logo.png",
   },
   {
     name: "Tezos",
     description: "Also,A Best blockchain Network. ",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/tezos-logo.png",
+    logo: "https://www.auraui.com/web3Images/tezos-logo.png",
   },
   {
     name: "Binance Chain",
     description: "Good Blockchain Network. ",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/binance-logo.png",
+    logo: "https://www.auraui.com/web3Images/binance-logo.png",
   },
 ];
 
 const wallets = [
   {
     name: "Metamask",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/metamask-logo.png",
+    logo: "https://www.auraui.com/web3Images/metamask-logo.png",
   },
   {
     name: "Coinbase Wallet",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/coinbase-logo.png",
+    logo: "https://www.auraui.com/web3Images/coinbase-logo.png",
   },
   {
     name: "Wallet Connect",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/2/wallet-connect-logo.png",
+    logo: "https://www.auraui.com/web3Images/wallet-connect-logo.png",
   },
 ];
 
@@ -50,7 +52,7 @@ const WalletLinker = () => {
                 Connect your wallet
               </p>
               <p className="mt-1 text-base font-medium text-gray-500">
-               This is the Best AuraUI Component
+                This is the Best AuraUI Component
               </p>
             </div>
             <button
@@ -58,21 +60,7 @@ const WalletLinker = () => {
               className="p-1.5 text-gray-400 transition-all duration-200 bg-white border border-gray-200 rounded-full hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
             >
               <span className="sr-only">Close</span>
-              <svg
-                className="w-5 h-5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <FaTimes className="w-5 h-5" />
             </button>
           </div>
 
@@ -94,18 +82,7 @@ const WalletLinker = () => {
                 >
                   {blockchain.selected && (
                     <div className="absolute top-0 right-0 p-2">
-                      <svg
-                        className="w-6 h-6 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                      <FaCheck className="w-6 h-6 text-green-500" />
                     </div>
                   )}
                   <div className="px-4 py-5">

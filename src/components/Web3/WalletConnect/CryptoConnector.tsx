@@ -1,19 +1,20 @@
 import React from "react";
+import { FaTimes } from "react-icons/fa";
 
 const wallets = [
   {
     name: "Metamask",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/1/metamask-logo.png",
+    logo: "https://www.auraui.com/web3Images/metamask-logo.png",
     borderColor: "border-gray-900",
   },
   {
     name: "Coinbase Wallet",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/1/coinbase-logo.png",
+    logo: "https://www.auraui.com/web3Images/coinbase-logo.png",
     borderColor: "border-gray-200",
   },
   {
     name: "Wallet Connect",
-    logo: "https://landingfoliocom.imgix.net/store/collection/niftyui/images/connect-wallet/1/wallet-connect-logo.png",
+    logo: "https://www.auraui.com/web3Images/wallet-connect-logo.png",
     borderColor: "border-gray-200",
   },
 ];
@@ -37,21 +38,7 @@ const CryptoConnector = () => {
               className="p-1 -m-1 text-gray-400 transition-all duration-200 bg-white rounded-md hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
             >
               <span className="sr-only">Close</span>
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <FaTimes className="w-6 h-6" />
             </button>
           </div>
 
