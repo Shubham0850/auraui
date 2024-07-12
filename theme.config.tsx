@@ -38,7 +38,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://x.com/aura__ui",
     icon: (
-      <FaXTwitter className="h-6 w-6 text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
+      <FaXTwitter className="h-4  text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
     ),
   },
   head: (
