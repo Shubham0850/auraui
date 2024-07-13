@@ -1,97 +1,134 @@
-import React from "react";
-import { GrFacebookOption } from "react-icons/gr";
-import { FaGoogle } from "react-icons/fa";
+import { FaCheckCircle, FaUser, FaEnvelope, FaLock, FaGoogle, FaFacebook } from 'react-icons/fa';
+import Link from 'next/link';
+
+const commonStyles = {
+  inputIcon: "absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none",
+  input: "block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600",
+  button: "inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 focus:outline-none hover:opacity-80 focus:opacity-80",
+  socialButton: "relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none",
+  link: "font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+};
 
 const TheBusiness = () => {
   return (
-    <div>
-      <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl font-pj">
-              Supercharge Your Business Today
-            </h1>
-            <p className="mt-4 text-lg text-gray-600 font-pj">
-              Join us for free. No credit card needed.
-            </p>
-            <div className="max-w-sm mx-auto mt-14">
-              <div className="relative">
-                <div className="absolute -inset-4">
-                  <div
-                    className="w-full h-full mx-auto rounded-3xl opacity-30 blur-lg filter"
-                    style={{
-                      background:
-                        "linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%)",
-                    }}
-                  ></div>
-                </div>
-                <div className="relative space-y-6">
-                  <a
-                    href="#"
-                    title="Sign up with Google"
-                    className="flex items-center justify-center w-full px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-blue-600 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 hover:bg-blue-500"
-                    role="button"
-                  >
-                    <FaGoogle className="w-5 h-5 mr-4" />
-                    Sign up with Google
-                  </a>
-                  <a
-                    href="#"
-                    title="Sign up with Facebook"
-                    className="flex items-center justify-center w-full px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-blue-800 rounded-xl font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 hover:bg-blue-700"
-                    role="button"
-                  >
-                    <GrFacebookOption className="w-5 h-5 mr-4" />
-                    Sign up with Facebook
-                  </a>
-                </div>
-              </div>
-              <div className="relative mt-9">
-                <div
-                  className="absolute inset-0 flex items-center"
-                  aria-hidden="true"
-                >
-                  <div className="w-full border-t border-gray-200"></div>
-                </div>
-                <div className="relative flex justify-center">
-                  <span className="px-2 text-base font-normal text-gray-400 font-pj bg-gray-50">
-                    Or
-                  </span>
-                </div>
-              </div>
-              <a
-                href="#"
-                title="Sign up with Email"
-                className="flex items-center justify-center w-full px-8 py-4 text-base font-bold text-gray-900 transition-all duration-200 border border-gray-300 mt-9 font-pj rounded-xl hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 focus:bg-gray-300"
-                role="button"
-              >
-                Sign up with Email
-              </a>
-              <p className="mt-8 text-base font-normal leading-relaxed text-gray-600 font-pj">
-                By signing up, you agree to our{" "}
-                <a
-                  href="#"
-                  title="Privacy Policy"
-                  className="font-bold text-gray-900 rounded font-pj hover:underline focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  Privacy Policy
-                </a>{" "}
-                and{" "}
-                <a
-                  href="#"
-                  title="Terms & Conditions"
-                  className="font-bold text-gray-900 rounded font-pj hover:underline focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  https://cdn.pixabay.com/video/2024/05/25/213606_tiny.mp4 Terms
-                  & Conditions
-                </a>
-                .
-              </p>
+    <section className="bg-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
+          <div className="absolute inset-0">
+            <img
+              className="object-cover w-full h-full"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/signup/4/girl-working-on-laptop.jpg"
+              alt=""
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+          <div className="relative">
+            <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
+              <h3 className="text-4xl font-bold text-white">Join 35k+ web professionals & <br className="hidden xl:block" />build your website</h3>
+              <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
+                {['Commercial License', 'Unlimited Exports', '120+ Coded Blocks', 'Design Files Included'].map((item, index) => (
+                  <li key={index} className="flex items-center space-x-3">
+                    <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
+                      <FaCheckCircle className="w-3.5 h-3.5 text-white" />
+                    </div>
+                    <span className="text-lg font-medium text-white">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+
+        <div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+          <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">Sign up to Celebration</h2>
+            <p className="mt-2 text-base text-gray-600">
+              Already have an account?{' '}
+              <Link href="#" className={commonStyles.link}>
+                Login
+              </Link>
+            </p>
+
+            <form action="#" method="POST" className="mt-8 space-y-5">
+              <div>
+                <label className="text-base font-medium text-gray-900">First & Last name</label>
+                <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
+                  <div className={commonStyles.inputIcon}>
+                    <FaUser className="w-5 h-5" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    className={commonStyles.input}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="text-base font-medium text-gray-900">Email address</label>
+                <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
+                  <div className={commonStyles.inputIcon}>
+                    <FaEnvelope className="w-5 h-5" />
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="Enter email to get started"
+                    className={commonStyles.input}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="text-base font-medium text-gray-900">Password</label>
+                <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
+                  <div className={commonStyles.inputIcon}>
+                    <FaLock className="w-5 h-5" />
+                  </div>
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    className={commonStyles.input}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button type="submit" className={commonStyles.button}>
+                  Sign up
+                </button>
+              </div>
+            </form>
+
+            <div className="mt-3 space-y-3">
+              <button type="button" className={commonStyles.socialButton}>
+                <div className="absolute inset-y-0 left-0 p-4">
+                  <FaGoogle className="w-6 h-6 text-rose-500" />
+                </div>
+                Sign up with Google
+              </button>
+
+              <button type="button" className={commonStyles.socialButton}>
+                <div className="absolute inset-y-0 left-0 p-4">
+                  <FaFacebook className="w-6 h-6 text-[#2563EB]" />
+                </div>
+                Sign up with Facebook
+              </button>
+            </div>
+
+            <p className="mt-5 text-sm text-gray-600">
+              This site is protected by reCAPTCHA and the Google{' '}
+              <Link href="#" className={commonStyles.link}>
+                Privacy Policy
+              </Link>{' '}
+              &{' '}
+              <Link href="#" className={commonStyles.link}>
+                Terms of Service
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
