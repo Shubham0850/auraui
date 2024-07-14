@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface Question {
   question: string;
@@ -65,16 +66,15 @@ const QuestBox: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center mt-12 md:mt-20">
-          <div className="px-8 py-4 text-center bg-gray-800 rounded-full">
+          <div className="px-8 py-4 text-center bg-gray-800 rounded-full ">
             <p className="text-gray-50">
-              Didn’t find the answer you need?
-              <a
-                href="#"
-                title=""
-                className="text-yellow-300 transition-all duration-200 hover:text-yellow-400 focus:text-yellow-400 hover:underline"
+              Didn’t find the answer you need ?
+              <Link
+                href="/contact"
+                className="text-yellow-300 transition duration-200 hover:text-yellow-400 focus:text-yellow-400 hover:underline pl-2"
               >
                 Contact AuraUI
-              </a>
+              </Link>
             </p>
           </div>
         </div>
