@@ -28,8 +28,8 @@ Ready to submit some code? Awesome! Here’s how to do it:
 1. **Fork the Repo**: Create a fork of the Aura UI repository.
 2. **Clone the Repo**: Clone your fork to your local machine.
    ```bash
-   git clone https://github.com/your-username/aura-ui.git
-   cd aura-ui
+   git clone https://github.com/Shubham0850/auraui.git
+   cd auraui
    ```
 3. **Create a Branch**: Create a new branch for your changes.
    ```bash
