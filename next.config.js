@@ -11,6 +11,22 @@ const nextConfig = {
     GITHUB_REPO: process.env.GITHUB_REPO,
     GITHUB_TOKEN: process.env.GITHUB_TOKEN,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.pravatar.cc',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 module.exports = withNextra(nextConfig);
