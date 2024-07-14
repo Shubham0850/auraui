@@ -17,7 +17,7 @@ Visit https://auraui.com/docs to view the documentation.
 
 ## Contributing
 
-Visit our [contributing guide](https://github.com/magicuidesign/magicui/blob/main/CONTRIBUTING.md) to learn how to contribute.
+Visit our [contributing guide](https://github.com/Shubham0850/auraui/blob/main/CONTRIBUTING.md) to learn how to contribute.
 
 ## Let's talk
 <a href="https://cal.com/gulzari">
