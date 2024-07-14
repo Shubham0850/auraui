@@ -48,36 +48,16 @@ const MetricsHub: React.FC<Props> = () => {
         </div>
 
         <div className="mt-8 sm:mt-12">
-          <svg
-            className="w-auto h-4 mx-auto text-gray-600"
-            viewBox="0 0 172 16"
-            fill="none"
-            stroke="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {Array.from({ length: 20 }).map((_, i) => (
-              <line
-                key={i}
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform={`matrix(-0.5547 0.83205 0.83205 0.5547 ${
-                  11 + 35 * i
-                } 1)`}
+          <div className="grid grid-cols-1 mt-16 text-center sm:text-left gap-y-12 gap-x-8 sm:grid-cols-3 lg:gap-0">
+            {statistics.map((stat, index) => (
+              <StatisticItem
+                key={index}
+                value={stat.value}
+                description={stat.description}
+                showDivider={index !== 0} // Hide divider for the first item
               />
             ))}
-          </svg>
-        </div>
-
-        <div className="grid grid-cols-1 mt-16 text-center sm:text-left gap-y-12 gap-x-8 sm:grid-cols-3 lg:gap-0">
-          {statistics.map((stat, index) => (
-            <StatisticItem
-              key={index}
-              value={stat.value}
-              description={stat.description}
-              showDivider={index !== 0} // Hide divider for the first item
-            />
-          ))}
+          </div>
         </div>
       </div>
     </section>
