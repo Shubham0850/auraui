@@ -1,55 +1,10 @@
 import React from "react";
 
-const logos = [
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-1.png",
-    alt: "Logo 1",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-2.png",
-    alt: "Logo 2",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-3.png",
-    alt: "Logo 3",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-4.png",
-    alt: "Logo 4",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-5.png",
-    alt: "Logo 5",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-6.png",
-    alt: "Logo 6",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-7.png",
-    alt: "Logo 7",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-8.png",
-    alt: "Logo 8",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-9.png",
-    alt: "Logo 9",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-10.png",
-    alt: "Logo 10",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-11.png",
-    alt: "Logo 11",
-  },
-  {
-    src: "https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-12.png",
-    alt: "Logo 12",
-  },
-];
+// Logos data with local fallback
+const logos = Array.from({ length: 12 }, (_, index) => ({
+  src: "/logo-light.png",
+  alt: `Logo ${index + 1}`,
+}));
 
 const TrustedByLogos = () => {
   return (
@@ -61,7 +16,7 @@ const TrustedByLogos = () => {
           </h2>
         </div>
 
-        <div className="grid items-center max-w-4xl grid-cols-2 mx-auto mt-12 md:mt-20 md:grid-cols-4 gap-x-10 gap-y-16">
+        <div className="grid grid-cols-2 gap-x-10 gap-y-16 max-w-4xl mx-auto mt-12 md:mt-20 md:grid-cols-4">
           {logos.map((logo, index) => (
             <div
               key={index}
