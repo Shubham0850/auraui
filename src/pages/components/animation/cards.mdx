@@ -1,28 +1,41 @@
-import ElementWrapper from "@/components/Theme/Element";
-import ReviewCard from "@/components/ui/examples/review-card.tsx";
-import { BsJustify } from "react-icons/bs";
+import { Steps } from "nextra/components";
+import ElementWrapper from "@/components/Theme/ElementWrapper";
+import CodeWrapper from "@/components/Theme/CodeWrapper";
+import ElementPreviewWrapper from "@/components/Theme/ElementPreviewWrapper";
+import TwitterCardExample from "@/components/animation/cards/twitter/TwitterCardExample";
 
-# Cards Component
+# Twitter Card
 
-## Overview
+Showcase tweets with style and animation.
 
-This Cards Section Contains Various Animated Cards components.
-
-## Usage
-
-To integrate a Cards Components into your Next.js Project,copy and paste the following code.
-
-## ReviewCard
-
-This ReviewCard effectively combines text and visual elements to present a user testimonial in an engaging and readable format. The thoughtful layout and styling ensure that the review is prominent and the reviewer's details are clear, making it a powerful tool for building trust and demonstrating the value of the service or platform.
-
+## Example
 
 <ElementWrapper
-  previewLink="/animation/cards/review"
-  componentPath="ui/examples/review-card.tsx"
+  componentPath="animation/cards/twitter/TwitterCardExample.tsx"
   element={
-    <div className="flex items-center justify-center py-10 md:py-32 ">
-      <ReviewCard />{" "}
-    </div>
+    <ElementPreviewWrapper>
+      <TwitterCardExample
+        username="Raju"
+        name="Raju"
+        profileImage="/memeimage/akshay1.webp"
+        tweet="Ekkis din main paise double."
+        organization="Lakshmi chit fund"
+      />
+    </ElementPreviewWrapper>
   }
 />
+
+## Installation
+
+<Steps>
+### Install the necessary dependencies:
+
+```bash copy
+npm install tailwindcss react-icons framer-motion
+```
+
+### Copy and paste the following code into your project.
+
+<CodeWrapper codePath="animation/cards/twitter/TwitterCard.tsx" />
+
+</Steps>

@@ -1,26 +1,35 @@
-import ElementWrapper from "@/components/Theme/Element";
-import AnimaSwitcher from "@/components/ui/examples/tab.tsx";
+import { Steps } from "nextra/components";
+import ElementWrapper from "@/components/Theme/ElementWrapper";
+import CodeWrapper from "@/components/Theme/CodeWrapper";
+import AnimatedTabExample from "@/components/animation/tabs/AnimatedTabExample";
+import ElementPreviewWrapper from "@/components/Theme/ElementPreviewWrapper";
 
-# Cards Component
+# Animated Tab Component
 
-## Overview
+Add sleek, animated transitions to your tabs for a modern user experience.
 
-This Tabs Section Contains Various Animated Tab components.
-
-## Usage
-
-To integrate a Tab Components into your Next.js Project,copy and paste the following code.
-
-## AnimaSwitcher
-
-This component is an animated tab navigation bar featuring three tabs labeled "One", "Two", and "Three". The first tab is highlighted, indicating it is currently selected. The tabs change appearance when active, using smooth transitions to enhance the user experience. This component is ideal for applications or websites that require users to switch between different sections seamlessly, providing a clear and interactive way to navigate content.
+## Example
 
 <ElementWrapper
-  previewLink="/animation/tabs/anima"
-  componentPath="ui/examples/tab.tsx"
+  componentPath="animation/tabs/AnimatedTabExample.tsx"
   element={
-    <div className="flex items-center justify-center py-10 md:py-32 ">
-      <AnimaSwitcher />
-    </div>
+    <ElementPreviewWrapper>
+      <AnimatedTabExample />
+    </ElementPreviewWrapper>
   }
 />
+
+## Installation
+
+<Steps>
+### Install the necessary dependencies:
+
+```bash copy
+npm install tailwindcss react-icons framer-motion
+```
+
+### Copy and paste the following code into your project.
+
+<CodeWrapper codePath="/animation/tabs/AnimatedTab.tsx" />
+
+</Steps>

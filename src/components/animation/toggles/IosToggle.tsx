@@ -1,7 +1,20 @@
-import { motion, useCycle } from "framer-motion";
+import React from 'react';
+import { motion, useCycle } from 'framer-motion';
 
-export default function ToggleExample() {
-  const [current, cycle] = useCycle("off", "on");
+interface IosToggleProps {
+  initialState?: "off" | "on";
+  onToggle?: (state: "off" | "on") => void;
+}
+
+const IosToggle: React.FC<IosToggleProps> = ({ initialState = "off", onToggle }) => {
+  const [current, cycle] = useCycle(initialState, initialState === "off" ? "on" : "off");
+
+  const handleToggle = () => {
+    cycle();
+    if (onToggle) {
+      onToggle(current === "off" ? "on" : "off");
+    }
+  };
 
   return (
     <div>
@@ -16,7 +29,7 @@ export default function ToggleExample() {
         }}
         animate={current}
         initial={false}
-        onTapStart={() => cycle()}
+        onTapStart={handleToggle}
       >
         <motion.div
           style={{
@@ -46,4 +59,6 @@ export default function ToggleExample() {
       </motion.div>
     </div>
   );
-}
+};
+
+export default IosToggle;
