@@ -1,7 +1,7 @@
 import React from "react";
 import TwitterCard from "./TwitterCard"; // Adjust the path as needed
 
-const Example = () => {
+const TwitterCardExample = () => {
 	const tweetData = {
 		username: "Raju",
 		name: "Raju",
@@ -15,4 +15,4 @@ const Example = () => {
 	);
 };
 
-export default Example;
+export default TwitterCardExample;

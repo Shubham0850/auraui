@@ -1,7 +1,7 @@
 import React from "react";
 import IosToggle from "./IosToggle"; // Adjust the path as needed
 
-const Example = () => {
+const IosToggleExample = () => {
 	const handleToggle = (state: "off" | "on") => {
 		console.log("Toggle state:", state);
 	};
@@ -11,4 +11,4 @@ const Example = () => {
 	);
 };
 
-export default Example;
+export default IosToggleExample;

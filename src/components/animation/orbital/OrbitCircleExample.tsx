@@ -1,7 +1,63 @@
 import { SiNextra } from "react-icons/si";
-import OrbitingCircles from "../circle";
+import { cn } from "@/lib/utils";
 
-export function OrbitingCirclesDemo() {
+function OrbitCircle({
+  className,
+  children,
+  reverse,
+  duration = 20,
+  delay = 10,
+  radius = 50,
+  path = true,
+}: {
+  className?: string;
+  children?: React.ReactNode;
+  reverse?: boolean;
+  duration?: number;
+  delay?: number;
+  radius?: number;
+  path?: boolean;
+}) {
+  return (
+    <>
+      {path && (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          className="pointer-events-none absolute inset-0 h-full w-full"
+        >
+          <circle
+            className="stroke-black/10 stroke-1 dark:stroke-white/10"
+            cx="50%"
+            cy="50%"
+            r={radius}
+            fill="none"
+            strokeDasharray={"4 4"}
+          />
+        </svg>
+      )}
+
+      <div
+        style={
+          {
+            "--duration": duration,
+            "--radius": radius,
+            "--delay": -delay,
+          } as React.CSSProperties
+        }
+        className={cn(
+          "absolute flex h-full w-full transform-gpu animate-orbit items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10",
+          { "[animation-direction:reverse]": reverse },
+          className,
+        )}
+      >
+        {children}
+      </div>
+    </>
+  );
+}
+
+export default function OrbitCircleExample() {
   return (
     <div className="relative flex w-[250px] max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border border-gray-100 dark:border-customDark bg-white dark:bg-customDark md:shadow-md h-[250px]">
       <div>
@@ -9,7 +65,7 @@ export function OrbitingCirclesDemo() {
       </div>
 
       {/* Inner Circles */}
-      <OrbitingCircles
+      <OrbitCircle
         className="h-[20px] w-[20px] border-none "
         reverse
         duration={20}
@@ -17,8 +73,8 @@ export function OrbitingCirclesDemo() {
         radius={50}
       >
         <Icons.tailwind />
-      </OrbitingCircles>
-      <OrbitingCircles
+      </OrbitCircle>
+      <OrbitCircle
         className="h-[20px] w-[20px] border-none "
         reverse
         duration={20}
@@ -26,8 +82,8 @@ export function OrbitingCirclesDemo() {
         radius={50}
       >
         <Icons.html />
-      </OrbitingCircles>
-      <OrbitingCircles
+      </OrbitCircle>
+      <OrbitCircle
         className="h-[25px] w-[25px] border-none "
         reverse
         duration={20}
@@ -35,36 +91,36 @@ export function OrbitingCirclesDemo() {
         radius={50}
       >
         <Icons.framer />
-      </OrbitingCircles>
+      </OrbitCircle>
 
       {/* Outer Circles (reverse) */}
-      <OrbitingCircles
+      <OrbitCircle
         className="h-[30px] w-[30px] border-none "
         radius={100}
         duration={20}
         delay={33}
       >
         <Icons.reactjs />
-      </OrbitingCircles>
-      <OrbitingCircles
+      </OrbitCircle>
+      <OrbitCircle
         className="h-[30px] w-[30px] border-none "
         radius={100}
         duration={20}
         delay={66}
       >
         <Icons.reactnative />
-      </OrbitingCircles>
-      <OrbitingCircles
+      </OrbitCircle>
+      <OrbitCircle
         className="h-[30px] w-[30px] border-none"
         radius={100}
         duration={20}
         delay={99}
       >
         <Icons.nextjs />
-      </OrbitingCircles>
+      </OrbitCircle>
 
       {/* Outer Circles (reverse) */}
-      <OrbitingCircles
+      <OrbitCircle
         className="h-[30px] w-[30px] border-none"
         reverse
         radius={150}
@@ -72,8 +128,8 @@ export function OrbitingCirclesDemo() {
         delay={33}
       >
         <Icons.nextra />
-      </OrbitingCircles>
-      <OrbitingCircles
+      </OrbitCircle>
+      <OrbitCircle
         className="h-[40px] w-[40px] border-none"
         reverse
         radius={150}
@@ -81,8 +137,8 @@ export function OrbitingCirclesDemo() {
         delay={66}
       >
         <Icons.tailwind />
-      </OrbitingCircles>
-      <OrbitingCircles
+      </OrbitCircle>
+      <OrbitCircle
         className="h-[40px] w-[40px] border-none"
         reverse
         radius={150}
@@ -90,7 +146,7 @@ export function OrbitingCirclesDemo() {
         delay={99}
       >
         <Icons.css />
-      </OrbitingCircles>
+      </OrbitCircle>
     </div>
   );
 }

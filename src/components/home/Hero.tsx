@@ -1,18 +1,31 @@
 "use client";
 
 import React from "react";
-import { MacDock } from "@/components/ui/examples/dock";
-import RetroGrid from "@/components/ui/examples/retro-grid";
-import AnimateNumber from "../ui/examples/number";
-import HoverBox from "../ui/examples/hover-box";
-import ExampleTab from "../ui/examples/tab";
-import { ShinyTextExample } from "../ui/examples/shiny-text";
-import { motion } from "framer-motion";
-import ToggleExample from "../ui/examples/toggle";
-import LoadingExample from "../ui/examples/loading";
 import Link from "next/link";
-import ReviewCard from "../ui/examples/review-card";
-import { OrbitingCirclesDemo } from "../ui/examples/circle-example";
+import IosToggleExample from "../animation/toggles/IosToggleExample";
+import TwitterCardExample from "../animation/cards/twitter/TwitterCardExample";
+import OrbitCircleExample from "../animation/orbital/OrbitCircleExample";
+import AnimatedTabExample from "../animation/tabs/AnimatedTabExample";
+import HoverBox from "../background/HoverBox";
+import AnimatedLoadingExample from "../animation/loading/AnimatedLoadingExample";
+import RetroGrid from "../background/RetroGrid";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect } from "react";
+import { MacDock } from "./Doc";
+
+function AnimateNumber({ number }: { number: number }) {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, Math.round);
+
+  useEffect(() => {
+    const animation = animate(count, number, { duration: 10 });
+
+    return animation.stop;
+  }, []);
+
+  return <motion.h1 className="text-4xl font-bold">{rounded}</motion.h1>;
+}
+
 
 const CounterExample = () => {
   return (
@@ -30,39 +43,16 @@ const CounterExample = () => {
   );
 };
 
-const GridExample = () => {
-  return (
-    <div className="relative flex h-full w-full max-w-[250px] items-center justify-center overflow-hidden rounded-xl border border-neutral-200 dark:border-darkBorder p-20">
-      <RetroGrid />
-    </div>
-  );
-};
-
 const Hero = () => {
   return (
     <div>
       <div className="absolute inset-0 w-full h-[1670px] sm:h-[1200px] lg:h-[950px]">
         <RetroGrid className="w-full h-full" />
       </div>
-      {/* <DotPattern
-        className={cn(
-          "[mask-image:radial-gradient(200px_circle_at_center,white,transparent)]",
-        )}
-      /> */}
-      {/* <AnimatedGridPattern
-        numSquares={80}
-        maxOpacity={0.5}
-        duration={3}
-        repeatDelay={1}
-        className={cn(
-          "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
-        )}
-      /> */}
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
           <div className="max-w-3xl mx-auto text-center">
-            <ShinyTextExample />
+            <span className="border p-2 px-6 rounded-full text-xs">Build by Developer for Developer</span>
             <h1 className="mt-5 text-[34px] font-bold leading-tight dark:text-gray-100  text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
               Copy. Paste. Ship.
             </h1>
@@ -116,22 +106,22 @@ const Hero = () => {
 
         <div className="flex flex-wrap justify-center items-center space-y-6 sm:space-y-6 sm:space-x-6">
           <div className=" flex items-center flex-col md:mt-6 w-[300px] md:-mr-5  ">
-            <ReviewCard />
+            <TwitterCardExample />
             <MacDock />
           </div>
           <div>
-            {/* <LikeCard /> */}
-            {/* <WalletModal /> */}
-            <OrbitingCirclesDemo />
+            <OrbitCircleExample />
           </div>
           <div className="flex flex-col space-y-4">
-            <ExampleTab />
+            <div className="h-[45px] overflow-y-hidden">
+              <AnimatedTabExample />
+            </div>
             <HoverBox />
           </div>
           <div className="flex md:flex-col justify-center items-center gap-4 md:gap-0 space-y-4 ">
-            <ToggleExample />
+            <IosToggleExample />
             <CounterExample />
-            <LoadingExample />
+            <AnimatedLoadingExample />
           </div>
         </div>
       </section>

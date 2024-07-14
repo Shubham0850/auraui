@@ -1,0 +1,35 @@
+import { Steps } from "nextra/components";
+import ElementWrapper from "@/components/Theme/ElementWrapper";
+import CodeWrapper from "@/components/Theme/CodeWrapper";
+import ElementPreviewWrapper from "@/components/Theme/ElementPreviewWrapper";
+import AnimatedLoadingExample from "@/components/animation/loading/AnimatedLoadingExample";
+
+# Animated Loading Component
+
+Add a sleek, animated loading indicator to your interface.
+
+## Example
+
+<ElementWrapper
+  componentPath="animation/loading/AnimatedLoadingExample.tsx"
+  element={
+    <ElementPreviewWrapper>
+      <AnimatedLoadingExample/>
+    </ElementPreviewWrapper>
+  }
+/>
+
+## Installation
+
+<Steps>
+### Install the necessary dependencies:
+
+```bash copy
+npm install tailwindcss framer-motion
+```
+
+### Copy and paste the following code into your project.
+
+<CodeWrapper codePath="animation/loading/AnimatedLoading.tsx" />
+
+</Steps>

@@ -12,10 +12,10 @@ const tabs = [
   { name: "settings", label: "Settings", icon: <FaCog />, component: <SettingsContent /> },
 ];
 
-const App = () => {
+const AnimatedTabExample = () => {
   return (
     <AnimatedTab tabs={tabs} />
   );
 };
 
-export default App;
+export default AnimatedTabExample;

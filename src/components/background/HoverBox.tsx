@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import DotPattern from "../bg-dot";
 import { cn } from "@/lib/utils";
+import DotPattern from "./DotBg";
 
 const Card = ({ title, icon }: { title: string; icon: React.ReactNode }) => {
   return (
