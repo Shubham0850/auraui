@@ -200,7 +200,7 @@
     }
   },
   "logocloud": {
-    "title": "LogoCloud",
+    "title": "Logo Cloud",
     "theme": {
       "breadcrumb": true,
       "footer": true,
@@ -288,19 +288,8 @@
       "pagination": true
     }
   },
-  "setting": {
-    "title": "Setting",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "layout": "full",
-      "pagination": true
-    }
-  },
   "reactnative": {
-    "title": "React Natives",
+    "title": "React Native",
     "theme": {
       "breadcrumb": true,
       "footer": true,
