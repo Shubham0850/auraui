@@ -52,14 +52,12 @@ const Hero = () => {
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="border p-2 px-6 rounded-full text-xs">Build by Developer for Developer</span>
+            <span className="border p-2 px-6 rounded-full text-xs">100x your development speed</span>
             <h1 className="mt-5 text-[34px] font-bold leading-tight dark:text-gray-100  text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
               Copy. Paste. Ship.
             </h1>
             <p className="max-w-2xl mx-auto px-4 mt-6 text-base  dark:text-gray-300  leading-7 text-gray-600 font-inter">
-              Stop Coding from Scratch: A UI Library for Every Skill Level.
-              Quickly Copy and paste components and ship your website 🏎️
-              fasterrrrrr than ever!
+              Ship stunning React websites in hours, not months, with Aura UI’s sleek, animated components. Optimized for speed and SEO, just copy, paste, and customize for a flawless, high-performance site. 🚀
             </p>
 
             <div className="flex items-center justify-center space-x-5 mt-5">
