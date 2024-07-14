@@ -1,6 +1,18 @@
 import React from "react";
+import {
+  FaCheckCircle,
+  FaEnvelope,
+  FaArrowRight,
+  FaLock,
+} from "react-icons/fa";
+import Link from "next/link";
+import Image from "next/image";
 
 type Props = {};
+
+const iconClass = "flex-shrink-0 text-orange-400 w-7 h-7";
+const headingClass = "text-xl font-semibold text-black";
+const textClass = "mt-1.5 text-base text-gray-600";
 
 const RoundedDesign = (props: Props) => {
   return (
@@ -18,59 +30,26 @@ const RoundedDesign = (props: Props) => {
 
         <div className="mt-8 space-y-8 sm:space-x-12 sm:mt-12 sm:flex sm:items-start sm:justify-center sm:space-y-0 md:space-x-20 lg:mt-20">
           <div className="flex items-start">
-            <svg
-              className="flex-shrink-0 text-orange-400 w-7 h-7"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <FaCheckCircle className={iconClass} />
             <div className="ml-4">
-              <h3 className="text-xl font-semibold text-black">130+ Blocks</h3>
-              <p className="mt-1.5 text-base text-gray-600">Ready to use</p>
+              <h3 className={headingClass}>130+ Blocks</h3>
+              <p className={textClass}>Ready to use</p>
             </div>
           </div>
 
           <div className="flex items-start">
-            <svg
-              className="flex-shrink-0 text-orange-400 w-7 h-7"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <FaCheckCircle className={iconClass} />
             <div className="ml-4">
-              <h3 className="text-xl font-semibold text-black">14 Pages</h3>
-              <p className="mt-1.5 text-base text-gray-600">Make it live</p>
+              <h3 className={headingClass}>14 Pages</h3>
+              <p className={textClass}>Make it live</p>
             </div>
           </div>
 
           <div className="flex items-start">
-            <svg
-              className="flex-shrink-0 text-orange-400 w-7 h-7"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <FaCheckCircle className={iconClass} />
             <div className="ml-4">
-              <h3 className="text-xl font-semibold text-black">Easy Access</h3>
-              <p className="mt-1.5 text-base text-gray-600">Anyone can use</p>
+              <h3 className={headingClass}>Easy Access</h3>
+              <p className={textClass}>Anyone can use</p>
             </div>
           </div>
         </div>
@@ -104,7 +83,7 @@ const RoundedDesign = (props: Props) => {
                     name="email"
                     id="email"
                     placeholder="Enter email address"
-                    className="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-full focus:border-transparent focus:ring-0 caret-blue-600"
+                    className="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all duration-200 bg-white border-transparent rounded-full focus:border-transparent focus:ring-0 caret-blue-600"
                     required
                   />
                 </div>
@@ -115,38 +94,14 @@ const RoundedDesign = (props: Props) => {
                 className="inline-flex items-center justify-center w-auto px-4 py-4 mt-4 font-semibold text-gray-400 transition-all duration-200 bg-blue-600 border border-transparent rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-blue-700 focus:bg-blue-700"
               >
                 Get Instant Access
-                <svg
-                  className="w-5 h-5 ml-3 -mr-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <FaArrowRight className="w-5 h-5 ml-3 -mr-1" />
               </button>
             </div>
           </div>
         </form>
 
         <div className="flex items-center justify-start mt-8 sm:justify-center sm:px-0">
-          <svg
-            className="flex-shrink-0 w-5 h-5 text-gray-600"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-            ></path>
-          </svg>
+          <FaLock className="flex-shrink-0 w-5 h-5 text-gray-600" />
           <span className="ml-2 text-sm text-gray-600">
             Your data is completely secure with us. We don’t share it with
             anyone.
