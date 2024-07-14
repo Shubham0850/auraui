@@ -153,12 +153,12 @@ const marketingCategories = [
     items: 1,
     img: "/components/roadmap.png",
   },
-  {
-    name: "Settings",
-    link: "/components/setting",
-    items: 1,
-    img: "/components/setting.png",
-  },
+  // {
+  //   name: "Settings",
+  //   link: "/components/setting",
+  //   items: 1,
+  //   img: "/components/setting.png",
+  // },
 ];
 
 const animationCategories = [
