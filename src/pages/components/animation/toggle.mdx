@@ -1,27 +1,35 @@
-import GreemaToggle from "@/components/ui/examples/toggle.tsx";
-import ElementWrapper from "@/components/Theme/Element";
-import { BsJustify } from "react-icons/bs";
+import { Steps } from "nextra/components";
+import ElementWrapper from "@/components/Theme/ElementWrapper";
+import CodeWrapper from "@/components/Theme/CodeWrapper";
+import ElementPreviewWrapper from "@/components/Theme/ElementPreviewWrapper";
+import IosToggleExample from "@/components/animation/toggles/IosToggleExample";
 
-# Toggle Component
+# iOS Toggle Component
 
-## Overview
+Add a sleek, animated iOS-style toggle switch to your interface.
 
-This Toggle Section Contains Various Animated Toggle components.
-
-## Usage
-
-To integrate a Toggle Components into your Next.js Project,copy and paste the following code.
-
-## GreemaToggle
-
-A simple, interactive component used to represent a binary state, with a movable handle that changes position to indicate on/off status. Ideal for settings, preferences, and other binary options in user interfaces.
+## Example
 
 <ElementWrapper
-  previewLink="/animation/toggle/simple"
-  componentPath="ui/examples/toggle.tsx"
+  componentPath="animation/toggles/IosToggleExample.tsx"
   element={
-    <div className="flex items-center justify-center py-10 md:py-32 ">
-      <GreemaToggle />
-    </div>
+    <ElementPreviewWrapper>
+      <IosToggleExample />
+    </ElementPreviewWrapper>
   }
 />
+
+## Installation
+
+<Steps>
+### Install the necessary dependencies:
+
+```bash copy
+npm install framer-motion
+```
+
+### Copy and paste the following code into your project.
+
+<CodeWrapper codePath="/animation/toggles/IosToggle.tsx" />
+
+</Steps>
