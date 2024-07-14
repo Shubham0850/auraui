@@ -1,9 +1,14 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
 
-type Props = {};
+const styles = {
+  link: "text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70",
+  mobileLink:
+    "py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70",
+};
 
-const CallToAction: React.FC<Props> = (props) => {
+const CallToAction = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,13 +21,13 @@ const CallToAction: React.FC<Props> = (props) => {
         {/* lg+ */}
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
-            <a href="#" title="Aura UI" className="flex">
+            <Link href="#" className="flex" title="Aura UI">
               <img
                 className="w-auto h-8 lg:h-10"
                 src="https://www.auraui.com/logo-dark.png"
                 alt="Aura UI Logo"
               />
-            </a>
+            </Link>
           </div>
 
           <button
@@ -38,71 +43,37 @@ const CallToAction: React.FC<Props> = (props) => {
           </button>
 
           <div className="hidden md:flex md:items-center md:space-x-10">
-            <a
-              href="#"
-              title="Features"
-              className="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"
-            >
+            <Link href="#" className={styles.link} title="Features">
               Features
-            </a>
-            <a
-              href="#"
-              title="Solutions"
-              className="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"
-            >
+            </Link>
+            <Link href="#" className={styles.link} title="Solutions">
               Solutions
-            </a>
-            <a
-              href="#"
-              title="Resources"
-              className="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"
-            >
+            </Link>
+            <Link href="#" className={styles.link} title="Resources">
               Resources
-            </a>
-            <a
-              href="#"
-              title="Pricing"
-              className="text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70"
-            >
+            </Link>
+            <Link href="#" className={styles.link} title="Pricing">
               Pricing
-            </a>
+            </Link>
           </div>
         </nav>
 
         {/* xs to lg */}
         {isMenuOpen && (
-          <nav className=" px-4 py-5 text-center bg-black md:hidden">
-         
-
-            <div className="flex flex-col items-center  space-y-2">
-              <a
-                href="#"
-                title="Features"
-                className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
-              >
+          <nav className="px-4 py-5 text-center bg-black md:hidden">
+            <div className="flex flex-col items-center space-y-2">
+              <Link href="#" className={styles.mobileLink} title="Features">
                 Features
-              </a>
-              <a
-                href="#"
-                title="Solutions"
-                className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
-              >
+              </Link>
+              <Link href="#" className={styles.mobileLink} title="Solutions">
                 Solutions
-              </a>
-              <a
-                href="#"
-                title="Resources"
-                className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
-              >
+              </Link>
+              <Link href="#" className={styles.mobileLink} title="Resources">
                 Resources
-              </a>
-              <a
-                href="#"
-                title="Pricing"
-                className="py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70"
-              >
+              </Link>
+              <Link href="#" className={styles.mobileLink} title="Pricing">
                 Pricing
-              </a>
+              </Link>
             </div>
           </nav>
         )}

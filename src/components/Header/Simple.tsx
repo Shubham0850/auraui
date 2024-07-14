@@ -1,9 +1,16 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { FiMenu, FiShoppingCart, FiX } from "react-icons/fi";
 
-type Props = {};
+const styles = {
+  link: "text-base font-medium text-black",
+  iconButton:
+    "flex items-center justify-center ml-auto text-white bg-black rounded-full w-9 h-9 xl:hidden",
+  navLink:
+    "py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600",
+};
 
-const Simple: React.FC<Props> = (props) => {
+const Simple = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,50 +24,31 @@ const Simple: React.FC<Props> = (props) => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
           <nav className="relative flex items-center justify-between h-16 lg:h-20">
             <div className="hidden xl:flex xl:items-center xl:space-x-10">
-              <a
-                href="#"
-                title="Features"
-                className="text-base font-medium text-black"
-              >
+              <Link href="#" className={styles.link} title="Features">
                 Features
-              </a>
-              <a
-                href="#"
-                title="Solutions"
-                className="text-base font-medium text-black"
-              >
+              </Link>
+              <Link href="#" className={styles.link} title="Solutions">
                 Solutions
-              </a>
-              <a
-                href="#"
-                title="Resources"
-                className="text-base font-medium text-black"
-              >
+              </Link>
+              <Link href="#" className={styles.link} title="Resources">
                 Resources
-              </a>
-              <a
-                href="#"
-                title="Pricing"
-                className="text-base font-medium text-black"
-              >
+              </Link>
+              <Link href="#" className={styles.link} title="Pricing">
                 Pricing
-              </a>
+              </Link>
             </div>
             <div className="xl:absolute xl:-translate-x-1/2 xl:inset-y-5 xl:left-1/2">
               <div className="flex-shrink-0">
-                <a href="#" title="Aura UI" className="flex">
+                <Link href="#" className="flex" title="Aura UI">
                   <img
                     className="w-auto h-8 xl:h-10"
                     src="https://www.auraui.com/logo-light.png"
                     alt="Aura UI Logo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
-            <button
-              type="button"
-              className="flex items-center justify-center ml-auto text-white bg-black rounded-full w-9 h-9 xl:hidden"
-            >
+            <button type="button" className={styles.iconButton}>
               <FiShoppingCart className="w-5 h-5" />
             </button>
             <button
@@ -75,27 +63,19 @@ const Simple: React.FC<Props> = (props) => {
               )}
             </button>
             <div className="hidden xl:flex xl:items-center xl:space-x-10">
-              <a
-                href="#"
-                title="Sign up"
-                className="text-base font-medium text-black"
-              >
+              <Link href="#" className={styles.link} title="Sign up">
                 Sign up
-              </a>
-              <a
-                href="#"
-                title="Sign in"
-                className="text-base font-medium text-black"
-              >
+              </Link>
+              <Link href="#" className={styles.link} title="Sign in">
                 Sign in
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
-                title="Cart"
                 className="flex items-center justify-center w-10 h-10 text-white bg-black rounded-full"
+                title="Cart"
               >
                 <FiShoppingCart className="w-6 h-6" />
-              </a>
+              </Link>
             </div>
           </nav>
         </div>
@@ -105,54 +85,29 @@ const Simple: React.FC<Props> = (props) => {
       {isMenuOpen && (
         <nav className="py-4 bg-white xl:hidden">
           <div className="px-4 mx-auto sm:px-6 lg:px-8">
-           
             <div>
               <div className="flex flex-col space-y-2">
-                <a
-                  href="#"
-                  title="Features"
-                  className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-                >
+                <Link href="#" className={styles.navLink} title="Features">
                   Features
-                </a>
-                <a
-                  href="#"
-                  title="Solutions"
-                  className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-                >
+                </Link>
+                <Link href="#" className={styles.navLink} title="Solutions">
                   Solutions
-                </a>
-                <a
-                  href="#"
-                  title="Resources"
-                  className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-                >
+                </Link>
+                <Link href="#" className={styles.navLink} title="Resources">
                   Resources
-                </a>
-                <a
-                  href="#"
-                  title="Pricing"
-                  className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-                >
+                </Link>
+                <Link href="#" className={styles.navLink} title="Pricing">
                   Pricing
-                </a>
+                </Link>
               </div>
               <hr className="my-4 border-gray-200" />
               <div className="flex flex-col space-y-2">
-                <a
-                  href="#"
-                  title="Sign up"
-                  className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-                >
+                <Link href="#" className={styles.navLink} title="Sign up">
                   Sign up
-                </a>
-                <a
-                  href="#"
-                  title="Sign in"
-                  className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-                >
+                </Link>
+                <Link href="#" className={styles.navLink} title="Sign in">
                   Sign in
-                </a>
+                </Link>
               </div>
             </div>
           </div>
