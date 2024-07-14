@@ -221,14 +221,14 @@ const aiCategories = [
 const reactNativeCategories = [
   {
     name: "Signin",
-    items: 1,
-    link: "/components/reactnative/sign-in",
+    items: 69,
+    link: "/components/reactnative",
     img: "/components/signin.png",
   },
   {
     name: "Signup",
-    items: 1,
-    link: "/components/reactnative/sign-up",
+    items: 69,
+    link: "/components/reactnative",
     img: "/components/signup.png",
   },
   // { name: "Text", items: 69 },
@@ -425,7 +425,7 @@ const ComponentSection = () => {
                 {category.name}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                {category.items} items available
+                {category.items} items ComingSoon...
               </p>
             </a>
           ))}

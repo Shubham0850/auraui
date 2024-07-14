@@ -42,18 +42,6 @@
     }
   },
 
-  "reactnative": {
-    "title": "React Natives",
-    "theme": {
-      "breadcrumb": true,
-      "footer": true,
-      "sidebar": true,
-      "toc": false,
-      "layout": "full",
-      "pagination": true
-    }
-  },
-
   "animation": {
     "title": "Animation",
     "theme": {
@@ -302,6 +290,17 @@
   },
   "setting": {
     "title": "Setting",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": false,
+      "layout": "full",
+      "pagination": true
+    }
+  },
+  "reactnative": {
+    "title": "React Natives",
     "theme": {
       "breadcrumb": true,
       "footer": true,

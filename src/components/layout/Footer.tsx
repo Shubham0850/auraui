@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
 import React, { useEffect,useState } from "react";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
    const { theme } = useTheme();
@@ -20,18 +21,18 @@ const Footer = () => {
   return (
     <footer className="w-full">
       <div className="grid items-center grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-3">
-        <div className="md:order-1">
-          <Link href={'/'}>
-          {currentTheme === "light" ? (
-            <img className="w-auto h-8" src="/logo-light.png" alt="" />
-          ) : (
-            <img className="w-auto h-8" src="/logo-dark.png" alt="" />
-          )}
+        <div className="md:order-1 w-[90px] ">
+          <Link href={"/"}>
+            {currentTheme === "light" ? (
+              <img className="w-auto h-8" src="/logo-light.png" alt="" />
+            ) : (
+              <img className="w-auto h-8" src="/logo-dark.png" alt="" />
+            )}
           </Link>
         </div>
 
         <div className="md:order-3">
-          <ul className="flex items-center justify-end space-x-6">
+          <ul className="flex items-center justify-end space-x-4">
             <li>
               <a
                 href="https://x.com/aura__ui"
@@ -41,14 +42,7 @@ const Footer = () => {
                 className="inline-flex transition-all duration-200 rounded text-gray-900 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
               >
                 <span className="sr-only"> Twitter </span>
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
-                </svg>
+                <FaXTwitter className="h-4   text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
               </a>
             </li>
 
@@ -89,7 +83,7 @@ const Footer = () => {
 
             <li>
               <Link
-                href="/components"
+                href="/all-components"
                 title=""
                 className="text-sm font-normal text-opacity-50 transition-all duration-200 rounded text-gray-900 dark:text-gray-400 hover:text-opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary focus:text-opacity-100"
               >
