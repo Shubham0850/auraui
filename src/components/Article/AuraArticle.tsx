@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AuraArticle = () => {
   return (
@@ -17,22 +18,8 @@ const AuraArticle = () => {
             </p>
 
             <div className="mt-10">
-              <svg
-                className="w-auto h-4 text-gray-300"
-                width="172"
-                height="16"
-                viewBox="0 0 172 16"
-                fill="none"
-                stroke="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* SVG content here */}
-              </svg>
-            </div>
-
-            <div className="mt-10">
               <p className="text-base font-normal leading-7 text-gray-700">
-                AuroraUI is a versatile UI library designed to streamline your
+                Aura UI is a versatile UI library designed to streamline your
                 web development process. It includes a wide range of components
                 such as Hero, Navbar, Footer, Article, Blog, SignIn, SignUp,
                 Testimonial, and many more. With support for AI and Web3
@@ -44,7 +31,7 @@ const AuraArticle = () => {
                 Comprehensive Component Collection
               </h2>
               <p className="mt-6 text-base font-normal leading-7 text-gray-700">
-                AuroraUI offers everything from basic to advanced components to
+                AuraUI offers everything from basic to advanced components to
                 help you build responsive and visually appealing websites. Each
                 component is optimized for performance and designed to be easily
                 customizable.
@@ -81,11 +68,16 @@ const AuraArticle = () => {
                   ></div>
                 </div>
 
-                <img
-                  className="relative  rounded-xl"
-                  src="https://www.auraui.com/aiimage/boystudy.png"
-                  alt="AuroraUI components"
-                />
+                <div className="relative rounded-xl">
+                  <Image
+                    src="https://www.auraui.com/aiimage/boystudy.png"
+                    alt="AuroraUI components"
+                    layout="responsive"
+                    width={1100}
+                    height={800}
+                    className="rounded-md"
+                  />
+                </div>
               </div>
               <h2 className="mt-16 text-3xl font-bold text-gray-900">
                 Start Building Today
