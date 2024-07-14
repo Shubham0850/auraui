@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Props = {};
 
@@ -6,10 +7,13 @@ const Simple = (props: Props) => {
   return (
     <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
       <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
-          src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg"
+        <Image
+          src="/components/laptop-girl.jpeg"
           alt="Girl working on laptop"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="left top"
+          className="md:object-left md:scale-100 md:origin-top-left"
         />
       </div>
 
