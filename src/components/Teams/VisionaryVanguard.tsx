@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -23,9 +25,11 @@ const VisionaryVanguard = (props: Props) => {
             "/memeimage/sunil1.jpg",
           ].map((src, index) => (
             <div key={index}>
-              <img
+              <Image
                 className="w-full rounded-md h-full object-cover"
                 src={src}
+                width={400}
+                height={400}
                 alt={`Image ${index + 1}`}
               />
             </div>
@@ -33,14 +37,12 @@ const VisionaryVanguard = (props: Props) => {
         </div>
 
         <div className="mt-8 text-center md:mt-16">
-          <a
-            href="#"
-            title="Join our team"
+          <Link
             className="inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:bg-blue-700"
-            role="button"
+            href="#"
           >
             Join Our Team
-          </a>
+          </Link>
         </div>
       </div>
     </section>

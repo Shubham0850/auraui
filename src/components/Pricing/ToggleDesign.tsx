@@ -1,6 +1,13 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
 
 type Props = {};
+
+const commonButtonStyles =
+  "inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold transition-all duration-200 border-2 rounded-full focus:outline-none";
+const commonListItemStyles = "inline-flex items-center space-x-2";
 
 const ToggleDesign = (props: Props) => {
   return (
@@ -56,122 +63,47 @@ const ToggleDesign = (props: Props) => {
                 <span className="ml-0.5 text-lg text-gray-600"> / month </span>
               </div>
 
-              <a
+              <Link
+                className={`${commonButtonStyles} text-gray-900 bg-transparent border-fuchsia-600 hover:bg-fuchsia-600 hover:text-white focus:text-white focus:bg-fuchsia-600`}
                 href="#"
-                title=""
-                className="inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold text-gray-900 transition-all duration-200 bg-transparent border-2 rounded-full border-fuchsia-600 hover:bg-fuchsia-600 hover:text-white focus:text-white focus:bg-fuchsia-600"
-                role=""
+                passHref
               >
                 Start 14 Days Free Trial
-              </a>
+              </Link>
 
               <ul className="flex flex-col mt-8 space-y-4">
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    10 Component License{" "}
-                  </span>
-                  <svg
-                    className="w-4 h-4 ml-0.5 text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </li>
-
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    Full Aura UI Library Access{" "}
+                    10 Component License
                   </span>
                 </li>
 
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    120+ Coded Blocks{" "}
+                    Full Aura UI Library Access
                   </span>
                 </li>
 
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
+                  <span className="text-base font-medium text-gray-900">
+                    120+ Coded Blocks
+                  </span>
+                </li>
+
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-400 line-through">
-                    {" "}
-                    Design Files Included{" "}
+                    Design Files Included
                   </span>
                 </li>
 
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-400">
-                    {" "}
-                    Premium Support{" "}
+                    Premium Support
                   </span>
                 </li>
               </ul>
@@ -193,122 +125,47 @@ const ToggleDesign = (props: Props) => {
                 <span className="ml-0.5 text-lg text-gray-600"> / month </span>
               </div>
 
-              <a
+              <Link
+                className={`${commonButtonStyles} text-white bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80`}
                 href="#"
-                title=""
-                className="inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold text-white transition-all duration-200 border-2 border-transparent rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80"
-                role=""
+                passHref
               >
                 Start 14 Days Free Trial
-              </a>
+              </Link>
 
               <ul className="flex flex-col mt-8 space-y-4">
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    100 Components License{" "}
-                  </span>
-                  <svg
-                    className="w-4 h-4 ml-0.5 text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </li>
-
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    Full Aura UI Library Access{" "}
+                    100 Components License
                   </span>
                 </li>
 
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    1000+ Coded Blocks{" "}
+                    Full Aura UI Library Access
                   </span>
                 </li>
 
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    Design Files Included{" "}
+                    1000+ Coded Blocks
                   </span>
                 </li>
 
-                <li className="inline-flex items-center space-x-2">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
                   <span className="text-base font-medium text-gray-900">
-                    {" "}
-                    Premium Support{" "}
+                    Design Files Included
+                  </span>
+                </li>
+
+                <li className={commonListItemStyles}>
+                  <FaCheckCircle className="text-gray-400" />
+                  <span className="text-base font-medium text-gray-900">
+                    Premium Support
                   </span>
                 </li>
               </ul>
