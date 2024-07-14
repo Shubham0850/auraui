@@ -13,7 +13,7 @@
 
 ## Documentation
 
-Visit [Documentation](https://auraui.com/components) to view the documentation.
+Visit [AuraUI](https://auraui.com/components) to view the documentation.
 
 ## Contributing
 
