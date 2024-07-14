@@ -43,7 +43,7 @@ const Developers = () => {
           </h2>
           <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
             Our customers love Aura UI for its simplicity and ease of use.
-            Here's what they have to say.
+            Here&apos;s what they have to say.
           </p>
         </div>
 
