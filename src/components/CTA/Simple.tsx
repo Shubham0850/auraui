@@ -8,7 +8,7 @@ const Simple = (props: Props) => {
     <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
       <div className="absolute inset-0">
         <Image
-          src="/components/laptop-girl.jpeg"
+          src="/memeimage/laptop-girl.jpeg"
           alt="Girl working on laptop"
           layout="fill"
           objectFit="cover"

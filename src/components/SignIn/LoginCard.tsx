@@ -6,6 +6,7 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const commonStyles = {
   inputIcon:
@@ -25,10 +26,13 @@ const LoginCard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
           <div className="absolute inset-0">
-            <img
+            <Image
               className="object-cover object-top w-full h-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/signin/4/girl-thinking.jpg"
-              alt=""
+              src="/memeimage/girl-working.jpg"
+              alt="Women Working"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>

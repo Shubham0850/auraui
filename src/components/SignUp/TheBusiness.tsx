@@ -7,6 +7,7 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const commonStyles = {
   inputIcon:
@@ -26,10 +27,12 @@ const TheBusiness = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
           <div className="absolute inset-0">
-            <img
-              className="object-cover w-full h-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/signup/4/girl-working-on-laptop.jpg"
-              alt=""
+            <Image
+              className="object-cover"
+              src="/memeimage/women-working.jpg"
+              alt="Girl working on laptop"
+              layout="fill"
+              objectFit="cover"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>

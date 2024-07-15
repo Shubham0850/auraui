@@ -12,8 +12,7 @@ const testimonials = [
   {
     name: "Abhishek Singh",
     username: "@priya_singh",
-    avatar:
-      "https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-2.jpg",
+    avatar: "/memeimage/girl3.webp",
     quote:
       "Simply the best. Better than all the rest. I'd recommend Aura UI to beginners and advanced users. #top_quality",
   },
