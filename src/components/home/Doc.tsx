@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
 import React, { PropsWithChildren, useRef } from "react";
 
 export interface DockProps extends VariantProps<typeof dockVariants> {
@@ -112,23 +113,28 @@ const DockIcon = ({
 };
 
 const MacDock = () => {
-  return <Dock className="border border-neutral-200 dark:border-darkBorder rounded-xl">
-    <DockIcon>
-      <img src="/icons/store.svg" alt="app store" className="h-10 w-10" />
-    </DockIcon>
-    <DockIcon>
-      <img src="/icons/settings.svg" alt="google drive" className="h-10 w-10" />
-    </DockIcon>
-    <DockIcon>
-      <img src="/icons/terminal.svg" alt="notion" className="h-10 w-10" />
-    </DockIcon>
-    <DockIcon>
-      <img src="/icons/safari.svg" alt="safari" className="h-10 w-10" />
-    </DockIcon>
-    <DockIcon>
-      <img src="/icons/finder.svg" alt="finder" className="h-10 w-10" />
-    </DockIcon>
-  </Dock>
+  const icons = [
+    { src: "/icons/store.svg", alt: "app store" },
+    { src: "/icons/settings.svg", alt: "google drive" },
+    { src: "/icons/terminal.svg", alt: "notion" },
+    { src: "/icons/safari.svg", alt: "safari" },
+    { src: "/icons/finder.svg", alt: "finder" },
+  ];
+  return (
+    <Dock className="border border-neutral-200 dark:border-darkBorder rounded-xl">
+      {icons.map((icon, index) => (
+        <DockIcon key={index}>
+          <Image
+            src={icon.src}
+            alt={icon.alt}
+            width={100}
+            height={100}
+            className="h-10 w-10"
+          />
+        </DockIcon>
+      ))}
+    </Dock>
+  );
 };
 
 DockIcon.displayName = "DockIcon";

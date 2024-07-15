@@ -1,5 +1,6 @@
 import { SiNextra } from "react-icons/si";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 function OrbitCircle({
   className,
@@ -61,7 +62,13 @@ export default function OrbitCircleExample() {
   return (
     <div className="relative flex w-[250px] max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border border-gray-100 dark:border-customDark bg-white dark:bg-customDark md:shadow-md h-[250px]">
       <div>
-        <img src="/ico.png" alt="auraui" className="h-8 w-8" />
+        <Image
+          src="/ico.png"
+          alt="auraui"
+          className="h-8 w-8"
+          height={40}
+          width={40}
+        />
       </div>
 
       {/* Inner Circles */}
@@ -153,29 +160,67 @@ export default function OrbitCircleExample() {
 
 const Icons = {
   nextjs: (props: any) => (
-    <img src="/components/next.svg " alt="nextjs" className="h-4 w-4" />
+    <Image
+      src="/components/next.svg"
+      alt="nextjs"
+      width={16}
+      height={16}
+      className="inline-block"
+    />
   ),
   framer: (props: any) => (
-    <img src="/components/framer.svg" alt="framer motion" className="h-4 w-4" />
+    <Image
+      src="/components/framer.svg"
+      alt="framer motion"
+      width={16}
+      height={16}
+      className="inline-block"
+    />
   ),
   reactjs: (props: any) => (
-    <img src="/components/react.svg" alt="react" className="h-6 w-6" />
+    <Image
+      src="/components/react.svg"
+      alt="react"
+      width={24}
+      height={24}
+      className="inline-block"
+    />
   ),
-  nextra: (props: any) => <SiNextra className="h-4 w-4" />,
+  nextra: (props: any) => <SiNextra size={16} className="inline-block" />,
   css: (props: any) => (
-    <img src="/components/css-icon.svg" alt="css" className="h-6 w-6" />
+    <Image
+      src="/components/css-icon.svg"
+      alt="css"
+      width={24}
+      height={24}
+      className="inline-block"
+    />
   ),
   tailwind: (props: any) => (
-    <img src="/components/tailwind.svg" alt="tailwind" />
+    <Image
+      src="/components/tailwind.svg"
+      alt="tailwind"
+      width={24}
+      height={24}
+      className="inline-block"
+    />
   ),
   html: (props: any) => (
-    <img src="/components/html-1.svg" alt="html" className="h-6 w-6" />
+    <Image
+      src="/components/html-1.svg"
+      alt="html"
+      width={24}
+      height={24}
+      className="inline-block"
+    />
   ),
   reactnative: (props: any) => (
-    <img
+    <Image
       src="/components/react-native-1.svg"
       alt="react native"
       className="h-6 w-6"
+      height={40}
+      width={40}
     />
   ),
 };

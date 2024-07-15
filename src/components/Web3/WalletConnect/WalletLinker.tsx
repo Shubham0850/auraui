@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa6";
@@ -87,10 +88,12 @@ const WalletLinker = () => {
                   )}
                   <div className="px-4 py-5">
                     <div className="flex items-start">
-                      <img
+                      <Image
                         className="object-contain w-8 h-8 shrink-0"
                         src={blockchain.logo}
                         alt={blockchain.name}
+                        width={40}
+                        height={40}
                       />
                       <div className="ml-4">
                         <p className="text-sm font-bold text-gray-900">
@@ -117,10 +120,12 @@ const WalletLinker = () => {
                 >
                   <div className="p-4">
                     <div className="flex items-center">
-                      <img
+                      <Image
                         className="w-auto h-6 shrink-0"
                         src={wallet.logo}
                         alt={wallet.name}
+                        width={40}
+                        height={40}
                       />
                       <p className="flex-1 ml-4 text-sm font-bold text-gray-900">
                         {wallet.name}

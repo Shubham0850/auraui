@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const testimonies = [
@@ -11,7 +12,7 @@ const testimonies = [
   {
     name: "Priya Sharma",
     position: "UI/UX Designer at Creative Minds",
-    image: "/memeimage/girl2.jpeg",
+    image: "/memeimage/girl2.jpeg ",
     quote:
       "The ease of use and the variety of components in AURA UI is simply amazing. It made our development process much smoother.",
   },
@@ -43,10 +44,12 @@ const Designers = () => {
             >
               <div className="px-8 py-12">
                 <div className="relative w-24 h-24 mx-auto">
-                  <img
+                  <Image
                     className="relative object-cover w-24 h-24 mx-auto rounded-full"
                     src={testimony.image}
                     alt="Avatar"
+                    width={200} // Set the width in pixels
+                    height={200} // Set the height in pixels
                   />
                 </div>
                 <blockquote className="mt-7">

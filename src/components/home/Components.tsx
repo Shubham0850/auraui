@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { motion, HTMLMotionProps } from "framer-motion";
+import Image from "next/image";
 
 interface AnimatedDivProps extends HTMLMotionProps<"div"> {
   children: ReactNode;
@@ -256,10 +257,12 @@ const ComponentSection = () => {
             >
               <AnimatedDiv>
                 <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
-                  <img
+                  <Image
                     src={category.img}
-                    alt="img"
-                    className="rounded-xl w-full"
+                    alt="Category Image"
+                    width={400} // Adjust width as needed
+                    height={300} // Adjust height as needed
+                    className="rounded-xl"
                   />
                 </div>
               </AnimatedDiv>
@@ -293,10 +296,13 @@ const ComponentSection = () => {
             >
               <AnimatedDiv>
                 <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
-                  <img
+                  <Image
                     src={category.img}
-                    alt="hero"
-                    className="rounded-xl w-full"
+                    alt="Category Hero"
+                    layout="responsive"
+                    width={1200}
+                    height={600}
+                    className="rounded-xl"
                   />
                 </div>
               </AnimatedDiv>
@@ -327,7 +333,13 @@ const ComponentSection = () => {
             >
               <AnimatedDiv>
                 <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
-                  <img src={category.img} alt="hero" className="rounded-xl" />
+                  <Image
+                    src={category.img}
+                    alt="hero"
+                    className="rounded-xl"
+                    height={600}
+                    width={1200}
+                  />
                 </div>
               </AnimatedDiv>
 
@@ -357,7 +369,13 @@ const ComponentSection = () => {
             >
               <AnimatedDiv>
                 <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
-                  <img src={category.img} alt="hero" className="rounded-xl" />
+                  <Image
+                    src={category.img}
+                    alt="hero"
+                    className="rounded-xl"
+                    height={600}
+                    width={1200}
+                  />
                 </div>
               </AnimatedDiv>
 
@@ -387,7 +405,13 @@ const ComponentSection = () => {
             >
               <AnimatedDiv>
                 <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
-                  <img src={category.img} alt="hero" className="rounded-xl" />
+                  <Image
+                    src={category.img}
+                    alt="hero"
+                    className="rounded-xl"
+                    height={600}
+                    width={1200}
+                  />
                 </div>
               </AnimatedDiv>
 
@@ -417,7 +441,13 @@ const ComponentSection = () => {
             >
               <AnimatedDiv>
                 <div className="w-full p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-4">
-                  <img src={category.img} alt="hero" className="rounded-xl" />
+                  <Image
+                    src={category.img}
+                    alt="hero"
+                    className="rounded-xl"
+                    height={600}
+                    width={1200}
+                  />
                 </div>
               </AnimatedDiv>
 

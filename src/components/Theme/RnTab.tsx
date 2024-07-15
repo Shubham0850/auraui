@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { LuArrowBigRightDash, LuCircleDollarSign } from "react-icons/lu";
 import { FaAndroid, FaApple, FaCode } from "react-icons/fa";
 import SourceCodeViewer from "@/utils/SourceCodeViewer";
+import Image from "next/image";
 
 interface TabsProps {
   previewLink: string;
@@ -19,7 +20,14 @@ const IPhoneMockup: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
     <div className="border-4 border-gray-100 dark:border-customDark shadow-2xl rounded-3xl overflow-hidden max-w-xs mx-auto relative bg-black m-5">
       <div className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-6 dark:bg-customDark rounded-full"></div>
       <div>
-        <img src={imageUrl} alt="iPhone Screenshot" className="w-full" />
+        <Image
+          src={imageUrl}
+          alt="iPhone Screenshot"
+          className="w-full"
+          layout="responsive"
+          width={700} // Set an appropriate width
+          height={475} // Set an appropriate height
+        />
       </div>
     </div>
   );
@@ -30,7 +38,14 @@ const AndroidMockup: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
     <div className="border-4 border-gray-100 dark:border-customDark shadow-2xl rounded-3xl overflow-hidden max-w-xs mx-auto relative bg-black m-5">
       <div className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 dark:bg-background rounded-full"></div>
       <div>
-        <img src={imageUrl} alt="Android Screenshot" className="w-full" />
+        <Image
+          src={imageUrl}
+          alt="Android Screenshot"
+          className="w-full"
+          layout="responsive"
+          width={700} // Set an appropriate width
+          height={475} // Set an appropriate height
+        />
       </div>
     </div>
   );
@@ -71,7 +86,7 @@ const RnTab: React.FC<TabsProps> = ({
     tabs.reduce((acc, tab) => {
       acc[tab.name] = React.createRef();
       return acc;
-    }, {} as { [key: string]: React.RefObject<HTMLButtonElement> })
+    }, {} as { [key: string]: React.RefObject<HTMLButtonElement> }),
   );
 
   useEffect(() => {

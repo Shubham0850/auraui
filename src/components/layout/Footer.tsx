@@ -1,22 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
-   const { theme } = useTheme();
-   const [currentTheme, setCurrentTheme] = useState("");
+  const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState("");
 
-   useEffect(() => {
-     if (theme) {
-       setCurrentTheme(theme);
-     }
-   }, [theme]);
+  useEffect(() => {
+    if (theme) {
+      setCurrentTheme(theme);
+    }
+  }, [theme]);
 
-   if (!currentTheme) {
-     return null; // or a loading spinner or placeholder
-   }
-
+  if (!currentTheme) {
+    return null; // or a loading spinner or placeholder
+  }
 
   return (
     <footer className="w-full">
@@ -24,9 +24,21 @@ const Footer = () => {
         <div className="md:order-1 w-[90px] ">
           <Link href={"/"}>
             {currentTheme === "light" ? (
-              <img className="w-auto h-8" src="/logo-light.png" alt="" />
+              <Image
+                className="w-auto h-8"
+                src="/logo-light.png"
+                alt=""
+                height={40}
+                width={40}
+              />
             ) : (
-              <img className="w-auto h-8" src="/logo-dark.png" alt="" />
+              <Image
+                className="w-auto h-8"
+                src="/logo-dark.png"
+                alt=""
+                height={40}
+                width={40}
+              />
             )}
           </Link>
         </div>

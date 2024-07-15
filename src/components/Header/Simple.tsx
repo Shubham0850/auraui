@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiShoppingCart, FiX } from "react-icons/fi";
+import Image from "next/image";
 
 const styles = {
   link: "text-base font-medium text-black",
@@ -40,10 +41,12 @@ const Simple = () => {
             <div className="xl:absolute xl:-translate-x-1/2 xl:inset-y-5 xl:left-1/2">
               <div className="flex-shrink-0">
                 <Link href="#" className="flex" title="Aura UI">
-                  <img
+                  <Image
                     className="w-auto h-8 xl:h-10"
                     src="https://www.auraui.com/logo-light.png"
                     alt="Aura UI Logo"
+                    height={200}
+                    width={200}
                   />
                 </Link>
               </div>

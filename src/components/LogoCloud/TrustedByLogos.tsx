@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // Logos data with local fallback
@@ -22,10 +23,12 @@ const TrustedByLogos = () => {
               key={index}
               className={`${index >= 4 ? "hidden md:block" : ""}`}
             >
-              <img
+              <Image
                 className="object-contain w-full h-8 mx-auto"
                 src={logo.src}
                 alt={logo.alt}
+                height={40}
+                width={40}
               />
             </div>
           ))}

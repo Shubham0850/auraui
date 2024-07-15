@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 
@@ -57,10 +58,12 @@ const CryptoConnector = () => {
                   className={`overflow-hidden transition-all duration-200 bg-white border ${wallet.borderColor} cursor-pointer rounded-xl hover:border-gray-400 hover:bg-gray-50`}
                 >
                   <div className="px-4 py-5">
-                    <img
+                    <Image
                       className="w-auto h-8 mx-auto"
                       src={wallet.logo}
                       alt={wallet.name}
+                      width={40}
+                      height={40}
                     />
                     <p className="mt-3 text-sm font-bold text-gray-900">
                       {wallet.name}

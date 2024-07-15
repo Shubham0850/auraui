@@ -1,6 +1,7 @@
 import React from "react";
 import { FiTwitter, FiFacebook, FiInstagram, FiGithub } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 
 const AuraFooterOne = () => {
   const iconStyles =
@@ -93,10 +94,12 @@ const AuraFooterOne = () => {
         <hr className="mt-16 mb-10 border-gray-800" />
 
         <div className="flex flex-wrap items-center justify-between">
-          <img
+          <Image
             className="h-8 auto md:order-1"
             src="https://www.auraui.com/logo-dark.png"
             alt="Aura UI Logo"
+            height={200}
+            width={200}
           />
 
           <ul className="flex items-center space-x-3 md:order-3">

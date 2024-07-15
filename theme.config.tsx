@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 
 import { useTheme } from "nextra-theme-docs";
 import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
 
 const config: DocsThemeConfig = {
   logo: () => {
@@ -23,9 +24,21 @@ const config: DocsThemeConfig = {
     return (
       <>
         {currentTheme === "light" ? (
-          <img className="w-auto h-8" src="/logo-light.png" alt="Logo Light" />
+          <Image
+            className="w-auto h-8"
+            src="/logo-light.png"
+            alt="Logo Light"
+            height={200}
+            width={200}
+          />
         ) : (
-          <img className="w-auto h-8" src="/logo-dark.png" alt="Logo Dark" />
+          <Image
+            className="w-auto h-8"
+            src="/logo-dark.png"
+            alt="Logo Dark"
+            height={200}
+            width={200}
+          />
         )}
       </>
     );

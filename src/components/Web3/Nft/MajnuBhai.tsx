@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Majnubhai = () => {
@@ -14,10 +15,12 @@ const Majnubhai = () => {
           <div className="mt-6 overflow-hidden bg-white border border-gray-200 md:mt-8 rounded-xl">
             <div className="md:flex">
               <div className="md:max-w-xs">
-                <img
+                <Image
                   className="object-cover w-full h-full"
                   src="https://www.auraui.com/memeimage/majnubhai.jpeg"
                   alt=""
+                  width={300}
+                  height={300}
                 />
               </div>
 

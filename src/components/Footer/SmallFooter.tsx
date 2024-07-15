@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FiTwitter, FiFacebook, FiInstagram } from "react-icons/fi";
+import Image from "next/image";
 
 // SVG Components as React Icons
 const TwitterIcon = () => <FiTwitter className="w-6 h-6" />;
@@ -19,10 +20,12 @@ const SmallFooter = (props: Props) => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
           <div className="xl:flex xl:items-center xl:justify-start">
-            <img
+            <Image
               className="w-auto mx-auto h-7"
               src="https://www.auraui.com/logo-dark.png"
               alt="Aura UI Logo"
+              height={200}
+              width={200}
             />
             <p className="mt-5 text-sm text-white xl:ml-6 xl:mt-0">
               © Copyright 2024 Aura UI

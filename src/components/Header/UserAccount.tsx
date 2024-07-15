@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
+import Image from "next/image";
 
 const styles = {
   link: "text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600",
@@ -24,10 +25,12 @@ const UserAccount = () => {
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <Link href="#" title="Aura UI" className="flex">
-              <img
+              <Image
                 className="w-auto h-8 lg:h-10"
                 src="https://www.auraui.com/logo-light.png"
                 alt="Aura UI Logo"
+                height={200}
+                width={200}
               />
             </Link>
           </div>

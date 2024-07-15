@@ -12,6 +12,7 @@ import RetroGrid from "../background/RetroGrid";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 import { MacDock } from "./Doc";
+import Image from "next/image";
 
 function AnimateNumber({ number }: { number: number }) {
   const count = useMotionValue(0);
@@ -25,7 +26,6 @@ function AnimateNumber({ number }: { number: number }) {
 
   return <motion.h1 className="text-4xl font-bold">{rounded}</motion.h1>;
 }
-
 
 const CounterExample = () => {
   return (
@@ -44,6 +44,13 @@ const CounterExample = () => {
 };
 
 const Hero = () => {
+  const imageDetails = [
+    { src: "/components/next.svg", alt: "nextjs" },
+    { src: "/components/react.svg", alt: "react js" },
+    { src: "/components/tailwind.svg", alt: "tailwind" },
+    { src: "/components/css-icon.svg", alt: "css" },
+    { src: "/components/framer.svg", alt: "framer" },
+  ];
   return (
     <div>
       <div className="absolute inset-0 w-full h-[1670px] sm:h-[1200px] lg:h-[950px]">
@@ -52,41 +59,31 @@ const Hero = () => {
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="border p-2 px-6 rounded-full text-xs">100x your development speed</span>
+            <span className="border p-2 px-6 rounded-full text-xs">
+              100x your development speed
+            </span>
             <h1 className="mt-5 text-[34px] font-bold leading-tight dark:text-gray-100  text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
               Copy. Paste. Ship.
             </h1>
             <p className="max-w-2xl mx-auto px-4 mt-6 text-base  dark:text-gray-300  leading-7 text-gray-600 font-inter">
-              Ship stunning React websites in hours, not months, with Aura UI’s sleek, animated components. Optimized for speed and SEO, just copy, paste, and customize for a flawless, high-performance site. 🚀
+              Ship stunning React websites in hours, not months, with Aura UI’s
+              sleek, animated components. Optimized for speed and SEO, just
+              copy, paste, and customize for a flawless, high-performance site.
+              🚀
             </p>
 
             <div className="flex items-center justify-center space-x-5 mt-5">
               {/* className="w-7 h-7 text-gray-900 dark:text-gray-300"  */}
-              <img
-                src="/components/next.svg"
-                alt="nextjs"
-                className="w-5 h-5 text-gray-900 dark:text-gray-300"
-              />
-              <img
-                src="/components/react.svg"
-                alt="react js"
-                className="w-5 h-5 text-gray-900 dark:text-gray-300"
-              />
-              <img
-                src="/components/tailwind.svg"
-                alt="tailwind"
-                className="w-5 h-5 text-gray-900 dark:text-gray-300"
-              />
-              <img
-                src="/components/css-icon.svg"
-                alt="css "
-                className="w-5 h-5 text-gray-900 dark:text-gray-300"
-              />
-              <img
-                src="/components/framer.svg"
-                alt="framer"
-                className="w-5 h-5 text-gray-900 dark:text-gray-300"
-              />
+              {imageDetails.map((image, index) => (
+                <Image
+                  key={index}
+                  src={image.src}
+                  alt={image.alt}
+                  width={20} // 5 * 4
+                  height={20} // 5 * 4
+                  className="text-gray-900 dark:text-gray-300"
+                />
+              ))}
             </div>
 
             <div className="relative inline-flex mt-10 group">

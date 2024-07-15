@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
+import Image from "next/image";
 
 const styles = {
   link: "text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70",
@@ -22,10 +23,12 @@ const CallToAction = () => {
         <nav className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <Link href="#" className="flex" title="Aura UI">
-              <img
+              <Image
                 className="w-auto h-8 lg:h-10"
                 src="https://www.auraui.com/logo-dark.png"
                 alt="Aura UI Logo"
+                height={200}
+                width={200}
               />
             </Link>
           </div>

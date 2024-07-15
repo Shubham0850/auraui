@@ -1,5 +1,6 @@
 import React from "react";
-import { FiTwitter } from "react-icons/fi"; // Importing Twitter icon from react-icons
+import { FiTwitter } from "react-icons/fi";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -51,10 +52,12 @@ const Developers = () => {
             <div key={index} className="overflow-hidden bg-white rounded-md">
               <div className="px-5 py-6">
                 <div className="flex items-center justify-between">
-                  <img
+                  <Image
                     className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
                     src={testimonial.avatar}
                     alt={`Avatar of ${testimonial.name}`}
+                    width={40}
+                    height={40}
                   />
                   <div className="min-w-0 ml-3 mr-auto">
                     <p className="text-base font-semibold text-black truncate">
