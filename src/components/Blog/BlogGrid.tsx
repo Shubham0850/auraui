@@ -1,4 +1,41 @@
 import React from "react";
+import Image from "next/image";
+
+type BlogCardProps = {
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+  category: string;
+};
+
+const BlogCard: React.FC<BlogCardProps> = ({
+  src,
+  alt,
+  title,
+  description,
+  category,
+}) => (
+  <div className="relative px-5 py-6 group sm:p-8 xl:p-12">
+    <div className="overflow-hidden aspect-w-16 aspect-h-8 rounded-2xl">
+      <Image
+        className="object-cover w-full h-full transition-all duration-200 group-hover:opacity-70"
+        src={src}
+        alt={alt}
+        width={300}
+        height={300}
+      />
+    </div>
+    <p className="text-xl font-bold text-gray-900 mt-7">{title}</p>
+    <p className="mt-3 text-base font-normal text-gray-600">{description}</p>
+    <span className="inline-flex mt-8 text-xs font-bold tracking-widest text-gray-400 uppercase">
+      {category}
+    </span>
+    <a href="#" title="">
+      <span className="absolute inset-0" aria-hidden="true"></span>
+    </a>
+  </div>
+);
 
 const BlogGrid = () => {
   return (
@@ -23,81 +60,27 @@ const BlogGrid = () => {
             </div>
 
             <div className="relative grid grid-cols-1 overflow-hidden bg-white divide-y divide-gray-200 shadow-xl md:grid-cols-3 md:divide-y-0 md:divide-x rounded-2xl">
-              {/* AuroraUI Blog Card */}
-              <div className="relative px-5 py-6 group sm:p-8 xl:p-12">
-                <div className="overflow-hidden aspect-w-16 aspect-h-8 rounded-2xl">
-                  <img
-                    className="object-cover w-full h-full transition-all duration-200 group-hover:opacity-70"
-                    src="https://www.auraui.com/aiimage/auraui.jpeg"
-                    alt="AuroraUI Blog"
-                  />
-                </div>
-                <p className="text-xl font-bold text-gray-900 mt-7">
-                  Discover AuroraUI: The Ultimate UI Library
-                </p>
-                <p className="mt-3 text-base font-normal text-gray-600">
-                  AuroraUI offers a vast array of components including Hero,
-                  Navbar, Footer, Article, Blog, SignIn, SignUp, Testimonial,
-                  and more. Perfect for AI and Web3 projects, with animations
-                  included.
-                </p>
-                <span className="inline-flex mt-8 text-xs font-bold tracking-widest text-gray-400 uppercase">
-                  UI Library
-                </span>
-                <a href="#" title="">
-                  <span className="absolute inset-0" aria-hidden="true"></span>
-                </a>
-              </div>
-
-              {/* Spider-Man Blog Card */}
-              <div className="relative px-5 py-6 group sm:p-8 xl:p-12">
-                <div className="overflow-hidden aspect-w-16 aspect-h-8 rounded-2xl">
-                  <img
-                    className="object-cover w-full h-full transition-all duration-200 group-hover:opacity-70"
-                    src="https://www.auraui.com/aiimage/spiderman.jpeg"
-                    alt="Spider-Man Blog"
-                  />
-                </div>
-                <p className="text-xl font-bold text-gray-900 mt-7">
-                  Spider-Man: The Evolution of a Hero
-                </p>
-                <p className="mt-3 text-base font-normal text-gray-600">
-                  Explore the journey of Spider-Man through comics, movies, and
-                  beyond. Learn about his impact on popular culture and his
-                  evolution over the years.
-                </p>
-                <span className="inline-flex mt-8 text-xs font-bold tracking-widest text-gray-400 uppercase">
-                  Entertainment
-                </span>
-                <a href="#" title="">
-                  <span className="absolute inset-0" aria-hidden="true"></span>
-                </a>
-              </div>
-
-              {/* Blockchain Blog Card */}
-              <div className="relative px-5 py-6 group sm:p-8 xl:p-12">
-                <div className="overflow-hidden aspect-w-16 aspect-h-8 rounded-2xl">
-                  <img
-                    className="object-cover w-full h-full transition-all duration-200 group-hover:opacity-70"
-                    src="https://www.auraui.com/aiimage/blockchain.jpeg"
-                    alt="Blockchain Blog"
-                  />
-                </div>
-                <p className="text-xl font-bold text-gray-900 mt-7">
-                  Understanding Blockchain Technology
-                </p>
-                <p className="mt-3 text-base font-normal text-gray-600">
-                  Dive into the world of blockchain technology. Understand its
-                  mechanisms, applications, and potential to revolutionize
-                  various industries.
-                </p>
-                <span className="inline-flex mt-8 text-xs font-bold tracking-widest text-gray-400 uppercase">
-                  Technology
-                </span>
-                <a href="#" title="">
-                  <span className="absolute inset-0" aria-hidden="true"></span>
-                </a>
-              </div>
+              <BlogCard
+                src="https://www.auraui.com/aiimage/auraui.jpeg"
+                alt="Aura UI Blog"
+                title="Discover Aura UI: The Ultimate UI Library"
+                description="Aura UI offers a vast array of components including Hero, Navbar, Footer, Article, Blog, SignIn, SignUp, Testimonial, and more. Perfect for AI and Web3 projects, with animations included."
+                category="UI Library"
+              />
+              <BlogCard
+                src="https://www.auraui.com/aiimage/spiderman.jpeg"
+                alt="Spider-Man Blog"
+                title="Spider-Man: The Evolution of a Hero"
+                description="Explore the journey of Spider-Man through comics, movies, and beyond. Learn about his impact on popular culture and his evolution over the years."
+                category="Entertainment"
+              />
+              <BlogCard
+                src="https://www.auraui.com/aiimage/blockchain.jpeg"
+                alt="Blockchain Blog"
+                title="Understanding Blockchain Technology"
+                description="Dive into the world of blockchain technology. Understand its mechanisms, applications, and potential to revolutionize various industries."
+                category="Technology"
+              />
             </div>
           </div>
 
