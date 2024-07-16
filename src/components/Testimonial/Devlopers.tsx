@@ -1,5 +1,6 @@
 import React from "react";
-import { FiTwitter } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
+
 import Image from "next/image";
 
 const testimonials = [
@@ -68,7 +69,7 @@ const Developers = () => {
                     </p>
                   </div>
                   {/* Replace the anchor tag with Twitter icon */}
-                  <FiTwitter className="w-6 h-6 text-sky-500 cursor-pointer" />
+                  <FaXTwitter className="w-6 h-6 ml-2 text-black cursor-pointer" />
                 </div>
                 <blockquote className="mt-5">
                   <p className="text-base text-gray-800">{testimonial.quote}</p>

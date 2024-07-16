@@ -21,17 +21,16 @@ const SaasHero = () => {
     <div>
       <header className="py-4 bg-gray-900 sm:py-5">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl flex items-center justify-between">
-          <Link href="#">
-            <Link href="#" className="shrink-0">
-              <Image
-                className="w-auto h-8"
-                src="/logo-dark.png"
-                alt="Logo"
-                height={40}
-                width={40}
-              />
-            </Link>
+          <Link href="#" className="shrink-0">
+            <Image
+              className="w-auto h-8"
+              src="/logo-dark.png"
+              alt="Logo"
+              height={200}
+              width={200}
+            />
           </Link>
+
           <div className="hidden lg:flex lg:items-center lg:space-x-4 lg:ml-12">
             {["Products", "Features", "Pricing", "Support"].map((item) => (
               <Link href="#" key={item} className={commonStyles.button}>
@@ -81,11 +80,11 @@ const SaasHero = () => {
             </p>
           </div>
           <div className="relative mt-12 sm:mt-16 lg:mt-20">
-            <Image
+            <img
               src="https://images.pexels.com/photos/8355405/pexels-photo-8355405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Video Mockup"
-              layout="fill"
-              objectFit="cover"
+              // layout="fill"
+              // objectFit="cover"
               className="rounded-3xl border-4 border-blue-500 p-4"
             />
             <div className="absolute inset-0 grid w-full h-full mt-20 sm:mt-36 lg:mt-40 xl:mt-44 place-items-center">

@@ -95,7 +95,7 @@ const AuraFooterOne = () => {
 
         <div className="flex flex-wrap items-center justify-between">
           <Image
-            className="h-8 auto md:order-1"
+            className="h-8 w-auto md:order-1"
             src="https://www.auraui.com/logo-dark.png"
             alt="Aura UI Logo"
             height={200}

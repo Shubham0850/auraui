@@ -28,16 +28,16 @@ const Footer = () => {
                 className="w-auto h-8"
                 src="/logo-light.png"
                 alt=""
-                height={40}
-                width={40}
+                height={200}
+                width={200}
               />
             ) : (
               <Image
                 className="w-auto h-8"
                 src="/logo-dark.png"
                 alt=""
-                height={40}
-                width={40}
+                height={200}
+                width={200}
               />
             )}
           </Link>

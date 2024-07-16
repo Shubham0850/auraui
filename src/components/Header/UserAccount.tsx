@@ -47,7 +47,7 @@ const UserAccount = () => {
             )}
           </button>
 
-          <div className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+          <div className="hidden mr-6 lg:flex lg:items-center lg:ml-auto lg:space-x-10">
             <Link href="#" className={styles.link} title="Features">
               Features
             </Link>
@@ -87,7 +87,7 @@ const UserAccount = () => {
               </div>
             </div>
 
-            <div className="px-6 mt-6">
+            <div className="px-6  mt-6">
               <Link href="#" className={styles.joinButton} role="button">
                 Get started now
               </Link>

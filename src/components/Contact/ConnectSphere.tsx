@@ -76,7 +76,7 @@ const Form = () => {
                     placeholder={`Enter your ${label.toLowerCase()}`}
                     className={commonInputStyles}
                   />
-                )
+                ),
             )}
             <div>
               <button type="submit" className={commonButtonStyles}>
