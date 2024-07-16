@@ -18,11 +18,11 @@ const style = {
     "inline-flex items-center justify-center w-full px-6 py-4 mt-4 text-base font-medium transition-all duration-200 border rounded-lg border-transparent sm:mt-0 sm:w-auto text-white focus:outline-none focus:ring-2 focus:ring-offset-2 bg-blue-600 hover:bg-blue-700 focus:ring-blue-700",
   subscribers: "flex items-center mt-8 justify-center lg:justify-start",
   avatars: "relative z-0 flex -space-x-3 overflow-hidden",
-  avatar: "relative z-30 inline-block w-12 h-12 rounded-full ring-2 ring-white",
-  subscriberText: "ml-4 text-base font-medium text-gray-500",
+  avatar: "relative z-30 inline-block w-10 h-10 rounded-full ring-2 ring-white",
+  subscriberText: "ml-4 text-sm font-medium text-gray-500",
   strongText: "text-gray-900",
   imageContainer: "lg:order-1",
-  image: "w-full rounded-md max-w-sm mx-auto",
+  image: "h-full rounded-md mx-auto",
 };
 
 const NewsletterSubscription: React.FC = () => {
@@ -52,26 +52,20 @@ const NewsletterSubscription: React.FC = () => {
 
             <div className={style.subscribers}>
               <div className={style.avatars}>
-                <Image
+                <img
                   className={style.avatar}
                   src="https://i.pravatar.cc/150?img=1"
                   alt="Subscriber 1"
-                  width={48}
-                  height={48}
                 />
-                <Image
+                <img
                   className={style.avatar}
                   src="https://i.pravatar.cc/150?img=2"
                   alt="Subscriber 2"
-                  width={48}
-                  height={48}
                 />
-                <Image
+                <img
                   className={style.avatar}
                   src="https://i.pravatar.cc/150?img=3"
                   alt="Subscriber 3"
-                  width={48}
-                  height={48}
                 />
               </div>
 
@@ -83,13 +77,10 @@ const NewsletterSubscription: React.FC = () => {
           </div>
 
           <div className={style.imageContainer}>
-            <Image
+            <img
               className={style.image}
               src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Newsletter Illustration"
-              width={500}
-              height={300}
-              layout="responsive"
             />
           </div>
         </div>

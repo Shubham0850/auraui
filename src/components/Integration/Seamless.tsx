@@ -27,32 +27,32 @@ const style = {
 const integrations = [
   {
     name: "Google Drive",
-    logo: "/images/google-drive-logo.png", // Update the path to your image
+    logo: "/icons/google-drive-logo.png", // Update the path to your image
     description: "Easily manage your files and documents with seamless Google Drive integration.",
   },
   {
     name: "Dropbox",
-    logo: "/images/dropbox-logo.png", // Update the path to your image
+    logo: "/icons/dropbox-logo.png", // Update the path to your image
     description: "Access and share your files anytime, anywhere with Dropbox integration.",
   },
   {
     name: "Asana",
-    logo: "/images/asana-logo.png", // Update the path to your image
+    logo: "/icons/asana-logo.png", // Update the path to your image
     description: "Streamline your project management process with Asana integration.",
   },
   {
     name: "Trello",
-    logo: "/images/trello-logo.png", // Update the path to your image
+    logo: "/icons/trello-logo.png", // Update the path to your image
     description: "Organize your tasks and collaborate efficiently with Trello integration.",
   },
   {
     name: "Zoom",
-    logo: "/images/zoom-logo.png", // Update the path to your image
+    logo: "/icons/zoom-logo.png", // Update the path to your image
     description: "Conduct virtual meetings effortlessly with Zoom integration.",
   },
   {
     name: "Notion",
-    logo: "/images/notion-logo.png", // Update the path to your image
+    logo: "/icons/notion-logo.png", // Update the path to your image
     description: "Boost your productivity with comprehensive note-taking and collaboration using Notion.",
   },
 ];
