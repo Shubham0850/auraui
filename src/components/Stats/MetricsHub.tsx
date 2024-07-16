@@ -1,61 +1,53 @@
 import React from "react";
 
-type Props = {};
+// Define common styles
+const style = {
+  section: "py-12 bg-gray-50 sm:py-16 lg:py-20",
+  container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
+  headerContainer: "max-w-2xl mx-auto text-center xl:max-w-4xl",
+  title: "text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj",
+  relativeContainer: "relative mt-12 lg:mt-20 lg:max-w-5xl lg:mx-auto",
+  gradientBackground: "absolute -inset-2",
+  gradientDiv: "w-full h-full mx-auto opacity-30 blur-lg filter",
+  contentContainer: "relative grid grid-cols-1 px-16 py-12 overflow-hidden text-center bg-white sm:grid-cols-2 gap-y-12 lg:grid-cols-4 rounded-2xl gap-x-20",
+  itemContainer: "flex flex-col items-center",
+  itemNumber: "text-5xl font-bold text-gray-900 lg:mt-3 lg:order-2 font-pj",
+  itemTitle: "mt-5 text-sm font-bold tracking-widest text-gray-600 uppercase lg:mt-0 lg:order-1 font-pj",
+};
 
-interface StatisticItemProps {
-  value: string;
-  description: string;
-  showDivider?: boolean;
-}
-
-const StatisticItem: React.FC<StatisticItemProps> = ({
-  value,
-  description,
-  showDivider,
-}) => (
-  <div className="relative lg:px-14">
-    {showDivider && (
-      <div className="absolute bottom-0 left-0 hidden w-px h-16 bg-gray-600 lg:block"></div>
-    )}
-    <p className="text-5xl font-bold text-white font-pj">{value}</p>
-    <p className="mt-5 text-lg font-normal text-gray-300">{description}</p>
-  </div>
-);
-
-const MetricsHub: React.FC<Props> = () => {
-  const statistics = [
-    {
-      value: "1.5M",
-      description: "Developers using AuraUI worldwide.",
-    },
-    {
-      value: "81%",
-      description: "Increase in development speed with AuraUI.",
-    },
-    {
-      value: "878+",
-      description: "Projects leveraging the power of AuraUI.",
-    },
+const StatsSection: React.FC = () => {
+  const stats = [
+    { title: "Blocks", number: "110+" },
+    { title: "Templates", number: "29" },
+    { title: "Customers", number: "3400+" },
+    { title: "Support Tickets", number: "2844" },
   ];
 
   return (
-    <section className="py-12 bg-gray-900 sm:py-16 lg:py-20">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">
-            Empowering Developers with AuraUI
+    <section className={style.section}>
+      <div className={style.container}>
+        <div className={style.headerContainer}>
+          <h2 className={style.title}>
+            AuraUI Crafting Unique & Rare UI Kits with TailwindCSS
           </h2>
         </div>
 
-        <div className="mt-8 sm:mt-12">
-          <div className="grid grid-cols-1 mt-16 text-center sm:text-left gap-y-12 gap-x-8 sm:grid-cols-3 lg:gap-0">
-            {statistics.map((stat, index) => (
-              <StatisticItem
-                key={index}
-                value={stat.value}
-                description={stat.description}
-                showDivider={index !== 0} // Hide divider for the first item
-              />
+        <div className={style.relativeContainer}>
+          <div className={style.gradientBackground}>
+            <div
+              className={style.gradientDiv}
+              style={{
+                background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
+              }}
+            ></div>
+          </div>
+
+          <div className={style.contentContainer}>
+            {stats.map((stat, index) => (
+              <div key={index} className={style.itemContainer}>
+                <p className={style.itemNumber}>{stat.number}</p>
+                <h3 className={style.itemTitle}>{stat.title}</h3>
+              </div>
             ))}
           </div>
         </div>
@@ -64,4 +56,4 @@ const MetricsHub: React.FC<Props> = () => {
   );
 };
 
-export default MetricsHub;
+export default StatsSection;

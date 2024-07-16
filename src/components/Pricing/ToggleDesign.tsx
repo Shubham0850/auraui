@@ -1,174 +1,142 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
-import Image from "next/image";
+import { FaStar, FaCheck, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 
-type Props = {};
+const styles = {
+  section: "py-12 sm:py-16 lg:py-20 xl:py-24 bg-gray-50",
+  container: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
+  textBase: "text-base font-normal leading-7 text-gray-800 lg:text-lg lg:leading-8",
+  heading: "mt-6 text-3xl font-semibold tracking-tight text-gray-900 lg:mt-8 sm:text-4xl lg:text-5xl",
+  subHeading: "mt-1 text-sm font-normal text-gray-600",
+  featureList: "mt-8 space-y-4 text-base text-gray-600 font-medium text-left",
+  button: "inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700",
+  starIcon: "w-5 h-5 text-yellow-400",
+  checkIcon: "w-5 h-5 mr-2 text-green-600 shrink-0",
+  timesIcon: "w-5 h-5 mr-2 text-gray-400 shrink-0",
+};
 
-const commonButtonStyles =
-  "inline-flex items-center justify-center w-full px-4 py-3 mt-6 font-semibold transition-all duration-200 border-2 rounded-full focus:outline-none";
-const commonListItemStyles = "inline-flex items-center space-x-2";
-
-const ToggleDesign = (props: Props) => {
+const PricingSection: React.FC = () => {
   return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Our UI Library Pricing & Plans
-          </h2>
-          <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Choose the plan that suits your needs.
-          </p>
-        </div>
-
-        <div className="mt-10">
-          <div className="flex items-center justify-center space-x-2.5">
-            <span className="text-base font-medium text-gray-900">
-              {" "}
-              Monthly{" "}
-            </span>
-
-            <button
-              type="button"
-              className="relative inline-flex flex-shrink-0 h-6 py-0.5 transition-colors duration-200 ease-in-out bg-transparent border-2 border-blue-600 rounded-full cursor-pointer w-12 focus:outline-none"
-              role="switch"
-            >
-              <span
-                aria-hidden="true"
-                className="inline-block w-4 h-4 transition duration-200 ease-in-out translate-x-6 bg-blue-600 rounded-full shadow pointer-events-none"
-              ></span>
-            </button>
-
-            <span className="text-base font-medium text-gray-900">
-              {" "}
-              Yearly{" "}
-            </span>
-          </div>
-        </div>
-
-        <div className="grid max-w-3xl grid-cols-1 gap-6 mx-auto sm:grid-cols-2 mt-14 md:gap-9">
-          <div className="overflow-hidden bg-transparent border-2 border-gray-200 rounded-md">
-            <div className="p-6 md:py-8 md:px-9">
-              <h3 className="text-xl font-semibold text-black">Personal</h3>
-              <p className="mt-2.5 text-sm text-gray-600">
-                All the basic features to boost your freelance career
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className="grid grid-cols-1 lg:grid-cols-5 xl:grid-cols-7 gap-y-12 lg:gap-x-8 xl:gap-x-16">
+          <div className="flex flex-col justify-between lg:col-span-2 xl:col-span-3">
+            <div className="flex-1">
+              <p className="text-base font-semibold text-blue-600">Say hello to AuraUI</p>
+              <h2 className={styles.heading}>Pricing that scales with your business</h2>
+              <p className={`mt-4 ${styles.textBase} lg:pr-24 lg:mt-6`}>
+                AuraUI gives you the blocks & components you need to create a truly professional website, landing page, or admin panel for your SaaS.
               </p>
+            </div>
 
-              <div className="flex items-end mt-5">
-                <div className="flex items-start">
-                  <span className="text-xl font-medium text-black"> $ </span>
-                  <p className="text-6xl font-medium tracking-tight">39</p>
+            <div className="pt-10 mt-10 border-t border-gray-200 lg:mt-0">
+              <p className="text-base font-semibold text-gray-900">Trusted by 50k+ customers</p>
+              <div className="flex items-center mt-3 space-x-2">
+                <div className="flex items-center">
+                  {[...Array(5)].map((_, index) => (
+                    <FaStar key={index} className={styles.starIcon} />
+                  ))}
                 </div>
-                <span className="ml-0.5 text-lg text-gray-600"> / month </span>
+                <p className="text-base font-normal text-gray-900">4.4/5</p>
+                <p className="text-base font-normal text-gray-600">•</p>
+                <p className="text-base font-normal text-gray-600">3,841 Reviews</p>
               </div>
-
-              <Link
-                className={`${commonButtonStyles} text-gray-900 bg-transparent border-fuchsia-600 hover:bg-fuchsia-600 hover:text-white focus:text-white focus:bg-fuchsia-600`}
-                href="#"
-                passHref
-              >
-                Start 14 Days Free Trial
-              </Link>
-
-              <ul className="flex flex-col mt-8 space-y-4">
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    10 Component License
-                  </span>
-                </li>
-
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    Full Aura UI Library Access
-                  </span>
-                </li>
-
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    120+ Coded Blocks
-                  </span>
-                </li>
-
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-400 line-through">
-                    Design Files Included
-                  </span>
-                </li>
-
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-400">
-                    Premium Support
-                  </span>
-                </li>
-              </ul>
             </div>
           </div>
 
-          <div className="overflow-hidden bg-white border-2 border-transparent rounded-md">
-            <div className="p-6 md:py-8 md:px-9">
-              <h3 className="text-xl font-semibold text-black">Agency</h3>
-              <p className="mt-2.5 text-sm text-gray-600">
-                All the extended features to boost your agency career
-              </p>
+          <div className="grid grid-cols-1 gap-6 text-center lg:col-span-3 xl:col-span-4 sm:grid-cols-2">
+            <div className="bg-white border border-gray-200 shadow-xl rounded-2xl sm:rounded-3xl">
+              <div className="px-4 py-5 sm:px-6 sm:py-8">
+                <h3 className="text-xs font-semibold tracking-widest text-gray-900 uppercase">Pro</h3>
+                <p className={styles.subHeading}>Best for startups</p>
 
-              <div className="flex items-end mt-5">
-                <div className="flex items-start">
-                  <span className="text-xl font-medium text-black"> $ </span>
-                  <p className="text-6xl font-medium tracking-tight">99</p>
+                <div className="mt-8 border border-gray-200 bg-gray-50 rounded-2xl">
+                  <div className="px-4 py-5 sm:p-6">
+                    <div className="flex items-end justify-center space-x-0.5">
+                      <p className="pb-1 text-xl font-semibold text-gray-900">$</p>
+                      <p className="text-5xl font-semibold tracking-tight text-gray-900">39</p>
+                      <p className="pb-1 text-xl font-semibold text-gray-900">/mo</p>
+                    </div>
+                    <p className="mt-2 text-sm font-normal text-gray-500">Billed Annually</p>
+                  </div>
                 </div>
-                <span className="ml-0.5 text-lg text-gray-600"> / month </span>
+
+                <ul className={styles.featureList}>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    Full Access to AuraUI
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    100 GB Free Storage
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    Unlimited Visitors
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    10 Agents
+                  </li>
+                  <li className="flex items-center text-gray-400">
+                    <FaTimes className={styles.timesIcon} />
+                    Live Chat Support
+                  </li>
+                </ul>
+
+                <div className="mt-8">
+                  <Link href="#" className={styles.button} role="button">
+                    Get 14 days free trial
+                  </Link>
+                </div>
               </div>
+            </div>
 
-              <Link
-                className={`${commonButtonStyles} text-white bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80`}
-                href="#"
-                passHref
-              >
-                Start 14 Days Free Trial
-              </Link>
+            <div className="bg-white border border-gray-200 rounded-2xl sm:rounded-3xl">
+              <div className="px-4 py-5 sm:px-6 sm:py-8">
+                <h3 className="text-xs font-semibold tracking-widest text-gray-900 uppercase">Exclusive</h3>
+                <p className={styles.subHeading}>Best for big teams</p>
 
-              <ul className="flex flex-col mt-8 space-y-4">
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    100 Components License
-                  </span>
-                </li>
+                <div className="mt-8 border border-gray-200 bg-gray-50 rounded-2xl">
+                  <div className="px-4 py-5 sm:p-6">
+                    <div className="flex items-end justify-center space-x-0.5">
+                      <p className="pb-1 text-xl font-semibold text-gray-900">$</p>
+                      <p className="text-5xl font-semibold tracking-tight text-gray-900">99</p>
+                      <p className="pb-1 text-xl font-semibold text-gray-900">/mo</p>
+                    </div>
+                    <p className="mt-2 text-sm font-normal text-gray-500">Billed Annually</p>
+                  </div>
+                </div>
 
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    Full Aura UI Library Access
-                  </span>
-                </li>
+                <ul className={styles.featureList}>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    Full Access to AuraUI
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    100 GB Free Storage
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    Unlimited Visitors
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    10 Agents
+                  </li>
+                  <li className="flex items-center">
+                    <FaCheck className={styles.checkIcon} />
+                    Live Chat Support
+                  </li>
+                </ul>
 
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    1000+ Coded Blocks
-                  </span>
-                </li>
-
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    Design Files Included
-                  </span>
-                </li>
-
-                <li className={commonListItemStyles}>
-                  <FaCheckCircle className="text-gray-400" />
-                  <span className="text-base font-medium text-gray-900">
-                    Premium Support
-                  </span>
-                </li>
-              </ul>
+                <div className="mt-8">
+                  <Link href="#" className={styles.button} role="button">
+                    Get 14 days free trial
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -177,4 +145,4 @@ const ToggleDesign = (props: Props) => {
   );
 };
 
-export default ToggleDesign;
+export default PricingSection;
