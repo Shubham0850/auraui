@@ -43,9 +43,9 @@ const Testimonial = () => {
 
 const Form = () => {
   const commonInputStyles =
-    "block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500";
+    "block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none dark:focus:ring-orange-500 focus:ring-orange-500 focus:border-orange-500 caret-orange-500";
   const commonButtonStyles =
-    "inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-md focus:outline-none hover:bg-orange-600 focus:bg-orange-600";
+    "inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-md focus:outline-none hover:bg-orange-600 focus:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-600 dark:focus:bg-orange-600 cursor-pointer";
 
   return (
     <div className="overflow-hidden bg-white rounded-md">
@@ -79,9 +79,7 @@ const Form = () => {
                 ),
             )}
             <div>
-              <button type="submit" className={commonButtonStyles}>
-                Get Free Quote
-              </button>
+              <div className={commonButtonStyles}>Get Free Quote</div>
             </div>
           </div>
         </form>
@@ -108,8 +106,8 @@ const ConnectSphere = () => {
                 It&apos;s time to build something exciting!
               </h2>
               <p className={commonTextStyles}>
-                Use Our Aura UI and start to made projects, by copy and paste
-                codes.
+                Use Our Aura UI and start to made projects, by just copy and
+                pasting codes.
               </p>
             </div>
             <div className="hidden md:mt-auto md:block">
