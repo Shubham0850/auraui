@@ -1,11 +1,20 @@
-import Image from "next/image";
 import React from "react";
 
 // Logos data with local fallback
-const logos = Array.from({ length: 12 }, (_, index) => ({
-  src: "/logo-light.png",
-  alt: `Logo ${index + 1}`,
-}));
+const logos = [
+  { src: "/logo-light.png", alt: "Logo 1" },
+  { src: "/logo-light.png", alt: "Logo 2" },
+  { src: "/logo-light.png", alt: "Logo 3" },
+  { src: "/logo-light.png", alt: "Logo 4" },
+  { src: "/logo-light.png", alt: "Logo 5" },
+  { src: "/logo-light.png", alt: "Logo 6" },
+  { src: "/logo-light.png", alt: "Logo 7" },
+  { src: "/logo-light.png", alt: "Logo 8" },
+  { src: "/logo-light.png", alt: "Logo 9" },
+  { src: "/logo-light.png", alt: "Logo 10" },
+  { src: "/logo-light.png", alt: "Logo 11" },
+  { src: "/logo-light.png", alt: "Logo 12" },
+];
 
 const TrustedByLogos = () => {
   return (
@@ -23,12 +32,10 @@ const TrustedByLogos = () => {
               key={index}
               className={`${index >= 4 ? "hidden md:block" : ""}`}
             >
-              <Image
+              <img
                 className="object-contain w-full h-8 mx-auto"
                 src={logo.src}
                 alt={logo.alt}
-                height={40}
-                width={40}
               />
             </div>
           ))}
