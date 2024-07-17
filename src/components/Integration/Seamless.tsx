@@ -27,32 +27,32 @@ const style = {
 const integrations = [
   {
     name: "Google Drive",
-    logo: "/images/google-drive-logo.png", // Update the path to your image
+    logo: "https://auraui.com/icons/google-drive.png",
     description: "Easily manage your files and documents with seamless Google Drive integration.",
   },
   {
     name: "Dropbox",
-    logo: "/images/dropbox-logo.png", // Update the path to your image
+    logo: "https://auraui.com/icons/dropbox.png",
     description: "Access and share your files anytime, anywhere with Dropbox integration.",
   },
   {
     name: "Asana",
-    logo: "/images/asana-logo.png", // Update the path to your image
+    logo: "https://auraui.com/icons/asana.png",
     description: "Streamline your project management process with Asana integration.",
   },
   {
     name: "Trello",
-    logo: "/images/trello-logo.png", // Update the path to your image
+    logo: "https://auraui.com/icons/trello.png",
     description: "Organize your tasks and collaborate efficiently with Trello integration.",
   },
   {
     name: "Zoom",
-    logo: "/images/zoom-logo.png", // Update the path to your image
+    logo: "https://auraui.com/icons/zoom.png",
     description: "Conduct virtual meetings effortlessly with Zoom integration.",
   },
   {
-    name: "Notion",
-    logo: "/images/notion-logo.png", // Update the path to your image
+    name: "G Meet",
+    logo: "https://auraui.com/icons/meet.png",
     description: "Boost your productivity with comprehensive note-taking and collaboration using Notion.",
   },
 ];
@@ -74,12 +74,10 @@ const Seamless: React.FC = () => {
               <div key={integration.name} className={style.card}>
                 <div className={style.cardContent}>
                   <div className={style.cardHeader}>
-                    <Image
+                    <img
                       className={style.cardImage}
                       src={integration.logo}
                       alt={integration.name}
-                      width={48}
-                      height={48}
                     />
                     <div className={style.cardTitleContainer}>
                       <p className={style.cardTitle}>{integration.name}</p>
