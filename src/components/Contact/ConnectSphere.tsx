@@ -30,8 +30,8 @@ const Testimonial = () => (
     <StarRating />
     <blockquote className="mt-6">
       <p className="text-lg leading-relaxed text-white">
-        Building my new site with AuraUI was a breeze! It's faster and easier
-        now—I just pick a page, make changes, and hit save.
+        Building my new site with AuraUI was a breeze! It&apos;s faster and
+        easier now—I just pick a page, make changes, and hit save.
       </p>
     </blockquote>
     <div className="flex items-center mt-8">
@@ -106,7 +106,7 @@ const ConnectSphere = () => {
           <div className="flex flex-col justify-between lg:py-5">
             <div>
               <h2 className={style.commonTitleStyles}>
-                It's time to build something exciting!
+                It&apos;s time to build something exciting!
               </h2>
               <p className={style.commonTextStyles}>
                 Use Aura UI and start creating projects by copying and pasting
