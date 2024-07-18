@@ -100,7 +100,7 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
            Free component
          </div> */}
             <button
-              className={`rounded-lg dark:bg-customDark bg-gray-200 text-gray-600 dark:text-gray-400 `}
+              className={`rounded-lg md:block hidden dark:bg-customDark bg-gray-200 text-gray-600 dark:text-gray-400 `}
               onClick={handleLinkClick}
             >
               <span className="flex items-center gap-2 px-6 py-2 text-sm font-medium">
