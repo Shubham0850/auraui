@@ -29,7 +29,7 @@ const TheBusiness = () => {
           <div className="absolute inset-0">
             <Image
               className="object-cover"
-              src="/memeimage/women-working.jpg"
+              src="https://www.auraui.com/memeimage/working-women.jpg"
               alt="Girl working on laptop"
               layout="fill"
               objectFit="cover"
