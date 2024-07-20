@@ -1,5 +1,8 @@
 import ElementWrapper from "@/components/Theme/ElementWrapper";
 import Project from "@/components/Roadmap/Project";
+import GrowthSection from "@/components/Roadmap/Growth";
+import CompleteProject from "@/components/Roadmap/CompleteProject";
+import Comprehensive from "@/components/Roadmap/Comprehensive";
 
 # Roadmap Component
 
@@ -13,10 +16,40 @@ To integrate Roadmap Components into your Next.js Project, copy and paste the fo
 
 ## ProjectRoadmap
 
-ProjectRoadmap is a responsive component that showcases the strategic phases of a project's journey. It includes a visually appealing image and a detailed description of each phase, from launch to growth, highlighting the key steps and objectives. This component can be integrated into any project to provide a clear and engaging roadmap for stakeholders and team members.
+ProjectRoadmap is a responsive component that showcases the strategic phases of a project's journey.
 
 <ElementWrapper
   previewLink="/roadmap/project"
   componentPath="Roadmap/Project.tsx"
   element={<Project />}
+/>
+
+## Growth Roadmap
+
+Follow our project's evolution from start to success with AuraUI's comprehensive Roadmap.
+
+<ElementWrapper
+  previewLink="/roadmap/growth"
+  componentPath="Roadmap/Growth.tsx"
+  element={<GrowthSection />}
+/>
+
+## Complete Project Roadmap
+
+Follow the detailed phases of our project with AuraUI's comprehensive Roadmap section.
+
+<ElementWrapper
+  previewLink="/roadmap/complete-project"
+  componentPath="Roadmap/CompleteProject.tsx"
+  element={<CompleteProject />}
+/>
+
+## Comprehensive Roadmap Section
+
+Display detailed phases of AuraUI's project roadmap with our FullRoadmapSection component.
+
+<ElementWrapper
+  previewLink="/roadmap/comprehensive"
+  componentPath="Roadmap/Comprehensive.tsx"
+  element={<Comprehensive />}
 />
