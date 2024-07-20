@@ -26,31 +26,31 @@ const style = {
 const TeamSection: React.FC = () => {
   const teamMembers = [
     {
-      src: "/memeimage/akshay1.webp",
+      src: "https://auraui.com/memeimage/akshay1.webp",
       alt: "Akshay Kumar",
       name: "Akshay Kumar",
       position: "Founder",
     },
     {
-      src: "/memeimage/babubhaiya.jpg",
+      src: "https://auraui.com/memeimage/babubhaiya.jpg",
       alt: "Babubhaiya",
       name: "Babu Bhaiya",
       position: "Business Development Manager",
     },
     {
-      src: "/memeimage/udayshetty.jpg",
+      src: "https://auraui.com/memeimage/udayshetty.jpg",
       alt: "Uday Shetty",
       name: "Uday Shetty",
       position: "Director of Product",
     },
     {
-      src: "/memeimage/sunil1.jpg",
+      src: "https://auraui.com/memeimage/sunil1.jpg",
       alt: "Sunil",
       name: "Sunil",
       position: "Business Analyst",
     },
     {
-      src: "/memeimage/majnubhai.jpeg",
+      src: "https://auraui.com/memeimage/majnubhai.jpeg",
       alt: "Majnu Bhai",
       name: "Majnu Bhai",
       position: "Director of Sales",
