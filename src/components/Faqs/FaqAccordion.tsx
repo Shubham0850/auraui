@@ -109,8 +109,7 @@ const FAQAccordion = () => {
                 Still have questions?
               </h3>
               <p className="mt-2 text-base font-normal text-gray-600">
-                Can't find the answer you're looking for? Please chat with our
-                friendly team.
+                {"Can't find the answer you're looking for? Please chat with our friendly team."}
               </p>
               <div className="mt-6">
                 <Link
