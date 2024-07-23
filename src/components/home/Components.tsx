@@ -37,7 +37,7 @@ const baseCategories = [
   {
     name: "Footer",
     img: "/components/footer.png",
-    link: "/components/footer",
+    link: "/all-components/footer",
     items: 2,
   },
   {

@@ -28,38 +28,44 @@ interface HeroData {
   name: string;
 }
 
-const Headerdata: HeroData[] = [
+const Footerdata: HeroData[] = [
   {
     id: 1,
-    img: "/all-components/header/simple.png",
-    link: "/components/header#simple-header",
-    name: "Simple Header",
+    img: "/all-components/footer/aura.png",
+    link: "/components/footer#aura-footer-component",
+    name: "Aura Footer Component",
   },
   {
     id: 2,
-    img: "/all-components/header/useraccount.png",
-    link: "/components/header#user-account-navbar",
-    name: "User Account Header",
+    img: "/all-components/footer/small.png",
+    link: "/components/footer#small-footer-component",
+    name: "Small Footer Component",
   },
   {
     id: 3,
-    img: "/all-components/header/calltoaction.png",
-    link: "/components/header#call-to-action-navbar",
-    name: "Call-to-Action Header",
+    img: "/all-components/footer/light.png",
+    link: "/components/footer#light-footer-component",
+    name: "Light Footer Component",
   },
   {
     id: 4,
-    img: "/all-components/header/authentication.png",
-    link: "/components/header#authentication-navbar",
-    name: "Authentication Header",
+    img: "/all-components/footer/blue.png",
+    link: "/components/footer#blue-footer-component",
+    name: "blue Footer Component",
+  },
+  {
+    id: 5,
+    img: "/all-components/footer/lightfooter.png",
+    link: "/components/footer#light-footer-secondary-component",
+    name: "Light Footer Secondary Component",
   },
 ];
 
-const Header: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <div>
-      <div className="mt-10 grid  gap-8 grid-cols-1 ">
-        {Headerdata.map((category) => (
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {Footerdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -70,7 +76,7 @@ const Header: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={1200} // Adjust width as needed
+                  width={700} // Adjust width as needed
                   height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
@@ -86,4 +92,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Footer;

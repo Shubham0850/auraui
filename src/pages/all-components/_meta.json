@@ -19,5 +19,12 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "footer": {
+    "title": "Footer",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }
