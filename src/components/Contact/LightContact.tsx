@@ -29,8 +29,8 @@ const LightContact = () => {
         <div className={headerStyles}>
           <h2 className={titleStyles}>Contact Us</h2>
           <p className={descriptionStyles}>
-            Get in touch with us for any inquiries or support. We're here to
-            help you with any questions you may have.
+            Get in touch with us for any inquiries or support. We&apos;re here
+            to help you with any questions you may have.
           </p>
         </div>
 

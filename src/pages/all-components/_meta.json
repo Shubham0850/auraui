@@ -1,0 +1,23 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "hero": {
+    "title": "Hero",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "header": {
+    "title": "Header",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  }
+}
