@@ -70,8 +70,8 @@ const Header: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={600} // Adjust width as needed
-                  height={400} // Adjust height as needed
+                  width={1200} // Adjust width as needed
+                  height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
