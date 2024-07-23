@@ -21,28 +21,46 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface StatsData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const statsdata: StatsData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/stats/metricshub.png",
+    link: "/components/stats#metricshub-stats",
+    name: "Metricshub Stats",
+  },
+  {
+    id: 2,
+    img: "/all-components/stats/achievements.png",
+    link: "/components/stats#achievements-stats-section",
+    name: "Achievements Stats Section",
+  },
+  {
+    id: 3,
+    img: "/all-components/stats/growth.png",
+    link: "/components/stats#growth-impact-stats-section",
+    name: "Growth Impact Stats Section",
+  },
+  {
+    id: 4,
+    img: "/all-components/stats/solutions.png",
+    link: "/components/stats#solutions-stats-component",
+    name: "Solutions Stats Component",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Stats: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <h2 className="mt-5 text-[26px] font-semibold ">All Stats Components</h2>
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {statsdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -53,7 +71,7 @@ const Hero: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={600}
+                  width={700}
                   height={500}
                   className="w-full rounded-xl"
                 />
@@ -69,4 +87,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Stats;

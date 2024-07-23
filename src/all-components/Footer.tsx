@@ -21,28 +21,52 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface FooterData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const Footerdata: FooterData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/footer/aura.png",
+    link: "/components/footer#aura-footer-component",
+    name: "Aura Footer Component",
+  },
+  {
+    id: 2,
+    img: "/all-components/footer/small.png",
+    link: "/components/footer#small-footer-component",
+    name: "Small Footer Component",
+  },
+  {
+    id: 3,
+    img: "/all-components/footer/light.png",
+    link: "/components/footer#light-footer-component",
+    name: "Light Footer Component",
+  },
+  {
+    id: 4,
+    img: "/all-components/footer/blue.png",
+    link: "/components/footer#blue-footer-component",
+    name: "blue Footer Component",
+  },
+  {
+    id: 5,
+    img: "/all-components/footer/lightfooter.png",
+    link: "/components/footer#light-footer-secondary-component",
+    name: "Light Footer Secondary Component",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <h2 className="mt-5 text-[26px] font-semibold ">All Footer Components</h2>
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {Footerdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -53,8 +77,8 @@ const Hero: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={600}
-                  height={500}
+                  width={700} // Adjust width as needed
+                  height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
@@ -69,4 +93,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Footer;

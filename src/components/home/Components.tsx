@@ -37,19 +37,19 @@ const baseCategories = [
   {
     name: "Footer",
     img: "/components/footer.png",
-    link: "/components/footer",
-    items: 2,
+    link: "/all-components/footer",
+    items: 5,
   },
   {
     name: "Signup",
     img: "/components/signup.png",
-    link: "/components/sign-up",
+    link: "/all-components/sign-up",
     items: 1,
   },
   {
     name: "Signin",
     img: "/components/signin.png",
-    link: "/components/sign-in",
+    link: "/all-components/sign-in",
     items: 1,
   },
 ];
@@ -57,14 +57,14 @@ const baseCategories = [
 const marketingCategories = [
   {
     name: "Team",
-    link: "/components/teams",
-    items: 1,
+    link: "/all-components/teams",
+    items: 3,
     img: "/components/teams.png",
   },
   {
     name: "Stats",
-    link: "/components/stats",
-    items: 1,
+    link: "/all-components/stats",
+    items: 4,
     img: "/components/stats.png",
   },
   {

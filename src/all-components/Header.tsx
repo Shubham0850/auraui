@@ -21,14 +21,14 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface HeaderData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const Headerdata: HeaderData[] = [
   {
     id: 1,
     img: "/all-components/header/simple.png",
@@ -58,8 +58,9 @@ const herodata: HeroData[] = [
 const Header: React.FC = () => {
   return (
     <div>
+      <h2 className="mt-5 text-[26px] font-semibold ">All Header Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 ">
-        {herodata.map((category) => (
+        {Headerdata.map((category) => (
           <a
             key={category.id}
             href={category.link}

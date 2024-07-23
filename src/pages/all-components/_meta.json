@@ -19,5 +19,41 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "footer": {
+    "title": "Footer",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "sign-up": {
+    "title": "SignUp",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "sign-in": {
+    "title": "SignIn",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "teams": {
+    "title": "Teams",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "stats": {
+    "title": "Stats",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
+
 }
