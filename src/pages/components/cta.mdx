@@ -1,6 +1,10 @@
 import ElementWrapper from "@/components/Theme/ElementWrapper";
 import Simple from "@/components/CTA/Simple";
 import RoundedDesign from "@/components/CTA/RoundedDesign";
+import SmallCTA from "@/components/CTA/SmallCTA";
+import MiniCTA from "@/components/CTA/MiniCTA";
+import ConnectionCTA from "@/components/CTA/ConnectionCTA";
+import ExploreDataCTA from "@/components/CTA/ExploreDataCTA";
 
 <h1 className="text-gray-200 text-[14px] mt-3 ">
   <span className="text-gray-500 ">Docs ></span> CTA
@@ -26,4 +30,44 @@ To integrate these components into your Next.js project, copy and paste the foll
   previewLink="/cta/rounded"
   componentPath="CTA/RoundedDesign.tsx"
   element={<RoundedDesign />}
+/>
+
+## Small CTA
+
+The Small CTA section encourages users to sign up for exclusive offers and updates. It includes a user-friendly form and assures users of data security.
+
+<ElementWrapper
+  previewLink="/cta/small-cta"
+  componentPath="CTA/SmallCTA.tsx"
+  element={<SmallCTA />}
+/>
+
+## Mini CTA
+
+The Mini CTA section invites users to get full access to the Celebration kit. It features a straightforward form for email submission and a prominent call-to-action button.
+
+<ElementWrapper
+  previewLink="/cta/mini-cta"
+  componentPath="CTA/MiniCTA.tsx"
+  element={<MiniCTA />}
+/>
+
+## Connection CTA
+
+The Connection CTA section invites users to join a community of developers. It features a compelling headline, a brief description, and a call-to-action button with an engaging visual element.
+
+<ElementWrapper
+  previewLink="/cta/connection-cta"
+  componentPath="CTA/ConnectionCTA.tsx"
+  element={<ConnectionCTA />}
+/>
+
+## Explore Data CTA
+
+The Explore Data CTA section encourages users to gain full access to the Celebration kit, featuring a call-to-action with options to try for free or contact sales. It also provides a link for existing users to log in.
+
+<ElementWrapper
+  previewLink="/cta/explore-data"
+  componentPath="CTA/ExploreDataCTA.tsx"
+  element={<ExploreDataCTA />}
 />
