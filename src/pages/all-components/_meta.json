@@ -47,5 +47,13 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "stats": {
+    "title": "Stats",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
+
 }

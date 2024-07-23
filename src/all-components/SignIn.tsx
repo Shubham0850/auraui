@@ -40,6 +40,7 @@ const SignIndata: SignInData[] = [
 const SignIn: React.FC = () => {
   return (
     <div>
+      <h2 className="mt-5 text-[26px] font-semibold ">All SignIn Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
         {SignIndata.map((category) => (
           <a
@@ -52,8 +53,8 @@ const SignIn: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={700} 
-                  height={500} 
+                  width={700}
+                  height={500}
                   className="w-full rounded-xl"
                 />
               </div>

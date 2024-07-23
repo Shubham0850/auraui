@@ -63,8 +63,8 @@ const marketingCategories = [
   },
   {
     name: "Stats",
-    link: "/components/stats",
-    items: 1,
+    link: "/all-components/stats",
+    items: 4,
     img: "/components/stats.png",
   },
   {

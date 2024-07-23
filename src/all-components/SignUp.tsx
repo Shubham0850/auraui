@@ -40,6 +40,7 @@ const SignUpdata: SignUPData[] = [
 const SignUp: React.FC = () => {
   return (
     <div>
+      <h2 className="mt-5 text-[26px] font-semibold ">All SignUp Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
         {SignUpdata.map((category) => (
           <a

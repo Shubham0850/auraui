@@ -58,6 +58,7 @@ const Headerdata: HeaderData[] = [
 const Header: React.FC = () => {
   return (
     <div>
+      <h2 className="mt-5 text-[26px] font-semibold ">All Header Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 ">
         {Headerdata.map((category) => (
           <a
