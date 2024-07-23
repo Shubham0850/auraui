@@ -30,9 +30,9 @@ const ConnectionCTASecondary = () => {
             />
             <blockquote>
               <p className={blockquoteStyles}>
-                “AuraUI provides the best components I've ever used. The designs
-                are sleek and the integration is seamless. Highly recommend for
-                any developer.”
+                “AuraUI provides the best components I&apos;ve ever used. The
+                designs are sleek and the integration is seamless. Highly
+                recommend for any developer.”
               </p>
             </blockquote>
             <p className={nameStyles}>Jenny Wilson</p>
