@@ -38,18 +38,18 @@ const baseCategories = [
     name: "Footer",
     img: "/components/footer.png",
     link: "/all-components/footer",
-    items: 2,
+    items: 5,
   },
   {
     name: "Signup",
     img: "/components/signup.png",
-    link: "/components/sign-up",
+    link: "/all-components/sign-up",
     items: 1,
   },
   {
     name: "Signin",
     img: "/components/signin.png",
-    link: "/components/sign-in",
+    link: "/all-components/sign-in",
     items: 1,
   },
 ];

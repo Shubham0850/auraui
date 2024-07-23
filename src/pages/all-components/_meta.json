@@ -26,5 +26,19 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "sign-up": {
+    "title": "SignUp",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "sign-in": {
+    "title": "SignIn",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }

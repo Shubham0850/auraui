@@ -21,27 +21,27 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface SignInData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const SignIndata: SignInData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/sign-in/sign-in1.png",
+    link: "/components/sign-in#signin-card-component",
+    name: "SignIn Card Component",
+  },
 ];
 
-const Hero: React.FC = () => {
+const SignIn: React.FC = () => {
   return (
     <div>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {SignIndata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -52,8 +52,8 @@ const Hero: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={600}
-                  height={500}
+                  width={700} 
+                  height={500} 
                   className="w-full rounded-xl"
                 />
               </div>
@@ -68,4 +68,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default SignIn;
