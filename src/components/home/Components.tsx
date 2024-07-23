@@ -25,13 +25,13 @@ const baseCategories = [
   {
     name: "Hero",
     img: "/components/hero.png",
-    link: "/components/hero",
+    link: "/all-components/hero",
     items: 1,
   },
   {
     name: "Header",
     img: "/components/header.png",
-    link: "/components/header",
+    link: "/all-components/header",
     items: 4,
   },
   {
