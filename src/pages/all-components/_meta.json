@@ -40,5 +40,12 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "teams": {
+    "title": "Teams",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }

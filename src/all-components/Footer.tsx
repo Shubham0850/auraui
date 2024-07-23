@@ -21,14 +21,14 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface FooterData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const Footerdata: HeroData[] = [
+const Footerdata: FooterData[] = [
   {
     id: 1,
     img: "/all-components/footer/aura.png",

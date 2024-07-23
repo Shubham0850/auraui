@@ -57,8 +57,8 @@ const baseCategories = [
 const marketingCategories = [
   {
     name: "Team",
-    link: "/components/teams",
-    items: 1,
+    link: "/all-components/teams",
+    items: 3,
     img: "/components/teams.png",
   },
   {

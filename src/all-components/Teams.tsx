@@ -21,45 +21,39 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeaderData {
+interface TeamsData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const Headerdata: HeaderData[] = [
+const Teamsdata: TeamsData[] = [
   {
     id: 1,
-    img: "/all-components/header/simple.png",
-    link: "/components/header#simple-header",
-    name: "Simple Header",
+    img: "/all-components/teams/visionary.png",
+    link: "/components/teams#visionary-vanguard-teams",
+    name: "Visionary Vanguard Teams",
   },
   {
     id: 2,
-    img: "/all-components/header/useraccount.png",
-    link: "/components/header#user-account-navbar",
-    name: "User Account Header",
+    img: "/all-components/teams/exclusive.png",
+    link: "/components/teams#exclusive-team",
+    name: "Exclusive Teams",
   },
   {
     id: 3,
-    img: "/all-components/header/calltoaction.png",
-    link: "/components/header#call-to-action-navbar",
-    name: "Call-to-Action Header",
-  },
-  {
-    id: 4,
-    img: "/all-components/header/authentication.png",
-    link: "/components/header#authentication-navbar",
-    name: "Authentication Header",
+    img: "/all-components/teams/specialist.png",
+    link: "/components/teams#specialist-team",
+    name: "Specialist Team",
   },
 ];
 
-const Header: React.FC = () => {
+const Teams: React.FC = () => {
   return (
     <div>
-      <div className="mt-10 grid  gap-8 grid-cols-1 ">
-        {Headerdata.map((category) => (
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {Teamsdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -70,8 +64,8 @@ const Header: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={1200} // Adjust width as needed
-                  height={200} // Adjust height as needed
+                  width={700}
+                  height={500}
                   className="w-full rounded-xl"
                 />
               </div>
@@ -86,4 +80,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Teams;
