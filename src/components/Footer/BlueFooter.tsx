@@ -7,6 +7,7 @@ import {
   FiMessageSquare,
 } from "react-icons/fi";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlueFooter = () => {
   const iconStyles = {
@@ -35,13 +36,13 @@ const BlueFooter = () => {
             <ul className="mt-8 space-y-4">
               {["About", "Features", "Works", "Career"].map((link, idx) => (
                 <li key={idx}>
-                  <a
+                  <Link
                     href="#"
                     title={link}
                     className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -57,13 +58,13 @@ const BlueFooter = () => {
                 "Privacy Policy",
               ].map((link, idx) => (
                 <li key={idx}>
-                  <a
+                  <Link
                     href="#"
                     title={link}
                     className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -79,13 +80,13 @@ const BlueFooter = () => {
                 "YouTube Playlist",
               ].map((link, idx) => (
                 <li key={idx}>
-                  <a
+                  <Link
                     href="#"
                     title={link}
                     className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -101,13 +102,13 @@ const BlueFooter = () => {
                 "Privacy Policy",
               ].map((link, idx) => (
                 <li key={idx}>
-                  <a
+                  <Link
                     href="#"
                     title={link}
                     className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -137,14 +138,14 @@ const BlueFooter = () => {
                   },
                 ].map((item, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${iconStyles.base} ${iconStyles.hoverFocus}`}
                     >
                       {item.icon}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -153,13 +154,13 @@ const BlueFooter = () => {
                 {["Privacy Policy", "Terms & Conditions", "Support"].map(
                   (link, idx) => (
                     <li key={idx}>
-                      <a
+                      <Link
                         href="#"
                         title={link}
                         className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
                       >
                         {link}
-                      </a>
+                      </Link>
                     </li>
                   ),
                 )}

@@ -37,14 +37,14 @@ const LightFooter = () => {
               Build with passion. Get connected with AuraUI and get a perfect
               fluency in your Frontend Works.
             </p>
-            <a
+            <Link
               href="#"
               title="Start Live Chat"
               className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700 mt-7"
             >
               <FiMessageSquare className="w-6 h-6" />
               Start Live Chat
-            </a>
+            </Link>
           </div>
 
           {[
@@ -87,13 +87,13 @@ const LightFooter = () => {
               <ul className="mt-6 space-y-5">
                 {section.links.map((link, idx) => (
                   <li key={idx}>
-                    <a
+                    <Link
                       href="#"
                       title={link}
                       className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
                     >
                       {link}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -128,14 +128,14 @@ const LightFooter = () => {
               },
             ].map((item, index) => (
               <li key={index}>
-                <a
+                <Link
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${iconStyles.base} ${iconStyles.hoverFocus}`}
                 >
                   {item.icon}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
