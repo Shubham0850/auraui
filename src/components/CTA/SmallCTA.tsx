@@ -10,7 +10,7 @@ const SmallCTA = () => {
     "max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600";
   const formStyles = "max-w-xl mx-auto mt-12";
   const inputStyles =
-    "block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-md caret-indigo-600 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600";
+    "block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-md caret-indigo-600 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 dark:bg-white";
   const buttonStyles =
     "inline-flex items-center cursor-pointer justify-center w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-indigo-600 border border-transparent rounded-md sm:ml-4 sm:mt-0 sm:w-auto hover:bg-indigo-700 focus:bg-indigo-700";
   const iconStyles = "flex-shrink-0 w-5 h-5 text-gray-600";

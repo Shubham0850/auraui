@@ -6,7 +6,7 @@ const MiniCTA = () => {
   const headingStyles = "text-4xl font-bold text-black lg:max-w-md";
   const formStyles = "px-10 mt-8 lg:mt-0 lg:px-0";
   const inputStyles =
-    "block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600";
+    "block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 dark:bg-white";
   const buttonStyles =
     "inline-flex cursor-pointer items-center justify-center flex-shrink-0 w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-blue-700 focus:bg-blue-700";
 
@@ -14,8 +14,7 @@ const MiniCTA = () => {
     <section className={containerStyles}>
       <div className={innerContainerStyles}>
         <div className="text-center lg:flex lg:items-center lg:justify-between lg:text-left">
-          <h2 className={headingStyles}>Unlock Your AuraUI Experience</h2>
-
+          <h2 className={headingStyles}>Unlock Your AuraUI Experience</h2>o{" "}
           <form action="#" method="POST" className={formStyles}>
             <div className="sm:flex sm:justify-center lg:justify-end">
               <div>
