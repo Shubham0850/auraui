@@ -53,7 +53,7 @@ const SignUp: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={700} // Adjust width as needed
+                  width={2000} // Adjust width as needed
                   height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />

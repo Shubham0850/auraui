@@ -81,8 +81,8 @@ const marketingCategories = [
   },
   {
     name: "Contact",
-    link: "/components/contact",
-    items: 1,
+    link: "/all-components/contacts",
+    items:4,
     img: "/components/contact.png",
   },
   // { name: "Text Input", items: 69, img: "/components/coming-soon.png" },

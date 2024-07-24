@@ -65,7 +65,7 @@ const Teams: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={700}
+                  width={2000}
                   height={500}
                   className="w-full rounded-xl"
                 />
