@@ -21,28 +21,28 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface NewsletterData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const newsletterdata: NewsletterData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/newsletter/subscription.png",
+    link: "/components/newsletter#newslettersubscription",
+    name: "Newsletter Subscription",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Newsletter: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
+      <h2 className="mt-5 text-[26px] font-semibold ">All Newsletter Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+        {newsletterdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -69,4 +69,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Newsletter;

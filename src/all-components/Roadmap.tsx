@@ -21,28 +21,46 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface RoadmapData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const roadmapdata: RoadmapData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/roadmap/roadmap.png",
+    link: "/components/roadmap#projectroadmap",
+    name: "Project Roadmap",
+  },
+  {
+    id: 2,
+    img: "/all-components/roadmap/growth.png",
+    link: "/components/roadmap#growth-roadmap",
+    name: "Growth Roadmap",
+  },
+  {
+    id: 3,
+    img: "/all-components/roadmap/complete.png",
+    link: "/components/roadmap#complete-project-roadmap",
+    name: "Complete Project Roadmap",
+  },
+  {
+    id: 4,
+    img: "/all-components/roadmap/comprehensive.png",
+    link: "/components/roadmap#comprehensive-roadmap-section",
+    name: "Comprehensive Roadmap Section",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Roadmap: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
+      <h2 className="mt-5 text-[26px] font-semibold ">All Roadmap Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+        {roadmapdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -69,4 +87,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Roadmap;

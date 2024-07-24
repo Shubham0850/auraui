@@ -21,28 +21,52 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface FaqsData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const faqsdata: FaqsData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/faqs/question.png",
+    link: "/components/faqs#question-box-faq-component",
+    name: "Question Box FAQ  Component",
+  },
+  {
+    id: 2,
+    img: "/all-components/faqs/open.png",
+    link: "/components/faqs#open-faq-section-component",
+    name: "Open FAQ Section Component",
+  },
+  {
+    id: 3,
+    img: "/all-components/faqs/section.png",
+    link: "/components/faqs#faq-section-with-background-component",
+    name: "FAQ Section with Background Component",
+  },
+  {
+    id: 4,
+    img: "/all-components/faqs/accordion.png",
+    link: "/components/faqs#faq-accordion-component",
+    name: "FAQ Accordion Component",
+  },
+  {
+    id: 5,
+    img: "/all-components/faqs/banner.png",
+    link: "/components/faqs#faq-with-banner-component",
+    name: "FAQ With Banner Component",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Faqs: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <h2 className="mt-5 text-[26px] font-semibold ">All Faqs Components</h2>
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {faqsdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -53,8 +77,8 @@ const Hero: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={2000}
-                  height={500}
+                  width={2000} // Adjust width as needed
+                  height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
@@ -69,4 +93,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Faqs;

@@ -54,6 +54,103 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "steps": {
+    "title": "Steps",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "faqs": {
+    "title": "Faqs",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "logocloud": {
+    "title": "LogoCloud",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "testimonial": {
+    "title": "Testimonial",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "cta": {
+    "title": "CTA",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "feature": {
+    "title": "Feature",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "article": {
+    "title": "Article",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "integration": {
+    "title": "Integration",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
-
 }

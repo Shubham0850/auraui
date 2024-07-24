@@ -21,40 +21,77 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface TeamsData {
+interface CtaData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const Teamsdata: TeamsData[] = [
+const ctadata: CtaData[] = [
   {
     id: 1,
-    img: "/all-components/teams/visionary.png",
-    link: "/components/teams#visionary-vanguard-teams",
-    name: "Visionary Vanguard Teams",
+    img: "/all-components/cta/simple.png",
+    link: "/components/cta#simple-cta",
+    name: "Simple CTA",
   },
   {
     id: 2,
-    img: "/all-components/teams/exclusive.png",
-    link: "/components/teams#exclusive-team",
-    name: "Exclusive Teams",
+    img: "/all-components/cta/rounded.png",
+    link: "/components/cta#rounded-design",
+    name: "Rounded Design CTA",
   },
   {
     id: 3,
-    img: "/all-components/teams/specialist.png",
-    link: "/components/teams#specialist-team",
-    name: "Specialist Team",
+    img: "/all-components/cta/small.png",
+    link: "/components/cta#small-cta",
+    name: "Small CTA",
+  },
+  {
+    id: 4,
+    img: "/all-components/cta/mini.png",
+    link: "/components/cta#mini-cta",
+    name: "Mini CTA",
+  },
+  {
+    id: 5,
+    img: "/all-components/cta/connection.png",
+    link: "/components/cta#connection-cta",
+    name: "Connection CTA",
+  },
+  {
+    id: 6,
+    img: "/all-components/cta/explore.png",
+    link: "/components/cta#explore-data-cta",
+    name: "Explore Data CTA",
+  },
+
+  {
+    id: 7,
+    img: "/all-components/cta/connection2.png",
+    link: "/components/cta#connection-cta-secondary",
+    name: "Connection CTA Secondary",
+  },
+  {
+    id: 8,
+    img: "/all-components/cta/oneliner.png",
+    link: "/components/cta#one-liner-cta",
+    name: "One Liner CTA",
+  },
+  {
+    id: 9,
+    img: "/all-components/cta/download.png",
+    link: "/components/cta#download-option-cta",
+    name: "Download Option CTA",
   },
 ];
 
-const Teams: React.FC = () => {
+const Cta: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Teams Components</h2>
+      <h2 className="mt-5 text-[26px] font-semibold ">All CTA Components</h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
-        {Teamsdata.map((category) => (
+        {ctadata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -65,8 +102,8 @@ const Teams: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={2000}
-                  height={500}
+                  width={2000} // Adjust width as needed
+                  height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
@@ -81,4 +118,4 @@ const Teams: React.FC = () => {
   );
 };
 
-export default Teams;
+export default Cta;

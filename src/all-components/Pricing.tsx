@@ -21,28 +21,34 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface PricingData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const pricingdata: PricingData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/pricing/toggle.png",
+    link: "/components/pricing#toggle-design",
+    name: "Toggle Design",
+  },
+  {
+    id: 2,
+    img: "/all-components/pricing/card.png",
+    link: "/components/pricing#card-design",
+    name: "Card Design",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Pricing: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <h2 className="mt-5 text-[26px] font-semibold ">All Pricing Components</h2>
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {pricingdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -53,8 +59,8 @@ const Hero: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={2000}
-                  height={500}
+                  width={2000} // Adjust width as needed
+                  height={200} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
@@ -69,4 +75,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Pricing;

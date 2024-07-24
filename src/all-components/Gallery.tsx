@@ -21,28 +21,28 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface GalleryData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const gallerydata: GalleryData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/gallery/showcase.png",
+    link: "/components/gallery#showcase-gallery",
+    name: "Showcase Gallery",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Gallery: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <h2 className="mt-5 text-[26px] font-semibold ">All Gallery Components</h2>
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {gallerydata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -69,4 +69,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Gallery;

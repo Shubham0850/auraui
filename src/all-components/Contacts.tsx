@@ -21,28 +21,46 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
   );
 };
 
-interface HeroData {
+interface ContactsData {
   id: number;
   img: string;
   link: string;
   name: string;
 }
 
-const herodata: HeroData[] = [
+const contactsdata: ContactsData[] = [
   {
     id: 1,
-    img: "/all-components/hero/saas.png",
-    link: "/components/hero#saas-hero-component",
-    name: "Saas Hero",
-  }
+    img: "/all-components/contact/connectsphere.png",
+    link: "/components/contacts#connectsphere-contact",
+    name: "ConnectSphere Contact",
+  },
+  {
+    id: 2,
+    img: "/all-components/contact/light.png",
+    link: "/components/contacts#light-contact-component",
+    name: "Light Contact Component",
+  },
+  {
+    id: 3,
+    img: "/all-components/contact/small.png",
+    link: "/components/contacts#small-contact-form",
+    name: "Small Contact Form",
+  },
+  {
+    id: 4,
+    img: "/all-components/contact/mini.png",
+    link: "/components/contacts#mini-contact-form",
+    name: "Mini Contact Form",
+  },
 ];
 
-const Hero: React.FC = () => {
+const Contacts: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Hero Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2">
-        {herodata.map((category) => (
+      <h2 className="mt-5 text-[26px] font-semibold ">All Contacts Components</h2>
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+        {contactsdata.map((category) => (
           <a
             key={category.id}
             href={category.link}
@@ -53,8 +71,8 @@ const Hero: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={2000}
-                  height={500}
+                  width={2000} // Adjust width as needed
+                  height={600} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
@@ -69,4 +87,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Contacts;
