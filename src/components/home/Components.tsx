@@ -113,13 +113,13 @@ const marketingCategories = [
   },
   {
     name: "Feature",
-    link: "/components/feature",
-    items: 2,
+    link: "/all-components/feature",
+    items: 1,
     img: "/components/Feature.png",
   },
   {
     name: "Article",
-    link: "/components/article",
+    link: "/all-components/article",
     items: 1,
     img: "/components/article.png",
   },

@@ -103,5 +103,19 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "feature": {
+    "title": "Feature",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "article": {
+    "title": "Article",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }
