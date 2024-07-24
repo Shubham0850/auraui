@@ -59,7 +59,7 @@ const BusinessFeatureSecondary = () => {
               Join thousands of developers who have transformed their web
               development process with AuraUI. Our components are optimized for
               both light and dark themes, ensuring your site looks great no
-              matter the user's preference.
+              matter the user&apos;s preference.
             </p>
             <a href="#" className={buttonStyles} role="button">
               Start exploring
