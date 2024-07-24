@@ -107,8 +107,8 @@ const marketingCategories = [
   },
   {
     name: "Call To Action",
-    link: "/components/cta",
-    items: 2,
+    link: "/all-components/cta",
+    items: 9,
     img: "/components/cta.png",
   },
   {

@@ -96,5 +96,12 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "cta": {
+    "title": "CTA",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }
