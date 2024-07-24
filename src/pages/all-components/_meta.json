@@ -54,6 +54,19 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "steps": {
+    "title": "Steps",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "faqs": {
+    "title": "Faqs",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
-
 }

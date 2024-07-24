@@ -71,12 +71,12 @@ const marketingCategories = [
     name: "Steps",
     items: 1,
     img: "/components/steps.png",
-    link: "/components/steps",
+    link: "/all-components/steps",
   },
   {
     name: "FAQ",
-    link: "/components/faqs",
-    items: 1,
+    link: "/all-components/faqs",
+    items: 5,
     img: "/components/faq.png",
   },
   {
