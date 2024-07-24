@@ -138,20 +138,20 @@ const marketingCategories = [
   },
   {
     name: "Integration",
-    link: "/components/integration",
+    link: "/all-components/integration",
     items: 1,
     img: "/components/integration.png",
   },
   {
     name: "News Letter",
-    link: "/components/newsletter",
+    link: "/all-components/newsletter",
     items: 1,
     img: "/components/newsletter.png",
   },
   {
     name: "Roadmap",
-    link: "/components/roadmap",
-    items: 1,
+    link: "/all-components/roadmap",
+    items: 4,
     img: "/components/roadmap.png",
   },
   // {

@@ -131,5 +131,26 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "integration": {
+    "title": "Integration",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }
