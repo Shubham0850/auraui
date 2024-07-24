@@ -117,5 +117,19 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }

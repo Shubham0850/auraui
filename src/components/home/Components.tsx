@@ -125,14 +125,14 @@ const marketingCategories = [
   },
   {
     name: "Blog",
-    link: "/components/article",
+    link: "/all-components/blog",
     items: 1,
     img: "/components/blog.png",
   },
 
   {
     name: "Gallery",
-    link: "/components/gallery",
+    link: "/all-components/gallery",
     items: 1,
     img: "/components/gallery.png",
   },
