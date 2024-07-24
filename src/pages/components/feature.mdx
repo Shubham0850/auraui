@@ -1,5 +1,9 @@
 import ElementWrapper from "@/components/Theme/ElementWrapper";
 import PaymentsApp from "@/components/Feature/PaymentsApp";
+import SmallFeatureSection from "@/components/Feature/SmallFeatureSection";
+import BusinessFeature from "@/components/Feature/BusinessFeature";
+import BusinessFeatureSecondary from "@/components/Feature/BusinessFeatureSecondary";
+import CustomerSupport from "@/components/Feature/CustomerSupport";
 
 <h1 className="text-gray-800 dark:text-gray-200  text-[14px] mt-3 ">
   <span className="text-gray-500 ">Docs ></span> Feature
@@ -8,7 +12,6 @@ import PaymentsApp from "@/components/Feature/PaymentsApp";
 # Feature Component
 
 A feature section on a website is a dedicated space that highlights the key functionalities and benefits of a product or service.
-
 To integrate these components into your Next.js project, copy and paste the following code:
 
 ## Features for Payments App
@@ -19,4 +22,44 @@ Collaborating with this design team transformed our project. Their innovation an
   previewLink="/feature/payments"
   componentPath="Feature/PaymentsApp.tsx"
   element={<PaymentsApp />}
+/>
+
+## Small Feature Section
+
+The Small FAQ section provides concise information about key features, enhancing user understanding. It includes icons and brief descriptions for better clarity.
+
+<ElementWrapper
+  previewLink="/feature/small-feature-section"
+  componentPath="Feature/SmallFeatureSection.tsx"
+  element={<SmallFeatureSection />}
+/>
+
+## Business Feature
+
+The Business Feature section highlights a key feature of your business, showing an impactful visual and supporting text to attract users.
+
+<ElementWrapper
+  previewLink="/feature/business-feature"
+  componentPath="Feature/BusinessFeature.tsx"
+  element={<BusinessFeature />}
+/>
+
+## Business Feature Secondary
+
+The Business Feature Secondary section showcases another key feature of your business, with a focus on customer engagement and visual appeal.
+
+<ElementWrapper
+  previewLink="/feature/business-feature-secondary"
+  componentPath="Feature/BusinessFeatureSecondary.tsx"
+  element={<BusinessFeatureSecondary />}
+/>
+
+## Customer Support
+
+The Customer Support section showcases the key features of AuraUI, highlighting how it benefits developers, offers helpful resources, provides numerous coded blocks, and ensures secured payments. It is designed to build trust and demonstrate the value of using AuraUI components.
+
+<ElementWrapper
+  previewLink="/feature/customer-support"
+  componentPath="Feature/CustomerSupport.tsx"
+  element={<CustomerSupport />}
 />
