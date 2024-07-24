@@ -75,5 +75,26 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "logocloud": {
+    "title": "LogoCloud",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "testimonial": {
+    "title": "Testimonial",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }
