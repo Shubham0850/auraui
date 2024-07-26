@@ -12,7 +12,6 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
       {...rest}
     >

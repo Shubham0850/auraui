@@ -12,7 +12,6 @@ const AnimatedDiv: React.FC<AnimatedDivProps> = ({ children, ...rest }) => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
       {...rest}
     >
@@ -46,7 +45,9 @@ const pricingdata: PricingData[] = [
 const Pricing: React.FC = () => {
   return (
     <div>
-      <h2 className="mt-5 text-[26px] font-semibold ">All Pricing Components</h2>
+      <h2 className="mt-5 text-[26px] font-semibold ">
+        All Pricing Components
+      </h2>
       <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
         {pricingdata.map((category) => (
           <a
