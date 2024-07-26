@@ -89,7 +89,7 @@ const Cta: React.FC = () => {
   return (
     <div>
       <h2 className="mt-5 text-[26px] font-semibold ">All CTA Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 ">
         {ctadata.map((category) => (
           <a
             key={category.id}

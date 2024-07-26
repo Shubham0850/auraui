@@ -42,7 +42,7 @@ const LogoCloud: React.FC = () => {
       <h2 className="mt-5 text-[26px] font-semibold ">
         All LogoCloud Components
       </h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-2 ">
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 ">
         {logoclouddata.map((category) => (
           <a
             key={category.id}
