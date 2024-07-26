@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
 import React, { useEffect, useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -45,6 +46,11 @@ const Footer = () => {
 
         <div className="md:order-3">
           <ul className="flex items-center justify-end space-x-4">
+            <li>
+              <a href="https://github.com/Shubham0850/auraui" target="_blank">
+                <FaGithub size={20} className=" "/>
+              </a>
+            </li>
             <li>
               <a
                 href="https://x.com/aura__ui"
