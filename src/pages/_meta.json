@@ -6,6 +6,13 @@
       "layout": "full"
     }
   },
+  "templates": {
+    "title": "Templates",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
   "components": {
     "title": "Docs",
     "type": "page"

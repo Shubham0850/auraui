@@ -3,7 +3,7 @@ import { DocsThemeConfig, Navbar, ThemeSwitch } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
 
 import { useTheme } from "nextra-theme-docs";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
 const config: DocsThemeConfig = {
@@ -43,15 +43,15 @@ const config: DocsThemeConfig = {
       </>
     );
   },
-  // project: {
-  //   link: "https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/",
-  //   icon: <FaDiscord />,
-  // },
+  project: {
+    link: "https://github.com/Shubham0850/auraui/",
+    icon: <FaGithub className="h-4 text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />,
+  },
 
   chat: {
     link: "https://x.com/aura__ui",
     icon: (
-      <FaXTwitter className="h-4  text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
+      <FaXTwitter className="h-4 text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
     ),
   },
   head: (
