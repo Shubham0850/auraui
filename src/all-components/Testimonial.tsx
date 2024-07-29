@@ -48,7 +48,7 @@ const Testimonial: React.FC = () => {
       <h2 className="mt-5 text-[26px] font-semibold ">
         All Testimonial Components
       </h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 ">
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 ">
         {testimonialdata.map((category) => (
           <a
             key={category.id}

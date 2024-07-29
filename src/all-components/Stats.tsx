@@ -58,7 +58,7 @@ const Stats: React.FC = () => {
   return (
     <div>
       <h2 className="mt-5 text-[26px] font-semibold ">All Stats Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 ">
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 ">
         {statsdata.map((category) => (
           <a
             key={category.id}

@@ -89,7 +89,7 @@ const Cta: React.FC = () => {
   return (
     <div>
       <h2 className="mt-5 text-[26px] font-semibold ">All CTA Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 ">
+      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 ">
         {ctadata.map((category) => (
           <a
             key={category.id}
@@ -101,8 +101,8 @@ const Cta: React.FC = () => {
                 <Image
                   src={category.img}
                   alt={category.name}
-                  width={2000} // Adjust width as needed
-                  height={200} // Adjust height as needed
+                  width={500} // Adjust width as needed
+                  height={500} // Adjust height as needed
                   className="w-full rounded-xl"
                 />
               </div>
