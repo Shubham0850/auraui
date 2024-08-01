@@ -24,7 +24,6 @@ interface StatsData {
   id: number;
   img: string;
   link: string;
-  name: string;
 }
 
 const statsdata: StatsData[] = [
@@ -32,25 +31,21 @@ const statsdata: StatsData[] = [
     id: 1,
     img: "/all-components/stats/metricshub.png",
     link: "/components/stats#metricshub-stats",
-    name: "Metricshub Stats",
   },
   {
     id: 2,
     img: "/all-components/stats/achievements.png",
     link: "/components/stats#achievements-stats-section",
-    name: "Achievements Stats Section",
   },
   {
     id: 3,
     img: "/all-components/stats/growth.png",
     link: "/components/stats#growth-impact-stats-section",
-    name: "Growth Impact Stats Section",
   },
   {
     id: 4,
     img: "/all-components/stats/solutions.png",
     link: "/components/stats#solutions-stats-component",
-    name: "Solutions Stats Component",
   },
 ];
 
@@ -58,7 +53,7 @@ const Stats: React.FC = () => {
   return (
     <div>
       <h2 className="mt-5 text-[26px] font-semibold ">All Stats Components</h2>
-      <div className="mt-10 grid  gap-8 grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 ">
+      <div className="mt-10   gap-4 md:columns-2 lg:columns-3 space-y-4 ">
         {statsdata.map((category) => (
           <a
             key={category.id}
@@ -66,19 +61,16 @@ const Stats: React.FC = () => {
             className="flex flex-col items-left cursor-pointer"
           >
             <AnimatedDiv>
-              <div className="w-[100%] p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl mb-6">
+              <div className="w-[100%] p-2 bg-gray-100 dark:bg-[#282829] rounded-2xl ">
                 <Image
                   src={category.img}
-                  alt={category.name}
+                  alt="Image"
                   width={2000}
                   height={500}
                   className="w-full rounded-xl"
                 />
               </div>
             </AnimatedDiv>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">
-              {category.name}
-            </h3>
           </a>
         ))}
       </div>
