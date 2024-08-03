@@ -1,37 +1,59 @@
-import React from 'react'
+import React from "react";
 
 function LogoCloud11() {
-	return (
-		<section class="py-12 sm:py-16 lg:py-20 bg-black">
-    <div class="px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto">
-        <div class="grid max-w-md mx-auto lg:max-w-none grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-x-4 lg:gap-y-2 place-items-center lg:grid-rows-4">
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-liva.png" alt="" />
-            </div>
+  return (
+    <section className="py-12 sm:py-16 lg:py-20 bg-black">
+      <div className="px-6 sm:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="grid max-w-md mx-auto lg:max-w-none grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-x-4 lg:gap-y-2 place-items-center lg:grid-rows-4">
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-liva.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-ztos.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-ztos.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-muzica.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-muzica.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-kyan.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-kyan.png"
+              alt=""
+            />
+          </div>
 
-            <div class="col-span-2 lg:col-span-1 lg:row-span-2 rounded-lg bg-dark-gray">
-                <div class="px-5 py-6 xl:p-10">
-                    <h2 class="tracking-tighter text-white">
-                        <span class="font-sans text-4xl font-normal"> Trusted by companies from </span>
-                        <span class="font-serif italic text-5xl"> all over the world </span>
-                    </h2>
-                    <div class="mt-8">
-                        <a
-                            href="#"
-                            title=""
-                            class="
+          <div className="col-span-2 lg:col-span-1 lg:row-span-2 rounded-lg bg-dark-gray">
+            <div className="px-5 py-6 xl:p-10">
+              <h2 className="tracking-tighter text-white">
+                <span className="font-sans text-4xl font-normal">
+                  {" "}
+                  Trusted by companies from{" "}
+                </span>
+                <span className="font-serif italic text-5xl">
+                  {" "}
+                  all over the world{" "}
+                </span>
+              </h2>
+              <div className="mt-8">
+                <a
+                  href="#"
+                  title=""
+                  className="
                                 inline-flex
                                 items-center
                                 justify-center
@@ -54,45 +76,79 @@ function LogoCloud11() {
                                 sm:text-lg
                                 focus:ring-offset-secondary
                             "
-                            role="button"
-                        >
-                            Learn More
-                            <svg class="h-6 w-6 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                  role="button"
+                >
+                  Learn More
+                  <svg
+                    className="h-6 w-6 ml-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="hidden lg:block">
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-utosia.png" alt="" />
-            </div>
+          <div className="hidden lg:block">
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-utosia.png"
+              alt=""
+            />
+          </div>
 
-            <div class="hidden lg:block">
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-aven.png" alt="" />
-            </div>
+          <div className="hidden lg:block">
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-aven.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-amara.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-amara.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-light-ai.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-light-ai.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-goldline.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-goldline.png"
+              alt=""
+            />
+          </div>
 
-            <div>
-                <img class="h-10 w-auto mx-auto opacity-70 object-contain" src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-solaytic.png" alt="" />
-            </div>
+          <div>
+            <img
+              className="h-10 w-auto mx-auto opacity-70 object-contain"
+              src="https://cdn.rareblocks.xyz/collection/bakerstreet/images/logo-cloud/2/logo-solaytic.png"
+              alt=""
+            />
+          </div>
         </div>
-    </div>
-</section>
-
-	)
+      </div>
+    </section>
+  );
 }
 
-export default LogoCloud11
+export default LogoCloud11;

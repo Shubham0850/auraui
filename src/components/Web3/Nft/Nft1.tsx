@@ -1,118 +1,173 @@
-import React from 'react'
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { IoMdTimer } from "react-icons/io";
+import { GiToken } from "react-icons/gi";
+
+const commonStyles = {
+  container: "bg-white",
+  header: "py-4 sm:py-6",
+  navContainer: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
+  nav: "flex items-center justify-between",
+  logo: "w-auto h-8",
+  mobileMenuButton:
+    "p-1 text-gray-500 transition-all duration-200 bg-transparent rounded-md hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2",
+  navItems: "hidden md:flex md:items-center md:justify-end md:space-x-12",
+  navLink:
+    "text-base font-medium text-gray-500 transition-all duration-200 hover:text-gray-900",
+  mobileNav: "px-1 py-5",
+  gridImages: "grid grid-cols-3 gap-5 mx-auto sm:max-w-md",
+  image: "rounded-xl",
+  textContainer: "max-w-md mx-auto mt-8 text-center",
+  title: "text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl",
+  description: "mt-4 text-base font-medium text-gray-500 lg:text-lg",
+  countdown:
+    "max-w-sm mx-auto mt-10 overflow-hidden text-center bg-gray-900 rounded-xl",
+  countdownInner: "p-6",
+  countdownItems:
+    "flex items-center justify-between px-1 space-x-3 lg:space-x-6",
+  countdownNumber: "text-4xl font-bold text-white",
+  countdownSeparator: "text-2xl font-bold text-white animate-pulse",
+  countdownText: "mt-1 text-sm font-medium text-gray-400",
+  button:
+    "inline-flex items-center justify-center w-full px-6 py-4 text-xs font-bold tracking-widest text-white uppercase transition-all duration-200 border border-transparent rounded-lg bg-rose-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-600 hover:bg-rose-600",
+};
 
 function Nft1() {
-	return (
-		<div class="bg-white">
-    <header class="py-4 sm:py-6" x-data="{expanded: false}">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <nav class="flex items-center justify-between">
-                <div class="shrink-0">
-                    <a href="#" title="" class="flex items-center">
-                        <img class="w-auto h-8" src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/logo.svg" alt="" />
-                    </a>
-                </div>
+  const [expanded, setExpanded] = useState(false);
 
-                <div class="flex md:hidden">
-                    <button type="button" class="p-1 text-gray-500 transition-all duration-200 bg-transparent rounded-md hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2" @click="expanded = !expanded" :aria-expanded="expanded">
-                        <span x-show="!expanded" aria-hidden="true">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </span>
+  return (
+    <div className={commonStyles.container}>
+      <header className={commonStyles.header}>
+        <div className={commonStyles.navContainer}>
+          <nav className={commonStyles.nav}>
+            <div className="shrink-0">
+              <a href="#" title="" className="flex items-center">
+                <img
+                  className={commonStyles.logo}
+                  src="https://example.com/auraui-logo.svg"
+                  alt="Auraui Logo"
+                />
+              </a>
+            </div>
 
-                        <span x-show="expanded" aria-hidden="true">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </span>
-                    </button>
-                </div>
+            <div className="flex md:hidden">
+              <button
+                type="button"
+                className={commonStyles.mobileMenuButton}
+                onClick={() => setExpanded(!expanded)}
+                aria-expanded={expanded}
+              >
+                {expanded ? (
+                  <FaTimes className="w-6 h-6" />
+                ) : (
+                  <FaBars className="w-6 h-6" />
+                )}
+              </button>
+            </div>
 
-                <div class="hidden md:flex md:items-center md:justify-end md:space-x-12">
-                    <a href="#" title="" class="text-base font-medium text-gray-500 transition-all duration-200 hover:text-gray-900"> About </a>
+            <div className={commonStyles.navItems}>
+              <a href="#" title="" className={commonStyles.navLink}>
+                {" "}
+                About{" "}
+              </a>
+              <a href="#" title="" className={commonStyles.navLink}>
+                {" "}
+                Our NFTs{" "}
+              </a>
+            </div>
+          </nav>
 
-                    <a href="#" title="" class="text-base font-medium text-gray-500 transition-all duration-200 hover:text-gray-900"> Our NFTs </a>
-                </div>
+          {expanded && (
+            <nav className={commonStyles.mobileNav}>
+              <div className="grid gap-y-6">
+                <a href="#" title="" className={commonStyles.navLink}>
+                  {" "}
+                  About{" "}
+                </a>
+                <a href="#" title="" className={commonStyles.navLink}>
+                  {" "}
+                  Our NFTs{" "}
+                </a>
+              </div>
             </nav>
-
-            <nav x-show="expanded" x-collapse>
-                <div class="px-1 py-5">
-                    <div class="grid gap-y-6">
-                        <a href="#" title="" class="text-base font-medium text-gray-500 transition-all duration-200 hover:text-gray-900"> About </a>
-
-                        <a href="#" title="" class="text-base font-medium text-gray-500 transition-all duration-200 hover:text-gray-900"> Our NFTs </a>
-                    </div>
-                </div>
-            </nav>
+          )}
         </div>
-    </header>
+      </header>
 
-    <section class="py-12 sm:py-16 lg:pb-20">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="grid grid-cols-3 gap-5 mx-auto sm:max-w-md">
-                <img class="rounded-xl" src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-coming-soon/1/image-1.png" alt="" />
-                <img class="transform -rotate-2 rounded-xl" src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-coming-soon/1/image-2.png" alt="" />
-                <img class="transform rounded-xl rotate-2" src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-coming-soon/1/image-3.png" alt="" />
-            </div>
+      <section className="py-12 sm:py-16 lg:pb-20">
+        <div className={commonStyles.navContainer}>
+          <div className={commonStyles.gridImages}>
+            <img
+              className={commonStyles.image}
+              src="https://example.com/nft-image1.png"
+              alt="NFT Image 1"
+            />
+            <img
+              className={`transform -rotate-2 ${commonStyles.image}`}
+              src="https://example.com/nft-image2.png"
+              alt="NFT Image 2"
+            />
+            <img
+              className={`transform rotate-2 ${commonStyles.image}`}
+              src="https://example.com/nft-image3.png"
+              alt="NFT Image 3"
+            />
+          </div>
 
-            <div class="max-w-md mx-auto mt-8 text-center">
-                <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">Apes are coming</h1>
-                <p class="mt-4 text-base font-medium text-gray-500 lg:text-lg">A collection of 100 funny ape NFTs-unique digital collectibles living on the Ethereum blockchain will be available.</p>
-            </div>
+          <div className={commonStyles.textContainer}>
+            <h1 className={commonStyles.title}>Auraui NFT Collection Launch</h1>
+            <p className={commonStyles.description}>
+              Discover unique digital collectibles with our upcoming NFT
+              collection on the Ethereum blockchain.
+            </p>
+          </div>
 
-            <div class="max-w-sm mx-auto mt-10 overflow-hidden text-center bg-gray-900 rounded-xl">
-                <div class="p-6">
-                    <div class="flex items-center justify-between px-1 space-x-3 lg:space-x-6">
-                        <div>
-                            <p class="text-4xl font-bold text-white">37</p>
-                            <p class="mt-1 text-sm font-medium text-gray-400">Days</p>
-                        </div>
-
-                        <div>
-                            <p class="text-2xl font-bold text-white animate-pulse">:</p>
-                        </div>
-
-                        <div>
-                            <p class="text-4xl font-bold text-white">14</p>
-                            <p class="mt-1 text-sm font-medium text-gray-400">Hours</p>
-                        </div>
-
-                        <div>
-                            <p class="text-2xl font-bold text-white animate-pulse">:</p>
-                        </div>
-
-                        <div>
-                            <p class="text-4xl font-bold text-white">45</p>
-                            <p class="mt-1 text-sm font-medium text-gray-400">Mins</p>
-                        </div>
-
-                        <div>
-                            <p class="text-2xl font-bold text-white animate-pulse">:</p>
-                        </div>
-
-                        <div>
-                            <p class="text-4xl font-bold text-white">17</p>
-                            <p class="mt-1 text-sm font-medium text-gray-400">Secs</p>
-                        </div>
-                    </div>
-
-                    <div class="mt-5">
-                        <a
-                            href="#"
-                            title=""
-                            class="inline-flex items-center justify-center w-full px-6 py-4 text-xs font-bold tracking-widest text-white uppercase transition-all duration-200 border border-transparent rounded-lg bg-rose-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-600 hover:bg-rose-600"
-                            role="button"
-                        >
-                            Join Discord
-                        </a>
-                    </div>
+          <div className={commonStyles.countdown}>
+            <div className={commonStyles.countdownInner}>
+              <div className={commonStyles.countdownItems}>
+                <div>
+                  <p className={commonStyles.countdownNumber}>37</p>
+                  <p className={commonStyles.countdownText}>Days</p>
                 </div>
-            </div>
-        </div>
-    </section>
-</div>
+                <div>
+                  <IoMdTimer className={commonStyles.countdownSeparator} />
+                </div>
+                <div>
+                  <p className={commonStyles.countdownNumber}>14</p>
+                  <p className={commonStyles.countdownText}>Hours</p>
+                </div>
+                <div>
+                  <IoMdTimer className={commonStyles.countdownSeparator} />
+                </div>
+                <div>
+                  <p className={commonStyles.countdownNumber}>45</p>
+                  <p className={commonStyles.countdownText}>Mins</p>
+                </div>
+                <div>
+                  <IoMdTimer className={commonStyles.countdownSeparator} />
+                </div>
+                <div>
+                  <p className={commonStyles.countdownNumber}>17</p>
+                  <p className={commonStyles.countdownText}>Secs</p>
+                </div>
+              </div>
 
-	)
+              <div className="mt-5">
+                <a
+                  href="#"
+                  title=""
+                  className={commonStyles.button}
+                  role="button"
+                >
+                  Join Discord
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default Nft1
+export default Nft1;
