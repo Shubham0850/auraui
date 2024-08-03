@@ -26,9 +26,9 @@ function Testimoial4() {
             </div>
             <blockquote className="mt-10">
               <p className="text-3xl font-normal leading-snug text-gray-900">
-                "We love Landingfolio! Our designers were using it for their
-                projects, so clients already knew what Landingfolio was and how
-                to use it."
+                &quot;We love Landingfolio! Our designers were using it for
+                their projects, so clients already knew what Landingfolio was
+                and how to use it.&quot;
               </p>
             </blockquote>
 

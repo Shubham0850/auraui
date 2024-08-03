@@ -6,7 +6,7 @@ function Testimoial2() {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            Don't just take our words. Over 1000+ people trust us.
+            Don&apos;t just take our words. Over 1000+ people trust us.
           </h2>
         </div>
 
@@ -15,9 +15,9 @@ function Testimoial2() {
             <div className="p-8">
               <blockquote>
                 <p className="text-xl font-medium leading-9 text-gray-900">
-                  "We love Landingfolio! Our designers were using it for their
-                  projects, so clients already knew what Landingfolio was and
-                  how to use it."
+                  &quot;We love Landingfolio! Our designers were using it for
+                  their projects, so clients already knew what Landingfolio was
+                  and how to use it.&quot;
                 </p>
               </blockquote>
               <p className="mt-6 text-base font-semibold text-gray-900">
@@ -45,9 +45,9 @@ function Testimoial2() {
             <div className="p-8">
               <blockquote>
                 <p className="text-xl font-medium leading-9 text-gray-900">
-                  "I didn’t know designing in Figma could be this
+                  &quot;I didn’t know designing in Figma could be this
                   individualized. I’d never considered it before, but
-                  Landingfolio changed my mind."
+                  Landingfolio changed my mind.&quot;
                 </p>
               </blockquote>
               <p className="mt-6 text-base font-semibold text-gray-900">
@@ -75,9 +75,9 @@ function Testimoial2() {
             <div className="p-8">
               <blockquote>
                 <p className="text-xl font-medium leading-9 text-gray-900">
-                  "We love Landingfolio! Our designers were using it for their
+                  &quot;We love Landingfolio! Our designers were using it for their
                   projects, so clients already knew what Landingfolio was and
-                  how to use it."
+                  how to use it.&quot;
                 </p>
               </blockquote>
               <p className="mt-6 text-base font-semibold text-gray-900">

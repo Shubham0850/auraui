@@ -9,7 +9,7 @@ function Testimoial3() {
             3940+ Happy Landingfolio Users
           </p>
           <h2 className="mt-6 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:mt-8">
-            Don't just take our words
+            Don&apos;t just take our words
           </h2>
         </div>
 
@@ -65,8 +65,9 @@ function Testimoial3() {
               </div>
               <blockquote className="mt-8">
                 <p className="text-lg font-medium leading-8 text-gray-900">
-                  "We love Landingfolio! Our designers were using it for their
-                  projects, so we already knew what kind of design they want."
+                  &quot;We love Landingfolio! Our designers were using it for
+                  their projects, so we already knew what kind of design they
+                  want.&quot;
                 </p>
               </blockquote>
               <div className="flex flex-col flex-wrap items-center justify-center gap-1 mt-5 sm:flex-row sm:justify-start sm:gap-4">
@@ -129,8 +130,9 @@ function Testimoial3() {
               </div>
               <blockquote className="mt-8">
                 <p className="text-lg font-medium leading-8 text-gray-900">
-                  "We love Landingfolio! Our designers were using it for their
-                  projects, so we already knew what kind of design they want."
+                  &quot;We love Landingfolio! Our designers were using it for
+                  their projects, so we already knew what kind of design they
+                  want.&quot;
                 </p>
               </blockquote>
               <div className="flex flex-col flex-wrap items-center justify-center gap-1 mt-5 sm:flex-row sm:justify-start sm:gap-4">
