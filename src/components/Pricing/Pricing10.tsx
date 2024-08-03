@@ -1,468 +1,133 @@
 import React from "react";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import { IoRocketSharp, IoFlashSharp, IoEyeSharp } from "react-icons/io5";
 
-function Pricing10() {
+const commonStyles = "flex items-center text-base font-medium text-gray-900";
+const pricingPlans = [
+  {
+    title: "Startup",
+    description: "Ideal for small teams and startups",
+    price: 99,
+    features: [
+      "1 Domain License",
+      "5 Email Accounts",
+      "Limited Reporting",
+      "Custom Domain",
+    ],
+    icon: <IoRocketSharp className="text-4xl" />,
+    buttonColor: "bg-gray-100",
+    buttonTextColor: "text-gray-900",
+  },
+  {
+    title: "Agency",
+    description: "Best for growing agencies",
+    price: 199,
+    features: [
+      "Everything from Startup",
+      "10 Domain Licenses",
+      "20 Email Accounts",
+      "Advanced Reporting",
+      "Custom Domain",
+      "Priority Support",
+    ],
+    icon: <IoFlashSharp className="text-4xl" />,
+    buttonColor: "bg-gray-900",
+    buttonTextColor: "text-white",
+    badge: "Most Popular",
+  },
+  {
+    title: "Developer",
+    description: "Designed for independent developers",
+    price: 69,
+    features: [
+      "1 Domain License",
+      "5 Email Accounts",
+      "Limited Reporting",
+      "Custom Domain",
+    ],
+    icon: <IoEyeSharp className="text-4xl" />,
+    buttonColor: "bg-gray-100",
+    buttonTextColor: "text-gray-900",
+  },
+];
+
+const Pricing10 = () => {
   return (
     <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
-            The right plan can change your work life
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
+            Find the perfect plan for your needs
           </h2>
-          <p className="mt-6 text-base font-normal text-gray-600 font-pj">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-            orci, velit, commodo sed iaculis odio. In congue eget.
+          <p className="mt-6 text-base text-gray-600">
+            Choose a plan that fits your business needs and enjoy a suite of
+            features to elevate your experience with Auraui.
           </p>
         </div>
 
-        <div className="grid items-center max-w-md grid-cols-1 mx-auto mt-8 md:max-w-5xl gap-y-6 md:mt-16 md:grid-cols-3">
-          <div className="bg-white">
-            <div className="p-6 lg:px-10 lg:py-9">
+        <div className="grid gap-y-6 mt-8 md:mt-16 md:grid-cols-3 max-w-md mx-auto md:max-w-5xl">
+          {pricingPlans.map((plan, index) => (
+            <div
+              key={index}
+              className={`relative bg-white shadow-lg rounded-lg p-6 ${
+                plan.title === "Agency" ? "ring-2 ring-gray-900" : ""
+              }`}
+            >
+              {plan.badge && (
+                <div className="absolute top-0 left-0 right-0 bg-gray-700 text-center py-2 text-xs font-bold text-white uppercase">
+                  {plan.badge}
+                </div>
+              )}
               <div className="text-center">
-                <p className="text-4xl">🚀</p>
-                <h3 className="mt-6 text-sm font-bold tracking-widest uppercase font-pj">
-                  Startup
+                {plan.icon}
+                <h3 className="mt-6 text-lg font-semibold text-gray-900">
+                  {plan.title}
                 </h3>
-                <p className="mt-1.5 font-pj text-sm text-gray-600">
-                  Best for small business owners
-                </p>
+                <p className="mt-2 text-sm text-gray-600">{plan.description}</p>
                 <div className="flex items-end justify-center mt-6">
-                  <p className="text-lg font-bold text-gray-400 font-pj">$</p>
-                  <p className="text-4xl ml-0.5 font-bold text-gray-900 font-pj">
-                    99
-                  </p>
-                  <p className="text-lg font-bold text-gray-400 font-pj">
-                    /year
-                  </p>
+                  <span className="text-lg font-bold text-gray-400">$</span>
+                  <span className="text-4xl font-bold text-gray-900">
+                    {plan.price}
+                  </span>
+                  <span className="text-lg font-bold text-gray-400">/year</span>
                 </div>
               </div>
 
-              <ul className="space-y-3 text-base font-medium text-gray-900 mt-9">
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+              <ul className="mt-8 space-y-3">
+                {plan.features.map((feature, idx) => (
+                  <li
+                    key={idx}
+                    className={`flex items-center ${
+                      idx >= 3 ? "text-gray-400" : ""
+                    }`}
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  1 Domain License
-                </li>
-
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  5 Email Account
-                </li>
-
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  Limited Reporting
-                </li>
-
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  Custom Domain
-                </li>
+                    <AiOutlineCheckCircle className="w-5 h-5 mr-2.5 text-green-500" />
+                    {feature}
+                  </li>
+                ))}
               </ul>
 
               <div className="mt-12 text-center">
                 <a
                   href="#"
-                  title=""
-                  className="
-                                flex
-                                items-center
-                                justify-center
-                                w-full
-                                px-4
-                                py-4
-                                text-base
-                                font-bold
-                                text-gray-900
-                                transition-all
-                                duration-200
-                                bg-gray-100
-                                border border-transparent
-                                lg:px-8
-                                hover:bg-gray-900 hover:text-white
-                                focus:text-white focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900
-                                font-pj
-                            "
-                  role="button"
+                  className={`block w-full px-4 py-3 text-base font-bold transition-colors duration-200 ${plan.buttonColor} ${plan.buttonTextColor} border border-transparent rounded-md hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900`}
                 >
                   Start 14 Days Trial
                 </a>
-
-                <p className="mt-4 text-sm text-gray-600 font-pj">
+                <p className="mt-4 text-sm text-gray-600">
                   No credit card required
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute -inset-x-2 -inset-y-px">
-              <div
-                className="w-full h-full mx-auto rotate-180 opacity-30 blur-lg filter"
-                style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"
-              ></div>
-            </div>
-
-            <div className="relative bg-white shadow-xl">
-              <div className="py-2 text-center bg-gray-700">
-                <p className="text-xs font-bold tracking-widest text-white uppercase font-pj">
-                  Most Popular
-                </p>
-              </div>
-              <div className="p-6 lg:px-10 lg:py-9">
-                <div className="text-center">
-                  <p className="text-4xl">⚡️</p>
-                  <h3 className="mt-6 text-sm font-bold tracking-widest uppercase font-pj">
-                    Agency
-                  </h3>
-                  <p className="mt-1.5 font-pj text-sm text-gray-600">
-                    Best for medium agency
-                  </p>
-                  <div className="flex items-end justify-center mt-6">
-                    <p className="text-lg font-bold text-gray-400 font-pj">$</p>
-                    <p className="text-4xl ml-0.5 font-bold text-gray-900 font-pj">
-                      199
-                    </p>
-                    <p className="text-lg font-bold text-gray-400 font-pj">
-                      /year
-                    </p>
-                  </div>
-                </div>
-
-                <ul className="space-y-3 text-base font-medium text-gray-900 mt-9">
-                  <li className="flex items-center">
-                    <svg
-                      className="w-5 h-5 mr-2.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    Everything from Startup
-                  </li>
-
-                  <li className="flex items-center">
-                    <svg
-                      className="w-5 h-5 mr-2.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    10 Domain License
-                  </li>
-
-                  <li className="flex items-center">
-                    <svg
-                      className="w-5 h-5 mr-2.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    20 Email Account
-                  </li>
-
-                  <li className="flex items-center text-gray-400">
-                    <svg
-                      className="w-5 h-5 mr-2.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    Advanced Reporting
-                  </li>
-
-                  <li className="flex items-center text-gray-400">
-                    <svg
-                      className="w-5 h-5 mr-2.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    Custom Domain
-                  </li>
-
-                  <li className="flex items-center text-gray-400">
-                    <svg
-                      className="w-5 h-5 mr-2.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    Priority Support
-                  </li>
-                </ul>
-
-                <div className="mt-12 text-center">
-                  <a
-                    href="#"
-                    title=""
-                    className="
-                                    flex
-                                    items-center
-                                    justify-center
-                                    w-full
-                                    px-4
-                                    py-4
-                                    text-base
-                                    font-bold
-                                    text-white
-                                    transition-all
-                                    duration-200
-                                    bg-gray-900
-                                    border border-transparent
-                                    lg:px-8
-                                    hover:bg-gray-700
-                                    focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900
-                                    font-pj
-                                "
-                    role="button"
-                  >
-                    Start 14 Days Trial
-                  </a>
-
-                  <p className="mt-4 text-sm text-gray-600 font-pj">
-                    No credit card required
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white">
-            <div className="p-6 lg:px-10 lg:py-9">
-              <div className="text-center">
-                <p className="text-4xl">👓</p>
-                <h3 className="mt-6 text-sm font-bold tracking-widest uppercase font-pj">
-                  Developer
-                </h3>
-                <p className="mt-1.5 font-pj text-sm text-gray-600">
-                  Best for independent developers
-                </p>
-                <div className="flex items-end justify-center mt-6">
-                  <p className="text-lg font-bold text-gray-400 font-pj">$</p>
-                  <p className="text-4xl ml-0.5 font-bold text-gray-900 font-pj">
-                    69
-                  </p>
-                  <p className="text-lg font-bold text-gray-400 font-pj">
-                    /year
-                  </p>
-                </div>
-              </div>
-
-              <ul className="space-y-3 text-base font-medium text-gray-900 mt-9">
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  1 Domain License
-                </li>
-
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  5 Email Account
-                </li>
-
-                <li className="flex items-center">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  Limited Reporting
-                </li>
-
-                <li className="flex items-center text-gray-400">
-                  <svg
-                    className="w-5 h-5 mr-2.5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  Custom Domain
-                </li>
-              </ul>
-
-              <div className="mt-12 text-center">
-                <a
-                  href="#"
-                  title=""
-                  className="
-                                flex
-                                items-center
-                                justify-center
-                                w-full
-                                px-4
-                                py-4
-                                text-base
-                                font-bold
-                                text-gray-900
-                                transition-all
-                                duration-200
-                                bg-gray-100
-                                border border-transparent
-                                lg:px-8
-                                hover:bg-gray-900 hover:text-white
-                                focus:text-white focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900
-                                font-pj
-                            "
-                  role="button"
-                >
-                  Start 14 Days Trial
-                </a>
-
-                <p className="mt-4 text-sm text-gray-600 font-pj">
-                  No credit card required
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        <p className="max-w-md mx-auto mt-8 text-base text-center text-gray-500 md:mt-16 font-pj">
-          We don’t bill you automatically until your confirmation. We don’t
-          store or sell your data to anyone.
+        <p className="mt-8 max-w-md mx-auto text-base text-center text-gray-500">
+          Enjoy peace of mind with our transparent pricing and no hidden fees.
         </p>
       </div>
     </section>
   );
-}
+};
 
 export default Pricing10;

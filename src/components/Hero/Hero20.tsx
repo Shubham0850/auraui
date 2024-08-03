@@ -177,7 +177,7 @@ function Hero20() {
 
             <form action="#" className="max-w-xl mx-auto mt-10">
               <div>
-                <label for="" className="sr-only">
+                <label className="sr-only">
                   {" "}
                   Search{" "}
                 </label>

@@ -96,7 +96,7 @@ const Hero25: React.FC = () => {
                 </div>
               </h1>
               <p className="mt-8 text-base text-black sm:text-xl">
-                Empower your team with Auraui's tools for effortless
+                Empower your team with Auraui&apos;s tools for effortless
                 collaboration and productivity. Streamline your workflow with
                 our cutting-edge solutions.
               </p>
