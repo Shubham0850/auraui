@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const commonStyles = {
   button:
     "inline-flex items-center justify-center px-6 py-2 text-base font-semibold transition-all duration-200 rounded-lg",
-  link: "text-base font-medium transition-all duration-200 hover:text-indigo-600",
+  link: "text-base font-medium text-gray-800 transition-all duration-200 hover:text-indigo-600",
   sectionTitle: "text-4xl font-bold text-gray-900 sm:text-5xl",
   sectionSubtitle: "mt-5 text-base font-normal leading-7 text-gray-500",
   listItem: "flex items-center",
@@ -24,11 +25,13 @@ const Hero5 = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between">
             <div className="flex shrink-0">
-              <a href="#" title="" className="flex">
-                <img
+              <a href="#" title="Auraui" className="flex">
+                <Image
                   className="w-auto h-8"
-                  src="https://via.placeholder.com/150x40?text=Auraui+Logo"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
+                  width={150}
+                  height={40}
                 />
               </a>
             </div>
@@ -49,13 +52,13 @@ const Hero5 = () => {
             </div>
 
             <div className="hidden lg:flex lg:items-center lg:justify-start lg:ml-16 lg:mr-auto lg:space-x-10">
-              <a href="#" title="" className={commonStyles.link}>
+              <a href="#" className={commonStyles.link}>
                 Features
               </a>
-              <a href="#" title="" className={commonStyles.link}>
+              <a href="#" className={commonStyles.link}>
                 Pricing
               </a>
-              <a href="#" title="" className={commonStyles.link}>
+              <a href="#" className={commonStyles.link}>
                 Support
               </a>
             </div>
@@ -63,7 +66,6 @@ const Hero5 = () => {
             <div className="hidden lg:flex">
               <a
                 href="#"
-                title=""
                 className={`${commonStyles.button} text-white bg-gray-900 hover:bg-gray-700 focus:ring-gray-900`}
                 role="button"
               >
@@ -73,32 +75,28 @@ const Hero5 = () => {
           </nav>
 
           {expanded && (
-            <nav className="px-1 pt-8 pb-4">
+            <nav className=" bg-slate-200 rounded-md pt-8 px-3 pb-4">
               <div className="grid gap-y-6">
                 <a
                   href="#"
-                  title=""
                   className={`${commonStyles.link} flex items-center`}
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  title=""
                   className={`${commonStyles.link} flex items-center`}
                 >
                   Pricing
                 </a>
                 <a
                   href="#"
-                  title=""
                   className={`${commonStyles.link} flex items-center`}
                 >
                   Support
                 </a>
                 <a
                   href="#"
-                  title=""
                   className={`${commonStyles.button} text-white bg-gray-900 border-transparent hover:bg-gray-600`}
                   role="button"
                 >
@@ -112,10 +110,12 @@ const Hero5 = () => {
 
       <section className="relative pb-12 bg-white pt-28 sm:pb-16 sm:pt-32 lg:pb-20 xl:pt-48 xl:pb-32">
         <div className="absolute inset-0">
-          <img
-            className="hidden object-cover w-full h-full md:block"
-            src="https://via.placeholder.com/1200x800?text=Hero+Background"
+          <Image
+            className=" object-cover w-full h-full md:block"
+            src="https://plus.unsplash.com/premium_photo-1667862241971-e1f08f51dd07?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Hero Background"
+            layout="fill"
+            objectFit="cover"
           />
         </div>
 
@@ -156,10 +156,8 @@ const Hero5 = () => {
 
               <div className="relative inline-flex mt-10 group">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
-
                 <a
                   href="#"
-                  title=""
                   className={commonStyles.gradientButton}
                   role="button"
                 >
@@ -170,13 +168,6 @@ const Hero5 = () => {
           </div>
         </div>
 
-        <div className="mt-12 md:hidden sm:mt-16">
-          <img
-            className="object-cover w-full h-full"
-            src="https://via.placeholder.com/800x600?text=Hero+Background+Mobile"
-            alt="Hero Background Mobile"
-          />
-        </div>
       </section>
     </div>
   );
