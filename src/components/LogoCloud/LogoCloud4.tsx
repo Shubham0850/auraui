@@ -10,14 +10,14 @@ const commonStyles = {
 };
 
 const logos = [
-  "https://via.placeholder.com/150x50?text=Logo1",
-  "https://via.placeholder.com/150x50?text=Logo2",
-  "https://via.placeholder.com/150x50?text=Logo3",
-  "https://via.placeholder.com/150x50?text=Logo4",
-  "https://via.placeholder.com/150x50?text=Logo5",
-  "https://via.placeholder.com/150x50?text=Logo6",
-  "https://via.placeholder.com/150x50?text=Logo7",
-  "https://via.placeholder.com/150x50?text=Logo8",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logo-light.png",
 ];
 
 const LogoCloud4 = () => {
@@ -28,6 +28,10 @@ const LogoCloud4 = () => {
           <h2 className={commonStyles.heading}>
             Join over 200+ tech companies already using Auraui
           </h2>
+          <div className="flex justify-center mt-4">
+            <FaCloud className="text-blue-500 w-6 h-6 mx-2" />
+            <FaRegSmile className="text-yellow-500 w-6 h-6 mx-2" />
+          </div>
         </div>
 
         <div className={commonStyles.logoContainer}>
