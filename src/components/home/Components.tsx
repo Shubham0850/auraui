@@ -89,7 +89,7 @@ const marketingCategories = [
   // { name: "Featured Drops", items: 69, img: "/components/coming-soon.png" },
   {
     name: "Logo Cloud",
-    items: 1,
+    items: 6,
     img: "/components/logocloud.png",
     link: "/all-components/logocloud",
   },
