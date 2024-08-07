@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
 import React, { useEffect, useState } from "react";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaDiscord, FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
@@ -48,7 +48,15 @@ const Footer = () => {
           <ul className="flex items-center justify-end space-x-4">
             <li>
               <a href="https://github.com/Shubham0850/auraui" target="_blank">
-                <FaGithub size={20} className=" "/>
+                <FaGithub size={20} className=" " />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://discord.com/channels/1270693612681953311/1270693612681953314"
+                target="_blank"
+              >
+                <FaDiscord size={20} className=" " />
               </a>
             </li>
             <li>
