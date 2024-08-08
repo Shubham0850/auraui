@@ -1,6 +1,6 @@
 import React from "react";
 
-function Testimoial2() {
+function Testimonial2() {
   return (
     <section className="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -75,9 +75,9 @@ function Testimoial2() {
             <div className="p-8">
               <blockquote>
                 <p className="text-xl font-medium leading-9 text-gray-900">
-                  &quot;We love Landingfolio! Our designers were using it for their
-                  projects, so clients already knew what Landingfolio was and
-                  how to use it.&quot;
+                  &quot;We love Landingfolio! Our designers were using it for
+                  their projects, so clients already knew what Landingfolio was
+                  and how to use it.&quot;
                 </p>
               </blockquote>
               <p className="mt-6 text-base font-semibold text-gray-900">
@@ -106,4 +106,4 @@ function Testimoial2() {
   );
 }
 
-export default Testimoial2;
+export default Testimonial2;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Testimoial5() {
+function Testimonial5() {
   return (
     <section className="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -35,9 +35,10 @@ function Testimoial5() {
                 conversation means that something happens as a result.&quot;
               </p>
               <p className="mt-8 text-lg font-normal leading-8 text-gray-600 sm:text-xl sm:leading-9">
-                &quot;With Landingfolio, the design team can now build design which
-                identifies employees&apos;career aspirations and goals and from
-                which we approach managers and check to see what is happening.&quot;
+                &quot;With Landingfolio, the design team can now build design
+                which identifies employees&apos;career aspirations and goals and
+                from which we approach managers and check to see what is
+                happening.&quot;
               </p>
             </blockquote>
 
@@ -69,4 +70,4 @@ function Testimoial5() {
   );
 }
 
-export default Testimoial5;
+export default Testimonial5;
