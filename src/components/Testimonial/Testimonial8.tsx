@@ -1,4 +1,38 @@
 import React from "react";
+import { FaStar } from "react-icons/fa";
+
+const reviews = [
+  {
+    text: "“AuraUI's components have significantly streamlined our development process. The performance optimizations are top-notch.”",
+    name: "Arjun Patel",
+    title: "Lead Developer at Tech Innovations",
+  },
+  {
+    text: "“The design and functionality of AuraUI's library make it a breeze to integrate with our Next.js projects.”",
+    name: "Ananya Sharma",
+    title: "UX/UI Designer at Creative Studio",
+  },
+  {
+    text: "“AuraUI provides a beautiful and high-performance set of components that have enhanced our user experience.”",
+    name: "Ravi Kumar",
+    title: "Product Manager at Web Solutions",
+  },
+  {
+    text: "“With AuraUI, we’ve been able to deliver stunning websites faster than ever. Highly recommend!”",
+    name: "Maya Gupta",
+    title: "Front-End Engineer at StartUp Hub",
+  },
+  {
+    text: "“The level of customization and ease of use with AuraUI is impressive. It’s become an essential tool for our team.”",
+    name: "Siddharth Rao",
+    title: "Full Stack Developer at DevWorks",
+  },
+  {
+    text: "“AuraUI's components are not only visually appealing but also incredibly performant. Great for rapid development.”",
+    name: "Nisha Desai",
+    title: "Senior Developer at AppCraft",
+  },
+];
 
 function Testimonial8() {
   return (
@@ -7,502 +41,45 @@ function Testimonial8() {
         <div className="text-center">
           <h2 className="tracking-tighter text-white">
             <span className="font-sans text-4xl font-normal sm:text-5xl md:text-6xl">
-              {" "}
-              Recommended{" "}
+              Recommended
             </span>
             <span className="block font-serif text-5xl italic sm:text-6xl md:text-7xl">
-              {" "}
-              by our members{" "}
+              by our members
             </span>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-2 xl:grid-cols-3 lg:mt-16">
-          <div className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div className="p-6 md:px-12 md:py-10">
-              <div className="flex space-x-px">
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                    fill="black"
-                    stroke="#4A4A4A"
-                  />
-                </svg>
-              </div>
-              <blockquote className="mt-4">
-                <p className="font-sans text-xl font-normal text-white">
-                  “Cras quis nulla commodo, aliquam lectus sed, blandit augue.
-                  Cras ullamcorper bibendum bibendum.“
+          {reviews.map((review, index) => (
+            <div
+              key={index}
+              className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray"
+            >
+              <div className="p-6 md:px-12 md:py-10">
+                <div className="flex space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar
+                      key={i}
+                      className={`w-6 h-6 ${
+                        i < 4 ? "text-white" : "text-gray-500"
+                      }`}
+                    />
+                  ))}
+                </div>
+                <blockquote className="mt-4">
+                  <p className="font-sans text-xl font-normal text-white">
+                    {review.text}
+                  </p>
+                </blockquote>
+                <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
+                  {review.name}
                 </p>
-              </blockquote>
-              <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                Stanley Taber
-              </p>
-              <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                Director at Lorem Ipsum
-              </p>
-            </div>
-          </div>
-
-          <div className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div className="p-6 md:px-12 md:py-10">
-              <div className="flex space-x-px">
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                    fill="black"
-                    stroke="#4A4A4A"
-                  />
-                </svg>
-              </div>
-              <blockquote className="mt-4">
-                <p className="font-sans text-xl font-normal text-white">
-                  “Cras quis nulla commodo, aliquam lectus sed, blandit augue.
-                  Cras ullamcorper bibendum bibendum.“
+                <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
+                  {review.title}
                 </p>
-              </blockquote>
-              <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                Stanley Taber
-              </p>
-              <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                Director at Lorem Ipsum
-              </p>
-            </div>
-          </div>
-
-          <div className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div className="p-6 md:px-12 md:py-10">
-              <div className="flex space-x-px">
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                    fill="black"
-                    stroke="#4A4A4A"
-                  />
-                </svg>
               </div>
-              <blockquote className="mt-4">
-                <p className="font-sans text-xl font-normal text-white">
-                  “Cras quis nulla commodo, aliquam lectus sed, blandit augue.
-                  Cras ullamcorper bibendum bibendum.“
-                </p>
-              </blockquote>
-              <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                Stanley Taber
-              </p>
-              <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                Director at Lorem Ipsum
-              </p>
             </div>
-          </div>
-
-          <div className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div className="p-6 md:px-12 md:py-10">
-              <div className="flex space-x-px">
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                    fill="black"
-                    stroke="#4A4A4A"
-                  />
-                </svg>
-              </div>
-              <blockquote className="mt-4">
-                <p className="font-sans text-xl font-normal text-white">
-                  “Cras quis nulla commodo, aliquam lectus sed, blandit augue.
-                  Cras ullamcorper bibendum bibendum.“
-                </p>
-              </blockquote>
-              <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                Stanley Taber
-              </p>
-              <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                Director at Lorem Ipsum
-              </p>
-            </div>
-          </div>
-
-          <div className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div className="p-6 md:px-12 md:py-10">
-              <div className="flex space-x-px">
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                    fill="black"
-                    stroke="#4A4A4A"
-                  />
-                </svg>
-              </div>
-              <blockquote className="mt-4">
-                <p className="font-sans text-xl font-normal text-white">
-                  “Cras quis nulla commodo, aliquam lectus sed, blandit augue.
-                  Cras ullamcorper bibendum bibendum.“
-                </p>
-              </blockquote>
-              <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                Stanley Taber
-              </p>
-              <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                Director at Lorem Ipsum
-              </p>
-            </div>
-          </div>
-
-          <div className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div className="p-6 md:px-12 md:py-10">
-              <div className="flex space-x-px">
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6 text-white"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                  />
-                </svg>
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M11.9998 17.27L17.1698 20.39C17.5498 20.62 18.0198 20.28 17.9198 19.85L16.5498 13.97L21.1098 10.02C21.4398 9.72997 21.2698 9.17997 20.8198 9.13997L14.8098 8.62997L12.4598 3.08997C12.2898 2.67997 11.7098 2.67997 11.5398 3.08997L9.18981 8.62997L3.17981 9.13997C2.73981 9.17997 2.55981 9.72997 2.89981 10.02L7.45981 13.97L6.08981 19.85C5.98981 20.28 6.45981 20.62 6.83981 20.39L11.9998 17.27Z"
-                    fill="black"
-                    stroke="#4A4A4A"
-                  />
-                </svg>
-              </div>
-              <blockquote className="mt-4">
-                <p className="font-sans text-xl font-normal text-white">
-                  “Cras quis nulla commodo, aliquam lectus sed, blandit augue.
-                  Cras ullamcorper bibendum bibendum.“
-                </p>
-              </blockquote>
-              <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                Stanley Taber
-              </p>
-              <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                Director at Lorem Ipsum
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
