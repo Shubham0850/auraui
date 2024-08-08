@@ -114,7 +114,7 @@ const marketingCategories = [
   {
     name: "Feature",
     link: "/all-components/feature",
-    items: 1,
+    items: 8,
     img: "/components/Feature.png",
   },
   {
