@@ -3,8 +3,8 @@ import React from "react";
 
 type Props = {};
 
-function Designer({}: Props) {
+function testimonial2({}: Props) {
   return <Testimonial2 />;
 }
 
-export default Designer;
+export default testimonial2;
