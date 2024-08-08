@@ -1,5 +1,4 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
 
 const classNames = {
   container: "flex flex-col bg-white border border-gray-200 rounded-md",
@@ -52,7 +51,7 @@ const testimonials = [
       "“With AuraUI, our development workflow has become faster and smoother. Highly recommended!”",
     name: "Floyd Miles",
     role: "Nursing Assistant",
-    imgSrc: "https://www.auraui.com/memeimage/man2.jpg",
+    imgSrc: "https://www.auraui.com/memeimage/man1.jpg",
   },
 ];
 
