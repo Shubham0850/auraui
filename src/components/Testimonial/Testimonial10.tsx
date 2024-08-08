@@ -54,7 +54,7 @@ function Testimonial10() {
             <div className="flex flex-col justify-between h-full py-16">
               <div>
                 <h2 className={classNames.heading}>
-                  2800+ customers shared their love for Rareblocks.
+                  2800+ customers shared their love for AuraUI.
                 </h2>
                 <p className={classNames.description}>
                   Create custom landing pages with AuraUI that convert more
