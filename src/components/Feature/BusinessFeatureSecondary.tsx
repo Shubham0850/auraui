@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FiMessageCircle } from "react-icons/fi";
 
@@ -16,25 +18,23 @@ const BusinessFeatureSecondary = () => {
       <div className={containerStyles}>
         <div className={gridStyles}>
           <div className="relative pl-16 pr-10 sm:pl-6 md:pl-0 xl:pr-0 md:order-2">
-            <img
-              className="absolute top-6 -right-4 xl:-right-12"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/features/3/dots-pattern.svg"
-              alt=""
-            />
-            <div className="relative max-w-xs ml-auto">
-              <div className="overflow-hidden aspect-w-3 aspect-h-4">
-                <img
-                  className="object-cover w-full h-full scale-150"
-                  src="/memeimage/working-women.jpg"
+          
+            <div className="relative max-w-lg ml-auto">
+              <div className="overflow-hidden aspect-w-4 aspect-h-4">
+                <Image
+                  className="object-cover rounded-lg w-full h-full scale-400"
+                  src="https://www.auraui.com/aiimage/unkown.jpeg"
                   alt=""
+                  width={600}
+                  height={600}
                 />
               </div>
               <div className="absolute bottom-0 -left-16">
-                <div className="bg-yellow-300">
+                <div className="bg-violet-400 rounded-lg ">
                   <div className="py-4 pl-4 pr-10 sm:py-6 sm:pl-8 sm:pr-16">
                     <FiMessageCircle className="w-12 h-12 bg-transparent text-white fill-white" />
                     <span className="block mt-3 text-xl font-bold text-black sm:mt-6 sm:text-4xl lg:text-5xl">
-                      2,984
+                      69,69
                     </span>
                     <span className="block mt-2 text-sm font-medium leading-snug text-amber-900 sm:text-base">
                       Customer chat
@@ -61,9 +61,9 @@ const BusinessFeatureSecondary = () => {
               both light and dark themes, ensuring your site looks great no
               matter the user&apos;s preference.
             </p>
-            <a href="#" className={buttonStyles} role="button">
+            <Link href="#" className={buttonStyles} role="button">
               Start exploring
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { FaChartLine } from "react-icons/fa";
 
-const BusinessFeature = () => {
+const BusinessFeature: React.FC = () => {
   return (
     <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -19,21 +20,27 @@ const BusinessFeature = () => {
           </div>
           <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">
             <div className="relative w-full max-w-xs mt-4 mb-10 ml-auto">
-              <img
+              <Image
                 className="ml-auto"
-                src="/memeimage/working-women.jpg"
-                alt=""
+                src="https://www.auraui.com/memeimage/working-women.jpg"
+                alt="Working Women"
+                layout="responsive"
+                width={500}
+                height={500}
               />
               <div className="absolute -bottom-10 -left-16 bg-yellow-300">
                 <div className="px-8 py-10">
                   <span className="block text-4xl font-bold text-black lg:text-5xl">
-                    53%
+                    77%
                   </span>
                   <span className="block mt-2 text-base leading-tight text-black">
                     High Conversions
                     <br />
                     with AuraUI
                   </span>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <FaChartLine className="text-black w-10 h-10" />
                 </div>
               </div>
             </div>
