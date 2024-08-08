@@ -39,7 +39,7 @@ function Testimonial3() {
             <div className="mt-8 sm:mt-0 sm:ml-10">
               <div className="flex items-center justify-center sm:justify-start">
                 {[...Array(5)].map((_, i) => (
-                  <FaStar className="text-blue-600" />
+                  <FaStar key={i} className="text-blue-600" />
                 ))}
               </div>
               <blockquote className={classNames.blockquote}>
@@ -65,7 +65,7 @@ function Testimonial3() {
             <div className="mt-8 sm:mt-0 sm:ml-10">
               <div className="flex items-center justify-center sm:justify-start">
                 {[...Array(5)].map((_, i) => (
-                  <FaStar className="text-blue-600" />
+                  <FaStar key={i} className="text-blue-600" />
                 ))}
               </div>
               <blockquote className={classNames.blockquote}>
