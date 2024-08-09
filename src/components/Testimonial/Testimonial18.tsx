@@ -8,7 +8,7 @@ function Testimonial18() {
           <div className="-mx-4 sm:mx-0">
             <img
               className="w-full max-w-md mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/8/woman.png"
+              src="https://www.auraui.com/memeimage/gradient-girl.png"
               alt=""
             />
           </div>
@@ -16,7 +16,7 @@ function Testimonial18() {
           <div className="xl:pr-24">
             <img
               className="w-auto h-7"
-              src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/8/crowny-logo.svg"
+              src="https://www.auraui.com/logo-light.png"
               alt=""
             />
 
