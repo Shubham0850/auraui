@@ -25,7 +25,14 @@ const testimonials = [
       "Auraui has transformed our web presence with its intuitive and efficient design. Our site now performs better than ever.",
     name: "Devon Lane",
     role: "Account Assistant",
-    imgSrc: "https://cdn.auraui.xyz/testimonial/avatar-male-1.png",
+    imgSrc: "https://www.auraui.com/memeimage/boy1.jpeg",
+  },
+  {
+    quote:
+      "AuraUI has elevated our user experience to new heights. Seamless design and performance improvements are best.",
+    name: "Christian Gray",
+    role: "Frontend dev",
+    imgSrc: "https://www.auraui.com/memeimage/man1.jpg",
   },
 ];
 
@@ -34,7 +41,7 @@ const Testimonial14 = () => {
     <section className="py-12 bg-white sm:py-16 lg:py-20">
       <div className={styles.container}>
         <div className="text-center">
-          <h2 className={styles.heading}>What our clients say about Auraui</h2>
+          <h2 className={styles.heading}>What our clients say about AuraUI</h2>
           <p className={styles.subHeading}>
             2,157 people have shared their positive experiences with us
           </p>
@@ -48,13 +55,10 @@ const Testimonial14 = () => {
                   <p className={styles.blockquote}>{testimonial.quote}</p>
                 </blockquote>
                 <div className={styles.avatarWrapper}>
-                  <Image
+                  <img
                     className={styles.avatarImage}
                     src={testimonial.imgSrc}
                     alt={`${testimonial.name}'s avatar`}
-                    layout="intrinsic"
-                    width={44}
-                    height={44}
                   />
                   <div className={styles.textWrapper}>
                     <p className={styles.textBase}>{testimonial.name}</p>
