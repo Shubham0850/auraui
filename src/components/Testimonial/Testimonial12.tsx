@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 
 const commonTextClasses = "text-gray-900 font-pj";
@@ -8,36 +7,30 @@ const commonImageClasses = "w-full max-w-lg mx-auto";
 function Testimonial12() {
   return (
     <section className="overflow-hidden">
-      <div className="relative pt-12 bg-gray-50 sm:pt-16 lg:pt-24 xl:pt-40">
+      <div className="relative pt-6 bg-gray-50 sm:pt-16 lg:pt-24 xl:pt-40">
         <div className="flex flex-col">
           <div className="block lg:hidden">
-            <Image
+            <img
               className={commonImageClasses}
-              src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/2/man.png"
+              src="https://www.auraui.com/memeimage/manwithoutbg.png"
               alt="Testimonial Image"
-              layout="responsive"
-              width={600}
-              height={400}
             />
           </div>
 
           <div className="py-8 bg-gray-700 lg:order-2 sm:py-12">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="flex flex-col items-center sm:justify-center sm:flex-row lg:justify-start">
-                <Image
+                <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/2/cameron-logo.svg"
+                  src="https://www.auraui.com/logo-dark.png"
                   alt="Auraui Logo"
-                  layout="intrinsic"
-                  width={100}
-                  height={50}
                 />
                 <div className="mt-5 sm:ml-12 sm:mt-0">
                   <p className="text-xl font-bold text-white font-pj">
-                    Auraui User
+                    John Doe
                   </p>
                   <p className="text-sm font-normal font-pj text-white mt-1.5">
-                    Director of Technology, Auraui Inc.
+                    Director of Technology, AuraUI Inc.
                   </p>
                 </div>
               </div>
@@ -60,13 +53,10 @@ function Testimonial12() {
               </div>
 
               <div className="absolute bottom-0 right-0 hidden w-1/2 lg:block">
-                <Image
-                  className="w-full max-w-lg ml-10 mr-auto"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/2/man.png"
+                <img
+                  className="w-full max-w-lg ml-10 mr-auto scale-[2]"
+                  src="https://www.auraui.com/memeimage/manwithoutbg.png"
                   alt="Testimonial Image"
-                  layout="responsive"
-                  width={600}
-                  height={400}
                 />
               </div>
             </div>

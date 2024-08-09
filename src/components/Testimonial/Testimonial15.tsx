@@ -12,7 +12,7 @@ const roleStyles = "mt-1 text-sm font-normal text-gray-500";
 const overlayStyles =
   "absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent rounded-2xl lg:rounded-3xl opacity-80";
 
-function Testimoial15() {
+function Testimonial15() {
   return (
     <section className={containerStyles}>
       <div className={innerContainerStyles}>
@@ -20,8 +20,8 @@ function Testimoial15() {
           <div className="overflow-hidden aspect-square sm:aspect-video rounded-2xl lg:rounded-3xl group">
             <img
               className="object-cover w-full h-full transition-all duration-200 group-hover:scale-110"
-              src="https://example.com/auraui-video-cover.png" // Update with actual image URL
-              alt="Auraui Showcase"
+              src="https://www.AuraUI.com/memeimage/laptop-girl.jpeg"
+              alt="AuraUI Showcase"
             />
           </div>
           <div className={overlayStyles}></div>
@@ -35,7 +35,7 @@ function Testimoial15() {
           </div>
           <div className="absolute bottom-0 w-full px-4 py-8 text-center -translate-x-1/2 left-1/2 lg:p-12">
             <p className="text-lg font-semibold text-white sm:text-xl lg:text-3xl">
-              Discover how Auraui is revolutionizing user experiences
+              Discover how AuraUI is revolutionizing user experiences
             </p>
           </div>
         </div>
@@ -43,17 +43,17 @@ function Testimoial15() {
         <div className={testimonialGridStyles}>
           <div>
             <blockquote className={blockquoteStyles}>
-              &quot;Auraui has transformed the way we interact with web
-              applications. The intuitive design and seamless integration have
-              significantly improved our workflow. &quot;
+              &quot;AuraUI transformed the way we interact with web
+              applications.It &apos;s a game-changer for both beginners and
+              advanced users. &quot;
             </blockquote>
             <p className={nameStyles}>Alex Johnson</p>
-            <p className={roleStyles}>Lead Developer at Auraui</p>
+            <p className={roleStyles}>Lead Developer at AuraUI</p>
           </div>
 
           <div>
             <blockquote className={blockquoteStyles}>
-              &quot;The flexibility and power of Auraui&apos;s tools are
+              &quot;The flexibility and power of AuraUI&apos;s tools are
               unmatched. It&apos;s a game-changer for both beginners and
               advanced users. &quot;
             </blockquote>
@@ -63,11 +63,11 @@ function Testimoial15() {
 
           <div>
             <blockquote className={blockquoteStyles}>
-              &quot;Auraui&apos;s innovative approach has streamlined our
+              &quot;AuraUI&apos;s innovative approach has streamlined our
               development process and elevated our design capabilities.&quot;
             </blockquote>
             <p className={nameStyles}>Jordan Smith</p>
-            <p className={roleStyles}>Product Manager at Auraui</p>
+            <p className={roleStyles}>Product Manager at AuraUI</p>
           </div>
         </div>
       </div>
@@ -75,4 +75,4 @@ function Testimoial15() {
   );
 }
 
-export default Testimoial15;
+export default Testimonial15;

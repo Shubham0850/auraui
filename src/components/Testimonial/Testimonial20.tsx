@@ -1,6 +1,6 @@
 import React from "react";
 
-function Testimoial20() {
+function Testimonial20() {
   return (
     <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -53,4 +53,4 @@ function Testimoial20() {
   );
 }
 
-export default Testimoial20;
+export default Testimonial20;
