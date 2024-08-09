@@ -58,9 +58,7 @@ const config: DocsThemeConfig = {
   },
   head: (
     <>
-      <title>
-        AuraUI | Effortlessly Build High-Performance Websites with AuraUI
-      </title>
+      <title>AuraUI - Effortlessly Build High-Performance Websites</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Nextra" />
       <meta
@@ -79,7 +77,7 @@ const config: DocsThemeConfig = {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="Aura UI | 100x Your Development Speed"
+        content="AuraUI | Build Stunning React Websites Fast with Tailwind & Next.j"
       />
       <meta
         name="twitter:description"
@@ -88,7 +86,7 @@ const config: DocsThemeConfig = {
       {/* Additional SEO tags */}
       <meta
         name="keywords"
-        content="AuraUI, open-source, component library, Next.js, Tailwind CSS, web development, high-performance, customizable components, frontend development"
+        content="AuraUI, open-source, component library, Next.js, Tailwind CSS, web development,customizable components, frontend development"
       />
       <meta name="author" content="AuraUI Team" />
       <link rel="canonical" href="https://auraui.com" />
