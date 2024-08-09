@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { IoMdArrowForward } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
+import Link from "next/link";
 
 const commonStyles = {
   link: "text-base font-medium text-gray-300 transition-all duration-200 hover:text-white",
@@ -15,26 +17,21 @@ const Nft3: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="relative bg-indigo-600">
-      <div className="absolute inset-0 hidden md:block">
-        <img
-          className="object-cover w-full h-full"
-          src="https://example.com/new-background.png" // Replace with the updated background image URL
-          alt="Auraui Background"
-        />
-      </div>
-
+    <div className="relative bg-blue-500">
       <header className="relative py-4 sm:py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between">
             <div className="shrink-0">
-              <a href="#" title="Auraui" className="flex items-center">
-                <img
+              <Link href="#" title="Auraui" className="flex items-center">
+                <Image
                   className="w-auto h-8"
-                  src="https://example.com/auraui-logo.png" // Replace with the updated logo URL
+                  src="https://www.auraui.com/logo-dark.png"
                   alt="Auraui Logo"
+                  width={100}
+                  height={100}
+                  quality={80}
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="flex md:hidden">
@@ -45,20 +42,20 @@ const Nft3: React.FC = () => {
                 aria-expanded={expanded}
               >
                 {expanded ? (
-                  <AiOutlineClose className="w-6 h-6" />
+                  <AiOutlineClose className="w-6 h-6" aria-label="Close menu" />
                 ) : (
-                  <AiOutlineMenu className="w-6 h-6" />
+                  <AiOutlineMenu className="w-6 h-6" aria-label="Open menu" />
                 )}
               </button>
             </div>
 
             <div className="hidden md:flex md:items-center md:justify-end md:space-x-12">
-              <a href="#" title="About Auraui" className={commonStyles.link}>
+              <Link href="#" title="About Auraui" className={commonStyles.link}>
                 About
-              </a>
-              <a href="#" title="Our NFTs" className={commonStyles.link}>
+              </Link>
+              <Link href="#" title="Our NFTs" className={commonStyles.link}>
                 Our NFTs
-              </a>
+              </Link>
             </div>
           </nav>
 
@@ -66,16 +63,16 @@ const Nft3: React.FC = () => {
             <nav>
               <div className="px-1 py-5">
                 <div className="grid gap-y-6">
-                  <a
+                  <Link
                     href="#"
                     title="About Auraui"
                     className={commonStyles.link}
                   >
                     About
-                  </a>
-                  <a href="#" title="Our NFTs" className={commonStyles.link}>
+                  </Link>
+                  <Link href="#" title="Our NFTs" className={commonStyles.link}>
                     Our NFTs
-                  </a>
+                  </Link>
                 </div>
               </div>
             </nav>
@@ -149,14 +146,22 @@ const Nft3: React.FC = () => {
                         id="email"
                         className={commonStyles.input}
                         placeholder="Enter email address"
+                        required
                       />
-                      <MdEmail className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500" />
+                      <MdEmail
+                        className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500"
+                        aria-label="Email icon"
+                      />
                     </div>
                   </div>
 
                   <div>
                     <button type="submit" className={commonStyles.button}>
-                      Join Waiting List <IoMdArrowForward className="ml-2" />
+                      Join Waiting List{" "}
+                      <IoMdArrowForward
+                        className="ml-2"
+                        aria-label="Arrow icon"
+                      />
                     </button>
                   </div>
                 </div>

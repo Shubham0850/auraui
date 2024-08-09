@@ -2,6 +2,20 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoMdTimer } from "react-icons/io";
+import Image from "next/image";
+import Link from "next/link";
+
+const nftImages = [
+  { src: "/web3Images/nft/nft1.png", alt: "NFT Image 1" },
+  { src: "/web3Images/nft/nft2.png", alt: "NFT Image 2" },
+  { src: "/web3Images/nft/nft3.jpeg", alt: "NFT Image 3" },
+  { src: "/web3Images/nft/nft4.jpeg", alt: "NFT Image 4" },
+  { src: "/web3Images/nft/nft5.jpeg", alt: "NFT Image 5" },
+  { src: "/web3Images/nft/nft6.jpeg", alt: "NFT Image 6" },
+  { src: "/web3Images/nft/nft14.jpeg", alt: "NFT Image 7" },
+  { src: "/web3Images/nft/nft13.jpeg", alt: "NFT Image 8" },
+  { src: "/web3Images/nft/nft1.png", alt: "NFT Image 9" },
+];
 
 const commonStyles = {
   container: "bg-gray-900",
@@ -15,22 +29,22 @@ const commonStyles = {
   navLink:
     "text-base font-medium text-gray-300 transition-all duration-200 hover:text-white",
   mobileNav: "px-1 py-5",
-  gridImages: "grid grid-cols-3 gap-8 md:max-w-md lg:max-w-none",
-  image: "object-cover w-full h-full rounded-lg",
+  gridImages: "grid grid-cols-3 gap-3 md:max-w-md lg:max-w-none",
+  imageContainer: "relative w-full  ",
   textContainer: "max-w-lg",
   title: "text-2xl font-bold text-white sm:text-3xl",
   author: "flex items-center mt-7",
-  authorImage: "object-cover w-5 h-5 rounded-full shrink-0",
+  authorImage: "relative w-5 h-5 rounded-full shrink-0",
   authorText: "flex-1 ml-3 text-base font-medium text-gray-400",
   list: "mt-4 space-y-3",
   listItem: "flex items-center space-x-3",
-  listIcon: "text-sm shrink-0",
+  listIcon: "text-xl text-white shrink-0",
   listText: "flex-1 text-sm font-medium text-white",
   form: "max-w-md mt-14",
   formInput:
-    "block w-full px-0 py-2 text-base font-medium text-white placeholder-gray-500 bg-transparent border-t-0 border-b border-l-0 border-r-0 border-gray-700 rounded-none focus:border-white focus:outline-none focus:ring-0",
+    "block w-full px-0 py-2 text-base font-medium text-white placeholder-gray-500 bg-transparent border-b border-gray-700 focus:border-white focus:outline-none",
   button:
-    "inline-flex items-center justify-center w-full px-6 py-4 text-xs font-bold tracking-widest text-gray-900 uppercase transition-all duration-200 bg-white border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-gray-900 hover:bg-gray-100",
+    "inline-flex items-center justify-center w-full px-6 py-4 text-xs font-bold tracking-widest text-white uppercase  border  rounded-lg bg-sky-600 ",
 };
 
 function Nft2() {
@@ -42,13 +56,15 @@ function Nft2() {
         <div className={commonStyles.navContainer}>
           <nav className={commonStyles.nav}>
             <div className="shrink-0">
-              <a href="#" title="Auraui" className="flex items-center">
-                <img
+              <Link href="#" title="Auraui" className="flex items-center">
+                <Image
                   className={commonStyles.logo}
-                  src="https://example.com/auraui-logo.svg"
+                  src="https://www.auraui.com/logo-dark.png"
                   alt="Auraui Logo"
+                  width={100}
+                  height={100}
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="flex md:hidden">
@@ -67,36 +83,40 @@ function Nft2() {
             </div>
 
             <div className={commonStyles.navItems}>
-              <a href="#" title="About Auraui" className={commonStyles.navLink}>
-                {" "}
-                About{" "}
-              </a>
-              <a href="#" title="Auraui NFTs" className={commonStyles.navLink}>
-                {" "}
-                Our NFTs{" "}
-              </a>
+              <Link
+                href="#"
+                title="About Auraui"
+                className={commonStyles.navLink}
+              >
+                About
+              </Link>
+              <Link
+                href="#"
+                title="Auraui NFTs"
+                className={commonStyles.navLink}
+              >
+                Our NFTs
+              </Link>
             </div>
           </nav>
 
           {expanded && (
             <nav className={commonStyles.mobileNav}>
               <div className="grid gap-y-6">
-                <a
+                <Link
                   href="#"
                   title="About Auraui"
                   className={commonStyles.navLink}
                 >
-                  {" "}
-                  About{" "}
-                </a>
-                <a
+                  About
+                </Link>
+                <Link
                   href="#"
                   title="Auraui NFTs"
                   className={commonStyles.navLink}
                 >
-                  {" "}
-                  Our NFTs{" "}
-                </a>
+                  Our NFTs
+                </Link>
               </div>
             </nav>
           )}
@@ -109,15 +129,17 @@ function Nft2() {
             <div className="lg:col-span-3">
               <div className={commonStyles.textContainer}>
                 <h1 className={commonStyles.title}>
-                  Explore Auraui&apos;s Exclusive NFT Collection – Unique digital
-                  assets on the Ethereum blockchain.
+                  Explore Auraui&apos;s Exclusive NFT Collection – Unique
+                  digital assets on the Ethereum blockchain.
                 </h1>
                 <div className={commonStyles.author}>
-                  <img
-                    className={commonStyles.authorImage}
-                    src="https://example.com/auraui-avatar.png"
-                    alt="Auraui Creator"
-                  />
+                  <div className={commonStyles.authorImage}>
+                    <Image
+                      src="/web3Images/nft/nft8.jpeg"
+                      alt="Auraui Creator"
+                      layout="fill"
+                    />
+                  </div>
                   <p className={commonStyles.authorText}>
                     Crafted by <span className="text-white">Auraui Team</span>
                   </p>
@@ -128,19 +150,19 @@ function Nft2() {
                 </p>
                 <ul className={commonStyles.list}>
                   <li className={commonStyles.listItem}>
-                    <span className={commonStyles.listIcon}>💸</span>
+                    <MdEmail className={commonStyles.listIcon} />
                     <span className={commonStyles.listText}>
                       Receive exclusive discounts on NFT drops
                     </span>
                   </li>
                   <li className={commonStyles.listItem}>
-                    <span className={commonStyles.listIcon}>🎁</span>
+                    <FaBars className={commonStyles.listIcon} />
                     <span className={commonStyles.listText}>
                       Get surprise gifts with each purchase
                     </span>
                   </li>
                   <li className={commonStyles.listItem}>
-                    <span className={commonStyles.listIcon}>⌛️</span>
+                    <IoMdTimer className={commonStyles.listIcon} />
                     <span className={commonStyles.listText}>
                       Access special offers on new releases
                     </span>
@@ -152,8 +174,7 @@ function Nft2() {
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-5">
                       <div className="sm:col-span-2">
                         <label htmlFor="first-name" className="sr-only">
-                          {" "}
-                          First Name{" "}
+                          First Name
                         </label>
                         <input
                           type="text"
@@ -165,8 +186,7 @@ function Nft2() {
 
                       <div className="sm:col-span-3">
                         <label htmlFor="email" className="sr-only">
-                          {" "}
-                          Email Address{" "}
+                          Email Address
                         </label>
                         <input
                           type="email"
@@ -189,58 +209,17 @@ function Nft2() {
 
             <div className="lg:col-span-2">
               <div className={commonStyles.gridImages}>
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image1.png"
-                  alt="NFT Image 1"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image2.png"
-                  alt="NFT Image 2"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image3.png"
-                  alt="NFT Image 3"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image4.png"
-                  alt="NFT Image 4"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image5.png"
-                  alt="NFT Image 5"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image6.png"
-                  alt="NFT Image 6"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image7.png"
-                  alt="NFT Image 7"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image8.png"
-                  alt="NFT Image 8"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image9.png"
-                  alt="NFT Image 9"
-                />
-                <img
-                  className={commonStyles.image}
-                  src="https://example.com/nft-image10.png"
-                  alt="NFT Image 10"
-                />
-                <div className="bg-gray-700 rounded-lg"></div>
-                <div className="bg-gray-800 rounded-lg"></div>
+                {nftImages.map(({ src, alt }) => (
+                  <div key={src} className={commonStyles.imageContainer}>
+                    <Image
+                      src={src}
+                      alt={alt}
+                      objectFit="cover"
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>

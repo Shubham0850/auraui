@@ -200,7 +200,7 @@ const web3Categories = [
   {
     name: "NFTs",
     link: "/components/web3/Nft",
-    items: 1,
+    items: 6,
     img: "/components/nft.png",
   },
   // { name: "Profile", items: 69 },
