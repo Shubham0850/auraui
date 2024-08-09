@@ -12,7 +12,7 @@ function Testimonial12() {
           <div className="block lg:hidden">
             <img
               className={commonImageClasses}
-              src="/memeimage/manwithoutbg.png"
+              src="https://www.auraui.com/memeimage/manwithoutbg.png"
               alt="Testimonial Image"
             />
           </div>
@@ -22,7 +22,7 @@ function Testimonial12() {
               <div className="flex flex-col items-center sm:justify-center sm:flex-row lg:justify-start">
                 <img
                   className="w-auto h-8"
-                  src="https://www.auraui.com/memeimage/manwithoutbg.png"
+                  src="https://www.auraui.com/logo-dark.png"
                   alt="Auraui Logo"
                 />
                 <div className="mt-5 sm:ml-12 sm:mt-0">
