@@ -69,7 +69,7 @@ const config: DocsThemeConfig = {
         property="og:description"
         content="Build stunning, high-performance websites with AuraUI's open-source components. Fully customizable and integrated with Next.js and Tailwind CSS."
       />
-      <meta property="og:image" content="/banner.png" />{" "}
+      <meta property="og:image" content="https://www.auraui.com/banner.png" />{" "}
       {/* Add the correct path to your image */}
       <meta property="og:url" content="https://auraui.com" />
       <meta property="og:type" content="website" />
@@ -86,7 +86,7 @@ const config: DocsThemeConfig = {
       {/* Additional SEO tags */}
       <meta
         name="keywords"
-        content="AuraUI, open-source, component library, Next.js, Tailwind CSS, Web Development,React,  high-performance, customizable components, Frontend development"
+        content="AuraUI, open-source, component library, Next.js, Tailwind CSS, Web Development,React,  Frontend development"
       />
       <meta name="author" content="AuraUI Team" />
       <link rel="canonical" href="https://auraui.com" />
