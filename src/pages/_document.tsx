@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-     
         <meta
           name="description"
           content="Rapidly build high-performance React websites with AuraUI's library of reusable, customizable components. Save time and unlock your development speed."
@@ -17,9 +16,9 @@ export default function Document() {
           property="og:description"
           content="Build stunning, high-performance websites with AuraUI's open-source components. Fully customizable and integrated with Next.js and Tailwind CSS."
         />
-        <meta property="og:image" content="/banner.png" />{" "}
+        <meta property="og:image" content="https://www.auraui.com/banner.png" />{" "}
         {/* Add the correct path to your image */}
-        <meta property="og:url" content="https://auraui.com" />
+        <meta property="og:url" content="https://auraui.com/" />
         <meta property="og:type" content="website" />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -35,7 +34,7 @@ export default function Document() {
         {/* Additional SEO tags */}
         <meta
           name="keywords"
-          content="AuraUI, open-source, component library, Next.js, Tailwind CSS, web development, high-performance, customizable components, frontend development"
+          content="AuraUI, open-source, component library, Next.js, Tailwind CSS, Web Development,React,  Frontend development"
         />
         <meta name="author" content="AuraUI Team" />
         <link rel="canonical" href="https://auraui.com" />
