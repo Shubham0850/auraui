@@ -12,7 +12,7 @@ const roleStyles = "mt-1 text-sm font-normal text-gray-500";
 const overlayStyles =
   "absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent rounded-2xl lg:rounded-3xl opacity-80";
 
-function Testimoial15() {
+function Testimonial15() {
   return (
     <section className={containerStyles}>
       <div className={innerContainerStyles}>
@@ -75,4 +75,4 @@ function Testimoial15() {
   );
 }
 
-export default Testimoial15;
+export default Testimonial15;

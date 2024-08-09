@@ -44,12 +44,10 @@ const Designers = () => {
             >
               <div className="px-8 py-12">
                 <div className="relative w-24 h-24 mx-auto">
-                  <Image
+                  <img
                     className="relative object-cover w-24 h-24 mx-auto rounded-full"
                     src={testimony.image}
                     alt="Avatar"
-                    width={200} // Set the width in pixels
-                    height={200} // Set the height in pixels
                   />
                 </div>
                 <blockquote className="mt-7">
