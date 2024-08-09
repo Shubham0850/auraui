@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
-// Common styles
 const commonStyles = {
   container: "flex flex-col overflow-hidden shadow-xl",
   card: "flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7",
@@ -17,13 +16,18 @@ const commonStyles = {
   link: "pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600",
 };
 
+// Creating stars
+function renderStars(count: number) {
+  return Array.from({ length: count }, (_, index) => <FaStar key={index} />);
+}
+
 function Testimonial13() {
   return (
     <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-lg font-medium text-gray-600 font-pj">
-            2,157 people have said how good Auraui is
+            2,157 people have said how good AuraUI is
           </p>
           <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
             Our happy clients say about us
@@ -52,13 +56,7 @@ function Testimonial13() {
             <div className={commonStyles.container}>
               <div className={commonStyles.card}>
                 <div className={commonStyles.testimonial}>
-                  <div className={commonStyles.rating}>
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
+                  <div className={commonStyles.rating}>{renderStars(5)}</div>
                   <blockquote className={commonStyles.testimonialText}>
                     You made it so simple. My new site is so much faster and
                     easier to work with than my old site. I just choose the
@@ -66,13 +64,10 @@ function Testimonial13() {
                   </blockquote>
                 </div>
                 <div className={commonStyles.profile}>
-                  <Image
+                  <img
                     className={commonStyles.profileImage}
-                    src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png"
+                    src="https://www.auraui.com/memeimage/man2.jpg"
                     alt="Leslie Alexander"
-                    layout="intrinsic"
-                    width={44}
-                    height={44}
                   />
                   <div className={commonStyles.profileInfo}>
                     <p className={commonStyles.profileName}>Leslie Alexander</p>
@@ -88,26 +83,17 @@ function Testimonial13() {
             <div className={commonStyles.container}>
               <div className={commonStyles.card}>
                 <div className={commonStyles.testimonial}>
-                  <div className={commonStyles.rating}>
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
+                  <div className={commonStyles.rating}>{renderStars(5)}</div>
                   <blockquote className={commonStyles.testimonialText}>
                     Simply the best. Better than all the rest. I&apos;d
                     recommend this product to beginners and advanced users.
                   </blockquote>
                 </div>
                 <div className={commonStyles.profile}>
-                  <Image
+                  <img
                     className={commonStyles.profileImage}
-                    src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png"
+                    src="https://www.auraui.com/memeimage/man1.jpg"
                     alt="Jacob Jones"
-                    layout="intrinsic"
-                    width={44}
-                    height={44}
                   />
                   <div className={commonStyles.profileInfo}>
                     <p className={commonStyles.profileName}>Jacob Jones</p>
@@ -121,26 +107,17 @@ function Testimonial13() {
             <div className={commonStyles.container}>
               <div className={commonStyles.card}>
                 <div className={commonStyles.testimonial}>
-                  <div className={commonStyles.rating}>
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
+                  <div className={commonStyles.rating}>{renderStars(5)}</div>
                   <blockquote className={commonStyles.testimonialText}>
-                    Great product with fantastic support. Auraui has made a
+                    Great product with fantastic support. AuraUI has made a
                     significant difference in my workflow.
                   </blockquote>
                 </div>
                 <div className={commonStyles.profile}>
-                  <Image
+                  <img
                     className={commonStyles.profileImage}
-                    src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-3.png"
+                    src="https://www.auraui.com/memeimage/boy1.jpeg"
                     alt="Chris Johnson"
-                    layout="intrinsic"
-                    width={44}
-                    height={44}
                   />
                   <div className={commonStyles.profileInfo}>
                     <p className={commonStyles.profileName}>Chris Johnson</p>
