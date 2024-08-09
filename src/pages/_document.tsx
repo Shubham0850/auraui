@@ -4,9 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>
-          AuraUI - Accelerate Web Development with Reusable Components
-        </title>
+     
         <meta
           name="description"
           content="Rapidly build high-performance React websites with AuraUI's library of reusable, customizable components. Save time and unlock your development speed."

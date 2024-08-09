@@ -59,7 +59,7 @@ const config: DocsThemeConfig = {
   head: (
     <>
       <title>
-        AuraUI | Build Stunning React Websites Fast with Tailwind & Next.js
+        AuraUI | Build Stunning Websites Fast with Reusable Components
       </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Nextra" />
