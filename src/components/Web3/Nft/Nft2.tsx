@@ -6,15 +6,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 const nftImages = [
-  { src: "/web3Images/nft/nft1.png", alt: "NFT Image 1" },
-  { src: "/web3Images/nft/nft2.png", alt: "NFT Image 2" },
-  { src: "/web3Images/nft/nft3.jpeg", alt: "NFT Image 3" },
-  { src: "/web3Images/nft/nft4.jpeg", alt: "NFT Image 4" },
-  { src: "/web3Images/nft/nft5.jpeg", alt: "NFT Image 5" },
-  { src: "/web3Images/nft/nft6.jpeg", alt: "NFT Image 6" },
-  { src: "/web3Images/nft/nft14.jpeg", alt: "NFT Image 7" },
-  { src: "/web3Images/nft/nft13.jpeg", alt: "NFT Image 8" },
-  { src: "/web3Images/nft/nft1.png", alt: "NFT Image 9" },
+  { src: "https://www.auraui.com/web3Images/nft/nft1.png", alt: "NFT Image 1" },
+  { src: "https://www.auraui.com/web3Images/nft/nft2.png", alt: "NFT Image 2" },
+  { src: "https://www.auraui.com/web3Images/nft/nft3.jpeg", alt: "NFT Image 3" },
+  { src: "https://www.auraui.com/web3Images/nft/nft4.jpeg", alt: "NFT Image 4" },
+  { src: "https://www.auraui.com/web3Images/nft/nft5.jpeg", alt: "NFT Image 5" },
+  { src: "https://www.auraui.com/web3Images/nft/nft6.jpeg", alt: "NFT Image 6" },
+  { src: "https://www.auraui.com/web3Images/nft/nft14.jpeg", alt: "NFT Image 7" },
+  { src: "https://www.auraui.com/web3Images/nft/nft13.jpeg", alt: "NFT Image 8" },
+  { src: "https://www.auraui.com/web3Images/nft/nft1.png", alt: "NFT Image 9" },
 ];
 
 const commonStyles = {
@@ -135,7 +135,7 @@ function Nft2() {
                 <div className={commonStyles.author}>
                   <div className={commonStyles.authorImage}>
                     <Image
-                      src="/web3Images/nft/nft8.jpeg"
+                      src="https://www.auraui.com/web3Images/nft/nft8.jpeg"
                       alt="Auraui Creator"
                       layout="fill"
                     />

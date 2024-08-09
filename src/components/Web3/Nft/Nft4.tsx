@@ -7,26 +7,26 @@ const nftItems = [
   {
     id: 1,
     title: "Auraui Art 1",
-    imageUrl: "/web3Images/nft/nft16.jpeg",
+    imageUrl: "https://www.auraui.com/web3Images/nft/nft16.jpeg",
     priceEth: 3.4,
     priceUsd: 6652,
-    avatarUrl: "/web3Images/nft/nft4.jpeg",
+    avatarUrl: "https://www.auraui.com/web3Images/nft/nft4.jpeg",
   },
   {
     id: 2,
     title: "Auraui Art 2",
-    imageUrl: "/web3Images/nft/nft17.jpeg",
+    imageUrl: "https://www.auraui.com/web3Images/nft/nft17.jpeg",
     priceEth: 1.4,
     priceUsd: 2352,
-    avatarUrl: "/web3Images/nft/nft3.jpeg",
+    avatarUrl: "https://www.auraui.com/web3Images/nft/nft3.jpeg",
   },
   {
     id: 3,
     title: "Auraui Art 3",
-    imageUrl: "/web3Images/nft/nft18.jpeg",
+    imageUrl: "https://www.auraui.com/web3Images/nft/nft18.jpeg",
     priceEth: 2.4,
     priceUsd: 4552,
-    avatarUrl: "/web3Images/nft/nft1.png",
+    avatarUrl: "https://www.auraui.com/web3Images/nft/nft1.png",
   },
 ];
 

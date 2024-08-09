@@ -102,21 +102,21 @@ const Nft1: React.FC = () => {
           <div className={commonStyles.gridImages}>
             <Image
               className={commonStyles.image}
-              src="/web3Images/nft/nft1.png"
+              src="https://www.auraui.com/web3Images/nft/nft1.png"
               alt="NFT Image 1"
               width={300}
               height={300}
             />
             <Image
               className={`transform -rotate-2 ${commonStyles.image}`}
-              src="/web3Images/nft/nft2.png"
+              src="https://www.auraui.com/web3Images/nft/nft2.png"
               alt="NFT Image 2"
               width={300}
               height={300}
             />
             <Image
               className={`transform rotate-2 ${commonStyles.image}`}
-              src="/web3Images/nft/nft3.jpeg"
+              src="https://www.auraui.com/web3Images/nft/nft3.jpeg"
               alt="NFT Image 3"
               width={300}
               height={300}

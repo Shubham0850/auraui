@@ -50,7 +50,7 @@ function Nft5() {
           <div className="relative mt-8 lg:w-1/2 lg:mt-0">
             <Image
               className="max-w-xs mx-auto rounded-full lg:max-w-sm lg:absolute lg:inset-x-0 lg:-bottom-80"
-              src="/web3Images/nft/nft3.avif"
+              src="https://www.auraui.com/web3Images/nft/nft3.avif"
               alt="Phone Mockup"
               width={500}
               height={800}
