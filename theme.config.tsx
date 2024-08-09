@@ -45,7 +45,9 @@ const config: DocsThemeConfig = {
   },
   project: {
     link: "https://github.com/Shubham0850/auraui/",
-    icon: <FaGithub className="h-4 text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />,
+    icon: (
+      <FaGithub className="h-4 text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
+    ),
   },
 
   chat: {
@@ -56,12 +58,38 @@ const config: DocsThemeConfig = {
   },
   head: (
     <>
+      <title>AuraUI - Effortlessly Build High-Performance Websites</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="Nextra" />
       <meta
-        property="og:description"
-        content="AuraUI the best platform for website components "
+        property="og:title"
+        content=" AuraUI | Build Stunning React Websites Fast with Tailwind & Next.js"
       />
+      <meta
+        property="og:description"
+        content="Build stunning, high-performance websites with AuraUI's open-source components. Fully customizable and integrated with Next.js and Tailwind CSS."
+      />
+      <meta property="og:image" content="/banner.png" />{" "}
+      {/* Add the correct path to your image */}
+      <meta property="og:url" content="https://auraui.com" />
+      <meta property="og:type" content="website" />
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="AuraUI | Build Stunning React Websites Fast with Tailwind & Next.j"
+      />
+      <meta
+        name="twitter:description"
+        content="Build stunning, high-performance websites with AuraUI's open-source components. Fully customizable and integrated with Next.js and Tailwind CSS."
+      />
+      {/* Additional SEO tags */}
+      <meta
+        name="keywords"
+        content="AuraUI, open-source, component library, Next.js, Tailwind CSS, web development,customizable components, frontend development"
+      />
+      <meta name="author" content="AuraUI Team" />
+      <link rel="canonical" href="https://auraui.com" />
       <link rel="icon" href="/ico.png" />
     </>
   ),
