@@ -1,12 +1,10 @@
-import Designers from '@/components/Testimonial/Designers'
-import React from 'react'
+import Designers from "@/components/Testimonial/Testimonial21";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 function Designer({}: Props) {
-	return (
-		<Designers/>
-	)
+  return <Designers />;
 }
 
-export default Designer
+export default Designer;

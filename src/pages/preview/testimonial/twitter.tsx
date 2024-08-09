@@ -1,12 +1,10 @@
-import Devlopers from '@/components/Testimonial/Devlopers'
-import React from 'react'
+import Devlopers from "@/components/Testimonial/Testimonial22";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 function Twitter({}: Props) {
-	return (
-		<Devlopers/>
-	)
+  return <Devlopers />;
 }
 
-export default Twitter
+export default Twitter;
