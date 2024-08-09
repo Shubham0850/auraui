@@ -152,5 +152,12 @@
     "theme": {
       "layout": "full"
     }
+  },
+  "web3": {
+    "title": "Web3",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   }
 }

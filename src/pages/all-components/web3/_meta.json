@@ -1,0 +1,17 @@
+{
+ 
+  "WalletConnect": {
+    "title": "WalletConnect",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "Nft": {
+    "title": "NFT",
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
+  }
+}
