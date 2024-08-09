@@ -102,7 +102,7 @@ const marketingCategories = [
   {
     name: "Testimonial",
     link: "/all-components/testimonial",
-    items: 2,
+    items: 12,
     img: "/components/testimonial.png",
   },
   {
