@@ -245,7 +245,7 @@ const ComponentSection = () => {
           <h2 className="text-3xl font-semibold tracking-wide uppercase">
             Global
           </h2>
-          <p>Components which can be used for a wide variaty of websites.</p>
+          <h3>Components which can be used for a wide variaty of websites.</h3>
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
@@ -281,10 +281,10 @@ const ComponentSection = () => {
           <h2 className="text-3xl font-semibold tracking-wide uppercase">
             Sections
           </h2>
-          <p>
+          <h3>
             Components specifically used for marketing websites and landing
             pages.
-          </p>
+          </h3>
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
@@ -321,7 +321,7 @@ const ComponentSection = () => {
           <h2 className="text-3xl font-semibold tracking-wide uppercase">
             Animation
           </h2>
-          <p>Components specifically used for animations.</p>
+          <h3>Animations and Interactive Elements</h3>
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
@@ -357,7 +357,7 @@ const ComponentSection = () => {
           <h2 className="text-3xl font-semibold tracking-wide uppercase">
             Web3 Components
           </h2>
-          <p>Components specifically used for web3 applications.</p>
+          <h3>Components specifically used for web3 applications.</h3>
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">

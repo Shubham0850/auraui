@@ -65,12 +65,12 @@ const Hero = () => {
             <h1 className="mt-5 text-[34px] font-bold leading-tight dark:text-gray-100  text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
               Copy. Paste. Ship.
             </h1>
-            <p className="max-w-2xl mx-auto px-4 mt-6 text-base  dark:text-gray-300  leading-7 text-gray-600 font-inter">
+            <h3 className="max-w-2xl mx-auto px-4 mt-6 text-base  dark:text-gray-300  leading-7 text-gray-600 font-inter">
               Ship stunning React websites in hours, not months, with Aura UI’s
               sleek, animated components. Optimized for speed and SEO, just
               copy, paste, and customize for a flawless, high-performance site.
               🚀
-            </p>
+            </h3>
 
             <div className="flex items-center justify-center space-x-5 mt-5">
               {/* className="w-7 h-7 text-gray-900 dark:text-gray-300"  */}
