@@ -6,7 +6,6 @@ const commonClasses = {
   textOpacity: "text-opacity-50",
   textBase: "text-base font-normal",
   gradientBg: "bg-gradient-to-t from-secondary to-transparent",
-
   border: "border rounded-lg border-neutral",
   container: "relative overflow-hidden h-[400px] w-[300px]",
   sectionHeading: "text-4xl font-normal sm:text-5xl md:text-6xl",
