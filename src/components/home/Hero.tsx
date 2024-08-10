@@ -13,6 +13,8 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 import { MacDock } from "./Doc";
 import Image from "next/image";
+import Particles from "../background/Particles";
+import Earth from "../animation/Earth";
 
 function AnimateNumber({ number }: { number: number }) {
   const count = useMotionValue(0);
@@ -105,13 +107,15 @@ const Hero = () => {
             <MacDock />
           </div>
           <div>
-            <OrbitCircleExample />
+            {/* <OrbitCircleExample /> */}
+            <Earth />
           </div>
           <div className="flex flex-col space-y-4">
             <div className="h-[45px] overflow-y-hidden">
               <AnimatedTabExample />
             </div>
-            <HoverBox />
+            {/* <HoverBox /> */}
+            <Particles />
           </div>
           <div className="flex md:flex-col justify-center items-center gap-4 md:gap-0 space-y-4 ">
             <IosToggleExample />
