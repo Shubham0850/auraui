@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { components } from './Data'
 import Image from 'next/image'
 import { PlaceholdersAndVanishInput } from '@/components/ui/animated-search'
 
 function Components() {
+	const [filteredComponents, setFilteredComponents] = useState(components);
+	const [activeTag, setActiveTag] = useState('');
 	const placeholders = [
 		"Hero",
 		"Navbar",
@@ -29,12 +31,19 @@ function Components() {
 	];
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		console.log(e.target.value);
-	};
+    const tag = e.target.value.toLowerCase();
+    const filteredComponents = components.filter(component => component.tag.toLowerCase().includes(tag));
+    setFilteredComponents(filteredComponents);
+};
 
 	const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		console.log("submitted");
+	};
+
+	const handleTagClick = (tag: string) => {
+		setActiveTag(tag);
+		const filteredComponents = components.filter(component => component.tag.toLowerCase().includes(tag.toLowerCase()));
+		setFilteredComponents(filteredComponents);
 	};
 
 	return (
@@ -50,7 +59,7 @@ function Components() {
 						/>
 						<div className="flex flex-wrap gap-2 mt-4">
 							{tags.map((tag, index) => (
-								<button key={index} className="px-2 py-1 bg-customDark rounded-md">
+								<button onClick={() => handleTagClick(tag)} key={index} className={`border border-customDark px-2 py-1 rounded-md ${activeTag === tag ? 'bg-black' : 'bg-customDark'}`}>
 									<p className='text-[#b9b9b9] text-xs'>{tag}</p>
 								</button>
 							))}
@@ -60,7 +69,7 @@ function Components() {
 
 			</div>
 			<div className="mt-10   gap-4 md:columns-2 lg:columns-3 space-y-4 ">
-				{components.map((component, index) => (
+				{filteredComponents.map((component, index) => (
 					<a
 						key={index}
 						href={component.link}
