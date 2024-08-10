@@ -53,7 +53,17 @@
       "pagination": true
     }
   },
-
+  "loading": {
+    "title": "Loading",
+    "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "layout": "full",
+      "toc": false,
+      "pagination": true
+    }
+  },
   "hero": {
     "title": "Hero",
     "theme": {
