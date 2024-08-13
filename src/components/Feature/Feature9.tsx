@@ -1,7 +1,7 @@
 import React from "react";
-import { FaTasks, FaCloud, FaImage } from "react-icons/fa";
+import Image from "next/image";
+import { FaTasks, FaCloud } from "react-icons/fa";
 
-// Common styles
 const commonStyles = {
   section: "py-12 bg-gray-50 sm:py-16 lg:py-20",
   container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
@@ -18,10 +18,10 @@ const commonStyles = {
   textMain: "text-4xl font-medium text-gray-900 font-pj",
   textSub: "ml-5 text-sm text-gray-900 font-pj",
   imageContainer: "max-w-4xl mx-auto mt-10 sm:mt-16",
-  image: "w-full",
+  image: "w-full rounded-sm",
 };
 
-const Feature9 = () => {
+const Feature9: React.FC = () => {
   return (
     <section className={commonStyles.section}>
       <div className={commonStyles.container}>
@@ -30,7 +30,7 @@ const Feature9 = () => {
             Build your solid team with the perfect time management
           </h2>
           <p className={commonStyles.description}>
-            Auraui enhances your team’s productivity with effortless task
+            Auraui enhances your team&apos;s productivity with effortless task
             management and robust cloud storage solutions. Keep your team
             organized and your projects on track.
           </p>
@@ -65,10 +65,12 @@ const Feature9 = () => {
         </div>
 
         <div className={commonStyles.imageContainer}>
-          <img
+          <Image
             className={commonStyles.image}
-            src="https://cdn.rareblocks.xyz/collection/clarity/images/features/5/illustration.png"
+            src="/images/team.jpg"
             alt="Feature illustration"
+            width={1200}
+            height={800}
           />
         </div>
       </div>

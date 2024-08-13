@@ -23,7 +23,7 @@ function Feature3() {
     featureLink:
       "text-sm font-semibold text-blue-600 transition-all duration-200 hover:text-blue-800 hover:underline",
     imageContainer:
-      "grid p-12 bg-blue-100 lg:order-1 lg:col-span-3 rounded-3xl place-items-center",
+      "grid p-6 bg-blue-100 lg:order-1 lg:col-span-3 rounded-3xl place-items-center",
   };
 
   const features = [
@@ -80,7 +80,7 @@ function Feature3() {
           <div className={commonStyles.imageContainer}>
             <Image
               className="w-full shadow-xl rounded-xl sm:max-w-xs"
-              src="https://images.unsplash.com/photo-1585247226801-bc613c441316?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww"
+              src="/images/women.jpg"
               alt="Auraui Feature"
               width={400}
               height={300}
