@@ -5,7 +5,7 @@ import Link from "next/link";
 
 type Props = {};
 
-const CardDesign = (props: Props) => {
+const Pricing16 = (props: Props) => {
   const features = [
     "1 Domain License",
     "Full Celebration Library",
@@ -102,4 +102,4 @@ const CardDesign = (props: Props) => {
   );
 };
 
-export default CardDesign;
+export default Pricing16;

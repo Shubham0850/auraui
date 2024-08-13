@@ -1,5 +1,5 @@
 import React from "react";
-import CardDesign from "@/components/Pricing/CardDesign";
+import CardDesign from "@/components/Pricing/Pricing16";
 
 type Props = {};
 

@@ -1,5 +1,5 @@
 import React from "react";
-import ToggleDesign from "@/components/Pricing/ToggleDesign";
+import ToggleDesign from "@/components/Pricing/Pricing17";
 
 type Props = {};
 
