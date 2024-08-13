@@ -164,24 +164,24 @@ function Pricing7() {
                 {
                   label: "Lorem ipsum",
                   values: [
-                    <FaCheck className={checkIconSize} />,
-                    <FaCheck className={checkIconSize} />,
-                    <FaCheck className={checkIconSize} />,
+                    <FaCheck key={1} className={checkIconSize} />,
+                    <FaCheck key={2} className={checkIconSize} />,
+                    <FaCheck key={3} className={checkIconSize} />,
                   ],
                 },
                 {
                   label: "Zoom Call",
                   values: [
                     "",
-                    <FaCheck className={checkIconSize} />,
-                    <FaCheck className={checkIconSize} />,
+                    <FaCheck key={4} className={checkIconSize} />,
+                    <FaCheck key={5} className={checkIconSize} />,
                   ],
                 },
                 {
                   label: "Lorem ipsum",
                   values: [
-                    <FaCheck className={checkIconSize} />,
-                    <FaCheck className={checkIconSize} />,
+                    <FaCheck key={6} className={checkIconSize} />,
+                    <FaCheck key={7} className={checkIconSize} />,
                     "",
                   ],
                 },

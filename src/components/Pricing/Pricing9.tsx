@@ -32,7 +32,7 @@ function Pricing9() {
             <span className={styles.subheading}>Options</span>
           </h2>
           <p className={styles.paragraph}>
-            Discover the perfect pricing plan for your needs with AuraUI's
+            Discover the perfect pricing plan for your needs with AuraUI&apos;s
             flexible options.
           </p>
 
