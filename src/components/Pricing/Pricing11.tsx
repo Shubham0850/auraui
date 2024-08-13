@@ -1,13 +1,12 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
-// Common styles
 const commonStyles = {
   section: "py-12 bg-white sm:py-16 lg:py-20",
   container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
   heading: "text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl",
   subheading: "mt-6 text-lg font-normal text-gray-600",
-  card: "overflow-hidden bg-white border border-gray-200 rounded-2xl",
+  card: "relative overflow-hidden bg-white border border-gray-200 rounded-2xl",
   cardContent: "p-6 lg:px-10 lg:py-8",
   cardTitle: "text-lg font-bold text-gray-900",
   price: "mt-3 text-5xl font-bold text-gray-900",
@@ -22,8 +21,9 @@ const commonStyles = {
     "text-gray-900 border-2 border-gray-400 hover:bg-gray-900 hover:text-white hover:border-gray-900",
   featuresTitle: "mt-8 text-base font-bold text-gray-900",
   featureList: "mt-4 space-y-3 text-base font-medium text-gray-600",
-  gradientOverlay:
-    "absolute inset-0 w-full h-full mx-auto rotate-180 opacity-30 blur-lg filter",
+  gradientOverlay: "absolute inset-0 w-full h-full opacity-30 blur-lg filter",
+  gradient:
+    "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
 };
 
 const plans = [
@@ -36,6 +36,8 @@ const plans = [
       "130+ Coded Blocks",
       "Best for Developers, Freelancers",
       "Made with TailwindCSS",
+      "Lifetime Access",
+      "License for components",
     ],
     buttonClass: commonStyles.buttonBasic,
   },
@@ -80,7 +82,7 @@ const Pricing11 = () => {
             Make the wise decision for your business
           </h2>
           <p className={commonStyles.subheading}>
-            Choose from our affordable packages at Auraui
+            Choose from our affordable packages at AuraUI
           </p>
         </div>
 

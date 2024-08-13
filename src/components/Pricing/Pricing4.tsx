@@ -13,10 +13,10 @@ const commonStyles = {
   planContent: "p-5",
   planHeader: "flex items-center",
   radioButton: "w-8 h-8 text-purple-500 border-gray-300 focus:ring-purple-500",
+  planDetails: "flex-1 ml-5 shrink-0",
   planPrice: "text-xl font-semibold text-black",
   planLabel: "mt-1 text-base font-normal text-gray-600",
-  saveBadge:
-    "absolute rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 -inset-px",
+  saveBadge: "relative rounded-md bg-gradient-to-r from-cyan-500 to-purple-500",
   saveText:
     "relative px-2 pt-0.5 pb-1 bg-white rounded-md text-xs leading-none tracking-wide text-transparent uppercase bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500",
   button:
@@ -31,7 +31,7 @@ const Pricing4 = () => {
     <section className={commonStyles.container}>
       <div className="absolute bottom-0 right-0 transform translate-x-20 translate-y-80">
         <FaCheckCircle
-          className="blur-3xl filter"
+          className="blur-3xl"
           style={{
             filter: "blur(64px)",
             width: "568px",
@@ -41,23 +41,15 @@ const Pricing4 = () => {
         />
       </div>
 
-      <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full opacity-50"
-          src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png"
-          alt="Background noise"
-        />
-      </div>
-
       <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-md mx-auto md:mx-0 md:max-w-3xl">
           <div className="max-w-xl text-center md:text-left">
             <p className={commonStyles.header}>Choose a subscription</p>
             <h2 className={commonStyles.title}>Get Premium Access</h2>
             <p className={commonStyles.description}>
-              Experience premium features with Auraui&apos;s exclusive subscription
-              plans. Select the plan that suits your needs and enjoy enhanced
-              functionalities.
+              Experience premium features with AuraUI&apos;s exclusive
+              subscription plans. Select the plan that suits your needs and
+              enjoy enhanced functionalities.
             </p>
           </div>
 
@@ -71,7 +63,7 @@ const Pricing4 = () => {
                     id="monthlyBilling"
                     className={commonStyles.radioButton}
                   />
-                  <div className="flex-1 ml-5 shrink-0">
+                  <div className={commonStyles.planDetails}>
                     <p className={commonStyles.planPrice}>$29/month</p>
                     <label
                       htmlFor="monthlyBilling"
@@ -94,7 +86,7 @@ const Pricing4 = () => {
                       id="yearlyBilling"
                       className={commonStyles.radioButton}
                     />
-                    <div className="flex-1 ml-5 shrink-0">
+                    <div className={commonStyles.planDetails}>
                       <p className={commonStyles.planPrice}>$19/month</p>
                       <label
                         htmlFor="yearlyBilling"
@@ -114,9 +106,9 @@ const Pricing4 = () => {
             </div>
 
             <div>
-              <button type="button" className={commonStyles.button}>
+              <div className={commonStyles.button}>
                 Start A 30 Days Free Trial
-              </button>
+              </div>
             </div>
           </div>
 

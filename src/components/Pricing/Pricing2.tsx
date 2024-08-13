@@ -17,8 +17,8 @@ const commonStyles = {
   emptyIcon: "w-5 h-5 text-gray-300",
   gridContainer: "grid grid-cols-4 divide-x divide-gray-200",
   gridItem: "px-2 py-2 sm:px-4",
-  gridText: "text-sm font-medium text-gray-500",
-  gridPrice: "mt-2 text-base font-semibold text-gray-900",
+  gridText: "text-sm font-medium text-gray-500 dark:text-gray-500",
+  gridPrice: "mt-2 text-base font-semibold text-gray-900 dark:text-gray-500",
 };
 
 function Pricing2() {
@@ -27,13 +27,13 @@ function Pricing2() {
       <div className={commonStyles.container}>
         <div className={commonStyles.headingContainer}>
           <p className="text-base font-semibold text-blue-600">
-            Compare Auraui plans with each other
+            Compare AuraUI plans with each other
           </p>
           <h2 className={commonStyles.headingTitle}>
             Choose the perfect plan for your needs
           </h2>
           <p className={commonStyles.headingSubtitle}>
-            Auraui provides comprehensive solutions tailored to your business
+            AuraUI provides comprehensive solutions tailored to your business
             needs. Our plans offer scalable features and benefits to help you
             thrive in the modern web landscape.
           </p>

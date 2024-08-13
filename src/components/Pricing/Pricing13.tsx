@@ -1,13 +1,12 @@
 import React from "react";
-import { FaDollarSign, FaCreditCard, FaRegCalendarAlt } from "react-icons/fa";
-import { IoMdRocket } from "react-icons/io";
+import { FaDollarSign, FaCreditCard } from "react-icons/fa";
 
 const commonStyles = {
   container: "py-12 bg-gray-50 sm:py-16 lg:py-20",
   innerContainer: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
   header: "text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl",
   subheader: "mt-5 text-lg font-normal text-gray-900",
-  card: "overflow-hidden bg-white border border-gray-200 rounded-2xl",
+  card: "relative overflow-hidden bg-white border border-gray-200 rounded-2xl",
   cardContent: "p-6 md:p-10",
   planTitle: "text-lg font-bold text-gray-900",
   planDescription: "mt-4 text-base font-normal leading-7 text-gray-600",
@@ -19,7 +18,7 @@ const commonStyles = {
   buttonYearly:
     "bg-gray-900 hover:bg-opacity-90 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
   backgroundGradient:
-    "absolute -inset-2 w-full h-full mx-auto rotate-180 opacity-30 blur-lg filter",
+    "absolute inset-0 w-full h-full opacity-30 blur-lg filter",
   gradient:
     "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
   footer:
@@ -34,7 +33,7 @@ function Pricing13() {
         <div className="text-center">
           <h2 className={commonStyles.header}>Choose your plan</h2>
           <p className={commonStyles.subheader}>
-            Discover Auraui’s exclusive pricing for our advanced web3 solutions.
+            Discover AuraUI’s exclusive pricing for our advanced web3 solutions.
           </p>
         </div>
 
@@ -44,7 +43,7 @@ function Pricing13() {
               <p className={commonStyles.planTitle}>Pay monthly</p>
               <p className={commonStyles.planDescription}>
                 Enjoy the flexibility of our monthly plan. Perfect for trying
-                out Auraui’s features.
+                out AuraUI’s features.
               </p>
               <p className={commonStyles.pricing}>
                 <FaDollarSign className="inline-block" /> $19/month
@@ -74,7 +73,7 @@ function Pricing13() {
                 <p className={commonStyles.planTitle}>Pay yearly</p>
                 <p className={commonStyles.planDescription}>
                   Opt for our yearly plan and save more while accessing all the
-                  advanced features of Auraui.
+                  advanced features of AuraUI.
                 </p>
                 <p className={commonStyles.pricing}>
                   <FaDollarSign className="inline-block" /> $12/month

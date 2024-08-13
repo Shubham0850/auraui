@@ -7,15 +7,38 @@ import {
   MdChat,
   MdShare,
 } from "react-icons/md";
-import { FaDollarSign } from "react-icons/fa";
 import { RiArrowRightLine } from "react-icons/ri";
 
-// Common styles
 const iconWrapperStyle = "relative w-10 h-10 shrink-0";
 const iconBgStyle =
   "absolute rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500";
 const iconStyle =
   "relative inline-flex items-center justify-center w-10 h-10 rounded-full bg-base-900 text-white";
+
+const features = [
+  {
+    Icon: MdStorage,
+    title: "Cloud Storage",
+    description: "Up to 100GB for projects",
+  },
+  {
+    Icon: MdAccountCircle,
+    title: "Unlimited Accounts",
+    description: "No limits on account creation",
+  },
+  { Icon: MdApi, title: "API Access", description: "Create custom solutions" },
+  {
+    Icon: MdDomain,
+    title: "Custom Domain",
+    description: "Add your own domain",
+  },
+  { Icon: MdChat, title: "Live Chat", description: "Connect with customers" },
+  {
+    Icon: MdShare,
+    title: "Share Information",
+    description: "Easily share your message",
+  },
+];
 
 function Pricing6() {
   return (
@@ -28,10 +51,10 @@ function Pricing6() {
             </span>
           </p>
           <h2 className="mt-6 text-3xl font-normal text-white sm:mt-8 sm:text-4xl lg:text-5xl xl:text-6xl">
-            Invest in Auraui Today
+            Invest in AuraUI Today
           </h2>
           <p className="max-w-xl mt-6 text-lg font-normal text-gray-400 sm:mt-8">
-            Enhance your digital experience with Auraui&apos;s premium features.
+            Enhance your digital experience with AuraUI&apos;s premium features.
             Secure, scalable, and designed for modern needs.
           </p>
         </div>
@@ -54,116 +77,31 @@ function Pricing6() {
               <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-3">
                 <div className="lg:pr-16 xl:pr-24 lg:col-span-2">
                   <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-                    <div className="flex items-center">
-                      <div className={iconWrapperStyle}>
-                        <div className={iconBgStyle}></div>
-                        <div className={iconStyle}>
-                          <MdStorage size={20} />
+                    {features.map(({ Icon, title, description }, index) => (
+                      <div className="flex items-center" key={index}>
+                        <div className={iconWrapperStyle}>
+                          <div className={iconBgStyle}></div>
+                          <div className={iconStyle}>
+                            <Icon size={20} />
+                          </div>
+                        </div>
+                        <div className="ml-4">
+                          <p className="text-lg font-normal text-white">
+                            {title}
+                          </p>
+                          <p className="mt-px text-sm font-normal text-gray-500">
+                            {description}
+                          </p>
                         </div>
                       </div>
-                      <div className="ml-4">
-                        <p className="text-lg font-normal text-white">
-                          Cloud Storage
-                        </p>
-                        <p className="mt-px text-sm font-normal text-gray-500">
-                          Up to 100GB for projects
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center">
-                      <div className={iconWrapperStyle}>
-                        <div className={iconBgStyle}></div>
-                        <div className={iconStyle}>
-                          <MdAccountCircle size={20} />
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-lg font-normal text-white">
-                          Unlimited Accounts
-                        </p>
-                        <p className="mt-px text-sm font-normal text-gray-500">
-                          No limits on account creation
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center">
-                      <div className={iconWrapperStyle}>
-                        <div className={iconBgStyle}></div>
-                        <div className={iconStyle}>
-                          <MdApi size={20} />
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-lg font-normal text-white">
-                          API Access
-                        </p>
-                        <p className="mt-px text-sm font-normal text-gray-500">
-                          Create custom solutions
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center">
-                      <div className={iconWrapperStyle}>
-                        <div className={iconBgStyle}></div>
-                        <div className={iconStyle}>
-                          <MdDomain size={20} />
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-lg font-normal text-white">
-                          Custom Domain
-                        </p>
-                        <p className="mt-px text-sm font-normal text-gray-500">
-                          Add your own domain
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center">
-                      <div className={iconWrapperStyle}>
-                        <div className={iconBgStyle}></div>
-                        <div className={iconStyle}>
-                          <MdChat size={20} />
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-lg font-normal text-white">
-                          Live Chat
-                        </p>
-                        <p className="mt-px text-sm font-normal text-gray-500">
-                          Connect with customers
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center">
-                      <div className={iconWrapperStyle}>
-                        <div className={iconBgStyle}></div>
-                        <div className={iconStyle}>
-                          <MdShare size={20} />
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-lg font-normal text-white">
-                          Share Information
-                        </p>
-                        <p className="mt-px text-sm font-normal text-gray-500">
-                          Easily share your message
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
 
                 <div className="w-48 h-px mx-auto bg-white bg-opacity-10 lg:hidden"></div>
 
                 <div className="text-center border-white lg:border-l lg:pl-16 xl:pl-24 border-opacity-10">
-                  <p className="text-6xl font-normal text-white">
-                    <FaDollarSign size={36} /> 99
-                  </p>
+                  <p className="text-6xl font-normal text-white">$ 99</p>
                   <p className="mt-2 text-base font-normal text-gray-400">
                     Lifetime Account
                   </p>
