@@ -107,15 +107,15 @@ const Hero = () => {
             <MacDock />
           </div>
           <div>
-            {/* <OrbitCircleExample /> */}
-            <Earth />
+            <OrbitCircleExample />
+            {/* <Earth /> */}
           </div>
           <div className="flex flex-col space-y-4">
             <div className="h-[45px] overflow-y-hidden">
               <AnimatedTabExample />
             </div>
-            {/* <HoverBox /> */}
-            <Particles />
+            <HoverBox />
+            {/* <Particles /> */}
           </div>
           <div className="flex md:flex-col justify-center items-center gap-4 md:gap-0 space-y-4 ">
             <IosToggleExample />

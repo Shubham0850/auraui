@@ -7,21 +7,21 @@ const testimonies = [
     position: "Frontend Developer at Tech Solutions",
     image: "https://www.auraui.com/memeimage/udayshetty.jpg",
     quote:
-      "AURA UI is the best component library I've ever used. It's incredibly easy to integrate with Next.js and has a plethora of features. Highly recommended!",
+      "AuraUI is the best component library I've ever used. It's easy to integrate with Next.js. Highly recommended!",
   },
   {
     name: "Priya Sharma",
     position: "UI/UX Designer at Creative Minds",
     image: "https://www.auraui.com/memeimage/girl2.jpeg",
     quote:
-      "The ease of use and the variety of components in AURA UI is simply amazing. It made our development process much smoother.",
+      "The ease of use and the variety of components in AuraUI is simply amazing. It made our development process much smoother.",
   },
   {
     name: "Majnu Bhai",
     position: "Software Engineer at Innovatech",
     image: "https://www.auraui.com/memeimage/majnubhai.jpeg",
     quote:
-      "AURA UI has become an essential part of our toolkit. The components are top-notch and the integration with Next.js is seamless.",
+      "AuraUI has become an essential part of our toolkit. The components are top-notch and the integration is seamless.",
   },
 ];
 

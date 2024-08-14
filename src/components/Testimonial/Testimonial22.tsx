@@ -1,36 +1,33 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 
-import Image from "next/image";
-
 const testimonials = [
   {
-    name: "Rahul Sharma",
+    name: "Rahul",
     username: "@rahul_s",
     avatar: "/memeimage/boy1.jpeg",
     quote:
-      "Aura UI made it so simple. My new site is so much faster and easier to work with than my old site. #easy_to_use",
+      "AuraUI made it so simple. My new site is so much faster with AuraUI.",
   },
   {
-    name: "Abhishek Singh",
+    name: "Priya",
     username: "@priya_singh",
-    avatar: "/memeimage/girl3.webp",
-    quote:
-      "Simply the best. Better than all the rest. I'd recommend Aura UI to beginners and advanced users. #top_quality",
+    avatar: "/memeimage/woman1.jpg",
+    quote: "The best. I'd recommend AuraUI to beginners & advanced users.",
   },
   {
-    name: "Ananya Patel",
+    name: "Ananya",
     username: "@ananya_patel",
     avatar: "/memeimage/girl2.jpeg",
     quote:
-      "Aura UI is fantastic! It's both fast and efficient, perfect for my needs. #super_fast",
+      "Aura UI is fantastic! It's both fast and efficient, perfect for my needs.",
   },
   {
-    name: "Vikram Rao",
+    name: "Vikram",
     username: "@vikram_rao",
-    avatar: "/memeimage/udayshetty.jpg",
+    avatar: "/memeimage/man4.jpg",
     quote:
-      "Couldn't have asked for a better service. Aura UI is simply amazing. #amazing_service",
+      "Couldn't have asked for a better service. AuraUI is simply amazing.",
   },
 ];
 
@@ -53,12 +50,10 @@ const Testimonial22 = () => {
             <div key={index} className="overflow-hidden bg-white rounded-md">
               <div className="px-5 py-6">
                 <div className="flex items-center justify-between">
-                  <Image
+                  <img
                     className="flex-shrink-0 object-cover w-10 h-10 rounded-full"
                     src={testimonial.avatar}
                     alt={`Avatar of ${testimonial.name}`}
-                    width={40}
-                    height={40}
                   />
                   <div className="min-w-0 ml-3 mr-auto">
                     <p className="text-base font-semibold text-black truncate">
