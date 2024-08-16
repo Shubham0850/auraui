@@ -624,13 +624,13 @@ export const components = [
     imgSrc: "/all-components/teams/specialist.png",
     link: "/docs/teams#specialist-team",
   },
-  {
-    id: 90,
-    name: "MajnuBhai NFT",
-    tag: "nft",
-    imgSrc: "/all-components/web3/nft/majnu.png",
-    link: "/docs/web3/Nft#majnubhai-nft-component",
-  },
+  // {
+  //   id: 90,
+  //   name: "NFT14",
+  //   tag: "nft",
+  //   imgSrc: "/all-components/web3/nft/majnu.png",
+  //   link: "/docs/web3/Nft#nft14",
+  // },
   {
     id: 91,
     name: "NFT1",

@@ -1,7 +1,7 @@
 import React from "react";
-import Nft1 from "./Nft/MajnuBhai";
-import WalletLinker from "./WalletConnect/WalletLinker";
-import CryptoConnector from "./WalletConnect/CryptoConnector";
+import Nft1 from "./Nft/Nft14";
+import WalletLinker from "./WalletConnect/WalletConnect2";
+import CryptoConnector from "./WalletConnect/WalletConnect1";
 import ComponentWrapper from "../Theme/ComponentWrapper";
 
 const AllSignUp = () => {

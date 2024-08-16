@@ -42,7 +42,7 @@ const wallets = [
   },
 ];
 
-const WalletLinker = () => {
+const WalletConnect2 = () => {
   return (
     <div className="grid px-4 py-24 bg-gray-600 sm:px-6 lg:px-8 place-items-center">
       <div className="relative w-full max-w-xl mx-auto overflow-hidden bg-white rounded-xl">
@@ -142,4 +142,4 @@ const WalletLinker = () => {
   );
 };
 
-export default WalletLinker;
+export default WalletConnect2;
