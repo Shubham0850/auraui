@@ -123,18 +123,15 @@ const Hero4 = () => {
                     </div>
                     <input
                       type="email"
-                      placeholder="Try Java Developer, React Dev, etc."
+                      placeholder="Try React Dev, etc."
                       className="block w-full py-4 pr-6 text-white placeholder-gray-500 bg-black border border-transparent rounded-full pl-14 sm:py-5 focus:border-transparent focus:ring-0"
                     />
                   </div>
                 </div>
                 <div className="sm:absolute flex sm:right-1.5 sm:inset-y-1.5 mt-4 sm:mt-0">
-                  <button
-                    type="submit"
-                    className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase transition-all duration-200 bg-white rounded-full sm:w-auto sm:py-3 hover:opacity-90"
-                  >
+                  <div className="inline-flex cursor-pointer items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase transition-all duration-200 bg-gray-200 rounded-full sm:w-auto sm:py-3 hover:opacity-90">
                     Find A Developer
-                  </button>
+                  </div>
                 </div>
               </form>
 
@@ -161,15 +158,15 @@ const Hero4 = () => {
             </div>
 
             <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-30 blur-lg z-0"></div>
               <Image
-                src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/memeimage/devss.jpg"
                 alt="Hero Image"
                 width={600}
                 height={600}
                 objectFit="cover"
-                className="rounded-lg"
+                className="rounded-lg relative z-10"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-30 blur-lg"></div>
             </div>
           </div>
         </div>
