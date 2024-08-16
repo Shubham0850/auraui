@@ -24,7 +24,7 @@ const Hero4 = () => {
                 <Image
                   className="w-auto h-9"
                   src="https://www.auraui.com/logo-dark.png"
-                  alt="Auraui Logo"
+                  alt="AuraUI Logo"
                   width={100}
                   height={66}
                 />
@@ -106,7 +106,7 @@ const Hero4 = () => {
                 Connecting Devs with Employers
               </h1>
               <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">
-                Auraui connects top developers with the best opportunities.
+                AuraUI connects top developers with the best opportunities.
                 Discover your next big project or join a dynamic team today.
               </p>
 

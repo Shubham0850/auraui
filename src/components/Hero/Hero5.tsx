@@ -10,7 +10,7 @@ const commonStyles = {
   sectionTitle: "text-4xl font-bold text-gray-900 sm:text-5xl",
   sectionSubtitle: "mt-5 text-base font-normal leading-7 text-gray-500",
   listItem: "flex items-center",
-  listItemIcon: "text-base ml-2.5",
+  listItemIcon: "text-base ml-2.5 text-black",
   listItemText: "flex-1 text-base font-medium text-gray-900 ml-2.5",
   gradientButton:
     "relative inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
@@ -112,7 +112,7 @@ const Hero5 = () => {
         <div className="absolute inset-0">
           <Image
             className=" object-cover w-full h-full md:block"
-            src="https://plus.unsplash.com/premium_photo-1667862241971-e1f08f51dd07?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1473091534298-04dcbce3278c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Hero Background"
             layout="fill"
             objectFit="cover"
@@ -123,7 +123,7 @@ const Hero5 = () => {
           <div className="flex">
             <div className="w-full md:max-w-xs lg:max-w-md">
               <h1 className={commonStyles.sectionTitle}>
-                Explore the Future with Auraui
+                Explore the Future with AuraUI
               </h1>
               <p className={commonStyles.sectionSubtitle}>
                 Stay updated with the latest in web3 and decentralized finance.
@@ -167,7 +167,6 @@ const Hero5 = () => {
             </div>
           </div>
         </div>
-
       </section>
     </div>
   );
