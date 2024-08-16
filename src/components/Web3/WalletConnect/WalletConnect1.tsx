@@ -20,7 +20,7 @@ const wallets = [
   },
 ];
 
-const CryptoConnector = () => {
+const WalletConnect1 = () => {
   return (
     <div className="grid px-4 py-24 bg-gray-600 sm:px-6 lg:px-8 place-items-center">
       <div className="relative w-full max-w-xl mx-auto overflow-hidden bg-white rounded-xl">
@@ -86,4 +86,4 @@ const CryptoConnector = () => {
   );
 };
 
-export default CryptoConnector;
+export default WalletConnect1;
