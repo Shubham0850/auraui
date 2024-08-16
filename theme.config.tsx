@@ -104,6 +104,8 @@ const config: DocsThemeConfig = {
   //   key: "4",
   // },
 
+ 
+
   editLink: {
     component: null,
   },
@@ -116,6 +118,7 @@ const config: DocsThemeConfig = {
   sidebar: {
     autoCollapse: false,
     defaultMenuCollapseLevel: 1,
+    
   },
   gitTimestamp: null,
 

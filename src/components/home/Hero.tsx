@@ -90,7 +90,7 @@ const Hero = () => {
 
             <div className="relative inline-flex mt-10 group">
               <Link
-                href="/all-components"
+                href="/components"
                 title=""
                 className="relative inline-flex items-center justify-center px-6 py-3 text-md font-bold text-white transition-all duration-200 bg-[#282829] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-[#282829]"
                 role="button"

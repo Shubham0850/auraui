@@ -13,11 +13,11 @@
       "layout": "full"
     }
   },
-  "components": {
+  "docs": {
     "title": "Docs",
     "type": "page"
   },
-  "all-components": {
+  "components": {
     "title": "Components",
     "type": "page",
     "theme": {
