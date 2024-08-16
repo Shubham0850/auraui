@@ -98,7 +98,7 @@ const Form = () => {
   );
 };
 
-const ConnectSphere = () => {
+const Contact1 = () => {
   return (
     <section className={`bg-gray-900 ${style.commonSectionStyles}`}>
       <div className={style.commonContainerStyles}>
@@ -129,4 +129,4 @@ const ConnectSphere = () => {
   );
 };
 
-export default ConnectSphere;
+export default Contact1;

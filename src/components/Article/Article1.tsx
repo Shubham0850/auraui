@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const AuraArticle = () => {
+const Article1 = () => {
   return (
     <div>
       <section className="py-12 bg-white sm:py-16 lg:py-20">
@@ -95,4 +95,4 @@ const AuraArticle = () => {
   );
 };
 
-export default AuraArticle;
+export default Article1;

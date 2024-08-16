@@ -1,15 +1,15 @@
 import React from "react";
-import SmallContactForm from "@/components/Contact/SmallContactForm";
+import Contact4 from "@/components/Contact/Contact4";
 
 type Props = {};
 
-function AuraFooter({}: Props) {
+function ContactPage({}: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">{/* Your main content goes here */}</div>
-      <SmallContactForm />
+      <Contact4 />
     </div>
   );
 }
 
-export default AuraFooter;
+export default ContactPage;

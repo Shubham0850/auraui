@@ -1,15 +1,15 @@
 import React from "react";
-import LightContact from "@/components/Contact/LightContact";
+import Contact3 from "@/components/Contact/Contact3";
 
 type Props = {};
 
-function AuraFooter({}: Props) {
+function ContactPage({}: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">{/* Your main content goes here */}</div>
-      <LightContact />
+      <Contact3 />
     </div>
   );
 }
 
-export default AuraFooter;
+export default ContactPage;

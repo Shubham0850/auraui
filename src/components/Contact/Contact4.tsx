@@ -1,7 +1,7 @@
 import React from "react";
 import { FiMapPin, FiMail } from "react-icons/fi";
 
-const SmallContactForm = () => {
+const Contact4 = () => {
   const iconStyles = {
     base: "flex-shrink-0 text-blue-600 w-7 h-7",
   };
@@ -61,4 +61,4 @@ const SmallContactForm = () => {
   );
 };
 
-export default SmallContactForm;
+export default Contact4;

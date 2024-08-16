@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         <div className="col-span-2 md:col-span-1 md:order-2">
-          <ul className="flex items-center justify-center sm:justify-between md:justify-center space-x-9 lg:space-x-16">
+          <ul className="flex items-center justify-center sm:justify-between md:justify-center space-x-9 lg:space-x-10">
             <li>
               <Link
                 href="/"
@@ -109,7 +109,7 @@ const Footer = () => {
 
             <li>
               <Link
-                href="/all-components"
+                href="/components"
                 title=""
                 className="text-sm font-normal text-opacity-50 transition-all duration-200 rounded text-gray-900 dark:text-gray-400 hover:text-opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary focus:text-opacity-100"
               >
@@ -119,11 +119,20 @@ const Footer = () => {
 
             <li>
               <Link
-                href="/components"
+                href="/docs"
                 title=""
                 className="text-sm font-normal text-opacity-50 transition-all duration-200 rounded text-gray-900 dark:text-gray-400 hover:text-opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary focus:text-opacity-100"
               >
                 Documentation
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/templates"
+                title=""
+                className="text-sm font-normal text-opacity-50 transition-all duration-200 rounded text-gray-900 dark:text-gray-400 hover:text-opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary focus:text-opacity-100"
+              >
+                Templates
               </Link>
             </li>
           </ul>
