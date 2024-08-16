@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaPlay, FaBars, FaTimes } from "react-icons/fa";
+import { FaRegCirclePlay } from "react-icons/fa6";
+
 import Image from "next/image";
 
 const commonButtonStyles =
@@ -18,11 +20,11 @@ const Hero3 = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
             <div className="shrink-0">
-              <a href="#" title="Auraui">
+              <a href="#" title="AuraUI">
                 <Image
                   className="w-auto h-8"
                   src="https://www.auraui.com/logo-light.png"
-                  alt="Auraui Logo"
+                  alt="AuraUI Logo"
                   width={100}
                   height={32}
                 />
@@ -94,11 +96,12 @@ const Hero3 = () => {
           <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div className="lg:mt-16">
               <div className="mx-auto text-center sm:max-w-lg lg:max-w-xl lg:text-left lg:mx-0">
-                <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl xl:text-7xl sm:tracking-tight">
-                  Discover Auraui: Your Ultimate UI Kit
+                <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl xl:text-6xl sm:tracking-tight">
+                  Discover AuraUI
+                  <p>Our Ultimate UI Kit</p>
                 </h1>
                 <p className="mt-6 text-lg leading-7 text-gray-700 lg:leading-8 lg:text-xl">
-                  Auraui provides the components you need to create a
+                  AuraUI provides the components you need to create a
                   professional website, landing page, or admin panel for your
                   web applications.
                 </p>
@@ -109,14 +112,14 @@ const Hero3 = () => {
                   href="#"
                   className={`${commonButtonStyles} text-white bg-blue-600 border border-transparent shadow-sm hover:bg-blue-700 focus:ring-blue-700`}
                 >
-                  Start using Auraui
+                  Start using AuraUI
                 </a>
 
                 <a
                   href="#"
                   className={`${commonButtonStyles} text-gray-900 border border-gray-300 hover:bg-gray-100 focus:ring-gray-300`}
                 >
-                  <FaPlay className="w-6 h-6 mr-3 -ml-1 text-blue-600" />
+                  <FaRegCirclePlay className="w-4 h-4 mr-3 -ml-1 text-blue-600" />
                   Watch 1 min intro
                 </a>
               </div>
