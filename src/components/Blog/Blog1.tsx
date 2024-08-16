@@ -22,7 +22,7 @@ const style = {
   icon: "w-5 h-5 text-gray-400 transition-all duration-200 transform lg:-translate-x-32 lg:group-hover:translate-x-0",
 };
 
-const BlogSection: React.FC = () => {
+const Blog1: React.FC = () => {
   const articles = [
     {
       src: "https://images.unsplash.com/flagged/photo-1558963675-94dc9c4a66a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2plY3RzfGVufDB8fDB8fHww",
@@ -84,4 +84,4 @@ const BlogSection: React.FC = () => {
   );
 };
 
-export default BlogSection;
+export default Blog1;

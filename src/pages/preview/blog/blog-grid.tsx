@@ -1,10 +1,10 @@
 import React from "react";
-import BlogGrid from "@/components/Blog/BlogGrid";
+import Blog1 from "@/components/Blog/Blog1";
 
 type Props = {};
 
-function Bloggrid({}: Props) {
-  return <BlogGrid />;
+function Blogpage({}: Props) {
+  return <Blog1 />;
 }
 
-export default Bloggrid;
+export default Blogpage;

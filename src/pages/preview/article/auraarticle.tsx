@@ -1,5 +1,5 @@
 import React from "react";
-import AuraArticle from "@/components/Article/AuraArticle";
+import AuraArticle from "@/components/Article/Article1";
 
 type Props = {};
 

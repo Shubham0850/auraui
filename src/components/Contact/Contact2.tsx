@@ -2,7 +2,7 @@ import React from "react";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import Image from "next/image";
 
-const LightContact = () => {
+const Contact2 = () => {
   const containerStyles = "py-10 bg-gray-100 sm:py-16 lg:py-24";
   const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
   const headerStyles = "max-w-2xl mx-auto text-center";
@@ -173,4 +173,4 @@ const LightContact = () => {
   );
 };
 
-export default LightContact;
+export default Contact2;
