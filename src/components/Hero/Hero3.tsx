@@ -128,9 +128,9 @@ const Hero3 = () => {
               <div className="relative pl-10 -mr-40 sm:max-w-3xl lg:max-w-none lg:h-full lg:pl-24">
                 <Image
                   className="w-full shadow-2xl rounded-xl lg:rounded-2xl ring-[24px] lg:ring-[48px] ring-blue-100 lg:h-full lg:w-auto lg:max-w-none"
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://www.auraui.com/memeimage/analytics.jpg"
                   alt="Dashboard Mockup"
-                  width={1200}
+                  width={1300}
                   height={800}
                 />
               </div>
