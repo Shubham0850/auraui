@@ -428,10 +428,10 @@ export const components = [
   },
   {
     id: 62,
-    name: "Simple Navbar ",
+    name: "Navbar3 ",
     tag: "navbar",
     imgSrc: "/all-components/header/simple.png",
-    link: "/docs/header#simple-header",
+    link: "/docs/header#header3",
   },
   {
     id: 63,
@@ -442,17 +442,17 @@ export const components = [
   },
   {
     id: 64,
-    name: "Call to Action Navbar ",
+    name: "Navbar2 ",
     tag: "navbar",
     imgSrc: "/all-components/header/calltoaction.png",
-    link: "/docs/header#call-to-action-navbar",
+    link: "/docs/header#header2",
   },
   {
     id: 65,
-    name: "Authentication Navbar ",
+    name: "Navbar1 ",
     tag: "navbar",
     imgSrc: "/all-components/header/authentication.png",
-    link: "/docs/header#authentication-navbar",
+    link: "/docs/header#header1",
   },
   {
     id: 66,

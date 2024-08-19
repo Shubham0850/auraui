@@ -11,7 +11,7 @@ const styles = {
     "py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600",
 };
 
-const Simple = () => {
+const Header3 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -120,4 +120,4 @@ const Simple = () => {
   );
 };
 
-export default Simple;
+export default Header3;

@@ -11,7 +11,7 @@ const styles = {
     "inline-flex justify-center px-4 py-3 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md items-center hover:bg-blue-700 focus:bg-blue-700",
 };
 
-const UserAccount = () => {
+const Header4 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -99,4 +99,4 @@ const UserAccount = () => {
   );
 };
 
-export default UserAccount;
+export default Header4;

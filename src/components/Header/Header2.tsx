@@ -9,7 +9,7 @@ const styles = {
     "py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70",
 };
 
-const CallToAction = () => {
+const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -85,4 +85,4 @@ const CallToAction = () => {
   );
 };
 
-export default CallToAction;
+export default Header2;

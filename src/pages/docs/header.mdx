@@ -1,9 +1,8 @@
 import ElementWrapper from "@/components/Theme/ElementWrapper";
-import Simple from "@/components/Header/Simple";
-import Authentication from "@/components/Header/Authentication";
-import CallToAction from "@/components/Header/CallToAction";
-import UserAccount from "@/components/Header/UserAccount";
-
+import Header1 from "@/components/Header/Header1";
+import Header2 from "@/components/Header/Header2";
+import Header3 from "@/components/Header/Header3";
+import Header4 from "@/components/Header/Header4";
 
 # Header Component
 
@@ -11,42 +10,34 @@ This Header Elements Section Contains Various Header components.
 
 To integrate a Header Components into your Next.js Project,copy and paste the following code.
 
-## Simple Header
-
-This navbar features a straightforward design with minimal items and a clear layout, suitable for basic navigation needs.
+## Header1
 
 <ElementWrapper
-  previewLink="/header/cart"
-  componentPath="Header/Simple.tsx"
-  element={<Simple />}
+  previewLink="/header/header1"
+  componentPath="Header/Header1.tsx"
+  element={<Header1 />}
 />
 
-## User Account Navbar
-
-This navbar includes links for signing up, signing in, and a user profile icon, making it ideal for websites that require user authentication and account management.
+## Header2
 
 <ElementWrapper
-  previewLink="/header/with-cta"
-  componentPath="Header/UserAccount.tsx"
-  element={<UserAccount />}
+  previewLink="/header/header2"
+  componentPath="Header/Header2.tsx"
+  element={<Header2 />}
 />
 
-## Call-to-Action Navbar
-
-This navbar prominently features a call-to-action button ("Get started now") along with standard navigation links, perfect for websites looking to drive user engagement or conversions.
+## Header3
 
 <ElementWrapper
-  previewLink="/header/simple"
-  componentPath="Header/CallToAction.tsx"
-  element={<CallToAction />}
+  previewLink="/header/header3"
+  componentPath="Header/Header3.tsx"
+  element={<Header3 />}
 />
 
-## Authentication Navbar
-
-The Authentication Navbar is designed for websites that require user login and registration features. It includes links for signing up, signing in, and a user profile icon, making it easy for users to manage their accounts seamlessly.
+## Header4
 
 <ElementWrapper
-  previewLink="/header/with-shadow"
-  componentPath="Header/Authentication.tsx"
-  element={<Authentication />}
+  previewLink="/header/header4"
+  componentPath="Header/Header4.tsx"
+  element={<Header4 />}
 />
