@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
-const ExploreDataCTA = () => {
+const CTA4 = () => {
   const containerStyles = "py-10 bg-gray-100 sm:py-16 lg:py-24";
   const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
   const headingStyles =
@@ -60,4 +60,4 @@ const ExploreDataCTA = () => {
   );
 };
 
-export default ExploreDataCTA;
+export default CTA4;

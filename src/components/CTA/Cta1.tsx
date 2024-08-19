@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUser } from "react-icons/fa";
 
-const ConnectionCTA = () => {
+const CTA1 = () => {
   const containerStyles = "py-10 bg-white sm:py-16 lg:py-24";
   const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
   const textContainerStyles = "max-w-2xl mx-auto text-center";
@@ -74,4 +74,4 @@ const ConnectionCTA = () => {
   );
 };
 
-export default ConnectionCTA;
+export default CTA1;

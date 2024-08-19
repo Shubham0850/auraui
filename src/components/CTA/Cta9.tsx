@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLock } from "react-icons/fa";
 
-const SmallCTA = () => {
+const CTA9 = () => {
   const containerStyles = "py-10 bg-gray-100 sm:py-16 lg:py-24";
   const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
   const headingStyles =
@@ -74,4 +74,4 @@ const SmallCTA = () => {
   );
 };
 
-export default SmallCTA;
+export default CTA9;

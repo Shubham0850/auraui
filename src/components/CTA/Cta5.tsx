@@ -1,6 +1,6 @@
 import React from "react";
 
-const MiniCTA = () => {
+const CTA5 = () => {
   const containerStyles = "py-10 bg-[#F3F4F6] sm:py-16 lg:py-20";
   const innerContainerStyles = "max-w-5xl px-4 mx-auto sm:px-6 lg:px-8";
   const headingStyles = "text-4xl font-bold text-black lg:max-w-md";
@@ -39,4 +39,4 @@ const MiniCTA = () => {
   );
 };
 
-export default MiniCTA;
+export default CTA5;

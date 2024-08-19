@@ -1,7 +1,7 @@
 import { FaApple, FaWindows, FaLinux } from "react-icons/fa";
 import { MdCloudDownload } from "react-icons/md";
 
-const DownloadOptionCTA = () => {
+const CTA3 = () => {
   return (
     <section className="py-10 bg-white sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -51,4 +51,4 @@ const DownloadOptionCTA = () => {
   );
 };
 
-export default DownloadOptionCTA;
+export default CTA3;

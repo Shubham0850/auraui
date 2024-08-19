@@ -3,7 +3,7 @@ import Image from "next/image";
 
 type Props = {};
 
-const Simple = (props: Props) => {
+const Cta8 = (props: Props) => {
   return (
     <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
       <div className="absolute inset-0">
@@ -77,4 +77,4 @@ const Simple = (props: Props) => {
   );
 };
 
-export default Simple;
+export default Cta8;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const OneLinerCTA = () => {
+const CTA6 = () => {
   const containerStyles =
     "py-10 bg-gradient-to-r from-fuchsia-600 to-blue-600 sm:py-16";
   const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
@@ -24,4 +24,4 @@ const OneLinerCTA = () => {
   );
 };
 
-export default OneLinerCTA;
+export default CTA6;
