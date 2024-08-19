@@ -1,5 +1,5 @@
 import React from "react";
-import RoundedDesign from "@/components/CTA/RoundedDesign";
+import RoundedDesign from "@/components/CTA/Cta7";
 
 type Props = {};
 

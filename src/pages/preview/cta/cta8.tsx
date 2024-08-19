@@ -1,5 +1,5 @@
 import React from "react";
-import Simple from "@/components/CTA/Simple";
+import Simple from "@/components/CTA/Cta8";
 
 type Props = {};
 
