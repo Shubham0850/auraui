@@ -1,15 +1,15 @@
 import React from 'react'
-import SmallFooter from "@/components/Footer/SmallFooter";
+import Footer1 from "@/components/Footer/Footer1";
 
 type Props = {}
 
-function Small({}: Props) {
+function FooterPage({}: Props) {
 	return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">{/* Your main content goes here */}</div>
-      <SmallFooter />
+      <Footer1/>
     </div>
   );
 }
 
-export default Small
+export default FooterPage

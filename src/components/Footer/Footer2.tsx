@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-const BlueFooter = () => {
+const Footer2 = () => {
   const iconStyles = {
     base: "flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-blue-200 rounded-full w-7 h-7",
     hoverFocus:
@@ -177,4 +177,4 @@ const BlueFooter = () => {
   );
 };
 
-export default BlueFooter;
+export default Footer2;

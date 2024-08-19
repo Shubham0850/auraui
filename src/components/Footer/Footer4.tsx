@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FiTwitter, FiFacebook, FiInstagram, FiGithub } from "react-icons/fi";
 
-const LightFooterSecondary = () => {
+const Footer4 = () => {
   const iconStyles = {
     base: "flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7",
     hoverFocus: "hover:bg-blue-600 focus:bg-blue-600",
@@ -159,4 +159,4 @@ const LightFooterSecondary = () => {
   );
 };
 
-export default LightFooterSecondary;
+export default Footer4;

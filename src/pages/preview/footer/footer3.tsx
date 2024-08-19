@@ -1,15 +1,15 @@
 import React from "react";
-import LightFooter from "@/components/Footer/LightFooter";
+import Footer3 from "@/components/Footer/Footer3";
 
 type Props = {};
 
-function AuraFooter({}: Props) {
+function FooterPage({}: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">{/* Your main content goes here */}</div>
-      <LightFooter />
+      <Footer3 />
     </div>
   );
 }
 
-export default AuraFooter;
+export default FooterPage;

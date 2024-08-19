@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-const LightFooter = () => {
+const Footer3 = () => {
   const iconStyles = {
     base: "flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7",
     hoverFocus:
@@ -145,4 +145,4 @@ const LightFooter = () => {
   );
 };
 
-export default LightFooter;
+export default Footer3;

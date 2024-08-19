@@ -10,7 +10,7 @@ const InstagramIcon = () => <FiInstagram className="w-6 h-6" />;
 
 type Props = {};
 
-const SmallFooter = (props: Props) => {
+const Footer5 = (props: Props) => {
   // Common anchor styles
   const anchorStyles =
     "text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80 cursor-pointer";
@@ -105,4 +105,4 @@ const SmallFooter = (props: Props) => {
   );
 };
 
-export default SmallFooter;
+export default Footer5;

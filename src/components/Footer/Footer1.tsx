@@ -3,7 +3,7 @@ import { FiTwitter, FiFacebook, FiInstagram, FiGithub } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
 
-const AuraFooterOne = () => {
+const Footer1 = () => {
   const iconStyles =
     "flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600";
 
@@ -138,4 +138,4 @@ const AuraFooterOne = () => {
   );
 };
 
-export default AuraFooterOne;
+export default Footer1;
