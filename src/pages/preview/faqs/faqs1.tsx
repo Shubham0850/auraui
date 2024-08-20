@@ -1,11 +1,11 @@
-import FAQAccordion from '@/components/Faqs/FaqAccordion'
+import Faqs1 from '@/components/Faqs/Faqs1'
 import React from 'react'
 
 type Props = {}
 
 function page({ }: Props) {
 	return (
-		<FAQAccordion />
+		<Faqs1 />
 	)
 }
 

@@ -44,7 +44,7 @@ const faqs = [
   },
 ];
 
-const OpenFaq = () => {
+const Faqs4 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -68,4 +68,4 @@ const OpenFaq = () => {
   );
 };
 
-export default OpenFaq;
+export default Faqs4;

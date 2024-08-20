@@ -1,5 +1,5 @@
 import React from "react";
-import QuestBox from "@/components/Faqs/QuestBox";
+import QuestBox from "@/components/Faqs/Faqs5";
 
 type Props = {};
 

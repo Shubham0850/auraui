@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
-const FAQAccordion = () => {
+const Faqs1 = () => {
   const faqs = [
     {
       id: 1,
@@ -128,4 +128,4 @@ const FAQAccordion = () => {
   );
 };
 
-export default FAQAccordion;
+export default Faqs1;

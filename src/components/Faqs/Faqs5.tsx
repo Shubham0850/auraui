@@ -46,7 +46,7 @@ const QuestionItem: React.FC<QuestionItemProps> = ({ question, answer }) => (
   </div>
 );
 
-const QuestBox: React.FC = () => {
+const Faqs5: React.FC = () => {
   return (
     <section className="py-10 bg-[#0d3645] sm:py-16 lg:py-24">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -83,4 +83,4 @@ const QuestBox: React.FC = () => {
   );
 };
 
-export default QuestBox;
+export default Faqs5;

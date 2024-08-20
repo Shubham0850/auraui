@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const FaqWithBanner = () => {
+const Faqs3 = () => {
   const faqs = [
     {
       id: 1,
@@ -52,11 +52,7 @@ const FaqWithBanner = () => {
             <div className="flow-root mt-12 sm:mt-16">
               <div className="-my-8 divide-y divide-gray-700">
                 {faqs.map((faq) => (
-                  <div
-                    key={faq.id}
-                    className="py-2"
-                    role="region"
-                  >
+                  <div key={faq.id} className="py-2" role="region">
                     <h3>
                       <button
                         onClick={() => toggleAccordion(faq.id)}
@@ -94,4 +90,4 @@ const FaqWithBanner = () => {
   );
 };
 
-export default FaqWithBanner;
+export default Faqs3;

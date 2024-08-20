@@ -1,11 +1,11 @@
-import FAQSectionWithBackground from '@/components/Faqs/FaqWithBackground'
+import FaqWithBanner from '@/components/Faqs/Faqs3'
 import React from 'react'
 
 type Props = {}
 
 function page({ }: Props) {
 	return (
-		<FAQSectionWithBackground />
+		<FaqWithBanner />
 	)
 }
 

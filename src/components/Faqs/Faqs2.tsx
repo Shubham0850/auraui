@@ -40,7 +40,7 @@ const faqs = [
   },
 ];
 
-const FAQSectionWithBackground = () => {
+const Faqs2 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.absoluteInset}>
@@ -60,7 +60,8 @@ const FAQSectionWithBackground = () => {
           <div className={styles.maxWidthLg}>
             <h2 className={styles.heading}>Frequently asked questions</h2>
             <p className={styles.subText}>
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.
+              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
+              massa dictumst amet. Sapien tortor lacus arcu.
             </p>
           </div>
         </div>
@@ -84,4 +85,4 @@ const FAQSectionWithBackground = () => {
   );
 };
 
-export default FAQSectionWithBackground;
+export default Faqs2;

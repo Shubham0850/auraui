@@ -1,4 +1,4 @@
-import OpenFaq from '@/components/Faqs/OpenFaq'
+import OpenFaq from '@/components/Faqs/Faqs4'
 import React from 'react'
 
 type Props = {}
