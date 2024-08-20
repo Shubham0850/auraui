@@ -421,10 +421,10 @@ export const components = [
   },
   {
     id: 61,
-    name: "Showcase Gallery ",
+    name: "Gallery1 ",
     tag: "gallery",
     imgSrc: "/all-components/gallery/showcase.png",
-    link: "/docs/gallery#showcase-gallery",
+    link: "/docs/gallery#gallery1",
   },
   {
     id: 62,
@@ -463,10 +463,10 @@ export const components = [
   },
   {
     id: 67,
-    name: "Trustedlogos Component ",
+    name: "LogoCloud6 ",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/trust.png",
-    link: "/docs/logocloud#trustedbylogos-component",
+    link: "/docs/logocloud#logocloud6",
   },
   {
     id: 68,
