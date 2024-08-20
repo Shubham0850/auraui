@@ -1,5 +1,5 @@
 import React from "react";
-import CustomerSupport from "@/components/Feature/CustomerSupport";
+import CustomerSupport from "@/components/Feature/Feature14";
 
 type Props = {};
 

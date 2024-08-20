@@ -1,102 +1,92 @@
 import React from "react";
+import { FaFingerprint, FaBolt, FaMoon, FaShieldAlt } from "react-icons/fa";
 
-function Feature13() {
+type FeatureProps = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};
+
+const features: FeatureProps[] = [
+  {
+    icon: <FaFingerprint className="text-blue-600 w-7 h-7" />,
+    title: "Reliable Transfers",
+    description:
+      "Enjoy seamless and secure money transfers with our state-of-the-art technology ensuring your transactions are always safe and efficient.",
+  },
+  {
+    icon: <FaBolt className="text-orange-600 w-8 h-8" />,
+    title: "Instant Notifications",
+    description:
+      "Stay informed with instant notifications on your account activity, ensuring you are always aware of your financial transactions.",
+  },
+  {
+    icon: <FaMoon className="text-green-600 w-8 h-8" />,
+    title: "User-Friendly Interface",
+    description:
+      "Experience our intuitive and easy-to-use interface designed to provide a smooth and enjoyable user experience for all your payment needs.",
+  },
+  {
+    icon: <FaMoon className="text-purple-600 w-8 h-8" />,
+    title: "24/7 Support",
+    description:
+      "Get assistance anytime with our dedicated 24/7 support team, always ready to help you with any issues or inquiries you may have.",
+  },
+  {
+    icon: (
+      <svg
+        className="text-gray-600 w-9 h-9"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M15 10l4.553-2.276A2 2 0 0122 9.618v4.764a2 2 0 01-2.447 1.894L15 14m0-4v8m0-8L9.447 7.724A2 2 0 008 9.618v4.764a2 2 0 001.553 1.894L15 14m0-4H9m6 0v8m0-8L9 14"
+        />
+      </svg>
+    ),
+    title: "Customizable Plans",
+    description:
+      "Choose from a variety of plans and customize them to suit your specific business needs, ensuring you only pay for what you use.",
+  },
+  {
+    icon: <FaShieldAlt className="text-yellow-600 w-8 h-8" />,
+    title: "Advanced Security",
+    description:
+      "Protect your transactions with our advanced security protocols and encryption, ensuring your data is always secure.",
+  },
+];
+
+const commonStyle = "relative flex items-center justify-center mx-auto";
+
+const Feature13: React.FC = () => {
   return (
-    <section className="py-12 bg-black sm:py-16 lg:py-20 xl:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="max-w-lg mx-auto text-center lg:max-w-2xl">
-          <h2 className="text-3xl font-normal text-white sm:mt-8 sm:text-4xl lg:text-5xl xl:text-6xl">
-            Stay informed & inspired wherever you are
-          </h2>
-          <p className="mt-6 text-lg font-normal text-gray-400">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat.
-          </p>
-        </div>
-
-        <div className="grid max-w-md grid-cols-1 gap-6 mx-auto mt-12 text-center lg:max-w-none lg:grid-cols-3 sm:mt-16 lg:mt-20">
-          <div className="relative overflow-hidden bg-base-900 rounded-2xl">
-            <div className="px-6 pt-8 pb-56 sm:pb-80 lg:pb-52 xl:pb-64 sm:px-12 lg:px-8 xl:px-12 sm:pt-14">
-              <h3 className="text-sm font-normal tracking-widest uppercase">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">
-                  {" "}
-                  Unlimited resources{" "}
-                </span>
+    <section className="py-10 bg-white sm:py-16 lg:py-24">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
+          {features.map((feature, index) => (
+            <div key={index}>
+              <div className={commonStyle}>
+                <div className="bg-gray-100 w-16 h-16 flex items-center justify-center rounded-full">
+                  {feature.icon}
+                </div>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold text-black">
+                {feature.title}
               </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Design Things Fast
-              </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
+              <p className="mt-4 text-base text-gray-600">
+                {feature.description}
               </p>
             </div>
-
-            <div className="absolute inset-x-0 bottom-0 flex items-center justify-center">
-              <img
-                className="object-contain w-full"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/features/1/feature-1.png"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden bg-base-900 rounded-2xl">
-            <div className="px-6 pt-8 pb-56 sm:pb-80 lg:pb-52 xl:pb-64 sm:px-12 lg:px-8 xl:px-12 sm:pt-14">
-              <h3 className="text-sm font-normal tracking-widest uppercase">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">
-                  {" "}
-                  Connect Easily{" "}
-                </span>
-              </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Grow Your Audience
-              </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-            </div>
-
-            <div className="absolute inset-x-0 bottom-0 flex items-center justify-center px-8 pb-6">
-              <img
-                className="object-contain w-full"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/features/1/feature-2.png"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden bg-base-900 rounded-2xl">
-            <div className="px-6 pt-8 pb-56 sm:pb-80 lg:pb-52 xl:pb-64 sm:px-12 lg:px-8 xl:px-12 sm:pt-14">
-              <h3 className="text-sm font-normal tracking-widest uppercase">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">
-                  {" "}
-                  Use Anywhere{" "}
-                </span>
-              </h3>
-              <p className="mt-3 text-2xl font-normal text-white xl:text-3xl">
-                Support All Devices
-              </p>
-              <p className="mt-4 text-base font-normal text-gray-400">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-            </div>
-
-            <div className="absolute inset-x-0 bottom-0 flex items-center justify-center px-16 transform translate-y-24 sm:px-20 lg:translate-y-20 lg:px-12 xl:px-20">
-              <img
-                className="object-contain w-full"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/features/1/feature-3.png"
-                alt=""
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Feature13;

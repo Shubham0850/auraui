@@ -1,93 +1,47 @@
 import React from "react";
-import { FaChartLine, FaFilter, FaBolt, FaCloud } from "react-icons/fa";
+import Image from "next/image";
+import { FaChartLine } from "react-icons/fa";
 
-// Common styles
-const commonStyles = {
-  section: "py-12 bg-gray-50 sm:py-16 lg:py-20",
-  container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
-  heading:
-    "text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj",
-  grid: "grid max-w-4xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 sm:mt-12 lg:mt-20 sm:text-left",
-  card: "overflow-hidden bg-white shadow-md rounded-xl",
-  icon: "w-12 h-12 mx-auto text-gray-400 sm:mx-0",
-  title: "mt-8 text-2xl font-bold text-gray-900 sm:mt-20 font-pj",
-  description: "mt-6 text-base text-gray-600 font-pj",
-  relativeWrapper: "relative",
-  absoluteOverlay: "absolute -inset-1",
-  overlay: "w-full h-full rotate-180 opacity-30 blur-lg filter",
-  textWrapper: "p-9",
-};
-
-const features = [
-  {
-    icon: <FaChartLine />,
-    title: "Predictive Insights",
-    description:
-      "Auraui offers advanced predictive insights to help you make informed decisions and enhance your strategies with ease.",
-  },
-  {
-    icon: <FaFilter />,
-    title: "Filtered Data",
-    description:
-      "Efficiently filter and analyze your data with Auraui to extract meaningful insights and drive better outcomes.",
-  },
-  {
-    icon: <FaBolt />,
-    title: "Fastest Speed",
-    description:
-      "Experience lightning-fast performance with Auraui, ensuring your workflows are optimized and highly efficient.",
-  },
-  {
-    icon: <FaCloud />,
-    title: "Everything in Cloud",
-    description:
-      "Auraui leverages cloud technology to provide seamless access to your data, ensuring you stay connected and productive from anywhere.",
-  },
-];
-
-const Feature11 = () => {
+const Feature11: React.FC = () => {
   return (
-    <section className={commonStyles.section}>
-      <div className={commonStyles.container}>
-        <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-          <h2 className={commonStyles.heading}>
-            Take the next step without any hassle & get results fast
-          </h2>
-        </div>
-
-        <div className={commonStyles.grid}>
-          {features.map((feature, index) => (
-            <div key={index} className="space-y-4 sm:space-y-8">
-              <div className={commonStyles.card}>
-                <div className={commonStyles.textWrapper}>
-                  <div className={commonStyles.icon}>{feature.icon}</div>
-                  <h3 className={commonStyles.title}>{feature.title}</h3>
-                  <p className={commonStyles.description}>
-                    {feature.description}
-                  </p>
+    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
+          <div>
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+              Grow your business with AuraUI.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-gray-600">
+              AuraUI helps you build beautiful, high-performance websites
+              quickly and efficiently. With our extensive library of pre-built
+              components, you can focus on what matters most: growing your
+              business.
+            </p>
+          </div>
+          <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">
+            <div className="relative w-full max-w-xs mt-4 mb-10 ml-auto">
+              <Image
+                className="ml-auto"
+                src="https://www.auraui.com/memeimage/working-women.jpg"
+                alt="Working Women"
+                layout="responsive"
+                width={500}
+                height={500}
+              />
+              <div className="absolute -bottom-10 -left-16 bg-yellow-300">
+                <div className="px-8 py-10">
+                  <span className="block text-4xl font-bold text-black lg:text-5xl">
+                    77%
+                  </span>
+                  <span className="block mt-2 text-base leading-tight text-black">
+                    High Conversions
+                    <br />
+                    with AuraUI
+                  </span>
                 </div>
-              </div>
-            </div>
-          ))}
-
-          <div className={commonStyles.relativeWrapper}>
-            <div className={commonStyles.absoluteOverlay}>
-              <div
-                className={commonStyles.overlay}
-                style={{
-                  background:
-                    "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
-                }}
-              ></div>
-            </div>
-            <div className={commonStyles.card}>
-              <div className={commonStyles.textWrapper}>
-                <FaCloud className={commonStyles.icon} />
-                <h3 className={commonStyles.title}>Everything in Cloud</h3>
-                <p className={commonStyles.description}>
-                  Enjoy seamless cloud integration with Auraui, providing you
-                  with the flexibility to manage your data from anywhere.
-                </p>
+                <div className="absolute top-4 right-4">
+                  <FaChartLine className="text-black w-10 h-10" />
+                </div>
               </div>
             </div>
           </div>

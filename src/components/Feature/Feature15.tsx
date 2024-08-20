@@ -1,70 +1,71 @@
 import React from "react";
+import { FaFingerprint, FaMoon } from "react-icons/fa6";
+import { FiFilter } from "react-icons/fi";
+import { RxLightningBolt } from "react-icons/rx";
 
-function Feature15() {
+const Feature15 = () => {
+  const containerStyles = "py-10 bg-white sm:py-16 lg:py-24";
+  const innerContainerStyles = "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8";
+  const gridStyles =
+    "grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12";
+  const itemStyles = "flex flex-col items-center";
+
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
-          <div className="lg:col-span-5 xl:pr-24">
-            <div className="max-w-lg lg:max-w-none">
-              <p className="text-base font-semibold text-gray-500">
-                The best UI Kit in town
-              </p>
-              <h2 className="mt-6 text-3xl font-semibold tracking-tight text-gray-900 lg:mt-8 sm:text-4xl lg:text-5xl">
-                Build a website without building it yourself!
-              </h2>
-              <p className="mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:pr-24 lg:mt-6 lg:leading-8">
-                Clarity gives you the blocks & components you need to create a
-                truly professional website, landing page or admin panel for your
-                SaaS.
-              </p>
+    <section className={containerStyles}>
+      <div className={innerContainerStyles}>
+        <div className={gridStyles}>
+          <div className={itemStyles}>
+            <div className="h-20 w-20 bg-blue-100 flex items-center justify-center rounded-full">
+              <FaFingerprint className="flex items-center justify-center w-8 h-8 mx-auto text-blue-600" />
             </div>
 
-            <div className="grid grid-cols-1 pt-8 mt-8 border-t border-gray-200 sm:grid-cols-2 md:mt-16 xl:mt-24 gap-x-16 gap-y-8">
-              <h3 className="text-lg font-medium text-gray-900">
-                Get unlimited design inspirations. Level up your design.
-              </h3>
-
-              <h3 className="text-lg font-medium text-gray-900">
-                14+ Premium tailwind UI kits. Start with unlimited product
-                downloads.
-              </h3>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Secured Payments
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              AuraUI ensures all transactions are secure and encrypted for your
+              safety.
+            </p>
+          </div>
+          <div className={itemStyles}>
+            <div className="h-20 w-20 bg-orange-100 flex items-center justify-center rounded-full">
+              {" "}
+              <RxLightningBolt className="flex items-center justify-center w-8 h-8 mx-auto text-orange-600" />
             </div>
-
-            <div className="mt-12">
-              <a
-                href="#"
-                title=""
-                className="inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline"
-              >
-                Start using Landingfolio
-                <svg
-                  className="w-5 h-5 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Fast & Easy to Load
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              Experience lightning-fast load times with AuraUI components.
+            </p>
+          </div>
+          <div className={itemStyles}>
+            <div className="h-20 w-20 bg-green-100 flex items-center justify-center rounded-full">
+              <FaMoon className="flex items-center justify-center w-8 h-8 mx-auto text-green-600" />
             </div>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Light & Dark Mode
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              Switch effortlessly between light and dark modes with AuraUI.
+            </p>
           </div>
 
-          <div className="lg:col-span-3">
-            <img
-              className="w-full xl:h-full xl:object-cover rounded-3xl"
-              src="https://landingfoliocom.imgix.net/store/collection/saasui/images/features/2/feature-2.svg"
-              alt=""
-            />
+          <div className={itemStyles}>
+            <div className="h-20 w-20 bg-red-100 flex items-center justify-center rounded-full">
+              <FiFilter className="flex items-center justify-center w-8 h-8 mx-auto text-red-600" />
+            </div>
+            <h3 className="mt-8 text-lg font-semibold text-black">
+              Filter Blocks
+            </h3>
+            <p className="mt-4 text-sm text-gray-600">
+              Easily filter through blocks to find what you need with AuraUI.
+            </p>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Feature15;

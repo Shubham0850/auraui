@@ -1,5 +1,5 @@
 import React from "react";
-import PaymentsApp from "@/components/Feature/PaymentsApp";
+import PaymentsApp from "@/components/Feature/Feature13";
 
 type Props = {};
 

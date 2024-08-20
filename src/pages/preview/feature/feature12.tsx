@@ -1,5 +1,5 @@
 import React from "react";
-import BusinessFeature from "@/components/Feature/BusinessFeature";
+import BusinessFeatureSecondary from "@/components/Feature/Feature12";
 
 type Props = {};
 
@@ -7,7 +7,7 @@ function AuraFooter({}: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">{/* Your main content goes here */}</div>
-      <BusinessFeature />
+      <BusinessFeatureSecondary />
     </div>
   );
 }
