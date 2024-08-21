@@ -1,8 +1,6 @@
 import React from "react";
 import { AiOutlineCheck } from "react-icons/ai";
-import { IoLogoTwitter } from "react-icons/io";
-import { MdArrowForward } from "react-icons/md";
-import { BiStar } from "react-icons/bi";
+import { HiOutlineBars3 } from "react-icons/hi2";
 
 // Common styles
 const buttonStyle =
@@ -20,8 +18,8 @@ function Hero15() {
               <a href="#" title="">
                 <img
                   className="w-auto h-8"
-                  src="https://example.com/auraui-logo.png"
-                  alt="Auraui Logo"
+                  src="https://www.auraui.com/logo-light.png"
+                  alt="AuraUI Logo"
                 />
               </a>
             </div>
@@ -56,12 +54,8 @@ function Hero15() {
             </div>
 
             <div className="flex ml-4 lg:hidden">
-              <button
-                type="button"
-                className={`${buttonStyle} bg-gray-900 border-gray-900 hover:bg-gray-700 focus:ring-gray-900`}
-                aria-expanded="false"
-              >
-                <AiOutlineCheck className="w-6 h-6" />
+              <button type="button" aria-expanded="false">
+                <HiOutlineBars3 className="w-7 h-7" />
               </button>
             </div>
           </div>
@@ -73,10 +67,10 @@ function Hero15() {
           <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-16">
             <div>
               <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl sm:tracking-tight">
-                Transform Your Web Presence with Auraui
+                Transform Your Great Web Presence with AuraUI
               </h1>
               <p className="mt-6 text-lg leading-7 text-gray-700 lg:leading-8 lg:text-xl">
-                Auraui provides innovative tools and components to craft a
+                AuraUI provides innovative tools and components to craft a
                 professional and modern web experience quickly and efficiently.
               </p>
               <div className="mt-8">
@@ -86,7 +80,7 @@ function Hero15() {
                   className={`${buttonStyle} bg-blue-600 border border-transparent hover:bg-blue-700 focus:ring-blue-700`}
                   role="button"
                 >
-                  Explore Auraui
+                  Explore AuraUI
                 </a>
               </div>
 
@@ -109,22 +103,19 @@ function Hero15() {
             </div>
 
             <div>
-              <div className="relative w-full max-w-sm mx-auto">
-                <div className="absolute inset-y-0 w-screen translate-y-20 left-1/2 bg-blue-50 lg:left-32 lg:right-0"></div>
-
+              <div className="relative mx-auto">
                 <img
-                  className="relative object-cover w-full max-w-xs mx-auto sm:max-w-sm rounded-2xl"
-                  src="https://example.com/auraui-demo.png"
-                  alt="Auraui Demo"
+                  className="w-full mx-auto md:scale-150 sm:mb-20"
+                  src="https://www.auraui.com/memeimage/manwithoutbg.png"
+                  alt="AuraUI Demo"
                 />
-
-                <div className="absolute bottom-0 left-0 bg-gray-900 rounded-br-none sm:-translate-x-16 xl:-translate-x-24 rounded-2xl sm:scale-100">
+                <div className="md:absolute top-80 right-[-50px] bg-gray-900 rounded-br-none sm:-translate-x-16 xl:-translate-x-24 rounded-2xl sm:scale-100">
                   <div className="px-4 py-5 sm:p-6">
                     <blockquote>
                       <p className="text-base font-normal leading-6 text-white">
-                        Auraui has revolutionized our web design process. The
+                        AuraUI has revolutionized our web design process. The
                         components are incredibly intuitive and have
-                        significantly streamlined our workflow.
+                        significantly streamlined workflow.
                       </p>
                     </blockquote>
                     <p className="mt-4 text-base font-semibold text-white">
