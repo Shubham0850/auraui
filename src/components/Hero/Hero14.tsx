@@ -21,11 +21,11 @@ const Hero14: React.FC = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
             <div className="shrink-0">
-              <a href="#" title="Auraui" className={commonStyles.link}>
+              <a href="#" title="AuraUI" className={commonStyles.link}>
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
-                  alt="Auraui Logo"
+                  src="https://www.auraui.com/logo-light.png"
+                  alt="AuraUI Logo"
                 />
               </a>
             </div>
@@ -106,13 +106,13 @@ const Hero14: React.FC = () => {
                   #1 Frontend Toolkit for Developers{" "}
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl xl:text-7xl sm:tracking-tight">
-                  Build Efficiently with Auraui
+                  Build Efficiently with AuraUI
                 </h1>
               </div>
 
               <div className="mt-6 lg:mt-auto">
                 <p className="text-lg leading-7 text-gray-700 lg:leading-8 lg:text-xl">
-                  Auraui provides the components you need to create professional
+                  AuraUI provides the components you need to create professional
                   websites and applications with ease.
                 </p>
                 <div className="mt-10">
@@ -132,8 +132,8 @@ const Hero14: React.FC = () => {
               <div className="relative w-full max-w-sm mx-auto">
                 <img
                   className="relative w-full max-w-xs mx-auto sm:max-w-sm rounded-2xl"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/illustration.png"
-                  alt="Auraui Illustration"
+                  src="https://www.auraui.com/memeimage/code-illustration.png"
+                  alt="AuraUI Illustration"
                 />
                 <div className="absolute bottom-0 left-0 mb-12 -ml-2 bg-white shadow-2xl sm:mb-24 sm:-ml-24 lg:-ml-12 xl:-ml-24 w-72 rounded-2xl">
                   <div className="px-4 py-5 sm:p-6">
@@ -144,7 +144,7 @@ const Hero14: React.FC = () => {
                           34,585
                         </p>
                         <p className="mt-1 text-lg font-normal text-gray-700">
-                          Projects built with Auraui last week
+                          Projects built with AuraUI last week
                         </p>
                       </div>
                     </div>
