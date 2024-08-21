@@ -1,4 +1,6 @@
 import React from "react";
+import { FaPlay } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 function Hero7() {
   const commonStyles = {
@@ -95,18 +97,7 @@ function Hero7() {
                 href="#"
                 className={`${commonStyles.button} bg-transparent text-white border-primary hover:bg-white hover:text-black ${commonStyles.focusRing} border-2`}
               >
-                <svg
-                  className="w-6 h-6 mr-2"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M8.0416 4.9192C7.37507 4.51928 6.5271 4.99939 6.5271 5.77669L6.5271 18.2232C6.5271 19.0005 7.37507 19.4806 8.0416 19.0807L18.4137 12.8574C19.061 12.469 19.061 11.5308 18.4137 11.1424L8.0416 4.9192Z"
-                  />
-                </svg>
+                <FaPlay className="h-5 w-5 mr-2" />
                 Watch trailer
               </a>
             </div>
@@ -119,20 +110,7 @@ function Hero7() {
           href="#"
           className="inline-flex items-center justify-center w-12 h-12 text-white transition-all duration-200 rounded-full bg-black hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
         >
-          <svg
-            className="w-5 h-5"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
+          <IoIosArrowDown className="h-5 w-5 mt-2" />
         </a>
       </div>
     </div>
