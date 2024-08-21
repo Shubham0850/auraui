@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa6";
+import { HiOutlineBars3 } from "react-icons/hi2";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Hero7() {
@@ -31,20 +32,7 @@ function Hero7() {
                 type="button"
                 className="p-2 -m-2 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
               >
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                <HiOutlineBars3 className="w-7 h-7" />
               </button>
             </div>
 

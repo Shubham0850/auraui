@@ -83,7 +83,7 @@ function Hero8() {
             <div className="hidden lg:block">
               <img
                 className="w-full mx-auto"
-                src="/memeimage/laptop-working-men.jpg"
+                src="https://www.auraui.com/memeimage/laptop-working-men.jpg"
                 alt="AuraUI Visual"
               />
             </div>
