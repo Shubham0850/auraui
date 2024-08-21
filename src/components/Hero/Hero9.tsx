@@ -120,7 +120,7 @@ function Hero9() {
                 <div className="absolute -inset-24">
                   <img
                     className="w-full h-full"
-                    src="/memeimage/hero-9-cover.png"
+                    src="https://www.auraui.com/memeimage/hero-9-cover.png"
                     alt=""
                   />
                 </div>
@@ -128,7 +128,7 @@ function Hero9() {
                 <div className="relative">
                   <img
                     className="w-full max-w-xs mx-auto xl:max-w-sm"
-                    src="/memeimage/hero-9-book.png"
+                    src="https://www.auraui.com/memeimage/hero-9-book.png"
                     alt=""
                   />
                 </div>
