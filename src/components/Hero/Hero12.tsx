@@ -35,7 +35,7 @@ const Hero12 = () => {
       <div className={commonStyles.overlayImage}>
         <img
           className="w-auto h-full"
-          src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
+          src="/memeimage/background-pattern.png"
           alt="Background Pattern"
         />
       </div>
@@ -51,7 +51,7 @@ const Hero12 = () => {
               >
                 <img
                   className={commonStyles.headerLogo}
-                  src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
                 />
               </a>
@@ -74,7 +74,7 @@ const Hero12 = () => {
                 Fees
               </a>
               <a href="#" title="About Auraui" className={commonStyles.navLink}>
-                About Auraui
+                About
               </a>
             </div>
 
@@ -159,7 +159,7 @@ const Hero12 = () => {
             <div>
               <img
                 className={commonStyles.image}
-                src="https://d33wubrfki0l68.cloudfront.net/a78a55b3add0dc26d3587d02ecc23bebc28bf5f8/67091/images/hero/5.2/illustration.png"
+                src="https://www.auraui.com/memeimage/credit-card-nobg.png"
                 alt="Illustration"
               />
             </div>
