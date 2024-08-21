@@ -22,7 +22,7 @@ const Hero13: React.FC = () => {
               <a href="#" title="Auraui" className={commonStyles.link}>
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/clarity/images/logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
                 />
               </a>
