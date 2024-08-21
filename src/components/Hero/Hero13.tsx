@@ -93,7 +93,7 @@ const Hero13: React.FC = () => {
         <div className="absolute bottom-0 right-0 overflow-hidden">
           <img
             className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75"
-            src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png"
+            src="https://www.auraui.com/memeimage/background-pattern2.png"
             alt=""
           />
         </div>
@@ -102,10 +102,10 @@ const Hero13: React.FC = () => {
           <div className="grid grid-cols-1 gap-y-4 lg:items-center lg:grid-cols-2 xl:grid-cols-2">
             <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0 xl:pr-20">
               <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">
-                Auraui: Your Ultimate Frontend Toolkit
+                AuraUI your ultimate frontend toolkit is here
               </h1>
               <p className="mt-2 text-lg text-gray-600 sm:mt-6 font-inter">
-                Auraui helps you build clean, efficient, and beautiful web
+                AuraUI helps you build clean, efficient, and beautiful web
                 applications with ease. Experience the power of our components
                 library today.
               </p>
@@ -131,19 +131,19 @@ const Hero13: React.FC = () => {
                     Best code editor in the market!
                   </p>
                   <p className="mt-3 text-base leading-7 text-gray-600 font-inter">
-                    Auraui&apos;s editor provides a seamless experience, allowing you
-                    to focus on writing clean and efficient code.
+                    Auraui&apos;s editor provides a seamless experience,
+                    allowing you to focus on writing clean and efficient code.
                   </p>
                 </blockquote>
 
                 <div className="flex items-center justify-center mt-3 lg:justify-start">
                   <img
                     className="flex-shrink-0 object-cover w-6 h-6 overflow-hidden rounded-full"
-                    src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/avatar-female.png"
-                    alt="Denny Jones"
+                    src="https://www.auraui.com/memeimage/woman2.jpg"
+                    alt="Elly Neats"
                   />
                   <p className="ml-2 text-base font-bold text-gray-900 font-pj">
-                    Denny Jones
+                    Elly Neats
                   </p>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Hero13: React.FC = () => {
             <div className="xl:col-span-1">
               <img
                 className="w-full mx-auto"
-                src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/illustration.png"
+                src="https://www.auraui.com/memeimage/vector-nobg.png"
                 alt="Auraui Illustration"
               />
             </div>
