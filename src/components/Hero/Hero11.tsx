@@ -102,7 +102,7 @@ function Hero11() {
               </div>
               <div className="mt-8 lg:mt-12">
                 <p className="text-gray-300">
-                  ////////////////////////////////////
+                  {" ////////////////////////////////////"}
                 </p>
               </div>
               <div className="inline-grid grid-cols-2 mt-8 gap-x-8">
