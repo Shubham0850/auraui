@@ -29,7 +29,12 @@ function Hero19() {
             </div>
             <div className="hidden lg:flex lg:justify-center lg:space-x-10 xl:space-x-14">
               {["Components", "Features", "Docs", "Support"].map((text) => (
-                <a href="#" title={text} className={commonStyles.headerLink}>
+                <a
+                  key={1}
+                  href="#"
+                  title={text}
+                  className={commonStyles.headerLink}
+                >
                   {text}
                 </a>
               ))}
