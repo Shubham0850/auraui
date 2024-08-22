@@ -90,7 +90,7 @@ function Hero19() {
           <div className="w-[60%] rounded-2xl hidden lg:block overflow-hidden">
             <img
               className="object-cover object-right-bottom w-full h-full rounded-2xl"
-              src="/memeimage/ui.jpg"
+              src="https://www.auraui.com/memeimage/ui.jpg"
               alt="AuraUI showcase"
             />
           </div>
@@ -98,7 +98,7 @@ function Hero19() {
         <div className="mt-8 w-[90%] mx-auto lg:hidden">
           <img
             className="object-cover object-right-bottom w-full h-full rounded-2xl"
-            src="/memeimage/ui.jpg"
+            src="https://www.auraui.com/memeimage/ui.jpg"
             alt="AuraUI showcase"
           />
         </div>
