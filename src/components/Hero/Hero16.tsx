@@ -64,7 +64,7 @@ function Hero16() {
       <div className="absolute inset-0">
         <img
           className="object-cover w-full h-full opacity-60"
-          src="/memeimage/web-dev.jpeg"
+          src="https://www.auraui.com/memeimage/web-dev.jpeg"
           alt="Background"
         />
       </div>
