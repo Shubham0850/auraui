@@ -2,7 +2,6 @@ import React from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoMdLogIn } from "react-icons/io";
 
 const commonStyles = "transition-all duration-200 hover:text-opacity-80";
 
@@ -13,11 +12,11 @@ const Hero26: React.FC = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
-              <a href="#" title="Auraui" className="flex">
+              <a href="#" title="AuraUI" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-                  alt="Auraui Logo"
+                  src="https://www.auraui.com/logo-light.png"
+                  alt="AuraUI Logo"
                 />
               </a>
             </div>
@@ -83,7 +82,7 @@ const Hero26: React.FC = () => {
                 A hub for innovative minds
               </p>
               <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
-                Connect & Innovate with Auraui
+                Connect & Innovate with AuraUI
               </h1>
               <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
                 Accelerate your growth with expert insights and cutting-edge
@@ -99,7 +98,7 @@ const Hero26: React.FC = () => {
                 <BsArrowRight className="w-6 h-6 ml-3" />
               </a>
               <p className="mt-5 text-gray-600">
-                Already part of Auraui?{" "}
+                Already part of AuraUI?{" "}
                 <a
                   href="#"
                   title="Log in"
@@ -112,8 +111,8 @@ const Hero26: React.FC = () => {
             <div>
               <img
                 className="w-full"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
-                alt="Auraui Illustration"
+                src="https://www.auraui.com/memeimage/hero26.png"
+                alt="AuraUI Illustration"
               />
             </div>
           </div>

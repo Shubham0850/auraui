@@ -122,7 +122,7 @@ const Hero25: React.FC = () => {
             <div>
               <img
                 className="w-full"
-                src="/memeimage/hero25.png"
+                src="https://www.auraui.com/memeimage/hero25.png"
                 alt="AuraUI Illustration"
               />
             </div>
