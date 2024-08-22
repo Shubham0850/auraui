@@ -85,17 +85,17 @@ function Hero15() {
               </div>
 
               <ul className="mt-10 space-y-4">
-                <li className="flex items-center">
+                <li className="flex items-center text-gray-900">
                   <AiOutlineCheck className="w-6 h-6 mr-2 text-blue-600" />
                   Access to cutting-edge design components.
                 </li>
 
-                <li className="flex items-center">
+                <li className="flex items-center text-gray-900">
                   <AiOutlineCheck className="w-6 h-6 mr-2 text-blue-600" />
                   Create stunning web experiences in minutes.
                 </li>
 
-                <li className="flex items-center">
+                <li className="flex items-center text-gray-900">
                   <AiOutlineCheck className="w-6 h-6 mr-2 text-blue-600" />
                   Built for developers seeking high performance.
                 </li>
