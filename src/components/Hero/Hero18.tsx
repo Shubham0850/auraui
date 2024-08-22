@@ -69,7 +69,7 @@ const Hero18 = () => {
         <div className="absolute inset-0 hidden lg:block">
           <img
             className="object-cover object-top w-full h-full"
-            src="/memeimage/dev-team.png"
+            src="https://www.auraui.com/memeimage/dev-team.png"
             alt="Background"
           />
         </div>
@@ -105,7 +105,7 @@ const Hero18 = () => {
           <div className="-mt-4 sm:-mt-16 md:-mt-32 lg:hidden">
             <img
               className="object-cover object-top w-full h-full"
-              src="/memeimage/dev-team.png"
+              src="https://www.auraui.com/memeimage/dev-team.png"
               alt="Background"
             />
           </div>
