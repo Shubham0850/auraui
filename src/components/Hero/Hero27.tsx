@@ -35,7 +35,7 @@ function Hero27() {
               <a href="#" title="" className="flex">
                 <img
                   className="w-auto h-8"
-                  src="https://your-domain.com/path-to-your-logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui logo"
                 />
               </a>
@@ -187,9 +187,9 @@ function Hero27() {
                           How to leverage Auraui for success
                         </p>
                         <p className={commonStyles.cardDescription}>
-                          Discover how Auraui&apos;s innovative tools and community
-                          support can help you achieve your goals and elevate
-                          your projects.
+                          Discover how Auraui&apos;s innovative tools and
+                          community support can help you achieve your goals and
+                          elevate your projects.
                         </p>
                       </a>
                     </div>
