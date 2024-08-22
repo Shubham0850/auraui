@@ -127,7 +127,7 @@ function Hero17() {
             <div>
               <img
                 className="w-full rounded-lg"
-                src="/memeimage/hero-17.jpeg"
+                src="https://www.auraui.com/memeimage/hero-17.jpeg"
                 alt="Fashion Style"
               />
             </div>
