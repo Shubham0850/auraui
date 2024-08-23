@@ -21,17 +21,6 @@ const Pricing12 = () => {
       ],
       icon: <FaCode className="w-5 h-5 text-gray-900" />,
     },
-    {
-      title: "Enterprise",
-      description: "Comprehensive solutions for large organizations",
-      price: 199,
-      features: [
-        "Unlimited Cloud Storage",
-        "Full API Access",
-        "24/7 Dedicated Support",
-      ],
-      icon: <FaComments className="w-5 h-5 text-gray-900" />,
-    },
   ];
 
   return (
