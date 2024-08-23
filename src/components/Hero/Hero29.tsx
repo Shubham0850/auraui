@@ -15,7 +15,7 @@ const commonStyles = {
   navLink:
     "text-base text-black transition-all duration-200 hover:text-opacity-80",
   ctaButton:
-    "inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white",
+    "hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white",
   section: "overflow-hidden",
   contentContainer:
     "flex flex-col lg:flex-row lg:items-stretch lg:max-h-[900px] lg:min-h-[900px]",
@@ -44,11 +44,11 @@ function Hero29() {
         <div className={commonStyles.headerInner}>
           <div className={commonStyles.headerContent}>
             <div className="flex-shrink-0">
-              <a href="#" title="Auraui" className="flex">
+              <a href="#" title="AuraUI" className="flex">
                 <img
                   className={commonStyles.logo}
-                  src="https://your-logo-url.com/logo.svg"
-                  alt="Auraui Logo"
+                  src="https://www.auraui.com/logo-light.png"
+                  alt="AuraUI Logo"
                 />
               </a>
             </div>
@@ -60,23 +60,21 @@ function Hero29() {
             </button>
 
             <div className={commonStyles.navMenu}>
-              <a href="#" title="Features" className={commonStyles.navLink}>
-                Features
-              </a>
-              <a href="#" title="Solutions" className={commonStyles.navLink}>
-                Solutions
-              </a>
-              <a href="#" title="Resources" className={commonStyles.navLink}>
-                Resources
-              </a>
-              <a href="#" title="Pricing" className={commonStyles.navLink}>
-                Pricing
-              </a>
+              {["Features", "Solutions", "Resources", "Pricing"].map((item) => (
+                <a
+                  key={item}
+                  href="#"
+                  title={item}
+                  className={commonStyles.navLink}
+                >
+                  {item}
+                </a>
+              ))}
             </div>
 
             <a
               href="#"
-              title="Try for free"
+              title="Try AuraUI for free"
               className={commonStyles.ctaButton}
               role="button"
             >
@@ -93,16 +91,18 @@ function Hero29() {
               <div className="flex flex-col justify-between flex-1 h-full">
                 <div>
                   <h1 className={commonStyles.heading}>
-                    Take control <br /> of your daily expenses
+                    Take control <br />
+                    of your UI experience <br />
+                    with AuraUI.
                   </h1>
                   <p className={commonStyles.paragraph}>
-                    Auraui&apos;s advanced A.I. predicts your expenses based on
-                    previous activities and offers tips on managing your
-                    finances efficiently.
+                    AuraUI helps you build beautiful, responsive web interfaces
+                    effortlessly. Focus on your creativity while we handle the
+                    design.
                   </p>
                   <a
                     href="#"
-                    title="Get started for free"
+                    title="Get started with AuraUI"
                     className={commonStyles.button}
                     role="button"
                   >
@@ -112,25 +112,33 @@ function Hero29() {
 
                 <div className={commonStyles.appLinks}>
                   <div className={commonStyles.appLinkContainer}>
-                    <p className={commonStyles.appLinkText}>App available on</p>
+                    <p className={commonStyles.appLinkText}>Available on</p>
+
                     <div className={commonStyles.appLinkIcons}>
                       <a
                         href="#"
-                        title="App Store"
+                        title="Download on the App Store"
                         className={commonStyles.appLinkIcon}
                         role="button"
                       >
-                        <AiOutlineAppstore className={commonStyles.appIcon} />
-                        <span className="sr-only">App Store</span>
+                        <img
+                          className={commonStyles.appIcon}
+                          src="https://www.auraui.com/memeimage/app-store-button.png"
+                          alt="App Store"
+                        />
                       </a>
+
                       <a
                         href="#"
-                        title="Play Store"
+                        title="Get it on Google Play"
                         className={commonStyles.appLinkIcon}
                         role="button"
                       >
-                        <AiOutlineGoogle className={commonStyles.appIcon} />
-                        <span className="sr-only">Play Store</span>
+                        <img
+                          className={commonStyles.appIcon}
+                          src="https://www.auraui.com/memeimage/play-store-button.png"
+                          alt="Google Play"
+                        />
                       </a>
                     </div>
                   </div>
@@ -142,8 +150,8 @@ function Hero29() {
           <div className={commonStyles.imageContainer}>
             <img
               className={commonStyles.image}
-              src="https://your-image-url.com/phone-mockup.png"
-              alt="Phone Mockup"
+              src="https://www.auraui.com/memeimage/phone-mockup.png"
+              alt="AuraUI Mockup"
             />
           </div>
         </div>
