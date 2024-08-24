@@ -20,7 +20,7 @@ const commonStyles = {
 
 type Props = {};
 
-function EmailCampaignHero({}: Props) {
+function Hero32({}: Props) {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   return (
@@ -108,7 +108,7 @@ function EmailCampaignHero({}: Props) {
                       >
                         {item}
                       </Link>
-                    )
+                    ),
                   )}
                   <Link
                     href="#"
@@ -168,4 +168,4 @@ function EmailCampaignHero({}: Props) {
   );
 }
 
-export default EmailCampaignHero;
+export default Hero32;

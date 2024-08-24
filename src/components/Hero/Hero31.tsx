@@ -11,7 +11,7 @@ const MenuIcon = ({ isOpen }: { isOpen: boolean }) => {
 
 const DownloadIcon = () => <FiDownload className="w-5 h-5 mr-2" />;
 
-function FeedbackHero({}: Props) {
+function Hero31({}: Props) {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const anchorStyles =
@@ -87,7 +87,7 @@ function FeedbackHero({}: Props) {
               Services
             </Link>
             <Link href="#login" className={anchorStyles} passHref>
-              Login 
+              Login
             </Link>
             <Link
               href="#signup"
@@ -182,4 +182,4 @@ function FeedbackHero({}: Props) {
   );
 }
 
-export default FeedbackHero;
+export default Hero31;
