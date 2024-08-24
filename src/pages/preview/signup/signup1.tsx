@@ -1,5 +1,5 @@
 
-import TheBusiness from "@/components/SignUp/TheBusiness";
+import TheBusiness from "@/components/SignUp/SignUp1";
 import React from "react";
 
 type Props = {};
