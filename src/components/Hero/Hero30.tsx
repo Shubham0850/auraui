@@ -117,7 +117,8 @@ function Hero30() {
               <p className={commonStyles.paragraph}>
                 Discover the power of AuraUI, where creativity meets efficiency.
                 Our comprehensive suite of design tools helps you craft stunning
-                interfaces effortlessly, whether you're a designer or developer.
+                interfaces effortlessly, whether you&apos;re a designer or
+                developer.
               </p>
               <div className={commonStyles.buttonContainer}>
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
