@@ -41,11 +41,11 @@ function Hero30() {
         <div className={commonStyles.headerInner}>
           <div className={commonStyles.headerContent}>
             <div className="shrink-0">
-              <a href="#" title="Auraui" className="flex">
+              <a href="#" title="AuraUI" className="flex">
                 <img
                   className={commonStyles.logo}
-                  src="https://your-logo-url.com/logo.svg"
-                  alt="Auraui Logo"
+                  src="https://www.auraui.com/logo-dark.png"
+                  alt="AuraUI Logo"
                 />
               </a>
             </div>
@@ -57,10 +57,10 @@ function Hero30() {
                 onClick={() => setExpanded(!expanded)}
                 aria-expanded={expanded}
               >
-                {!expanded ? (
-                  <FaBars className="w-7 h-7" />
-                ) : (
+                {expanded ? (
                   <FaTimes className="w-7 h-7" />
+                ) : (
+                  <FaBars className="w-7 h-7" />
                 )}
               </button>
             </div>
@@ -80,24 +80,26 @@ function Hero30() {
               </a>
             </nav>
           </div>
-        </div>
 
-        {expanded && (
-          <nav className={commonStyles.mobileNav}>
-            <a href="#" title="Products" className={commonStyles.navLink}>
-              Products
-            </a>
-            <a href="#" title="Features" className={commonStyles.navLink}>
-              Features
-            </a>
-            <a href="#" title="Pricing" className={commonStyles.navLink}>
-              Pricing
-            </a>
-            <a href="#" title="Support" className={commonStyles.navLink}>
-              Support
-            </a>
-          </nav>
-        )}
+          {expanded && (
+            <nav className="md:hidden">
+              <div className={commonStyles.mobileNav}>
+                <a href="#" title="Products" className={commonStyles.navLink}>
+                  Products
+                </a>
+                <a href="#" title="Features" className={commonStyles.navLink}>
+                  Features
+                </a>
+                <a href="#" title="Pricing" className={commonStyles.navLink}>
+                  Pricing
+                </a>
+                <a href="#" title="Support" className={commonStyles.navLink}>
+                  Support
+                </a>
+              </div>
+            </nav>
+          )}
+        </div>
       </header>
 
       <section className={commonStyles.section}>
@@ -105,28 +107,27 @@ function Hero30() {
           <div className="relative">
             <div className="lg:w-2/3">
               <p className="text-sm font-normal tracking-widest text-gray-300 uppercase">
-                A Hub for Designers, Developers & Marketers
+                The Ultimate Toolkit for UI Design
               </p>
-              <h1 className={`${commonStyles.heading}`}>
-                <span className={commonStyles.gradientText}>
-                  Unlimited Design
-                </span>{" "}
-                Inspiration
+              <h1
+                className={`${commonStyles.heading} ${commonStyles.gradientText}`}
+              >
+                Elevate Your Designs with AuraUI
               </h1>
               <p className={commonStyles.paragraph}>
-                Auraui provides endless inspiration for your design projects
-                with AI-driven recommendations and curated collections.
+                Discover the power of AuraUI, where creativity meets efficiency.
+                Our comprehensive suite of design tools helps you craft stunning
+                interfaces effortlessly, whether you're a designer or developer.
               </p>
               <div className={commonStyles.buttonContainer}>
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
                 <a
                   href="#"
-                  title="Start Exploring Inspiration"
+                  title="Explore AuraUI"
                   className={commonStyles.button}
                   role="button"
                 >
-                  Start Exploring Inspiration{" "}
-                  <IoArrowForward className="ml-2" />
+                  Explore AuraUI
                 </a>
               </div>
 
@@ -134,7 +135,7 @@ function Hero30() {
                 <div className={commonStyles.info}>
                   <MdDesignServices className={commonStyles.infoIcon} />
                   <span className={commonStyles.infoText}>
-                    42 new design inspirations were added last week
+                    42 new design inspirations added this week
                   </span>
                 </div>
               </div>
@@ -143,8 +144,8 @@ function Hero30() {
             <div className={commonStyles.imageContainer}>
               <img
                 className={commonStyles.image}
-                src="https://your-image-url.com/illustration.png"
-                alt="Design Illustration"
+                src="/memeimage/hero30.png"
+                alt="AuraUI Design Inspiration"
               />
             </div>
           </div>
