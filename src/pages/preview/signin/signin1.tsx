@@ -1,4 +1,4 @@
-import LoginCard from '@/components/SignIn/LoginCard'
+import LoginCard from '@/components/SignIn/SignIn1'
 import React from 'react'
 
 type Props = {}

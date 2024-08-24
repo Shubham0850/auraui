@@ -20,7 +20,7 @@ const commonStyles = {
   link: "font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline",
 };
 
-const LoginCard = () => {
+const SignIn1 = () => {
   return (
     <section className="bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -142,4 +142,4 @@ const LoginCard = () => {
   );
 };
 
-export default LoginCard;
+export default SignIn1;
