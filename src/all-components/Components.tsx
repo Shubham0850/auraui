@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { components } from './Data'
 import Image from 'next/image'
 import { PlaceholdersAndVanishInput } from '@/components/ui/animated-search'
@@ -14,39 +14,39 @@ function Components() {
 		"Pricing",
 	];
 	const tags = [
-    "Hero",
-    "Navbar",
-    "Footer",
-    "Testimonial",
-    "Pricing",
-    "Nft",
-    "Cta",
-    "Blog",
-    "Gallery",
-    "Feature",
-    "Faqs",
-    "Integration",
-    "Logocloud",
-    "Newsletter",
-    "Steps",
-    "Teams",
-    "Contact",
-    // "Button",
-    // "Card",
-    // "Modal",
-    // "Accordion",
-    // "Tabs",
-    // "Dropdown",
-    // "Input",
-    // "Checkbox",
-    // "Radio",
-  ];
+		"Hero",
+		"Navbar",
+		"Footer",
+		"Testimonial",
+		"Pricing",
+		"Nft",
+		"Cta",
+		"Blog",
+		"Gallery",
+		"Feature",
+		"Faqs",
+		"Integration",
+		"Logocloud",
+		"Newsletter",
+		"Steps",
+		"Teams",
+		"Contact",
+		// "Button",
+		// "Card",
+		// "Modal",
+		// "Accordion",
+		// "Tabs",
+		// "Dropdown",
+		// "Input",
+		// "Checkbox",
+		// "Radio",
+	];
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const tag = e.target.value.toLowerCase();
-    const filteredComponents = components.filter(component => component.tag.toLowerCase().includes(tag));
-    setFilteredComponents(filteredComponents);
-};
+		const tag = e.target.value.toLowerCase();
+		const filteredComponents = components.filter(component => component.tag.toLowerCase().includes(tag));
+		setFilteredComponents(filteredComponents);
+	};
 
 	const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -70,8 +70,13 @@ function Components() {
 							onSubmit={onSubmit}
 						/>
 						<div className="flex flex-wrap gap-2 mt-4">
-							{tags.map((tag, index) => (
-								<button onClick={() => handleTagClick(tag)} key={index} className={`border border-customDark px-2 py-1 rounded-md ${activeTag === tag ? 'bg-black' : 'bg-customDark'}`}>
+							{tags.map((tag) => (
+								<button
+									type="button"
+									onClick={() => handleTagClick(tag)}
+									key={tag}
+									className={`border border-customDark px-2 py-1 rounded-md ${activeTag === tag ? 'bg-black' : 'bg-customDark'}`}
+								>
 									<p className='text-[#b9b9b9] text-xs'>{tag}</p>
 								</button>
 							))}
@@ -81,9 +86,9 @@ function Components() {
 
 			</div>
 			<div className="mt-10   gap-4 md:columns-2 lg:columns-3 space-y-4 ">
-				{filteredComponents.map((component, index) => (
+				{filteredComponents.map((component) => (
 					<a
-						key={index}
+						key={component.id}
 						href={component.link}
 						className="flex flex-col items-left cursor-pointer"
 					>
