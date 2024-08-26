@@ -52,7 +52,6 @@ const Hero = () => {
     { src: "/components/tailwind.svg", alt: "tailwind" },
     { src: "/components/css-icon.svg", alt: "css" },
     { src: "/components/framer.svg", alt: "framer" },
-    // { src: "/memeimage/peerlist-1.svg", alt: "peerlist" },
   ];
   return (
     <div>
@@ -61,11 +60,13 @@ const Hero = () => {
       </div>
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
-          <img
-            src="/memeimage/peerlist-1.svg"
-            alt="peerlist rank 1"
-            className="right-0 fixed bottom-0 h-14 w-14"
-          />
+          <a href="https://peerlist.io/projects/2024/week/34" target="_blank">
+            <img
+              src="/memeimage/peerlist-1.svg"
+              alt="peerlist rank 1"
+              className="right-4 fixed bottom-4 h-14 w-14"
+            />
+          </a>
           <div className="max-w-3xl mx-auto text-center">
             <span className="border p-2 px-6 rounded-full text-xs">
               100x your development speed
