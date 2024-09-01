@@ -41,7 +41,7 @@ const AnimatedTab: React.FC<TabComponentProps> = ({ tabs }) => {
 
   return (
     <div className="flex flex-col items-left">
-      <div className="relative flex items-center bg-gray-200 dark:bg-customDark rounded-lg p-1 w-min">
+      <div className="relative flex items-center bg-gray-200 dark:bg-customDark rounded-lg p-1 w-min overflow-hidden">
         {tabs.map((tab) => (
           <button
             key={tab.name}
