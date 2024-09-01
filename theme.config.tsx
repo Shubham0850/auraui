@@ -9,13 +9,26 @@ import Image from "next/image";
 const config: DocsThemeConfig = {
   logo: () => {
     const { theme } = useTheme();
-    const [currentTheme, setCurrentTheme] = useState("");
+    const [currentTheme, setCurrentTheme] = useState<string | undefined>("");
 
     useEffect(() => {
-      if (theme) {
+    const matchMedia = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const updateTheme = () => {
+      if (theme === 'system') {
+        setCurrentTheme(matchMedia.matches ? 'dark' : 'light');
+      } else {
         setCurrentTheme(theme);
       }
-    }, [theme]);
+    };
+    
+    updateTheme();
+    matchMedia.addEventListener('change', updateTheme);
+
+    return () => {
+      matchMedia.removeEventListener('change', updateTheme);
+    }
+  }, [theme]);
 
     if (!currentTheme) {
       return null; // or a loading spinner or placeholder

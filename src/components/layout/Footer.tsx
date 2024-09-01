@@ -7,11 +7,24 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useTheme();
-  const [currentTheme, setCurrentTheme] = useState("");
+  const [currentTheme, setCurrentTheme] = useState<string | undefined>("");
 
   useEffect(() => {
-    if (theme) {
-      setCurrentTheme(theme);
+    const matchMedia = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const updateTheme = () => {
+      if (theme === 'system') {
+        setCurrentTheme(matchMedia.matches ? 'dark' : 'light');
+      } else {
+        setCurrentTheme(theme);
+      }
+    };
+
+    updateTheme();
+    matchMedia.addEventListener('change', updateTheme);
+
+    return () => {
+      matchMedia.removeEventListener('change', updateTheme);
     }
   }, [theme]);
 
