@@ -9,6 +9,7 @@ const TOGGLE_CLASSES =
   "text-sm font-medium flex items-center justify-center px-6 py-2 transition-colors relative z-10";
 
 type ElementWrapperProps = {
+  type?: string;
   element: React.ReactNode;
   componentPath: string;
   previewLink?: string;
@@ -18,21 +19,32 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
   element,
   componentPath,
   previewLink,
+  type,
 }) => {
-  const tabs = [
-    {
-      name: "Preview",
-      label: "Preview",
-      icon: <CgWebsite />,
-      component: <PreviewComponent element={element} />,
-    },
-    {
-      name: "Code",
-      label: "Code",
-      icon: <FaCode />,
-      component: <CodeComponent componentPath={componentPath} />,
-    },
-  ];
+  const tabs =
+    type === "loading"
+      ? [
+          {
+            name: "Preview",
+            label: "Preview",
+            icon: <CgWebsite />,
+            component: <PreviewComponent element={element} />,
+          },
+        ]
+      : [
+          {
+            name: "Preview",
+            label: "Preview",
+            icon: <CgWebsite />,
+            component: <PreviewComponent element={element} />,
+          },
+          {
+            name: "Code",
+            label: "Code",
+            icon: <FaCode />,
+            component: <CodeComponent componentPath={componentPath} />,
+          },
+        ];
 
   const [selected, setSelected] = useState(tabs[0].name);
   const [width, setWidth] = useState(0);
@@ -72,10 +84,11 @@ const ElementWrapper: React.FC<ElementWrapperProps> = ({
               <button
                 key={tab.name}
                 ref={tabRefs.current[tab.name]}
-                className={` ${TOGGLE_CLASSES} ${selected === tab.name
-                  ? "text-black dark:text-white"
-                  : "text-gray-600 dark:text-gray-400"
-                  }`}
+                className={` ${TOGGLE_CLASSES} ${
+                  selected === tab.name
+                    ? "text-black dark:text-white"
+                    : "text-gray-600 dark:text-gray-400"
+                }`}
                 onClick={() => handleTabClick(tab.name)}
               >
                 <span className="mr-2">{tab.icon}</span>
@@ -134,9 +147,7 @@ const CodeComponent: React.FC<CodeComponentProps> = ({ componentPath }) => (
   </div>
 );
 
-const PreviewComponent: React.FC<{ element: React.ReactNode }> = ({
-  element,
-}) => (
+const PreviewComponent: React.FC<{ element: React.ReactNode }> = ({ element }) => (
   <div className="border-2 border-gray-100 dark:border-customDark rounded-2xl overflow-hidden">
     <div className="h-8 dark:bg-customDark px-4 flex items-center space-x-2 bg-gray-100">
       <div className="w-3 h-3 dark:bg-black bg-gray-300 rounded-full" />
