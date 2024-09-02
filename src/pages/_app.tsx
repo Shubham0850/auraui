@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { Toaster } from "sonner";
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
 
@@ -49,10 +48,6 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
       />
       <Analytics />
-      <Toaster
-        richColors
-        position="top-center"
-      />
       <Component {...pageProps} />
     </>
   );
