@@ -60,11 +60,11 @@ const Hero = () => {
       </div>
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
-          <a href="https://peerlist.io/projects/2024/week/34" target="_blank">
+          <a href="https://peerlist.io/projects/2024/month/Aug" target="_blank">
             <img
-              src="/memeimage/peerlist-1.svg"
+              src="/memeimage/peerlist-2.svg"
               alt="peerlist rank 1"
-              className="right-4 fixed bottom-4 h-14 w-14"
+              className="right-4 fixed z-[10] bottom-4 h-10 w-10"
             />
           </a>
           <div className="max-w-3xl mx-auto text-center">
