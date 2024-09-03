@@ -1,11 +1,11 @@
-import SpecialistTeam from '@/components/Teams/SpecialistTeam'
+import Team2 from '@/components/Teams/Team2'
 import React from 'react'
 
 type Props = {}
 
 function page({}: Props) {
 	return (
-		<SpecialistTeam />
+		<Team2 />
 	)
 }
 
