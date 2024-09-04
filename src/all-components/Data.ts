@@ -507,10 +507,10 @@ export const components = [
   },
   {
     id: 73,
-    name: "Newsletter Subscription",
+    name: "NewsLetter1",
     tag: "newsletter",
     imgSrc: "/all-components/newsletter/subscription.png",
-    link: "/docs/newsletter#newslettersubscription",
+    link: "/docs/newsletter#newsletter1",
   },
   {
     id: 74,

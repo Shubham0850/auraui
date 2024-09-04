@@ -25,7 +25,7 @@ const style = {
   image: "h-full rounded-md mx-auto",
 };
 
-const NewsletterSubscription: React.FC = () => {
+const NewsLetter1: React.FC = () => {
   return (
     <section className={style.section}>
       <div className={style.container}>
@@ -89,4 +89,4 @@ const NewsletterSubscription: React.FC = () => {
   );
 };
 
-export default NewsletterSubscription;
+export default NewsLetter1;
