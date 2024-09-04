@@ -1,10 +1,10 @@
 import React from "react";
-import VerticleSteps from "@/components/Steps/VerticleSteps";
+import Steps1 from "@/components/Steps/Steps1";
 
 type Props = {};
 
 function Verticle({}: Props) {
-  return <VerticleSteps />;
+  return <Steps1 />;
 }
 
 export default Verticle;

@@ -598,10 +598,10 @@ export const components = [
   },
   {
     id: 86,
-    name: "Verticle Steps",
+    name: "Steps1",
     tag: "steps",
     imgSrc: "/all-components/steps/verticle.png",
-    link: "/docs/steps#verticle-steps-component",
+    link: "/docs/steps#steps1",
   },
   {
     id: 87,
