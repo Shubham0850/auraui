@@ -19,7 +19,7 @@ const style = {
   phaseDescription: "mt-4 text-base font-medium text-gray-500",
 };
 
-const Project: React.FC = () => {
+const Roadmap4: React.FC = () => {
   const phases = [
     {
       title: "Phase 1",
@@ -86,4 +86,4 @@ const Project: React.FC = () => {
   );
 };
 
-export default Project;
+export default Roadmap4;

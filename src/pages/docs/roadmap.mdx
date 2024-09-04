@@ -1,10 +1,8 @@
 import ElementWrapper from "@/components/Theme/ElementWrapper";
-import Project from "@/components/Roadmap/Project";
-import GrowthSection from "@/components/Roadmap/Growth";
-import CompleteProject from "@/components/Roadmap/CompleteProject";
-import Comprehensive from "@/components/Roadmap/Comprehensive";
-
-
+import Roadmap1 from "@/components/Roadmap/Roadmap1";
+import Roadmap2 from "@/components/Roadmap/Roadmap2";
+import Roadmap3 from "@/components/Roadmap/Roadmap3";
+import Roadmap4 from "@/components/Roadmap/Roadmap4";
 
 # Roadmap Component
 
@@ -12,42 +10,33 @@ The Roadmap Elements Section contains various components tailored for displaying
 
 To integrate Roadmap Components into your Next.js Project, copy and paste the following code.
 
-## ProjectRoadmap
-
-ProjectRoadmap is a responsive component that showcases the strategic phases of a project's journey.
+## Roadmap1
 
 <ElementWrapper
-  previewLink="/roadmap/project"
-  componentPath="Roadmap/Project.tsx"
-  element={<Project />}
+  previewLink="/roadmap/roadmap1"
+  componentPath="Roadmap/Roadmap1.tsx"
+  element={<Roadmap1 />}
 />
 
-## Growth Roadmap
-
-Follow our project's evolution from start to success with AuraUI's comprehensive Roadmap.
+## Roadmap2
 
 <ElementWrapper
-  previewLink="/roadmap/growth"
-  componentPath="Roadmap/Growth.tsx"
-  element={<GrowthSection />}
+  previewLink="/roadmap/roadmap2"
+  componentPath="Roadmap/Roadmap2.tsx"
+  element={<Roadmap2 />}
+/>
+## Roadmap3
+
+<ElementWrapper
+  previewLink="/roadmap/roadmap3"
+  componentPath="Roadmap/Roadmap3.tsx"
+  element={<Roadmap3 />}
 />
 
-## Complete Project Roadmap
-
-Follow the detailed phases of our project with AuraUI's comprehensive Roadmap section.
+## Roadmap4
 
 <ElementWrapper
-  previewLink="/roadmap/complete-project"
-  componentPath="Roadmap/CompleteProject.tsx"
-  element={<CompleteProject />}
-/>
-
-## Comprehensive Roadmap Section
-
-Display detailed phases of AuraUI's project roadmap with our FullRoadmapSection component.
-
-<ElementWrapper
-  previewLink="/roadmap/comprehensive"
-  componentPath="Roadmap/Comprehensive.tsx"
-  element={<Comprehensive />}
+  previewLink="/roadmap/roadmap4"
+  componentPath="Roadmap/Roadmap4.tsx"
+  element={<Roadmap4 />}
 />

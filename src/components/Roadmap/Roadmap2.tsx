@@ -48,14 +48,15 @@ const roadmapPhases = [
   },
 ];
 
-const Comprehensive = () => {
+const Roadmap2 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.headerContainer}>
           <h2 className={styles.headerTitle}>Full Roadmap</h2>
           <p className={styles.headerSubtitle}>
-            In a creative workplace, employees responsibly try different solutions.
+            In a creative workplace, employees responsibly try different
+            solutions.
           </p>
         </div>
 
@@ -86,4 +87,4 @@ const Comprehensive = () => {
   );
 };
 
-export default Comprehensive;
+export default Roadmap2;

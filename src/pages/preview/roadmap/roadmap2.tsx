@@ -1,11 +1,12 @@
-import Comprehensive from '@/components/Roadmap/Comprehensive'
+
+import Roadmap2 from '@/components/Roadmap/Roadmap2'
 import React from 'react'
 
 type Props = {}
 
 function page({ }: Props) {
 	return (
-		<Comprehensive />
+		<Roadmap2 />
 	)
 }
 

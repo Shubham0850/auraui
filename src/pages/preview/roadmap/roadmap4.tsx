@@ -1,10 +1,10 @@
 import React from "react";
-import Project from "@/components/Roadmap/Project";
+import Roadmap4 from "@/components/Roadmap/Roadmap4";
 
 type Props = {};
 
 function Projects({}: Props) {
-  return <Project />;
+  return <Roadmap4 />;
 }
 
 export default Projects;

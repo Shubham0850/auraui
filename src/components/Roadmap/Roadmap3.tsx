@@ -42,14 +42,15 @@ const roadmapPhases = [
   },
 ];
 
-const GrowthSection = () => {
+const Roadmap3 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={`max-w-md ${styles.textCenter}`}>
           <h2 className={styles.heading}>The Roadmap</h2>
           <p className={styles.subHeading}>
-            In a creative workplace, employees responsibly try different solutions
+            In a creative workplace, employees responsibly try different
+            solutions
           </p>
         </div>
 
@@ -68,4 +69,4 @@ const GrowthSection = () => {
   );
 };
 
-export default GrowthSection;
+export default Roadmap3;

@@ -76,14 +76,15 @@ const roadmapPhases = [
   },
 ];
 
-const CompleteProject = () => {
+const Roadmap1 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.headingContainer}>
           <h2 className={styles.heading}>Full Roadmap</h2>
           <p className={styles.subHeading}>
-            Follow our detailed project roadmap to see how we bring AuraUI to life.
+            Follow our detailed project roadmap to see how we bring AuraUI to
+            life.
           </p>
         </div>
 
@@ -124,4 +125,4 @@ const CompleteProject = () => {
   );
 };
 
-export default CompleteProject;
+export default Roadmap1;
