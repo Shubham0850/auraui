@@ -21,7 +21,7 @@ const stats = [
   { value: "25+", label: "Awards winning" },
 ];
 
-const GrowthImpact = () => {
+const Stats2 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -51,4 +51,4 @@ const GrowthImpact = () => {
   );
 };
 
-export default GrowthImpact;
+export default Stats2;

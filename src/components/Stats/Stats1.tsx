@@ -24,7 +24,7 @@ const achievements = [
   { number: "315", text: "Branding awards winning" },
 ];
 
-const AchievementsSection = () => {
+const Stats1 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -55,4 +55,4 @@ const AchievementsSection = () => {
   );
 };
 
-export default AchievementsSection;
+export default Stats1;

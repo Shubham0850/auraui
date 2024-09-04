@@ -1,9 +1,10 @@
-import GrowthImpact from '@/components/Stats/GrowthImpact'
+
+import Stats2 from '@/components/Stats/Stats2'
 import React from 'react'
 
 function page() {
 	return (
-		<GrowthImpact/>
+		<Stats2/>
 	)
 }
 

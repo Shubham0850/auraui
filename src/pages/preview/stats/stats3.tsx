@@ -1,10 +1,10 @@
 import React from "react";
-import MetricsHub from "@/components/Stats/MetricsHub";
+import Stats3 from "@/components/Stats/Stats3";
 
 type Props = {};
 
 function Metrics({}: Props) {
-  return <MetricsHub />;
+  return <Stats3 />;
 }
 
 export default Metrics;

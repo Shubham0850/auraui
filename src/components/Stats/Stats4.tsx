@@ -22,7 +22,7 @@ const stats = [
   { icon: FaAward, value: "25+", label: "Awards winning" },
 ];
 
-const SolutionsSection = () => {
+const Stats4 = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -46,4 +46,4 @@ const SolutionsSection = () => {
   );
 };
 
-export default SolutionsSection;
+export default Stats4;

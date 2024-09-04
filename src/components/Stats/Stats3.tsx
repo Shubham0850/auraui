@@ -1,6 +1,6 @@
 import React from "react";
 
-const MetricsHub = () => {
+const Stats3 = () => {
   return (
     <section className="py-12 overflow-hidden bg-black sm:py-16 lg:py-20 xl:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -90,4 +90,4 @@ const MetricsHub = () => {
   );
 };
 
-export default MetricsHub;
+export default Stats3;
