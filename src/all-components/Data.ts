@@ -456,10 +456,10 @@ export const components = [
   },
   {
     id: 66,
-    name: "Seamless Integration ",
+    name: "Integration1 ",
     tag: "integration",
     imgSrc: "/all-components/integration/seamless.png",
-    link: "/docs/integration#seamless-integration",
+    link: "/docs/integration#integration1",
   },
   {
     id: 67,

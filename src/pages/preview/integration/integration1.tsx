@@ -1,10 +1,10 @@
 import React from "react";
-import Seamless from "@/components/Integration/Seamless";
+import Integration1 from "@/components/Integration/Integration1";
 
 type Props = {};
 
 function SeamLess({}: Props) {
-  return <Seamless />;
+  return <Integration1 />;
 }
 
 export default SeamLess;

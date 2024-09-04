@@ -1,6 +1,5 @@
 import React from "react";
 import { LuArrowRight } from "react-icons/lu";
-import Image from "next/image";
 import Link from "next/link";
 
 // Define common styles
@@ -57,7 +56,7 @@ const integrations = [
   },
 ];
 
-const Seamless: React.FC = () => {
+const Integration1: React.FC = () => {
   return (
     <div>
       <section className={style.section}>
@@ -104,4 +103,4 @@ const Seamless: React.FC = () => {
   );
 };
 
-export default Seamless;
+export default Integration1;
