@@ -15,7 +15,10 @@
   },
   "docs": {
     "title": "Docs",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "layout": "full"
+    }
   },
   "components": {
     "title": "Components",
