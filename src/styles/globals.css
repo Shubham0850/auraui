@@ -103,4 +103,17 @@ body,
   }
 }
 
+nav a:nth-child(5) {
+  margin-right: auto !important;
+}
+
+nav a:first-child {
+  margin-right: unset !important;
+}
+
+@media screen and (max-width: 768px) {
+  nav a:first-child {
+    margin-right: auto !important;
+  }
+}
 
