@@ -38,7 +38,7 @@ const Feature17: React.FC = () => {
                   Easy to Customize
                 </h3>
                 <p className="mt-3 text-base text-gray-600">
-                  Auraui's components are highly customizable, allowing
+                  Auraui&apos;s components are highly customizable, allowing
                   developers to easily adapt them to fit any design or brand
                   requirement.
                 </p>
