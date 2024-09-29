@@ -1,4 +1,6 @@
 import React from "react";
+import { FiArrowRight } from "react-icons/fi";
+import Image from "next/image";
 
 function Feature20() {
   return (
@@ -6,22 +8,25 @@ function Feature20() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center max-w-5xl grid-cols-1 gap-12 mx-auto lg:grid-cols-2">
           <div>
-            <img
-              className="mx-auto rounded-md w-80 h-80"
-              src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/features/2/image.png"
-              alt=""
+            <Image
+              className="mx-auto rounded-md"
+              src="https://www.auraui.com/images/pc1.jpg"
+              alt="Auraui Feature"
+              width={320}
+              height={320}
             />
           </div>
 
           <div className="max-w-md mx-auto text-center lg:text-left lg:max-w-none lg:mx-0">
             <h2 className="text-4xl font-bold text-white">
-              Free mint for next 2<br />
-              Banana NFT sets
+              Unlock exclusive features
+              <br />
+              with Auraui
             </h2>
             <p className="mt-6 text-base font-medium text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec,
-              proin faucibus nibh et sagittis a. Lacinia purus ac amet
-              pellentesque aliquam enim.
+              Auraui empowers developers with flexible and powerful components.
+              Start your next project with seamless integration and create
+              stunning, modern UIs.
             </p>
             <div className="mt-10">
               <a
@@ -29,21 +34,8 @@ function Feature20() {
                 title=""
                 className="inline-flex items-center text-base font-bold text-white transition-all duration-200 group hover:text-gray-300"
               >
-                Start first free mint
-                <svg
-                  className="w-6 h-6 ml-3 transition-all duration-200 transform group-hover:translate-x-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
+                Explore Auraui
+                <FiArrowRight className="w-6 h-6 ml-3 transition-all duration-200 transform group-hover:translate-x-1" />
               </a>
             </div>
           </div>
