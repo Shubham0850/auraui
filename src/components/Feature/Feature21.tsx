@@ -8,14 +8,10 @@ const commonStyles = {
   heading:
     "text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj",
   grid: "grid max-w-4xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 sm:mt-12 lg:mt-20 sm:text-left",
-  card: "overflow-hidden bg-white shadow-md rounded-xl",
+  card: "overflow-hidden bg-white shadow-md rounded-xl p-9",
   icon: "w-12 h-12 mx-auto text-gray-400 sm:mx-0",
-  title: "mt-8 text-2xl font-bold text-gray-900 sm:mt-20 font-pj",
+  title: "mt-8 text-2xl font-bold text-gray-900 font-pj",
   description: "mt-6 text-base text-gray-600 font-pj",
-  relativeWrapper: "relative",
-  absoluteOverlay: "absolute -inset-1",
-  overlay: "w-full h-full rotate-180 opacity-30 blur-lg filter",
-  textWrapper: "p-9",
 };
 
 const features = [
@@ -45,7 +41,7 @@ const features = [
   },
 ];
 
-const Feature11 = () => {
+const Feature21 = () => {
   return (
     <section className={commonStyles.section}>
       <div className={commonStyles.container}>
@@ -57,44 +53,16 @@ const Feature11 = () => {
 
         <div className={commonStyles.grid}>
           {features.map((feature, index) => (
-            <div key={index} className="space-y-4 sm:space-y-8">
-              <div className={commonStyles.card}>
-                <div className={commonStyles.textWrapper}>
-                  <div className={commonStyles.icon}>{feature.icon}</div>
-                  <h3 className={commonStyles.title}>{feature.title}</h3>
-                  <p className={commonStyles.description}>
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
+            <div key={index} className={commonStyles.card}>
+              <div className={commonStyles.icon}>{feature.icon}</div>
+              <h3 className={commonStyles.title}>{feature.title}</h3>
+              <p className={commonStyles.description}>{feature.description}</p>
             </div>
           ))}
-
-          <div className={commonStyles.relativeWrapper}>
-            <div className={commonStyles.absoluteOverlay}>
-              <div
-                className={commonStyles.overlay}
-                style={{
-                  background:
-                    "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
-                }}
-              ></div>
-            </div>
-            <div className={commonStyles.card}>
-              <div className={commonStyles.textWrapper}>
-                <FaCloud className={commonStyles.icon} />
-                <h3 className={commonStyles.title}>Everything in Cloud</h3>
-                <p className={commonStyles.description}>
-                  Enjoy seamless cloud integration with Auraui, providing you
-                  with the flexibility to manage your data from anywhere.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Feature11;
+export default Feature21;
