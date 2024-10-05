@@ -61,7 +61,7 @@ function Feature23() {
               Auraui&apos;s integrations enable seamless connectivity, making it easy
               to scale and grow your audience with minimal effort.
             </p>
-            <div className={`${commonImageContainerStyle} px-8 pb-6`}>
+            <div className={`${commonImageContainerStyle} `}>
               <img
                 className="object-contain w-full"
                 src="https://www.auraui.com/images/audience.avif"
@@ -83,7 +83,7 @@ function Feature23() {
               perfect on any device, from desktop to mobile.
             </p>
             <div
-              className={`${commonImageContainerStyle} px-16 transform translate-y-24 sm:px-20 lg:translate-y-20 lg:px-12 xl:px-20`}
+              className={`${commonImageContainerStyle}`}
             >
               <img
                 className="object-contain w-full"

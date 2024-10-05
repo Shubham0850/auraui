@@ -45,7 +45,7 @@ function Feature24() {
       {/* Image Section */}
       <div className="relative max-w-6xl mx-auto mt-4">
         <img
-          className="w-full rounded-[30%] py-6 px-3 md:px-0 md:py-16 mx-auto"
+          className="w-full rounded-[30%] py-6 px-3 md:px-4 md:py-16 mx-auto"
           src="https://www.auraui.com/images/feedback.jpeg"
           alt="Auraui development tools"
         />
