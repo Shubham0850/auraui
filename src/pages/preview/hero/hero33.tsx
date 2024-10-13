@@ -1,10 +1,10 @@
 import React from "react";
-import SaasHero from "@/components/Hero/Saas";
+import Hero33 from "@/components/Hero/Hero33";
 
 type Props = {};
 
 function SaasPage({}: Props) {
-  return <SaasHero/>;
+  return <Hero33/>;
 }
 
 export default SaasPage;
