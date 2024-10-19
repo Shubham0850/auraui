@@ -1,10 +1,10 @@
 import React from "react";
-import Nft14 from "@/components/Web3/Nft/Nft14";
+import Nft6 from "@/components/Web3/Nft/Nft6";
 
 type Props = {};
 
 function NftPage({}: Props) {
-  return <Nft14/>;
+  return <Nft6/>;
 }
 
 export default NftPage;

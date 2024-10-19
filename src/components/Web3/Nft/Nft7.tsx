@@ -3,7 +3,6 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaEthereum } from "react-icons/fa";
 import { BsWallet } from "react-icons/bs";
 
-
 const commonStyles = {
   link: "text-base font-medium text-gray-500 transition-all duration-200 hover:text-gray-900",
   button:
@@ -17,8 +16,7 @@ const Nft7 = () => {
     <div className="relative bg-gradient-to-r from-[#FEF6E0] to-[#FFFFF4] overflow-hidden">
       <div className="absolute bottom-0 right-0 lg:inset-y-0 md:-right-16">
         <img
-          className="object-cover w-full h-full origin-left transform lg:scale-110"
-          src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/1/background-pattern.svg"
+          src="https://www.auraui.com/memeimage/background-pattern.png"
           alt="Background Pattern"
         />
       </div>
@@ -30,7 +28,7 @@ const Nft7 = () => {
               <a href="#" className="flex items-center">
                 <img
                   className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
                 />
               </a>
@@ -140,8 +138,8 @@ const Nft7 = () => {
 
             <div>
               <img
-                className="mx-auto lg:ml-auto sm:max-w-xs rounded-xl"
-                src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/1/image.png"
+                className="mx-auto lg:ml-auto w-full sm:max-w-xs rounded-xl"
+                src="https://www.auraui.com/web3Images/nft/nft15.jpeg"
                 alt="NFT Artwork"
               />
             </div>

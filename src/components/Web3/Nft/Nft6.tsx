@@ -26,7 +26,7 @@ function Nft6() {
               <a href="#" title="Auraui">
                 <img
                   className="w-auto h-8"
-                  src="https://yourdomain.com/path-to-your-logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
                 />
               </a>
@@ -145,22 +145,22 @@ function Nft6() {
               <div className="grid max-w-md grid-cols-2 gap-3 mx-auto">
                 <img
                   className="w-full h-full rounded-lg"
-                  src="https://yourdomain.com/path-to-your-image-1.png"
+                  src="https://www.auraui.com/web3Images/nft/nft3.jpeg"
                   alt="Auraui NFT 1"
                 />
                 <img
                   className="w-full h-full rounded-lg"
-                  src="https://yourdomain.com/path-to-your-image-2.png"
+                  src="https://www.auraui.com/web3Images/nft/nft5.jpeg"
                   alt="Auraui NFT 2"
                 />
                 <img
                   className="w-full h-full rounded-lg"
-                  src="https://yourdomain.com/path-to-your-image-3.png"
+                  src="https://www.auraui.com/web3Images/nft/nft6.jpeg"
                   alt="Auraui NFT 3"
                 />
                 <img
                   className="w-full h-full rounded-lg"
-                  src="https://yourdomain.com/path-to-your-image-4.png"
+                  src="https://www.auraui.com/web3Images/nft/nft4.jpeg"
                   alt="Auraui NFT 4"
                 />
               </div>
