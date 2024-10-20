@@ -22,7 +22,7 @@ function Nft10() {
               <a href="#" title="Auraui" className="flex items-center">
                 <img
                   className="w-auto h-8"
-                  src="https://your-logo-url.svg"
+                  src="https://www.auraui.com/logo-dark.png"
                   alt="Auraui Logo"
                 />
               </a>
@@ -132,7 +132,7 @@ function Nft10() {
               <div className="max-w-xs mx-auto md:ml-auto md:mr-0">
                 <img
                   className="object-cover w-full h-full rounded-xl"
-                  src="https://your-image-url.png"
+                  src="https://www.auraui.com/web3Images/nft/nft13.jpeg"
                   alt="NFT Preview"
                 />
                 <div className="flex items-start max-w-xs mt-6 lg:max-w-none gap-x-16">

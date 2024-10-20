@@ -13,14 +13,6 @@ function Nft11() {
 
   return (
     <div className="relative bg-gray-900">
-      <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full"
-          src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/2/background.png"
-          alt="Background"
-        />
-      </div>
-
       <header className="relative py-4 sm:py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between">
@@ -28,7 +20,7 @@ function Nft11() {
               <a href="#" title="Auraui" className="flex items-center">
                 <img
                   className="w-auto h-8"
-                  src="https://auraui.com/logo.svg"
+                  src="https://auraui.com/logo-dark.png"
                   alt="Auraui Logo"
                 />
               </a>
@@ -137,22 +129,22 @@ function Nft11() {
               <div className="grid max-w-md grid-cols-2 gap-6 mx-auto lg:max-w-none lg:mx-0">
                 <img
                   className="object-cover w-full h-full mx-auto rounded-lg"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/2/image-1.png"
+                  src="https://www.auraui.com/web3Images/nft/nft11.jpeg"
                   alt="NFT 1"
                 />
                 <img
                   className="object-cover w-full h-full mx-auto rounded-lg"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/2/image-2.png"
+                  src="https://www.auraui.com/web3Images/nft/nft5.jpeg"
                   alt="NFT 2"
                 />
                 <img
                   className="object-cover w-full h-full mx-auto transform rounded-lg rotate-3"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/2/image-4.png"
+                  src="https://www.auraui.com/web3Images/nft/nft7.jpeg"
                   alt="NFT 3"
                 />
                 <img
                   className="object-cover w-full h-full mx-auto rounded-lg"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/2/image-3.png"
+                  src="https://www.auraui.com/web3Images/nft/nft8.jpeg"
                   alt="NFT 4"
                 />
               </div>
