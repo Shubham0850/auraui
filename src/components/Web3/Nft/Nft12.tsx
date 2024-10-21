@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaDiscord, FaExternalLinkAlt } from "react-icons/fa";
 import { IoMdWallet } from "react-icons/io";
@@ -9,15 +11,7 @@ const Nft12: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="relative bg-white">
-      <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full"
-          src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/3/background.png"
-          alt="Background"
-        />
-      </div>
-
+    <div className=" bg-gradient-to-l from-slate-100 to-green-100 ">
       <header className="relative py-4 sm:py-6">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between">
@@ -25,7 +19,7 @@ const Nft12: React.FC = () => {
               <a href="#" className="flex items-center">
                 <img
                   className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
                 />
               </a>
@@ -118,8 +112,8 @@ const Nft12: React.FC = () => {
 
       <section className="relative py-12 sm:py-16 lg:pb-20 xl:pb-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="max-w-lg mx-auto text-center">
-            <h1 className="text-4xl font-bold text-gray-900 uppercase sm:text-5xl lg:text-6xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl font-semibold text-gray-900 sm:text-5xl lg:text-6xl">
               Welcome to Auraui NFT Collection
             </h1>
             <p className="mt-6 text-lg font-normal text-gray-600 lg:text-xl">
@@ -138,22 +132,16 @@ const Nft12: React.FC = () => {
               </a>
               <a
                 href="#"
-                className={`${commonButtonStyles} relative text-white bg-gray-900 border border-gray-900 hover:bg-gray-700`}
+                className={`${commonButtonStyles}  text-white bg-gray-900 border border-gray-900 hover:bg-gray-700`}
                 role="button"
               >
-                <FaExternalLinkAlt className="absolute inset-y-0 left-0 flex items-center pl-4 w-8 h-8" />
-                See on Opensea
+                <FaExternalLinkAlt className=" mr-2 w-7 h-4" />
+                see on Opensea
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      <img
-        className="object-bottom w-full h-full mx-auto"
-        src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/3/images.png"
-        alt="NFT Collection"
-      />
     </div>
   );
 };

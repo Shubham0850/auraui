@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { AiOutlineLink } from "react-icons/ai";
@@ -16,7 +17,7 @@ function Nft13() {
       <div className="absolute inset-0">
         <img
           className="object-cover w-full h-full"
-          src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/hero-single/5/image-background.png"
+          src="https://www.auraui.com/images/3d-objects-bg.png"
           alt="Background"
         />
       </div>
@@ -28,7 +29,7 @@ function Nft13() {
               <a href="#" className="flex items-center" title="Auraui">
                 <img
                   className="w-auto h-8"
-                  src="https://landingfoliocom.imgix.net/store/collection/niftyui/images/logo.svg"
+                  src="https://www.auraui.com/logo-light.png"
                   alt="Auraui Logo"
                 />
               </a>

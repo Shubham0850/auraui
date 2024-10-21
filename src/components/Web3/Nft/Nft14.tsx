@@ -7,7 +7,7 @@ const Nft14 = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-sm mx-auto md:max-w-3xl">
           <div className="flex items-center justify-between">
-            <p className="text-3xl font-bold text-gray-900">Mint Majnu Bhai</p>
+            <p className="text-3xl font-bold text-gray-900">Mint Monkey Bhai</p>
 
             <p className="text-xl font-medium text-gray-500">69/100</p>
           </div>
@@ -17,7 +17,7 @@ const Nft14 = () => {
               <div className="md:max-w-xs">
                 <Image
                   className="object-cover w-full h-full"
-                  src="https://www.auraui.com/memeimage/majnubhai.jpeg"
+                  src="https://www.auraui.com/web3Images/nft/nft6.jpeg"
                   alt=""
                   width={300}
                   height={300}
@@ -36,7 +36,7 @@ const Nft14 = () => {
                       <select
                         name=""
                         id=""
-                        className="block w-full py-2 pl-4 text-base font-medium text-gray-900 border-gray-200 rounded-lg bg-gray-300 "
+                        className="block w-full py-2 pl-4 outline-none  text-base font-medium text-gray-800 border-gray-800 border rounded-lg bg-gray-100 "
                       >
                         <option value="1">1</option>
                         <option value="2">2</option>
