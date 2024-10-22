@@ -1,0 +1,34 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "group",
+    "role": "maintainer",
+    "name": "Shubham Raj",
+    "email": "rajshubham0850@gmail.com",
+    "description": "Ship stunning React websites in hours, not months, with Aura UI’s sleek, animated components. Optimized for speed and SEO, just copy, paste, and customize for a flawless, high-performance site. 🚀",
+    "webpageUrl": {
+      "url": "https://www.auraui.com/"
+    }
+  },
+  "projects": [],
+  "funding": {
+    "channels": [
+      {
+        "guid": "mybank",
+        "type": "bank"
+      }
+    ],
+    "plans": [
+      {
+        "guid": "mybank",
+        "status": "active",
+        "name": "Infra hosting, Creating social media assets for product awareness, hire few peoples to keep working and growing the project.",
+        "amount": 5000,
+        "currency": "USD",
+        "frequency": "yearly",
+        "channels": ["mybank"]
+      }
+    ],
+    "history": []
+  }
+}
