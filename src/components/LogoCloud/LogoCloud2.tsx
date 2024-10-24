@@ -3,7 +3,15 @@ import Image from "next/image";
 
 const logos = [
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo6.svg",
+    alt: "AurauiLogo",
+  },
+  {
+    src: "https://www.auraui.com/logos/logo4.svg",
+    alt: "AurauiLogo",
+  },
+  {
+    src: "https://www.auraui.com/logos/logo2.svg",
     alt: "AurauiLogo",
   },
   {
@@ -11,27 +19,19 @@ const logos = [
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo2.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo22.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo16.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
-    alt: "AurauiLogo",
-  },
-  {
-    src: "https://www.auraui.com/logo-dark.png",
-    alt: "AurauiLogo",
-  },
-  {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo20.svg",
     alt: "AurauiLogo",
   },
 ];

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const logos = [
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo2.svg",
     alt: "AurauiLogo",
   },
   {
@@ -11,23 +11,23 @@ const logos = [
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo3.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo19.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/logo4.svg",
     alt: "AurauiLogo",
   },
   {
-    src: "https://www.auraui.com/logo-dark.png",
+    src: "https://www.auraui.com/logos/kirak.png",
     alt: "AurauiLogo",
   },
   {
@@ -61,7 +61,7 @@ const LogoCloud1 = () => (
               src={logo.src}
               alt={logo.alt}
               width={176}
-              height={40} 
+              height={40}
               objectFit="contain"
             />
           ))}
