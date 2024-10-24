@@ -473,14 +473,14 @@ export const components = [
     name: "LogoCloud1",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud1.png",
-    link: "/docs/logocloud#logocloud1-component",
+    link: "/docs/logocloud#logocloud1",
   },
   {
     id: 69,
     name: "LogoCloud2",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud2.png",
-    link: "/docs/logocloud#logocloud2-component",
+    link: "/docs/logocloud#logocloud2",
   },
 
   {
@@ -488,7 +488,7 @@ export const components = [
     name: "LogoCloud3",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud3.png",
-    link: "/docs/logocloud#logocloud3-component",
+    link: "/docs/logocloud#logocloud3",
   },
 
   {
@@ -496,14 +496,14 @@ export const components = [
     name: "LogoCloud4",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud4.png",
-    link: "/docs/logocloud#logocloud4-component",
+    link: "/docs/logocloud#logocloud4",
   },
   {
     id: 72,
     name: "LogoCloud5",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud5.png",
-    link: "/docs/logocloud#logocloud5-component",
+    link: "/docs/logocloud#logocloud5",
   },
   {
     id: 73,
