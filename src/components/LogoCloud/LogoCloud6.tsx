@@ -2,18 +2,18 @@ import React from "react";
 
 // Logos data with local fallback
 const logos = [
-  { src: "/logo-light.png", alt: "Logo 1" },
-  { src: "/logo-light.png", alt: "Logo 2" },
-  { src: "/logo-light.png", alt: "Logo 3" },
-  { src: "/logo-light.png", alt: "Logo 4" },
-  { src: "/logo-light.png", alt: "Logo 5" },
-  { src: "/logo-light.png", alt: "Logo 6" },
-  { src: "/logo-light.png", alt: "Logo 7" },
-  { src: "/logo-light.png", alt: "Logo 8" },
-  { src: "/logo-light.png", alt: "Logo 9" },
-  { src: "/logo-light.png", alt: "Logo 10" },
-  { src: "/logo-light.png", alt: "Logo 11" },
-  { src: "/logo-light.png", alt: "Logo 12" },
+  { src: "https://www.auraui.com/logos/logo12.svg", alt: "Logo 1" },
+  { src: "https://www.auraui.com/logos/logo11.svg", alt: "Logo 2" },
+  { src: "https://www.auraui.com/logos/logo13.svg", alt: "Logo 3" },
+  { src: "https://www.auraui.com/logos/logo14.svg", alt: "Logo 4" },
+  { src: "https://www.auraui.com/logos/logo15.svg", alt: "Logo 5" },
+  { src: "https://www.auraui.com/logos/logo16.svg", alt: "Logo 6" },
+  { src: "https://www.auraui.com/logos/logo17.svg", alt: "Logo 7" },
+  { src: "https://www.auraui.com/logos/logo18.svg", alt: "Logo 8" },
+  { src: "https://www.auraui.com/logos/logo19.svg", alt: "Logo 9" },
+  { src: "https://www.auraui.com/logos/logo20.svg", alt: "Logo 10" },
+  { src: "https://www.auraui.com/logos/logo21.svg", alt: "Logo 11" },
+  { src: "https://www.auraui.com/logos/logo22.svg", alt: "Logo 12" },
 ];
 
 const LogoCloud6 = () => {
@@ -33,7 +33,7 @@ const LogoCloud6 = () => {
               className={`${index >= 4 ? "hidden md:block" : ""}`}
             >
               <img
-                className="object-contain w-full h-8 mx-auto"
+                className="object-contain w-full h-14 mx-auto"
                 src={logo.src}
                 alt={logo.alt}
               />

@@ -6,18 +6,18 @@ const commonStyles = {
   heading: "px-8 text-base font-medium text-gray-600 sm:px-0",
   logoContainer:
     "flex flex-wrap items-center justify-center max-w-5xl gap-8 mx-auto mt-12 sm:mt-16 sm:gap-y-12 md:gap-16",
-  logoImage: "object-contain w-32 max-w-full sm:h-8 md:h-10 sm:w-44",
+  logoImage: "object-contain w-32 max-w-full sm:h-8 md:h-16 sm:w-44",
 };
 
 const logos = [
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
-  "https://www.auraui.com/logo-light.png",
+  "https://www.auraui.com/logos/logo12.svg",
+  "https://www.auraui.com/logos/logo6.svg",
+  "https://www.auraui.com/logos/logo5.svg",
+  "https://www.auraui.com/logos/logo7.svg",
+  "https://www.auraui.com/logos/logo9.svg",
+  "https://www.auraui.com/logos/logo10.svg",
+  "https://www.auraui.com/logos/logo21.svg",
+  "https://www.auraui.com/logos/logo13.svg",
 ];
 
 const LogoCloud4 = () => {
