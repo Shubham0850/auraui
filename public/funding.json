@@ -10,7 +10,31 @@
       "url": "https://www.auraui.com/"
     }
   },
-  "projects": [],
+  "projects": [
+    {
+      "guid": "auraui-next",
+      "name": "Aura UI",
+      "description": "Aura UI is a powerful open-source library of React components designed to help developers ship beautiful, animated websites faster. Optimized for performance and SEO, Aura UI offers customizable, reusable elements that reduce development time and enhance user experience. With extensive documentation, a growing set of components, and support for modern frontend features, Aura UI is ideal for developers seeking speed and design flexibility without compromising on quality.",
+      "webpageUrl": {
+        "url": "https://www.auraui.com"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/Shubham0850/auraui",
+        "wellKnown": "https://github.com/Shubham0850/auraui/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:MIT"],
+      "tags": [
+        "react",
+        "frontend",
+        "open-source",
+        "web-development",
+        "component-library",
+        "animated-ui",
+        "seo",
+        "performance"
+      ]
+    }
+  ],
   "funding": {
     "channels": [
       {
