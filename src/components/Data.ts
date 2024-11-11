@@ -463,28 +463,20 @@ export const components = [
   },
   {
     id: 67,
-    name: "LogoCloud6 ",
-    tag: "logocloud",
-    imgSrc: "/all-components/logocloud/trust.png",
-    link: "/docs/logocloud#logocloud6",
-  },
-  {
-    id: 68,
-    name: "LogoCloud1",
+    name: "LogoCloud1 ",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud1.png",
     link: "/docs/logocloud#logocloud1",
   },
   {
-    id: 69,
+    id: 68,
     name: "LogoCloud2",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud2.png",
     link: "/docs/logocloud#logocloud2",
   },
-
   {
-    id: 70,
+    id: 69,
     name: "LogoCloud3",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud3.png",
@@ -492,18 +484,26 @@ export const components = [
   },
 
   {
-    id: 71,
+    id: 70,
     name: "LogoCloud4",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud4.png",
     link: "/docs/logocloud#logocloud4",
   },
+
   {
-    id: 72,
+    id: 71,
     name: "LogoCloud5",
     tag: "logocloud",
     imgSrc: "/all-components/logocloud/logocloud5.png",
     link: "/docs/logocloud#logocloud5",
+  },
+  {
+    id: 72,
+    name: "LogoCloud6",
+    tag: "logocloud",
+    imgSrc: "/all-components/logocloud/logocloud6.png",
+    link: "/docs/logocloud#logocloud6",
   },
   {
     id: 73,
@@ -1107,5 +1107,40 @@ export const components = [
     tag: "nft",
     imgSrc: "/all-components/web3/nft/nft13.png",
     link: "/docs/web3/Nft#nft13",
+  },
+  {
+    id: 160,
+    name: "LogoCloud7",
+    tag: "logocloud",
+    imgSrc: "/all-components/logocloud/logocloud7.png",
+    link: "/docs/logocloud#logocloud7",
+  },
+  {
+    id: 161,
+    name: "LogoCloud7",
+    tag: "logocloud",
+    imgSrc: "/all-components/logocloud/logocloud7.png",
+    link: "/docs/logocloud#logocloud7",
+  },
+  {
+    id: 162,
+    name: "LogoCloud8",
+    tag: "logocloud",
+    imgSrc: "/all-components/logocloud/logocloud8.png",
+    link: "/docs/logocloud#logocloud8",
+  },
+  {
+    id: 163,
+    name: "LogoCloud9",
+    tag: "logocloud",
+    imgSrc: "/all-components/logocloud/logocloud9.png",
+    link: "/docs/logocloud#logocloud9",
+  },
+  {
+    id: 164,
+    name: "LogoCloud10",
+    tag: "logocloud",
+    imgSrc: "/all-components/logocloud/logocloud10.png",
+    link: "/docs/logocloud#logocloud10",
   },
 ];
