@@ -45,7 +45,7 @@ function LogoCloud13() {
               professional interfaces without sacrificing performance or
               aesthetics. Each component is optimized for speed, accessibility,
               and ease of use, allowing teams to focus more on their unique
-              vision. Whether it's for creating a stylish footer, a dynamic hero
+              vision. Whether it&apos;s for creating a stylish footer, a dynamic hero
               section, or interactive cards, Auraui streamlines the development
               process, promoting faster, more efficient web application
               building.
