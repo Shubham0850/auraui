@@ -1,13 +1,12 @@
 import React from "react";
 import { FaCloud, FaStar } from "react-icons/fa";
-import { IconContext } from "react-icons";
 
 const commonStyles = {
   container:
     "relative py-12 overflow-hidden bg-black sm:py-16 lg:py-20 xl:py-24",
   backgroundImage: "absolute inset-0",
   overlay:
-    "absolute transform -translate-x-1/2 translate-y-full bottom-2/3 left-1/2",
+    "absolute transform -translate-x-1/2 translate-y-full bottom-2/3 left-1/2 opacity-30 blur-3xl filter",
   logoWrapper:
     "flex flex-wrap items-center justify-center gap-8 md:gap-x-16 md:gap-y-12",
   logo: "object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44",
@@ -20,14 +19,7 @@ function LogoCloud15() {
   return (
     <section className={commonStyles.container}>
       <div className={commonStyles.overlay}>
-        <IconContext.Provider
-          value={{
-            className: "opacity-30 blur-3xl filter",
-            style: { filter: "blur(64px)" },
-          }}
-        >
-          <FaCloud size={643} />
-        </IconContext.Provider>
+        <FaCloud size={643} style={{ filter: "blur(64px)" }} />
       </div>
 
       <div className={commonStyles.backgroundImage}>
@@ -48,18 +40,15 @@ function LogoCloud15() {
         <div className="max-w-3xl mx-auto mt-8 sm:mt-12">
           <div className={commonStyles.logoWrapper}>
             <img
-              className={commonStyles.logo}
-              src="https://example.com/logo1.png"
+              src="https://www.auraui.com/logos/logo15.svg"
               alt="Brand Logo 1"
             />
             <img
-              className={commonStyles.logo}
-              src="https://example.com/logo2.png"
+              src="https://www.auraui.com/logos/logo5.svg"
               alt="Brand Logo 2"
             />
             <img
-              className={commonStyles.logo}
-              src="https://example.com/logo3.png"
+              src="https://www.auraui.com/logos/logo6.svg"
               alt="Brand Logo 3"
             />
             {/* Add more logos as needed */}
@@ -70,8 +59,8 @@ function LogoCloud15() {
 
             <div className="flex items-start justify-center mt-8 gap-x-10 sm:gap-x-14">
               <img
-                className="object-contain w-auto h-8"
-                src="https://example.com/review-logo.png"
+                className="rounded-full w-auto h-14"
+                src="https://www.auraui.com/memeimage/boy1.jpeg"
                 alt="Review Logo"
               />
               <div>
