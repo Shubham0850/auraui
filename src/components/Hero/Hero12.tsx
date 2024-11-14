@@ -159,7 +159,7 @@ const Hero12 = () => {
             <div>
               <img
                 className={commonStyles.image}
-                src="https://www.auraui.com/memeimage/credit-card-nobg.png"
+                src="https://www.auraui.com/memeimage/credit-card-removebg.png"
                 alt="Illustration"
               />
             </div>
