@@ -64,7 +64,7 @@ function Components() {
 			<div className=''>
 				<div className="py-12 border border-t-0 border-customDark">
 					<div className="flex flex-col justify-center items-center px-4">
-						<h1 className='text-2xl font-bold mb-4'>Search from 150+ Components</h1>
+						<h1 className='text-2xl font-bold mb-4'>Search from 170+ Components</h1>
 						<PlaceholdersAndVanishInput
 							placeholders={placeholders}
 							onChange={handleChange}
