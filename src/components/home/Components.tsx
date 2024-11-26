@@ -26,7 +26,7 @@ const baseCategories = [
     name: "Hero",
     img: "/components/hero.png",
     link: "/docs/hero",
-    items: 8,
+    items: 33,
   },
   {
     name: "Header",
@@ -89,14 +89,14 @@ const marketingCategories = [
   // { name: "Featured Drops", items: 69, img: "/components/coming-soon.png" },
   {
     name: "Logo Cloud",
-    items: 6,
+    items: 16,
     img: "/components/logocloud.png",
     link: "/docs/logocloud",
   },
   {
     name: "Pricing",
     link: "/docs/pricing",
-    items: 2,
+    items: 17,
     img: "/components/pricing.png",
   },
   {
@@ -114,7 +114,7 @@ const marketingCategories = [
   {
     name: "Feature",
     link: "/docs/feature",
-    items: 8,
+    items: 25,
     img: "/components/Feature.png",
   },
   {
@@ -200,7 +200,7 @@ const web3Categories = [
   {
     name: "NFTs",
     link: "/docs/web3/Nft",
-    items: 6,
+    items: 14,
     img: "/components/nft.png",
   },
   // { name: "Profile", items: 69 },
