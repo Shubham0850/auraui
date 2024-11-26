@@ -1185,4 +1185,11 @@ export const components = [
     imgSrc: "/all-components/logocloud/logocloud16.png",
     link: "/docs/logocloud#logocloud16",
   },
+  {
+    id: 171,
+    name: "Header5 ",
+    tag: "navbar",
+    imgSrc: "/all-components/header/header5.png",
+    link: "/docs/header#header5",
+  },
 ];
