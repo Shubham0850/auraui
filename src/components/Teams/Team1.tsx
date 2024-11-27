@@ -39,7 +39,7 @@ const ExclusiveTeam = () => {
         </div>
       </div>
 
-      <div className="grid px-5 grid-cols-1 gap-5 pt-4 mt-8 sm:mt-12 lg:mt-16 lg:grid-cols-2 xl:grid-cols-4">
+      <div className="grid px-5 mx-auto max-w-7xl grid-cols-1 gap-5 pt-4 mt-8 sm:mt-12 lg:mt-16 lg:grid-cols-2 xl:grid-cols-4">
         {members.map((member, index) => (
           <div
             key={index}
