@@ -38,22 +38,22 @@ const members = [
   {
     name: "Cymone Magdalina",
     role: "Chef",
-    image: "https://auraui.com/memeimage/akshay1.webp",
+    image: "https://auraui.com/memeimage/woman1.jpg",
   },
   {
     name: "Veronika Inaya",
     role: "Business owner",
-    image: "https://auraui.com/memeimage/babubhaiya.jpg",
+    image: "https://auraui.com/memeimage/woman2.jpg",
   },
   {
     name: "Hyeon Vivek",
     role: "Cooking Teacher",
-    image: "https://auraui.com/memeimage/udayshetty.jpg",
+    image: "https://auraui.com/memeimage/woman3.jpg",
   },
   {
     name: "Sophia Ella",
     role: "Professional Baker",
-    image: "https://auraui.com/memeimage/akshay1.webp",
+    image: "https://auraui.com/memeimage/woman4.jpg",
   },
 ];
 
@@ -85,7 +85,7 @@ const SpecialistTeam = () => {
         <div className={styles.grid}>
           {members.map((member, index) => (
             <div key={index} className={styles.memberContainer}>
-              <div className="aspect-w-3 aspect-h-5">
+              <div className="aspect-w-3 aspect-h-5  md:h-[200px] ">
                 <img className="object-cover w-full h-full" src={member.image} alt={member.name} width={320} height={400} />
               </div>
               <div className={styles.gradientOverlay}></div>

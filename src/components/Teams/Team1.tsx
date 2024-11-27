@@ -4,22 +4,23 @@ const members = [
   {
     name: "Bessie Cooper",
     role: "Marketing Specialist",
-    image: "https://auraui.com/memeimage/akshay1.webp",
+
+    image: "https://auraui.com/memeimage/woman-potrait.webp",
   },
   {
     name: "Annette Black",
     role: "Marketing Manager",
-    image: "https://auraui.com/memeimage/babubhaiya.jpg",
+    image: "https://auraui.com/memeimage/no-bg-woman.png",
   },
   {
     name: "Darrell Steward",
     role: "Director of Marketing",
-    image: "https://auraui.com/memeimage/udayshetty.jpg",
+    image: "https://auraui.com/memeimage/woman-potrait-3.jpeg",
   },
   {
     name: "Marvin McKinney",
     role: "COO",
-    image: "https://auraui.com/memeimage/akshay1.webp",
+    image: "https://auraui.com/memeimage/gradient-girl.png",
   },
 ];
 
