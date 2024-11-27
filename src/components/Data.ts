@@ -1192,4 +1192,11 @@ export const components = [
     imgSrc: "/all-components/header/header5.png",
     link: "/docs/header#header5",
   },
+  {
+    id: 172,
+    name: "Header6 ",
+    tag: "navbar",
+    imgSrc: "/all-components/header/header6.png",
+    link: "/docs/header#header6",
+  },
 ];
