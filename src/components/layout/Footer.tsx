@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
 import React, { useEffect, useState } from "react";
 import { FaDiscord, FaXTwitter } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -70,6 +70,11 @@ const Footer = () => {
                 target="_blank"
               >
                 <FaDiscord size={20} className=" " />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/aura__ui/" target="_blank">
+                <FaInstagramSquare size={20} className=" " />
               </a>
             </li>
             <li>
