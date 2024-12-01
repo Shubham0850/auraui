@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
 import React, { useEffect, useState } from "react";
 import { FaDiscord, FaXTwitter } from "react-icons/fa6";
-import { FaGithub, FaInstagramSquare } from "react-icons/fa";
+import { FaGithub, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -61,7 +61,7 @@ const Footer = () => {
           <ul className="flex items-center justify-end space-x-4">
             <li>
               <a href="https://github.com/Shubham0850/auraui" target="_blank">
-                <FaGithub size={20} className=" " />
+                <FaGithub size={20} className=" dark:hover:text-white" />
               </a>
             </li>
             <li>
@@ -69,12 +69,15 @@ const Footer = () => {
                 href="https://discord.com/channels/1270693612681953311/1270693612681953314"
                 target="_blank"
               >
-                <FaDiscord size={20} className=" " />
+                <FaDiscord size={20} className="dark:hover:text-white " />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/aura__ui/" target="_blank">
-                <FaInstagramSquare size={20} className=" " />
+                <FaInstagramSquare
+                  size={20}
+                  className=" dark:hover:text-white"
+                />
               </a>
             </li>
             <li>
@@ -98,16 +101,7 @@ const Footer = () => {
                 rel="noopener"
                 className="inline-flex transition-all duration-200 rounded text-gray-900 dark:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:ring-offset-secondary"
               >
-                <span className="sr-only"> LinkedIn </span>
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                  <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
-                </svg>
+                <FaLinkedinIn className="h-4   text-[#111111] dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all" />
               </a>
             </li>
           </ul>
