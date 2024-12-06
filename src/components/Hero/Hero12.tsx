@@ -35,7 +35,7 @@ const Hero12 = () => {
       <div className={commonStyles.overlayImage}>
         <img
           className="w-auto h-full"
-          src="/memeimage/background-pattern.png"
+          src="https://www.auraui.com/memeimage/background-pattern.png"
           alt="Background Pattern"
         />
       </div>
