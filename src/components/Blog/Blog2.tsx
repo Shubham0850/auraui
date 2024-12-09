@@ -33,9 +33,9 @@ const Blog2 = () => {
   ];
 
   return (
-    <div className="mt-24 md:mt-40 max-w-6xl mx-auto px-4">
+    <div className="mt-24 md:mt-10 max-w-6xl mx-auto px-4">
       <header>
-        <h2 className="text-4xl md:text-5xl font-semibold text-white mb-8">
+        <h2 className="text-4xl md:text-5xl font-semibold text-black mb-8">
           Blogs
         </h2>
       </header>
