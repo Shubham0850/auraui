@@ -1227,4 +1227,11 @@ export const components = [
     imgSrc: "/all-components/contact/contact5.png",
     link: "/docs/contacts#contact5",
   },
+  {
+    id: 177,
+    name: "Blog2",
+    tag: "blog",
+    imgSrc: "/all-components/blog/blog2.png",
+    link: "/docs/blog#blog2",
+  },
 ];
