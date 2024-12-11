@@ -1241,4 +1241,11 @@ export const components = [
     imgSrc: "/all-components/logocloud/logocloud17.png",
     link: "/docs/logocloud#logocloud17",
   },
+  {
+    id: 179,
+    name: "Hero35",
+    tag: "hero",
+    imgSrc: "/all-components/hero/hero35.png",
+    link: "/docs/hero#hero-35",
+  },
 ];
