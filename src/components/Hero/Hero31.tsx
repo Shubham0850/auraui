@@ -26,7 +26,7 @@ function Hero31({}: Props) {
               <Link href="/" className="shrink-0">
                 <Image
                   className="w-auto h-8"
-                  src="/logo-light.png"
+                  src="https://auraui.com/logo-light.png"
                   alt="Logo"
                   width={200}
                   height={200}

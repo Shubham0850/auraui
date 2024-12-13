@@ -80,7 +80,7 @@ function Feature3() {
           <div className={commonStyles.imageContainer}>
             <Image
               className="w-full shadow-xl rounded-xl sm:max-w-xs"
-              src="/images/women.jpg"
+              src="https://auraui.com/images/women.jpg"
               alt="Auraui Feature"
               width={400}
               height={300}

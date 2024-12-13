@@ -34,7 +34,7 @@ const Feature4: React.FC = () => {
             <div className="relative overflow-hidden">
               <Image
                 className="object-cover rounded-md w-full h-full"
-                src="/images/man.webp"
+                src="https://auraui.com/images/man.webp"
                 alt="Secure Data with Auraui"
                 layout="responsive"
                 width={500}

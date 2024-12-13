@@ -37,7 +37,7 @@ const Testimonial = () => (
     <div className="flex items-center mt-8">
       <div className="w-10 h-10 relative rounded-full overflow-hidden">
         <Image
-          src="/memeimage/babubhaiya.jpg"
+          src="https://auraui.com/memeimage/babubhaiya.jpg"
           alt="Babu Bhaiya"
           layout="fill"
           objectFit="cover"

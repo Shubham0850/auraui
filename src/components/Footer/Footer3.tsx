@@ -28,7 +28,7 @@ const Footer3 = () => {
           <div className="col-span-2 md:col-span-4 xl:pr-8">
             <Image
               className="w-auto h-9"
-              src="/logo-light.png" // Path to Aura UI logo
+              src="https://auraui.com/logo-light.png" // Path to Aura UI logo
               alt="Aura UI Logo"
               width={150}
               height={36}

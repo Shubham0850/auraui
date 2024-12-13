@@ -50,7 +50,7 @@ function Feature5() {
           <div className="lg:col-span-7">
             <Image
               className="w-full rounded-sm "
-              src="/images/digitization.webp"
+              src="https://auraui.com/images/digitization.webp"
               alt="Auraui Blocks"
               width={600}
               height={400}

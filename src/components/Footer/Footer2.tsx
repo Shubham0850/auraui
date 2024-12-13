@@ -28,7 +28,7 @@ const Footer2 = () => {
           <div>
             <Image
               className="w-auto h-7"
-              src="/logo-dark.png"
+              src="https://auraui.com/logo-dark.png"
               alt="Company Logo"
               width={150}
               height={36}
@@ -162,7 +162,7 @@ const Footer2 = () => {
                         {link}
                       </Link>
                     </li>
-                  ),
+                  )
                 )}
               </ul>
             </div>

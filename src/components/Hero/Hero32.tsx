@@ -38,7 +38,7 @@ function Hero32({}: Props) {
               >
                 <Image
                   className="w-auto h-8"
-                  src="/logo-light.png"
+                  src="https://auraui.com/logo-light.png"
                   alt="logo"
                   width={200}
                   height={200}
@@ -108,7 +108,7 @@ function Hero32({}: Props) {
                       >
                         {item}
                       </Link>
-                    ),
+                    )
                   )}
                   <Link
                     href="#"
