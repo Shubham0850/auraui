@@ -28,7 +28,7 @@ const SignIn1 = () => {
           <div className="absolute inset-0">
             <Image
               className="object-cover object-top w-full h-full"
-              src="https://auraui.com/memeimage/girl-working.jpg"
+              src="https://www.auraui.com/memeimage/girl-working.jpg"
               alt="Women Working"
               layout="fill"
               objectFit="cover"

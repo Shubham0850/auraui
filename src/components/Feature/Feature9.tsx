@@ -67,7 +67,7 @@ const Feature9: React.FC = () => {
         <div className={commonStyles.imageContainer}>
           <Image
             className={commonStyles.image}
-            src="https://auraui.com/images/team.jpg"
+            src="https://www.auraui.com/images/team.jpg"
             alt="Feature illustration"
             width={1200}
             height={800}

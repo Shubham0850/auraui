@@ -72,13 +72,13 @@ const Feature10 = () => {
       <div className={commonStyles.imageWrapper}>
         <Image
           className={commonStyles.image}
-          src="https://auraui.com/images/women.jpg"
+          src="https://www.auraui.com/images/women.jpg"
           alt="Auraui feature image"
           layout="fill"
         />
         <Image
           className={`${commonStyles.image} lg:hidden`}
-          src="https://auraui.com/images/analytic_image.avif"
+          src="https://www.auraui.com/images/analytic_image.avif"
           alt="Auraui feature image mobile"
           layout="fill"
         />

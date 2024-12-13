@@ -20,7 +20,7 @@ const Footer4 = () => {
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             <Image
               className="w-auto h-9"
-              src="https://auraui.com/logo-light.png"
+              src="https://www.auraui.com/logo-light.png"
               alt="AuraUI Logo"
               width={150}
               height={36}

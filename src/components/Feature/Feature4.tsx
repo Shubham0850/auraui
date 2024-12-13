@@ -15,8 +15,7 @@ const commonStyles = {
   icon: "w-6 h-6 shrink-0 text-cyan-500",
   button:
     "inline-flex items-center px-5 py-3 text-base font-normal bg-black bg-gradient-to-r from-cyan-500 to-purple-500",
-  buttonText:
-    "ml-4  bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500",
+  buttonText: "ml-4  bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500",
 };
 
 const featureItems = [
@@ -34,7 +33,7 @@ const Feature4: React.FC = () => {
             <div className="relative overflow-hidden">
               <Image
                 className="object-cover rounded-md w-full h-full"
-                src="https://auraui.com/images/man.webp"
+                src="https://www.auraui.com/images/man.webp"
                 alt="Secure Data with Auraui"
                 layout="responsive"
                 width={500}

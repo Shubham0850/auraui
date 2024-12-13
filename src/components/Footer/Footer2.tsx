@@ -28,7 +28,7 @@ const Footer2 = () => {
           <div>
             <Image
               className="w-auto h-7"
-              src="https://auraui.com/logo-dark.png"
+              src="https://www.auraui.com/logo-dark.png"
               alt="Company Logo"
               width={150}
               height={36}

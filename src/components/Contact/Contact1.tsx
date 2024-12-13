@@ -37,7 +37,7 @@ const Testimonial = () => (
     <div className="flex items-center mt-8">
       <div className="w-10 h-10 relative rounded-full overflow-hidden">
         <Image
-          src="https://auraui.com/memeimage/babubhaiya.jpg"
+          src="https://www.auraui.com/memeimage/babubhaiya.jpg"
           alt="Babu Bhaiya"
           layout="fill"
           objectFit="cover"
@@ -86,7 +86,7 @@ const Form = () => {
                     placeholder={`Enter your ${label.toLowerCase()}`}
                     className={commonInputStyles}
                   />
-                ),
+                )
             )}
             <div>
               <div className={commonButtonStyles}>Get Free Quote</div>

@@ -160,7 +160,7 @@ const Hero4 = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-30 blur-lg z-0"></div>
               <Image
-                src="https://auraui.com/memeimage/devss.jpg"
+                src="https://www.auraui.com/memeimage/devss.jpg"
                 alt="Hero Image"
                 width={600}
                 height={600}
