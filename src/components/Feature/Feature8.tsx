@@ -29,17 +29,17 @@ const features = [
   {
     title: "Interactive Lessons",
     description: "Learn with hands-on lessons in a dynamic environment.",
-    image: "https://auraui.com/images/pc.jpg",
+    image: "https://www.auraui.com/images/pc.jpg",
   },
   {
     title: "Community Support",
     description: "Join our community of developers and innovators.",
-    image: "https://auraui.com/images/pc1.jpg",
+    image: "https://www.auraui.com/images/pc1.jpg",
   },
   {
     title: "Exclusive Resources",
     description: "Access our vast library of resources and guides.",
-    image: "https://auraui.com/images/laptop.jpg",
+    image: "https://www.auraui.com/images/laptop.jpg",
   },
 ];
 
