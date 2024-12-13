@@ -1248,4 +1248,11 @@ export const components = [
     imgSrc: "/all-components/hero/hero35.png",
     link: "/docs/hero#hero-35",
   },
+  {
+    id: 180,
+    name: "CTA10",
+    tag: "cta",
+    imgSrc: "/all-components/cta/cta10.png",
+    link: "/docs/cta#cta10",
+  },
 ];
