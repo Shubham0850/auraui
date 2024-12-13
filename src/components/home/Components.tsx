@@ -26,19 +26,19 @@ const baseCategories = [
     name: "Hero",
     img: "/components/hero.png",
     link: "/docs/hero",
-    items: 33,
+    items: 35,
   },
   {
     name: "Header",
     img: "/components/header.png",
     link: "/docs/header",
-    items: 4,
+    items: 7,
   },
   {
     name: "Footer",
     img: "/components/footer.png",
     link: "/docs/footer",
-    items: 5,
+    items: 6,
   },
   {
     name: "Signup",
@@ -89,7 +89,7 @@ const marketingCategories = [
   // { name: "Featured Drops", items: 69, img: "/components/coming-soon.png" },
   {
     name: "Logo Cloud",
-    items: 16,
+    items: 17,
     img: "/components/logocloud.png",
     link: "/docs/logocloud",
   },
@@ -108,7 +108,7 @@ const marketingCategories = [
   {
     name: "Call To Action",
     link: "/docs/cta",
-    items: 9,
+    items: 10,
     img: "/components/cta.png",
   },
   {
@@ -126,7 +126,7 @@ const marketingCategories = [
   {
     name: "Blog",
     link: "/docs/blog",
-    items: 1,
+    items: 2,
     img: "/components/blog.png",
   },
 
