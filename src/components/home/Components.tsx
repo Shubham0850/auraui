@@ -32,7 +32,7 @@ const baseCategories = [
     name: "Header",
     img: "/components/header.png",
     link: "/docs/header",
-    items: 7,
+    items: 8,
   },
   {
     name: "Footer",

@@ -1255,4 +1255,11 @@ export const components = [
     imgSrc: "/all-components/cta/cta10.png",
     link: "/docs/cta#cta10",
   },
+  {
+    id: 181,
+    name: "Navbar8 ",
+    tag: "navbar",
+    imgSrc: "/all-components/header/header8.png",
+    link: "/docs/header#header8",
+  },
 ];
