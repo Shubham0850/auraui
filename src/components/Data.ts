@@ -1262,4 +1262,11 @@ export const components = [
     imgSrc: "/all-components/header/header8.png",
     link: "/docs/header#header8",
   },
+  {
+    id: 182,
+    name: "Footer7 ",
+    tag: "footer",
+    imgSrc: "/all-components/footer/footer7.png",
+    link: "/docs/footer#footer7",
+  },
 ];
