@@ -1269,4 +1269,11 @@ export const components = [
     imgSrc: "/all-components/footer/footer7.png",
     link: "/docs/footer#footer7",
   },
+  {
+    id: 183,
+    name: "Hero36",
+    tag: "hero",
+    imgSrc: "/all-components/hero/hero36.png",
+    link: "/docs/hero#hero-36",
+  },
 ];
