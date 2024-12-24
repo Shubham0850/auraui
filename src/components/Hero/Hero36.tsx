@@ -60,7 +60,7 @@ const Hero36 = () => {
           </div>
           <div className="flex px-4 justify-center md:justify-end w-full md:w-auto">
             <Image
-              src="/uyt.webp"
+              src="https://www.auraui.com/images/logoA.webp"
               alt="Auraui hero image"
               className="w-[300px] md:w-[700px] mt-10 md:mt-0"
               width={700}
