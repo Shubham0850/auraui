@@ -1283,4 +1283,18 @@ export const components = [
     imgSrc: "/all-components/hero/hero37.png",
     link: "/docs/hero#hero-37",
   },
+  {
+    id: 185,
+    name: "Navbar9 ",
+    tag: "navbar",
+    imgSrc: "/all-components/header/header9.png",
+    link: "/docs/header#header9",
+  },
+  {
+    id: 186,
+    name: "Blog3",
+    tag: "blog",
+    imgSrc: "/all-components/blog/blog3.png",
+    link: "/docs/blog#blog3",
+  },
 ];
