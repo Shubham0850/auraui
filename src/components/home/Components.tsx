@@ -32,7 +32,7 @@ const baseCategories = [
     name: "Header",
     img: "/components/header.png",
     link: "/docs/header",
-    items: 8,
+    items: 9,
   },
   {
     name: "Footer",
@@ -126,7 +126,7 @@ const marketingCategories = [
   {
     name: "Blog",
     link: "/docs/blog",
-    items: 2,
+    items: 3,
     img: "/components/blog.png",
   },
 
