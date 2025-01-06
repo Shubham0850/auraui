@@ -80,7 +80,7 @@ function Footer9() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/footer-bg.svg"
+          src="https://www.auraui.com/images/footer-bg.svg"
           alt="bg"
           layout="fill"
           objectFit="cover"
