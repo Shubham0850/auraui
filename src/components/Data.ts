@@ -1304,4 +1304,11 @@ export const components = [
     imgSrc: "/all-components/footer/footer8.png",
     link: "/docs/footer#footer8",
   },
+  {
+    id: 188,
+    name: "Footer9 ",
+    tag: "footer",
+    imgSrc: "/all-components/footer/footer9.png",
+    link: "/docs/footer#footer9",
+  },
 ];
