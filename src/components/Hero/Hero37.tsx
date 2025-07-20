@@ -1,101 +1,184 @@
-"use client";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Brain, Zap, Target, TrendingUp } from "lucide-react";
+import { aurauiMotion } from "@/lib/motion";
 
-import React, { useState } from "react";
-import { IoCaretDownSharp } from "react-icons/io5";
-
-const Hero37: React.FC = () => {
-  const [companyName, setCompanyName] = useState("");
-  const [country, setCountry] = useState("All Countries");
-  const [industry, setIndustry] = useState("All Industries");
-  const [rating, setRating] = useState("All Ratings");
+export default function Hero37() {
+  const aiFeatures = [
+    { icon: Brain, title: "Smart AI", value: "99.9%", label: "Accuracy" },
+    { icon: Zap, title: "Lightning", value: "< 100ms", label: "Response" },
+    { icon: Target, title: "Precision", value: "10x", label: "Faster" },
+    { icon: TrendingUp, title: "Growth", value: "+250%", label: "Performance" },
+  ];
 
   return (
-    <div
-      style={{
-        backgroundImage: "url(https://www.auraui.com/images/bg.png)",
-        backgroundSize: "cover",
-      }}
-      className="  flex justify-center "
-    >
-      <div className="py-12 md:py-0 md:h-[720px] flex max-w-[1400px] w-full flex-col justify-center items-center px-4">
-        {/* Heading */}
-        <div className="text-center pb-8 md:pb-32">
-          <h1 className="font-bold text-[30px] leading-[40px] md:leading-[80px] md:text-[60px] mb-4">
-            Find the ESG score of companies in France
-          </h1>
-          <h2 className="font-normal md:w-[68%] mx-auto text-[#000000CC] text-[18px] md:text-[24px] md:leading-[30px] ">
-            Explore and compare sustainability profile of all major companies in
-            France -- across industries, ESG ratings, and environmental
-            certificates.
-          </h2>
-        </div>
-
-        {/* Search Filters */}
-        <div className="flex lg:flex-row flex-col w-full max-w-[1400px]">
-          <div className="w-full border-4 border-[#18A0FB] flex flex-col md:flex-row items-center justify-center bg-white rounded-lg shadow-md">
-            {/* Company Name Input */}
-            <input
-              type="text"
-              placeholder="Company Name"
-              className="px-4 py-4 w-full font-medium  lg:text-[24px] leading-[30px] placeholder-[#CCCCCC] md:w-auto flex-1 rounded-l-md border-r border-[#18A0FB] focus:outline-none"
-              value={companyName}
-              onChange={(e) => setCompanyName(e.target.value)}
+    <section className="hero-theme-37 bg-[#0A0A0A] text-white min-h-screen flex flex-col items-center py-20 relative overflow-hidden">
+      {/* Navbar */}
+      <motion.div
+        className="w-full max-w-7xl mx-auto px-6 py-4 mb-12 flex items-center justify-between bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-2xl z-20"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <div className="text-xl font-bold tracking-tight">
+          <a href="#" className="flex items-center space-x-2">
+            <img
+              className="w-auto h-8"
+              src="https://www.auraui.com/logo-dark.png"
+              alt="AuraUI Logo"
             />
-
-            {/* Country Dropdown */}
-            <div className="relative w-full md:w-auto flex-1">
-              <select
-                className="appearance-none px-4 font-normal  lg:text-[24px] leading-[30px] py-4 w-full bg-white border-r border-[#18A0FB] focus:outline-none"
-                value={country}
-                onChange={(e) => setCountry(e.target.value)}
-              >
-                <option>All Countries</option>
-                <option>USA</option>
-                <option>Canada</option>
-                <option>UK</option>
-              </select>
-              <IoCaretDownSharp className="absolute right-4 top-1/2 transform -translate-y-1/2  pointer-events-none" />
-            </div>
-
-            {/* Industry Dropdown */}
-            <div className="relative w-full md:w-auto flex-1">
-              <select
-                className="appearance-none px-4  font-normal lg:text-[24px] leading-[30px] py-4 w-full bg-white border-r border-[#18A0FB] focus:outline-none"
-                value={industry}
-                onChange={(e) => setIndustry(e.target.value)}
-              >
-                <option>All Industries</option>
-                <option>Technology</option>
-                <option>Finance</option>
-                <option>Healthcare</option>
-              </select>
-              <IoCaretDownSharp className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none" />
-            </div>
-
-            {/* Rating Dropdown */}
-            <div className="relative w-full md:w-auto flex-1">
-              <select
-                className="appearance-none px-4 py-4 w-full font-normal   lg:text-[24px] leading-[30px] bg-white border-r border-[#18A0FB] focus:outline-none"
-                value={rating}
-                onChange={(e) => setRating(e.target.value)}
-              >
-                <option>All Ratings</option>
-                <option>5 Stars</option>
-                <option>4 Stars</option>
-                <option>3 Stars</option>
-              </select>
-              <IoCaretDownSharp className="absolute right-4 top-1/2 transform -translate-y-1/2  pointer-events-none" />
-            </div>
-          </div>
-
-          {/* Search Button */}
-          <button className="px-9 py-4 font-normal  text-[24px] leading-[30px] bg-blue-500 text-white rounded-md hover:bg-blue-600 w-full md:w-auto mt-4 lg:mt-0">
-            Search
-          </button>
+          </a>
         </div>
-      </div>
-    </div>
-  );
-};
 
-export default Hero37;
+        <nav className="hidden md:flex space-x-8 items-center text-sm font-medium">
+          {["Solutions", "Technology", "Use Cases", "Company"].map((link) => (
+            <a
+              key={link}
+              href="#"
+              className="text-white hover:text-green-400 transition"
+            >
+              {link}
+            </a>
+          ))}
+        </nav>
+
+        <Button
+          size="sm"
+          className="bg-green-500 hover:bg-green-400 text-white px-5 py-2 rounded-md shadow-lg"
+        >
+          Try Demo
+        </Button>
+      </motion.div>
+
+      {/* Neural pattern background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <motion.div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `
+              radial-gradient(circle at 10% 90%, #00ff99 1px, transparent 1px),
+              radial-gradient(circle at 90% 10%, #00ffcc 1px, transparent 1px),
+              radial-gradient(circle at 50% 50%, #00ffaa 1px, transparent 1px)
+            `,
+            backgroundSize: "80px 80px, 120px 120px, 160px 160px",
+            opacity: 0.15,
+          }}
+          animate={{
+            backgroundPosition: [
+              "0% 0%",
+              "100% 100%",
+              "0% 0%", // loop back
+            ],
+          }}
+          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        {/* Glowing Badge */}
+        <motion.div
+          className="mb-8 flex justify-center"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="relative">
+            <div className="absolute inset-0 blur-xl rounded-full bg-gradient-to-r from-green-400 to-green-600 opacity-30"></div>
+            <Badge
+              variant="outline"
+              className="relative z-10 bg-[#1A1A1A] text-white px-6 py-3 text-base font-medium border border-white/10 shadow-md flex items-center"
+            >
+              <Brain className="w-5 h-5 mr-2 animate-pulse" />
+              Powered by Advanced AI
+            </Badge>
+          </div>
+        </motion.div>
+
+        {/* Headline */}
+        <motion.h1
+          className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Next-Gen
+          <span
+            className="block bg-clip-text text-transparent"
+            style={{
+              backgroundImage: "linear-gradient(135deg, #22c55e, #86efac)",
+            }}
+          >
+            AI Platform
+          </span>
+        </motion.h1>
+
+        {/* Subheading */}
+        <motion.p
+          className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          Harness the power of artificial intelligence to transform your
+          business. Our cutting-edge AI tools provide unprecedented insights and
+          automation.
+        </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <motion.div {...aurauiMotion.buttonHover}>
+            <Button
+              size="lg"
+              className="bg-green-500 hover:bg-green-400 text-white px-8 py-4 text-lg rounded-xl shadow-xl transition-all duration-300"
+            >
+              Start AI Journey
+            </Button>
+          </motion.div>
+
+          <motion.div {...aurauiMotion.buttonHover}>
+            <button className="px-6 py-2.5 text-lg border border-white/20 text-white hover:bg-white/10 rounded-xl  transition-all duration-300">
+              Watch Demo
+            </button>
+          </motion.div>
+        </motion.div>
+
+        {/* Feature Grid */}
+        <motion.div
+          className="grid grid-cols-2 md:grid-cols-4 gap-6"
+          variants={aurauiMotion.container}
+          initial="hidden"
+          animate="visible"
+        >
+          {aiFeatures.map((feature, index) => (
+            <motion.div
+              key={index}
+              variants={aurauiMotion.item}
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Card className="p-6 text-center bg-[#121212]/70 border border-white/10 shadow-md rounded-xl">
+                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                  <feature.icon className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-green-300 mb-1">
+                  {feature.value}
+                </div>
+                <div className="text-sm text-gray-400">{feature.label}</div>
+                <div className="text-xs font-medium text-white mt-1">
+                  {feature.title}
+                </div>
+              </Card>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
