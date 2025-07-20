@@ -108,9 +108,6 @@ const Hero1 = () => {
     <section className="relative w-full overflow-hidden">
       {/* Extended background gradient with enhanced grid */}
       <div className="cosmic-gradient cosmic-grid-enhanced min-h-screen flex flex-col justify-center items-center relative ">
-        {/* Enhanced cosmic glow - moved up */}
-
-        <div className="cosmic-glow-enhanced absolute inset-0 -top-20"></div>
         {/* Hero Content */}
         <div
           className={`relative z-10 max-w-5xl mx-auto px-6 text-center transition-all duration-700 transform ${
