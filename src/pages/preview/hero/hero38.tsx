@@ -1,4 +1,4 @@
-// Hero36 Component
+// Hero38 Component
 import React from "react";
 import Hero38 from "@/components/Hero/Hero38";
 

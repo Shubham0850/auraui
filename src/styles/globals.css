@@ -171,15 +171,15 @@ body,
       hsl(45 100% 60%)
     );
 
-    --hero7-primary: 355 100% 65%;
-    --hero7-secondary: 15 100% 70%;
-    --hero7-accent: 330 100% 60%;
-    --hero7-gradient: linear-gradient(
+    --hero39-primary: 355 100% 65%;
+    --hero39-secondary: 15 100% 70%;
+    --hero39-accent: 330 100% 60%;
+    --hero39-gradient: linear-gradient(
       135deg,
       hsl(355 100% 65%),
       hsl(15 100% 70%)
     );
-    --hero7-accent-gradient: linear-gradient(
+    --hero39-accent-gradient: linear-gradient(
       135deg,
       hsl(330 100% 60%),
       hsl(355 100% 65%)
@@ -374,12 +374,12 @@ body,
     --gradient-accent: var(--hero38-accent-gradient);
   }
 
-  .hero-theme-7 {
-    --primary: var(--hero7-primary);
-    --secondary: var(--hero7-secondary);
-    --accent: var(--hero7-accent);
-    --gradient-primary: var(--hero7-gradient);
-    --gradient-accent: var(--hero7-accent-gradient);
+  .hero-theme-39 {
+    --primary: var(--hero39-primary);
+    --secondary: var(--hero39-secondary);
+    --accent: var(--hero39-accent);
+    --gradient-primary: var(--hero39-gradient);
+    --gradient-accent: var(--hero39-accent-gradient);
   }
 
   .hero-theme-8 {

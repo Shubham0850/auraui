@@ -17,7 +17,7 @@ export default function Hero37() {
     <section className="hero-theme-37 bg-[#0A0A0A] text-white min-h-screen flex flex-col items-center py-20 relative overflow-hidden">
       {/* Navbar */}
       <motion.div
-        className="w-full max-w-7xl mx-auto px-6 py-4 mb-12 flex items-center justify-between bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-2xl z-20"
+        className="w-full max-w-7xl mx-auto px-6 py-4 mb-12 flex items-center justify-between bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-2xl "
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
