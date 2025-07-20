@@ -2,25 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ----------------------------------
+   Custom Fonts: Euclid Circular B
+----------------------------------- */
 @font-face {
   font-family: "Euclid Circular B";
-  src: url("/fonts/Euclid\ Circular\ B\ Regular.ttf") format("truetype");
+  src: url("/fonts/Euclid Circular B Regular.ttf") format("truetype");
   font-weight: 400;
-  /* Regular */
 }
-
 @font-face {
   font-family: "Euclid Circular B";
-  src: url("/fonts/Euclid\ Circular\ B\ Medium.ttf") format("truetype");
+  src: url("/fonts/Euclid Circular B Medium.ttf") format("truetype");
   font-weight: 500;
-  /* Medium */
 }
-
 @font-face {
   font-family: "Euclid Circular B";
-  src: url("/fonts/Euclid\ Circular\ B\ Bold.ttf") format("truetype");
+  src: url("/fonts/Euclid Circular B Bold.ttf") format("truetype");
   font-weight: 700;
-  /* Bold */
 }
 
 html,
@@ -31,24 +29,24 @@ body,
 
 @layer base {
   :root {
+    /* --- Existing Tokens --- */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 240 100% 80%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
@@ -60,33 +58,194 @@ body,
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    /* --- Auraui: Design System Additions --- */
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--secondary))
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(var(--accent)),
+      hsl(var(--primary))
+    );
+    --gradient-subtle: linear-gradient(135deg, hsl(240 10% 5%), hsl(240 5% 8%));
+    --gradient-glow: linear-gradient(
+      135deg,
+      hsl(var(--primary-glow) / 0.3),
+      hsl(var(--accent) / 0.2)
+    );
+
+    --shadow-primary: 0 8px 32px hsl(var(--primary) / 0.3);
+    --shadow-accent: 0 8px 32px hsl(var(--accent) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.5);
+    --shadow-elegant: 0 20px 40px -10px hsl(0 0% 0% / 0.5);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* --- Hero Themes (1–10) --- */
+    --hero24-primary: 240 100% 70%;
+    --hero24-secondary: 260 100% 75%;
+    --hero24-accent: 315 100% 70%;
+    --hero24-gradient: linear-gradient(
+      135deg,
+      hsl(240 100% 70%),
+      hsl(260 100% 75%)
+    );
+    --hero24-accent-gradient: linear-gradient(
+      135deg,
+      hsl(315 100% 70%),
+      hsl(240 100% 70%)
+    );
+
+    --hero2-primary: 195 100% 65%;
+    --hero2-secondary: 210 100% 70%;
+    --hero2-accent: 180 100% 60%;
+    --hero2-gradient: linear-gradient(
+      135deg,
+      hsl(195 100% 65%),
+      hsl(210 100% 70%)
+    );
+    --hero2-accent-gradient: linear-gradient(
+      135deg,
+      hsl(180 100% 60%),
+      hsl(195 100% 65%)
+    );
+
+    --hero3-primary: 20 100% 65%;
+    --hero3-secondary: 340 100% 70%;
+    --hero3-accent: 300 100% 65%;
+    --hero3-gradient: linear-gradient(
+      135deg,
+      hsl(20 100% 65%),
+      hsl(340 100% 70%)
+    );
+    --hero3-accent-gradient: linear-gradient(
+      135deg,
+      hsl(300 100% 65%),
+      hsl(20 100% 65%)
+    );
+
+    --hero4-primary: 160 100% 50%;
+    --hero4-secondary: 140 100% 55%;
+    --hero4-accent: 120 100% 60%;
+    --hero4-gradient: linear-gradient(
+      135deg,
+      hsl(160 100% 50%),
+      hsl(140 100% 55%)
+    );
+    --hero4-accent-gradient: linear-gradient(
+      135deg,
+      hsl(120 100% 60%),
+      hsl(160 100% 50%)
+    );
+
+    --hero5-primary: 250 100% 60%;
+    --hero5-secondary: 270 100% 65%;
+    --hero5-accent: 290 100% 70%;
+    --hero5-gradient: linear-gradient(
+      135deg,
+      hsl(250 100% 60%),
+      hsl(270 100% 65%)
+    );
+    --hero5-accent-gradient: linear-gradient(
+      135deg,
+      hsl(290 100% 70%),
+      hsl(250 100% 60%)
+    );
+
+    --hero6-primary: 45 100% 60%;
+    --hero6-secondary: 35 100% 55%;
+    --hero6-accent: 25 100% 50%;
+    --hero6-gradient: linear-gradient(
+      135deg,
+      hsl(45 100% 60%),
+      hsl(35 100% 55%)
+    );
+    --hero6-accent-gradient: linear-gradient(
+      135deg,
+      hsl(25 100% 50%),
+      hsl(45 100% 60%)
+    );
+
+    --hero7-primary: 355 100% 65%;
+    --hero7-secondary: 15 100% 70%;
+    --hero7-accent: 330 100% 60%;
+    --hero7-gradient: linear-gradient(
+      135deg,
+      hsl(355 100% 65%),
+      hsl(15 100% 70%)
+    );
+    --hero7-accent-gradient: linear-gradient(
+      135deg,
+      hsl(330 100% 60%),
+      hsl(355 100% 65%)
+    );
+
+    --hero8-primary: 270 100% 65%;
+    --hero8-secondary: 240 100% 70%;
+    --hero8-accent: 300 100% 60%;
+    --hero8-gradient: linear-gradient(
+      135deg,
+      hsl(270 100% 65%),
+      hsl(240 100% 70%)
+    );
+    --hero8-accent-gradient: linear-gradient(
+      135deg,
+      hsl(300 100% 60%),
+      hsl(270 100% 65%)
+    );
+
+    --hero9-primary: 175 100% 45%;
+    --hero9-secondary: 190 100% 50%;
+    --hero9-accent: 160 100% 40%;
+    --hero9-gradient: linear-gradient(
+      135deg,
+      hsl(175 100% 45%),
+      hsl(190 100% 50%)
+    );
+    --hero9-accent-gradient: linear-gradient(
+      135deg,
+      hsl(160 100% 40%),
+      hsl(175 100% 45%)
+    );
+
+    --hero10-primary: 200 100% 80%;
+    --hero10-secondary: 220 50% 85%;
+    --hero10-accent: 190 100% 75%;
+    --hero10-gradient: linear-gradient(
+      135deg,
+      hsl(200 100% 80%),
+      hsl(220 50% 85%)
+    );
+    --hero10-accent-gradient: linear-gradient(
+      135deg,
+      hsl(190 100% 75%),
+      hsl(200 100% 80%)
+    );
   }
 
   .dark {
+    /* Keep your current dark mode styles */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -101,8 +260,154 @@ body,
   body {
     @apply bg-background text-foreground;
   }
+
+  .auraui-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .auraui-gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .auraui-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .auraui-gradient-glow {
+    background: var(--gradient-glow);
+  }
+
+  .auraui-shadow-primary {
+    box-shadow: var(--shadow-primary);
+  }
+
+  .auraui-shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+
+  .auraui-shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .auraui-shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .auraui-transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .auraui-transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .auraui-glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    background: hsl(var(--background) / 0.8);
+    border: 1px solid hsl(var(--border) / 0.2);
+  }
+
+  .auraui-glass-strong {
+    backdrop-filter: blur(24px) saturate(200%);
+    background: hsl(var(--background) / 0.9);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  .hero-theme-24 {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --primary: var(--hero24-primary);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--hero24-secondary);
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: var(--hero24-accent);
+    --muted-foreground: 240 5% 65%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --gradient-primary: var(--hero24-gradient);
+    --gradient-accent: var(--hero24-accent-gradient);
+
+    --shadow-primary: 0 8px 32px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.5);
+  }
+
+  .hero-theme-2 {
+    --primary: var(--hero2-primary);
+    --secondary: var(--hero2-secondary);
+    --accent: var(--hero2-accent);
+    --gradient-primary: var(--hero2-gradient);
+    --gradient-accent: var(--hero2-accent-gradient);
+  }
+
+  .hero-theme-3 {
+    --primary: var(--hero3-primary);
+    --secondary: var(--hero3-secondary);
+    --accent: var(--hero3-accent);
+    --gradient-primary: var(--hero3-gradient);
+    --gradient-accent: var(--hero3-accent-gradient);
+  }
+
+  .hero-theme-4 {
+    --primary: var(--hero4-primary);
+    --secondary: var(--hero4-secondary);
+    --accent: var(--hero4-accent);
+    --gradient-primary: var(--hero4-gradient);
+    --gradient-accent: var(--hero4-accent-gradient);
+  }
+
+  .hero-theme-5 {
+    --primary: var(--hero5-primary);
+    --secondary: var(--hero5-secondary);
+    --accent: var(--hero5-accent);
+    --gradient-primary: var(--hero5-gradient);
+    --gradient-accent: var(--hero5-accent-gradient);
+  }
+
+  .hero-theme-6 {
+    --primary: var(--hero6-primary);
+    --secondary: var(--hero6-secondary);
+    --accent: var(--hero6-accent);
+    --gradient-primary: var(--hero6-gradient);
+    --gradient-accent: var(--hero6-accent-gradient);
+  }
+
+  .hero-theme-7 {
+    --primary: var(--hero7-primary);
+    --secondary: var(--hero7-secondary);
+    --accent: var(--hero7-accent);
+    --gradient-primary: var(--hero7-gradient);
+    --gradient-accent: var(--hero7-accent-gradient);
+  }
+
+  .hero-theme-8 {
+    --primary: var(--hero8-primary);
+    --secondary: var(--hero8-secondary);
+    --accent: var(--hero8-accent);
+    --gradient-primary: var(--hero8-gradient);
+    --gradient-accent: var(--hero8-accent-gradient);
+  }
+
+  .hero-theme-9 {
+    --primary: var(--hero9-primary);
+    --secondary: var(--hero9-secondary);
+    --accent: var(--hero9-accent);
+    --gradient-primary: var(--hero9-gradient);
+    --gradient-accent: var(--hero9-accent-gradient);
+  }
+
+  .hero-theme-10 {
+    --primary: var(--hero10-primary);
+    --secondary: var(--hero10-secondary);
+    --accent: var(--hero10-accent);
+    --gradient-primary: var(--hero10-gradient);
+    --gradient-accent: var(--hero10-accent-gradient);
+  }
 }
 
+/* Optional: Responsive nav tweaks */
 nav a:nth-child(5) {
   margin-right: auto !important;
 }
@@ -116,4 +421,3 @@ nav a:first-child {
     margin-right: auto !important;
   }
 }
-
