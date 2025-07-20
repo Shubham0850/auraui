@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Zap, Shield, Rocket } from "lucide-react";
 import { aurauiMotion } from "@/lib/motion";
 

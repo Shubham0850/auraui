@@ -115,15 +115,15 @@ body,
       hsl(195 100% 65%)
     );
 
-    --hero3-primary: 20 100% 65%;
-    --hero3-secondary: 340 100% 70%;
-    --hero3-accent: 300 100% 65%;
-    --hero3-gradient: linear-gradient(
+    --hero36-primary: 20 100% 65%;
+    --hero36-secondary: 340 100% 70%;
+    --hero36-accent: 300 100% 65%;
+    --hero36-gradient: linear-gradient(
       135deg,
       hsl(20 100% 65%),
       hsl(340 100% 70%)
     );
-    --hero3-accent-gradient: linear-gradient(
+    --hero36-accent-gradient: linear-gradient(
       135deg,
       hsl(300 100% 65%),
       hsl(20 100% 65%)
@@ -342,12 +342,12 @@ body,
     --gradient-accent: var(--hero35-accent-gradient);
   }
 
-  .hero-theme-3 {
-    --primary: var(--hero3-primary);
-    --secondary: var(--hero3-secondary);
-    --accent: var(--hero3-accent);
-    --gradient-primary: var(--hero3-gradient);
-    --gradient-accent: var(--hero3-accent-gradient);
+  .hero-theme-36 {
+    --primary: var(--hero36-primary);
+    --secondary: var(--hero36-secondary);
+    --accent: var(--hero36-accent);
+    --gradient-primary: var(--hero36-gradient);
+    --gradient-accent: var(--hero36-accent-gradient);
   }
 
   .hero-theme-4 {
