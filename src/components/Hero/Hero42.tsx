@@ -28,7 +28,7 @@ export default function Hero42() {
             <a href="#" className="flex items-center space-x-2">
               <img
                 className="w-auto h-8"
-                src="https://www.auraui.com/logo-dark.png"
+                src="https://www.auraui.com/logo-light.png"
                 alt="AuraUI Logo"
               />
             </a>
