@@ -26,7 +26,7 @@ const baseCategories = [
     name: "Hero",
     img: "/components/hero.png",
     link: "/docs/hero",
-    items: 38,
+    items: 42,
   },
   {
     name: "Header",

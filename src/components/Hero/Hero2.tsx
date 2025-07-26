@@ -1,339 +1,206 @@
-import React, { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { Building2, Users, ArrowRight, Menu, Phone, Mail } from "lucide-react";
+import { aurauiMotion } from "@/lib/motion";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "next-themes";
 
-const commonStyles =
-  "text-base font-medium text-gray-900 transition-all duration-200 focus:outline-none focus:ring-0";
-const commonButtonStyles =
-  "inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-lg";
+const Hero2 = () => {
+  const { resolvedTheme } = useTheme();
 
-const images = {
-  logo: "https://www.auraui.com/logo-light.png",
-  hero: "https://www.auraui.com/memeimage/no-bg-woman.png",
-};
-
-// Animation variants
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const slideInLeft = {
-  initial: { opacity: 0, x: -50 },
-  animate: { opacity: 1, x: 0 },
-};
-
-const slideInRight = {
-  initial: { opacity: 0, x: 50 },
-  animate: { opacity: 1, x: 0 },
-};
-
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.8 },
-  animate: { opacity: 1, scale: 1 },
-};
-
-const Hero2: React.FC = () => {
-  const [expanded, setExpanded] = useState(false);
+  const logoSrc =
+    resolvedTheme === "dark"
+      ? "https://www.auraui.com/logo-dark.png"
+      : "https://www.auraui.com/logo-light.png";
 
   return (
-    <motion.div initial="initial" animate="animate" variants={staggerChildren}>
-      <motion.header
-        className="py-4 bg-gradient-to-r from-white via-blue-50/50 to-white backdrop-blur-sm border-b border-gray-100/50"
+    <div className="min-h-screen hero-theme-36 relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-accent/10" />
+
+      {/* Navbar */}
+      <motion.nav
+        className="relative  p-6"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.8 }}
       >
-        <div className="container px-4 mx-auto sm:px-6 lg:px-8">
-          <nav className="flex items-center justify-between">
-            <motion.div
-              className="flex shrink-0"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
+        <div className="container mx-auto flex items-center justify-between">
+          <div>
+            <a href="#" title="AuraUI">
+              <Image
+                className="w-auto h-8"
+                src={logoSrc}
+                alt="AuraUI Logo"
+                width={100}
+                height={32}
+              />
+            </a>
+          </div>
+
+          <div className="hidden md:flex items-center gap-8">
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
             >
-              <a href="#" title="Auraui" className="flex">
-                <img className="w-24" src={images.logo} alt="Auraui Logo" />
-              </a>
-            </motion.div>
-
-            <motion.div className="flex md:hidden" whileTap={{ scale: 0.95 }}>
-              <button
-                type="button"
-                className="text-gray-900"
-                onClick={() => setExpanded(!expanded)}
-              >
-                <AnimatePresence mode="wait">
-                  {expanded ? (
-                    <motion.div
-                      key="close"
-                      initial={{ opacity: 0, rotate: -90 }}
-                      animate={{ opacity: 1, rotate: 0 }}
-                      exit={{ opacity: 0, rotate: 90 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <FiX className="w-7 h-7" />
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="menu"
-                      initial={{ opacity: 0, rotate: 90 }}
-                      animate={{ opacity: 1, rotate: 0 }}
-                      exit={{ opacity: 0, rotate: -90 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <FiMenu className="w-7 h-7" />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </button>
-            </motion.div>
-
-            <motion.div
-              className="hidden md:flex md:space-x-10 md:items-center md:justify-center"
-              variants={staggerChildren}
+              Solutions
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
             >
-              <motion.a
-                href="#"
-                className={`text-xs font-bold tracking-widest text-gray-900 uppercase ${commonStyles} hover:text-indigo-600`}
-                whileHover={{ scale: 1.05, color: "#4f46e5" }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-              >
-                Services
-              </motion.a>
-              <motion.a
-                href="#"
-                className={`text-xs font-bold tracking-widest text-gray-900 uppercase ${commonStyles} hover:text-indigo-600`}
-                whileHover={{ scale: 1.05, color: "#4f46e5" }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-              >
-                Latest Collections
-              </motion.a>
-              <motion.a
-                href="#"
-                className={`text-xs font-bold tracking-widest text-gray-900 uppercase ${commonStyles} hover:text-indigo-600`}
-                whileHover={{ scale: 1.05, color: "#4f46e5" }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-              >
-                Blog
-              </motion.a>
-            </motion.div>
-
-            <motion.div
-              className="hidden md:flex"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+              Industries
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
             >
-              <motion.a
-                href="#"
-                className={`${commonButtonStyles} bg-gray-900 hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900`}
-                role="button"
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                Join Email List
-              </motion.a>
-            </motion.div>
-          </nav>
-
-          <AnimatePresence>
-            {expanded && (
-              <motion.nav
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-              >
-                <motion.div
-                  className="px-1 pt-8 pb-4"
-                  variants={staggerChildren}
-                  initial="initial"
-                  animate="animate"
-                >
-                  <div className="grid gap-y-6">
-                    <motion.a
-                      href="#"
-                      className={commonStyles}
-                      variants={fadeInUp}
-                      whileHover={{ x: 10 }}
-                    >
-                      Services
-                    </motion.a>
-                    <motion.a
-                      href="#"
-                      className={commonStyles}
-                      variants={fadeInUp}
-                      whileHover={{ x: 10 }}
-                    >
-                      Latest Collections
-                    </motion.a>
-                    <motion.a
-                      href="#"
-                      className={commonStyles}
-                      variants={fadeInUp}
-                      whileHover={{ x: 10 }}
-                    >
-                      Blog
-                    </motion.a>
-                    <motion.a
-                      href="#"
-                      className={`${commonButtonStyles} bg-gray-900 hover:bg-gray-600 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900`}
-                      role="button"
-                      variants={fadeInUp}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      Join Email List
-                    </motion.a>
-                  </div>
-                </motion.div>
-              </motion.nav>
-            )}
-          </AnimatePresence>
-        </div>
-      </motion.header>
-
-      <motion.section
-        className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        {/* Animated background elements */}
-        <div className="absolute inset-0">
-          <motion.div
-            className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl"
-            animate={{
-              x: [0, 30, 0],
-              y: [0, -20, 0],
-              scale: [1, 1.1, 1],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-          <motion.div
-            className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-r from-pink-400/20 to-cyan-400/20 rounded-full blur-xl"
-            animate={{
-              x: [0, -25, 0],
-              y: [0, 15, 0],
-              scale: [1, 0.8, 1],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 1,
-            }}
-          />
-          <motion.div
-            className="absolute bottom-32 left-1/3 w-40 h-40 bg-gradient-to-r from-indigo-400/20 to-blue-400/20 rounded-full blur-xl"
-            animate={{
-              x: [0, 20, 0],
-              y: [0, -30, 0],
-              rotate: [0, 180, 360],
-            }}
-            transition={{
-              duration: 10,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 2,
-            }}
-          />
-        </div>
-        <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl z-10">
-          <div className="flex flex-col lg:flex-row justify-center max-w-md mx-auto gap-6 lg:max-w-none">
-            <motion.div
-              className="self-center w-full lg:w-[70%]"
-              {...slideInLeft}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+              Resources
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
             >
-              <motion.h1
-                className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-              >
-                Welcome to AuraUI
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
-                >
-                  your gateway to modern UI components.
-                </motion.p>
-              </motion.h1>
-              <motion.p
-                className="mt-5 text-base font-normal leading-7 text-gray-500"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 1.0 }}
-              >
-                Discover the latest in web design, NFT integration, and more
-                with Auraui. Your one-stop solution for sleek and functional UI.
-              </motion.p>
-              <motion.div
-                className="relative inline-flex mt-8 group"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 1.2 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <div className="absolute inset-0 transition-all duration-1000 opacity-70 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
-                <a
-                  href="#"
-                  className="relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
-                  role="button"
-                >
-                  Explore Auraui Blog
-                </a>
-              </motion.div>
-            </motion.div>
+              Company
+            </a>
+          </div>
 
-            <motion.div
-              className="self-end w-full lg:w-1/2"
-              {...slideInRight}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
+          <div className="flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="hidden md:flex bg-gray-100/30 hover:bg-gray-100/50 "
             >
-              <motion.div
-                whileHover={{ scale: 1.02, rotateY: 5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Image
-                  className="rounded-sm"
-                  src={images.hero}
-                  alt="Auraui Hero"
-                  width={600}
-                  height={400}
-                />
-              </motion.div>
-            </motion.div>
+              <Phone className="w-4 h-4 mr-2" />
+              Contact
+            </Button>
+            <Button size="sm">Get Started</Button>
+            <Button variant="ghost" size="icon" className="md:hidden">
+              <Menu className="w-4 h-4" />
+            </Button>
           </div>
         </div>
-      </motion.section>
-    </motion.div>
+      </motion.nav>
+
+      {/* Main content */}
+      <div className="relative z-10 container mx-auto px-6 pt-12 pb-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left content */}
+          <motion.div
+            className="space-y-8"
+            initial="hidden"
+            animate="visible"
+            variants={aurauiMotion.container}
+          >
+            <motion.div variants={aurauiMotion.item}>
+              <Badge variant="secondary" className="mb-4">
+                Trusted by 500+ enterprises
+              </Badge>
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+                Transform Your <span className="text-primary">Business</span>{" "}
+                Operations
+              </h1>
+            </motion.div>
+
+            <motion.p
+              className="text-xl text-muted-foreground leading-relaxed"
+              variants={aurauiMotion.item}
+            >
+              Streamline workflows, boost productivity, and drive growth with
+              our enterprise-grade platform. Join thousands of companies already
+              transforming their operations.
+            </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4"
+              variants={aurauiMotion.item}
+            >
+              <Button size="lg" className="text-lg px-8">
+                Start Free Trial
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 hover:bg-gray-100/30"
+              >
+                <Mail className="w-5 h-5 mr-2 " />
+                Schedule Demo
+              </Button>
+            </motion.div>
+
+            <motion.div
+              className="flex items-center gap-6 pt-4"
+              variants={aurauiMotion.item}
+            >
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">99.9%</div>
+                <div className="text-sm text-muted-foreground">Uptime</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">500+</div>
+                <div className="text-sm text-muted-foreground">Enterprises</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground">Support</div>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Right content */}
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <Card className="p-8 auraui-glass border-primary/20">
+              <div className="space-y-6">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold">Dashboard Overview</h3>
+                  <Badge variant="secondary">Live</Badge>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="p-4 bg-primary/10 rounded-lg">
+                    <Users className="w-8 h-8 text-primary mb-2" />
+                    <div className="text-2xl font-bold">2.4K</div>
+                    <div className="text-sm text-muted-foreground">
+                      Active Users
+                    </div>
+                  </div>
+                  <div className="p-4 bg-accent/10 rounded-lg">
+                    <Building2 className="w-8 h-8 text-accent mb-2" />
+                    <div className="text-2xl font-bold">156</div>
+                    <div className="text-sm text-muted-foreground">
+                      Projects
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex justify-between text-sm">
+                    <span>System Performance</span>
+                    <span className="text-primary">98%</span>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-2">
+                    <motion.div
+                      className="bg-primary h-2 rounded-full"
+                      initial={{ width: 0 }}
+                      animate={{ width: "98%" }}
+                      transition={{ duration: 1.5, delay: 0.5 }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+        </div>
+      </div>
+    </div>
   );
 };
 
