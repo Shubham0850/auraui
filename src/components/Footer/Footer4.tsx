@@ -122,34 +122,29 @@ const Footer4 = () => {
             </div>
           ))}
 
-          <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+          <div>
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
               Subscribe to newsletter
             </p>
-            <form action="#" method="POST" className="mt-6">
-              <div>
-                <label htmlFor="email" className="sr-only">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter your email"
-                  className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                />
-              </div>
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700"
-              >
+            <form
+              action="#"
+              method="POST"
+              className="mt-6 flex flex-col sm:flex-row items-center gap-3"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                className="flex-1 px-4 py-2 rounded-md border border-gray-300 text-sm placeholder-gray-500 bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button className="px-5 bg-blue-500 hover:bg-blue-600 py-2 text-white text-sm font-medium rounded-md transition">
                 Subscribe
               </button>
             </form>
           </div>
         </div>
 
-        <hr className="mt-16 mb-10 border-gray-200" />
+        <hr className="mt-8 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
           © Copyright 2024, All Rights Reserved by AuraUI
