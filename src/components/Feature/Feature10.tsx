@@ -2,85 +2,61 @@ import React from "react";
 import { FaVideo, FaSlack, FaFilePdf } from "react-icons/fa";
 import Image from "next/image";
 
-// Common styles
-const commonStyles = {
-  section: "lg:relative bg-black",
-  container: "w-full pt-16 mx-auto sm:pb-12 max-w-7xl lg:py-32 xl:py-48",
-  textContainer: "px-6 lg:w-1/2 sm:px-8 lg:px-12",
-  heading: "tracking-tighter text-white",
-  headingMain: "font-sans text-4xl md:text-6xl",
-  headingHighlight: "font-serif text-5xl italic md:block md:text-7xl",
-  description:
-    "mt-6 font-sans text-base font-normal leading-7 text-opacity-50 lg:mt-8 text-white",
-  list: "mt-12 space-y-5 font-serif text-3xl italic tracking-tight lg:mt-16 text-white",
-  listItem:
-    "flex items-center group transition-all duration-300 rounded-full bg-dark-gray group-hover:bg-white group-hover:text-black text-white",
-  iconContainer:
-    "inline-flex items-center justify-center flex-shrink-0 w-16 h-16 mr-5",
-  imageWrapper:
-    "relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full",
-  image: "absolute inset-0 object-cover w-full h-full",
-};
-
-const Feature10 = () => {
+const Feature10: React.FC = () => {
   return (
-    <section className={commonStyles.section}>
-      <div className={commonStyles.container}>
-        <div className={commonStyles.textContainer}>
-          <h2 className={commonStyles.heading}>
-            <span className={commonStyles.headingMain}>
-              {" "}
-              The easiest way to{" "}
+    <section className="lg:relative bg-black">
+      <div className="w-full pt-16 mx-auto sm:pb-12 max-w-7xl lg:py-32 xl:py-44">
+        <div className="px-6 sm:px-8 lg:px-12 lg:w-1/2">
+          {/* Heading */}
+          <h2 className="tracking-tighter text-white">
+            <span className="font-sans text-4xl md:text-6xl block">
+              The easiest way to
             </span>
-            <span className={commonStyles.headingHighlight}>
-              {" "}
-              optimize your workflow{" "}
+            <span className="font-serif text-5xl italic md:text-7xl block mt-1">
+              optimize your workflow
             </span>
           </h2>
 
-          <p className={commonStyles.description}>
-            Auraui empowers your team with professional video lessons, a
+          {/* Description */}
+          <p className="mt-6 text-base leading-7 text-white text-opacity-60 font-sans lg:mt-8 max-w-xl">
+            auraui empowers your team with professional video lessons, a
             supportive Slack community, and comprehensive PDF guides. Streamline
-            your projects and elevate your team&apos;s efficiency.
+            your projects and elevate your team’s efficiency with practical,
+            expert-backed resources.
           </p>
 
-          <ul className={commonStyles.list}>
-            <li className={commonStyles.listItem}>
-              <div className={commonStyles.iconContainer}>
-                <FaVideo />
-              </div>
-              Video lessons from professionals
+          {/* Feature List */}
+          <ul className="mt-12 space-y-6 text-white font-serif text-xl tracking-tight lg:mt-16">
+            <li className="flex items-center space-x-5">
+              <span className="flex items-center justify-center w-12 h-12 bg-white text-black rounded-full shadow-md">
+                <FaVideo className="w-5 h-5" />
+              </span>
+              <span className="italic">Video lessons from professionals</span>
             </li>
-
-            <li className={commonStyles.listItem}>
-              <div className={commonStyles.iconContainer}>
-                <FaSlack />
-              </div>
-              Slack community
+            <li className="flex items-center space-x-5">
+              <span className="flex items-center justify-center w-12 h-12 bg-white text-black rounded-full shadow-md">
+                <FaSlack className="w-5 h-5" />
+              </span>
+              <span className="italic">Slack community</span>
             </li>
-
-            <li className={commonStyles.listItem}>
-              <div className={commonStyles.iconContainer}>
-                <FaFilePdf />
-              </div>
-              PDF lessons
+            <li className="flex items-center space-x-5">
+              <span className="flex items-center justify-center w-12 h-12 bg-white text-black rounded-full shadow-md">
+                <FaFilePdf className="w-5 h-5" />
+              </span>
+              <span className="italic">PDF lessons</span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className={commonStyles.imageWrapper}>
+      {/* Image Section */}
+      <div className="relative w-full h-64 sm:h-80 md:h-[500px] lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
         <Image
-          className={commonStyles.image}
-          src="https://www.auraui.com/images/women.jpg"
-          alt="Auraui feature image"
-          layout="fill"
-        />
-        <Image
-          className={`${commonStyles.image} lg:hidden`}
-          src="https://www.auraui.com/images/analytic_image.avif"
-          alt="Auraui feature image mobile"
-          layout="fill"
+          src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Professional video lesson"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
     </section>

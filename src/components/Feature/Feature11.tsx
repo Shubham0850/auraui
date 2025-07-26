@@ -8,21 +8,33 @@ const Feature11: React.FC = () => {
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
           <div>
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-              Grow your business with AuraUI.
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-black tracking-tight leading-tight">
+              Grow your business
+              <br />
+              <span className="text-yellow-300">with auraUI.</span>
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-gray-600">
+
+            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
               AuraUI helps you build beautiful, high-performance websites
-              quickly and efficiently. With our extensive library of pre-built
-              components, you can focus on what matters most: growing your
+              quickly and efficiently. With our extensive library of
+              pre-designed components, advanced responsiveness, and modern
+              aesthetics, you can focus on what matters most: growing your
               business.
             </p>
+
+            <ul className="mt-6 space-y-3 text-base text-gray-700 list-disc list-inside">
+              <li>Prebuilt layout sections</li>
+              <li>Fast integration with Tailwind</li>
+              <li>Conversion-driven structure</li>
+              <li>Modern, professional aesthetic</li>
+            </ul>
           </div>
+
           <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">
             <div className="relative w-full max-w-xs mt-4 mb-10 ml-auto">
               <Image
                 className="ml-auto"
-                src="https://www.auraui.com/memeimage/working-women.jpg"
+                src="https://images.unsplash.com/photo-1604858757869-29a18d0d9c5d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Working Women"
                 layout="responsive"
                 width={500}
