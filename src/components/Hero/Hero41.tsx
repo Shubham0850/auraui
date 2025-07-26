@@ -237,7 +237,7 @@ export default function Hero41() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <p className="text-muted-foreground mb-4">
-              "The best projects are built by passionate communities"
+              &quot;The best projects are built by passionate communities&quot;
             </p>
             <div className="text-sm text-muted-foreground">
               Join our{" "}
