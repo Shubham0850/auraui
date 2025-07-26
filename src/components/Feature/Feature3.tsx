@@ -3,29 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Feature3() {
-  const commonStyles = {
-    section: "py-12 bg-white sm:py-16 lg:py-20 xl:py-24",
-    container: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
-    grid: "grid grid-cols-1 lg:grid-cols-7 gap-x-20 gap-y-12",
-    content: "lg:order-2 lg:col-span-4 max-w-lg lg:max-w-none",
-    title:
-      "text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:pr-8",
-    description:
-      "mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:mt-6 lg:pr-24 lg:leading-8",
-    buttonContainer: "mt-8",
-    button:
-      "inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700",
-    featuresGrid:
-      "grid grid-cols-1 gap-8 pt-8 mt-8 border-t border-gray-200 sm:grid-cols-2 md:mt-16 xl:mt-24",
-    featureItem: "mt-6",
-    featureTitle: "text-lg font-medium text-gray-900",
-    featureText: "mt-4 text-sm font-normal text-gray-600",
-    featureLink:
-      "text-sm font-semibold text-blue-600 transition-all duration-200 hover:text-blue-800 hover:underline",
-    imageContainer:
-      "grid p-6 bg-blue-100 lg:order-1 lg:col-span-3 rounded-3xl place-items-center",
-  };
-
   const features = [
     {
       title: "Unlimited Resources",
@@ -36,55 +13,62 @@ function Feature3() {
     {
       title: "Figma Included",
       text: "Access the Figma file for seamless design collaboration.",
-      linkText: "Access to Figma File",
+      linkText: "Access Figma File",
       linkHref: "#",
     },
   ];
 
   return (
-    <section className={commonStyles.section}>
-      <div className={commonStyles.container}>
-        <div className={commonStyles.grid}>
-          <div className={commonStyles.content}>
-            <h2 className={commonStyles.title}>
-              Auraui is here to simplify your web development journey.
+    <section className="py-16 bg-white lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-7 gap-x-20 gap-y-12 items-center">
+          {/* Left Text Content */}
+          <div className="lg:col-span-4">
+            <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
+              Simplify your web development with Auraui.
             </h2>
-            <p className={commonStyles.description}>
-              Auraui equips you with the blocks and components you need to build
-              professional websites, landing pages, and admin panels with ease.
+            <p className="text-lg text-gray-600 mb-8">
+              Build websites, landing pages, and admin panels faster with a
+              library of components designed for professionals.
             </p>
-            <div className={commonStyles.buttonContainer}>
-              <a href="#" className={commonStyles.button} role="button">
-                Start using Auraui
-              </a>
-            </div>
 
-            <div className={commonStyles.featuresGrid}>
+            <a
+              href="#"
+              className="inline-block rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-200"
+            >
+              🚀 Start using Auraui
+            </a>
+
+            {/* Features */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 pt-8 border-t border-gray-200">
               {features.map((feature, index) => (
                 <div key={index}>
-                  <h3 className={commonStyles.featureTitle}>{feature.title}</h3>
-                  <p className={commonStyles.featureText}>{feature.text}</p>
-                  <div className={commonStyles.featureItem}>
-                    <Link
-                      href={feature.linkHref}
-                      className={commonStyles.featureLink}
-                    >
-                      {feature.linkText}
-                    </Link>
-                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-2">{feature.text}</p>
+                  <Link
+                    href={feature.linkHref}
+                    className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >
+                    {feature.linkText}
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className={commonStyles.imageContainer}>
-            <Image
-              className="w-full shadow-xl rounded-xl sm:max-w-xs"
-              src="https://www.auraui.com/images/women.jpg"
-              alt="Auraui Feature"
-              width={400}
-              height={300}
-            />
+          {/* Right Image */}
+          <div className="lg:col-span-3">
+            <div className="rounded-3xl overflow-hidden shadow-xl">
+              <Image
+                src="https://plus.unsplash.com/premium_photo-1679082305850-63541e846a4a?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Focused woman working on laptop"
+                width={400}
+                height={600}
+                className="rounded-3xl w-full h-auto object-cover shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </div>
