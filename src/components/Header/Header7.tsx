@@ -12,11 +12,11 @@ const Header7 = () => {
     <header className="bg-[#1a1d24]  w-full z-50">
       <div className="max-w-[1300px] mx-auto flex items-center justify-between py-2 px-4">
         {/* Logo */}
-        <a href="/" className="w-[160px] h-[73px]">
+        <a href="#" className="flex items-center space-x-2">
           <img
-            src="https://genai-xzgd.vercel.app/logo.svg"
-            alt="GenAI Logo"
-            className="w-full h-full"
+            className="w-auto h-8"
+            src="https://www.auraui.com/logo-dark.png"
+            alt="AuraUI Logo"
           />
         </a>
 
@@ -31,7 +31,7 @@ const Header7 = () => {
               >
                 {item}
               </a>
-            )
+            ),
           )}
           <button className="px-6 py-3 rounded-md border-2 border-yellow-200 text-yellow-200 hover:bg-yellow-300 hover:text-black font-medium transition duration-200">
             Get Started
@@ -60,7 +60,7 @@ const Header7 = () => {
                 >
                   {item}
                 </a>
-              )
+              ),
             )}
             <button className="px-6 py-2 mt-4 border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black transition duration-200">
               Get Started

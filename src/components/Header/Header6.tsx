@@ -38,11 +38,13 @@ const Header6: React.FC = () => {
       }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
-        <Link href="/#home">
-          <h1 className="text-3xl hover:text-green-500 lg:text-4xl font-bold underline underline-offset-2 tracking-wider cursor-pointer">
-            AuraUI
-          </h1>
-        </Link>
+        <a href="#" className="flex items-center space-x-2">
+          <img
+            className="w-auto h-8"
+            src="https://www.auraui.com/logo-dark.png"
+            alt="AuraUI Logo"
+          />
+        </a>
         <div>
           <ul className="hidden md:flex">
             {links.map(({ id, link }) => (

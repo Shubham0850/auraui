@@ -22,9 +22,13 @@ const Header5 = () => {
     <header className=" top-0 w-full bg-black text-white shadow-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold">
-          ⚡️ Aura<b>UI</b>
-        </Link>
+        <a href="#" className="flex items-center space-x-2">
+          <img
+            className="w-auto h-8"
+            src="https://www.auraui.com/logo-dark.png"
+            alt="AuraUI Logo"
+          />
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8">
