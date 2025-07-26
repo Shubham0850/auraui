@@ -68,7 +68,7 @@ function AllLoading() {
             </div>
 
             {/* Copy button */}
-            <div className="bg-gray-200 pr-3 py-1 font-medium flex items-center dark:bg-customDark rounded-lg">
+            <div className="bg-gray-200 pr-2 py-1 font-medium flex items-center dark:bg-customDark rounded-lg">
               <button
                 className="text-black dark:text-white flex items-center justify-center px-4 py-1"
                 onClick={() =>
@@ -78,13 +78,13 @@ function AllLoading() {
               >
                 {copiedIndex === i ? (
                   <>
-                    <FaCheck className="text-green-500 mr-2" />
-                    Copied!
+                    <FaCheck className="text-green-500 mr-1 text-sm" />
+                    <span className="text-sm">Copied</span>
                   </>
                 ) : (
                   <>
-                    <FiCopy className="mr-2" />
-                    Code
+                    <FiCopy className="mr-1 text-sm" />
+                    <span className="text-sm">Code</span>
                   </>
                 )}
               </button>
