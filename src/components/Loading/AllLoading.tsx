@@ -2,13 +2,15 @@ import { fetchSourceCode } from "@/utils/getSourceCode";
 import React, { useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FiCopy } from "react-icons/fi";
+import { useTheme } from "next-themes";
 
 function AllLoading() {
   const [loadingIndex, setLoadingIndex] = useState<number | null>(null);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
-  const [components, setComponents] = useState<(React.ComponentType | null)[]>(
-    Array(30).fill(null),
-  );
+  const [components, setComponents] = useState<
+    (React.ComponentType<any> | null)[]
+  >(Array(30).fill(null));
+  const { resolvedTheme } = useTheme(); // <-- if using next-themes
 
   const fetchAndCopyCode = async (componentPath: string, index: number) => {
     setLoadingIndex(index);
@@ -48,14 +50,21 @@ function AllLoading() {
     loadComponents();
   }, []);
 
+  const dynamicColor = resolvedTheme === "dark" ? "white" : "black";
+  const bgOpacity = resolvedTheme === "dark" ? 0.05 : 0.1;
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-10 gap-10">
       {components.map((Component, i) => (
         <div key={i} className="flex justify-center items-center p-5">
           <div className="flex flex-col items-center gap-y-6 h-max">
-            {/* Fixed-size wrapper for consistent loader alignment */}
+            {/* Loader */}
             <div className="h-24 w-full flex items-center justify-center">
-              {Component ? <Component /> : <div>Loading failed</div>}
+              {Component ? (
+                <Component color={dynamicColor} bgOpacity={bgOpacity} />
+              ) : (
+                <div>Loading failed</div>
+              )}
             </div>
 
             {/* Copy button */}
