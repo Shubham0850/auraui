@@ -1,70 +1,76 @@
 import React from "react";
-import { FaCopy, FaCogs, FaHeart } from "react-icons/fa"; // Import icons from react-icons
+import { FaCopy, FaCogs, FaHeart } from "react-icons/fa";
+
+const features = [
+  {
+    icon: <FaCopy className="w-6 h-6 text-green-600" />,
+    title: "Simply Copy & Paste",
+    description:
+      "Auraui provides ready-to-use components that can be easily integrated into your project, saving time and effort.",
+    bg: "bg-green-100",
+  },
+
+  {
+    icon: <FaHeart className="w-6 h-6 text-red-500" />,
+    title: "Built with Love and TailwindCSS",
+    description:
+      "Crafted with precision, Auraui uses TailwindCSS to deliver modern, responsive, and flexible components.",
+    bg: "bg-red-100",
+  },
+];
 
 const Feature17: React.FC = () => {
   return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-sm font-semibold tracking-widest text-blue-600 uppercase">
+    <section className="py-16 bg-gray-50 sm:py-20 lg:py-28">
+      <div className="max-w-7xl px-6 mx-auto lg:px-12">
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-sm font-semibold tracking-wide text-blue-600 uppercase">
             130+ Custom UI Components
           </p>
-          <h2 className="mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Auraui helps you build stunning, modern interfaces
+          <h2 className="mt-4 text-4xl font-extrabold leading-tight text-black">
+            auraui helps you build
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+              stunning, modern interfaces
+            </span>
           </h2>
         </div>
 
-        <div className="grid items-center grid-cols-1 mt-12 gap-y-10 lg:grid-cols-5 sm:mt-20 gap-x-4">
-          {/* Left Section */}
-          <div className="space-y-8 lg:pr-16 xl:pr-24 lg:col-span-2 lg:space-y-12">
-            <div className="flex items-start">
-              <FaCopy className="flex-shrink-0 text-green-500 w-9 h-9" />{" "}
-              <div className="ml-5">
-                <h3 className="text-xl font-semibold text-black">
-                  Simply Copy & Paste
-                </h3>
-                <p className="mt-3 text-base text-gray-600">
-                  Auraui provides ready-to-use components that can easily be
-                  copied and integrated into your project, saving time and
-                  effort.
-                </p>
+        {/* Content */}
+        <div className="grid items-center gap-12 mt-16 lg:grid-cols-5">
+          {/* Features List */}
+          <div className="space-y-10 lg:col-span-2">
+            {features.map((feature, idx) => (
+              <div
+                key={idx}
+                className="flex items-start gap-5 p-5 rounded-xl bg-gray-100 shadow-lg hover:bg-gray-200 transition duration-300"
+              >
+                <div className="flex items-center justify-center w-12 h-12">
+                  <div
+                    className={`w-10 h-10 flex items-center justify-center rounded-full ${feature.bg}`}
+                  >
+                    {feature.icon}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-black">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-2 text-gray-600 text-base leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="flex items-start">
-              <FaCogs className="flex-shrink-0 text-blue-600 w-9 h-9" />{" "}
-              <div className="ml-5">
-                <h3 className="text-xl font-semibold text-black">
-                  Easy to Customize
-                </h3>
-                <p className="mt-3 text-base text-gray-600">
-                  Auraui&apos;s components are highly customizable, allowing
-                  developers to easily adapt them to fit any design or brand
-                  requirement.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <FaHeart className="flex-shrink-0 text-red-500 w-9 h-9" />{" "}
-              <div className="ml-5">
-                <h3 className="text-xl font-semibold text-black">
-                  Built with Love and TailwindCSS
-                </h3>
-                <p className="mt-3 text-base text-gray-600">
-                  Auraui is crafted with precision, using TailwindCSS to deliver
-                  modern, responsive, and flexible components for developers.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
 
-          {/* Right Section */}
+          {/* Image Section */}
           <div className="lg:col-span-3">
             <img
-              className="w-full rounded-lg shadow-xl"
-              src="https://www.auraui.com/images/analytic_image.avif"
-              alt="Auraui Dashboard"
+              src="https://images.unsplash.com/photo-1659018966825-43297e655ccf?q=80&w=2098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Auraui dashboard preview"
+              className="w-full rounded-xl shadow-2xl object-cover"
             />
           </div>
         </div>

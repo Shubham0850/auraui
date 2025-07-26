@@ -16,7 +16,7 @@ const Feature16: React.FC = () => {
             <div className="overflow-hidden relative aspect-w-3 aspect-h-4">
               <Image
                 className="object-cover object-top origin-top"
-                src="https://www.auraui.com/memeimage/laptop-working-men.jpg"
+                src="https://images.unsplash.com/photo-1653035212611-de3d136086a8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Teamwork at Auraui"
                 layout="responsive"
                 width={400}
@@ -40,11 +40,17 @@ const Feature16: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="flex flex-col items-start xl:px-16">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-              Scale your business with Auraui.
+          <div className="flex flex-col items-start">
+            <h2 className="text-4xl font-extrabold text-black sm:text-5xl leading-tight tracking-tight">
+              Scale your business
+              <br />
+              with{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                auraui
+              </span>
+              .
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-gray-600">
+            <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
               Auraui empowers developers to build fast, scalable, and elegant
               frontend applications. Harness the power of modern UI components
               and deliver top-notch user experiences with ease.
@@ -52,11 +58,11 @@ const Feature16: React.FC = () => {
 
             <a
               href="#"
-              className={`${commonStyles} bg-gradient-to-r from-fuchsia-600 to-blue-600 lg:mt-auto`}
+              className={`${commonStyles} bg-gradient-to-r from-fuchsia-600 to-blue-600 shadow-md`}
               role="button"
             >
               Get started now
-              <FaPlay className="w-5 h-5 ml-8 -mr-1" />
+              <FaPlay className="w-5 h-5 ml-3" />
             </a>
           </div>
         </div>
