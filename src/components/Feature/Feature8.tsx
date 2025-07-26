@@ -4,25 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 const commonStyles = {
-  section: "py-12 sm:py-16 lg:py-20 bg-black",
-  container: "px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl",
-  heading: "tracking-tighter text-white text-center sm:text-left",
-  titlePrimary: "font-sans text-4xl md:text-6xl",
-  titleSecondary: "font-serif text-5xl italic md:text-7xl",
+  section: "py-20 bg-black ",
+  container: "max-w-7xl mx-auto px-6 sm:px-8 lg:px-12",
+  heading: "text-center sm:text-left",
+  titlePrimary: "block font-sans text-4xl md:text-5xl text-white",
+  titleSecondary:
+    "block font-serif italic text-5xl md:text-6xl text-white mt-2",
   description:
-    "max-w-2xl mx-auto mt-6 font-sans text-lg font-normal leading-8 text-opacity-50 lg:mt-8 text-white",
+    "mt-6 text-lg text-gray-400 leading-7 max-w-3xl mx-auto sm:mx-0 sm:mt-8",
   featureCard:
-    "relative overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray group",
-  featureImageContainer: "overflow-hidden aspect-w-16 aspect-h-9",
+    "relative group overflow-hidden rounded-xl border border-neutral bg-[#111111] transition-all duration-300 hover:shadow-xl hover:border-gray-700",
+  featureImageContainer: "relative w-full aspect-[16/10] overflow-hidden",
   featureImage:
-    "object-cover w-full h-full transition-all duration-300 transform group-hover:scale-125",
-  featureContent: "p-6 xl:px-8 xl:py-6",
-  featureTitle: "font-sans text-2xl font-normal text-white",
-  featureText: "mt-2 text-lg font-normal text-opacity-50 text-white",
+    "object-cover transition-transform duration-500 group-hover:scale-110",
+  featureContent: "p-6 text-left",
+  featureTitle: "text-white text-2xl font-semibold",
+  featureText: "mt-3 text-base text-gray-400",
   readMore:
-    "inline-flex items-center justify-center mt-10 font-sans text-base font-normal text-white",
+    "inline-flex items-center gap-2 text-sm font-medium mt-5 text-white hover:underline transition",
+  arrowIcon:
+    "w-5 h-5 ml-1 transition-transform duration-300 group-hover:translate-x-1",
   exploreButton:
-    "inline-flex items-center justify-center px-5 py-2 font-sans text-base font-semibold transition-all duration-200 border-2 border-transparent rounded-full sm:leading-8 bg-white sm:text-lg text-black hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-secondary",
+    "inline-flex items-center justify-center px-6 py-3 mt-12 text-lg font-semibold text-black bg-white rounded-full hover:bg-opacity-90 transition",
 };
 
 const features = [
@@ -47,6 +50,7 @@ const Feature8: React.FC = () => {
   return (
     <section className={commonStyles.section}>
       <div className={commonStyles.container}>
+        {/* Heading */}
         <div className={commonStyles.heading}>
           <h2>
             <span className={commonStyles.titlePrimary}>
@@ -63,15 +67,16 @@ const Feature8: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid max-w-md grid-cols-1 gap-5 mx-auto mt-16 text-center lg:grid-cols-3 lg:max-w-none">
+        {/* Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {features.map((feature, index) => (
             <div key={index} className={commonStyles.featureCard}>
               <div className={commonStyles.featureImageContainer}>
                 <Image
-                  className={commonStyles.featureImage}
                   src={feature.image}
                   alt={feature.title}
                   layout="fill"
+                  className={commonStyles.featureImage}
                 />
               </div>
               <div className={commonStyles.featureContent}>
@@ -79,25 +84,19 @@ const Feature8: React.FC = () => {
                 <p className={commonStyles.featureText}>
                   {feature.description}
                 </p>
-                <Link href="#" title="Read More" className={commonStyles.readMore}>
+                <Link href="#" className={commonStyles.readMore}>
                   Read More
-                  <div className="inline-flex items-center justify-center w-8 h-8 ml-2 transition-all duration-200 bg-transparent rounded-full group-hover:bg-neutral">
-                    <FaArrowRight className="w-6 h-6" />
-                  </div>
+                  <FaArrowRight className={commonStyles.arrowIcon} />
                 </Link>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 text-center">
-          <Link
-            href="#"
-            title="Explore All"
-            className={commonStyles.exploreButton}
-          >
-            Explore All
-            <FaArrowRight className="w-6 h-6 ml-2" />
+        {/* CTA Button */}
+        <div className="text-center">
+          <Link href="#" className={commonStyles.exploreButton}>
+            Explore All <FaArrowRight className="ml-2 w-3 h-3" />
           </Link>
         </div>
       </div>

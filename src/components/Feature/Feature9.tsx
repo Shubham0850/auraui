@@ -1,76 +1,72 @@
 import React from "react";
 import Image from "next/image";
-import { FaTasks, FaCloud } from "react-icons/fa";
-
-const commonStyles = {
-  section: "py-12 bg-gray-50 sm:py-16 lg:py-20",
-  container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
-  headingContainer: "max-w-xl mx-auto text-center xl:max-w-3xl",
-  heading: "text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj",
-  description:
-    "max-w-xl mx-auto mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj",
-  relativeWrapper: "relative mt-8 sm:mt-16 md:max-w-md md:mx-auto",
-  overlay:
-    "absolute inset-0 w-full h-full max-w-lg rotate-180 opacity-30 blur-lg filter",
-  textContainer:
-    "flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-16",
-  textBox: "flex items-center",
-  textMain: "text-4xl font-medium text-gray-900 font-pj",
-  textSub: "ml-5 text-sm text-gray-900 font-pj",
-  imageContainer: "max-w-4xl mx-auto mt-10 sm:mt-16",
-  image: "w-full rounded-sm",
-};
+import { FaTasks, FaCloud, FaUsers } from "react-icons/fa";
 
 const Feature9: React.FC = () => {
   return (
-    <section className={commonStyles.section}>
-      <div className={commonStyles.container}>
-        <div className={commonStyles.headingContainer}>
-          <h2 className={commonStyles.heading}>
-            Build your solid team with the perfect time management
+    <section className="bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Heading */}
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-sm font-semibold text-blue-500 uppercase tracking-wide">
+            Productivity Suite
+          </p>
+          <h2 className="mt-2 text-4xl sm:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight">
+            Build your solid team
           </h2>
-          <p className={commonStyles.description}>
-            Auraui enhances your team&apos;s productivity with effortless task
-            management and robust cloud storage solutions. Keep your team
-            organized and your projects on track.
+          <p className="mt-6 text-sm text-gray-600 leading-relaxed max-w-xl mx-auto">
+            Auraui enhances your team's workflow with effortless task
+            management, centralized cloud storage, and built-in collaboration
+            tools to keep everything aligned and efficient.
           </p>
         </div>
 
-        <div className={commonStyles.relativeWrapper}>
-          <div
-            className={commonStyles.overlay}
-            style={{
-              background:
-                "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
-            }}
-          ></div>
-
-          <div className={commonStyles.textContainer}>
-            <div className={commonStyles.textBox}>
-              <FaTasks className={commonStyles.textMain} />
-              <div className={commonStyles.textSub}>
-                <p>Unlimited</p>
-                <p>Task Creation</p>
-              </div>
+        {/* Stat Cards */}
+        <div className="relative mt-14 flex flex-col sm:flex-row justify-center items-center gap-8 px-8 py-6 rounded-2xl bg-gradient-to-r from-[#fef2f2] via-[#e0f2fe] to-[#dcfce7] shadow-md max-w-3xl mx-auto">
+          {/* Task Creation */}
+          <div className="flex items-center gap-4">
+            <div className="bg-white text-blue-600 p-4 rounded-full shadow-md text-xl">
+              <FaTasks />
             </div>
+            <div>
+              <p className="text-base font-semibold text-gray-800">Unlimited</p>
+              <p className="text-sm text-gray-600">Task Creation</p>
+            </div>
+          </div>
 
-            <div className={`${commonStyles.textBox} mt-6 sm:mt-0`}>
-              <FaCloud className={commonStyles.textMain} />
-              <div className={commonStyles.textSub}>
-                <p>100GB+</p>
-                <p>Cloud Storage</p>
-              </div>
+          {/* Cloud Storage */}
+          <div className="flex items-center gap-4">
+            <div className="bg-white text-indigo-600 p-4 rounded-full shadow-md text-xl">
+              <FaCloud />
+            </div>
+            <div>
+              <p className="text-base font-semibold text-gray-800">100GB+</p>
+              <p className="text-sm text-gray-600">Cloud Storage</p>
+            </div>
+          </div>
+
+          {/* Team Collaboration */}
+          <div className="flex items-center gap-4">
+            <div className="bg-white text-emerald-600 p-4 rounded-full shadow-md text-xl">
+              <FaUsers />
+            </div>
+            <div>
+              <p className="text-base font-semibold text-gray-800">
+                Collaboration
+              </p>
+              <p className="text-sm text-gray-600">Real-time Teamwork</p>
             </div>
           </div>
         </div>
 
-        <div className={commonStyles.imageContainer}>
+        {/* Team Image */}
+        <div className="mt-14 max-w-2xl mx-auto overflow-hidden rounded-xl shadow-lg">
           <Image
-            className={commonStyles.image}
             src="https://www.auraui.com/images/team.jpg"
-            alt="Feature illustration"
-            width={1200}
-            height={800}
+            alt="Team productivity illustration"
+            width={800}
+            height={480}
+            className="w-full object-cover"
           />
         </div>
       </div>
