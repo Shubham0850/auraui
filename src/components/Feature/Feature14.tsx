@@ -1,79 +1,38 @@
 import React from "react";
-import { FaUser } from "react-icons/fa";
-import { FaLaptopCode } from "react-icons/fa";
+import { FaUser, FaLaptopCode } from "react-icons/fa";
 import { IoIosVideocam } from "react-icons/io";
 import { RiSecurePaymentFill } from "react-icons/ri";
 
 const Feature14 = () => {
-  const sectionStyles = "py-10 bg-gray-50 sm:py-16 lg:py-24";
-  const containerStyles = "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8";
-  const textCenterStyles = "text-center";
-  const headingStyles =
-    "text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl";
-  const cardContainerStyles = "px-5 py-8 mt-12 bg-white lg:mt-20 lg:p-16";
-  const gridStyles = "grid grid-cols-1 gap-12 lg:gap-16 sm:grid-cols-2";
-  const iconStyles = "flex-shrink-0 w-16 h-16 text-fuchsia-600";
-  const cardTextContainerStyles = "ml-5";
-  const cardHeadingStyles = "text-lg font-semibold text-black";
-  const cardParagraphStyles = "mt-4 text-base text-gray-600";
-
-  const cards = [
-    {
-      icon: (
-        <>
-          <FaUser className="flex-shrink-0 w-16 h-16 text-fuchsia-600 " />
-        </>
-      ),
-      title: "Made for Developers",
-      description:
-        "AuraUI provides a library of components designed to make your development process faster and easier. Whether you are building a small project or a large-scale application, our components are here to help.",
-    },
-    {
-      icon: (
-        <>
-          <IoIosVideocam className="flex-shrink-0 w-16 h-16 text-fuchsia-600" />
-        </>
-      ),
-      title: "Helpful Video Tutorials",
-      description:
-        "We offer a collection of video tutorials to help you get started quickly with AuraUI. From basic setup to advanced usage, our tutorials cover everything you need to know.",
-    },
-    {
-      icon: (
-        <>
-          <FaLaptopCode className="flex-shrink-0 w-16 h-16 text-fuchsia-600" />
-        </>
-      ),
-      title: "120+ Coded Blocks",
-      description:
-        "Our library includes over 120 pre-coded blocks, making it easy to build complex layouts and designs quickly. Each block is optimized for performance and responsiveness.",
-    },
-    {
-      icon: (
-        <>
-          <RiSecurePaymentFill className="flex-shrink-0 w-16 h-16 text-fuchsia-600" />
-        </>
-      ),
-      title: "Secured Payments",
-      description:
-        "We prioritize your security. AuraUI ensures that all transactions are secure, giving you peace of mind while you focus on building your projects.",
-    },
-  ];
-
   return (
-    <section className={sectionStyles}>
-      <div className={containerStyles}>
-        <div className={textCenterStyles}>
-          <h2 className={headingStyles}>3,583 Customers are using AuraUI</h2>
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Section Heading */}
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold text-gray-300 tracking-tight">
+            3,583 Customers are using{" "}
+            <span className="text-fuchsia-600 text-6xl">auraUI</span>
+          </h2>
         </div>
-        <div className={cardContainerStyles}>
-          <div className={gridStyles}>
+
+        {/* Feature Cards */}
+        <div className="mt-14 bg-gradient-to-br from-white via-fuchsia-50 to-white rounded-xl shadow-md px-6 py-12 lg:p-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 lg:gap-16">
             {cards.map((card, index) => (
-              <div className="flex items-start" key={index}>
-                {card.icon}
-                <div className={cardTextContainerStyles}>
-                  <h3 className={cardHeadingStyles}>{card.title}</h3>
-                  <p className={cardParagraphStyles}>{card.description}</p>
+              <div
+                key={index}
+                className="flex items-start group transition-transform hover:-translate-y-1"
+              >
+                <div className="min-w-[64px] min-h-[64px] bg-fuchsia-100 text-fuchsia-600 rounded-full shadow-sm flex items-center justify-center transition group-hover:bg-fuchsia-200">
+                  {card.icon}
+                </div>
+                <div className="ml-5">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    {card.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-gray-600 leading-relaxed">
+                    {card.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -83,5 +42,33 @@ const Feature14 = () => {
     </section>
   );
 };
+
+// Feature Cards Content
+const cards = [
+  {
+    icon: <FaUser className="w-6 h-6" />,
+    title: "Made for Developers",
+    description:
+      "AuraUI provides a library of components to streamline development. Whether you're building a small app or a scalable SaaS product, we’ve got you covered.",
+  },
+  {
+    icon: <IoIosVideocam className="w-6 h-6" />,
+    title: "Helpful Video Tutorials",
+    description:
+      "From basic setup to advanced workflows, our bite-sized video tutorials help you get up and running quickly and confidently.",
+  },
+  {
+    icon: <FaLaptopCode className="w-6 h-6" />,
+    title: "120+ Coded Blocks",
+    description:
+      "With 120+ carefully built blocks, you can create layouts in minutes and skip the boilerplate without sacrificing flexibility.",
+  },
+  {
+    icon: <RiSecurePaymentFill className="w-6 h-6" />,
+    title: "Secured Payments",
+    description:
+      "Built-in security ensures safe transactions, encrypted communication, and peace of mind for you and your customers.",
+  },
+];
 
 export default Feature14;

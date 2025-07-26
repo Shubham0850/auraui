@@ -1,5 +1,12 @@
 import React from "react";
-import { FaFingerprint, FaBolt, FaMoon, FaShieldAlt } from "react-icons/fa";
+import {
+  FaFingerprint,
+  FaBolt,
+  FaMoon,
+  FaHeadset,
+  FaShieldAlt,
+  FaSlidersH,
+} from "react-icons/fa";
 
 type FeatureProps = {
   icon: React.ReactNode;
@@ -9,76 +16,60 @@ type FeatureProps = {
 
 const features: FeatureProps[] = [
   {
-    icon: <FaFingerprint className="text-blue-600 w-7 h-7" />,
+    icon: <FaFingerprint className="w-6 h-6 text-indigo-600" />,
     title: "Reliable Transfers",
     description:
-      "Enjoy seamless and secure money transfers with our state-of-the-art technology ensuring your transactions are always safe and efficient.",
+      "Seamless, secure money transfers powered by cutting-edge encryption, ensuring safety and speed.",
   },
   {
-    icon: <FaBolt className="text-orange-600 w-8 h-8" />,
+    icon: <FaBolt className="w-6 h-6 text-yellow-500" />,
     title: "Instant Notifications",
     description:
-      "Stay informed with instant notifications on your account activity, ensuring you are always aware of your financial transactions.",
+      "Stay updated with real-time alerts about your account activity and financial updates.",
   },
   {
-    icon: <FaMoon className="text-green-600 w-8 h-8" />,
+    icon: <FaMoon className="w-6 h-6 text-green-500" />,
     title: "User-Friendly Interface",
     description:
-      "Experience our intuitive and easy-to-use interface designed to provide a smooth and enjoyable user experience for all your payment needs.",
+      "Our intuitive design offers a smooth and enjoyable experience across all devices.",
   },
   {
-    icon: <FaMoon className="text-purple-600 w-8 h-8" />,
+    icon: <FaHeadset className="w-6 h-6 text-purple-500" />,
     title: "24/7 Support",
     description:
-      "Get assistance anytime with our dedicated 24/7 support team, always ready to help you with any issues or inquiries you may have.",
+      "Our dedicated team is here around the clock to help you with any issues you encounter.",
   },
   {
-    icon: (
-      <svg
-        className="text-gray-600 w-9 h-9"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          d="M15 10l4.553-2.276A2 2 0 0122 9.618v4.764a2 2 0 01-2.447 1.894L15 14m0-4v8m0-8L9.447 7.724A2 2 0 008 9.618v4.764a2 2 0 001.553 1.894L15 14m0-4H9m6 0v8m0-8L9 14"
-        />
-      </svg>
-    ),
+    icon: <FaSlidersH className="w-6 h-6 text-gray-600" />,
     title: "Customizable Plans",
     description:
-      "Choose from a variety of plans and customize them to suit your specific business needs, ensuring you only pay for what you use.",
+      "Select from flexible plans tailored to your business goals and user expectations.",
   },
   {
-    icon: <FaShieldAlt className="text-yellow-600 w-8 h-8" />,
+    icon: <FaShieldAlt className="w-6 h-6 text-red-500" />,
     title: "Advanced Security",
     description:
-      "Protect your transactions with our advanced security protocols and encryption, ensuring your data is always secure.",
+      "Your data is protected with the highest-grade protocols and end-to-end encryption.",
   },
 ];
 
-const commonStyle = "relative flex items-center justify-center mx-auto";
-
 const Feature13: React.FC = () => {
   return (
-    <section className="py-10 bg-white sm:py-16 lg:py-24">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
+    <section className="py-16 bg-white">
+      <div className="px-6 mx-auto max-w-7xl sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-14">
           {features.map((feature, index) => (
-            <div key={index}>
-              <div className={commonStyle}>
-                <div className="bg-gray-100 w-16 h-16 flex items-center justify-center rounded-full">
-                  {feature.icon}
-                </div>
+            <div
+              key={index}
+              className="transition-transform transform hover:scale-105"
+            >
+              <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-gray-100 shadow-sm">
+                {feature.icon}
               </div>
-              <h3 className="mt-8 text-lg font-semibold text-black">
+              <h3 className="mt-6 text-lg font-semibold text-gray-900">
                 {feature.title}
               </h3>
-              <p className="mt-4 text-base text-gray-600">
+              <p className="mt-3 text-sm text-gray-600 leading-relaxed px-2">
                 {feature.description}
               </p>
             </div>
