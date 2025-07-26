@@ -3,41 +3,47 @@ import { FiSettings, FiFilter, FiBarChart } from "react-icons/fi";
 
 function Feature19() {
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-base font-semibold text-blue-600">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl px-6 mx-auto sm:px-10">
+        {/* Heading */}
+        <div className="text-center max-w-4xl mx-auto">
+          <p className="text-sm font-semibold tracking-wider text-blue-600 uppercase">
             Say hello to Auraui
           </p>
-          <h2 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 lg:mt-8 sm:text-3xl lg:text-4xl">
-            Auraui provides the building blocks & components you need to create
+          <h2 className="mt-4 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            auraUI provides the building blocks & components you need to create
             a stunning and professional web experience.
           </h2>
+        </div>
 
-          <div className="flex justify-center mt-12 sm:mt-16">
-            <div className="flex flex-col items-center justify-center flex-1 pt-8 space-y-6 border-t border-gray-200 lg:inline-flex md:flex-row md:space-y-0 lg:space-x-12 md:space-x-10">
-              <div className="flex items-center">
-                <FiSettings className="w-6 h-6 text-blue-600" />
-                <h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">
-                  Easily customize with Auraui
-                </h3>
+        {/* Feature List */}
+        <div className="flex flex-col items-center justify-between max-w-4xl mx-auto mt-14 space-y-10 border-t pt-10 sm:flex-row sm:space-y-0 sm:space-x-8 border-gray-200">
+          {[
+            {
+              icon: <FiSettings className="w-5 h-5 text-blue-600" />,
+              label: "Easily customize with Auraui",
+            },
+            {
+              icon: <FiFilter className="w-5 h-5 text-blue-600" />,
+              label: "Filter components efficiently",
+            },
+            {
+              icon: <FiBarChart className="w-5 h-5 text-blue-600" />,
+              label: "Get insights with detailed reports",
+            },
+          ].map((feature, idx) => (
+            <div
+              key={idx}
+              className="flex items-center gap-4 text-center sm:text-left"
+            >
+              <div className="p-3 bg-blue-50 rounded-full shadow-sm">
+                {feature.icon}
               </div>
-
-              <div className="flex items-center">
-                <FiFilter className="w-6 h-6 text-blue-600" />
-                <h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">
-                  Filter components efficiently
-                </h3>
-              </div>
-
-              <div className="flex items-center">
-                <FiBarChart className="w-6 h-6 text-blue-600" />
-                <h3 className="ml-2 text-base font-medium text-gray-900 lg:text-lg">
-                  Get insights with detailed reports
-                </h3>
-              </div>
+              <h3 className="text-base font-medium text-gray-800 leading-snug sm:text-lg">
+                {feature.label}
+              </h3>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
