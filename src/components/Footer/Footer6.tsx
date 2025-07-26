@@ -12,12 +12,13 @@ const Footer6 = () => {
         <div className="flex flex-wrap  justify-between">
           {/* Logo and Description */}
           <div className="w-full lg:w-1/4 mb-8 md:mb-0">
-            <Image
-              src="https://genai-xzgd.vercel.app/logo.svg"
-              alt="logo"
-              width={150}
-              height={300}
-            />
+            <a href="#" className="flex items-center space-x-2">
+              <img
+                className="w-auto h-8"
+                src="https://www.auraui.com/logo-dark.png"
+                alt="AuraUI Logo"
+              />
+            </a>
             <p className="mt-4 text-sm md:w-[250px] ">
               A Magical Tool to Optimize your content for the first know who
               you&apos;re targeting. Identify your target audience.
