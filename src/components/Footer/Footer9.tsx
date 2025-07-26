@@ -23,28 +23,14 @@ function Footer9() {
               </div>
 
               <div className="flex flex-row gap-4 md:gap-10 pt-20 mb-4 md:mb-0">
-                <Link href="/">
-                  <span className="text-xl text-white font-['PowerGrotesk']">
-                    Home
-                  </span>
-                </Link>
-                <Link href="/#insights">
-                  <span className="text-xl text-white font-['PowerGrotesk']">
-                    Insights
-                  </span>
-                </Link>
-                <Link
-                  href="https://asvaventures.notion.site/Hirings-677d85023d594689978acba8f3cbc8b6"
-                  target="_blank"
-                >
-                  <span className="text-xl text-white font-['PowerGrotesk']">
-                    Career
-                  </span>
-                </Link>
+                <span className="text-md text-white ">Home</span>
+
+                <span className="text-md text-white ">Insights</span>
+
+                <span className="text-md text-white ">Career</span>
+
                 <Link href="/about">
-                  <span className="text-xl text-white font-['PowerGrotesk']">
-                    About
-                  </span>
+                  <span className="text-md text-white ">About</span>
                 </Link>
               </div>
             </div>
@@ -54,22 +40,22 @@ function Footer9() {
               <div>
                 <p className="py-2 text-xl text-white">Contact Us</p>
                 <Link href="mailto:contact@asvaventures.com">
-                  <span className="text-xl text-white underline pb-4 md:pb-0">
+                  <span className="text-xl text-white pb-4 md:pb-0">
                     contact@auraui.com
                   </span>
                 </Link>
               </div>
 
               <div className="flex flex-row items-center gap-6 text-white pt-4 md:pt-20">
-                <p className="text-xl">Follow Us :</p>
+                <p className="text-md">Follow Us :</p>
                 <Link href="/" target="_blank">
-                  <BsTwitter className="text-2xl text-white bg-transparent" />
+                  <BsTwitter className="text-xl text-white bg-transparent" />
                 </Link>
                 <Link href="/" target="_blank">
-                  <BsTelegram className="text-2xl text-white bg-transparent" />
+                  <BsTelegram className="text-xl text-white bg-transparent" />
                 </Link>
                 <Link href="/" target="_blank">
-                  <BsLinkedin className="text-2xl text-white bg-transparent" />
+                  <BsLinkedin className="text-xl text-white bg-transparent" />
                 </Link>
               </div>
             </div>
