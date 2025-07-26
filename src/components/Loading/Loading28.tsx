@@ -1,53 +1,56 @@
-import React from 'react';
-import clsx from 'clsx';
+import React from "react";
+import clsx from "clsx";
 
-const Loading28 = ({ size = 40, color = 'black', speed = '1.75s' }) => {
-  const containerStyles: React.CSSProperties = {
-    // @ts-ignore
-    '--uib-size': `${size}px`,
-    // @ts-ignore
-    '--uib-color': color,
-    // @ts-ignore
-    '--uib-speed': speed,
-    position: 'relative',
-    height: `${size}px`,
-    width: `${size}px`,
-  };
-
-  const pseudoElementStyles: React.CSSProperties = {
-    content: "''",
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    height: '100%',
-    width: '100%',
-    borderRadius: '50%',
-    backgroundColor: color,
-    animation: `pulse ${speed} ease-in-out infinite`,
-    transform: 'scale(0)',
-    transition: 'background-color 0.3s ease',
-  };
-
+const Loading28 = ({
+  size = 40,
+  color = "black",
+  speed = "1.75s",
+}: {
+  size?: number;
+  color?: string;
+  speed?: string;
+}) => {
   return (
-    <div className={clsx('loading28-container')} style={containerStyles}>
+    <div
+      className={clsx("loading28-container")}
+      style={
+        {
+          "--uib-size": `${size}px`,
+          "--uib-color": color,
+          "--uib-speed": speed,
+          height: `${size}px`,
+          width: `${size}px`,
+        } as React.CSSProperties
+      }
+    >
+      <div className="pulse-circle ring1" />
+      <div className="pulse-circle ring2" />
+
       <style jsx>{`
-        .loading28-container::before {
-          ${Object.entries(pseudoElementStyles)
-            .map(([key, value]) => `${key}: ${value};`)
-            .join(' ')}
+        .loading28-container {
+          position: relative;
         }
 
-        .loading28-container::after {
-          ${Object.entries({
-            ...pseudoElementStyles,
-            animationDelay: `calc(${speed} / -2)`,
-          })
-            .map(([key, value]) => `${key}: ${value};`)
-            .join(' ')}
+        .pulse-circle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          background-color: var(--uib-color);
+          animation: pulse var(--uib-speed) ease-in-out infinite;
+          transform: scale(0);
+          transition: background-color 0.3s ease;
+        }
+
+        .pulse-circle.ring2 {
+          animation-delay: calc(var(--uib-speed) / -2);
         }
 
         @keyframes pulse {
-          0%, 100% {
+          0%,
+          100% {
             transform: scale(0);
             opacity: 1;
           }

@@ -7,7 +7,7 @@ function AllLoading() {
   const [loadingIndex, setLoadingIndex] = useState<number | null>(null);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [components, setComponents] = useState<(React.ComponentType | null)[]>(
-    Array(30).fill(null)
+    Array(30).fill(null),
   );
 
   const fetchAndCopyCode = async (componentPath: string, index: number) => {
@@ -40,7 +40,7 @@ function AllLoading() {
             console.error(`Failed to load component Loading${i + 1}:`, error);
             return null;
           }
-        })
+        }),
       );
       setComponents(loadedComponents);
     };
@@ -49,18 +49,22 @@ function AllLoading() {
   }, []);
 
   return (
-    <div className="grid grid-cols-6 p-10 gap-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 p-10 gap-10">
       {components.map((Component, i) => (
-        <div
-          key={i}
-          className="flex justify-center items-center p-5"
-        >
+        <div key={i} className="flex justify-center items-center p-5">
           <div className="flex flex-col items-center gap-y-6 h-max">
-            {Component ? <Component /> : <div>Loading failed</div>}
+            {/* Fixed-size wrapper for consistent loader alignment */}
+            <div className="h-24 w-full flex items-center justify-center">
+              {Component ? <Component /> : <div>Loading failed</div>}
+            </div>
+
+            {/* Copy button */}
             <div className="bg-gray-200 pr-3 py-1 font-medium flex items-center dark:bg-customDark rounded-lg">
               <button
                 className="text-black dark:text-white flex items-center justify-center px-4 py-1"
-                onClick={() => fetchAndCopyCode(`Loading/Loading${i + 1}.tsx`, i)}
+                onClick={() =>
+                  fetchAndCopyCode(`Loading/Loading${i + 1}.tsx`, i)
+                }
                 disabled={loadingIndex === i}
               >
                 {copiedIndex === i ? (
