@@ -1,63 +1,104 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi"; // Importing a React Icon for the arrow
+import { FiArrowRight } from "react-icons/fi";
+import { motion } from "framer-motion";
 
-const commonHeadingStyle = "text-lg font-medium text-gray-900";
-const commonTextStyle =
-  "mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:leading-8";
-const linkStyle =
-  "inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline";
-
-function Feature25() {
+const Feature25 = () => {
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
-          <div className="lg:col-span-5 xl:pr-24">
-            <div className="max-w-lg lg:max-w-none">
-              <p className="text-base font-semibold text-gray-500">
-                Premium UI Kits by Auraui
-              </p>
-              <h2 className="mt-6 text-3xl font-semibold tracking-tight text-gray-900 lg:mt-8 sm:text-4xl lg:text-5xl">
-                Build Modern Web Apps Effortlessly with Auraui
-              </h2>
-              <p className={`${commonTextStyle} lg:pr-24 lg:mt-6`}>
-                Auraui provides you with the components and resources you need
-                to quickly create a professional website, landing page, or
-                dashboard for your web projects.
-              </p>
-            </div>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-12 lg:gap-x-24 items-center">
+          {/* Left Side Content */}
+          <div className="lg:col-span-7">
+            <motion.p
+              className="text-sm font-semibold text-blue-600 tracking-wide uppercase"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              Premium Illustration Kits by Auraui
+            </motion.p>
 
-            <div className="grid grid-cols-1 pt-8 mt-8 border-t border-gray-200 sm:grid-cols-2 md:mt-16 xl:mt-24 gap-x-16 gap-y-8">
-              <h3 className={commonHeadingStyle}>
-                Unlock endless design possibilities and streamline your
-                workflow.
-              </h3>
+            <motion.h2
+              className="mt-4 text-4xl font-bold text-gray-900 sm:text-5xl tracking-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
+            >
+              Build Modern Illustrations Effortlessly with Auraui
+            </motion.h2>
 
-              <h3 className={commonHeadingStyle}>
-                Access 20+ premium Tailwind UI kits and supercharge your product
-                development.
-              </h3>
-            </div>
+            <motion.p
+              className="mt-6 text-lg text-gray-600 leading-relaxed max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
+            >
+              Auraui provides a rich library of customizable illustration kits
+              to help you elevate your projects with style, consistency, and
+              visual delight—no design skills required.
+            </motion.p>
 
-            <div className="mt-12">
-              <a href="#" title="Start using Auraui" className={linkStyle}>
+            {/* Info Cards */}
+            <motion.div
+              className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 border-t border-gray-200 pt-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.7 }}
+            >
+              <div className="space-y-2">
+                <h3 className="text-base font-semibold text-gray-900">
+                  Unlock infinite creative options
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Design and deploy visuals without hassle.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-base font-semibold text-gray-900">
+                  20+ ready-made illustration sets
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Easy to adapt, ready to inspire your users.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* CTA Button */}
+            <motion.div
+              className="mt-10"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+            >
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-white transition bg-blue-600 rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >
                 Start using Auraui
-                <FiArrowRight className="w-5 h-5 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                <FiArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="lg:col-span-3">
-            <img
-              className="w-full xl:h-full xl:object-cover rounded-3xl"
-              src="https://www.auraui.com/images/girl.webp"
-              alt="Auraui UI Kit"
-            />
-          </div>
+          {/* Right Side Image */}
+          <motion.div
+            className="lg:col-span-5"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+          >
+            <div className="overflow-hidden rounded-3xl shadow-xl">
+              <img
+                src="https://images.unsplash.com/vector-1745877548199-be333a72ce94?q=80&w=970&auto=format&fit=crop"
+                alt="Auraui Illustration Kit"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Feature25;
