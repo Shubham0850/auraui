@@ -4,61 +4,55 @@ import Image from "next/image";
 import Link from "next/link";
 
 const commonStyles = {
-  section: "py-12 bg-black sm:py-16 lg:py-20 xl:py-24",
+  section: "py-16 bg-black sm:py-20 lg:py-24",
   container: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
-  heading:
-    "text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl",
-  subHeading: "mt-8 text-xl font-normal text-white",
-  paragraph: "mt-8 text-lg font-normal text-gray-400",
-  hr: "mt-8 border-gray-800 sm:mt-12",
-  listItem: "flex items-start text-lg font-normal text-white",
-  icon: "w-6 h-6 shrink-0 text-cyan-500",
+  heading: "text-4xl font-semibold text-white sm:text-5xl lg:text-6xl",
+  subHeading: "mt-6 text-xl font-normal text-white",
+  paragraph: "mt-6 text-lg text-gray-400",
+  hr: "mt-10 border-gray-800",
+  listItem: "flex items-start text-lg text-white",
+  icon: "w-6 h-6 text-cyan-400 mt-1",
+  buttonWrapper: "mt-10 flex justify-center",
   button:
-    "inline-flex items-center px-5 py-3 text-base font-normal bg-black bg-gradient-to-r from-cyan-500 to-purple-500",
-  buttonText: "ml-4  bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500",
+    "inline-flex items-center px-6 py-3 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-purple-500 hover:opacity-90 transition-all",
 };
 
 const featureItems = [
   "Get unlimited design inspirations. Level up your design.",
   "14+ Premium Tailwind UI kits. Start with unlimited product downloads.",
   "Submit your design. Get extra exposure on works to grow fast.",
+  "Access to community feedback. Improve and iterate faster.",
 ];
 
 const Feature4: React.FC = () => {
   return (
     <section className={commonStyles.section}>
       <div className={commonStyles.container}>
-        <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-7 lg:gap-x-20">
+        <div className="grid grid-cols-1 lg:grid-cols-7 gap-y-12 lg:gap-x-20 items-center">
+          {/* Image */}
           <div className="lg:col-span-3 lg:order-last">
-            <div className="relative overflow-hidden">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
               <Image
-                className="object-cover rounded-md w-full h-full"
-                src="https://www.auraui.com/images/man.webp"
-                alt="Secure Data with Auraui"
-                layout="responsive"
+                src="https://images.unsplash.com/photo-1617518016627-d73dd26e8ab0?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team working creatively"
                 width={500}
-                height={300}
+                height={600}
+                layout="responsive"
+                className="rounded-3xl w-full h-auto object-cover shadow-xl"
               />
-              <div className="absolute bottom-0 left-0">
-                <Link
-                  href="#"
-                  title="Start Securing All Data"
-                  className={commonStyles.button}
-                  role="button"
-                >
-                  <span className={commonStyles.buttonText}>
-                    Start Securing All Data
-                  </span>
-                  <FaCheckCircle className="ml-2" />
-                </Link>
-              </div>
+            </div>
+            <div className={commonStyles.buttonWrapper}>
+              <Link href="#" className={commonStyles.button}>
+                Start Securing All Data <FaCheckCircle className="ml-2" />
+              </Link>
             </div>
           </div>
 
+          {/* Text */}
           <div className="lg:col-span-4">
             <h2 className={commonStyles.heading}>Secure your data</h2>
             <p className={commonStyles.subHeading}>
-              <span className={commonStyles.buttonText}>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 font-semibold">
                 Keep control on your projects.
               </span>{" "}
               Don&apos;t make the same mistakes.
@@ -72,11 +66,11 @@ const Feature4: React.FC = () => {
 
             <hr className={commonStyles.hr} />
 
-            <ul className="grid grid-cols-1 mt-8 sm:grid-cols-2 sm:mt-12 gap-x-12 gap-y-8 sm:gap-y-12">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6 mt-10">
               {featureItems.map((item, index) => (
                 <li key={index} className={commonStyles.listItem}>
                   <FaCheckCircle className={commonStyles.icon} />
-                  <span className="ml-4">{item}</span>
+                  <span className="ml-3">{item}</span>
                 </li>
               ))}
             </ul>
