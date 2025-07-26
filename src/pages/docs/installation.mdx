@@ -1,4 +1,3 @@
-
 # Installation Guide
 
 Hey there, fellow coder! 🚀 Ready to get started with Aura UI? Good news—no big downloads needed! Let’s keep it simple.
@@ -12,12 +11,12 @@ Honestly, if you just want to try out some simple components, you might not need
 3. <h1>Paste it into your project.</h1>
 4. <h1>Customize as needed and ship it! 🏆</h1>
 
-
 ## Tailwind CSS
 
 Aura UI loves Tailwind CSS. If you don’t have it yet, let’s get you set up:
 
 1. **Install Tailwind CSS:**
+
    ```bash copy
    npm install -D tailwindcss
    npx tailwindcss init
@@ -25,6 +24,7 @@ Aura UI loves Tailwind CSS. If you don’t have it yet, let’s get you set up:
 
 2. **Configure Tailwind:**
    Add the paths to all of your template files in your `tailwind.config.js` file:
+
    ```javascript copy
    module.exports = {
      content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -32,7 +32,7 @@ Aura UI loves Tailwind CSS. If you don’t have it yet, let’s get you set up:
        extend: {},
      },
      plugins: [],
-   }
+   };
    ```
 
 3. **Add Tailwind to your CSS:**
@@ -54,7 +54,7 @@ Our components use some cool icons. Here’s how to get them:
    npm install react-icons
    ```
 
-## Framer Motion (for Animated Components)
+## Framer Motion (For Animated Components)
 
 Want to add some pizzazz with animations? Use Framer Motion:
 
@@ -63,3 +63,11 @@ Want to add some pizzazz with animations? Use Framer Motion:
    npm install framer-motion
    ```
 
+## Icons with Lucide Icons (For Animated Components)
+
+Our components use some cool icons. Here’s how to get them:
+
+1. **Install React Icons:**
+   ```bash copy
+   npm install lucide-react
+   ```
