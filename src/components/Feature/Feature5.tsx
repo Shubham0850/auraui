@@ -4,29 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 const commonStyles = {
-  section: "py-12 bg-black sm:py-16 lg:py-20 xl:py-24",
-  container: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
+  section: "py-20 bg-black",
+  container: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
   heading:
-    "text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl",
-  paragraph: "mt-8 text-lg font-normal text-gray-400",
+    "text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight",
+  paragraph: "mt-6 text-lg leading-relaxed text-gray-400 max-w-xl sm:text-xl",
   buttonContainer:
-    "relative inline-flex items-center justify-center mt-8 sm:mt-12 group",
-  button:
-    "relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-md",
+    "relative inline-flex items-center justify-center mt-10 sm:mt-14 group",
   gradientBg:
-    "absolute transition-all duration-200 rounded-md -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50",
-  subHeading: "text-xl font-normal text-white",
-  subParagraph: "mt-3 text-base font-normal text-gray-400",
+    "absolute inset-0 z-0 rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-purple-500/30 transition-all",
+  subHeading: "text-lg font-semibold text-white sm:text-xl mb-2",
+  subParagraph: "text-base text-gray-400",
 };
 
 function Feature5() {
   return (
     <section className={commonStyles.section}>
       <div className={commonStyles.container}>
-        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-x-16 gap-y-12">
-          <div className="text-center lg:col-span-5 sm:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-16 items-center">
+          {/* Left Column */}
+          <div className="lg:col-span-5 text-center lg:text-left">
             <h2 className={commonStyles.heading}>
-              Auraui - 1400+ Unique Coded Blocks
+              auraui - 1400+ Unique Coded Blocks
             </h2>
             <p className={commonStyles.paragraph}>
               Auraui offers a vast collection of unique coded blocks to
@@ -34,45 +33,46 @@ function Feature5() {
               precision to meet modern design standards and improve
               productivity.
             </p>
-            <div className={commonStyles.buttonContainer}>
-              <div className={commonStyles.gradientBg}></div>
+            <div className="relative inline-flex items-center justify-center mt-10 group">
+              <div className="absolute inset-0 rounded-md bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-purple-500/30 transition-all"></div>
               <Link
                 href="#"
-                title="Explore Auraui Blocks"
-                className={commonStyles.button}
-                role="button"
+                className="relative z-10 inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-transparent border border-transparent rounded-md hover:opacity-90 transition"
               >
                 Explore Auraui Blocks <FiExternalLink className="ml-2" />
               </Link>
             </div>
           </div>
 
+          {/* Right Column */}
           <div className="lg:col-span-7">
-            <Image
-              className="w-full rounded-sm "
-              src="https://www.auraui.com/images/digitization.webp"
-              alt="Auraui Blocks"
-              width={600}
-              height={400}
-            />
+            <div className="rounded-lg overflow-hidden shadow-md">
+              <Image
+                src="https://www.auraui.com/images/digitization.webp"
+                alt="Auraui Blocks"
+                width={800}
+                height={500}
+                className="object-cover w-full"
+              />
+            </div>
 
-            <div className="grid grid-cols-1 mt-12 text-center gap-y-8 sm:grid-cols-2 gap-x-16 sm:text-left">
+            {/* Subfeatures */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-12 text-center sm:text-left">
               <div>
                 <h3 className={commonStyles.subHeading}>Unlimited Usages</h3>
                 <p className={commonStyles.subParagraph}>
                   Auraui blocks can be used in unlimited projects, giving you
-                  the flexibility to create stunning designs across various
+                  flexibility to build stunning designs across various
                   applications.
                 </p>
               </div>
-
               <div>
                 <h3 className={commonStyles.subHeading}>
                   Built with TailwindCSS
                 </h3>
                 <p className={commonStyles.subParagraph}>
-                  Each block is built using TailwindCSS, ensuring a seamless and
-                  responsive experience across all devices.
+                  Each block is built using TailwindCSS, ensuring a smooth and
+                  responsive experience across all devices and screen sizes.
                 </p>
               </div>
             </div>
