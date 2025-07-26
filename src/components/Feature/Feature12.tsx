@@ -16,9 +16,9 @@ const Feature12 = () => {
             </h2>
 
             <p className="text-lg text-gray-600">
-              Build high-performance websites at lightning speed with AuraUI's
-              100+ responsive components. Enjoy beautiful layouts, seamless
-              customizations, and time-saving blocks to launch faster.
+              Build high-performance websites at lightning speed with
+              AuraUI&apos;s 100+ responsive components. Enjoy beautiful layouts,
+              seamless customizations, and time-saving blocks to launch faster.
             </p>
 
             <ul className="space-y-3 text-base text-gray-700 list-disc list-inside">

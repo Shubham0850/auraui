@@ -15,7 +15,7 @@ const Feature9: React.FC = () => {
             Build your solid team
           </h2>
           <p className="mt-6 text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            Auraui enhances your team's workflow with effortless task
+            Auraui enhances your team&apos;s workflow with effortless task
             management, centralized cloud storage, and built-in collaboration
             tools to keep everything aligned and efficient.
           </p>
