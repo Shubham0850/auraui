@@ -1,15 +1,15 @@
+import Feature11 from "@/components/Feature/Feature11";
 import React from "react";
-import BusinessFeature from "@/components/Feature/Feature21";
 
 type Props = {};
 
-function AuraFooter({}: Props) {
+function feature11({}: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">{/* Your main content goes here */}</div>
-      <BusinessFeature />
+      <Feature11 />
     </div>
   );
 }
 
-export default AuraFooter;
+export default feature11;
