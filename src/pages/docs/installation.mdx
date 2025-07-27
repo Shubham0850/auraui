@@ -1,3 +1,5 @@
+import OnlyCodeViewer from "@/components/Theme/OnlyCodeViewer";
+
 # Installation Guide
 
 Hey there, fellow coder! 🚀 Ready to get started with Aura UI? Good news—no big downloads needed! Let’s keep it simple.
@@ -45,7 +47,7 @@ Aura UI loves Tailwind CSS. If you don’t have it yet, let’s get you set up:
 
 Need more details? Check out the [Tailwind CSS installation guide](https://tailwindcss.com/docs/installation).
 
-## Icons with React Icons
+## 💫 Icons with React Icons
 
 Our components use some cool icons. Here’s how to get them:
 
@@ -54,7 +56,7 @@ Our components use some cool icons. Here’s how to get them:
    npm install react-icons
    ```
 
-## Icons with Lucide Icons (For Animated Components)
+## 🧑‍🎨 Icons with Lucide Icons (For Animated Components)
 
 Using Animated components? Use some elagant icons Here’s how to get them:
 
@@ -63,7 +65,7 @@ Using Animated components? Use some elagant icons Here’s how to get them:
    npm install lucide-react
    ```
 
-## Framer Motion (For Animated Components)
+## ✨ Framer Motion (For Animated Components)
 
 Want to add some pizzazz with animations? Use Framer Motion:
 
@@ -71,3 +73,488 @@ Want to add some pizzazz with animations? Use Framer Motion:
    ```bash copy
    npm install framer-motion
    ```
+
+{/* Framer motion details */}
+
+## 🌀 Framer Motion Utilities
+
+If you’re using `Animated Hero` or similar interactive components, we recommend adding this motion utility module, which includes the auraui motions, Paste it inside your `src/lib/motion.ts`:
+
+<div className="mt-8"> </div>
+
+<OnlyCodeViewer
+  language="ts"
+  code={`import { Variants } from "framer-motion";
+
+export const aurauiMotion = {
+  // Fade animations
+  fadeIn: {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] },
+  },
+
+fadeInUp: {
+initial: { opacity: 0, y: 30 },
+animate: { opacity: 1, y: 0 },
+transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] },
+},
+
+// Scale animations
+scaleIn: {
+initial: { opacity: 0, scale: 0.95 },
+animate: { opacity: 1, scale: 1 },
+transition: { duration: 0.5, ease: [0.4, 0, 0.2, 1] },
+},
+
+// Staggered children
+staggerChildren: {
+animate: {
+transition: {
+staggerChildren: 0.1,
+delayChildren: 0.2,
+},
+},
+} as Variants,
+
+// Container variants for stagger effects
+container: {
+hidden: { opacity: 0 },
+visible: {
+opacity: 1,
+transition: {
+delayChildren: 0.2,
+staggerChildren: 0.1,
+},
+},
+} as Variants,
+
+// Child item variants
+item: {
+hidden: { opacity: 0, y: 20 },
+visible: {
+opacity: 1,
+y: 0,
+transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] },
+},
+} as Variants,
+
+// Button hover effects
+buttonHover: {
+whileHover: { scale: 1.05, transition: { duration: 0.2 } },
+whileTap: { scale: 0.95 },
+},
+
+// Glow effect
+glow: {
+animate: {
+filter: ["brightness(1)", "brightness(1.2)", "brightness(1)"],
+transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+},
+},
+
+// Floating effect
+float: {
+animate: {
+y: [0, -10, 0],
+transition: { duration: 3, repeat: Infinity, ease: "easeInOut" as const },
+},
+},
+};
+
+// Transition presets
+export const transitions = {
+smooth: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
+bounce: { duration: 0.6, ease: [0.68, -0.55, 0.265, 1.55] },
+spring: { type: "spring" as const, stiffness: 100, damping: 15 },
+};
+`}
+/>
+
+{/* global.css details */}
+
+## 🎨 Global Styles (Required for Theming & Effects)
+
+To enable gradients, shadows, glassmorphism, and theme support across Aura UI animated components, **copy the following CSS** into your `global.css` file:
+
+> ⚠️ Make sure this is added after Tailwind's `@tailwind base`, `components`, and `utilities` imports.
+
+<div className="mt-4">
+  <OnlyCodeViewer
+    language="css"
+    code={`@layer base {
+  * {
+    @apply border-border;
+  }
+
+body {
+@apply bg-background text-foreground;
+}
+
+.auraui-gradient-primary {
+background: var(--gradient-primary);
+}
+
+.auraui-gradient-accent {
+background: var(--gradient-accent);
+}
+
+.auraui-gradient-subtle {
+background: var(--gradient-subtle);
+}
+
+.auraui-gradient-glow {
+background: var(--gradient-glow);
+}
+
+.auraui-shadow-primary {
+box-shadow: var(--shadow-primary);
+}
+
+.auraui-shadow-accent {
+box-shadow: var(--shadow-accent);
+}
+
+.auraui-shadow-glow {
+box-shadow: var(--shadow-glow);
+}
+
+.auraui-shadow-elegant {
+box-shadow: var(--shadow-elegant);
+}
+
+.auraui-transition-smooth {
+transition: var(--transition-smooth);
+}
+
+.auraui-transition-bounce {
+transition: var(--transition-bounce);
+}
+
+.auraui-glass {
+backdrop-filter: blur(16px) saturate(180%);
+background: hsl(var(--background) / 0.8);
+border: 1px solid hsl(var(--border) / 0.2);
+}
+
+.auraui-glass-strong {
+backdrop-filter: blur(24px) saturate(200%);
+background: hsl(var(--background) / 0.9);
+border: 1px solid hsl(var(--border) / 0.3);
+}
+
+.hero-theme-24 {
+--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+
+    --primary: var(--hero24-primary);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--hero24-secondary);
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: var(--hero24-accent);
+    --muted-foreground: 240 5% 65%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --gradient-primary: var(--hero24-gradient);
+    --gradient-accent: var(--hero24-accent-gradient);
+
+    --shadow-primary: 0 8px 32px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.5);
+
+}
+
+.hero-theme-35 {
+--primary: var(--hero35-primary);
+--secondary: var(--hero35-secondary);
+--accent: var(--hero35-accent);
+--gradient-primary: var(--hero35-gradient);
+--gradient-accent: var(--hero35-accent-gradient);
+}
+
+.hero-theme-36 {
+--primary: var(--hero36-primary);
+--secondary: var(--hero36-secondary);
+--accent: var(--hero36-accent);
+--gradient-primary: var(--hero36-gradient);
+--gradient-accent: var(--hero36-accent-gradient);
+}
+
+.hero-theme-37 {
+--primary: var(--hero37-primary);
+--secondary: var(--hero37-secondary);
+--accent: var(--hero37-accent);
+--gradient-primary: var(--hero37-gradient);
+--gradient-accent: var(--hero37-accent-gradient);
+}
+
+.hero-theme-38 {
+--primary: var(--hero38-primary);
+--secondary: var(--hero38-secondary);
+--accent: var(--hero38-accent);
+--gradient-primary: var(--hero38-gradient);
+--gradient-accent: var(--hero38-accent-gradient);
+}
+
+.hero-theme-39 {
+--primary: var(--hero39-primary);
+--secondary: var(--hero39-secondary);
+--accent: var(--hero39-accent);
+--gradient-primary: var(--hero39-gradient);
+--gradient-accent: var(--hero39-accent-gradient);
+}
+
+.hero-theme-40 {
+--primary: var(--hero40-primary);
+--secondary: var(--hero40-secondary);
+--accent: var(--hero40-accent);
+--gradient-primary: var(--hero40-gradient);
+--gradient-accent: var(--hero40-accent-gradient);
+}
+
+.hero-theme-41 {
+--primary: var(--hero41-primary);
+--secondary: var(--hero41-secondary);
+--accent: var(--hero41-accent);
+--gradient-primary: var(--hero41-gradient);
+--gradient-accent: var(--hero41-accent-gradient);
+}
+
+.hero-theme-42 {
+--primary: var(--hero42-primary);
+--secondary: var(--hero42-secondary);
+--accent: var(--hero42-accent);
+--gradient-primary: var(--hero42-gradient);
+--gradient-accent: var(--hero42-accent-gradient);
+}
+}
+
+@layer base {
+:root {
+/_ --- Existing Tokens --- _/
+--background: 0 0% 100%;
+--foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 240 100% 80%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* --- Auraui: Design System Additions --- */
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(var(--primary)),
+      hsl(var(--secondary))
+    );
+    --gradient-accent: linear-gradient(
+      135deg,
+      hsl(var(--accent)),
+      hsl(var(--primary))
+    );
+    --gradient-subtle: linear-gradient(135deg, hsl(240 10% 5%), hsl(240 5% 8%));
+    --gradient-glow: linear-gradient(
+      135deg,
+      hsl(var(--primary-glow) / 0.3),
+      hsl(var(--accent) / 0.2)
+    );
+
+    --shadow-primary: 0 8px 32px hsl(var(--primary) / 0.3);
+    --shadow-accent: 0 8px 32px hsl(var(--accent) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.5);
+    --shadow-elegant: 0 20px 40px -10px hsl(0 0% 0% / 0.5);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* --- Hero Themes (1–10) --- */
+    --hero24-primary: 240 100% 70%;
+    --hero24-secondary: 260 100% 75%;
+    --hero24-accent: 315 100% 70%;
+    --hero24-gradient: linear-gradient(
+      135deg,
+      hsl(240 100% 70%),
+      hsl(260 100% 75%)
+    );
+    --hero24-accent-gradient: linear-gradient(
+      135deg,
+      hsl(315 100% 70%),
+      hsl(240 100% 70%)
+    );
+
+    --hero35-primary: 195 100% 65%;
+    --hero35-secondary: 210 100% 70%;
+    --hero35-accent: 180 100% 60%;
+    --hero35-gradient: linear-gradient(
+      135deg,
+      hsl(195 100% 65%),
+      hsl(210 100% 70%)
+    );
+    --hero35-accent-gradient: linear-gradient(
+      135deg,
+      hsl(180 100% 60%),
+      hsl(195 100% 65%)
+    );
+
+    --hero36-primary: 20 100% 65%;
+    --hero36-secondary: 340 100% 70%;
+    --hero36-accent: 300 100% 65%;
+    --hero36-gradient: linear-gradient(
+      135deg,
+      hsl(20 100% 65%),
+      hsl(340 100% 70%)
+    );
+    --hero36-accent-gradient: linear-gradient(
+      135deg,
+      hsl(300 100% 65%),
+      hsl(20 100% 65%)
+    );
+
+    --hero37-primary: 160 100% 50%;
+    --hero37-secondary: 140 100% 55%;
+    --hero37-accent: 120 100% 60%;
+    --hero37-gradient: linear-gradient(
+      135deg,
+      hsl(160 100% 50%),
+      hsl(140 100% 55%)
+    );
+    --hero37-accent-gradient: linear-gradient(
+      135deg,
+      hsl(120 100% 60%),
+      hsl(160 100% 50%)
+    );
+
+    --hero5-primary: 250 100% 60%;
+    --hero5-secondary: 270 100% 65%;
+    --hero5-accent: 290 100% 70%;
+    --hero5-gradient: linear-gradient(
+      135deg,
+      hsl(250 100% 60%),
+      hsl(270 100% 65%)
+    );
+    --hero5-accent-gradient: linear-gradient(
+      135deg,
+      hsl(290 100% 70%),
+      hsl(250 100% 60%)
+    );
+
+    --hero38-primary: 45 100% 60%;
+    --hero38-secondary: 35 100% 55%;
+    --hero38-accent: 25 100% 50%;
+    --hero38-gradient: linear-gradient(
+      135deg,
+      hsl(45 100% 60%),
+      hsl(35 100% 55%)
+    );
+    --hero38-accent-gradient: linear-gradient(
+      135deg,
+      hsl(25 100% 50%),
+      hsl(45 100% 60%)
+    );
+
+    --hero39-primary: 355 100% 65%;
+    --hero39-secondary: 15 100% 70%;
+    --hero39-accent: 330 100% 60%;
+    --hero39-gradient: linear-gradient(
+      135deg,
+      hsl(355 100% 65%),
+      hsl(15 100% 70%)
+    );
+    --hero39-accent-gradient: linear-gradient(
+      135deg,
+      hsl(330 100% 60%),
+      hsl(355 100% 65%)
+    );
+
+    --hero40-primary: 270 100% 65%;
+    --hero40-secondary: 240 100% 70%;
+    --hero40-accent: 300 100% 60%;
+    --hero40-gradient: linear-gradient(
+      135deg,
+      hsl(270 100% 65%),
+      hsl(240 100% 70%)
+    );
+    --hero40-accent-gradient: linear-gradient(
+      135deg,
+      hsl(300 100% 60%),
+      hsl(270 100% 65%)
+    );
+
+    --hero41-primary: 175 100% 45%;
+    --hero41-secondary: 190 100% 50%;
+    --hero41-accent: 160 100% 40%;
+    --hero41-gradient: linear-gradient(
+      135deg,
+      hsl(175 100% 45%),
+      hsl(190 100% 50%)
+    );
+    --hero41-accent-gradient: linear-gradient(
+      135deg,
+      hsl(160 100% 40%),
+      hsl(175 100% 45%)
+    );
+
+    --hero42-primary: 200 100% 80%;
+    --hero42-secondary: 220 50% 85%;
+    --hero42-accent: 190 100% 75%;
+    --hero42-gradient: linear-gradient(
+      135deg,
+      hsl(200 100% 80%),
+      hsl(220 50% 85%)
+    );
+    --hero42-accent-gradient: linear-gradient(
+      135deg,
+      hsl(190 100% 75%),
+      hsl(200 100% 80%)
+    );
+
+}
+
+.dark {
+/_ Keep your current dark mode styles _/
+--background: 222.2 84% 4.9%;
+--foreground: 210 40% 98%;
+--card: 222.2 84% 4.9%;
+--card-foreground: 210 40% 98%;
+--popover: 222.2 84% 4.9%;
+--popover-foreground: 210 40% 98%;
+--primary: 210 40% 98%;
+--primary-foreground: 222.2 47.4% 11.2%;
+--secondary: 217.2 32.6% 17.5%;
+--secondary-foreground: 210 40% 98%;
+--muted: 217.2 32.6% 17.5%;
+--muted-foreground: 215 20.2% 65.1%;
+--accent: 217.2 32.6% 17.5%;
+--accent-foreground: 210 40% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 210 40% 98%;
+--border: 217.2 32.6% 17.5%;
+--input: 217.2 32.6% 17.5%;
+--ring: 212.7 26.8% 83.9%;
+}
+}`}
+/>
+
+</div>
