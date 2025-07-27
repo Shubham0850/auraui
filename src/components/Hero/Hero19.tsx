@@ -1,57 +1,44 @@
 import React from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { LuShoppingBag } from "react-icons/lu";
+import { motion } from "framer-motion";
 
-function Hero19() {
-  const commonStyles = {
-    sectionPadding: "py-12 sm:py-16 lg:py-20 xl:pt-32 xl:pb-44",
-    container: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
-    headerLink:
-      "text-base font-medium text-gray-400 transition-all duration-200 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white hover:text-white",
-    buttonBase:
-      "inline-flex items-center justify-center px-3 py-3 text-base font-bold leading-7 transition-all duration-200 border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2",
-  };
-
+const Hero19 = () => {
   return (
     <section>
-      <header className="bg-gray-900 border-b border-gray-800">
-        <div className={commonStyles.container}>
+      {/* Navbar */}
+      <header className="bg-gray-900 border-b border-gray-800 relative z-10">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between h-16 lg:h-[72px]">
-            <div className="flex items-center flex-shrink-0">
-              <a href="#" title="AuraUI" className="inline-flex">
-                <span className="sr-only">AuraUI logo</span>
-                <img
-                  className="w-auto h-8"
-                  src="https://www.auraui.com/logo-dark.png"
-                  alt="AuraUI logo"
-                />
-              </a>
-            </div>
-            <div className="hidden lg:flex lg:justify-center lg:space-x-10 xl:space-x-14">
-              {["Components", "Features", "Docs", "Support"].map((text) => (
-                <a
-                  key={1}
-                  href="#"
-                  title={text}
-                  className={commonStyles.headerLink}
-                >
-                  {text}
-                </a>
-              ))}
-            </div>
-            <div className="flex items-center justify-end space-x-5">
-              <button
-                type="button"
-                className="p-2 -m-2 text-white transition-all duration-200 lg:hidden hover:text-gray-200"
-              >
+            <a href="#" className="flex items-center">
+              <img
+                className="w-auto h-8"
+                src="https://www.auraui.com/logo-dark.png"
+                alt="AuraUI logo"
+              />
+            </a>
+
+            <nav className="hidden lg:flex gap-10 xl:gap-14">
+              {["Components", "Features", "Docs", "Support"].map(
+                (text, idx) => (
+                  <a
+                    key={idx}
+                    href="#"
+                    className="text-base font-medium text-gray-400 hover:text-white transition-all duration-200"
+                  >
+                    {text}
+                  </a>
+                ),
+              )}
+            </nav>
+
+            <div className="flex items-center gap-4">
+              <button className="lg:hidden text-white hover:text-gray-200">
                 <HiOutlineBars3 className="w-7 h-7" />
               </button>
-              <button
-                type="button"
-                className="relative p-2 -m-2 text-white transition-all duration-200 hover:text-gray-200"
-              >
+              <button className="relative text-white hover:text-gray-200">
                 <LuShoppingBag className="h-5 w-5" />
-                <span className="absolute top-0 right-0 flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-indigo-600 rounded-full">
+                <span className="absolute -top-2 -right-2 w-5 h-5 bg-indigo-600 text-xs font-bold text-white rounded-full flex items-center justify-center">
                   3
                 </span>
               </button>
@@ -60,56 +47,61 @@ function Hero19() {
         </div>
       </header>
 
-      <div className={`bg-gray-900 ${commonStyles.sectionPadding}`}>
-        <div
-          className={`flex justify-between items-center ${commonStyles.container}`}
-        >
-          <div className="max-w-xl mx-auto text-center lg:max-w-md xl:max-w-lg lg:text-left lg:mx-0">
-            <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl xl:leading-tight">
-              Design Stunning UIs Effortlessly with AuraUI
+      {/* Hero Section */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-[#1e1b4b] via-gray-900 to-black py-16 sm:py-20 lg:py-28">
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#6b21a8_1px,transparent_1px)] [background-size:20px_20px]" />
+
+        <div className="relative z-10 px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-12">
+          {/* Text Block */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center lg:text-left max-w-xl"
+          >
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight tracking-tight">
+              Design Stunning UIs Effortlessly with{" "}
+              <span className="text-indigo-400">AuraUI</span>
             </h1>
-            <p className="mt-8 text-base font-normal leading-7 text-gray-400 lg:max-w-md xl:pr-0 lg:pr-16">
+            <p className="mt-6 text-base text-gray-400 leading-relaxed">
               AuraUI offers high-quality components and templates, helping you
               build beautiful websites faster. No complex setup required—just
               focus on your creativity.
             </p>
-            <div className="flex items-center justify-center mt-8 space-x-5 xl:mt-16 lg:justify-start">
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8">
               <a
                 href="#"
-                title="Get UI Kit"
-                className={`${commonStyles.buttonBase} bg-white text-gray-900 focus:ring-offset-gray-900 focus:ring-white hover:bg-gray-200 sm:px-6`}
-                role="button"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold bg-white text-gray-900 rounded-md shadow hover:bg-gray-200 transition"
               >
                 Get UI Kit Now
               </a>
               <a
                 href="#"
-                title="Live Preview"
-                className={`${commonStyles.buttonBase} text-white bg-transparent focus:ring-offset-gray-900 focus:ring-gray-700 hover:bg-gray-700 sm:px-4`}
-                role="button"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border border-gray-700 rounded-md hover:bg-gray-800 transition"
               >
                 Check Live Preview
               </a>
             </div>
-          </div>
-          <div className="w-[60%] rounded-2xl hidden lg:block overflow-hidden">
+          </motion.div>
+
+          {/* Image Block */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+            className="w-full lg:w-[55%] rounded-2xl overflow-hidden shadow-lg"
+          >
             <img
-              className="object-cover object-right-bottom w-full h-full rounded-2xl"
+              className="object-cover w-full h-full rounded-2xl"
               src="https://www.auraui.com/memeimage/ui.jpg"
               alt="AuraUI showcase"
             />
-          </div>
-        </div>
-        <div className="mt-8 w-[90%] mx-auto lg:hidden">
-          <img
-            className="object-cover object-right-bottom w-full h-full rounded-2xl"
-            src="https://www.auraui.com/memeimage/ui.jpg"
-            alt="AuraUI showcase"
-          />
+          </motion.div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Hero19;

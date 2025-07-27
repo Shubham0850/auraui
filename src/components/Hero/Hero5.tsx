@@ -31,7 +31,7 @@ const Hero5 = () => {
 
       {/* Navbar */}
       <motion.nav
-        className="relative z-50 p-6"
+        className="relative p-6"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
