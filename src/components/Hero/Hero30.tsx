@@ -1,154 +1,172 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { IoArrowForward } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
+import { motion } from "framer-motion";
 
-const commonStyles = {
-  container: "relative",
-  header: "py-4 bg-black sm:py-6",
-  headerInner: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
-  headerContent: "flex items-center justify-between",
-  logo: "w-auto h-9",
-  navButton: "text-white",
-  navMenu: "hidden md:flex md:items-center md:justify-end md:space-x-12",
-  navLink:
-    "text-base font-normal text-gray-400 transition-all duration-200 hover:text-white",
-  mobileNav: "flex flex-col pt-8 pb-4 space-y-6",
-  section: "py-12 bg-black sm:pb-16 lg:pb-20 xl:pb-24",
-  contentContainer: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
-  heading:
-    "text-4xl font-normal text-white sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl",
-  gradientText:
-    "text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500",
-  paragraph: "max-w-lg mt-4 text-xl font-normal text-gray-400 sm:mt-8",
-  buttonContainer:
-    "relative inline-flex items-center justify-center mt-8 sm:mt-12 group",
-  button:
-    "relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-black border border-transparent rounded-full",
-  info: "inline-flex items-center pt-6 mt-8 border-t border-gray-800 sm:pt-10 sm:mt-14",
-  infoIcon: "w-6 h-6",
-  infoText: "ml-2 text-base font-normal text-white",
-  imageContainer: "mt-8 md:absolute md:mt-0 md:top-32 lg:top-0 md:right-0",
-  image: "w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl",
+const navLinks = ["Products", "Features", "Pricing", "Support"];
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
+  }),
 };
 
 function Hero30() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className={commonStyles.container}>
-      <header className={commonStyles.header}>
-        <div className={commonStyles.headerInner}>
-          <div className={commonStyles.headerContent}>
-            <div className="shrink-0">
-              <a href="#" title="AuraUI" className="flex">
-                <img
-                  className={commonStyles.logo}
-                  src="https://www.auraui.com/logo-dark.png"
-                  alt="AuraUI Logo"
-                />
-              </a>
-            </div>
+    <div className="relative bg-black">
+      {/* Grid pattern */}
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(#222_1px,transparent_1px)] [background-size:20px_20px]" />
 
-            <div className="flex md:hidden">
-              <button
-                type="button"
-                className={commonStyles.navButton}
-                onClick={() => setExpanded(!expanded)}
-                aria-expanded={expanded}
+      {/* Header */}
+      <header className="relative z-10 py-4 sm:py-6">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 flex items-center justify-between">
+          <a href="#" className="flex items-center">
+            <img
+              className="h-9 w-auto"
+              src="https://www.auraui.com/logo-dark.png"
+              alt="AuraUI Logo"
+            />
+          </a>
+
+          <button
+            className="text-white md:hidden"
+            onClick={() => setExpanded((prev) => !prev)}
+            aria-label="Toggle navigation"
+          >
+            {expanded ? (
+              <FaTimes className="w-7 h-7" />
+            ) : (
+              <FaBars className="w-7 h-7" />
+            )}
+          </button>
+
+          <nav className="hidden md:flex md:space-x-10">
+            {navLinks.map((link) => (
+              <a
+                key={link}
+                href="#"
+                className="text-base text-gray-400 hover:text-white transition"
               >
-                {expanded ? (
-                  <FaTimes className="w-7 h-7" />
-                ) : (
-                  <FaBars className="w-7 h-7" />
-                )}
-              </button>
-            </div>
-
-            <nav className={commonStyles.navMenu}>
-              <a href="#" title="Products" className={commonStyles.navLink}>
-                Products
+                {link}
               </a>
-              <a href="#" title="Features" className={commonStyles.navLink}>
-                Features
-              </a>
-              <a href="#" title="Pricing" className={commonStyles.navLink}>
-                Pricing
-              </a>
-              <a href="#" title="Support" className={commonStyles.navLink}>
-                Support
-              </a>
-            </nav>
-          </div>
-
-          {expanded && (
-            <nav className="md:hidden">
-              <div className={commonStyles.mobileNav}>
-                <a href="#" title="Products" className={commonStyles.navLink}>
-                  Products
-                </a>
-                <a href="#" title="Features" className={commonStyles.navLink}>
-                  Features
-                </a>
-                <a href="#" title="Pricing" className={commonStyles.navLink}>
-                  Pricing
-                </a>
-                <a href="#" title="Support" className={commonStyles.navLink}>
-                  Support
-                </a>
-              </div>
-            </nav>
-          )}
+            ))}
+          </nav>
         </div>
+
+        {expanded && (
+          <div className="md:hidden px-4 mt-4 space-y-4">
+            {navLinks.map((link) => (
+              <a
+                key={link}
+                href="#"
+                className="block text-base text-gray-400 hover:text-white"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+        )}
       </header>
 
-      <section className={commonStyles.section}>
-        <div className={commonStyles.contentContainer}>
-          <div className="relative">
+      {/* Hero Section */}
+      <section className="relative z-10 py-16 sm:pb-20 lg:pb-32 xl:pb-40">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
+          <div className="lg:flex lg:items-center lg:justify-between lg:space-x-16">
+            {/* Text Content */}
             <div className="lg:w-2/3">
-              <p className="text-sm font-normal tracking-widest text-gray-300 uppercase">
-                The Ultimate Toolkit for UI Design
-              </p>
-              <h1
-                className={`${commonStyles.heading} ${commonStyles.gradientText}`}
+              <motion.p
+                className="text-sm font-medium tracking-wide uppercase text-gray-400"
+                custom={0}
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
               >
-                Elevate Your Designs with AuraUI
-              </h1>
-              <p className={commonStyles.paragraph}>
-                Discover the power of AuraUI, where creativity meets efficiency.
-                Our comprehensive suite of design tools helps you craft stunning
-                interfaces effortlessly, whether you&apos;re a designer or
-                developer.
-              </p>
-              <div className={commonStyles.buttonContainer}>
-                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
+                The Ultimate Toolkit for UI Design
+              </motion.p>
+
+              <motion.h1
+                className="mt-4 text-5xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-tight"
+                custom={1}
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+              >
+                Design Stunning UIs Effortlessly with{" "}
+                <span className="bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent">
+                  AuraUI
+                </span>
+              </motion.h1>
+
+              <motion.p
+                className="mt-6 text-xl text-gray-400 max-w-2xl"
+                custom={2}
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+              >
+                AuraUI offers high-quality components and templates, helping you
+                build beautiful websites faster. No complex setup required—just
+                focus on your creativity.
+              </motion.p>
+
+              {/* CTA Buttons */}
+              <motion.div
+                className="mt-10 flex flex-wrap items-center gap-4"
+                custom={3}
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+              >
                 <a
                   href="#"
-                  title="Explore AuraUI"
-                  className={commonStyles.button}
-                  role="button"
+                  className="px-6 py-3 text-base font-semibold text-black bg-white rounded-full hover:bg-gray-100 transition"
                 >
-                  Explore AuraUI
+                  Get UI Kit Now
                 </a>
-              </div>
+                <a
+                  href="#"
+                  className="px-6 py-3 text-base font-semibold text-white border border-white rounded-full hover:bg-white hover:text-black transition"
+                >
+                  Check Live Preview
+                </a>
+              </motion.div>
 
-              <div>
-                <div className={commonStyles.info}>
-                  <MdDesignServices className={commonStyles.infoIcon} />
-                  <span className={commonStyles.infoText}>
-                    42 new design inspirations added this week
-                  </span>
-                </div>
-              </div>
+              {/* Info Line */}
+              <motion.div
+                className="flex items-center gap-3 pt-10"
+                custom={4}
+                initial="hidden"
+                animate="visible"
+                variants={fadeIn}
+              >
+                <MdDesignServices className="w-6 h-6 text-white" />
+                <span className="text-white text-base">
+                  42 new design inspirations added this week
+                </span>
+              </motion.div>
             </div>
 
-            <div className={commonStyles.imageContainer}>
-              <img
-                className={commonStyles.image}
-                src="/memeimage/hero30.png"
-                alt="AuraUI Design Inspiration"
-              />
-            </div>
+            {/* Image */}
+            <motion.div
+              className="relative mt-16 lg:mt-0 lg:w-1/3"
+              custom={5}
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn}
+            >
+              <div className="rounded-2xl shadow-2x p-1.5">
+                <img
+                  src="/memeimage/hero30.png"
+                  alt="AuraUI Mockup"
+                  className="rounded-xl object-cover w-full"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

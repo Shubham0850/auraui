@@ -25,7 +25,7 @@ const Hero34 = () => {
         setTimeout(() => {
           setCurrentText("");
           setCurrentSentenceIndex(
-            (prevIndex) => (prevIndex + 1) % sentences.length
+            (prevIndex) => (prevIndex + 1) % sentences.length,
           );
         }, 1000);
       }
