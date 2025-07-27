@@ -25,7 +25,7 @@ const Hero5 = () => {
       : "https://www.auraui.com/logo-light.png";
 
   return (
-    <div className="min-h-screen hero-theme-40 relative overflow-hidden">
+    <div className="hero-theme-40 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-accent/10" />
 

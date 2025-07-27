@@ -1,3 +1,4 @@
+import { Download, UserCircle } from "lucide-react";
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -96,23 +97,22 @@ function Hero22() {
 
                 <div className="mt-8 lg:mt-12 lg:flex lg:items-center">
                   <div className="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
-                    <img
-                      className={commonStyles.profilePic}
-                      src="https://www.auraui.com/memeimage/woman1.jpg"
-                      alt="Profile"
-                    />
-                    <img
-                      className={commonStyles.profilePic}
-                      src="https://www.auraui.com/memeimage/man2.jpg"
-                      alt="Profile"
-                    />
-                    <img
-                      className={commonStyles.profilePic}
-                      src="https://www.auraui.com/memeimage/woman3.jpg"
-                      alt="Profile"
-                    />
+                    <div className="relative z-30 h-10 w-10 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-500 p-0.5">
+                      <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
+                        <UserCircle className="text-indigo-500 w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="relative z-20 h-10 w-10 rounded-full bg-gradient-to-tr from-pink-500 to-red-500 p-0.5">
+                      <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
+                        <UserCircle className="text-red-500 w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="relative z-10 h-10 w-10 rounded-full bg-gradient-to-tr from-green-400 to-emerald-600 p-0.5">
+                      <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
+                        <UserCircle className="text-emerald-600 w-6 h-6" />
+                      </div>
+                    </div>
                   </div>
-
                   <p className="mt-4 text-lg text-gray-900 lg:mt-0 lg:ml-4 font-pj">
                     Join with{" "}
                     <span className="font-bold">4600+ Developers</span> and
@@ -121,23 +121,23 @@ function Hero22() {
                 </div>
               </div>
 
-              <div className="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
+              <div className="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center lg:justify-start gap-4">
+                {/* Primary Button */}
                 <a
                   href="#"
                   title="Get Feedback"
-                  className={`${commonStyles.button} ${commonStyles.primaryButton}`}
-                  role="button"
+                  className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white transition-colors bg-indigo-600 rounded-xl shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
                 >
-                  Get feedback
+                  Get Feedback
                 </a>
 
+                {/* Secondary Button with Icon */}
                 <a
                   href="#"
                   title="Download iOS App"
-                  className={`${commonStyles.button} ${commonStyles.secondaryButton}`}
-                  role="button"
+                  className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-gray-800 transition-colors bg-white border border-gray-300 rounded-xl shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-offset-2"
                 >
-                  <FaDownload className="w-5 h-5 text-gray-900 mr-2" />
+                  <Download className="w-5 h-5 mr-2" />
                   Download iOS App
                 </a>
               </div>
