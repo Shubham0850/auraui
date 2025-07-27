@@ -13,7 +13,7 @@ const Hero18 = () => {
     "inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-900 transition-all duration-200 border border-transparent rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring-300";
 
   const buttonClasses =
-    "inline-flex items-center justify-center px-8 py-4 text-base font-medium transition-all duration-200 border border-transparent rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2";
+    "inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-gray-400 to-purple-600 transition-all duration-200 rounded-full shadow-md hover:shadow-lg hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500";
 
   return (
     <div>
@@ -96,7 +96,7 @@ const Hero18 = () => {
                 title="Watch 1 Min Intro"
                 className={`${buttonClasses} text-gray-900 hover:bg-gray-100 focus:ring-gray-300`}
               >
-                <FaPlay className="w-6 h-6 mr-3 -ml-1 text-blue-600" />
+                <FaPlay className="w-6 h-6 mr-3 -ml-1 text-gray-200" />
                 Watch 1 Min Intro
               </a>
             </div>

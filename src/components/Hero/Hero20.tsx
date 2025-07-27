@@ -4,17 +4,16 @@ import { FaSearch } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { LuShoppingBag } from "react-icons/lu";
+import { Button } from "../ui/button";
+import { BsArrowRight } from "react-icons/bs";
 
 function Hero20() {
   const commonStyles = {
     headerLink:
       "text-sm font-medium text-gray-900 transition-all duration-200 rounded hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
-    buttonBase:
-      "inline-flex items-center justify-center px-6 py-4 text-sm font-bold tracking-widest text-white uppercase transition-all duration-200 bg-gray-800 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-700",
+
     statText: "text-4xl font-bold text-white",
     statLabel: "mt-2 text-sm font-medium text-gray-300",
-    searchInput:
-      "block w-full py-3 pl-10 pr-4 text-base font-normal leading-7 text-gray-900 placeholder-gray-500 bg-white border border-white focus:ring-white focus:border-white focus:ring-offset-2",
   };
 
   return (
@@ -123,29 +122,27 @@ function Hero20() {
               you need to complement your look.
             </p>
             <form action="#" className="max-w-xl mx-auto mt-10">
-              <div>
-                <label className="sr-only">Search</label>
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <FaSearch className="h-5 w-5 text-gray-300" />
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Search Accessories..."
-                    className={commonStyles.searchInput}
-                  />
-                </div>
+              <div className="relative shadow-md rounded-full overflow-hidden">
+                <span className="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400">
+                  <FaSearch className="h-5 w-5" />
+                </span>
+                <input
+                  type="text"
+                  placeholder="Search Accessories..."
+                  className="w-full pl-12 pr-4 py-3 text-base text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-200"
+                />
               </div>
-              <div>
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center w-full px-6 py-4 text-sm font-bold tracking-widest text-white uppercase transition-all duration-200 bg-gray-800 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white hover:bg-gray-700
-                  "
+              <div className="mt-4">
+                <Button
+                  size="lg"
+                  className="text-lg px-8 bg-indigo-600 hover:bg-indigo-700 rounded-full text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Search Now
-                </button>
+                  <BsArrowRight className="w-5 h-5 ml-2" />
+                </Button>
               </div>
             </form>
+
             <div className="grid max-w-md grid-cols-2 mx-auto mt-8 md:mt-16  gap-x-6 grid-col-2">
               <div>
                 <p className={commonStyles.statText}>38,942</p>

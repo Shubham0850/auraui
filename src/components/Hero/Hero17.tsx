@@ -1,5 +1,7 @@
 import React from "react";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { Button } from "../ui/button";
+import { BsArrowRight } from "react-icons/bs";
 
 function Hero17() {
   const commonStyles = {
@@ -91,9 +93,10 @@ function Hero17() {
                       className="block w-full px-4 py-4 text-gray-900 placeholder-gray-900 bg-transparent border border-gray-400 outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 rounded-xl sm:border-none sm:focus:ring-0 sm:focus:border-transparent"
                     />
                     <div className="mt-4 sm:mt-0 sm:absolute sm:inset-y-0 sm:right-0 sm:flex sm:items-center sm:pr-2">
-                      <button type="submit" className={commonStyles.button}>
-                        Get Updates
-                      </button>
+                      <Button size="lg" className="text-lg px-8">
+                        Get updates
+                        <BsArrowRight className="w-5 h-5 ml-2" />
+                      </Button>
                     </div>
                   </div>
                 </form>
