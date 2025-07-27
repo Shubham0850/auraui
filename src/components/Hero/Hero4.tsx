@@ -1,174 +1,161 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 import { HiOutlineStar } from "react-icons/hi";
+import { motion } from "framer-motion";
 import Image from "next/image";
-
-const commonStyles = {
-  link: "text-base font-normal text-gray-400 transition-all duration-200 hover:text-white",
-  button:
-    "inline-flex items-center  justify-center px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full",
-  gradientButton:
-    "relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full",
-};
 
 const Hero4 = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div>
-      <header className="py-4 bg-black sm:py-6">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            <div className="shrink-0">
-              <a href="#" className="flex">
-                <Image
-                  className="w-auto h-9"
-                  src="https://www.auraui.com/logo-dark.png"
-                  alt="AuraUI Logo"
-                  width={100}
-                  height={66}
-                />
-              </a>
-            </div>
+    <div className="bg-black min-h-screen relative overflow-hidden">
+      {/* Decorative BG */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-purple-950 z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_#22d3ee_0%,_transparent_40%)] opacity-10 z-0" />
 
-            <div className="flex md:hidden">
-              <button
-                type="button"
-                className="text-white"
-                onClick={() => setExpanded(!expanded)}
-                aria-expanded={expanded}
+      {/* Header */}
+      <header className="relative z-10 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+          <a href="#">
+            <Image
+              src="https://www.auraui.com/logo-dark.png"
+              alt="AuraUI Logo"
+              width={100}
+              height={60}
+              className="h-8 w-auto"
+            />
+          </a>
+
+          <nav className="hidden md:flex space-x-10 text-white text-sm">
+            {["Products", "Features", "Pricing", "Support"].map((item) => (
+              <a
+                key={item}
+                href="#"
+                className="text-gray-400 hover:text-white transition"
               >
-                {expanded ? (
-                  <FaTimes className="w-7 h-7" />
-                ) : (
-                  <FaBars className="w-7 h-7" />
-                )}
-              </button>
-            </div>
+                {item}
+              </a>
+            ))}
+          </nav>
 
-            <nav className="hidden ml-10 mr-auto space-x-10 lg:ml-20 lg:space-x-12 md:flex md:items-center md:justify-start">
-              <a href="#" className={commonStyles.link}>
-                Products
-              </a>
-              <a href="#" className={commonStyles.link}>
-                Features
-              </a>
-              <a href="#" className={commonStyles.link}>
-                Pricing
-              </a>
-              <a href="#" className={commonStyles.link}>
-                Support
-              </a>
-            </nav>
+          <div className="hidden md:inline-flex relative group">
+            <div className="absolute -inset-px rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 transition-all group-hover:shadow-xl group-hover:shadow-cyan-500/30" />
+            <a
+              href="#"
+              className="relative z-10 inline-flex items-center px-6 py-2 bg-black text-white rounded-full font-medium"
+            >
+              Start Free Trial
+            </a>
+          </div>
 
-            <div className="relative  hidden md:items-center md:justify-center md:inline-flex group">
-              <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-              <a href="#" className={commonStyles.gradientButton} role="button">
+          <button
+            className="text-white md:hidden"
+            onClick={() => setExpanded(!expanded)}
+          >
+            {expanded ? (
+              <FaTimes className="w-6 h-6" />
+            ) : (
+              <FaBars className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Nav */}
+        {expanded && (
+          <div className="md:hidden mt-4 px-4 space-y-4">
+            {["Products", "Features", "Pricing", "Support"].map((item) => (
+              <a
+                key={item}
+                href="#"
+                className="block text-gray-300 hover:text-white"
+              >
+                {item}
+              </a>
+            ))}
+            <div className="relative group">
+              <div className="absolute -inset-px rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 transition-all group-hover:shadow-md" />
+              <a
+                href="#"
+                className="relative z-10 inline-flex items-center px-6 py-2 bg-black text-white rounded-full w-full justify-center"
+              >
                 Start Free Trial
               </a>
             </div>
           </div>
-
-          <nav className={`md:hidden ${expanded ? "block" : "hidden"}`}>
-            <div className="flex flex-col pt-8 pb-4 space-y-6">
-              <a href="#" className={commonStyles.link}>
-                Products
-              </a>
-              <a href="#" className={commonStyles.link}>
-                Features
-              </a>
-              <a href="#" className={commonStyles.link}>
-                Pricing
-              </a>
-              <a href="#" className={commonStyles.link}>
-                Support
-              </a>
-              <div className="relative inline-flex items-center justify-center group">
-                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-                <a
-                  href="#"
-                  className={commonStyles.gradientButton}
-                  role="button"
-                >
-                  Start Free Trial
-                </a>
-              </div>
-            </div>
-          </nav>
-        </div>
+        )}
       </header>
 
-      <section className="relative py-12 overflow-hidden bg-black sm:pb-16 lg:pb-20 xl:pb-24">
-        <div className="px-4 mx-auto relative sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
-            <div>
-              <h1 className="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-                Connecting Devs with Employers
-              </h1>
-              <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">
-                AuraUI connects top developers with the best opportunities.
-                Discover your next big project or join a dynamic team today.
-              </p>
-
-              <form
-                action="#"
-                method="POST"
-                className="relative mt-8 rounded-full sm:mt-12"
-              >
+      {/* Hero Section */}
+      <section className="relative z-10 py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side */}
+          <motion.div
+            initial={{ opacity: 0, x: -25 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
+              Connecting Devs with Employers
+            </h1>
+            <p className="mt-6 text-lg text-gray-400">
+              AuraUI connects top developers with the best opportunities.
+              Discover your next big project or join a dynamic team today.
+            </p>
+            {/* Search Input */}
+            <form
+              action="#"
+              method="POST"
+              className="relative mt-8 rounded-full sm:mt-12"
+            >
+              <div className="relative">
+                <div className="absolute rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500"></div>
                 <div className="relative">
-                  <div className="absolute rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500"></div>
-                  <div className="relative">
-                    <div className="absolute inset-y-0 left-0 flex items-center pl-6">
-                      <FaSearch className="w-5 h-5 text-gray-500" />
-                    </div>
-                    <input
-                      type="email"
-                      placeholder="Try React Dev, etc."
-                      className="block w-full py-4 pr-6 text-white placeholder-gray-500 bg-black border border-transparent rounded-full pl-14 sm:py-5 focus:border-transparent focus:ring-0"
-                    />
+                  <div className="absolute inset-y-0 left-0 flex items-center pl-6">
+                    <FaSearch className="w-5 h-5 text-gray-500" />
                   </div>
-                </div>
-                <div className="sm:absolute flex sm:right-1.5 sm:inset-y-1.5 mt-4 sm:mt-0">
-                  <div className="inline-flex cursor-pointer items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase transition-all duration-200 bg-gray-200 rounded-full sm:w-auto sm:py-3 hover:opacity-90">
-                    Find A Developer
-                  </div>
-                </div>
-              </form>
-
-              <div className="mt-8 sm:mt-12">
-                <p className="text-lg font-normal text-white">
-                  Trusted by 50k+ users
-                </p>
-                <div className="flex items-center mt-3">
-                  <div className="flex">
-                    <HiOutlineStar className="w-5 h-5 text-gradient" />
-                    <HiOutlineStar className="w-5 h-5 text-gradient" />
-                    <HiOutlineStar className="w-5 h-5 text-gradient" />
-                    <HiOutlineStar className="w-5 h-5 text-gradient" />
-                    <HiOutlineStar className="w-5 h-5 text-gray-500" />
-                    <span className="ml-2 text-base font-normal text-white">
-                      4.1/5
-                    </span>
-                    <span className="ml-1 text-base font-normal text-gray-500">
-                      (14k Reviews)
-                    </span>
-                  </div>
+                  <input
+                    type="email"
+                    placeholder="Try React Dev, etc."
+                    className="block w-full py-4 pr-6 text-white placeholder-gray-500 bg-black border border-transparent rounded-full pl-14 sm:py-5 focus:border-transparent focus:ring-0"
+                  />
                 </div>
               </div>
+              <div className="sm:absolute flex sm:right-1.5 sm:inset-y-1.5 mt-4 sm:mt-0">
+                <div className="inline-flex cursor-pointer items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase transition-all duration-200 bg-gray-200 rounded-full sm:w-auto sm:py-3 hover:opacity-90">
+                  Find A Developer
+                </div>
+              </div>
+            </form>
+            {/* Rating */}
+            <div className="mt-8">
+              <p className="text-white">Trusted by 50k+ users</p>
+              <div className="flex items-center mt-2 gap-1">
+                {Array.from({ length: 4 }).map((_, i) => (
+                  <HiOutlineStar key={i} className="text-cyan-400 w-5 h-5" />
+                ))}
+                <HiOutlineStar className="text-gray-500 w-5 h-5" />
+                <span className="text-white ml-2">4.1/5</span>
+                <span className="text-gray-400 ml-1">(14k Reviews)</span>
+              </div>
             </div>
+          </motion.div>
 
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-30 blur-lg z-0"></div>
-              <Image
-                src="https://www.auraui.com/memeimage/devss.jpg"
-                alt="Hero Image"
-                width={600}
-                height={600}
-                objectFit="cover"
-                className="rounded-lg relative z-10"
-              />
-            </div>
-          </div>
+          {/* Right Side */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-500 opacity-20 blur-lg rounded-2xl" />
+            <Image
+              src="https://www.auraui.com/memeimage/devss.jpg"
+              alt="Hero visual"
+              width={600}
+              height={600}
+              className="relative rounded-2xl shadow-lg"
+            />
+          </motion.div>
         </div>
       </section>
     </div>
