@@ -117,7 +117,7 @@ const Hero3 = () => {
               variants={aurauiMotion.item}
             >
               Everything you need to build, launch, and scale your startup. From
-              idea to IPO, we've got the tools and community to help you
+              idea to IPO, we&apos;ve got the tools and community to help you
               succeed.
             </motion.p>
 
