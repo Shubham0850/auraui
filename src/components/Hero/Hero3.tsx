@@ -14,7 +14,7 @@ import { aurauiMotion } from "@/lib/motion";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
-const Hero12 = () => {
+const Hero3 = () => {
   const { resolvedTheme } = useTheme();
 
   const logoSrc =
@@ -187,4 +187,4 @@ const Hero12 = () => {
   );
 };
 
-export default Hero12;
+export default Hero3;
