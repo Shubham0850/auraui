@@ -1,148 +1,190 @@
-import React, { useState } from "react";
-import { FaPlay, FaBars, FaTimes } from "react-icons/fa";
-import { FaRegCirclePlay } from "react-icons/fa6";
-
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import {
+  Rocket,
+  TrendingUp,
+  ArrowRight,
+  Menu,
+  Github,
+  Twitter,
+} from "lucide-react";
+import { aurauiMotion } from "@/lib/motion";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
-const commonButtonStyles =
-  "inline-flex items-center justify-center px-4 py-2 text-base font-medium transition-all duration-200 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2";
+const Hero12 = () => {
+  const { resolvedTheme } = useTheme();
 
-const Hero3 = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const logoSrc =
+    resolvedTheme === "dark"
+      ? "https://www.auraui.com/logo-dark.png"
+      : "https://www.auraui.com/logo-light.png";
 
   return (
-    <div>
-      <header className="py-4 bg-white sm:py-5">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex items-center justify-between">
-            <div className="shrink-0">
+    <div className="min-h-screen hero-theme-38 relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-background to-accent/20" />
+      <div className="absolute top-20 right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-20 w-48 h-48 bg-accent/10 rounded-full blur-2xl" />
+
+      {/* Navbar */}
+      <motion.nav
+        className="relative p-6"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="container mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div>
               <a href="#" title="AuraUI">
                 <Image
                   className="w-auto h-8"
-                  src="https://www.auraui.com/logo-light.png"
+                  src={logoSrc}
                   alt="AuraUI Logo"
                   width={100}
                   height={32}
                 />
               </a>
             </div>
-
-            <nav className="hidden lg:flex lg:items-center lg:space-x-4 lg:ml-12">
-              {["Products", "Features", "Pricing", "Support"].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-gray-900 transition-all duration-200 border border-transparent rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
-                >
-                  {item}
-                </a>
-              ))}
-            </nav>
-
-            <div className="hidden sm:flex sm:items-center sm:justify-end sm:space-x-4 sm:ml-auto">
-              <a
-                href="#"
-                className={`${commonButtonStyles} text-gray-900 border border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900`}
-              >
-                Start free trial
-              </a>
-            </div>
-
-            <div className="flex ml-4 lg:hidden">
-              <button
-                type="button"
-                onClick={toggleMenu}
-                className={`${commonButtonStyles} p-1 text-gray-900 border border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900`}
-              >
-                {menuOpen ? (
-                  <FaTimes className="w-3 h-4" />
-                ) : (
-                  <FaBars className="w-4 h-4" />
-                )}
-              </button>
-            </div>
           </div>
 
-          {menuOpen && (
-            <nav className="lg:hidden">
-              <div className="flex flex-col items-start p-4 mt-4 space-y-4 bg-white rounded-lg shadow-lg">
-                {["Products", "Features", "Pricing", "Support"].map((item) => (
-                  <a
-                    key={item}
-                    href="#"
-                    className="inline-flex items-center justify-center w-full px-4 py-2.5 text-base font-medium text-gray-900 transition-all duration-200 border border-transparent rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"
-                  >
-                    {item}
-                  </a>
-                ))}
-                <a
-                  href="#"
-                  className={`${commonButtonStyles} w-full text-gray-900 border border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900`}
-                >
-                  Start free trial
-                </a>
-              </div>
-            </nav>
-          )}
-        </div>
-      </header>
-
-      <section className="pb-8 bg-white sm:pb-12 lg:pb-12">
-        <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-40">
-          <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
-            <div className="lg:mt-16">
-              <div className="mx-auto text-center sm:max-w-lg lg:max-w-xl lg:text-left lg:mx-0">
-                <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl xl:text-6xl sm:tracking-tight">
-                  Discover AuraUI
-                  <p>Our Ultimate UI Kit</p>
-                </h1>
-                <p className="mt-6 text-lg leading-7 text-gray-700 lg:leading-8 lg:text-xl">
-                  AuraUI provides the components you need to create a
-                  professional website, landing page, or admin panel for your
-                  web applications.
-                </p>
-              </div>
-
-              <div className="flex flex-col items-stretch justify-center gap-4 mt-8 sm:flex-row sm:items-center sm:mt-10 lg:justify-start sm:flex-wrap">
-                <a
-                  href="#"
-                  className={`${commonButtonStyles} text-white bg-blue-600 border border-transparent shadow-sm hover:bg-blue-700 focus:ring-blue-700`}
-                >
-                  Start using AuraUI
-                </a>
-
-                <a
-                  href="#"
-                  className={`${commonButtonStyles} text-gray-900 border border-gray-300 hover:bg-gray-100 focus:ring-gray-300`}
-                >
-                  <FaRegCirclePlay className="w-4 h-4 mr-3 -ml-1 text-blue-600" />
-                  Watch 1 min intro
-                </a>
-              </div>
-            </div>
+          <div className="hidden md:flex items-center gap-8">
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Product
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Pricing
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Blog
+            </a>
+            <a
+              href="#"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              About
+            </a>
           </div>
 
-          <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
-            <div className="py-12 mt-6 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-              <div className="relative pl-10 -mr-40 sm:max-w-3xl lg:max-w-none lg:h-full lg:pl-24">
-                <Image
-                  className="w-full shadow-2xl rounded-xl lg:rounded-2xl ring-[24px] lg:ring-[48px] ring-blue-100 lg:h-full lg:w-auto lg:max-w-none"
-                  src="https://www.auraui.com/memeimage/analytics.jpg"
-                  alt="Dashboard Mockup"
-                  width={1300}
-                  height={800}
-                />
-              </div>
-            </div>
+          <div className="flex items-center gap-4">
+            <Button variant="ghost" size="sm" className="hidden md:flex">
+              Login
+            </Button>
+            <Button size="sm">Sign Up</Button>
+            <Button variant="ghost" size="icon" className="md:hidden">
+              <Menu className="w-4 h-4" />
+            </Button>
           </div>
         </div>
-      </section>
+      </motion.nav>
+
+      {/* Main content */}
+      <div className="relative z-10 container mx-auto px-6 pt-16 pb-20">
+        <div className="text-center max-w-4xl mx-auto">
+          <motion.div
+            className="space-y-8"
+            initial="hidden"
+            animate="visible"
+            variants={aurauiMotion.container}
+          >
+            <motion.div variants={aurauiMotion.item}>
+              <Badge variant="secondary" className="mb-6 px-4 py-2">
+                🚀 Now in Public Beta
+              </Badge>
+              <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
+                Launch Your{" "}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  Startup
+                </span>{" "}
+                in Days
+              </h1>
+            </motion.div>
+
+            <motion.p
+              className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto"
+              variants={aurauiMotion.item}
+            >
+              Everything you need to build, launch, and scale your startup. From
+              idea to IPO, we've got the tools and community to help you
+              succeed.
+            </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+              variants={aurauiMotion.item}
+            >
+              <Button size="lg" className="text-lg px-8 py-6">
+                Start Building
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+                <Github className="w-5 h-5 mr-2" />
+                View on GitHub
+              </Button>
+            </motion.div>
+
+            <motion.div
+              className="grid md:grid-cols-3 gap-6 pt-12"
+              variants={aurauiMotion.container}
+            >
+              <motion.div variants={aurauiMotion.item}>
+                <Card className="p-6 auraui-glass border-primary/20 text-center">
+                  <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Fast Growth</h3>
+                  <p className="text-muted-foreground">
+                    Scale from 0 to millions of users, our proven framework
+                  </p>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={aurauiMotion.item}>
+                <Card className="p-6 auraui-glass border-accent/20 text-center">
+                  <Rocket className="w-12 h-12 text-accent mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Quick Launch</h3>
+                  <p className="text-muted-foreground">
+                    Deploy your MVP in days, not months, with our starter kits
+                  </p>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={aurauiMotion.item}>
+                <Card className="p-6 auraui-glass border-secondary/20 text-center">
+                  <Twitter className="w-12 h-12 text-secondary mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">Community</h3>
+                  <p className="text-muted-foreground">
+                    Join 10k+ founders sharing knowledge and experiences
+                  </p>
+                </Card>
+              </motion.div>
+            </motion.div>
+
+            <motion.div
+              className="flex items-center justify-center gap-8 pt-8 text-sm text-muted-foreground"
+              variants={aurauiMotion.item}
+            >
+              <span>Trusted by 2,000+ startups</span>
+              <span>•</span>
+              <span>$100M+ raised by our users</span>
+              <span>•</span>
+              <span>50+ successful exits</span>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Hero3;
+export default Hero12;
