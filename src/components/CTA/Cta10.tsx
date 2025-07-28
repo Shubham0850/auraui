@@ -72,10 +72,7 @@ const Cta10 = () => {
               className="w-full px-12 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          <button
-            type="submit"
-            className="w-full py-3 font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg hover:brightness-110 transition"
-          >
+          <button className="w-[30%] py-3 font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-400 rounded-lg hover:brightness-110 transition">
             Join the Waitlist
           </button>
         </motion.form>

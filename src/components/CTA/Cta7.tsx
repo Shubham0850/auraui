@@ -89,10 +89,7 @@ const Cta7 = (props: Props) => {
                 </div>
               </div>
 
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center w-auto px-4 py-4 mt-4 font-semibold text-gray-400 transition-all duration-200 bg-blue-600 border border-transparent rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-blue-700 focus:bg-blue-700"
-              >
+              <button className="inline-flex items-center justify-center w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full sm:ml-4 sm:mt-0 sm:w-auto hover:bg-blue-700 focus:bg-blue-700">
                 Get Instant Access
                 <FaArrowRight className="w-5 h-5 ml-3 -mr-1" />
               </button>
