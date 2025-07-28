@@ -1,45 +1,66 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-type Props = {};
-
-const Cta8 = (props: Props) => {
+const Cta8 = () => {
   return (
-    <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+    <section className="relative overflow-hidden bg-black py-16 sm:py-20 lg:py-28 xl:py-36">
+      {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src="https://www.auraui.com/memeimage/laptop-girl.jpeg"
           alt="Girl working on laptop"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="left top"
-          className="md:object-left md:scale-100 md:origin-top-left"
+          fill
+          className="object-cover object-left-top scale-105 brightness-[0.6]"
+          priority
         />
       </div>
 
-      <div className="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
+      {/* Gradient Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0" />
 
-      <div className="absolute inset-0 block bg-black/60 md:hidden"></div>
+      {/* Content */}
+      <div className="relative z-10 px-6 mx-auto max-w-7xl">
+        <div className="max-w-xl sm:max-w-lg md:max-w-md text-left">
+          <motion.h2
+            className="text-4xl sm:text-5xl font-extrabold text-white leading-tight"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Get Full Access to <span className="text-indigo-400">auraUI</span>
+          </motion.h2>
 
-      <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left">
-          <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-            Get Full Access to Aura UI
-          </h2>
-          <p className="mt-4 text-base text-gray-200">
-            Join the Aura UI community and unlock all the features to create
-            stunning, responsive web applications. Subscribe now and elevate
-            your development experience.
-          </p>
+          <motion.p
+            className="mt-4 text-lg text-gray-300 leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+          >
+            Join the AuraUI community and gain premium access to all features
+            that help you build stunning, responsive websites with ease.
+          </motion.p>
 
-          <form action="#" method="POST" className="mt-10 lg:mt-14">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              {/* Email Input */}
-              <div className="relative w-full max-w-md">
-                <label htmlFor="email" className="sr-only">
-                  Email address
-                </label>
-                <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400 pointer-events-none">
+          {/* Form */}
+          <motion.form
+            className="mt-10 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-xl"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <div className="relative w-full">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  required
+                  className="w-full py-3 pl-12 pr-4 text-gray-100 placeholder-gray-400 bg-black/40 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition rounded-full"
+                />
+                <div className="absolute inset-y-0 left-4 flex items-center text-gray-400 pointer-events-none">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -54,22 +75,13 @@ const Cta8 = (props: Props) => {
                     />
                   </svg>
                 </div>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email address"
-                  required
-                  className="w-full py-3 pl-12 pr-4 text-gray-900 placeholder-gray-400 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
-                />
               </div>
 
-              {/* CTA Button */}
-              <button className="inline-flex items-center justify-center px-6 py-3.5 font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 rounded-lg shadow-lg transition">
+              <button className="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3.5 text-white font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md transition rounded-full">
                 Access
               </button>
             </div>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>
