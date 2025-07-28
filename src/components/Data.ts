@@ -241,7 +241,7 @@ export const components = [
     id: 35,
     name: "CTA9",
     tag: "cta",
-    imgSrc: "/all-components/cta/small.png",
+    imgSrc: "/all-components/cta/cta9.png",
     link: "/docs/cta#cta9",
   },
   {
@@ -283,7 +283,7 @@ export const components = [
     id: 41,
     name: "CTA3",
     tag: "cta",
-    imgSrc: "/all-components/cta/download.png",
+    imgSrc: "/all-components/cta/cta3.png",
     link: "/docs/cta#cta3",
   },
   {
