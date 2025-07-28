@@ -1,74 +1,83 @@
 import React from "react";
 import { FaLock } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const CTA9 = () => {
-  const containerStyles = "py-10 bg-gray-100 sm:py-16 lg:py-24";
-  const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
-  const headingStyles =
-    "text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl";
-  const descriptionStyles =
-    "max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600";
-  const formStyles = "max-w-xl mx-auto mt-12";
-  const inputStyles =
-    "block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-md caret-indigo-600 focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 dark:bg-white";
-  const buttonStyles =
-    "inline-flex items-center cursor-pointer justify-center w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-indigo-600 border border-transparent rounded-md sm:ml-4 sm:mt-0 sm:w-auto hover:bg-indigo-700 focus:bg-indigo-700";
-  const iconStyles = "flex-shrink-0 w-5 h-5 text-gray-600";
-  const secureTextStyles = "ml-2 text-sm text-gray-600";
-
   return (
-    <section className={containerStyles}>
-      <div className={innerContainerStyles}>
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className={headingStyles}>Unlock Full Potential with AuraUI</h2>
-          <p className={descriptionStyles}>
-            Subscribe to AuraUI for exclusive updates and insights into our
-            latest features. Stay at the forefront of design innovation and
-            performance.
-          </p>
-        </div>
+    <section className="relative py-20 bg-gradient-to-br from-[#eef2ff] via-[#e0e7ff] to-[#d1d5ff] overflow-hidden">
+      {/* Decorative radial glow */}
+      <div className="absolute -top-48 -left-48 w-[600px] h-[600px] bg-gradient-radial from-indigo-300/30 to-transparent rounded-full blur-3xl z-0" />
+      <div className="absolute -bottom-32 right-0 w-[400px] h-[400px] bg-gradient-radial from-indigo-200/20 to-transparent rounded-full blur-2xl z-0" />
 
-        <form action="#" method="POST" className={formStyles}>
-          <div className="flex flex-col items-center sm:flex-row sm:justify-center">
-            <div className="flex-1 w-full min-w-0 px-4 sm:px-0">
-              <label htmlFor="email" className="sr-only">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email address"
-                className={inputStyles}
-                required
-              />
-            </div>
+      <div className="relative z-10 px-4 mx-auto sm:px-6 lg:px-8 max-w-3xl text-center">
+        {/* Header Text */}
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight"
+        >
+          Unlock the Full Potential of{" "}
+          <span className="text-indigo-600">AuraUI</span>
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="mt-4 text-lg text-gray-700 max-w-xl mx-auto"
+        >
+          Subscribe to receive product updates, insights, and early access to
+          exclusive features that elevate your UI design process.
+        </motion.p>
 
-            <div className={buttonStyles}>
-              Get instant access
+        {/* Form Box */}
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          action="#"
+          method="POST"
+          className="mt-10 bg-white/70 backdrop-blur-md border border-white/30 p-6 sm:p-8 rounded-2xl shadow-xl max-w-xl mx-auto"
+        >
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+              className="w-full flex-1 px-5 py-3 rounded-md text-gray-900 bg-white border border-gray-300 placeholder-gray-400 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            />
+            <button className="inline-flex items-center justify-center px-5 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 transition">
+              Get Instant Access
               <svg
-                className="w-5 h-5 ml-3 -mr-1"
+                className="w-5 h-5 ml-2"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
                 fill="currentColor"
+                viewBox="0 0 20 20"
               >
                 <path
                   fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 010-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                   clipRule="evenodd"
                 />
               </svg>
-            </div>
+            </button>
           </div>
-        </form>
+        </motion.form>
 
-        <div className="flex items-center justify-center px-8 mt-8 sm:px-0">
-          <FaLock className={iconStyles} />
-          <span className={secureTextStyles}>
-            Your data is completely secure with AuraUI. We value your privacy
-            and do not share your information with anyone.
+        {/* Trust Text */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="mt-6 flex items-center justify-center text-gray-500 text-sm"
+        >
+          <FaLock className="mr-2 text-indigo-500" />
+          <span>
+            Your data is <strong>100% secure</strong> and protected with AuraUI.
           </span>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
