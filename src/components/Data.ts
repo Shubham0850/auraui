@@ -262,7 +262,7 @@ export const components = [
     id: 38,
     name: "CTA4",
     tag: "cta",
-    imgSrc: "/all-components/cta/explore.png",
+    imgSrc: "/all-components/cta/cta4.png",
     link: "/docs/cta#cta4",
   },
   {
