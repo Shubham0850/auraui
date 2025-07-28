@@ -227,7 +227,7 @@ export const components = [
     id: 33,
     name: "CTA8",
     tag: "cta",
-    imgSrc: "/all-components/cta/simple.png",
+    imgSrc: "/all-components/cta/cta8.png",
     link: "/docs/cta#cta8",
   },
   {
