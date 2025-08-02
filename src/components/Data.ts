@@ -388,7 +388,7 @@ export const components = [
     id: 56,
     name: "Footer1 ",
     tag: "footer",
-    imgSrc: "/all-components/footer/aura.png",
+    imgSrc: "/all-components/footer/footer1.png",
     link: "/docs/footer#footer1",
   },
   {

@@ -4,137 +4,115 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Footer1 = () => {
-  const iconStyles =
-    "flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600";
+  const footerLinks = [
+    {
+      title: "Company",
+      links: [
+        { href: "/about", text: "About" },
+        { href: "/features", text: "Features" },
+        { href: "/works", text: "Works" },
+        { href: "/career", text: "Career" },
+      ],
+    },
+    {
+      title: "Help",
+      links: [
+        { href: "/support", text: "Customer Support" },
+        { href: "/delivery", text: "Delivery Details" },
+        { href: "/terms", text: "Terms & Conditions" },
+        { href: "/privacy", text: "Privacy Policy" },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        { href: "/ebooks", text: "Free eBooks" },
+        { href: "/tutorial", text: "Development Tutorial" },
+        { href: "/blog", text: "How to - Blog" },
+        { href: "/youtube", text: "YouTube Playlist" },
+      ],
+    },
+    {
+      title: "Explore",
+      links: [
+        { href: "/community", text: "Community" },
+        { href: "/partners", text: "Partners" },
+        { href: "/events", text: "Events" },
+        { href: "/newsletter", text: "Newsletter" },
+      ],
+    },
+  ];
 
-  const linkClasses =
-    "text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80 cursor-pointer";
+  const socialIcons = [
+    { icon: <FiTwitter />, href: "https://twitter.com" },
+    { icon: <FiFacebook />, href: "https://facebook.com" },
+    { icon: <FiInstagram />, href: "https://instagram.com" },
+    { icon: <FiGithub />, href: "https://github.com" },
+  ];
 
   return (
-    <section className="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
-          {/* Company */}
-          <div>
-            <p className="text-base text-gray-500">Company</p>
-            <ul className="mt-8 space-y-4">
-              {[
-                { href: "/about", text: "About" },
-                { href: "/features", text: "Features" },
-                { href: "/works", text: "Works" },
-                { href: "/career", text: "Career" },
-              ].map((item, index) => (
-                <li key={index}>
-                  <Link href={item.href}>
-                    <span className={linkClasses}>{item.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Help */}
-          <div>
-            <p className="text-base text-gray-500">Help</p>
-            <ul className="mt-8 space-y-4">
-              {[
-                { href: "/support", text: "Customer Support" },
-                { href: "/delivery", text: "Delivery Details" },
-                { href: "/terms", text: "Terms & Conditions" },
-                { href: "/privacy", text: "Privacy Policy" },
-              ].map((item, index) => (
-                <li key={index}>
-                  <Link href={item.href}>
-                    <span className={linkClasses}>{item.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <p className="text-base text-gray-500">Resources</p>
-            <ul className="mt-8 space-y-4">
-              {[
-                { href: "/ebooks", text: "Free eBooks" },
-                { href: "/tutorial", text: "Development Tutorial" },
-                { href: "/blog", text: "How to - Blog" },
-                { href: "/youtube", text: "YouTube Playlist" },
-              ].map((item, index) => (
-                <li key={index}>
-                  <Link href={item.href}>
-                    <span className={linkClasses}>{item.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Extra Links */}
-          <div>
-            <p className="text-base text-gray-500">Extra Links</p>
-            <ul className="mt-8 space-y-4">
-              {[
-                { href: "/support", text: "Customer Support" },
-                { href: "/delivery", text: "Delivery Details" },
-                { href: "/terms", text: "Terms & Conditions" },
-                { href: "/privacy", text: "Privacy Policy" },
-              ].map((item, index) => (
-                <li key={index}>
-                  <Link href={item.href}>
-                    <span className={linkClasses}>{item.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+    <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-14 sm:px-8 lg:px-12">
+        {/* Top Grid */}
+        <div className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4 lg:gap-x-16">
+          {footerLinks.map((section, idx) => (
+            <div key={idx}>
+              <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                {section.title}
+              </h3>
+              <ul className="mt-6 space-y-4">
+                {section.links.map((link, index) => (
+                  <li key={index}>
+                    <Link href={link.href}>
+                      <span className="relative inline-block text-base text-gray-200 hover:text-white transition-colors duration-300 cursor-pointer">
+                        {link.text}
+                        <span className="absolute left-0 bottom-0 w-0 h-[1.5px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        <hr className="mt-16 mb-10 border-gray-800" />
+        {/* Divider */}
+        <div className="mt-14 border-t border-gray-800"></div>
 
-        <div className="flex flex-wrap items-center justify-between">
+        {/* Bottom Section */}
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          {/* Logo */}
           <Image
-            className="h-8 w-auto md:order-1"
             src="https://www.auraui.com/logo-dark.png"
             alt="Aura UI Logo"
-            height={200}
-            width={200}
+            width={130}
+            height={40}
+            className="w-auto h-9"
           />
 
-          <ul className="flex items-center space-x-3 md:order-3">
-            {[
-              {
-                icon: <FiTwitter className="w-4 h-4" />,
-                href: "https://twitter.com",
-              },
-              {
-                icon: <FiFacebook className="w-4 h-4" />,
-                href: "https://facebook.com",
-              },
-              {
-                icon: <FiInstagram className="w-4 h-4" />,
-                href: "https://instagram.com",
-              },
-              {
-                icon: <FiGithub className="w-4 h-4" />,
-                href: "https://github.com",
-              },
-            ].map((item, index) => (
-              <li key={index}>
-                <a href={item.href} target="_blank" rel="noopener noreferrer">
-                  <div className={iconStyles}>{item.icon}</div>
+          {/* Social Icons */}
+          <ul className="flex items-center gap-4">
+            {socialIcons.map((item, idx) => (
+              <li key={idx}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-9 h-9 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-gray-300 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300"
+                >
+                  {item.icon}
                 </a>
               </li>
             ))}
           </ul>
 
-          <p className="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">
-            © Copyright 2024, All Rights Reserved by Aura UI
+          {/* Copyright */}
+          <p className="text-xs text-gray-400 text-center md:text-right">
+            © {new Date().getFullYear()} Aura UI. All rights reserved.
           </p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
