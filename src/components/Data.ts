@@ -444,7 +444,7 @@ export const components = [
     id: 64,
     name: "Navbar2 ",
     tag: "navbar",
-    imgSrc: "/all-components/header/calltoaction.png",
+    imgSrc: "/all-components/header/header2.png",
     link: "/docs/header#header2",
   },
   {
