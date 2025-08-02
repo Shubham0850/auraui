@@ -10,88 +10,86 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Footer3 = () => {
-  const iconStyles = {
-    base: "flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7",
-    hoverFocus:
-      "focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600",
-  };
+  const footerSections = [
+    {
+      title: "Company",
+      links: ["About", "Features", "Works", "Career"],
+    },
+    {
+      title: "Help",
+      links: [
+        "Customer Support",
+        "Delivery Details",
+        "Terms & Conditions",
+        "Privacy Policy",
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        "Free eBooks",
+        "Development Tutorial",
+        "How to - Blog",
+        "YouTube Playlist",
+      ],
+    },
+    {
+      title: "Explore",
+      links: ["Community", "Partners", "Events", "Newsletter"],
+    },
+  ];
 
-  const linkClasses = {
-    base: "flex text-sm text-gray-800 transition-all duration-200",
-    hoverFocus: "hover:text-orange-600 focus:text-orange-600",
-  };
+  const socialLinks = [
+    { icon: <FiTwitter className="w-4 h-4" />, href: "https://twitter.com" },
+    { icon: <FiFacebook className="w-4 h-4" />, href: "https://facebook.com" },
+    {
+      icon: <FiInstagram className="w-4 h-4" />,
+      href: "https://instagram.com",
+    },
+    { icon: <FiGithub className="w-4 h-4" />, href: "https://github.com" },
+  ];
 
   return (
-    <section className="py-10 bg-white sm:pt-16 lg:pt-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
-          <div className="col-span-2 md:col-span-4 xl:pr-8">
+    <footer className="bg-gradient-to-b from-white to-gray-50 pt-14 pb-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-14 gap-x-10">
+          {/* Logo & About */}
+          <div className="col-span-2 md:col-span-4 lg:pr-12">
             <Image
               className="w-auto h-9"
-              src="https://www.auraui.com/logo-light.png" // Path to Aura UI logo
+              src="https://www.auraui.com/logo-light.png"
               alt="Aura UI Logo"
               width={150}
               height={36}
             />
-            <p className="text-base leading-relaxed text-gray-600 mt-7">
-              Build with passion. Get connected with AuraUI and get a perfect
-              fluency in your Frontend Works.
+            <p className="text-sm leading-relaxed text-gray-600 mt-6">
+              Build with passion ⚡. Join AuraUI to craft modern UI experiences
+              with elegance, speed, and consistency.
             </p>
+
             <Link
               href="#"
-              title="Start Live Chat"
-              className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700 mt-7"
+              className="inline-flex items-center gap-2 px-5 py-3 font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 mt-7"
             >
-              <FiMessageSquare className="w-6 h-6" />
+              <FiMessageSquare className="w-5 h-5" />
               Start Live Chat
             </Link>
           </div>
 
-          {[
-            {
-              title: "Company",
-              links: ["About", "Features", "Works", "Career"],
-            },
-            {
-              title: "Help",
-              links: [
-                "Customer Support",
-                "Delivery Details",
-                "Terms & Conditions",
-                "Privacy Policy",
-              ],
-            },
-            {
-              title: "Resources",
-              links: [
-                "Free eBooks",
-                "Development Tutorial",
-                "How to - Blog",
-                "YouTube Playlist",
-              ],
-            },
-            {
-              title: "Extra Links",
-              links: [
-                "Customer Support",
-                "Delivery Details",
-                "Terms & Conditions",
-                "Privacy Policy",
-              ],
-            },
-          ].map((section, index) => (
+          {/* Link Columns */}
+          {footerSections.map((section, index) => (
             <div className="lg:col-span-2" key={index}>
-              <p className="text-base font-semibold text-gray-900">
+              <p className="text-sm font-semibold text-gray-900 uppercase tracking-wide">
                 {section.title}
               </p>
-              <ul className="mt-6 space-y-5">
+              <ul className="mt-5 space-y-4">
                 {section.links.map((link, idx) => (
                   <li key={idx}>
                     <Link
                       href="#"
-                      title={link}
-                      className={`${linkClasses.base} ${linkClasses.hoverFocus}`}
+                      className="relative block text-sm text-gray-600 hover:text-orange-600 pl-2 transition-all duration-300 group"
                     >
+                      <span className="absolute left-0 top-0 h-full w-[2px] bg-orange-500 scale-y-0 group-hover:scale-y-100 transition-transform origin-top"></span>
                       {link}
                     </Link>
                   </li>
@@ -101,38 +99,23 @@ const Footer3 = () => {
           ))}
         </div>
 
-        <hr className="mt-16 mb-10 border-gray-200" />
+        {/* Divider */}
+        <div className="mt-16 border-t border-gray-200/70"></div>
 
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <p className="text-sm text-gray-600">
-            © Copyright 2024, All Rights Reserved by Aura UI
+        {/* Bottom Bar */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <p className="text-sm text-gray-500 text-center sm:text-left">
+            © {new Date().getFullYear()} AuraUI. All rights reserved.
           </p>
 
-          <ul className="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
-            {[
-              {
-                icon: <FiTwitter className="w-4 h-4" />,
-                href: "https://twitter.com",
-              },
-              {
-                icon: <FiFacebook className="w-4 h-4" />,
-                href: "https://facebook.com",
-              },
-              {
-                icon: <FiInstagram className="w-4 h-4" />,
-                href: "https://instagram.com",
-              },
-              {
-                icon: <FiGithub className="w-4 h-4" />,
-                href: "https://github.com",
-              },
-            ].map((item, index) => (
-              <li key={index}>
+          <ul className="flex items-center gap-3">
+            {socialLinks.map((item, idx) => (
+              <li key={idx}>
                 <Link
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${iconStyles.base} ${iconStyles.hoverFocus}`}
+                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white/60 backdrop-blur border border-gray-200 text-gray-600 hover:text-orange-600 hover:border-orange-400 shadow-sm transition-all duration-300"
                 >
                   {item.icon}
                 </Link>
@@ -141,7 +124,7 @@ const Footer3 = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
