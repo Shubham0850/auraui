@@ -402,7 +402,7 @@ export const components = [
     id: 58,
     name: "Footer3 ",
     tag: "footer",
-    imgSrc: "/all-components/footer/light.png",
+    imgSrc: "/all-components/footer/footer3.png",
     link: "/docs/footer#footer3",
   },
   {
