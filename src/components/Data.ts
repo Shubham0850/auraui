@@ -430,14 +430,14 @@ export const components = [
     id: 62,
     name: "Navbar3 ",
     tag: "navbar",
-    imgSrc: "/all-components/header/header3.png",
+    imgSrc: "/all-components/header/.png",
     link: "/docs/header#header3",
   },
   {
     id: 63,
     name: "User Account Navbar ",
     tag: "navbar",
-    imgSrc: "/all-components/header/useraccount.png",
+    imgSrc: "/all-components/header/header4.png",
     link: "/docs/header#user-account-navbar",
   },
   {
