@@ -3,100 +3,79 @@ import Link from "next/link";
 import { FiTwitter, FiFacebook, FiInstagram } from "react-icons/fi";
 import Image from "next/image";
 
-// SVG Components as React Icons
-const TwitterIcon = () => <FiTwitter className="w-6 h-6" />;
-const FacebookIcon = () => <FiFacebook className="w-6 h-6" />;
-const InstagramIcon = () => <FiInstagram className="w-6 h-6" />;
-
-type Props = {};
-
-const Footer5 = (props: Props) => {
-  // Common anchor styles
+const Footer5 = () => {
   const anchorStyles =
-    "text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80 cursor-pointer";
+    "relative text-sm text-white transition duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all after:duration-300";
+
+  const socialIconStyles =
+    "flex items-center justify-center w-9 h-9 rounded-full border border-white/30 text-white hover:bg-white hover:text-fuchsia-600 transition-all duration-300";
 
   return (
-    <section className="py-12 bg-gradient-to-r from-fuchsia-600 to-blue-600">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <section className="py-10 bg-gradient-to-br from-fuchsia-700 via-purple-700 to-blue-700 relative overflow-hidden">
+      {/* Glow Effect */}
+      <div className="absolute inset-0 bg-gradient-to-t from-white/5 to-transparent opacity-10 pointer-events-none"></div>
+
+      <div className="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
-          <div className="xl:flex xl:items-center xl:justify-start">
+          {/* Left side */}
+          <div className="xl:flex xl:items-center xl:space-x-6">
             <Image
-              className="w-auto mx-auto h-7"
+              className="w-auto mx-auto h-8"
               src="https://www.auraui.com/logo-dark.png"
               alt="Aura UI Logo"
               height={200}
               width={200}
             />
-            <p className="mt-5 text-sm text-white xl:ml-6 xl:mt-0">
-              © Copyright 2024 Aura UI
+            <p className="mt-4 text-sm text-white/80 xl:mt-0">
+              © 2024 AuraUI. All rights reserved.
             </p>
           </div>
 
-          <div className="items-center mt-8 xl:mt-0 xl:flex xl:justify-end xl:space-x-8">
-            <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 xl:justify-end">
-              <li>
-                <Link href="/about">
-                  <span className={anchorStyles}>About</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services">
-                  <span className={anchorStyles}>Services</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy">
-                  <span className={anchorStyles}>Privacy Policy</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms">
-                  <span className={anchorStyles}>Terms & Conditions</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/support">
-                  <span className={anchorStyles}>Support</span>
-                </Link>
-              </li>
+          {/* Right side */}
+          <div className="mt-8 xl:mt-0 xl:flex xl:items-center xl:space-x-10">
+            {/* Navigation Links */}
+            <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+              {["About", "Services", "Privacy Policy", "Terms", "Support"].map(
+                (item, idx) => (
+                  <li key={idx}>
+                    <Link href={`/${item.toLowerCase().replace(/\s+/g, "")}`}>
+                      <span className={anchorStyles}>{item}</span>
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
 
-            <div className="w-full h-px mt-8 mb-5 xl:w-px xl:m-0 xl:h-6 bg-gray-50/20"></div>
+            {/* Divider */}
+            <div className="hidden xl:block w-px h-6 bg-white/20"></div>
 
-            <ul className="flex items-center justify-center space-x-8 xl:justify-end">
-              <li>
-                <a
-                  href="https://twitter.com"
-                  title="Twitter"
-                  className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <TwitterIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://facebook.com"
-                  title="Facebook"
-                  className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FacebookIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://instagram.com"
-                  title="Instagram"
-                  className="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InstagramIcon />
-                </a>
-              </li>
+            {/* Social Icons */}
+            <ul className="flex items-center justify-center space-x-5 mt-6 xl:mt-0">
+              {[
+                {
+                  icon: <FiTwitter className="w-4 h-4" />,
+                  href: "https://twitter.com",
+                },
+                {
+                  icon: <FiFacebook className="w-4 h-4" />,
+                  href: "https://facebook.com",
+                },
+                {
+                  icon: <FiInstagram className="w-4 h-4" />,
+                  href: "https://instagram.com",
+                },
+              ].map((item, idx) => (
+                <li key={idx}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={socialIconStyles}
+                  >
+                    {item.icon}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
