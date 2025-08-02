@@ -416,7 +416,7 @@ export const components = [
     id: 60,
     name: "Footer4 ",
     tag: "footer",
-    imgSrc: "/all-components/footer/lightfooter.png",
+    imgSrc: "/all-components/footer/footer4.png",
     link: "/docs/footer#footer4",
   },
   {
