@@ -409,7 +409,7 @@ export const components = [
     id: 59,
     name: "Footer2 ",
     tag: "footer",
-    imgSrc: "/all-components/footer/blue.png",
+    imgSrc: "/all-components/footer/footer2.png",
     link: "/docs/footer#footer2",
   },
   {
