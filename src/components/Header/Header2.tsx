@@ -1,86 +1,114 @@
+"use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
-const styles = {
-  link: "text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70",
-  mobileLink:
-    "py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70",
-};
+const navLinks = [
+  { href: "#features", label: "Features" },
+  { href: "#solutions", label: "Solutions" },
+  { href: "#resources", label: "Resources" },
+  { href: "#pricing", label: "Pricing" },
+];
 
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
-    <header className="bg-black border-b border-gray-700">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        {/* lg+ */}
-        <nav className="flex items-center justify-between h-16 lg:h-20">
-          <div className="flex-shrink-0">
-            <Link href="#" className="flex" title="Aura UI">
-              <Image
-                className="w-auto h-8 lg:h-10"
-                src="https://www.auraui.com/logo-dark.png"
-                alt="Aura UI Logo"
-                height={200}
-                width={200}
-              />
-            </Link>
-          </div>
+    <header className="max-w-6xl ">
+      {/* Main Nav */}
+      <nav className="flex items-center justify-between px-6 py-3 rounded-2xl bg-black backdrop-blur-xl border border-white/10 shadow-lg">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            className="h-8 w-auto lg:h-10"
+            src="https://www.auraui.com/logo-dark.png"
+            alt="AuraUI Logo"
+            height={40}
+            width={120}
+          />
+        </Link>
 
-          <button
-            type="button"
-            className="inline-flex p-2 text-white transition-all duration-200 rounded-md lg:hidden"
-            onClick={toggleMenu}
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center space-x-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="relative text-white text-sm font-medium transition-all duration-300 hover:text-purple-400 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-purple-500 after:to-pink-500 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="hidden md:flex">
+          <Link
+            href="#signup"
+            className="px-5 py-2 text-sm font-medium text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:shadow-[0_0_15px_rgba(217,70,239,0.7)] transition-all duration-300"
           >
-            {isMenuOpen ? (
-              <FiX className="w-6 h-6" />
-            ) : (
-              <FiMenu className="w-6 h-6" />
-            )}
-          </button>
+            Sign up
+          </Link>
+        </div>
 
-          <div className="hidden md:flex md:items-center md:space-x-10">
-            <Link href="#" className={styles.link} title="Features">
-              Features
-            </Link>
-            <Link href="#" className={styles.link} title="Solutions">
-              Solutions
-            </Link>
-            <Link href="#" className={styles.link} title="Resources">
-              Resources
-            </Link>
-            <Link href="#" className={styles.link} title="Pricing">
-              Pricing
-            </Link>
-          </div>
-        </nav>
+        {/* Mobile Menu Toggle */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-white p-2 rounded-md hover:bg-white/10 transition-all"
+        >
+          {isMenuOpen ? (
+            <FiX className="h-6 w-6" />
+          ) : (
+            <FiMenu className="h-6 w-6" />
+          )}
+        </button>
+      </nav>
 
-        {/* xs to lg */}
+      {/* Mobile Nav Overlay */}
+      <AnimatePresence>
         {isMenuOpen && (
-          <nav className="px-4 py-5 text-center bg-black md:hidden">
-            <div className="flex flex-col items-center space-y-2">
-              <Link href="#" className={styles.mobileLink} title="Features">
-                Features
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-40 bg-black/80 backdrop-blur-2xl flex flex-col items-center justify-center space-y-6"
+          >
+            {navLinks.map((link, i) => (
+              <motion.div
+                key={link.href}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <Link
+                  href={link.href}
+                  className="text-2xl font-medium text-white hover:text-purple-400 transition-all"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              <Link
+                href="#signup"
+                className="mt-6 px-6 py-3 text-lg font-medium text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-500 hover:shadow-[0_0_20px_rgba(217,70,239,0.8)] transition-all"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sign up
               </Link>
-              <Link href="#" className={styles.mobileLink} title="Solutions">
-                Solutions
-              </Link>
-              <Link href="#" className={styles.mobileLink} title="Resources">
-                Resources
-              </Link>
-              <Link href="#" className={styles.mobileLink} title="Pricing">
-                Pricing
-              </Link>
-            </div>
-          </nav>
+            </motion.div>
+          </motion.div>
         )}
-      </div>
+      </AnimatePresence>
     </header>
   );
 };
