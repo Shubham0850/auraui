@@ -13,96 +13,106 @@ import {
 } from "react-icons/fa";
 
 const Footer7 = () => {
+  const linkStyle =
+    "text-sm font-medium text-gray-400 hover:text-white transition-colors cursor-pointer";
+
+  const sectionTitle = "text-lg font-semibold text-white";
+
+  const socialStyle =
+    "w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 text-gray-300 hover:text-black hover:bg-yellow-400 transition-all duration-300 cursor-pointer";
+
   return (
-    <div className="bg-gray-800 flex flex-col justify-center ">
-      <div className="max-w-5xl w-11/12 mx-auto flex flex-wrap justify-between py-16 gap-8">
-        <div className="w-full h-[40px] sm:w-auto flex justify-center sm:justify-start">
+    <footer className="bg-gray-900">
+      {/* Top Section */}
+      <div className="max-w-6xl w-11/12 mx-auto flex flex-wrap justify-between py-16 gap-10">
+        {/* Logo + About */}
+        <div className="w-full sm:w-auto flex flex-col items-center sm:items-start">
           <Image
             src="https://www.auraui.com/logo-dark.png"
-            alt="image"
-            width={100}
-            height={34}
+            alt="AuraUI Logo"
+            width={120}
+            height={40}
+            className="mb-4"
           />
+          <p className="text-sm text-gray-400 max-w-xs text-center sm:text-left">
+            Explore how <span className="text-yellow-400">AuraUI</span> helps
+            you craft stunning, high‑performance web experiences with ease.
+          </p>
         </div>
-        <div className="flex flex-col gap-5 w-full sm:w-auto">
-          <h1 className="text-lg font-semibold text-white/80">Company</h1>
-          <div className="flex flex-col gap-3">
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              SaffronStays
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Signature
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              XSeries
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              About
-            </h2>
-          </div>
+
+        {/* Company */}
+        <div className="flex flex-col gap-4">
+          <h1 className={sectionTitle}>Company</h1>
+          <ul className="flex flex-col gap-3">
+            {["About", "Features", "Careers", "Contact"].map((item, idx) => (
+              <li key={idx}>
+                <a href="#" className={linkStyle}>
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="flex flex-col gap-5 w-full sm:w-auto">
-          <h1 className="text-lg font-semibold text-white/80">Contact</h1>
-          <div className="flex flex-col gap-3">
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              mail@saffronstays.com
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              +91 3728253727
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Contact us
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Contact to Partner
-            </h2>
-          </div>
+
+        {/* Resources */}
+        <div className="flex flex-col gap-4">
+          <h1 className={sectionTitle}>Resources</h1>
+          <ul className="flex flex-col gap-3">
+            {["Docs", "Blog", "Tutorials", "Community"].map((item, idx) => (
+              <li key={idx}>
+                <a href="#" className={linkStyle}>
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="flex flex-col gap-5 w-full sm:w-auto">
-          <h1 className="text-lg font-semibold text-white/80">Policies</h1>
-          <div className="flex flex-col gap-3">
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Privacy Policy
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Terms
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Sitemap
-            </h2>
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              Cancellation Policy
-            </h2>
-          </div>
+
+        {/* Policies */}
+        <div className="flex flex-col gap-4">
+          <h1 className={sectionTitle}>Policies</h1>
+          <ul className="flex flex-col gap-3">
+            {["Privacy Policy", "Terms", "Sitemap", "Cancellation"].map(
+              (item, idx) => (
+                <li key={idx}>
+                  <a href="#" className={linkStyle}>
+                    {item}
+                  </a>
+                </li>
+              ),
+            )}
+          </ul>
         </div>
-        <div className="flex flex-col gap-5 w-full sm:w-auto">
-          <h1 className="text-lg font-semibold text-white/80">
-            Partner with us
-          </h1>
-          <div className="flex flex-col gap-3">
-            <h2 className="text-sm font-medium text-white/60 hover:text-white cursor-pointer">
-              List a home
-            </h2>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="bg-gray-950 py-6">
+        <div className="max-w-6xl w-11/12 mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+          <p className="text-xs text-gray-400 text-center sm:text-left">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-yellow-400 font-medium">AuraUI</span>. All
+            rights reserved.
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex gap-4">
+            {[
+              FaFacebookF,
+              FaInstagram,
+              FaTwitter,
+              FaLinkedinIn,
+              FaYoutube,
+              FaPinterestP,
+              FaGoogle,
+            ].map((Icon, idx) => (
+              <a key={idx} href="#" className={socialStyle}>
+                <Icon className="w-4 h-4" />
+              </a>
+            ))}
           </div>
         </div>
       </div>
-      <div className="bg-gray-900 py-5">
-        <div className="max-w-5xl w-11/12 mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="text-xs font-medium text-white/60 text-center sm:text-left">
-            © 2021 SaffronStays. All rights reserved
-          </div>
-          <div className="flex gap-5 items-center text-white justify-center">
-            <FaFacebookF className="hover:text-blue-500 cursor-pointer" />
-            <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-            <FaTwitter className="hover:text-blue-400 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-blue-700 cursor-pointer" />
-            <FaYoutube className="hover:text-red-600 cursor-pointer" />
-            <FaPinterestP className="hover:text-red-500 cursor-pointer" />
-            <FaGoogle className="hover:text-red-500 cursor-pointer" />
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 
