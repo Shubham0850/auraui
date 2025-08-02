@@ -430,7 +430,7 @@ export const components = [
     id: 62,
     name: "Navbar3 ",
     tag: "navbar",
-    imgSrc: "/all-components/header/simple.png",
+    imgSrc: "/all-components/header/header3.png",
     link: "/docs/header#header3",
   },
   {
