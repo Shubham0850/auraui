@@ -1,76 +1,99 @@
+"use client";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaQuoteRight, FaArrowRight } from "react-icons/fa";
 
-const commonClasses = {
-  container: "py-12 bg-white sm:py-16 lg:py-20 xl:py-24",
-  wrapper: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
-  grid: "grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 xl:gap-x-24",
-  imgContainer:
-    "relative overflow-hidden group lg:order-2 rounded-2xl lg:rounded-3xl",
-  img: "object-cover w-full h-full transition-all duration-200 group-hover:scale-110",
+const classes = {
+  section:
+    "relative py-20 bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-200 overflow-hidden",
+  container: "px-6 mx-auto max-w-7xl lg:px-12 relative z-10",
+  grid: "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center",
+  card: "backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-10 text-white",
+  quoteIcon: "text-4xl text-pink-300 mb-6",
+  quoteText: "text-2xl font-semibold leading-snug sm:text-3xl",
+  description: "mt-4 text-lg text-gray-200",
+  profile: "flex items-center gap-4 mt-8",
+  avatar: "w-14 h-14 rounded-full object-cover border-2 border-pink-400",
+  name: "text-lg font-bold",
+  role: "text-sm text-gray-600",
+  link: "inline-flex items-center text-sm font-semibold text-gray-600 transition-transform hover:scale-105",
+  arrow: "ml-2 w-4 h-4",
+  imgWrapper: "relative overflow-hidden rounded-3xl shadow-2xl h-[400px] group",
+  img: "object-cover w-full h-full transition-transform duration-500 group-hover:scale-110",
   gradientOverlay:
-    "absolute inset-0 pointer-events-none bg-gradient-to-t from-gray-900 via-transparent to-transparent",
-  textContainer: "absolute bottom-0 left-0 px-8 py-6",
-  name: "text-lg font-semibold text-white",
-  position: "text-sm font-normal text-gray-400",
-  icon: "w-auto text-gray-300 h-9",
-  quoteText:
-    "text-2xl font-medium leading-snug tracking-tight text-gray-900 sm:text-3xl",
-  quoteDescription:
-    "mt-8 text-lg font-normal leading-8 text-gray-600 sm:text-xl sm:leading-9",
-  link: "inline-flex items-center text-sm font-semibold text-blue-600 transition-all duration-200 group hover:text-blue-800 hover:underline",
-  arrowIcon:
-    "w-5 h-5 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200",
+    "absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent",
 };
 
-function Testimonial5() {
+const Testimonial5 = () => {
   return (
-    <section className={commonClasses.container}>
-      <div className={commonClasses.wrapper}>
-        <div className={commonClasses.grid}>
-          <div className={commonClasses.imgContainer}>
+    <section className={classes.section}>
+      <div className={classes.container}>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className={classes.grid}
+        >
+          {/* IMAGE SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className={classes.imgWrapper}
+          >
             <img
-              className={commonClasses.img}
-              src="https://www.auraui.com/memeimage/woman5.jpg"
+              className={classes.img}
+              src="https://images.unsplash.com/photo-1545184180-25d471fe75eb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Testimonial"
             />
-            <div className={commonClasses.gradientOverlay}></div>
-            <div className={commonClasses.textContainer}>
-              <p className={commonClasses.name}>Albert Flores</p>
-              <p className={commonClasses.position}>
-                Product Manager at AuraUI
-              </p>
+            <div className={classes.gradientOverlay}></div>
+          </motion.div>
+
+          {/* QUOTE SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className={classes.card}
+          >
+            <FaQuoteRight className={classes.quoteIcon} />
+            <p className={classes.quoteText}>
+              “AuraUI completely redefined how our team approaches design. We
+              went from endless iterations to pixel-perfect results in days.”
+            </p>
+            <p className={classes.description}>
+              With AuraUI, collaboration became seamless, and the prebuilt
+              components gave us the confidence to ship faster than ever before.
+            </p>
+
+            <div className={classes.profile}>
+              <img
+                className={classes.avatar}
+                src="https://images.unsplash.com/photo-1545184180-25d471fe75eb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Albert Flores"
+              />
+              <div>
+                <p className={classes.name}>Albert Flores</p>
+                <p className={classes.role}>Product Manager @ AuraUI</p>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <FaArrowRight className={commonClasses.icon} />
-            <blockquote className="mt-8">
-              <p className={commonClasses.quoteText}>
-                &quot;AuraUI has transformed our design process. The tools are
-                intuitive, and the results speak for themselves.&quot;
-              </p>
-              <p className={commonClasses.quoteDescription}>
-                &quot;With AuraUI, our design team can now streamline their
-                workflow and achieve design goals with greater efficiency.&quot;
-              </p>
-            </blockquote>
-
-            <div className="mt-8 sm:mt-12">
-              <a
-                href="#"
-                title="Read Success Story"
-                className={commonClasses.link}
-              >
-                Read Success Story
-                <FaArrowRight className={commonClasses.arrowIcon} />
+            <div className="mt-8">
+              <a href="#" className={classes.link}>
+                Read full success story{" "}
+                <FaArrowRight className={classes.arrow} />
               </a>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
+
+      {/* Floating gradient shapes */}
+      <div className="absolute -top-20 -left-20 w-72 h-72 bg-pink-400 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-0 -right-20 w-72 h-72 bg-indigo-500 rounded-full blur-3xl opacity-30"></div>
     </section>
   );
-}
+};
 
 export default Testimonial5;
