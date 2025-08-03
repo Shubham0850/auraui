@@ -21,9 +21,9 @@ const testimonials = [
 function Testimonial3() {
   return (
     <section className="relative py-24 bg-gradient-to-br from-fuchsia-50 via-white to-blue-50 overflow-hidden">
-      {/* Decorative Gradient Blobs */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-tr from-fuchsia-400/30 to-purple-400/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-400/20 to-cyan-300/20 rounded-full blur-3xl"></div>
+      {/* Background accents */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-tr from-fuchsia-300/30 to-purple-300/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-300/20 to-cyan-300/20 rounded-full blur-3xl"></div>
 
       <div className="relative max-w-7xl px-6 mx-auto lg:px-12">
         {/* Header */}
@@ -41,40 +41,34 @@ function Testimonial3() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 p-10"
+              className="relative group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 p-10"
             >
               {/* Quote */}
               <blockquote className="text-xl italic font-medium text-gray-800 leading-relaxed">
                 “{t.quote}”
               </blockquote>
 
+              {/* Stars */}
+              <div className="flex items-center justify-start mt-4">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} className="w-5 h-5 text-yellow-400" />
+                ))}
+              </div>
+
               {/* Profile */}
-              <div className="flex items-center mt-8">
-                <div className="relative">
-                  <img
-                    src={t.img}
-                    alt={t.name}
-                    className="w-16 h-16 rounded-full object-cover border-4 border-transparent bg-gradient-to-r from-fuchsia-500 to-blue-500 p-[2px]"
-                  />
-                  <div className="absolute -top-1 -right-1 flex">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar
-                        key={i}
-                        className="w-4 h-4 text-yellow-400 drop-shadow-sm"
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="ml-5">
+              <div className="flex items-center mt-6">
+                <img
+                  src={t.img}
+                  alt={t.name}
+                  className="w-14 h-14 rounded-full object-cover ring-4 ring-fuchsia-200"
+                />
+                <div className="ml-4">
                   <p className="text-lg font-semibold text-gray-900">
                     {t.name}
                   </p>
                   <p className="text-sm text-gray-600">{t.role}</p>
                 </div>
               </div>
-
-              {/* Accent Gradient Line */}
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-fuchsia-500 to-blue-500 rounded-b-3xl"></span>
             </div>
           ))}
         </div>
