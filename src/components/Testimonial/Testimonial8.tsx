@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const reviews = [
   {
@@ -36,49 +38,61 @@ const reviews = [
 
 function Testimonial8() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-black">
-      <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+    <section className="relative py-20 bg-gradient-to-br from-black via-[#0a0a0a] to-[#141414] overflow-hidden">
+      {/* floating gradient glows */}
+      <div className="absolute -top-32 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+
+      <div className="relative px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+        {/* Heading */}
         <div className="text-center">
           <h2 className="tracking-tighter text-white">
-            <span className="font-sans text-4xl font-normal sm:text-5xl md:text-6xl">
+            <span className="font-sans text-4xl font-semibold sm:text-5xl md:text-6xl">
               Recommended
             </span>
-            <span className="block font-serif text-5xl italic sm:text-6xl md:text-7xl">
+            <span className="block font-serif text-5xl italic sm:text-6xl md:text-7xl bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               by our members
             </span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-2 xl:grid-cols-3 lg:mt-16">
+        {/* Reviews Grid */}
+        <div className="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 xl:grid-cols-3">
           {reviews.map((review, index) => (
-            <div
+            <motion.div
               key={index}
-              className="overflow-hidden transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+              className="relative rounded-xl border border-white/10 bg-[#111111] p-8 shadow-lg transition-all duration-300 hover:border-cyan-400/50 hover:shadow-[0_0_25px_rgba(0,255,255,0.15)]"
             >
-              <div className="p-6 md:px-12 md:py-10">
-                <div className="flex space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar
-                      key={i}
-                      className={`w-6 h-6 ${
-                        i < 4 ? "text-white" : "text-gray-500"
-                      }`}
-                    />
-                  ))}
-                </div>
-                <blockquote className="mt-4">
-                  <p className="font-sans text-xl font-normal text-white">
-                    {review.text}
-                  </p>
-                </blockquote>
-                <p className="mt-5 font-sans text-2xl font-normal text-opacity-50 text-white">
-                  {review.name}
-                </p>
-                <p className="mt-2 font-sans text-sm font-normal text-opacity-50 text-white">
-                  {review.title}
-                </p>
+              {/* Stars */}
+              <div className="flex space-x-1">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar
+                    key={i}
+                    className="w-5 h-5 text-cyan-400 drop-shadow-[0_0_6px_rgba(0,255,255,0.6)]"
+                  />
+                ))}
               </div>
-            </div>
+
+              {/* Quote */}
+              <blockquote className="mt-6">
+                <p className="font-sans text-lg sm:text-xl font-normal text-gray-200 leading-relaxed">
+                  {review.text}
+                </p>
+              </blockquote>
+
+              {/* Name + Title */}
+              <p className="mt-6 font-sans text-lg font-semibold text-white">
+                {review.name}
+              </p>
+              <p className="mt-1 font-sans text-sm font-normal text-gray-400">
+                {review.title}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>
