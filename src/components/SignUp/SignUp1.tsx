@@ -10,144 +10,132 @@ import Link from "next/link";
 import Image from "next/image";
 
 const commonStyles = {
-  inputIcon:
-    "absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none",
+  inputWrapper:
+    "relative group flex items-center w-full rounded-full overflow-hidden shadow-sm transition-all duration-300",
   input:
-    "block w-full py-4 pl-10 pr-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600",
+    "w-full py-3.5 pl-12 pr-4 text-sm text-black placeholder-transparent bg-white/70 backdrop-blur-md border border-gray-200 rounded-full focus:outline-none focus:border-fuchsia-500 focus:ring-2 focus:ring-fuchsia-500 peer transition-all duration-300",
+  inputIcon:
+    "absolute left-4 text-gray-900 peer-focus:text-fuchsia-500 transition-colors",
+  label:
+    "absolute left-12 text-gray-500 text-sm transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-fuchsia-500",
   button:
-    "inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 focus:outline-none hover:opacity-80 focus:opacity-80",
+    "w-full py-3.5 px-6 font-semibold rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600 text-white shadow-lg hover:opacity-90 hover:shadow-fuchsia-500/30 transition-all duration-300",
   socialButton:
-    "relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none",
-  link: "font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline",
+    "relative w-full py-3.5 px-6 rounded-full bg-white text-gray-700 border border-gray-200 shadow-sm flex items-center justify-center gap-3 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300",
+  link: "font-medium text-fuchsia-600 hover:text-fuchsia-700 transition-colors hover:underline",
 };
 
 const SignUp1 = () => {
   return (
-    <section className="bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
-          <div className="absolute inset-0">
-            <Image
-              className="object-cover"
-              src="https://www.auraui.com/memeimage/working-women.jpg"
-              alt="Girl working on laptop"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-          <div className="relative">
-            <div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl">
-              <h3 className="text-4xl font-bold text-white">
-                Join 35k+ web professionals & <br className="hidden xl:block" />
-                build your website
-              </h3>
-              <ul className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-x-8 gap-y-4">
-                {[
-                  "Commercial License",
-                  "Unlimited Exports",
-                  "120+ Coded Blocks",
-                  "Design Files Included",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center space-x-3">
-                    <div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue-500 rounded-full">
-                      <FaCheckCircle className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="text-lg font-medium text-white">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+    <section className="relative bg-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+        {/* Left Hero Section */}
+        <div className="relative flex items-end px-6 pb-16 pt-60 lg:pb-24 bg-gray-900/90">
+          <Image
+            src="https://images.unsplash.com/photo-1615956227970-73c634f457ae?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Girl working on laptop"
+            fill
+            className="object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+          <div className="relative z-10 max-w-lg">
+            <h3 className="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg">
+              Join 35k+ web professionals & <br className="hidden xl:block" />
+              build your website
+            </h3>
+            <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+              {[
+                "Commercial License",
+                "Unlimited Exports",
+                "120+ Coded Blocks",
+                "Design Files Included",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-center gap-3 text-white text-lg font-medium"
+                >
+                  <FaCheckCircle className="text-fuchsia-500 w-5 h-5" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        <div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
-          <div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
-              Sign up to Celebration
+        {/* Right Form Section */}
+        <div className="flex items-center justify-center px-6 py-16 lg:py-24 bg-gradient-to-br from-white via-gray-50 to-white relative">
+          <div className="w-full max-w-md bg-white/70 backdrop-blur-xl shadow-xl rounded-2xl p-8 lg:p-10">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+              Sign up to <span className="text-fuchsia-600">auraUI</span>
             </h2>
-            <p className="mt-2 text-base text-gray-600">
+            <p className="mt-2 text-sm text-gray-600">
               Already have an account?{" "}
               <Link href="#" className={commonStyles.link}>
                 Login
               </Link>
             </p>
 
-            <form action="#" method="POST" className="mt-8 space-y-5">
-              <div>
-                <label className="text-base font-medium text-gray-900">
-                  First & Last name
+            {/* Form */}
+            <form className="mt-8 space-y-6">
+              {/* Name */}
+              <div className={commonStyles.inputWrapper}>
+                <FaUser className={commonStyles.inputIcon} />
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  className={`${commonStyles.input} peer`}
+                  id="fullname"
+                />
+                <label htmlFor="fullname" className={commonStyles.label}>
+                  First & Last Name
                 </label>
-                <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
-                  <div className={commonStyles.inputIcon}>
-                    <FaUser className="w-5 h-5" />
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Enter your full name"
-                    className={commonStyles.input}
-                  />
-                </div>
               </div>
 
-              <div>
-                <label className="text-base font-medium text-gray-900">
-                  Email address
+              {/* Email */}
+              <div className={commonStyles.inputWrapper}>
+                <FaEnvelope className={commonStyles.inputIcon} />
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  className={`${commonStyles.input} peer`}
+                  id="email"
+                />
+                <label htmlFor="email" className={commonStyles.label}>
+                  Email Address
                 </label>
-                <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
-                  <div className={commonStyles.inputIcon}>
-                    <FaEnvelope className="w-5 h-5" />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="Enter email to get started"
-                    className={commonStyles.input}
-                  />
-                </div>
               </div>
 
-              <div>
-                <label className="text-base font-medium text-gray-900">
+              {/* Password */}
+              <div className={commonStyles.inputWrapper}>
+                <FaLock className={commonStyles.inputIcon} />
+                <input
+                  type="password"
+                  placeholder="Enter password"
+                  className={`${commonStyles.input} peer`}
+                  id="password"
+                />
+                <label htmlFor="password" className={commonStyles.label}>
                   Password
                 </label>
-                <div className="mt-2.5 relative text-gray-400 focus-within:text-gray-600">
-                  <div className={commonStyles.inputIcon}>
-                    <FaLock className="w-5 h-5" />
-                  </div>
-                  <input
-                    type="password"
-                    placeholder="Enter your password"
-                    className={commonStyles.input}
-                  />
-                </div>
               </div>
 
-              <div>
-                <button type="submit" className={commonStyles.button}>
-                  Sign up
-                </button>
-              </div>
+              <button className={commonStyles.button}>Create Account</button>
             </form>
 
-            <div className="mt-3 space-y-3">
+            {/* Social Buttons */}
+            <div className="mt-6 space-y-3">
               <button type="button" className={commonStyles.socialButton}>
-                <div className="absolute inset-y-0 left-0 p-4">
-                  <FaGoogle className="w-6 h-6 text-rose-500" />
-                </div>
+                <FaGoogle className="text-rose-500 w-5 h-5" />
                 Sign up with Google
               </button>
-
               <button type="button" className={commonStyles.socialButton}>
-                <div className="absolute inset-y-0 left-0 p-4">
-                  <FaFacebook className="w-6 h-6 text-[#2563EB]" />
-                </div>
+                <FaFacebook className="text-blue-600 w-5 h-5" />
                 Sign up with Facebook
               </button>
             </div>
 
-            <p className="mt-5 text-sm text-gray-600">
+            {/* Footer Note */}
+            <p className="mt-5 text-xs text-gray-500 leading-relaxed">
               This site is protected by reCAPTCHA and the Google{" "}
               <Link href="#" className={commonStyles.link}>
                 Privacy Policy
@@ -156,6 +144,7 @@ const SignUp1 = () => {
               <Link href="#" className={commonStyles.link}>
                 Terms of Service
               </Link>
+              .
             </p>
           </div>
         </div>
