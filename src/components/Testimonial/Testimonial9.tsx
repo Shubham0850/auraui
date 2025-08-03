@@ -1,78 +1,95 @@
+"use client";
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-const classNames = {
-  section: "py-12 sm:py-16 lg:py-20 bg-black",
-  container: "px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl",
-  heading: "text-center",
-  title: "tracking-tighter text-white",
-  titleSpan: "font-sans text-4xl font-normal sm:text-5xl md:text-6xl",
-  italicSpan:
-    "block font-serif text-5xl italic sm:inline sm:text-6xl md:text-7xl",
-  content:
-    "block font-sans text-4xl font-normal sm:inline sm:text-5xl md:text-6xl",
-  grid: "grid grid-cols-1 gap-16 mt-12 lg:grid-cols-2 md:mt-16 lg:gap-y-20",
-  testimonial: "sm:flex sm:items-start",
-  avatar: "flex-shrink-0 object-cover w-24 h-24 rounded-full",
-  blockquote: "mt-6 sm:ml-6 sm:mt-0",
-  quoteText: "font-sans text-xl font-normal text-opacity-50 text-white",
-  name: "mt-6 font-sans text-2xl font-normal text-white",
-  role: "mt-1.5 text-white text-sm font-sans font-normal text-opacity-50",
-};
+const testimonials = [
+  {
+    imgSrc: "https://www.auraui.com/memeimage/man4.jpg",
+    text: "AuraUI has transformed our development process with its elegant and highly customizable components. The seamless integration with Next.js is unmatched.",
+    name: "Oliver James",
+    role: "Lead Developer at AuraUI",
+  },
+  {
+    imgSrc: "https://www.auraui.com/memeimage/woman1.jpg",
+    text: "Implementing AuraUI's components into our project was a breeze. The performance is top-notch, and the open-source nature is a huge plus for our team.",
+    name: "Emily Grace",
+    role: "UX Designer at AuraUI",
+  },
+  {
+    imgSrc: "https://www.auraui.com/memeimage/man3.jpg",
+    text: "AuraUI’s components are a game-changer. They are intuitive and well-documented, making it easy to create beautiful and responsive designs quickly.",
+    name: "James Alexander",
+    role: "Frontend Engineer at AuraUI",
+  },
+  {
+    imgSrc: "https://www.auraui.com/memeimage/woman2.jpg",
+    text: "The support from the AuraUI team has been exceptional. The quality of the components is excellent, making our workflow smoother and more efficient.",
+    name: "Charlotte Elizabeth",
+    role: "Product Manager at AuraUI",
+  },
+];
 
 function Testimonial9() {
   return (
-    <section className={classNames.section}>
-      <div className={classNames.container}>
-        <div className={classNames.heading}>
-          <h2 className={classNames.title}>
-            <span className={classNames.titleSpan}>See what </span>
-            <span className={classNames.italicSpan}>our members </span>
-            <span className={classNames.content}>are saying.</span>
+    <section className="relative py-20 bg-gradient-to-br from-black via-[#0a0a0a] to-[#141414] overflow-hidden">
+      {/* subtle glows */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-cyan-500/20 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-600/20 blur-3xl rounded-full"></div>
+
+      <div className="relative px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+        {/* Heading */}
+        <div className="text-center">
+          <h2 className="tracking-tighter text-white">
+            <span className="font-sans text-4xl font-semibold sm:text-5xl md:text-6xl">
+              See what
+            </span>{" "}
+            <span className="block font-serif italic text-5xl sm:inline sm:text-6xl md:text-7xl bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              our members
+            </span>{" "}
+            <span className="block font-sans text-4xl font-semibold sm:inline sm:text-5xl md:text-6xl">
+              are saying
+            </span>
           </h2>
         </div>
 
-        <div className={classNames.grid}>
-          {[
-            {
-              imgSrc: "https://www.auraui.com/memeimage/man4.jpg",
-              text: "AuraUI has transformed our development process with its elegant and highly customizable components. The seamless integration with Next.js.",
-              name: "Oliver James",
-              role: "Lead Developer at AuraUI",
-            },
-            {
-              imgSrc: "https://www.auraui.com/memeimage/woman1.jpg",
-              text: "Implementing AuraUI's components into our project was a breeze. The performance is top-notch, and the open-source nature is a huge plus for our team.",
-              name: "Emily Grace",
-              role: "UX Designer at AuraUI",
-            },
-            {
-              imgSrc: "https://www.auraui.com/memeimage/man3.jpg",
-              text: "AuraUI’s components are a game-changer. They are intuitive and well-documented, making it easy to create beautiful and responsive designs quickly.",
-              name: "James Alexander",
-              role: "Frontend Engineer at AuraUI",
-            },
-            {
-              imgSrc: "https://www.auraui.com/memeimage/woman2.jpg",
-              text: "The support from the AuraUI team has been exceptional. They are always available to assist with any issues, the quality of the components is excellent.",
-              name: "Charlotte Elizabeth",
-              role: "Product Manager at AuraUI",
-            },
-          ].map((testimonial, index) => (
-            <div key={index} className={classNames.testimonial}>
-              <img
-                src={testimonial.imgSrc}
-                className="rounded-full h-20 w-20"
-                alt="images"
-              />
-              <div className={classNames.blockquote}>
-                <blockquote>
-                  <p className={classNames.quoteText}>{testimonial.text}</p>
-                </blockquote>
-                <p className={classNames.name}>{testimonial.name}</p>
-                <p className={classNames.role}>{testimonial.role}</p>
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+          {testimonials.map((testimonial, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              viewport={{ once: true }}
+              whileHover={{
+                scale: 1.03,
+                boxShadow:
+                  "0 0 25px rgba(0,255,255,0.2), 0 0 45px rgba(168,85,247,0.15)",
+              }}
+              className="relative p-8 rounded-2xl border border-white/10 bg-[#111111]/80 backdrop-blur-md transition-all duration-300"
+            >
+              {/* Avatar */}
+              <div className="flex items-center space-x-4">
+                <img
+                  src={testimonial.imgSrc}
+                  alt={testimonial.name}
+                  className="w-16 h-16 rounded-full object-cover border border-white/20"
+                />
+                <div>
+                  <p className="text-lg font-semibold text-white">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-gray-400">{testimonial.role}</p>
+                </div>
               </div>
-            </div>
+
+              {/* Quote */}
+              <blockquote className="mt-6">
+                <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+                  {testimonial.text}
+                </p>
+              </blockquote>
+            </motion.div>
           ))}
         </div>
       </div>
