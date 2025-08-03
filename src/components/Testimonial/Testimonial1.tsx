@@ -48,6 +48,9 @@ const testimonials = [
 function Testimonial1() {
   return (
     <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+      {/* subtle gradient background blur */}
+      <div className="absolute top-20 -left-20 w-72 h-72 bg-fuchsia-400/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 -right-20 w-80 h-80 bg-blue-400/30 rounded-full blur-3xl"></div>
       <div className="px-6 mx-auto max-w-7xl sm:px-8 lg:px-12 relative z-10">
         <h2 className="text-center text-3xl sm:text-4xl font-bold text-gray-900 mb-14">
           Loved by{" "}

@@ -1,86 +1,82 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
-const classNames = {
-  container: "py-12 bg-white sm:py-16 lg:py-20 xl:py-24",
-  innerContainer: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
-  header: "max-w-2xl mx-auto text-center",
-  stats: "text-base font-semibold text-blue-600",
-  title:
-    "mt-6 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl lg:mt-8",
-  grid: "grid max-w-3xl grid-cols-1 gap-12 mx-auto mt-16 text-center lg:mt-20 xl:mt-20 xl:grid-cols-2 xl:max-w-none sm:text-left",
-  card: "flex flex-col sm:flex-row lg:items-center",
-  image:
-    "object-cover w-48 h-48 mx-auto sm:mx-0 lg:w-60 lg:h-60 shrink-0 rounded-2xl",
-  icons: "w-5 h-5 text-blue-600",
-  blockquote: "mt-8 text-lg font-medium leading-8 text-gray-900",
-  footer:
-    "flex flex-col flex-wrap items-center justify-center gap-1 mt-5 sm:flex-row sm:justify-start sm:gap-4",
-  name: "text-base font-semibold text-gray-900",
-  role: "text-base font-normal text-gray-600",
-};
+const testimonials = [
+  {
+    img: "https://www.auraui.com/memeimage/woman1.jpg",
+    quote:
+      "AuraUI transformed our workflow. The prebuilt components gave our projects a sleek, professional look instantly.",
+    name: "Jenny Wilson",
+    role: "Product Designer @ Grower.io",
+  },
+  {
+    img: "https://www.auraui.com/memeimage/man1.jpg",
+    quote:
+      "Our dev team shipped projects twice as fast. AuraUI is the toolkit every frontend developer dreams of.",
+    name: "Devon Lane",
+    role: "Founder @ DLDesign.co",
+  },
+];
 
 function Testimonial3() {
   return (
-    <section className={classNames.container}>
-      <div className={classNames.innerContainer}>
-        <div className={classNames.header}>
-          <p className={classNames.stats}>3940+ Happy AuraUI Users</p>
-          <h2 className={classNames.title}>Don&apos;t just take our words</h2>
+    <section className="relative py-24 bg-gradient-to-br from-fuchsia-50 via-white to-blue-50 overflow-hidden">
+      {/* Decorative Gradient Blobs */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-tr from-fuchsia-400/30 to-purple-400/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-400/20 to-cyan-300/20 rounded-full blur-3xl"></div>
+
+      <div className="relative max-w-7xl px-6 mx-auto lg:px-12">
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto">
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600 text-lg font-semibold">
+            3900+ Developers trust AuraUI
+          </p>
+          <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+            Real Stories. Real Impact.
+          </h2>
         </div>
 
-        <div className={classNames.grid}>
-          <div className={classNames.card}>
-            <img
-              className={classNames.image}
-              src="https://www.auraui.com/memeimage/woman1.jpg"
-              alt="Woman"
-            />
-            <div className="mt-8 sm:mt-0 sm:ml-10">
-              <div className="flex items-center justify-center sm:justify-start">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-blue-600" />
-                ))}
-              </div>
-              <blockquote className={classNames.blockquote}>
-                <p>
-                  &quot;We love AuraUI! Our designers were using it for their
-                  projects, so we already knew what kind of design they
-                  want.&quot;
-                </p>
+        {/* Testimonials Grid */}
+        <div className="grid gap-12 mt-20 lg:grid-cols-2">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="relative group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 p-10"
+            >
+              {/* Quote */}
+              <blockquote className="text-xl italic font-medium text-gray-800 leading-relaxed">
+                “{t.quote}”
               </blockquote>
-              <div className={classNames.footer}>
-                <p className={classNames.name}>Jenny Wilson</p>
-                <p className={classNames.role}>Grower.io</p>
-              </div>
-            </div>
-          </div>
 
-          <div className={classNames.card}>
-            <img
-              className={classNames.image}
-              src="https://www.auraui.com/memeimage/man1.jpg"
-              alt="Man"
-            />
-            <div className="mt-8 sm:mt-0 sm:ml-10">
-              <div className="flex items-center justify-center sm:justify-start">
-                {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-blue-600" />
-                ))}
+              {/* Profile */}
+              <div className="flex items-center mt-8">
+                <div className="relative">
+                  <img
+                    src={t.img}
+                    alt={t.name}
+                    className="w-16 h-16 rounded-full object-cover border-4 border-transparent bg-gradient-to-r from-fuchsia-500 to-blue-500 p-[2px]"
+                  />
+                  <div className="absolute -top-1 -right-1 flex">
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar
+                        key={i}
+                        className="w-4 h-4 text-yellow-400 drop-shadow-sm"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="ml-5">
+                  <p className="text-lg font-semibold text-gray-900">
+                    {t.name}
+                  </p>
+                  <p className="text-sm text-gray-600">{t.role}</p>
+                </div>
               </div>
-              <blockquote className={classNames.blockquote}>
-                <p>
-                  &quot;We love AuraUI! Our designers were using it for their
-                  projects, so we already knew what kind of design they
-                  want.&quot;
-                </p>
-              </blockquote>
-              <div className={classNames.footer}>
-                <p className={classNames.name}>Devon Lane</p>
-                <p className={classNames.role}>DLDesign.co</p>
-              </div>
+
+              {/* Accent Gradient Line */}
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-fuchsia-500 to-blue-500 rounded-b-3xl"></span>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
