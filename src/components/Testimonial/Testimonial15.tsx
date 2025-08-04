@@ -1,73 +1,105 @@
 import React from "react";
 import { FaPlayCircle } from "react-icons/fa";
 
-// Common Styles
-const containerStyles = "py-12 bg-white sm:py-16 lg:py-20 xl:py-24";
-const innerContainerStyles = "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl";
-const testimonialGridStyles =
-  "grid grid-cols-1 gap-12 mt-12 text-center md:grid-cols-3 sm:mt-16";
-const blockquoteStyles = "text-lg font-medium leading-8 text-gray-900";
-const nameStyles = "mt-8 text-base font-semibold text-gray-900";
-const roleStyles = "mt-1 text-sm font-normal text-gray-500";
-const overlayStyles =
-  "absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent rounded-2xl lg:rounded-3xl opacity-80";
+const styles = {
+  section:
+    "py-16 bg-gradient-to-b from-white via-gray-50 to-white sm:py-20 lg:py-28",
+  container: "px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl",
+  videoWrapper:
+    "relative overflow-hidden aspect-square sm:aspect-video rounded-3xl group shadow-xl",
+  videoImage:
+    "object-cover w-full h-full transition-transform duration-500 group-hover:scale-110",
+  overlay:
+    "absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-3xl",
+  playButton:
+    "inline-flex items-center justify-center w-20 h-20 text-white transition-all duration-300 border-2 border-white rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 hover:scale-105",
+  caption:
+    "absolute bottom-0 left-1/2 -translate-x-1/2 px-6 py-6 sm:py-8 text-center max-w-2xl",
+  captionText:
+    "text-xl font-semibold leading-snug text-white sm:text-2xl lg:text-3xl",
+  grid: "grid grid-cols-1 gap-10 mt-16 md:grid-cols-3 sm:mt-20 lg:mt-24",
+  cardWrapper:
+    "relative p-[2px] rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2",
+  card: "h-full flex flex-col justify-between bg-white rounded-2xl p-8 text-center",
+  quote:
+    "text-lg italic font-medium leading-relaxed text-gray-800 font-pj sm:text-xl",
+  name: "mt-6 text-base font-semibold text-gray-900 font-pj",
+  role: "mt-1 text-sm font-normal text-gray-600 font-pj",
+};
 
 function Testimonial15() {
   return (
-    <section className={containerStyles}>
-      <div className={innerContainerStyles}>
-        <div className="relative">
-          <div className="overflow-hidden aspect-square sm:aspect-video rounded-2xl lg:rounded-3xl group">
-            <img
-              className="object-cover w-full h-full transition-all duration-200 group-hover:scale-110"
-              src="https://www.AuraUI.com/memeimage/laptop-girl.jpeg"
-              alt="AuraUI Showcase"
-            />
-          </div>
-          <div className={overlayStyles}></div>
-          <div className="absolute inset-0 grid w-full h-full place-items-center">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center w-20 h-20 text-white transition-all duration-200 border-2 border-white rounded-2xl bg-white/10 backdrop-blur-lg hover:bg-white/20"
-            >
-              <FaPlayCircle className="w-auto h-8" />
+    <section className={styles.section}>
+      <div className={styles.container}>
+        {/* Hero Video Section */}
+        <div className={styles.videoWrapper}>
+          <img
+            className={styles.videoImage}
+            src="https://www.auraui.com/memeimage/laptop-girl.jpeg"
+            alt="AuraUI Showcase"
+          />
+          <div className={styles.overlay}></div>
+          <div className="absolute inset-0 grid place-items-center">
+            <button type="button" className={styles.playButton}>
+              <FaPlayCircle className="w-10 h-10" />
             </button>
           </div>
-          <div className="absolute bottom-0 w-full px-4 py-8 text-center -translate-x-1/2 left-1/2 lg:p-12">
-            <p className="text-lg font-semibold text-white sm:text-xl lg:text-3xl">
-              Discover how AuraUI is revolutionizing user experiences
+          <div className={styles.caption}>
+            <p className={styles.captionText}>
+              Discover how{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                AuraUI
+              </span>{" "}
+              is revolutionizing user experiences
             </p>
           </div>
         </div>
 
-        <div className={testimonialGridStyles}>
-          <div>
-            <blockquote className={blockquoteStyles}>
-              &quot;AuraUI transformed the way we interact with web
-              applications.It &apos;s a game-changer for both beginners and
-              advanced users. &quot;
-            </blockquote>
-            <p className={nameStyles}>Alex Johnson</p>
-            <p className={roleStyles}>Lead Developer at AuraUI</p>
+        {/* Testimonials */}
+        <div className={styles.grid}>
+          <div className={styles.cardWrapper}>
+            <div className={styles.card}>
+              <blockquote className={styles.quote}>
+                “AuraUI transformed the way we interact with web applications.
+                It’s a{" "}
+                <span className="text-purple-600 font-semibold">
+                  game-changer
+                </span>{" "}
+                for both beginners and advanced users.”
+              </blockquote>
+              <p className={styles.name}>Alex Johnson</p>
+              <p className={styles.role}>Lead Developer at AuraUI</p>
+            </div>
           </div>
 
-          <div>
-            <blockquote className={blockquoteStyles}>
-              &quot;The flexibility and power of AuraUI&apos;s tools are
-              unmatched. It&apos;s a game-changer for both beginners and
-              advanced users. &quot;
-            </blockquote>
-            <p className={nameStyles}>Samantha Green</p>
-            <p className={roleStyles}>Senior UX Designer</p>
+          <div className={styles.cardWrapper}>
+            <div className={styles.card}>
+              <blockquote className={styles.quote}>
+                “The flexibility and power of AuraUI’s tools are unmatched. It
+                gives us{" "}
+                <span className="text-pink-600 font-semibold">
+                  freedom & speed
+                </span>{" "}
+                in our projects.”
+              </blockquote>
+              <p className={styles.name}>Samantha Green</p>
+              <p className={styles.role}>Senior UX Designer</p>
+            </div>
           </div>
 
-          <div>
-            <blockquote className={blockquoteStyles}>
-              &quot;AuraUI&apos;s innovative approach has streamlined our
-              development process and elevated our design capabilities.&quot;
-            </blockquote>
-            <p className={nameStyles}>Jordan Smith</p>
-            <p className={roleStyles}>Product Manager at AuraUI</p>
+          <div className={styles.cardWrapper}>
+            <div className={styles.card}>
+              <blockquote className={styles.quote}>
+                “AuraUI’s innovative approach has streamlined our development
+                and elevated our{" "}
+                <span className="text-orange-500 font-semibold">
+                  design capabilities
+                </span>
+                .”
+              </blockquote>
+              <p className={styles.name}>Jordan Smith</p>
+              <p className={styles.role}>Product Manager at AuraUI</p>
+            </div>
           </div>
         </div>
       </div>
