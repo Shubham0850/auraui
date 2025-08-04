@@ -1,65 +1,55 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 
-const commonTextClasses = "text-gray-900 font-pj";
-const commonImageClasses = "w-full max-w-lg mx-auto";
+const commonTextClasses = "text-white font-pj";
 
 function Testimonial12() {
   return (
-    <section className="overflow-hidden">
-      <div className="relative pt-6 bg-gray-50 sm:pt-16 lg:pt-24 xl:pt-40">
-        <div className="flex flex-col">
-          <div className="block lg:hidden">
-            <img
-              className={commonImageClasses}
-              src="https://www.auraui.com/memeimage/manwithoutbg.png"
-              alt="Testimonial Image"
-            />
-          </div>
+    <section className="relative overflow-hidden bg-gradient-to-br from-black via-[#0f0f1a] to-[#1a1027] py-20 sm:py-28">
+      {/* Decorative background elements */}
+      <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl" />
+      <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl" />
 
-          <div className="py-8 bg-gray-700 lg:order-2 sm:py-12">
-            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-              <div className="flex flex-col items-center sm:justify-center sm:flex-row lg:justify-start">
+      <div className="relative z-10 px-6 mx-auto max-w-7xl sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center">
+          {/* Text Content */}
+          <div className="relative">
+            {/* Decorative Quote Icon */}
+            <FaQuoteLeft className="absolute -top-8 -left-6 text-6xl text-purple-500/30" />
+
+            <blockquote className="relative bg-white/10 border border-white/20 backdrop-blur-lg rounded-2xl shadow-xl p-8 sm:p-10">
+              <p
+                className={`text-2xl sm:text-3xl font-normal leading-relaxed ${commonTextClasses}`}
+              >
+                “AuraUI made it incredibly easy. Our new site is more beautiful
+                and user-friendly than ever. I simply select the page, make the
+                changes, and it’s done!”
+              </p>
+              <footer className="mt-8 flex items-center gap-4">
                 <img
-                  className="w-auto h-8"
-                  src="https://www.auraui.com/logo-dark.png"
-                  alt="Auraui Logo"
+                  className="w-12 h-12 rounded-full object-cover ring-2 ring-purple-500/50"
+                  src="https://www.auraui.com/memeimage/manwithoutbg.png"
+                  alt="John Doe"
                 />
-                <div className="mt-5 sm:ml-12 sm:mt-0">
-                  <p className="text-xl font-bold text-white font-pj">
+                <div>
+                  <p className="text-lg font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
                     John Doe
                   </p>
-                  <p className="text-sm font-normal font-pj text-white mt-1.5">
+                  <p className="text-sm text-gray-400">
                     Director of Technology, AuraUI Inc.
                   </p>
                 </div>
-              </div>
-            </div>
+              </footer>
+            </blockquote>
           </div>
 
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="flex items-end lg:order-1">
-              <div className="py-12 lg:pt-0 lg:pb-24 lg:w-1/2">
-                <blockquote className="text-center lg:text-left">
-                  <p
-                    className={`text-3xl font-normal leading-relaxed ${commonTextClasses}`}
-                  >
-                    Auraui made it incredibly easy. Our new site is more
-                    beautiful and user-friendly than ever. I simply select the
-                    page, make the changes, and it’s done!
-                  </p>
-                  <FaQuoteLeft className="text-gray-500 mt-4" />
-                </blockquote>
-              </div>
-
-              <div className="absolute bottom-0 right-0 hidden w-1/2 lg:block">
-                <img
-                  className="w-full max-w-lg ml-10 mr-auto scale-[2]"
-                  src="https://www.auraui.com/memeimage/manwithoutbg.png"
-                  alt="Testimonial Image"
-                />
-              </div>
-            </div>
+          {/* Image */}
+          <div className="flex justify-center lg:justify-end">
+            <img
+              className="w-full  transform rounded-full transition-transform duration-500 hover:scale-105"
+              src="https://images.unsplash.com/photo-1655815666672-c03f67fc746a?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Testimonial"
+            />
           </div>
         </div>
       </div>
