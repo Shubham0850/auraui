@@ -1,70 +1,86 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const testimonials = [
+  {
+    title: "The best UI Kit for developers. So easy to implement and publish.",
+    quote:
+      "“You made it so simple. AuraUI makes my site much faster and easier to work with. I just choose the page, make the change.”",
+    name: "Theresa Webb",
+    role: "UI/UX Designer",
+    image: "https://www.auraui.com/memeimage/girl2.jpeg",
+  },
+  {
+    title: "AuraUI helps you optimize for engagement.",
+    quote:
+      "“Must-have tools for developers who want to elevate their designs and user experience. It provides a wide range of components.”",
+    name: "Dianne Russell",
+    role: "Marketing Coordinator",
+    image: "https://www.auraui.com/memeimage/boy1.jpeg",
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.3, duration: 0.6, ease: "easeOut" },
+  }),
+};
 
 function Testimonial11() {
   return (
-    <section className="py-12 bg-gray-900 sm:py-16 lg:py-20">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="text-left md:text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">
-            What our customer are saying about AuraUI😍
+    <section className="relative py-20 bg-gradient-to-br from-black via-[#111827] to-black overflow-hidden">
+      {/* Decorative gradient orbs */}
+      <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl" />
+      <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl" />
+
+      <div className="px-6 mx-auto max-w-7xl sm:px-8 lg:px-12 relative z-10">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
+        >
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl xl:text-6xl">
+            What our <span className="text-purple-400">members</span> are saying
+            💬
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="grid max-w-4xl grid-cols-1 gap-10 mx-auto mt-8 md:grid-cols-2 md:mt-20 md:gap-16">
-          <div>
-            <p className="text-xl font-bold text-white font-pj">
-              The best UI Kit for developers. So easy to implement and publish.
-            </p>
-            <blockquote className="mt-5">
-              <p className="text-lg font-normal leading-relaxed text-gray-200 font-pj">
-                “You made it so simple. AuraUI makes my site much faster and
-                easier to work with. I just choose the page, make the change.”
-              </p>
-            </blockquote>
-            <div className="flex items-center mt-6">
-              <img
-                className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                src="https://www.auraui.com/memeimage/girl2.jpeg"
-                alt=""
-              />
-              <div className="ml-4">
-                <p className="text-base font-bold text-white font-pj">
-                  Theresa Webb
+        {/* Testimonial Grid */}
+        <div className="grid max-w-4xl grid-cols-1 gap-10 mx-auto mt-16 md:grid-cols-2 md:gap-12">
+          {testimonials.map((t, i) => (
+            <motion.div
+              key={i}
+              custom={i}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={cardVariants}
+              className="relative bg-white/10 border border-white/20 rounded-2xl backdrop-blur-lg shadow-xl p-8 hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2"
+            >
+              <p className="text-lg font-semibold text-white">{t.title}</p>
+              <blockquote className="mt-4">
+                <p className="text-base leading-relaxed text-gray-300">
+                  {t.quote}
                 </p>
-                <p className="text-sm font-pj text-gray-400 mt-0.5">
-                  UI/UX Designer
-                </p>
+              </blockquote>
+              <div className="flex items-center mt-6">
+                <img
+                  className="flex-shrink-0 object-cover rounded-full w-12 h-12 ring-2 ring-purple-500/50"
+                  src={t.image}
+                  alt={t.name}
+                />
+                <div className="ml-4">
+                  <p className="text-base font-bold text-white">{t.name}</p>
+                  <p className="text-sm text-gray-400">{t.role}</p>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-xl font-bold text-white font-pj">
-              Rareblocks helps you optimize for engagement.
-            </p>
-            <blockquote className="mt-5">
-              <p className="text-lg font-normal leading-relaxed text-gray-200 font-pj">
-                “Must-have tools for developers who want to elevate their
-                designs and user experience. It provides a wide range of
-                components.”
-              </p>
-            </blockquote>
-            <div className="flex items-center mt-6">
-              <img
-                className="flex-shrink-0 object-cover rounded-full w-11 h-11"
-                src="https://www.auraui.com/memeimage/boy1.jpeg"
-                alt=""
-              />
-              <div className="ml-4">
-                <p className="text-base font-bold text-white font-pj">
-                  Dianne Russell
-                </p>
-                <p className="text-sm font-pj text-gray-400 mt-0.5">
-                  Marketing Coordinator
-                </p>
-              </div>
-            </div>
-          </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
