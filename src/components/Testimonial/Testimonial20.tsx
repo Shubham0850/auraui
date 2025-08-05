@@ -5,44 +5,53 @@ function Testimonial20() {
   const imageSrc = "https://www.auraui.com/memeimage/woman3.jpg";
   const person = {
     name: "Jenny Wilson",
-    position: "Senior Devloper, AuraUI",
+    position: "Senior Developer, AuraUI",
     quote:
-      "AuraUI has transformed our development process. The speed and ease of use are unparalleled. Updating our site is now a breeze, saving us time and effort at every step.",
+      "auraUI has transformed our development process. The speed and ease of use are unparalleled. Updating our site is now a breeze, saving us time and effort at every step.",
   };
 
   return (
-    <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
-      <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 xl:gap-x-20">
-          <div className="relative">
-            <div className="aspect-w-4 aspect-h-3">
+    <section className="relative py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-pink-50 via-white to-blue-50">
+      {/* Decorative Background Blobs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute w-96 h-96 bg-gradient-to-tr from-pink-300 via-purple-300 to-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -top-20 -left-20"></div>
+        <div className="absolute w-96 h-96 bg-gradient-to-tr from-yellow-200 via-pink-200 to-red-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 bottom-0 right-0"></div>
+      </div>
+
+      <div className="relative max-w-6xl px-6 mx-auto lg:px-8">
+        <div className="grid items-center grid-cols-1 gap-12 md:grid-cols-2 lg:gap-20">
+          {/* Image Section */}
+          <div className="relative group">
+            <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                 src={imageSrc}
-                alt=""
+                alt="Jenny Wilson"
               />
             </div>
+
+            {/* Play Button Overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex items-center justify-center w-28 h-28 rounded-full bg-white/20">
-                <button
-                  type="button"
-                  className="flex items-center justify-center w-20 h-20 text-white transition-all duration-200 rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-90"
-                >
-                  <CgPlayButton className="w-12 h-12" />
-                </button>
-              </div>
+              <button
+                type="button"
+                className="flex items-center justify-center w-20 h-20 transition-all duration-300 rounded-full bg-white/30 backdrop-blur-md hover:bg-white/40"
+              >
+                <CgPlayButton className="w-12 h-12 text-purple-600" />
+              </button>
             </div>
           </div>
 
-          <div className="flex flex-col justify-between md:py-5">
-            <blockquote>
-              <p className="text-2xl mb-4 leading-relaxed text-black">
-                {person.quote}
+          {/* Quote Section */}
+          <div className="flex flex-col justify-center">
+            <blockquote className="relative">
+              <p className="text-2xl leading-relaxed text-gray-900 sm:text-3xl lg:text-4xl font-medium">
+                “{person.quote}”
               </p>
             </blockquote>
-            <div className="mt-6 lg:mt-auto">
-              <p className="text-xl font-semibold text-black">{person.name}</p>
-              <p className="mt-2 text-base text-gray-600">{person.position}</p>
+
+            <div className="mt-8">
+              <p className="text-xl font-bold text-gray-900">{person.name}</p>
+              <p className="mt-1 text-base text-gray-600">{person.position}</p>
             </div>
           </div>
         </div>
