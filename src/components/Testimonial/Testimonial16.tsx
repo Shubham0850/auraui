@@ -1,5 +1,4 @@
 import React from "react";
-import { BsPlayBtn } from "react-icons/bs";
 import { CiPlay1 } from "react-icons/ci";
 import { RxArrowTopRight } from "react-icons/rx";
 
