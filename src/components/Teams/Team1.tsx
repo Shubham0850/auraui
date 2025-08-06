@@ -4,6 +4,7 @@ const members = [
   {
     name: "Bessie Cooper",
     role: "Marketing Specialist",
+
     image: "https://auraui.com/memeimage/woman-potrait.webp",
   },
   {
@@ -19,51 +20,52 @@ const members = [
   {
     name: "Marvin McKinney",
     role: "COO",
-    image: "https://auraui.com/memeimage/gradient-girl.png",
+    image:
+      "https://images.unsplash.com/photo-1514626585111-9aa86183ac98?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
 const ExclusiveTeam = () => {
   return (
-    <section className="py-16 bg-gray-50 sm:py-20 lg:py-28">
-      <div className="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
-        {/* Section Header */}
+    <section className="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            Our Exclusive Members
+          <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+            Our exclusive members
           </h2>
           <p className="mt-4 text-base font-normal leading-7 text-gray-600 lg:text-lg lg:mt-6 lg:leading-8">
-            AuraUI brings together an exceptional team of thinkers and doers —
-            creative leaders shaping the future of digital design.
+            AuraUI gives you the blocks & components you need to create a truly
+            professional website, landing page or admin panel for your SaaS.
           </p>
         </div>
+      </div>
 
-        {/* Members Grid */}
-        <div className="grid grid-cols-1 gap-8 mt-12 sm:mt-16 lg:mt-20 sm:grid-cols-2 xl:grid-cols-4">
-          {members.map((member, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden rounded-2xl shadow-lg group transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
-            >
-              <img
-                className="object-cover w-full h-[400px] transition-all duration-500 group-hover:scale-110"
-                src={member.image}
-                alt={member.name}
-                width={320}
-                height={400}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-90 group-hover:opacity-80 transition-all duration-300"></div>
-              <div className="absolute bottom-0 left-0 w-full px-6 py-6">
-                <p className="text-lg font-semibold text-white sm:text-xl">
-                  {member.name}
-                </p>
-                <p className="mt-1 text-sm sm:text-base font-normal text-gray-300">
-                  {member.role}
-                </p>
-              </div>
+      <div className="grid px-5 mx-auto max-w-7xl grid-cols-1 gap-5 pt-4 mt-8 sm:mt-12 lg:mt-16 lg:grid-cols-2 xl:grid-cols-4">
+        {members.map((member, index) => (
+          <div
+            key={index}
+            className={`relative overflow-hidden rounded-2xl group ${
+              index % 2 === 0 ? "-rotate-1" : "rotate-1"
+            }`}
+          >
+            <img
+              className="object-cover w-full transition-all duration-200 group-hover:rotate-2 group-hover:scale-110"
+              src={member.image}
+              alt={member.name}
+              width={320}
+              height={400}
+            />
+            <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80"></div>
+            <div className="absolute bottom-0 left-0 w-full px-6 py-5">
+              <p className="text-base font-semibold text-white">
+                {member.name}
+              </p>
+              <p className="mt-1 text-sm font-normal text-gray-300">
+                {member.role}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
