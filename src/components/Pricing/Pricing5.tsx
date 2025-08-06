@@ -5,7 +5,7 @@ import { GiTrophyCup } from "react-icons/gi";
 
 const plans = [
   {
-    icon: <RiVipCrownFill className="w-10 h-10 text-cyan-500" />,
+    icon: <RiVipCrownFill className="w-12 h-12 text-cyan-400 drop-shadow-md" />,
     title: "Basic",
     description: "Essential features to get started with AuraUI.",
     price: "$49/month",
@@ -18,10 +18,10 @@ const plans = [
     ],
     buttonText: "Learn More",
     buttonStyle:
-      "inline-flex cursor-pointer items-center justify-center w-full px-5 py-4 text-base text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-md hover:bg-gray-800",
+      "inline-flex cursor-pointer items-center justify-center w-full px-6 py-4 text-base font-medium text-white transition-all duration-200 bg-gray-900 border border-gray-700 rounded-lg hover:bg-gray-800 hover:scale-[1.02]",
   },
   {
-    icon: <GiTrophyCup className="w-10 h-10 text-cyan-500" />,
+    icon: <GiTrophyCup className="w-12 h-12 text-purple-400 drop-shadow-md" />,
     title: "Professional",
     description: "Advanced features to elevate your business with AuraUI.",
     price: "$199/month",
@@ -34,10 +34,12 @@ const plans = [
     ],
     buttonText: "Learn More",
     buttonStyle:
-      "inline-flex items-center cursor-pointer justify-center w-full px-5 py-4 text-base text-black transition-all duration-200 bg-white border border-transparent rounded-md hover:opacity-80",
+      "inline-flex items-center cursor-pointer justify-center w-full px-6 py-4 text-base font-medium text-black transition-all duration-200 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg hover:opacity-90 hover:scale-[1.02]",
   },
   {
-    icon: <RiVipCrownFill className="w-10 h-10 text-cyan-500" />,
+    icon: (
+      <RiVipCrownFill className="w-12 h-12 text-indigo-400 drop-shadow-md" />
+    ),
     title: "Enterprise",
     description:
       "Premium features and dedicated support for large-scale needs.",
@@ -51,78 +53,86 @@ const plans = [
     ],
     buttonText: "Contact Us",
     buttonStyle:
-      "cursor-pointer inline-flex items-center justify-center w-full px-5 py-4 text-base text-black transition-all duration-200 bg-white border border-transparent rounded-md hover:opacity-80",
+      "cursor-pointer inline-flex items-center justify-center w-full px-6 py-4 text-base font-medium text-black transition-all duration-200 bg-white border border-gray-200 rounded-lg hover:opacity-90 hover:scale-[1.02]",
   },
 ];
 
 const Pricing5 = () => {
   return (
-    <section className="py-12 bg-black sm:py-16 lg:py-20 xl:py-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <section className="relative py-20 overflow-hidden bg-black sm:py-24 lg:py-28">
+      {/* Glow Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-cyan-500/30 blur-[180px] rounded-full"></div>
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-purple-600/30 blur-[180px] rounded-full"></div>
+      </div>
+
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl relative">
+        {/* Header */}
         <div className="text-center">
-          <h2 className="text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl">
+          <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
             Choose the Plan that Fits Your Needs
           </h2>
-          <p className="max-w-xl mx-auto mt-6 text-lg font-normal text-gray-400">
+          <p className="max-w-2xl mx-auto mt-6 text-lg font-normal text-gray-400 sm:text-xl">
             Discover the best plan for you with our tailored pricing options.
             Enjoy premium features and exceptional support with AuraUI.
           </p>
-          <div className="inline-flex items-center justify-center mt-8 overflow-hidden border border-gray-800 rounded-md sm:mt-12">
-            <div className="cursor-pointer inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-gradient-to-r from-cyan-500 to-purple-500 hover:contrast-150">
+
+          {/* Toggle */}
+          <div className="inline-flex items-center justify-center mt-10 overflow-hidden rounded-full border border-gray-800 sm:mt-14">
+            <div className="cursor-pointer inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white transition-all duration-200 bg-gradient-to-r from-cyan-400 to-purple-500 hover:contrast-150 rounded-l-full">
               Monthly
             </div>
-            <div className="inline-flex cursor-pointer items-center justify-center px-8 py-3 text-base font-normal text-white transition-all duration-200 bg-black hover:bg-gray-900">
+            <div className="inline-flex cursor-pointer items-center justify-center px-8 py-3 text-base font-medium text-gray-300 transition-all duration-200 bg-black hover:bg-gray-900 rounded-r-full">
               Yearly
             </div>
           </div>
         </div>
-        <div className="relative max-w-md mx-auto mt-12 sm:mt-16 lg:max-w-none">
-          <div className="absolute inset-0">
-            <img
-              className="object-cover w-full h-full opacity-50"
-              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png"
-              alt="Background Pattern"
-            />
-          </div>
-          <div className="relative grid grid-cols-1 border border-gray-900 lg:grid-cols-3">
+
+        {/* Pricing Cards */}
+        <div className="relative max-w-md mx-auto mt-16 lg:max-w-none">
+          <div className="relative grid grid-cols-1 border border-gray-800 lg:grid-cols-3 rounded-xl overflow-hidden">
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`flex flex-col p-6 bg-black ${
-                  index !== 0 ? "lg:border-l border-t border-gray-900" : ""
-                } ${
-                  index === 1
-                    ? "bg-opacity-70 backdrop-blur-lg"
-                    : "lg:border-t-0"
-                } sm:p-8`}
+                className={`flex flex-col p-8 bg-black/80 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg ${
+                  index !== 0 ? "lg:border-l border-t border-gray-800" : ""
+                }`}
               >
                 <div className="flex-1">
                   {plan.icon}
-                  <h3 className="mt-8 text-2xl font-normal text-white">
+                  <h3 className="mt-6 text-2xl font-semibold text-white">
                     {plan.title}
                   </h3>
-                  <p className="mt-3 text-base font-normal text-gray-400">
+                  <p className="mt-2 text-base font-normal text-gray-400">
                     {plan.description}
                   </p>
-                  <ul className="mt-8 space-y-5">
+
+                  {/* Features */}
+                  <ul className="mt-8 space-y-4">
                     {plan.features.map((feature, i) => (
                       <li
                         key={i}
-                        className="flex items-center text-base font-normal text-white"
+                        className="flex items-center text-base text-gray-200"
                       >
-                        <FaCheckCircle className="w-5 h-5 text-gray-500" />
+                        <FaCheckCircle className="w-5 h-5 text-cyan-400" />
                         <span className="ml-2">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-10 text-xl font-normal text-gray-100">
+
+                  {/* Price */}
+                  <p className="mt-10 text-xl font-semibold text-gray-100">
                     {plan.price.startsWith("Contact")
                       ? plan.price
                       : `Starting from ${plan.price}`}
                   </p>
                 </div>
+
+                {/* Button */}
                 <div className="mt-6">
-                  <div className={plan.buttonStyle}>{plan.buttonText}</div>
+                  <button className={plan.buttonStyle}>
+                    {plan.buttonText}
+                  </button>
                 </div>
               </div>
             ))}
