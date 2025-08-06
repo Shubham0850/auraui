@@ -2,101 +2,131 @@ import React from "react";
 import { FaDollarSign, FaCreditCard } from "react-icons/fa";
 
 const commonStyles = {
-  container: "py-12 bg-gray-50 sm:py-16 lg:py-20",
-  innerContainer: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
-  header: "text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl",
-  subheader: "mt-5 text-lg font-normal text-gray-900",
-  card: "relative overflow-hidden bg-white border border-gray-200 rounded-2xl",
-  cardContent: "p-6 md:p-10",
-  planTitle: "text-lg font-bold text-gray-900",
-  planDescription: "mt-4 text-base font-normal leading-7 text-gray-600",
-  pricing: "mt-8 text-xl font-bold text-gray-900",
+  section: "py-16 bg-gray-50 sm:py-20 lg:py-24",
+  container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
+  header: "text-3xl font-extrabold text-gray-900 sm:text-4xl xl:text-5xl",
+  subheader: "mt-4 text-lg text-gray-600 max-w-2xl mx-auto",
+  grid: "grid max-w-4xl grid-cols-1 mx-auto mt-12 gap-8 sm:grid-cols-2",
+  card: "relative bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300",
+  cardContent: "p-8 text-center",
+  badge:
+    "absolute -top-3 left-1/2 transform -translate-x-1/2 px-4 py-1 text-xs font-bold tracking-wide text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-md",
+  title: "text-xl font-semibold text-gray-900",
+  description: "mt-3 text-base text-gray-600 leading-relaxed",
+  priceContainer: "mt-6 space-y-2",
+  price:
+    "flex items-center justify-center text-4xl font-extrabold text-gray-900",
+  priceIcon: "w-5 h-5 mr-1 text-gray-500",
+  priceSub: "text-sm text-gray-500",
   button:
-    "inline-flex items-center justify-center px-8 py-3.5 mt-10 text-base font-bold text-white transition-all duration-200 rounded-xl",
+    "inline-flex items-center justify-center px-8 py-3 mt-8 text-base font-bold rounded-xl transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2",
   buttonMonthly:
-    "border-2 border-gray-400 bg-gray-900 hover:bg-opacity-90 hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
+    "border-2 border-gray-400 text-gray-900 bg-white hover:bg-gray-900 hover:text-white focus:ring-gray-900",
   buttonYearly:
-    "bg-gray-900 hover:bg-opacity-90 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
-  backgroundGradient:
-    "absolute inset-0 w-full h-full opacity-30 blur-lg filter",
-  gradient:
-    "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
+    "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md hover:shadow-lg focus:ring-purple-500",
+  gradientGlow:
+    "absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 opacity-60 blur-xl group-hover:opacity-80 transition",
   footer:
-    "max-w-md mx-auto mt-10 text-base font-normal leading-7 text-center text-gray-600",
-  footerLink: "font-bold",
+    "max-w-lg mx-auto mt-12 text-base text-gray-600 text-center leading-relaxed",
+  footerLink:
+    "font-semibold text-purple-600 hover:text-purple-700 transition-colors",
 };
 
 function Pricing13() {
   return (
-    <section className={commonStyles.container}>
-      <div className={commonStyles.innerContainer}>
+    <section className={commonStyles.section}>
+      <div className={commonStyles.container}>
+        {/* Header */}
         <div className="text-center">
           <h2 className={commonStyles.header}>Choose your plan</h2>
           <p className={commonStyles.subheader}>
-            Discover AuraUI’s exclusive pricing for our advanced web3 solutions.
+            Discover AuraUI’s exclusive pricing for our advanced solutions.
           </p>
         </div>
 
-        <div className="grid max-w-3xl grid-cols-1 mx-auto mt-8 text-center sm:grid-cols-2 sm:mt-16 gap-y-5 gap-x-10">
+        {/* Pricing Grid */}
+        <div className={commonStyles.grid}>
+          {/* Monthly Plan */}
           <div className={commonStyles.card}>
             <div className={commonStyles.cardContent}>
-              <p className={commonStyles.planTitle}>Pay monthly</p>
-              <p className={commonStyles.planDescription}>
+              <p className={commonStyles.title}>Pay Monthly</p>
+              <p className={commonStyles.description}>
                 Enjoy the flexibility of our monthly plan. Perfect for trying
                 out AuraUI’s features.
               </p>
-              <p className={commonStyles.pricing}>
-                <FaDollarSign className="inline-block" /> $19/month
-              </p>
-              <p className={commonStyles.pricing}>
-                <FaCreditCard className="inline-block" /> $228/year
-              </p>
+
+              <div className={commonStyles.priceContainer}>
+                <p className={commonStyles.price}>
+                  <FaDollarSign className={commonStyles.priceIcon} />
+                  19
+                </p>
+                <p className={commonStyles.priceSub}>per month</p>
+              </div>
+
+              <div className={commonStyles.priceContainer}>
+                <p className={commonStyles.price}>
+                  <FaCreditCard className={commonStyles.priceIcon} />
+                  228
+                </p>
+                <p className={commonStyles.priceSub}>per year</p>
+              </div>
+
               <a
                 href="#"
-                title="Get monthly plan"
                 className={`${commonStyles.button} ${commonStyles.buttonMonthly}`}
-                role="button"
               >
-                Get monthly plan
+                Get Monthly Plan
               </a>
             </div>
           </div>
 
-          <div className="relative">
-            <div
-              className={commonStyles.backgroundGradient}
-              style={{ background: commonStyles.gradient }}
-            ></div>
+          {/* Yearly Plan */}
+          <div className="relative group">
+            {/* Glow */}
+            <div className={commonStyles.gradientGlow}></div>
 
             <div className={commonStyles.card}>
               <div className={commonStyles.cardContent}>
-                <p className={commonStyles.planTitle}>Pay yearly</p>
-                <p className={commonStyles.planDescription}>
-                  Opt for our yearly plan and save more while accessing all the
+                {/* Badge */}
+                <div className={commonStyles.badge}>Best Value</div>
+
+                <p className={commonStyles.title}>Pay Yearly</p>
+                <p className={commonStyles.description}>
+                  Opt for our yearly plan and save more while accessing all
                   advanced features of AuraUI.
                 </p>
-                <p className={commonStyles.pricing}>
-                  <FaDollarSign className="inline-block" /> $12/month
-                </p>
-                <p className={commonStyles.pricing}>
-                  <FaCreditCard className="inline-block" /> $144/year
-                </p>
+
+                <div className={commonStyles.priceContainer}>
+                  <p className={commonStyles.price}>
+                    <FaDollarSign className={commonStyles.priceIcon} />
+                    12
+                  </p>
+                  <p className={commonStyles.priceSub}>per month</p>
+                </div>
+
+                <div className={commonStyles.priceContainer}>
+                  <p className={commonStyles.price}>
+                    <FaCreditCard className={commonStyles.priceIcon} />
+                    144
+                  </p>
+                  <p className={commonStyles.priceSub}>per year</p>
+                </div>
+
                 <a
                   href="#"
-                  title="Get yearly plan"
                   className={`${commonStyles.button} ${commonStyles.buttonYearly}`}
-                  role="button"
                 >
-                  Get yearly plan
+                  Get Yearly Plan
                 </a>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Footer */}
         <p className={commonStyles.footer}>
           Looking for a bigger commitment?{" "}
-          <a href="#" title="Let’s talk" className={commonStyles.footerLink}>
+          <a href="#" className={commonStyles.footerLink}>
             Let’s talk
           </a>{" "}
           and we’ll customize a plan just for you.
