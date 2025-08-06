@@ -3,32 +3,37 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import { IoRocketSharp, IoFlashSharp, IoEyeSharp } from "react-icons/io5";
 
 const styles = {
+  section: "relative py-20 bg-gray-50",
   container: "px-4 mx-auto max-w-7xl sm:px-6 lg:px-8",
-  header: "max-w-xl mx-auto text-center",
-  heading: "text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl",
-  subheading: "mt-6 text-base text-gray-600",
-  grid: "grid gap-y-6 mt-8 md:mt-16 md:grid-cols-3 max-w-md mx-auto md:max-w-5xl",
-  card: "relative bg-white shadow-lg rounded-lg p-6",
+  header: "max-w-2xl mx-auto text-center",
+  heading:
+    "text-4xl font-bold text-gray-900 sm:text-5xl lg:text-6xl tracking-tight",
+  subheading: "mt-6 text-lg text-gray-600",
+  grid: "grid gap-10 mt-16 md:grid-cols-3 max-w-6xl mx-auto",
+  card: "relative flex flex-col p-8 bg-white rounded-2xl shadow-lg border hover:shadow-2xl transition-all duration-300",
+
   badge:
-    "absolute top-0 left-0 right-0 bg-gray-700 text-center py-2 text-xs font-bold text-white uppercase",
+    "absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 text-xs font-semibold text-white rounded-full shadow-md",
   cardHeader: "text-center",
-  icon: "text-4xl",
-  cardTitle: "mt-6 text-lg font-semibold text-gray-900",
-  cardDescription: "mt-2 text-sm text-gray-600",
+  icon: "text-5xl mx-auto",
+  cardTitle: "mt-6 text-2xl font-semibold text-gray-900",
+  cardDescription: "mt-2 text-base text-gray-600",
   cardPrice: "flex items-end justify-center mt-6",
-  priceSign: "text-lg font-bold text-gray-400",
-  priceValue: "text-4xl font-bold text-gray-900",
-  pricePeriod: "text-lg font-bold text-gray-400",
-  featureList: "mt-8 space-y-3",
-  featureItem: "flex items-center",
-  featureIcon: "w-5 h-5 mr-2.5 text-green-500",
-  button:
-    "block w-full px-4 py-3 text-base font-bold transition-colors duration-200 border border-transparent rounded-md",
-  buttonText: "border border-transparent rounded-md",
-  buttonTrial:
-    "hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900",
-  noCredit: "mt-4 text-sm text-gray-600",
-  footer: "mt-8 max-w-md mx-auto text-base text-center text-gray-500",
+  priceSign: "text-xl font-semibold text-gray-400",
+  priceValue: "text-5xl font-bold text-gray-900",
+  pricePeriod: "text-lg font-normal text-gray-500 ml-1",
+  featureList: "mt-8 space-y-4",
+  featureItem: "flex items-center text-gray-700",
+  featureIcon: "w-5 h-5 mr-3 text-green-500",
+  buttonBase:
+    "inline-flex items-center justify-center w-full px-6 py-3 mt-10 text-base font-semibold rounded-xl shadow-md transition-all duration-300",
+  buttonPrimary:
+    "bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:shadow-lg hover:scale-105",
+  buttonSecondary:
+    "border border-gray-300 text-gray-800 hover:border-indigo-500 hover:text-indigo-600",
+  noCredit: "mt-4 text-sm text-gray-500",
+  footer:
+    "mt-20 max-w-xl mx-auto text-base text-center text-gray-500 border-t border-gray-200 pt-8",
 };
 
 const pricingPlans = [
@@ -39,57 +44,55 @@ const pricingPlans = [
     features: [
       "1 Domain License",
       "5 Email Accounts",
-      "Limited Reporting",
+      "Reporting Dashboard",
       "Custom Domain",
     ],
-    icon: <IoRocketSharp className={styles.icon} />,
-    buttonColor: "bg-gray-100",
-    buttonTextColor: "text-gray-900",
+    icon: <IoRocketSharp className={`${styles.icon} text-cyan-500`} />,
+    buttonStyle: styles.buttonSecondary,
   },
   {
     title: "Growth",
     description: "Best for growing agencies",
     price: 199,
     features: [
-      "Everything from Starter",
+      "Everything in Starter",
       "10 Domain Licenses",
       "20 Email Accounts",
       "Advanced Reporting",
       "Custom Domain",
       "Priority Support",
     ],
-    icon: <IoFlashSharp className={styles.icon} />,
-    buttonColor: "bg-gray-900",
-    buttonTextColor: "text-white",
+    icon: <IoFlashSharp className={`${styles.icon} text-indigo-500`} />,
+    buttonStyle: styles.buttonPrimary,
     badge: "Most Popular",
+    badgeColor: "bg-gradient-to-r from-indigo-500 to-purple-600",
   },
   {
     title: "Professional",
-    description: "Designed for independent developers",
+    description: "Perfect for independent developers",
     price: 69,
     features: [
       "1 Domain License",
       "5 Email Accounts",
-      "Limited Reporting",
+      "Reporting Dashboard",
       "Custom Domain",
     ],
-    icon: <IoEyeSharp className={styles.icon} />,
-    buttonColor: "bg-gray-100",
-    buttonTextColor: "text-gray-900",
+    icon: <IoEyeSharp className={`${styles.icon} text-pink-500`} />,
+    buttonStyle: styles.buttonSecondary,
   },
 ];
 
-const Pricing10 = () => {
+const Pricing10 = (): JSX.Element => {
   return (
-    <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
+    <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.heading}>
             Find the perfect plan for your needs
           </h2>
           <p className={styles.subheading}>
-            Choose a plan that fits your business needs and enjoy a suite of
-            features to elevate your experience with AuraUI.
+            Choose a plan that fits your business and enjoy premium features
+            with AuraUI.
           </p>
         </div>
 
@@ -98,10 +101,16 @@ const Pricing10 = () => {
             <div
               key={index}
               className={`${styles.card} ${
-                plan.title === "Growth" ? "ring-2 ring-gray-900" : ""
+                plan.title === "Growth"
+                  ? "border-indigo-500 border-t-4"
+                  : "border-gray-200 border-t-4"
               }`}
             >
-              {plan.badge && <div className={styles.badge}>{plan.badge}</div>}
+              {plan.badge && (
+                <div className={`${styles.badge} ${plan.badgeColor}`}>
+                  {plan.badge}
+                </div>
+              )}
               <div className={styles.cardHeader}>
                 {plan.icon}
                 <h3 className={styles.cardTitle}>{plan.title}</h3>
@@ -115,33 +124,30 @@ const Pricing10 = () => {
 
               <ul className={styles.featureList}>
                 {plan.features.map((feature, idx) => (
-                  <li
-                    key={idx}
-                    className={`${styles.featureItem} ${
-                      idx >= 3 ? "text-gray-400" : ""
-                    }`}
-                  >
+                  <li key={idx} className={styles.featureItem}>
                     <AiOutlineCheckCircle className={styles.featureIcon} />
                     {feature}
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-12 text-center">
+              <div className="mt-auto flex flex-col items-center">
                 <a
                   href="#"
-                  className={`${styles.button} ${plan.buttonColor} ${plan.buttonTextColor} ${styles.buttonTrial}`}
+                  className={`${styles.buttonBase} ${plan.buttonStyle}`}
                 >
                   Start 14 Days Trial
                 </a>
-                <p className={styles.noCredit}>No credit card required</p>
+                <p className={`${styles.noCredit} text-center`}>
+                  No credit card required
+                </p>
               </div>
             </div>
           ))}
         </div>
 
         <p className={styles.footer}>
-          Enjoy peace of mind with our transparent pricing and no hidden fees.
+          Transparent pricing with no hidden fees — ever.
         </p>
       </div>
     </section>
