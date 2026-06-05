@@ -112,7 +112,7 @@ export default function TemplatesGallery() {
           </motion.div>
 
           {/* ── Template grid ── */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {templates.map((template, i) => (
               <motion.div
                 key={template.id}
@@ -185,7 +185,7 @@ export default function TemplatesGallery() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.26 }}
               className="rounded-2xl border border-dashed border-gray-300 dark:border-white/[0.07] flex flex-col items-center justify-center gap-3 bg-gray-50/50 dark:bg-white/[0.01]"
-              style={{ minHeight: 330 }}
+              style={{ minHeight: 280 }}
             >
               <div className="flex items-center justify-center rounded-full border border-gray-300 dark:border-white/10 text-gray-400 dark:text-gray-600"
                 style={{ width: 34, height: 34, fontSize: 18 }}
