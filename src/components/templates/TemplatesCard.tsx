@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ExternalLink, Download, Eye, LogIn, Terminal, Rocket } from "lucide-react";
+import { useSession } from "next-auth/react";
+import SignInModal from "./SignInModal";
 
 const templates = [
   {
@@ -58,6 +60,22 @@ function ScaledIframe({ src }: { src: string }) {
 
 export default function TemplatesGallery() {
   const [selected, setSelected] = useState<(typeof templates)[0] | null>(null);
+  const [signInOpen, setSignInOpen] = useState(false);
+  const [downloading, setDownloading] = useState(false);
+  const { data: session } = useSession();
+
+  async function handleDownload(templateId: string) {
+    setDownloading(true);
+    try {
+      const res = await fetch(`/api/download/${templateId}`);
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      }
+    } finally {
+      setDownloading(false);
+    }
+  }
 
   return (
     <>
@@ -221,6 +239,13 @@ export default function TemplatesGallery() {
         </div>
       </section>
 
+      {/* ── Sign-in modal ── */}
+      <SignInModal
+        open={signInOpen}
+        onClose={() => setSignInOpen(false)}
+        templateName={selected?.name ?? "this template"}
+      />
+
       {/* ── Fullscreen overlay ── */}
       <AnimatePresence>
         {selected && (
@@ -249,10 +274,13 @@ export default function TemplatesGallery() {
                 >
                   <ExternalLink size={13} /> Open live
                 </a>
-                <button style={{ fontSize: 12, padding: "6px 14px" }}
-                  className="flex items-center gap-2 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                <button
+                  onClick={() => session ? handleDownload(selected.id) : setSignInOpen(true)}
+                  disabled={downloading}
+                  style={{ fontSize: 12, padding: "6px 14px" }}
+                  className="flex items-center gap-2 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors disabled:opacity-60"
                 >
-                  <Download size={13} /> Get Code
+                  <Download size={13} /> {downloading ? "Preparing..." : "Get Code"}
                 </button>
                 <button onClick={() => setSelected(null)} style={{ width: 30, height: 30 }}
                   className="flex items-center justify-center rounded-lg border border-white/[0.08] text-gray-400 hover:text-white hover:bg-white/5 transition-colors"

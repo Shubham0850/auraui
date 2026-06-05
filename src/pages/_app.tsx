@@ -5,10 +5,11 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { SessionProvider } from "next-auth/react";
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router.events]);
 
   return (
-    <>
+    <SessionProvider session={session}>
       {/* Google Analytics Script */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -49,6 +50,6 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <Analytics />
       <Component {...pageProps} />
-    </>
+    </SessionProvider>
   );
 }
