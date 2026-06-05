@@ -8,9 +8,14 @@ interface Props {
   open: boolean;
   onClose: () => void;
   templateName: string;
+  templateId: string;
 }
 
-export default function SignInModal({ open, onClose, templateName }: Props) {
+export default function SignInModal({ open, onClose, templateName, templateId }: Props) {
+  function handleSignIn() {
+    localStorage.setItem("pendingDownload", templateId);
+    signIn("google", { callbackUrl: "/templates" });
+  }
   return (
     <AnimatePresence>
       {open && (
@@ -52,7 +57,7 @@ export default function SignInModal({ open, onClose, templateName }: Props) {
             </div>
 
             <button
-              onClick={() => signIn("google")}
+              onClick={handleSignIn}
               className="w-full flex items-center justify-center gap-3 rounded-xl bg-white text-black font-semibold hover:bg-gray-100 transition-colors"
               style={{ height: 44, fontSize: 13 }}
             >

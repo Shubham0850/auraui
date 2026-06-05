@@ -64,6 +64,16 @@ export default function TemplatesGallery() {
   const [downloading, setDownloading] = useState(false);
   const { data: session } = useSession();
 
+  // After Google sign-in redirects back, auto-trigger pending download
+  useEffect(() => {
+    if (!session) return;
+    const pending = localStorage.getItem("pendingDownload");
+    if (!pending) return;
+    localStorage.removeItem("pendingDownload");
+    handleDownload(pending);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session]);
+
   async function handleDownload(templateId: string) {
     setDownloading(true);
     try {
@@ -244,6 +254,7 @@ export default function TemplatesGallery() {
         open={signInOpen}
         onClose={() => setSignInOpen(false)}
         templateName={selected?.name ?? "this template"}
+        templateId={selected?.id ?? ""}
       />
 
       {/* ── Fullscreen overlay ── */}
