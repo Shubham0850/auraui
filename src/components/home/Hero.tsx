@@ -101,14 +101,25 @@ const Hero = () => {
               ))}
             </div>
 
-            <div className="relative inline-flex mt-10 group">
+            <div className="inline-flex items-center mt-10 rounded-xl overflow-hidden border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-[#1a1a1b] shadow-sm">
               <Link
                 href="/components"
-                title=""
-                className="relative inline-flex items-center justify-center px-6 py-3 text-md font-bold text-white transition-all duration-200 bg-[#282829] font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-[#282829]"
-                role="button"
+                className="px-6 py-3 text-sm font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-white/[0.04] transition-colors whitespace-nowrap"
               >
                 Browse Components
+              </Link>
+              <div className="w-px self-stretch bg-gray-200 dark:bg-white/[0.08]" />
+              <Link
+                href="/templates"
+                className="flex items-center gap-2.5 px-5 py-3 hover:bg-gray-50 dark:hover:bg-white/[0.04] transition-colors group"
+              >
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                </span>
+                <span className="text-sm text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Templates</span>
+                <span className="text-[10px] bg-green-500/10 border border-green-500/20 text-green-600 dark:text-green-400 rounded px-1.5 py-0.5 font-bold uppercase tracking-wide">new</span>
+                <span className="text-gray-400 dark:text-gray-500 group-hover:translate-x-0.5 transition-transform text-sm">→</span>
               </Link>
             </div>
           </div>
