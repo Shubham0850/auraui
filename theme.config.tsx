@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { DocsThemeConfig, Navbar, ThemeSwitch } from "nextra-theme-docs";
+import { DocsThemeConfig, ThemeSwitch } from "nextra-theme-docs";
 import Footer from "@/components/layout/Footer";
+import NavbarAuth from "@/components/layout/NavbarAuth";
 
 import { useTheme } from "nextra-theme-docs";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
@@ -108,7 +109,12 @@ const config: DocsThemeConfig = {
   ),
 
   navbar: {
-    extraContent: ThemeSwitch,
+    extraContent: () => (
+      <div className="flex items-center gap-2">
+        <ThemeSwitch />
+        <NavbarAuth />
+      </div>
+    ),
   },
 
   // banner: {
