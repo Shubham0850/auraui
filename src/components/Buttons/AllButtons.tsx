@@ -33,8 +33,9 @@ function AllButtons() {
 
   useEffect(() => {
     const loadComponents = async () => {
+      const count = 10;
       const loaded = await Promise.all(
-        components.map(async (_, i) => {
+        Array.from({ length: count }).map(async (_, i) => {
           try {
             const { default: Component } = await import(`./Button${i + 1}`);
             return Component;

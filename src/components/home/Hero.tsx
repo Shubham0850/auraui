@@ -24,7 +24,7 @@ function AnimateNumber({ number }: { number: number }) {
     const animation = animate(count, number, { duration: 10 });
 
     return animation.stop;
-  }, []);
+  }, [count, number]);
 
   return <motion.h1 className="text-4xl font-bold">{rounded}</motion.h1>;
 }
@@ -60,10 +60,16 @@ const Hero = () => {
       </div>
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
-          <a href="https://peerlist.io/projects/2024/month/Aug" target="_blank">
-            <img
+          <a
+            href="https://peerlist.io/projects/2024/month/Aug"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Image
               src="/memeimage/peerlist-2.svg"
               alt="peerlist rank 1"
+              width={40}
+              height={40}
               className="right-4 fixed z-[10] bottom-4 h-10 w-10"
             />
           </a>

@@ -12,6 +12,27 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 
+const demoSentences = [
+  {
+    original: "the quick brown fox jumps over the lazy dog and runs fast",
+    corrected: "The quick brown fox jumps over the lazy dog and runs swiftly.",
+  },
+  {
+    original: "i think this is a good idea but we should discuss it more",
+    corrected:
+      "I believe this is an excellent idea, but we should discuss it further.",
+  },
+  {
+    original: "the weather today is nice and sunny with blue sky",
+    corrected:
+      "The weather today is beautiful and sunny with clear blue skies.",
+  },
+  {
+    original: "please send me the documents when you have time to do it",
+    corrected: "Please send me the documents when you have the opportunity.",
+  },
+];
+
 const Hero1 = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentSentence, setCurrentSentence] = useState(0);
@@ -21,28 +42,6 @@ const Hero1 = () => {
   const [isTyping, setIsTyping] = useState(false);
   const [isSelected, setIsSelected] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-
-  const demoSentences = [
-    {
-      original: "the quick brown fox jumps over the lazy dog and runs fast",
-      corrected:
-        "The quick brown fox jumps over the lazy dog and runs swiftly.",
-    },
-    {
-      original: "i think this is a good idea but we should discuss it more",
-      corrected:
-        "I believe this is an excellent idea, but we should discuss it further.",
-    },
-    {
-      original: "the weather today is nice and sunny with blue sky",
-      corrected:
-        "The weather today is beautiful and sunny with clear blue skies.",
-    },
-    {
-      original: "please send me the documents when you have time to do it",
-      corrected: "Please send me the documents when you have the opportunity.",
-    },
-  ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
