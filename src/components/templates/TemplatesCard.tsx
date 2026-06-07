@@ -16,10 +16,10 @@ const templates = [
     tags: ["Next.js 16", "Tailwind", "Free"],
   },
   {
-    id: "restua-club",
-    name: "Restua Club",
+    id: "restau-club",
+    name: "Restaurant & Club",
     category: "Landing Page",
-    previewUrl: "https://auraui-restau-club-template.vercel.app/",
+    previewUrl: "https://auraui-templates.vercel.app/",
     tags: ["Next.js 16", "Tailwind", "Free"],
   },
 ];

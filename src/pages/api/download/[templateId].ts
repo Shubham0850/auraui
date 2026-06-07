@@ -17,11 +17,11 @@ const TEMPLATES: Record<string, TemplateAsset> = {
     filename: "saas-landing.zip",
   },
   
-  "restua-club": {
+  "restau-club": {
     owner: "kunalkumar156",
     repo: "auraui-templates",
-    tag: "v1.0.0",
-    filename: "restua-club.zip",
+    tag: "v1.1.0",
+    filename: "restau-club.zip",
   },
 };
 
