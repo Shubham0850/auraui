@@ -13,59 +13,16 @@ const nextConfig = {
   },
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "source.unsplash.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "images.pexels.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "plus.unsplash.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "i.pravatar.cc",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "www.auraui.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "www.pexels.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "*.googleusercontent.com",
-        port: "",
-        pathname: "/**",
-      },
+      { protocol: "https", hostname: "images.unsplash.com", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "source.unsplash.com", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "images.pexels.com", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "plus.unsplash.com", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "i.pravatar.cc", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "www.auraui.com", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "www.pexels.com", port: "", pathname: "/**" },
+      { protocol: "https", hostname: "*.googleusercontent.com", port: "", pathname: "/**" },
     ],
   },
 };
 
 module.exports = withNextra(nextConfig);
-
-// If you have other Next.js configurations, you can pass them as the parameter:
-// module.exports = withNextra({ /* other next.js config */ })

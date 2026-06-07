@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useTheme, ThemeSwitch, Navbar } from "nextra-theme-docs";
+import { useTheme } from "nextra-theme-docs";
 import React, { useEffect, useState } from "react";
 import { FaDiscord, FaXTwitter } from "react-icons/fa6";
 import { FaGithub, FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";

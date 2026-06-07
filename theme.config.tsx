@@ -7,7 +7,7 @@ import { useTheme } from "nextra-theme-docs";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
-const config: DocsThemeConfig = {
+const config = {
   logo: () => {
     const { theme } = useTheme();
     const [currentTheme, setCurrentTheme] = useState<string | undefined>("");
