@@ -72,38 +72,32 @@ const config: DocsThemeConfig = {
   },
   head: (
     <>
-      <title>AuraUI: Effortlessly Build High-Performance Websites</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="Nextra" />
       <meta
         property="og:title"
-        content=" AuraUI | Build Stunning React Websites Fast with Tailwind & Next.js"
+        content="AuraUI | Build Stunning React Websites Fast with Tailwind & Next.js"
       />
       <meta
         property="og:description"
-        content="Build stunning, high-performance websites with AuraUI's open-source components. Fully customizable and integrated with Next.js and Tailwind CSS."
+        content="Ship stunning React websites in hours with AuraUI's animated components and production-ready templates. Built for Next.js and Tailwind CSS."
       />
-      <meta property="og:image" content="https://www.auraui.com/banner.png" />{" "}
-      {/* Add the correct path to your image */}
+      <meta property="og:image" content="https://www.auraui.com/banner.png" />
       <meta property="og:url" content="https://auraui.com" />
       <meta property="og:type" content="website" />
-      {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="AuraUI | Build Stunning React Websites Fast with Tailwind & Next.j"
+        content="AuraUI | Build Stunning React Websites Fast with Tailwind & Next.js"
       />
       <meta
         name="twitter:description"
-        content="Build stunning, high-performance websites with AuraUI's open-source components. Fully customizable and integrated with Next.js and Tailwind CSS."
+        content="Ship stunning React websites in hours with AuraUI's animated components and production-ready templates. Built for Next.js and Tailwind CSS."
       />
-      {/* Additional SEO tags */}
       <meta
         name="keywords"
-        content="AuraUI, open-source, component library, Next.js, Tailwind CSS, Web Development,React,  Frontend development"
+        content="AuraUI, React components, Next.js templates, Tailwind CSS, component library, UI kit, open-source, frontend"
       />
       <meta name="author" content="AuraUI Team" />
-      <link rel="canonical" href="https://auraui.com" />
       <link rel="icon" href="/ico.png" />
     </>
   ),
@@ -146,7 +140,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "AuraUI",
+      titleTemplate: "%s | AuraUI",
     };
   },
 };

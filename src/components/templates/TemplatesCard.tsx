@@ -57,11 +57,22 @@ function ScaledIframe({ src }: { src: string }) {
   );
 }
 
+const allCategories = ["All", ...Array.from(new Set(templates.map((t) => t.category)))];
+const allTags = Array.from(new Set(templates.flatMap((t) => t.tags))).filter((t) => t !== "Free");
+
 export default function TemplatesGallery() {
   const [selected, setSelected] = useState<(typeof templates)[0] | null>(null);
   const [signInOpen, setSignInOpen] = useState(false);
   const [downloading, setDownloading] = useState(false);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeTag, setActiveTag] = useState<string | null>(null);
   const { data: session } = useSession();
+
+  const filtered = templates.filter((t) => {
+    const matchCat = activeCategory === "All" || t.category === activeCategory;
+    const matchTag = !activeTag || t.tags.includes(activeTag);
+    return matchCat && matchTag;
+  });
 
   // Push history state when overlay opens so browser back closes it
   useEffect(() => {
@@ -142,6 +153,49 @@ export default function TemplatesGallery() {
             </div>
           </motion.div>
 
+          {/* ── Filters ── */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.35, delay: 0.06 }}
+            className="flex flex-wrap items-center gap-2 mb-8"
+          >
+            {allCategories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                style={{ fontSize: 12, padding: "5px 14px" }}
+                className={`rounded-full border transition-colors font-medium ${
+                  activeCategory === cat
+                    ? "bg-gray-900 dark:bg-white border-gray-900 dark:border-white text-white dark:text-black"
+                    : "border-gray-200 dark:border-white/[0.1] text-gray-600 dark:text-gray-400 hover:border-gray-300 dark:hover:border-white/20"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+            {allTags.length > 0 && (
+              <div className="w-px h-4 bg-gray-200 dark:bg-white/[0.08] mx-1" />
+            )}
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+                style={{ fontSize: 12, padding: "5px 14px" }}
+                className={`rounded-full border transition-colors ${
+                  activeTag === tag
+                    ? "bg-gray-900 dark:bg-white border-gray-900 dark:border-white text-white dark:text-black"
+                    : "border-gray-200 dark:border-white/[0.1] text-gray-500 dark:text-gray-500 hover:border-gray-300 dark:hover:border-white/20"
+                }`}
+              >
+                {tag}
+              </button>
+            ))}
+            <span style={{ fontSize: 11 }} className="ml-auto text-gray-400 dark:text-gray-600">
+              {filtered.length} template{filtered.length !== 1 ? "s" : ""}
+            </span>
+          </motion.div>
+
           {/* ── How it works ── */}
           <motion.div
             initial={{ opacity: 0, y: 14 }}
@@ -169,7 +223,7 @@ export default function TemplatesGallery() {
 
           {/* ── Template grid ── */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {templates.map((template, i) => (
+            {filtered.map((template, i) => (
               <motion.div
                 key={template.id}
                 initial={{ opacity: 0, y: 14 }}

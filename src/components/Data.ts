@@ -1285,7 +1285,7 @@ export const components = [
   },
   {
     id: 185,
-    name: "Navbar9 ",
+    name: "Navbar9",
     tag: "navbar",
     imgSrc: "/all-components/header/header9.png",
     link: "/docs/header#header9",
