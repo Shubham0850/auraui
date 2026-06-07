@@ -15,6 +15,13 @@ const templates = [
     previewUrl: "https://auraui-sass-landing-template.vercel.app/",
     tags: ["Next.js 16", "Tailwind", "Free"],
   },
+  {
+    id: "restua-club",
+    name: "Restua Club",
+    category: "Landing Page",
+    previewUrl: "https://auraui-restau-club-template.vercel.app/",
+    tags: ["Next.js 16", "Tailwind", "Free"],
+  },
 ];
 
 const steps = [
