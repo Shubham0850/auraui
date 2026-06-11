@@ -23,6 +23,12 @@ const TEMPLATES: Record<string, TemplateAsset> = {
     tag: "v1.1.0",
     filename: "restau-club.zip",
   },
+  "nexlayer": {
+    owner: "kunalkumar156",
+    repo: "auraui-templates",
+    tag: "v1.0.0-nexlayer",
+    filename: "nexlayer.zip",
+  },
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {

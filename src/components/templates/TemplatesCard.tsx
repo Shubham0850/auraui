@@ -22,6 +22,13 @@ const templates = [
     previewUrl: "https://auraui-templates.vercel.app/",
     tags: ["Next.js 16", "Tailwind", "Free"],
   },
+  {
+    id: "nexlayer",
+    name: "NexLayer — AI Infra",
+    category: "Landing Page",
+    previewUrl: "https://nexlayer-templat.vercel.app/",
+    tags: ["Next.js 14", "Chakra UI", "Free"],
+  },
 ];
 
 const proTemplates = [
