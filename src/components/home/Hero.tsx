@@ -61,7 +61,7 @@ const Hero = () => {
       <section className="relative py-12 sm:py-16 lg:pt-20 xl:pb-10">
         <div className="relative  mx-auto sm:px-6 lg:px-8 max-w-7xl mb-[100px]">
           <a
-            href="https://peerlist.io/projects/2024/month/Aug"
+            href="https://peerlist.io/jayjeet/project/auraui"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -117,9 +117,15 @@ const Hero = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-60" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
                 </span>
-                <span className="text-sm text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">Templates</span>
-                <span className="text-[10px] bg-green-500/10 border border-green-500/20 text-green-600 dark:text-green-400 rounded px-1.5 py-0.5 font-bold uppercase tracking-wide">new</span>
-                <span className="text-gray-400 dark:text-gray-500 group-hover:translate-x-0.5 transition-transform text-sm">→</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">
+                  Templates
+                </span>
+                <span className="text-[10px] bg-green-500/10 border border-green-500/20 text-green-600 dark:text-green-400 rounded px-1.5 py-0.5 font-bold uppercase tracking-wide">
+                  new
+                </span>
+                <span className="text-gray-400 dark:text-gray-500 group-hover:translate-x-0.5 transition-transform text-sm">
+                  →
+                </span>
               </Link>
             </div>
           </div>
