@@ -27,7 +27,7 @@ const templates = [
     name: "NexLayer — AI Infra",
     category: "Landing Page",
     previewUrl: "https://nexlayer-templat.vercel.app/",
-    tags: ["Next.js 14", "Chakra UI", "Free"],
+    tags: ["Next.js 14", "Tailwind", "Free"],
   },
 ];
 
