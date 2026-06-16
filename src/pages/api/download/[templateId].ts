@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "../auth/[...nextauth]";
+// import { getServerSession } from "next-auth/next";
+// import { authOptions } from "../auth/[...nextauth]";
 
 type TemplateAsset = {
   owner: string;
@@ -23,19 +23,13 @@ const TEMPLATES: Record<string, TemplateAsset> = {
     tag: "v1.1.0",
     filename: "restau-club.zip",
   },
-  "nexlayer": {
-    owner: "kunalkumar156",
-    repo: "auraui-templates",
-    tag: "v1.0.0-nexlayer",
-    filename: "nexlayer.zip",
-  },
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "GET") return res.status(405).json({ error: "Method not allowed" });
 
-  const session = await getServerSession(req, res, authOptions);
-  if (!session?.user?.email) return res.status(401).json({ error: "Sign in required" });
+  // const session = await getServerSession(req, res, authOptions);
+  // if (!session?.user?.email) return res.status(401).json({ error: "Sign in required" });
 
   const { templateId } = req.query as { templateId: string };
   const template = TEMPLATES[templateId];

@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ExternalLink, Download, Eye, LogIn, Terminal, Rocket, ArrowLeft, Lock, KeyRound, BarChart2, CreditCard, Files, Moon, Zap } from "lucide-react";
+import { X, ExternalLink, Download, Eye, Terminal, Rocket, ArrowLeft, Lock, KeyRound, BarChart2, CreditCard, Files, Moon, Zap } from "lucide-react";
+// LogIn removed — sign-in step hidden
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 import SignInModal from "./SignInModal";
@@ -21,13 +22,6 @@ const templates = [
     category: "Landing Page",
     previewUrl: "https://auraui-templates.vercel.app/",
     tags: ["Next.js 16", "Tailwind", "Free"],
-  },
-  {
-    id: "nexlayer",
-    name: "NexLayer — AI Infra",
-    category: "Landing Page",
-    previewUrl: "https://nexlayer-templat.vercel.app/",
-    tags: ["Next.js 14", "Tailwind", "Free"],
   },
 ];
 
@@ -72,9 +66,9 @@ const proFeatures = [
 
 const steps = [
   { icon: Eye,      n: "01", title: "Browse",      desc: "Click any card to open a full live preview — not a screenshot, the actual running page." },
-  { icon: LogIn,    n: "02", title: "Sign in",      desc: 'Hit "Get Code", sign in with Google, and instantly download the full source ZIP.' },
-  { icon: Terminal, n: "03", title: "Run locally",  desc: "npm install → npm run dev → open localhost:3000. Everything works out of the box." },
-  { icon: Rocket,   n: "04", title: "Ship it",      desc: "Edit colors, copy, images. Deploy to Vercel with one click — no config needed." },
+  // { icon: LogIn, n: "02", title: "Sign in", desc: 'Hit "Get Code", sign in with Google, and instantly download the full source ZIP.' },
+  { icon: Terminal, n: "02", title: "Run locally",  desc: "npm install → npm run dev → open localhost:3000. Everything works out of the box." },
+  { icon: Rocket,   n: "03", title: "Ship it",      desc: "Edit colors, copy, images. Deploy to Vercel with one click — no config needed." },
 ];
 
 function ScaledIframe({ src }: { src: string }) {
@@ -123,6 +117,9 @@ export default function TemplatesGallery() {
   const [waitlistEmail, setWaitlistEmail] = useState("");
   const [waitlistDone, setWaitlistDone] = useState(false);
   const [waitlistLoading, setWaitlistLoading] = useState(false);
+  const [notifyEmail, setNotifyEmail] = useState("");
+  const [notifyDone, setNotifyDone] = useState(false);
+  const [notifyLoading, setNotifyLoading] = useState(false);
   const { data: session } = useSession();
 
   const filtered = templates.filter((t) => {
@@ -162,6 +159,22 @@ export default function TemplatesGallery() {
       setDownloading(false);
     }
   }
+
+  const handleNotify = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!notifyEmail.trim() || notifyLoading) return;
+    setNotifyLoading(true);
+    try {
+      await fetch("/api/template-notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: notifyEmail }),
+      });
+      setNotifyDone(true);
+    } finally {
+      setNotifyLoading(false);
+    }
+  };
 
   const handleWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -374,7 +387,7 @@ export default function TemplatesGallery() {
                   transition={{ duration: 0.45, delay: 0.08 }}
                   className="rounded-2xl border border-gray-200 dark:border-white/[0.07] mb-10 overflow-hidden bg-gray-50 dark:bg-[#131313]"
                 >
-                  <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-y sm:divide-y-0 divide-gray-200 dark:divide-white/[0.06]">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y sm:divide-y-0 divide-gray-200 dark:divide-white/[0.06]">
                     {steps.map((step) => (
                       <div key={step.n} className="p-5 flex flex-col gap-3">
                         <div className="flex items-center justify-between">
@@ -446,20 +459,41 @@ export default function TemplatesGallery() {
                     </motion.div>
                   ))}
 
-                  {/* Coming soon */}
+                  {/* Notify card */}
                   <motion.div
                     initial={{ opacity: 0, y: 14 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.26 }}
-                    className="rounded-2xl border border-dashed border-gray-300 dark:border-white/[0.07] flex flex-col items-center justify-center gap-3 bg-gray-50/50 dark:bg-white/[0.01]"
+                    className="rounded-2xl border border-dashed border-gray-300 dark:border-white/[0.07] flex flex-col justify-center gap-5 bg-gray-50/50 dark:bg-white/[0.01] p-6"
                     style={{ minHeight: 280 }}
                   >
-                    <div className="flex items-center justify-center rounded-full border border-gray-300 dark:border-white/10 text-gray-400 dark:text-gray-600"
-                      style={{ width: 34, height: 34, fontSize: 18 }}
-                    >
-                      +
+                    <div>
+                      <div style={{ fontSize: 13 }} className="font-semibold text-gray-900 dark:text-white mb-1">More coming soon</div>
+                      <p style={{ fontSize: 11 }} className="text-gray-500 leading-relaxed">Get notified when new templates drop — no spam, just the release.</p>
                     </div>
-                    <span style={{ fontSize: 12 }} className="text-gray-400 dark:text-gray-600">More coming soon</span>
+                    {notifyDone ? (
+                      <div style={{ fontSize: 12 }} className="text-green-500 font-medium">✓ You&apos;re on the list</div>
+                    ) : (
+                      <form onSubmit={handleNotify} className="flex flex-col gap-2">
+                        <input
+                          type="email"
+                          value={notifyEmail}
+                          onChange={(e) => setNotifyEmail(e.target.value)}
+                          placeholder="you@example.com"
+                          required
+                          style={{ fontSize: 12, height: 36 }}
+                          className="w-full bg-white dark:bg-white/[0.04] border border-gray-200 dark:border-white/[0.1] rounded-lg px-3 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600 outline-none focus:border-gray-400 dark:focus:border-white/20 transition-colors"
+                        />
+                        <button
+                          type="submit"
+                          disabled={notifyLoading}
+                          style={{ fontSize: 11, height: 32 }}
+                          className="w-full bg-gray-900 dark:bg-white text-white dark:text-black font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
+                        >
+                          {notifyLoading ? "Saving..." : "Notify me →"}
+                        </button>
+                      </form>
+                    )}
                   </motion.div>
                 </div>
 
@@ -788,13 +822,15 @@ export default function TemplatesGallery() {
                 </a>
 
                 <button
-                  onClick={() => session ? handleDownload(selected.id) : setSignInOpen(true)}
+                  onClick={() => handleDownload(selected.id)}
+                  // onClick={() => session ? handleDownload(selected.id) : setSignInOpen(true)}
                   disabled={downloading}
                   style={{ fontSize: 12, padding: "6px 14px" }}
                   className="flex items-center gap-2 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors disabled:opacity-60"
                 >
                   <Download size={12} />
-                  {downloading ? "Preparing..." : session ? "Get Code" : "Sign in to download"}
+                  {downloading ? "Preparing..." : "Get Code"}
+                  {/* {downloading ? "Preparing..." : session ? "Get Code" : "Sign in to download"} */}
                 </button>
 
                 <button
